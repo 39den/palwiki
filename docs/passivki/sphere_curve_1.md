@@ -2,7 +2,7 @@
 
 <div class="psv-hero" markdown="0"><span class="psv r-1 big">Искривление траектории сферы +1</span> <span class="rk">Ранг 1 · обычная</span><div class="en">Sphere Curve +1</div></div>
 
-**Что даёт:** CurveType +7%
+**Что даёт:** Сила броска сферы +7%
 
 Полезная пассивка. Одинаковые пассивки на одном пале не складываются.
 

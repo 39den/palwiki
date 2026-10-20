@@ -2,7 +2,7 @@
 
 <div class="psv-hero" markdown="0"><span class="psv r-neg big">Священная защита</span> <span class="rk">Ранг -1 · плохая</span><div class="en">Hallowed Guard</div></div>
 
-**Что даёт:** ForYakushimaDefenceRate +30%
+**Что даёт:** Защита на Якусиме +30%
 
 Это **плохая** пассивка — лучше от неё избавиться при разведении. Одинаковые пассивки на одном пале не складываются.
 

@@ -1,8 +1,8 @@
-# #42 Спаркит (Sparkit)
+# Спаркит
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/42_ElecCat.webp" alt="Спаркит" loading="lazy" width="360">
-<div class="pal-info" data-pal="ElecCat"><div class="pal-no">№ 42</div>
+<div class="pal-info" data-pal="ElecCat"><div class="pal-no">№ 42 · Sparkit</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
 <div class="works"><span class="work" title="Генерация энергии 1">⚡ Генерация энергии <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>

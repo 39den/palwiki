@@ -1,8 +1,8 @@
-# #195 Бэллануар (Bellanoir)
+# Бэллануар
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/195_NightLady.webp" alt="Бэллануар" loading="lazy" width="360">
-<div class="pal-info" data-pal="NightLady"><div class="pal-no">№ 195</div>
+<div class="pal-info" data-pal="NightLady"><div class="pal-no">№ 195 · Bellanoir</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Ручная работа 5">🖐️ Ручная работа <b>5</b></span><span class="work" title="Фармацевтика 5">💊 Фармацевтика <b>5</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>

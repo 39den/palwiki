@@ -1,8 +1,8 @@
-# #186 Лилин (Lyleen)
+# Лилин
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/186_LilyQueen.webp" alt="Лилин" loading="lazy" width="360">
-<div class="pal-info" data-pal="LilyQueen"><div class="pal-no">№ 186</div>
+<div class="pal-info" data-pal="LilyQueen"><div class="pal-no">№ 186 · Lyleen</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 7">🌱 Посев семян <b>7</b></span><span class="work" title="Ручная работа 5">🖐️ Ручная работа <b>5</b></span><span class="work" title="Сбор 6">🌾 Сбор <b>6</b></span><span class="work" title="Фармацевтика 5">💊 Фармацевтика <b>5</b></span></div>

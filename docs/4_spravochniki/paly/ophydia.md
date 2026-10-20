@@ -1,8 +1,8 @@
-# #175 Офидия (Ophydia)
+# Офидия
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/175_LotusDragon.webp" alt="Офидия" loading="lazy" width="360">
-<div class="pal-info" data-pal="LotusDragon"><div class="pal-no">№ 175</div>
+<div class="pal-info" data-pal="LotusDragon"><div class="pal-no">№ 175 · Ophydia</div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Полив 5">💧 Полив <b>5</b></span><span class="work" title="Посев семян 7">🌱 Посев семян <b>7</b></span></div>

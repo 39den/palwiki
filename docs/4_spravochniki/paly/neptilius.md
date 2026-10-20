@@ -1,8 +1,8 @@
-# #201 Нептилиус (Neptilius)
+# Нептилиус
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/201_PoseidonOrca.webp" alt="Нептилиус" loading="lazy" width="360">
-<div class="pal-info" data-pal="PoseidonOrca"><div class="pal-no">№ 201</div>
+<div class="pal-info" data-pal="PoseidonOrca"><div class="pal-no">№ 201 · Neptilius</div>
 <div class="chips"><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 7">💧 Полив <b>7</b></span></div>

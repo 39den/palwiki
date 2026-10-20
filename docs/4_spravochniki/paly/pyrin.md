@@ -1,8 +1,8 @@
-# #93 Пирин (Pyrin)
+# Пирин
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/93_FireKirin.webp" alt="Пирин" loading="lazy" width="360">
-<div class="pal-info" data-pal="FireKirin"><div class="pal-no">№ 93</div>
+<div class="pal-info" data-pal="FireKirin"><div class="pal-no">№ 93 · Pyrin</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 4">🔥 Разжигание огня <b>4</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span></div>

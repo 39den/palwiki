@@ -1,8 +1,8 @@
-# #56B Лупмун Крист (Loupmoon Cryst)
+# Лупмун Крист
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/56B_Werewolf_Ice.webp" alt="Лупмун Крист" loading="lazy" width="360">
-<div class="pal-info" data-pal="Werewolf_Ice"><div class="pal-no">№ 56B</div>
+<div class="pal-info" data-pal="Werewolf_Ice"><div class="pal-no">№ 56B · Loupmoon Cryst</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Охлаждение 4">❄️ Охлаждение <b>4</b></span></div>

@@ -1,8 +1,8 @@
-# #64 Ванвирм (Vanwyrm)
+# Ванвирм
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/64_BirdDragon.webp" alt="Ванвирм" loading="lazy" width="360">
-<div class="pal-info" data-pal="BirdDragon"><div class="pal-no">№ 64</div>
+<div class="pal-info" data-pal="BirdDragon"><div class="pal-no">№ 64 · Vanwyrm</div>
 <div class="chips"><span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Разжигание огня 2">🔥 Разжигание огня <b>2</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

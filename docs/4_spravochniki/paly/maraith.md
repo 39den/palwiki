@@ -1,8 +1,8 @@
-# #117 Мараит (Maraith)
+# Мараит
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/117_GhostBeast.webp" alt="Мараит" loading="lazy" width="360">
-<div class="pal-info" data-pal="GhostBeast"><div class="pal-no">№ 117</div>
+<div class="pal-info" data-pal="GhostBeast"><div class="pal-no">№ 117 · Maraith</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span></div>

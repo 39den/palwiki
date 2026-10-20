@@ -1,7 +1,7 @@
 ---
 hide: [navigation, toc]
 ---
-<div class="hero" markdown="0"><div class="hero-art"><img src="art/HadesBird.webp" alt="" loading="lazy"><img src="art/WindChimes.webp" alt="" loading="lazy"><img src="art/ThunderBird.webp" alt="" loading="lazy"><img src="art/Cave_Bat.webp" alt="" loading="lazy"><img src="art/Hedgehog.webp" alt="" loading="lazy"><img src="art/Alpaca.webp" alt="" loading="lazy"><img src="art/Yeti.webp" alt="" loading="lazy"><img src="art/LavaGirl.webp" alt="" loading="lazy"><img src="art/Baphomet.webp" alt="" loading="lazy"><img src="art/BlackMetalDragon.webp" alt="" loading="lazy"><img src="art/NegativeKoala.webp" alt="" loading="lazy"><img src="art/SkyDragon.webp" alt="" loading="lazy"><img src="art/Werewolf.webp" alt="" loading="lazy"><img src="art/KendoFrog.webp" alt="" loading="lazy"></div><div class="hero-in">
+<div class="hero" markdown="0"><span class="hero-credit">Карта: palworld.wiki.gg</span><div class="hero-in">
 <h1>Энциклопедия Palworld</h1><p>Всё о Palworld на русском: уровни 0–80, 299 палов, 1599 предметов, боссы, пассивки, разведение и секреты.</p>
 <div class="smart-box"><input id="home-q" type="search" placeholder="Спроси что угодно: «кто лучше копает», «чем бить Зои», «где взять серу»…" autocomplete="off"></div>
 <div id="home-answer" class="smart-out"></div></div></div>

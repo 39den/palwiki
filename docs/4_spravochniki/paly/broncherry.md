@@ -1,8 +1,8 @@
-# #108 Брончерри (Broncherry)
+# Брончерри
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/108_SakuraSaurus.webp" alt="Брончерри" loading="lazy" width="360">
-<div class="pal-info" data-pal="SakuraSaurus"><div class="pal-no">№ 108</div>
+<div class="pal-info" data-pal="SakuraSaurus"><div class="pal-no">№ 108 · Broncherry</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 5">🌱 Посев семян <b>5</b></span></div>

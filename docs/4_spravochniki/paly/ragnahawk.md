@@ -1,8 +1,8 @@
-# #104 Рагнахавк (Ragnahawk)
+# Рагнахавк
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/104_RedArmorBird.webp" alt="Рагнахавк" loading="lazy" width="360">
-<div class="pal-info" data-pal="RedArmorBird"><div class="pal-no">№ 104</div>
+<div class="pal-info" data-pal="RedArmorBird"><div class="pal-no">№ 104 · Ragnahawk</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 4">🔥 Разжигание огня <b>4</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>

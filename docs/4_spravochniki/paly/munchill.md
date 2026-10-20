@@ -1,8 +1,8 @@
-# #86 Манчилл (Munchill)
+# Манчилл
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/86_IceCrocodile.webp" alt="Манчилл" loading="lazy" width="360">
-<div class="pal-info" data-pal="IceCrocodile"><div class="pal-no">№ 86</div>
+<div class="pal-info" data-pal="IceCrocodile"><div class="pal-no">№ 86 · Munchill</div>
 <div class="chips"><span class="el el-ice">Лёд</span><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Охлаждение 3">❄️ Охлаждение <b>3</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

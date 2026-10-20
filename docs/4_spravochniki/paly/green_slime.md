@@ -1,8 +1,8 @@
-# #T6 Зеленый слизень (Green Slime)
+# Зеленый слизень
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/T6_Green_Slime.webp" alt="Зеленый слизень" loading="lazy" width="360">
-<div class="pal-info" data-pal="Green_Slime"><div class="pal-no">№ T6</div>
+<div class="pal-info" data-pal="Green_Slime"><div class="pal-no">№ T6 · Green Slime</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

@@ -1,8 +1,8 @@
-# #17B Пенгуллет Лакс (Pengullet Lux)
+# Пенгуллет Лакс
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/17B_Penguin_Electric.webp" alt="Пенгуллет Лакс" loading="lazy" width="360">
-<div class="pal-info" data-pal="Penguin_Electric"><div class="pal-no">№ 17B</div>
+<div class="pal-info" data-pal="Penguin_Electric"><div class="pal-no">№ 17B · Pengullet Lux</div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span><span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Генерация энергии 2">⚡ Генерация энергии <b>2</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

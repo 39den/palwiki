@@ -1,8 +1,8 @@
-# #155 Ванфу (Dogen)
+# Ванфу
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/155_SifuDog.webp" alt="Ванфу" loading="lazy" width="360">
-<div class="pal-info" data-pal="SifuDog"><div class="pal-no">№ 155</div>
+<div class="pal-info" data-pal="SifuDog"><div class="pal-no">№ 155 · Dogen</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Фармацевтика 2">💊 Фармацевтика <b>2</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

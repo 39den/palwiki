@@ -1,8 +1,8 @@
-# #4 Лифманк (Lifmunk)
+# Лифманк
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/4_Carbunclo.webp" alt="Лифманк" loading="lazy" width="360">
-<div class="pal-info" data-pal="Carbunclo"><div class="pal-no">№ 4</div>
+<div class="pal-info" data-pal="Carbunclo"><div class="pal-no">№ 4 · Lifmunk</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 1">🌱 Посев семян <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Рубка деревьев 1">🪓 Рубка деревьев <b>1</b></span><span class="work" title="Фармацевтика 1">💊 Фармацевтика <b>1</b></span></div>

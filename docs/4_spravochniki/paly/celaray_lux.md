@@ -1,8 +1,8 @@
-# #7B Селарай Лакс (Celaray Lux)
+# Селарай Лакс
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/7B_FlyingManta_Thunder.webp" alt="Селарай Лакс" loading="lazy" width="360">
-<div class="pal-info" data-pal="FlyingManta_Thunder"><div class="pal-no">№ 7B</div>
+<div class="pal-info" data-pal="FlyingManta_Thunder"><div class="pal-no">№ 7B · Celaray Lux</div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span><span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Генерация энергии 2">⚡ Генерация энергии <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

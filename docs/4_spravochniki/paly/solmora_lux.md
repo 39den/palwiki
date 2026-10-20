@@ -1,8 +1,8 @@
-# #169B Солмора Лакс (Solmora Lux)
+# Солмора Лакс
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/169B_KingSunfish_Thunder.webp" alt="Солмора Лакс" loading="lazy" width="360">
-<div class="pal-info" data-pal="KingSunfish_Thunder"><div class="pal-no">№ 169B</div>
+<div class="pal-info" data-pal="KingSunfish_Thunder"><div class="pal-no">№ 169B · Solmora Lux</div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span><span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 4">💧 Полив <b>4</b></span><span class="work" title="Генерация энергии 6">⚡ Генерация энергии <b>6</b></span></div>

@@ -1,8 +1,8 @@
-# #17 Пенгуллет (Pengullet)
+# Пенгуллет
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/17_Penguin.webp" alt="Пенгуллет" loading="lazy" width="360">
-<div class="pal-info" data-pal="Penguin"><div class="pal-no">№ 17</div>
+<div class="pal-info" data-pal="Penguin"><div class="pal-no">№ 17 · Pengullet</div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Охлаждение 1">❄️ Охлаждение <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

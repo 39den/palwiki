@@ -1,8 +1,8 @@
-# #202 Джетрагон (Jetragon)
+# Джетрагон
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/202_JetDragon.webp" alt="Джетрагон" loading="lazy" width="360">
-<div class="pal-info" data-pal="JetDragon"><div class="pal-no">№ 202</div>
+<div class="pal-info" data-pal="JetDragon"><div class="pal-no">№ 202 · Jetragon</div>
 <div class="chips"><span class="el el-dragon">Дракон</span></div>
 <div class="weak">Слабость: <span class="el el-ice">Лёд</span></div>
 <div class="works"><span class="work" title="Сбор 8">🌾 Сбор <b>8</b></span></div>

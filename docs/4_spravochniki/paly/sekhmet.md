@@ -1,8 +1,8 @@
-# #140 Сехмет (Sekhmet)
+# Сехмет
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/140_Sekhmet.webp" alt="Сехмет" loading="lazy" width="360">
-<div class="pal-info" data-pal="Sekhmet"><div class="pal-no">№ 140</div>
+<div class="pal-info" data-pal="Sekhmet"><div class="pal-no">№ 140 · Sekhmet</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

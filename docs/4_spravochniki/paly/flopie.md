@@ -1,8 +1,8 @@
-# #77 Флопи (Flopie)
+# Флопи
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/77_FlowerRabbit.webp" alt="Флопи" loading="lazy" width="360">
-<div class="pal-info" data-pal="FlowerRabbit"><div class="pal-no">№ 77</div>
+<div class="pal-info" data-pal="FlowerRabbit"><div class="pal-no">№ 77 · Flopie</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 2">🌱 Посев семян <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Фармацевтика 1">💊 Фармацевтика <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

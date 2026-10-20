@@ -1,8 +1,8 @@
-# #181 Вистелла (Wistella)
+# Вистелла
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/181_MoonChild.webp" alt="Вистелла" loading="lazy" width="360">
-<div class="pal-info" data-pal="MoonChild"><div class="pal-no">№ 181</div>
+<div class="pal-info" data-pal="MoonChild"><div class="pal-no">№ 181 · Wistella</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Фармацевтика 6">💊 Фармацевтика <b>6</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

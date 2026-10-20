@@ -1,8 +1,8 @@
-# #85 Буси (Bushi)
+# Буси
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/85_Ronin.webp" alt="Буси" loading="lazy" width="360">
-<div class="pal-info" data-pal="Ronin"><div class="pal-no">№ 85</div>
+<div class="pal-info" data-pal="Ronin"><div class="pal-no">№ 85 · Bushi</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 2">🔥 Разжигание огня <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

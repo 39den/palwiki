@@ -1,8 +1,8 @@
-# #55 Гобфин (Gobfin)
+# Гобфин
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/55_SharkKid.webp" alt="Гобфин" loading="lazy" width="360">
-<div class="pal-info" data-pal="SharkKid"><div class="pal-no">№ 55</div>
+<div class="pal-info" data-pal="SharkKid"><div class="pal-no">№ 55 · Gobfin</div>
 <div class="chips"><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

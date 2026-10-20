@@ -2,7 +2,7 @@
 
 <div class="psv-hero" markdown="0"><span class="psv r-1 big">Увеличение силы захвата +6</span> <span class="rk">Ранг 1 · обычная</span><div class="en">Capture Strength +6</div></div>
 
-**Что даёт:** CaptureLevel +6%
+**Что даёт:** Шанс поимки +6%
 
 Полезная пассивка. Одинаковые пассивки на одном пале не складываются.
 

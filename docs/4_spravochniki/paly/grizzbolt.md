@@ -1,8 +1,8 @@
-# #185 Гриззболт (Grizzbolt)
+# Гриззболт
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/185_ElecPanda.webp" alt="Гриззболт" loading="lazy" width="360">
-<div class="pal-info" data-pal="ElecPanda"><div class="pal-no">№ 185</div>
+<div class="pal-info" data-pal="ElecPanda"><div class="pal-no">№ 185 · Grizzbolt</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
 <div class="works"><span class="work" title="Генерация энергии 5">⚡ Генерация энергии <b>5</b></span><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>

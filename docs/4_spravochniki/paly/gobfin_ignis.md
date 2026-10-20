@@ -1,8 +1,8 @@
-# #55B Гобфин Игнис (Gobfin Ignis)
+# Гобфин Игнис
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/55B_SharkKid_Fire.webp" alt="Гобфин Игнис" loading="lazy" width="360">
-<div class="pal-info" data-pal="SharkKid_Fire"><div class="pal-no">№ 55B</div>
+<div class="pal-info" data-pal="SharkKid_Fire"><div class="pal-no">№ 55B · Gobfin Ignis</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 2">🔥 Разжигание огня <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

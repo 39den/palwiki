@@ -1,8 +1,8 @@
-# #65 Фелбэт (Felbat)
+# Фелбэт
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/65_CatVampire.webp" alt="Фелбэт" loading="lazy" width="360">
-<div class="pal-info" data-pal="CatVampire"><div class="pal-no">№ 65</div>
+<div class="pal-info" data-pal="CatVampire"><div class="pal-no">№ 65 · Felbat</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Фармацевтика 3">💊 Фармацевтика <b>3</b></span></div>

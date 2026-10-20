@@ -1,8 +1,8 @@
-# #120 Йомира (Gildra)
+# Йомира
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/120_MummyPal.webp" alt="Йомира" loading="lazy" width="360">
-<div class="pal-info" data-pal="MummyPal"><div class="pal-no">№ 120</div>
+<div class="pal-info" data-pal="MummyPal"><div class="pal-no">№ 120 · Gildra</div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Ручная работа 5">🖐️ Ручная работа <b>5</b></span><span class="work" title="Фармацевтика 4">💊 Фармацевтика <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

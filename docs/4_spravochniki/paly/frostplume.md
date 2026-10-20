@@ -1,8 +1,8 @@
-# #114 Фростплюм (Frostplume)
+# Фростплюм
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/114_SnowPeafowl.webp" alt="Фростплюм" loading="lazy" width="360">
-<div class="pal-info" data-pal="SnowPeafowl"><div class="pal-no">№ 114</div>
+<div class="pal-info" data-pal="SnowPeafowl"><div class="pal-no">№ 114 · Frostplume</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Охлаждение 4">❄️ Охлаждение <b>4</b></span></div>

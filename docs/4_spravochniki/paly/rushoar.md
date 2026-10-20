@@ -1,8 +1,8 @@
-# #28 Рашоа (Rushoar)
+# Рашоа
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/28_Boar.webp" alt="Рашоа" loading="lazy" width="360">
-<div class="pal-info" data-pal="Boar"><div class="pal-no">№ 28</div>
+<div class="pal-info" data-pal="Boar"><div class="pal-no">№ 28 · Rushoar</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Добыча 1">⛏️ Добыча <b>1</b></span></div>

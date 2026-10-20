@@ -1,8 +1,8 @@
-# #50 Виспау (Wispaw)
+# Виспау
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/50_GhostBlackCat.webp" alt="Виспау" loading="lazy" width="360">
-<div class="pal-info" data-pal="GhostBlackCat"><div class="pal-no">№ 50</div>
+<div class="pal-info" data-pal="GhostBlackCat"><div class="pal-no">№ 50 · Wispaw</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Рубка деревьев 1">🪓 Рубка деревьев <b>1</b></span><span class="work" title="Фармацевтика 1">💊 Фармацевтика <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

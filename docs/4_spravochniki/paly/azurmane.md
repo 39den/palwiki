@@ -1,8 +1,8 @@
-# #161 Азурмейн (Azurmane)
+# Азурмейн
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/161_BlueThunderHorse.webp" alt="Азурмейн" loading="lazy" width="360">
-<div class="pal-info" data-pal="BlueThunderHorse"><div class="pal-no">№ 161</div>
+<div class="pal-info" data-pal="BlueThunderHorse"><div class="pal-no">№ 161 · Azurmane</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
 <div class="works"><span class="work" title="Генерация энергии 5">⚡ Генерация энергии <b>5</b></span></div>

@@ -1,8 +1,8 @@
-# #25 Фламбелль (Flambelle)
+# Фламбелль
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/25_LavaGirl.webp" alt="Фламбелль" loading="lazy" width="360">
-<div class="pal-info" data-pal="LavaGirl"><div class="pal-no">№ 25</div>
+<div class="pal-info" data-pal="LavaGirl"><div class="pal-no">№ 25 · Flambelle</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 1">🔥 Разжигание огня <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>

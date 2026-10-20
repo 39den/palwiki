@@ -1,8 +1,8 @@
-# #81 Элгрув (Elgrove)
+# Элгрув
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/81_GrassMinotaur.webp" alt="Элгрув" loading="lazy" width="360">
-<div class="pal-info" data-pal="GrassMinotaur"><div class="pal-no">№ 81</div>
+<div class="pal-info" data-pal="GrassMinotaur"><div class="pal-no">№ 81 · Elgrove</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Добыча 2">⛏️ Добыча <b>2</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

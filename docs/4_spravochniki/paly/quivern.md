@@ -1,8 +1,8 @@
-# #124 Фэски (Quivern)
+# Фэски
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/124_SkyDragon.webp" alt="Фэски" loading="lazy" width="360">
-<div class="pal-info" data-pal="SkyDragon"><div class="pal-no">№ 124</div>
+<div class="pal-info" data-pal="SkyDragon"><div class="pal-no">№ 124 · Quivern</div>
 <div class="chips"><span class="el el-dragon">Дракон</span></div>
 <div class="weak">Слабость: <span class="el el-ice">Лёд</span></div>
 <div class="works"><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>

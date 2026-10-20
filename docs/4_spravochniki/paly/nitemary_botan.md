@@ -1,8 +1,8 @@
-# #148B Найтмери Ботан (Nitemary Botan)
+# Найтмери Ботан
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/148B_GhostRabbit_Grass.webp" alt="Найтмери Ботан" loading="lazy" width="360">
-<div class="pal-info" data-pal="GhostRabbit_Grass"><div class="pal-no">№ 148B</div>
+<div class="pal-info" data-pal="GhostRabbit_Grass"><div class="pal-no">№ 148B · Nitemary Botan</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

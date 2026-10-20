@@ -1,8 +1,8 @@
-# #137 Блазамут (Blazamut)
+# Блазамут
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/137_KingBahamut.webp" alt="Блазамут" loading="lazy" width="360">
-<div class="pal-info" data-pal="KingBahamut"><div class="pal-no">№ 137</div>
+<div class="pal-info" data-pal="KingBahamut"><div class="pal-no">№ 137 · Blazamut</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 6">🔥 Разжигание огня <b>6</b></span><span class="work" title="Добыча 7">⛏️ Добыча <b>7</b></span></div>

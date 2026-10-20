@@ -2,7 +2,7 @@
 
 <div class="psv-hero" markdown="0"><span class="psv r-1 big">Иммунитет к урону от ядовитого газа</span> <span class="rk">Ранг 1 · обычная</span><div class="en">Toxic Gas Immunity</div></div>
 
-**Что даёт:** InvalidToxicGas +0% InvalidToxicGas +0%
+**Что даёт:** Иммунитет к ядовитому газу +0%; Иммунитет к ядовитому газу +0%
 
 Полезная пассивка. Одинаковые пассивки на одном пале не складываются.
 

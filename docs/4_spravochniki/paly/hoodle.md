@@ -1,8 +1,8 @@
-# #166 Худл (Hoodle)
+# Худл
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/166_HoodGhost.webp" alt="Худл" loading="lazy" width="360">
-<div class="pal-info" data-pal="HoodGhost"><div class="pal-no">№ 166</div>
+<div class="pal-info" data-pal="HoodGhost"><div class="pal-no">№ 166 · Hoodle</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

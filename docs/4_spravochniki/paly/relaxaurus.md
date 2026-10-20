@@ -1,8 +1,8 @@
-# #94 Релаксаурус (Relaxaurus)
+# Релаксаурус
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/94_LazyDragon.webp" alt="Релаксаурус" loading="lazy" width="360">
-<div class="pal-info" data-pal="LazyDragon"><div class="pal-no">№ 94</div>
+<div class="pal-info" data-pal="LazyDragon"><div class="pal-no">№ 94 · Relaxaurus</div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-ice">Лёд</span><span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 3">💧 Полив <b>3</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

@@ -1,8 +1,8 @@
-# #34B Каприти Нокт (Caprity Noct)
+# Каприти Нокт
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/34B_BerryGoat_Dark.webp" alt="Каприти Нокт" loading="lazy" width="360">
-<div class="pal-info" data-pal="BerryGoat_Dark"><div class="pal-no">№ 34B</div>
+<div class="pal-info" data-pal="BerryGoat_Dark"><div class="pal-no">№ 34B · Caprity Noct</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Посев семян 2">🌱 Посев семян <b>2</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>

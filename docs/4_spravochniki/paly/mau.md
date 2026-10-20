@@ -1,8 +1,8 @@
-# #27 Мау (Mau)
+# Мау
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/27_Bastet.webp" alt="Мау" loading="lazy" width="360">
-<div class="pal-info" data-pal="Bastet"><div class="pal-no">№ 27</div>
+<div class="pal-info" data-pal="Bastet"><div class="pal-no">№ 27 · Mau</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>

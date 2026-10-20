@@ -1,8 +1,8 @@
-# #143 Няфия (Nyafia)
+# Няфия
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/143_BadCatgirl.webp" alt="Няфия" loading="lazy" width="360">
-<div class="pal-info" data-pal="BadCatgirl"><div class="pal-no">№ 143</div>
+<div class="pal-info" data-pal="BadCatgirl"><div class="pal-no">№ 143 · Nyafia</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

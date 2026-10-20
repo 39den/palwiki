@@ -1,8 +1,8 @@
-# #3 Чикипи (Chikipi)
+# Чикипи
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/3_ChickenPal.webp" alt="Чикипи" loading="lazy" width="360">
-<div class="pal-info" data-pal="ChickenPal"><div class="pal-no">№ 3</div>
+<div class="pal-info" data-pal="ChickenPal"><div class="pal-no">№ 3 · Chikipi</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>

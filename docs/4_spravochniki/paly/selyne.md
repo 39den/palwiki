@@ -1,8 +1,8 @@
-# #190 Селена (Selyne)
+# Селена
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/190_MoonQueen.webp" alt="Селена" loading="lazy" width="360">
-<div class="pal-info" data-pal="MoonQueen"><div class="pal-no">№ 190</div>
+<div class="pal-info" data-pal="MoonQueen"><div class="pal-no">№ 190 · Selyne</div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Ручная работа 7">🖐️ Ручная работа <b>7</b></span><span class="work" title="Фармацевтика 6">💊 Фармацевтика <b>6</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

@@ -1,8 +1,8 @@
-# #178 Медуна (Venusa)
+# Медуна
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/178_SnakeGirl.webp" alt="Медуна" loading="lazy" width="360">
-<div class="pal-info" data-pal="SnakeGirl"><div class="pal-no">№ 178</div>
+<div class="pal-info" data-pal="SnakeGirl"><div class="pal-no">№ 178 · Venusa</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Сбор 6">🌾 Сбор <b>6</b></span><span class="work" title="Фармацевтика 5">💊 Фармацевтика <b>5</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

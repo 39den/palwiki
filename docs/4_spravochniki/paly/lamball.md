@@ -1,8 +1,8 @@
-# #1 Ламболл (Lamball)
+# Ламболл
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/1_SheepBall.webp" alt="Ламболл" loading="lazy" width="360">
-<div class="pal-info" data-pal="SheepBall"><div class="pal-no">№ 1</div>
+<div class="pal-info" data-pal="SheepBall"><div class="pal-no">№ 1 · Lamball</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>

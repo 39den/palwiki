@@ -1,8 +1,8 @@
-# #111B Кицун Нокт (Kitsun Noct)
+# Кицун Нокт
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/111B_AmaterasuWolf_Dark.webp" alt="Кицун Нокт" loading="lazy" width="360">
-<div class="pal-info" data-pal="AmaterasuWolf_Dark"><div class="pal-no">№ 111B</div>
+<div class="pal-info" data-pal="AmaterasuWolf_Dark"><div class="pal-no">№ 111B · Kitsun Noct</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Разжигание огня 4">🔥 Разжигание огня <b>4</b></span></div>

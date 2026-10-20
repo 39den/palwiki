@@ -1,8 +1,8 @@
-# #183 Рэндзиши (Renjishi)
+# Рэндзиши
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/183_KabukiMan.webp" alt="Рэндзиши" loading="lazy" width="360">
-<div class="pal-info" data-pal="KabukiMan"><div class="pal-no">№ 183</div>
+<div class="pal-info" data-pal="KabukiMan"><div class="pal-no">№ 183 · Renjishi</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 8">🔥 Разжигание огня <b>8</b></span><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>

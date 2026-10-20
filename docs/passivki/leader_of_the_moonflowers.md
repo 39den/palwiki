@@ -2,7 +2,7 @@
 
 <div class="psv-hero" markdown="0"><span class="psv r-3 big">Лидер общества Лунных цветов</span> <span class="rk">Ранг 3 · редкая</span><div class="en">Leader of the Moonflowers</div></div>
 
-**Что даёт:** Атака +20% MoveSpeed +10%
+**Что даёт:** Атака +20%; Скорость +10%
 
 Полезная пассивка. Одинаковые пассивки на одном пале не складываются.
 

@@ -1,8 +1,8 @@
-# #128B Скатласс Игнис (Skutlass Ignis)
+# Скатласс Игнис
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/128B_SwordCutlassfish_Fire.webp" alt="Скатласс Игнис" loading="lazy" width="360">
-<div class="pal-info" data-pal="SwordCutlassfish_Fire"><div class="pal-no">№ 128B</div>
+<div class="pal-info" data-pal="SwordCutlassfish_Fire"><div class="pal-no">№ 128B · Skutlass Ignis</div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>

@@ -1,8 +1,8 @@
-# #T11 Красный слизень (Red Slime)
+# Красный слизень
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/T11_Red_Slime.webp" alt="Красный слизень" loading="lazy" width="360">
-<div class="pal-info" data-pal="Red_Slime"><div class="pal-no">№ T11</div>
+<div class="pal-info" data-pal="Red_Slime"><div class="pal-no">№ T11 · Red Slime</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

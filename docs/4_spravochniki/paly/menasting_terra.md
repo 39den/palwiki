@@ -1,8 +1,8 @@
-# #99B Менастинг Терра (Menasting Terra)
+# Менастинг Терра
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/99B_DarkScorpion_Ground.webp" alt="Менастинг Терра" loading="lazy" width="360">
-<div class="pal-info" data-pal="DarkScorpion_Ground"><div class="pal-no">№ 99B</div>
+<div class="pal-info" data-pal="DarkScorpion_Ground"><div class="pal-no">№ 99B · Menasting Terra</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Добыча 6">⛏️ Добыча <b>6</b></span></div>

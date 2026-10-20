@@ -1,8 +1,8 @@
-# #75B Серфент Терра (Surfent Terra)
+# Серфент Терра
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/75B_Serpent_Ground.webp" alt="Серфент Терра" loading="lazy" width="360">
-<div class="pal-info" data-pal="Serpent_Ground"><div class="pal-no">№ 75B</div>
+<div class="pal-info" data-pal="Serpent_Ground"><div class="pal-no">№ 75B · Surfent Terra</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span></div>

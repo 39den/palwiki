@@ -1,8 +1,8 @@
-# #132 Криолинкс (Cryolinx)
+# Криолинкс
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/132_WhiteTiger.webp" alt="Криолинкс" loading="lazy" width="360">
-<div class="pal-info" data-pal="WhiteTiger"><div class="pal-no">№ 132</div>
+<div class="pal-info" data-pal="WhiteTiger"><div class="pal-no">№ 132 · Cryolinx</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span><span class="work" title="Охлаждение 4">❄️ Охлаждение <b>4</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>

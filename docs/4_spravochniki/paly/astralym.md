@@ -1,8 +1,8 @@
-# #204 Астралим (Astralym)
+# Астралим
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/204_WorldTreeDragon.webp" alt="Астралим" loading="lazy" width="360">
-<div class="pal-info" data-pal="WorldTreeDragon"><div class="pal-no">№ 204</div>
+<div class="pal-info" data-pal="WorldTreeDragon"><div class="pal-no">№ 204 · Astralym</div>
 <div class="chips"></div>
 <div class="weak">Слабость: </div>
 <div class="works"></div>

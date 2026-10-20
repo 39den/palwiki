@@ -1,8 +1,8 @@
-# #105 Молдрон (Moldron)
+# Молдрон
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/105_VolcanoDragon.webp" alt="Молдрон" loading="lazy" width="360">
-<div class="pal-info" data-pal="VolcanoDragon"><div class="pal-no">№ 105</div>
+<div class="pal-info" data-pal="VolcanoDragon"><div class="pal-no">№ 105 · Moldron</div>
 <div class="chips"><span class="el el-fire">Огонь</span><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span></div>

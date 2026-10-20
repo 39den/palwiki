@@ -1,8 +1,8 @@
-# #84 Диноссум (Dinossom)
+# Диноссум
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/84_FlowerDinosaur.webp" alt="Диноссум" loading="lazy" width="360">
-<div class="pal-info" data-pal="FlowerDinosaur"><div class="pal-no">№ 84</div>
+<div class="pal-info" data-pal="FlowerDinosaur"><div class="pal-no">№ 84 · Dinossom</div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-dragon">Дракон</span></div>
 <div class="weak">Слабость: <span class="el el-ice">Лёд</span><span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>

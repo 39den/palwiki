@@ -1,8 +1,8 @@
-# #158 Астегон (Astegon)
+# Астегон
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/158_BlackMetalDragon.webp" alt="Астегон" loading="lazy" width="360">
-<div class="pal-info" data-pal="BlackMetalDragon"><div class="pal-no">№ 158</div>
+<div class="pal-info" data-pal="BlackMetalDragon"><div class="pal-no">№ 158 · Astegon</div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-ice">Лёд</span></div>
 <div class="works"><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Добыча 7">⛏️ Добыча <b>7</b></span></div>

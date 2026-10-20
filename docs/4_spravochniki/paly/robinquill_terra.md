@@ -1,8 +1,8 @@
-# #76B Робинквилл Терра (Robinquill Terra)
+# Робинквилл Терра
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/76B_RobinHood_Ground.webp" alt="Робинквилл Терра" loading="lazy" width="360">
-<div class="pal-info" data-pal="RobinHood_Ground"><div class="pal-no">№ 76B</div>
+<div class="pal-info" data-pal="RobinHood_Ground"><div class="pal-no">№ 76B · Robinquill Terra</div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span><span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span><span class="work" title="Фармацевтика 2">💊 Фармацевтика <b>2</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

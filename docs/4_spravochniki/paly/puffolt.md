@@ -1,8 +1,8 @@
-# #62 Пуффольт (Puffolt)
+# Пуффольт
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/62_ElecPomeranian.webp" alt="Пуффольт" loading="lazy" width="360">
-<div class="pal-info" data-pal="ElecPomeranian"><div class="pal-no">№ 62</div>
+<div class="pal-info" data-pal="ElecPomeranian"><div class="pal-no">№ 62 · Puffolt</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
 <div class="works"><span class="work" title="Генерация энергии 2">⚡ Генерация энергии <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

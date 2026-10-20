@@ -1,8 +1,8 @@
-# #93B Пирин Нокт (Pyrin Noct)
+# Пирин Нокт
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/93B_FireKirin_Dark.webp" alt="Пирин Нокт" loading="lazy" width="360">
-<div class="pal-info" data-pal="FireKirin_Dark"><div class="pal-no">№ 93B</div>
+<div class="pal-info" data-pal="FireKirin_Dark"><div class="pal-no">№ 93B · Pyrin Noct</div>
 <div class="chips"><span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Разжигание огня 4">🔥 Разжигание огня <b>4</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>

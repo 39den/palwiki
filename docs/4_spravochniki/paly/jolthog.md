@@ -1,8 +1,8 @@
-# #15 Джолтхог (Jolthog)
+# Джолтхог
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/15_Hedgehog.webp" alt="Джолтхог" loading="lazy" width="360">
-<div class="pal-info" data-pal="Hedgehog"><div class="pal-no">№ 15</div>
+<div class="pal-info" data-pal="Hedgehog"><div class="pal-no">№ 15 · Jolthog</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
 <div class="works"><span class="work" title="Генерация энергии 1">⚡ Генерация энергии <b>1</b></span></div>

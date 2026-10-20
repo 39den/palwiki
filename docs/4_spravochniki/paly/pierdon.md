@@ -1,8 +1,8 @@
-# #131 Пиродон (Pierdon)
+# Пиродон
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/131_RockBeast.webp" alt="Пиродон" loading="lazy" width="360">
-<div class="pal-info" data-pal="RockBeast"><div class="pal-no">№ 131</div>
+<div class="pal-info" data-pal="RockBeast"><div class="pal-no">№ 131 · Pierdon</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span></div>

@@ -1,8 +1,8 @@
-# #92 Даззи (Dazzi)
+# Даззи
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/92_RaijinDaughter.webp" alt="Даззи" loading="lazy" width="360">
-<div class="pal-info" data-pal="RaijinDaughter"><div class="pal-no">№ 92</div>
+<div class="pal-info" data-pal="RaijinDaughter"><div class="pal-no">№ 92 · Dazzi</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
 <div class="works"><span class="work" title="Генерация энергии 3">⚡ Генерация энергии <b>3</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

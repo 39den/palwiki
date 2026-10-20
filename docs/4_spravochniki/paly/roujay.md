@@ -1,8 +1,8 @@
-# #177 Роуджей (Roujay)
+# Роуджей
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/177_ThiefBird.webp" alt="Роуджей" loading="lazy" width="360">
-<div class="pal-info" data-pal="ThiefBird"><div class="pal-no">№ 177</div>
+<div class="pal-info" data-pal="ThiefBird"><div class="pal-no">№ 177 · Roujay</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>

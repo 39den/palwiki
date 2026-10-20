@@ -1,8 +1,8 @@
-# #195B Бэллануар Либеро (Bellanoir Libero)
+# Бэллануар Либеро
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/195B_NightLady_Dark.webp" alt="Бэллануар Либеро" loading="lazy" width="360">
-<div class="pal-info" data-pal="NightLady_Dark"><div class="pal-no">№ 195B</div>
+<div class="pal-info" data-pal="NightLady_Dark"><div class="pal-no">№ 195B · Bellanoir Libero</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Фармацевтика 7">💊 Фармацевтика <b>7</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>

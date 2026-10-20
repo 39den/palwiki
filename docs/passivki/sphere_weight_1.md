@@ -2,7 +2,7 @@
 
 <div class="psv-hero" markdown="0"><span class="psv r-1 big">Вес сфер +1</span> <span class="rk">Ранг 1 · обычная</span><div class="en">Sphere Weight +1</div></div>
 
-**Что даёт:** CurveType +16%
+**Что даёт:** Сила броска сферы +16%
 
 Полезная пассивка. Одинаковые пассивки на одном пале не складываются.
 

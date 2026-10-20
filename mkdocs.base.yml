@@ -10,9 +10,9 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.png
   font:
-    text: Nunito
+    text: Manrope
     code: JetBrains Mono
-  features: [navigation.path, content.tabs.link,navigation.tabs, navigation.tabs.sticky, navigation.indexes, search.suggest, content.code.copy]
+  features: [navigation.path, content.tabs.link,navigation.tabs, navigation.tabs.sticky, navigation.top, navigation.indexes, search.suggest, content.code.copy]
   palette:
     - scheme: slate
       primary: custom

@@ -1,8 +1,8 @@
-# #T9 Фиолетовый слизень (Purple Slime)
+# Фиолетовый слизень
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/T9_Purple_Slime.webp" alt="Фиолетовый слизень" loading="lazy" width="360">
-<div class="pal-info" data-pal="Purple_Slime"><div class="pal-no">№ T9</div>
+<div class="pal-info" data-pal="Purple_Slime"><div class="pal-no">№ T9 · Purple Slime</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

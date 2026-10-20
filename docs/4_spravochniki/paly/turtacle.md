@@ -1,8 +1,8 @@
-# #37 Туртакл (Turtacle)
+# Туртакл
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/37_TentacleTurtle.webp" alt="Туртакл" loading="lazy" width="360">
-<div class="pal-info" data-pal="TentacleTurtle"><div class="pal-no">№ 37</div>
+<div class="pal-info" data-pal="TentacleTurtle"><div class="pal-no">№ 37 · Turtacle</div>
 <div class="chips"><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Добыча 1">⛏️ Добыча <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

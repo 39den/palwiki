@@ -1,8 +1,8 @@
-# #96B Райберд Крист (Beakon Cryst)
+# Райберд Крист
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/96B_ThunderBird_Ice.webp" alt="Райберд Крист" loading="lazy" width="360">
-<div class="pal-info" data-pal="ThunderBird_Ice"><div class="pal-no">№ 96B</div>
+<div class="pal-info" data-pal="ThunderBird_Ice"><div class="pal-no">№ 96B · Beakon Cryst</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Охлаждение 5">❄️ Охлаждение <b>5</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>

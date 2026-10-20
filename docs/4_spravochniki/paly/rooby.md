@@ -1,8 +1,8 @@
-# #26 Руби (Rooby)
+# Руби
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/26_FlameBambi.webp" alt="Руби" loading="lazy" width="360">
-<div class="pal-info" data-pal="FlameBambi"><div class="pal-no">№ 26</div>
+<div class="pal-info" data-pal="FlameBambi"><div class="pal-no">№ 26 · Rooby</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 1">🔥 Разжигание огня <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>

@@ -1,8 +1,8 @@
-# #196 Зенолорд (Xenolord)
+# Зенолорд
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/196_DarkMechaDragon.webp" alt="Зенолорд" loading="lazy" width="360">
-<div class="pal-info" data-pal="DarkMechaDragon"><div class="pal-no">№ 196</div>
+<div class="pal-info" data-pal="DarkMechaDragon"><div class="pal-no">№ 196 · Xenolord</div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-dragon">Дракон</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-ice">Лёд</span></div>
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span></div>

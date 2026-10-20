@@ -1,8 +1,8 @@
-# #72B Полапап Терра (Polapup Terra)
+# Полапап Терра
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/72B_IceSeal_Ground.webp" alt="Полапап Терра" loading="lazy" width="360">
-<div class="pal-info" data-pal="IceSeal_Ground"><div class="pal-no">№ 72B</div>
+<div class="pal-info" data-pal="IceSeal_Ground"><div class="pal-no">№ 72B · Polapup Terra</div>
 <div class="chips"><span class="el el-ice">Лёд</span><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span><span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span><span class="work" title="Охлаждение 4">❄️ Охлаждение <b>4</b></span></div>

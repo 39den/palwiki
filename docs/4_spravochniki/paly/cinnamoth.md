@@ -1,8 +1,8 @@
-# #61 Синнамос (Cinnamoth)
+# Синнамос
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/61_CuteButterfly.webp" alt="Синнамос" loading="lazy" width="360">
-<div class="pal-info" data-pal="CuteButterfly"><div class="pal-no">№ 61</div>
+<div class="pal-info" data-pal="CuteButterfly"><div class="pal-no">№ 61 · Cinnamoth</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 2">🌱 Посев семян <b>2</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Фармацевтика 2">💊 Фармацевтика <b>2</b></span></div>

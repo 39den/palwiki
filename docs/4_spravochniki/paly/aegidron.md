@@ -1,8 +1,8 @@
-# #184 Аэгидрон (Aegidron)
+# Аэгидрон
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/184_DomeArmorDragon.webp" alt="Аэгидрон" loading="lazy" width="360">
-<div class="pal-info" data-pal="DomeArmorDragon"><div class="pal-no">№ 184</div>
+<div class="pal-info" data-pal="DomeArmorDragon"><div class="pal-no">№ 184 · Aegidron</div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-ice">Лёд</span><span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Добыча 8">⛏️ Добыча <b>8</b></span></div>

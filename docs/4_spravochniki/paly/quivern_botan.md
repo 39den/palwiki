@@ -1,8 +1,8 @@
-# #124B Фэски Ботан (Quivern Botan)
+# Фэски Ботан
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/124B_SkyDragon_Grass.webp" alt="Фэски Ботан" loading="lazy" width="360">
-<div class="pal-info" data-pal="SkyDragon_Grass"><div class="pal-no">№ 124B</div>
+<div class="pal-info" data-pal="SkyDragon_Grass"><div class="pal-no">№ 124B · Quivern Botan</div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-ice">Лёд</span><span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 5">🌱 Посев семян <b>5</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>

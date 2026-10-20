@@ -1,8 +1,8 @@
-# #180 Люмен (Loomen)
+# Люмен
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/180_LanternButler.webp" alt="Люмен" loading="lazy" width="360">
-<div class="pal-info" data-pal="LanternButler"><div class="pal-no">№ 180</div>
+<div class="pal-info" data-pal="LanternButler"><div class="pal-no">№ 180 · Loomen</div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Разжигание огня 4">🔥 Разжигание огня <b>4</b></span><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Фармацевтика 4">💊 Фармацевтика <b>4</b></span></div>

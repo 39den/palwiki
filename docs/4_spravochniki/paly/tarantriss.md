@@ -1,8 +1,8 @@
-# #71 Тарантрисс (Tarantriss)
+# Тарантрисс
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/71_PurpleSpider.webp" alt="Тарантрисс" loading="lazy" width="360">
-<div class="pal-info" data-pal="PurpleSpider"><div class="pal-no">№ 71</div>
+<div class="pal-info" data-pal="PurpleSpider"><div class="pal-no">№ 71 · Tarantriss</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Фармацевтика 2">💊 Фармацевтика <b>2</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

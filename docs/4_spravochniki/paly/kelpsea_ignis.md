@@ -1,8 +1,8 @@
-# #43B Келпси Игнис (Kelpsea Ignis)
+# Келпси Игнис
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/43B_Kelpie_Fire.webp" alt="Келпси Игнис" loading="lazy" width="360">
-<div class="pal-info" data-pal="Kelpie_Fire"><div class="pal-no">№ 43B</div>
+<div class="pal-info" data-pal="Kelpie_Fire"><div class="pal-no">№ 43B · Kelpsea Ignis</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 1">🔥 Разжигание огня <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>

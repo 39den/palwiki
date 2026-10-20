@@ -1,8 +1,8 @@
-# #75 Серфент (Surfent)
+# Серфент
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/75_Serpent.webp" alt="Серфент" loading="lazy" width="360">
-<div class="pal-info" data-pal="Serpent"><div class="pal-no">№ 75</div>
+<div class="pal-info" data-pal="Serpent"><div class="pal-no">№ 75 · Surfent</div>
 <div class="chips"><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 3">💧 Полив <b>3</b></span><span class="work" title="Фермерство 2">🐑 Фермерство <b>2</b></span></div>

@@ -1,8 +1,8 @@
-# #24 Нокс (Nox)
+# Нокс
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/24_NightFox.webp" alt="Нокс" loading="lazy" width="360">
-<div class="pal-info" data-pal="NightFox"><div class="pal-no">№ 24</div>
+<div class="pal-info" data-pal="NightFox"><div class="pal-no">№ 24 · Nox</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span></div>

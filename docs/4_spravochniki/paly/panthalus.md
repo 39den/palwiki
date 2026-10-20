@@ -1,8 +1,8 @@
-# #203 Панталус (Panthalus)
+# Панталус
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/203_KingWhale.webp" alt="Панталус" loading="lazy" width="360">
-<div class="pal-info" data-pal="KingWhale"><div class="pal-no">№ 203</div>
+<div class="pal-info" data-pal="KingWhale"><div class="pal-no">№ 203 · Panthalus</div>
 <div class="chips"><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
 <div class="works"></div>

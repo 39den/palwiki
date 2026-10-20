@@ -1,8 +1,8 @@
-# #5 Камоноске (Fuack)
+# Камоноске
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/5_BluePlatypus.webp" alt="Камоноске" loading="lazy" width="360">
-<div class="pal-info" data-pal="BluePlatypus"><div class="pal-no">№ 5</div>
+<div class="pal-info" data-pal="BluePlatypus"><div class="pal-no">№ 5 · Fuack</div>
 <div class="chips"><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

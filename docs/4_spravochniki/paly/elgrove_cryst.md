@@ -1,8 +1,8 @@
-# #81B Элгрув Крист (Elgrove Cryst)
+# Элгрув Крист
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/81B_GrassMinotaur_Ice.webp" alt="Элгрув Крист" loading="lazy" width="360">
-<div class="pal-info" data-pal="GrassMinotaur_Ice"><div class="pal-no">№ 81B</div>
+<div class="pal-info" data-pal="GrassMinotaur_Ice"><div class="pal-no">№ 81B · Elgrove Cryst</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Охлаждение 5">❄️ Охлаждение <b>5</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

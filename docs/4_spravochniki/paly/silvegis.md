@@ -1,8 +1,8 @@
-# #160 Силвегис (Silvegis)
+# Силвегис
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/160_WhiteShieldDragon.webp" alt="Силвегис" loading="lazy" width="360">
-<div class="pal-info" data-pal="WhiteShieldDragon"><div class="pal-no">№ 160</div>
+<div class="pal-info" data-pal="WhiteShieldDragon"><div class="pal-no">№ 160 · Silvegis</div>
 <div class="chips"><span class="el el-dragon">Дракон</span></div>
 <div class="weak">Слабость: <span class="el el-ice">Лёд</span></div>
 <div class="works"><span class="work" title="Рубка деревьев 6">🪓 Рубка деревьев <b>6</b></span></div>

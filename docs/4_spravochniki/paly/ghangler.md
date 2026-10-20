@@ -1,8 +1,8 @@
-# #97 Ганглер (Ghangler)
+# Ганглер
 
-<div class="pal-hero" markdown="0">
+<div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
 <img class="pal-card" src="../../../img/97_GhostAnglerfish.webp" alt="Ганглер" loading="lazy" width="360">
-<div class="pal-info" data-pal="GhostAnglerfish"><div class="pal-no">№ 97</div>
+<div class="pal-info" data-pal="GhostAnglerfish"><div class="pal-no">№ 97 · Ghangler</div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 5">💧 Полив <b>5</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
