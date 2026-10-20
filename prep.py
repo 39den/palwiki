@@ -600,6 +600,10 @@ if os.path.exists(_ef):
           buffs.append((ef,lab,v,neg))
     _dishes.append(dict(n=nm,b=buffs,f=int(full or 0),d=dur,k=kit))
   _KI={k:i for i,k in enumerate(_KIT)}
+  os.makedirs(D+'/food',exist_ok=True);_FIMG={}
+  for _f in json.load(open(W+'/data/food.json')) if os.path.exists(W+'/data/food.json') else []:
+    _sp='/workspace/palsite/foodimg/'+_f['slug']+'.webp'
+    if os.path.exists(_sp):_sn=re.sub(r'[^A-Za-z0-9_]','_',_f['slug'])+'.webp';shutil.copy(_sp,D+'/food/'+_sn);_FIMG[_f['ru']]=_sn
   def _card(d):
     low=min((_KI.get(k,9) for k in d['k']),default=9)
     bc=''.join(f'<span class="fb fb-{"neg" if ng else ef}">{"🔻" if ng else next((i for e,_,i in _EFX if e==ef),"•")} {esc_h(lb)} <b>{"" if ng else "+"}{v}%</b></span>' for ef,lb,v,ng in d['b'])
@@ -607,7 +611,7 @@ if os.path.exists(_ef):
     st=sum(v*(-1 if ng else 1) for _,_,v,ng in d['b'])
     efs=' '.join(sorted({ef for ef,_,_,ng in d['b'] if not ng}))
     ic=next((i for e,_,i in _EFX if d['b'] and e==d['b'][0][0]),'🍽')
-    return f'<div class="fcard" data-n="{esc_h(d["n"].lower())}" data-e="{efs}" data-s="{st}" data-f="{d["f"]}"><div class="fh"><span class="fic">{ic}</span><b>{esc_h(d["n"])}</b></div><div class="fbs">{bc or "<span class=fk>без баффа</span>"}</div><div class="itiles"><div class="it"><span class="ii">🍖</span><span class="il">Сытость</span><b>{d["f"]}</b></div><div class="it"><span class="ii">⏱</span><span class="il">Длительность</span><b>{esc_h(d["d"] or "—")}</b></div></div><div class="fks">{kc}</div></div>'
+    return f'<div class="fcard" data-n="{esc_h(d["n"].lower())}" data-e="{efs}" data-s="{st}" data-f="{d["f"]}"><div class="fh">{f'<img class="fimg" src="../../food/{_FIMG[d["n"]]}" width="48" height="48" alt="" loading="lazy" decoding="async">' if d["n"] in _FIMG else f'<span class="fic">{ic}</span>'}<b>{esc_h(d["n"])}</b></div><div class="fbs">{bc or "<span class=fk>без баффа</span>"}</div><div class="itiles"><div class="it"><span class="ii">🍖</span><span class="il">Сытость</span><b>{d["f"]}</b></div><div class="it"><span class="ii">⏱</span><span class="il">Длительность</span><b>{esc_h(d["d"] or "—")}</b></div></div><div class="fks">{kc}</div></div>'
   def _best(pred,key):
     c=[d for d in _dishes if pred(d)];c.sort(key=key,reverse=True);return c[:3]
   _cmb=lambda d:sum(v for ef,_,v,ng in d['b'] if ef in('атака','защита') and not ng)
@@ -616,7 +620,7 @@ if os.path.exists(_ef):
   tb='<div class="ftop">'+''.join(f'<div class="ftb"><div class="itg-h">{t}</div>'+''.join(f'<div class="ftr"><b>{esc_h(d["n"])}</b><small>{esc_h(", ".join(("−" if ng else "+")+str(v)+"% "+lb for _,lb,v,ng in d["b"]))}</small></div>' for d in L)+'</div>' for t,L in _top)+'</div>'
   fl='<div class="ffl"><input type="search" class="ffq" placeholder="Найти блюдо…" autocomplete="off"><select class="ffs" aria-label="Сортировка"><option value="s">По силе баффа</option><option value="f">По сытости</option><option value="n">По названию</option></select></div><div class="ffc">'+'<button type="button" class="fc on" data-e="">Все</button>'+''.join(f'<button type="button" class="fc" data-e="{e}">{i} {e.capitalize() if e!="работа" else "Скорость работы"}</button>' for e,_,i in _EFX)+'<span class="gcount ffn"></span></div>'
   rest=_src[_src.find('\n## ',_src.find('- **')):] if '\n## ' in _src[_src.find('- **'):] else ''
-  open(_ef,'w').write('---\nhide: [toc]\n---\n# Еда и баффы\n\n<div class="food" markdown="0"><p class="fnote">ℹ️ Бафф держится указанное время после еды. Сытость — сколько голода закрывает блюдо.</p>'+tb+fl+'<div class="fgrid">'+''.join(_card(d) for d in _dishes)+'</div></div>\n')
+  open(_ef,'w').write('---\nhide: [toc]\n---\n# Еда и баффы\n\n<div class="food" markdown="0"><p class="fnote">ℹ️ Бафф держится указанное время после еды. Сытость — сколько голода закрывает блюдо. <small class="fcred">Иконки: <a href="https://palworld.wiki.gg" rel="noopener">palworld.wiki.gg</a> (CC BY-NC-SA)</small></p>'+tb+fl+'<div class="fgrid">'+''.join(_card(d) for d in _dishes)+'</div></div>\n')
 
 # ---- long 'label: value' bullet runs on guide pages -> card grid ----
 _LVL=re.compile(r'^\s*[-*]\s+(?:\*\*([^*]{1,60})\*\*|([^:*]{1,40})):\s*(\S.*)$')

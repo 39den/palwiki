@@ -67,7 +67,7 @@ function bug(){const art=document.querySelector('article.md-content__inner');if(
  let sl=p.replace(/[^A-Za-z0-9]+/g,'_').replace(/^_|_$/g,'');if(/[^\x00-\x7f]/.test(p))sl=(sl+'_'+h.toString(36));sl=('bug_'+sl).slice(0,64);
  const a=document.createElement('a');a.className='bug-link';a.href='https://t.me/PalGuideBot?start='+sl;a.target='_blank';a.rel='noopener';a.textContent='⚠️ Сообщить об ошибке';art.appendChild(a);}
 document.addEventListener('DOMContentLoaded',()=>{bug();
- if('serviceWorker' in navigator)navigator.serviceWorker.register(B+'sw.js').catch(()=>{});
+ if('serviceWorker' in navigator)navigator.serviceWorker.register(B+'sw.js',{updateViaCache:'none'}).catch(()=>{});
  const need=['gallery','potd','cmp','pwmap'].some(i=>document.getElementById(i));if(!need)return;
  window.PW_data().then(D=>{if(document.getElementById('gallery'))gallery(D);if(document.getElementById('potd'))potd(D);if(document.getElementById('cmp'))compare(D);if(document.getElementById('pwmap'))map(D);});});
 })();
