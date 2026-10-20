@@ -59,6 +59,27 @@ for p in pals:
     'rarity':int(p['rarity'] or 0),'url':url,'img':img,'thumb':thumb or img,'bp':p.get('best_passives',{}),'rank':int(p['breeding'].get('combi_rank') or 0),
     'up':p['breeding'].get('unique_parents'),'psk':ps.get('name',''),'egg':(p.get('habitat') or {}).get('egg','')})
 print('pal headers',n)
+TABMAP=[('Обзор',('Работа','Партнёрск','Чем хорош')),('Атаки',('Атаки',)),('Где живёт',('Где водится',)),('Дроп',('Дроп',)),('Разведение',('Разведение',)),('Пассивки',('Лучшие пассивки','Пассивк'))]
+order=sorted([x for x in SP if x['url']],key=lambda x:(float(re.match(r'\d+',x['no']).group()) if re.match(r'\d+',x['no']) else 999,x['no']))
+for i,x in enumerate(order):
+  path=D+'/'+x['url'].rstrip('/')+'.md';t=open(path).read()
+  m=re.search(r'(?m)^## ',t)
+  if m:
+    head,body=t[:m.start()],t[m.start():]
+    secs=re.split(r'(?m)^## ',body)[1:];tabs={}
+    for sc in secs:
+      ttl,_,txt=sc.partition('\n');name='Обзор'
+      for tn,keys in TABMAP:
+        if any(ttl.startswith(k) for k in keys):name=tn;break
+      tabs.setdefault(name,[]).append('#### '+ttl.strip()+'\n'+txt)
+    out=head
+    for tn,_ in TABMAP:
+      if tn in tabs: out+=f'=== "{tn}"\n\n'+'\n'.join('    '+l if l.strip() else '' for l in '\n'.join(tabs[tn]).split('\n'))+'\n\n'
+    t=out
+  pv,nx=order[i-1] if i else None,order[i+1] if i+1<len(order) else None
+  nav='<div class="pn" markdown="0">'+(f'<a class="card-link" href="../{pv["url"].split("/")[-2]}/">← {pv["ru"]}</a>' if pv else '<span></span>')+(f'<a class="card-link" href="../{nx["url"].split("/")[-2]}/">{nx["ru"]} →</a>' if nx else '')+'</div>'
+  t=t.replace('<div class="pal-info">',f'<div class="pal-info" data-pal="{x["id"]}">',1)+'\n'+nav+'\n'
+  open(path,'w').write(t)
 
 # ---------- clean reader-facing text
 UNV='<span class="unv" title="Ещё перепроверяется">ⓘ</span>'
@@ -144,14 +165,19 @@ for fn in ['faq_extra.json','faq.json']:
 syn=json.load(open(W+'/data/synonyms.json'))
 syn={k:v for k,v in syn.items() if isinstance(v,str)}
 L=json.load(open(W+'/data/locations.json'));MP=[]
+PU={x['ru']:x['url'] for x in SP if x['url']}
+def wt(x,y):return y>735 and -220<x<130
 for a in L.get('alphas',[]):
-  if a.get('xy'):MP.append({'t':'alpha','name':a['pal']+' (альфа)','x':a['xy'][0],'y':a['xy'][1],'info':'ур. '+str(a.get('level',''))+(' · '+a['title'] if a.get('title') else '')})
+  if a.get('xy') and not wt(*a['xy']):MP.append({'t':'alpha','name':a['pal'],'x':a['xy'][0],'y':a['xy'][1],'lvl':a.get('level',''),'info':'Альфа','url':PU.get(a['pal'],'')})
 for a in L.get('fast_travel',[]):
-  if a.get('xy'):MP.append({'t':'travel','name':a['name_en'],'x':a['xy'][0],'y':a['xy'][1],'info':a.get('region','')})
+  if a.get('xy') and a.get('region')!='WIP' and not wt(*a['xy']):MP.append({'t':'travel','name':a['name_en'],'x':a['xy'][0],'y':a['xy'][1],'info':'Телепорт','url':''})
 for a in L.get('towers',[]):
-  if a.get('x') is not None:MP.append({'t':'tower','name':a['name'],'x':a['x'],'y':a['y'],'info':a.get('en','')})
+  if a.get('x') is not None:
+    bu=next((b['url'] for b in SB if b['place']==a['name'] and b['url']),'')
+    bl=next((b['level'] for b in SB if b['place']==a['name']),'')
+    MP.append({'t':'tower','name':a['name'],'x':a['x'],'y':a['y'],'lvl':bl,'info':'Башня','url':bu})
 for a in L.get('sealed_realms',[]):
-  if a.get('xy'):MP.append({'t':'sealed','name':a['name_en'],'x':a['xy'][0],'y':a['xy'][1],'info':a.get('pal','')+' ур. '+str(a.get('level',''))})
+  if a.get('xy') and not wt(*a['xy']):MP.append({'t':'sealed','name':a['name_en'],'x':a['xy'][0],'y':a['xy'][1],'lvl':a.get('level',''),'info':'Запечатанные земли · '+a.get('pal',''),'url':PU.get(a.get('pal',''),'')})
 SI=cj(SI);SB=cj(SB);SPS=cj(SPS);faq=cj(faq);MP=cj(MP)
 json.dump({'map':MP,'pals':SP,'items':SI,'bosses':SB,'passives':SPS,'faq':faq,'syn':syn,'built':datetime.date.today().isoformat()},open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
 shutil.move(A+'/manifest.webmanifest',D+'/manifest.webmanifest');open(D+'/sw.js','w').write(open(A+'/sw.js').read().replace('__BUILD__',datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d%H%M')));os.remove(A+'/sw.js')
@@ -215,20 +241,20 @@ hide: [navigation, toc]
 <h1>Энциклопедия Palworld</h1><p>Всё о Palworld на русском: уровни 0–80, {len(SP)} палов, {len(SI)} предметов, боссы, пассивки, разведение и секреты.</p>
 <div class="smart-box"><input id="home-q" type="search" placeholder="Спроси что угодно: «кто лучше копает», «чем бить Зои», «где взять серу»…" autocomplete="off"></div>
 <div id="home-answer" class="smart-out"></div></div></div>
-<div class="tiles" markdown="0">
+<div class="tiles bento" markdown="0">
 {T('gallery/','🐾','Палы','галерея с фильтрами')}{T('4_spravochniki/bossy/','👑','Боссы','башни, рейды, альфы')}{T('guide/03_prohozhdenie_1_80/','🗺️','Прохождение','с 1 до 80 уровня')}{T('2_mehaniki/passivki/','✨','Пассивки','лучшие наборы')}{T('guide/sekrety/','🤫','Секреты','пасхалки и тайники')}{T('map/','📍','Карта','альфы, башни, телепорты')}{T('4_spravochniki/predmety/','🎒','Предметы','где взять и крафт')}{T('compare/','⚔️','Сравнить','два пала рядом')}{T('https://t.me/PalGuideBot','🤖','Бот @PalGuideBot','спроси в Telegram')}
 </div>
-<div class="potd-wrap" markdown="0"><h2>⭐ Пал дня</h2><div id="potd"></div></div>
+<div class="bento2" markdown="0"><div class="potd-wrap"><h2>⭐ Пал дня</h2><div id="potd"><div class="skel" style="height:170px"></div></div></div><div><h2>🕘 Недавние</h2><div id="recent" class="mini-row"><small>Открой пару палов — они появятся здесь.</small></div><h2>⭐ Избранное</h2><div id="favs" class="mini-row"><small>Нажми ☆ на странице пала.</small></div></div></div>
 ''')
 open(D+'/gallery.md','w').write('''---
 hide: [toc]
 ---
 # 🐾 Галерея палов
 <div id="gal-filters" class="gal-filters" markdown="0"></div>
-<div id="gallery" class="gallery" markdown="0"></div>
+<div id="gallery" class="gallery" markdown="0"><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div></div>
 ''')
 open(D+'/compare.md','w').write('---\nhide: [toc]\n---\n# ⚔️ Сравнение двух палов\n<div id="cmp" markdown="0"></div>\n')
-open(D+'/map.md','w').write('---\nhide: [toc]\nleaflet: true\n---\n# 📍 Интерактивная карта\nСетка в игровых координатах (X, Y как на карте в игре). Включай и выключай слои справа, ищи по названию.\n\n<div class="gal-filters" markdown="0"><input id="mapq" type="search" placeholder="Найти точку: Анубис, Rayne, ..."></div>\n<div id="pwmap" markdown="0"></div>\n\n!!! note "Нет на карте"\n    Статуэтки Лифмунка и входы в подземелья не отмечены: у них нет постоянных координат в открытых текстовых источниках [проверить].\n')
+open(D+'/map.md','w').write('---\nhide: [toc]\nleaflet: true\n---\n# 📍 Карта Палпагоса\n<div class="gal-filters" markdown="0"><input id="mapq" type="search" placeholder="Найти: Анубис, башня, телепорт…"></div>\n<div id="pwmap" markdown="0"></div>\n<p class="map-note">Статуэтки Лифмунка и входы в подземелья меняют место, поэтому их нет на карте. Мировое Древо — отдельная карта.</p>\n')
 open(D+'/bot.md','w').write('''---
 hide: [toc]
 ---
@@ -250,12 +276,14 @@ def sec(d):
   fs.sort(key=lambda f:(not f.endswith('README.md'),int(m.group(1)) if (m:=re.match(r'(\d+)_',os.path.basename(f))) else 99,title(f)))
   return [{title(f):os.path.relpath(f,D)} for f in fs]
 G=lambda *xs:[{n:sec(d)} for d,n in xs if glob.glob(f'{D}/{d}/*.md')]
-nav=[{'Главная':'index.md'},{'Галерея':'gallery.md'},{'Карта':'map.md'},{'Сравнить':'compare.md'},
- {'Мир':[{title(D+'/guide/'+x):'guide/'+x} for x in ('11_mir.md','koordinaty.md','sekrety.md')]+sec('6_mir')+sec('7_server')},
- {'Гайд':(used.update(D+'/guide/'+x for x in ('11_mir.md','koordinaty.md','sekrety.md')) or sec('guide'))+sec('0_nachni_zdes')+sec('1_prohozhdenie')},
- {'Палы':sec('4_spravochniki/paly')},
- {'Справочники':G(('4_spravochniki/predmety','Предметы'))+sec('4_spravochniki')},
- {'Механики':sec('2_mehaniki')+sec('3_bazy')+sec('5_lut_i_farm')},
+mir=[{title(D+'/guide/'+x):'guide/'+x} for x in ('11_mir.md','koordinaty.md','sekrety.md')];used.update(D+'/guide/'+x for x in ('11_mir.md','koordinaty.md','sekrety.md'))
+pal_pages=sec('4_spravochniki/paly')
+spr=G(('4_spravochniki/predmety','Предметы'))+sec('4_spravochniki')
+nav=[{'Главная':'index.md'},
+ {'Палы':[{'Галерея':'gallery.md'},{'По стихиям и работе':'4_spravochniki/paly_po_stihiyam_i_rabote.md'},{'Сравнить двух':'compare.md'},{'Все палы по алфавиту':pal_pages}]},
+ {'Гайд':sec('guide')+sec('0_nachni_zdes')+sec('1_prohozhdenie')},
+ {'Справочник':spr+sec('2_mehaniki')+sec('3_bazy')+sec('5_lut_i_farm')},
+ {'Мир и карта':[{'Интерактивная карта':'map.md'}]+mir+sec('6_mir')+sec('7_server')},
  {'FAQ':sec('9_faq')+sec('8_slovar')+sec('10_bagi')},
  {'Бот':'bot.md'}]
 keep=used|{D+'/index.md',D+'/gallery.md',D+'/bot.md',D+'/compare.md',D+'/map.md'}
