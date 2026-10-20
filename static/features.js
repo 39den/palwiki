@@ -101,7 +101,7 @@ function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(
   <div class="bld-row"><span class="lbl">Уровень <b>${lv}</b></span><input type="range" min="1" max="80" value="${lv}" id="blv"></div>
   <div class="bld-row"><span class="lbl">Таланты (IV) <b>+${iv}%</b></span><input type="range" min="0" max="30" step="3" value="${iv}" id="biv"></div>
   <div class="bstats"><div><span>❤️ HP</span><b>${s.hp}</b>${d(s.hp,b0.hp)}</div><div><span>⚔️ Атака</span><b>${s.atk}</b>${d(s.atk,b0.atk)}</div><div><span>🛡 Защита</span><b>${s.def}</b>${d(s.def,b0.def)}</div><div><span>⚙️ Работа</span><b>${s.ws}%</b>${d(s.ws,b0.ws)}</div></div>
-  <div class="bld-row"><span class="lbl">Пассивки (${ps.length}/4)</span><div class="tags">${ps.map((j,k)=>`<span class="psv ${rc(P[j].rank)}">${esc(P[j].name)} <button class="rmp" data-k="${k}" aria-label="Убрать">×</button></span>`).join('')}${ps.length<4?'<input id="bq" type="search" placeholder="+ добавить пассивку…" autocomplete="off">':''}</div><div id="bqo" class="tags"></div></div>
+  <div class="bld-row"><span class="lbl">Пассивки (${ps.length}/4)</span><div class="tags">${ps.map((j,k)=>`<span class="psv ${rc(P[j].rank)}">${esc(P[j].name)} <button class="rmp" data-k="${k}" aria-label="Убрать">×</button></span>`).join('')}${ps.length<4?'<button type="button" id="bq" class="addp">+ добавить пассивку</button>':''}</div></div>
   ${roles.length?`<div class="bld-row"><span class="lbl">Готовая сборка</span>${roles.map(r=>`<button class="fav" data-role="${r}">${r=='боец'?'⚔️':r=='рабочий'?'🛠':'🐎'} ${r}</button>`).join('')}</div>`:''}
   ${other.length?`<div class="bnote"><b>Другие эффекты:</b><ul>${other.map(q=>`<li>${esc(q.name)}: ${esc(q.desc)}</li>`).join('')}</ul></div>`:''}
   ${ps.length?`<div class="bnote"><b>Как получить эти пассивки:</b><ul>${ps.map(j=>{const q=P[j];const w=[];if(q.nat&&q.nat.length)w.push('с рождения у '+q.nat.slice(0,4).join(', '));if(q.breed)w.push('разведением от родителя с ней');if(q.how=='gold')w.push('операционный стол — '+String(q.gold).replace(/\B(?=(\d{3})+$)/g,' ')+' золота');if(q.how=='disposable')w.push('имплант из Древних реликвий');return `<li><b>${esc(q.name)}</b>: ${w.join('; ')||'—'}</li>`;}).join('')}</ul></div>`:''}
@@ -113,13 +113,26 @@ function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(
   box.querySelector('#blv').oninput=e=>{lv=+e.target.value;draw();box.querySelector('#blv').focus();};box.querySelector('#biv').oninput=e=>{iv=+e.target.value;draw();box.querySelector('#biv').focus();};
   box.querySelectorAll('.rmp').forEach(b=>b.onclick=()=>{ps.splice(+b.dataset.k,1);draw();});
   box.querySelectorAll('[data-role]').forEach(b=>b.onclick=()=>{ps=(p.bp[b.dataset.role]||[]).map(n=>(PL.find(q=>q.name==n)||{}).i).filter(j=>j!=null).slice(0,4);draw();});
-  const q=box.querySelector('#bq');if(q){q.oninput=()=>{const v=window.PW_core.norm(q.value);const o=box.querySelector('#bqo');if(v.length<2){o.innerHTML='';return;}
+  const q=box.querySelector('#bq');if(q)q.onclick=()=>picker(p,P,PL,ps,j=>{if(ps.length<4&&!ps.includes(j))ps.push(j);draw();});
    const hit=PL.filter(x=>window.PW_core.norm(x.name+' '+x.en).includes(v)).slice(0,10);o.innerHTML=hit.map(x=>{const dup=ps.includes(x.i);return `<button class="psv ${rc(x.rank)}" data-add="${x.i}" ${dup?'disabled title="Уже выбрана"':''}>${esc(x.name)}</button>`;}).join('')||'<small>Не найдено</small>';
    o.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>{if(ps.length<4&&!ps.includes(+b.dataset.add))ps.push(+b.dataset.add);draw();setTimeout(()=>{const n=box.querySelector('#bq');if(n)n.focus();},0);});};}
   box.querySelector('#bsave').onclick=()=>{const S=LS.get('pw_builds',[]);S.unshift({p:p.i,st,lv,iv,ps,code:code()});LS.set('pw_builds',S.slice(0,30));box.querySelector('#bsave').textContent='✅ Сохранено в «Мои списки»';};
   box.querySelector('#bshare').onclick=async()=>{const u=location.origin+location.pathname+'#b='+code();try{if(navigator.share)await navigator.share({title:p.ru+' — сборка',url:u});else{await navigator.clipboard.writeText(u);box.querySelector('#bshare').textContent='✅ Скопировано';}}catch(e){}};
   history.replaceState(null,'','#b='+code());};
  draw();}
+function picker(p,P,PL,ps,add){document.querySelectorAll('.pk,.sheet-bg').forEach(e=>e.remove());const rc=r=>r<0?'r-neg':'r-'+Math.min(5,r||1);
+ const bg=document.createElement('div');bg.className='sheet-bg';const sh=document.createElement('div');sh.className='pk';sh.setAttribute('role','dialog');
+ const close=()=>{bg.remove();sh.remove();document.body.style.overflow='';};bg.onclick=close;
+ const item=q=>{const dis=ps.includes(q.i);return `<button type="button" class="pki" data-j="${q.i}" ${dis?'disabled':''}><span class="psv ${rc(q.rank)}">${esc(q.name)}</span><small>${esc(dis?'уже выбрана':(q.desc||'').slice(0,90))}</small></button>`;};
+ const RI={'боец':'⚔️','рабочий':'🛠','ездовой':'🐎'};const all=PL.slice().sort((a,b)=>(b.rank||0)-(a.rank||0)||a.name.localeCompare(b.name,'ru'));
+ const body=v=>{const n=window.PW_core.norm(v);if(n)return all.filter(q=>window.PW_core.norm(q.name+' '+q.en+' '+q.desc).includes(n)).map(item).join('')||'<p>Не найдено</p>';
+  const rec=Object.entries(p.bp||{}).map(([r,v])=>{const qs=v.map(nm=>PL.find(q=>q.name==nm)).filter(Boolean);return qs.length?`<div class="pkh">${RI[r]||'⭐'} ${esc(r)}</div>`+qs.map(item).join(''):'';}).join('');
+  return (rec?`<div class="pkt">Рекомендуемые для ${esc(p.ru)}</div>`+rec:'')+'<div class="pkt">Все пассивки</div>'+all.map(item).join('');};
+ sh.innerHTML=`<div class="pkg"></div><div class="pkhd"><input type="search" placeholder="Найти пассивку…" autocomplete="off" enterkeyhint="search"><button type="button" class="x" aria-label="Закрыть">×</button></div><div class="pkl">${body('')}</div>`;
+ document.body.append(bg,sh);document.body.style.overflow='hidden';sh.querySelector('.x').onclick=close;
+ const L=sh.querySelector('.pkl');sh.querySelector('input').oninput=e=>{L.innerHTML=body(e.target.value);L.scrollTop=0;};
+ L.addEventListener('click',e=>{const t=e.target.closest('.pki');if(!t||t.disabled)return;close();add(+t.dataset.j);});
+ let y0=null;sh.querySelector('.pkg').addEventListener('touchstart',e=>y0=e.touches[0].clientY,{passive:true});sh.querySelector('.pkg').addEventListener('touchend',e=>{if(y0!=null&&e.changedTouches[0].clientY-y0>60)close();y0=null;});}
 function cmpRoles(p,ps,P){const roles=Object.entries(p.bp||{});if(!roles.length||!ps.length)return '';const mine=new Set(ps.map(j=>P[j].name));
  return `<div class="bnote"><b>Сравнение с типовыми сборками:</b><ul>${roles.map(([r,v])=>{const hit=v.filter(n=>mine.has(n)).length;return `<li>${r}: совпадает ${hit} из ${v.length}${hit<v.length?' — не хватает: '+v.filter(n=>!mine.has(n)).join(', '):' ✅'}</li>`;}).join('')}</ul></div>`;}
 function vsBoss(p,s,D){const bs=D.bosses.filter(b=>b.weak&&b.weak.length&&b.level);if(!bs.length)return '';const byRu=Object.fromEntries(D.pals.map(x=>[x.ru,x]));
