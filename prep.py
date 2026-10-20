@@ -156,6 +156,30 @@ SI=cj(SI);SB=cj(SB);SPS=cj(SPS);faq=cj(faq);MP=cj(MP)
 json.dump({'map':MP,'pals':SP,'items':SI,'bosses':SB,'passives':SPS,'faq':faq,'syn':syn,'built':datetime.date.today().isoformat()},open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
 shutil.move(A+'/manifest.webmanifest',D+'/manifest.webmanifest');open(D+'/sw.js','w').write(open(A+'/sw.js').read().replace('__BUILD__',datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d%H%M')));os.remove(A+'/sw.js')
 print('map points',len(MP));print('search_data KB',os.path.getsize(A+'/search_data.json')//1024)
+# ---------- grouped pal page
+open(D+'/4_spravochniki/paly_po_stihiyam_i_rabote.md','w').write('---\nhide: [toc]\n---\n# Палы по стихиям и по работе\n<div id="bygroup" markdown="0"></div>\n')
+# ---------- walls of comma lists -> chips
+PN={p['ru'].lower():p for p in SP if p['url']}
+def chips(line):
+  m=re.match(r'^(\s*(?:[-*]\s+)?(?:\*\*[^*]+\*\*|[^:|]{1,60}):\s*)(.+)$',line)
+  if not m or '|' in line:return line
+  parts=[x.strip() for x in re.split(r',\s*',m.group(2)) if x.strip()]
+  if len(parts)<=10 or any(len(x)>60 for x in parts):return line
+  def one(x):
+    base=re.sub(r'\s*\(.*?\)|\s*[—–-]\s*ур.*$','',x).strip().rstrip('.').lower()
+    pp=PN.get(base)
+    return f'<a class="tag" href="{{R}}{pp["url"]}">{x.rstrip(".")}</a>' if pp else f'<span class="tag">{x.rstrip(".")}</span>'
+  return m.group(1).rstrip()+'\n\n<div class="tags" markdown="0">'+''.join(one(x) for x in parts)+'</div>\n'
+NW=0
+for f in glob.glob(D+'/**/*.md',recursive=True):
+  t=open(f).read();R='../'*(os.path.relpath(f,D).count('/')+ (0 if f.endswith(('index.md','README.md')) else 1))
+  out=[]
+  for l in t.split('\n'):
+    c=chips(l)
+    if c!=l:NW+=1
+    out.append(c.replace('{R}',R))
+  open(f,'w').write('\n'.join(out))
+print('comma walls -> chips',NW)
 # ---------- dedupe: keep guide/ version when same H1 exists elsewhere
 def h1(f):
   for l in open(f):
