@@ -10,7 +10,7 @@ for f in sorted(glob.glob(D+'/**/*.md',recursive=True)):
     if not re.match(r'\s*([-*#|]|\d+\.)',l) and len(l.strip())>400:longp+=1
   lvr=lvm=0
   for l in t.split('\n'):
-    if re.match(r'\s*[-*]\s+(\*\*[^*]{1,60}\*\*|[^:]{1,40}):\s*\S',l):lvr+=1;lvm=max(lvm,lvr)
+    if re.match(r'^\s*[-*]\s+(?:\*\*([^*]{1,60})\*\*|([^:*]{1,40})):\s*(\S.*)$',l):lvr+=1;lvm=max(lvm,lvr)
     elif l.strip():lvr=0
   if lvm>8:
     R.append((rel,'bullet-label-value',lvm))

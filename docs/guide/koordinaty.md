@@ -79,25 +79,7 @@
 
 ## Запечатанные земли<span class="unv" title="Ещё перепроверяется">ⓘ</span>
 
-- Sealed Realm of the Frozen Wings: Пенкинг, ур. 15 — 113, -353
-- Sealed Realm of the Swordmaster: Арсокс, ур. 15 — -117, -490
-- Sealed Realm of the Invincible: Фоксайкл, ур. 15 — 242, -332
-- Sealed Realm of the ???: Фокспаркс Крист, ур. 15 — -411, -54
-- Sealed Realm of the ???: Блейзхаул, ур. 30 — -256, -131
-- Sealed Realm of Spirits: Ваэлет, ур. 27 — -19, -264
-- Sealed Realm of the ???: Виксен, ур. 28 — 160, -220
-- Sealed Realm of the ???: Буси, ур. 25 — -200, -344
-- Sealed Realm of the ???: Каприти Нокт, ур. 23 — -147, -660
-- Sealed Realm of the Swift: Вердаш, ур. 35 — 290, 10
-- Sealed Realm of the Mystic: Лунарис, ур. 35 — 129, -50
-- Sealed Realm of the Pristine: Сибеликс, ур. 40 — 250, 70
-- Sealed Realm of Terraria: Глаз Ктулху, ур. 45 — -422, -795
-- Sealed Realm of the Little Hero: Смоки, ур. 60 — -879, -1467
-- Sealed Realm of the Indigo: Прунелия, ур. 63 — -1355, -968
-- Sealed Realm of the Soul: Найтмери, ур. 60 — -923, -1014
-- Sealed Realm of the Glacial Core: Нептилиус, ур. 60 — 139, 651
-- Sealed Realm of the Invincible/Sorceress: Катресс, ур. 23 — 242, -332
-- Sealed Realm of the Black Pegasus: Фросталлион Нокт, ур. 60 — -1082, -1320
+<div class="lvgrid" markdown="0"><div class="lvc"><b>Sealed Realm of the Frozen Wings</b><span>Пенкинг, ур. 15 — 113, -353</span></div><div class="lvc"><b>Sealed Realm of the Swordmaster</b><span>Арсокс, ур. 15 — -117, -490</span></div><div class="lvc"><b>Sealed Realm of the Invincible</b><span>Фоксайкл, ур. 15 — 242, -332</span></div><div class="lvc"><b>Sealed Realm of the ???</b><span>Фокспаркс Крист, ур. 15 — -411, -54</span></div><div class="lvc"><b>Sealed Realm of the ???</b><span>Блейзхаул, ур. 30 — -256, -131</span></div><div class="lvc"><b>Sealed Realm of Spirits</b><span>Ваэлет, ур. 27 — -19, -264</span></div><div class="lvc"><b>Sealed Realm of the ???</b><span>Виксен, ур. 28 — 160, -220</span></div><div class="lvc"><b>Sealed Realm of the ???</b><span>Буси, ур. 25 — -200, -344</span></div><div class="lvc"><b>Sealed Realm of the ???</b><span>Каприти Нокт, ур. 23 — -147, -660</span></div><div class="lvc"><b>Sealed Realm of the Swift</b><span>Вердаш, ур. 35 — 290, 10</span></div><div class="lvc"><b>Sealed Realm of the Mystic</b><span>Лунарис, ур. 35 — 129, -50</span></div><div class="lvc"><b>Sealed Realm of the Pristine</b><span>Сибеликс, ур. 40 — 250, 70</span></div><div class="lvc"><b>Sealed Realm of Terraria</b><span>Глаз Ктулху, ур. 45 — -422, -795</span></div><div class="lvc"><b>Sealed Realm of the Little Hero</b><span>Смоки, ур. 60 — -879, -1467</span></div><div class="lvc"><b>Sealed Realm of the Indigo</b><span>Прунелия, ур. 63 — -1355, -968</span></div><div class="lvc"><b>Sealed Realm of the Soul</b><span>Найтмери, ур. 60 — -923, -1014</span></div><div class="lvc"><b>Sealed Realm of the Glacial Core</b><span>Нептилиус, ур. 60 — 139, 651</span></div><div class="lvc"><b>Sealed Realm of the Invincible/Sorceress</b><span>Катресс, ур. 23 — 242, -332</span></div><div class="lvc"><b>Sealed Realm of the Black Pegasus</b><span>Фросталлион Нокт, ур. 60 — -1082, -1320</span></div></div>
 
 ## Статуи Великого орла (быстрое перемещение)<span class="unv" title="Ещё перепроверяется">ⓘ</span>
 
@@ -166,22 +148,7 @@
 - Eternal Pyre Tower Entrance (Mount Obsidian): -595, -531
 - Phantom Isle (Phantom Isle): -887, -186
 - Sealed Realm of Terraria (Isle of Eternal Summer): -422, -795
-- Scouring Islet (Scouring Islet): 447, -713
-- Sand Dunes Entrance (Desiccated Dunes): 282, 160
-- Sandbar of Solitude (Desiccated Dunes): 529, 40
-- Thirst's End (Desiccated Dunes): 684, 113
-- Desert Backbone (Desiccated Dunes): 541, 187
-- Desiccated Coast (Desiccated Dunes): 694, 301
-- Windwatch Outlook (Desiccated Dunes): 199, 296
-- Duneshelter (Desiccated Dunes): 356, 347
-- Deep Sand Dunes (Desiccated Dunes): 528, 526
-- Frozen Dune Cape (Desiccated Dunes): 254, 544
-- Seaward Passage (Desiccated Dunes): 322, 659
-- The Furthest Flats (Desiccated Dunes): 473, 686
-- PIDF Tower Entrance (Desiccated Dunes): 542, 335
-- Arena Entrance (Desiccated Dunes): 629, 15
-- Oasis Isle (Oasis Isle): 885, 196
-- Flamepulse Islet (Flamepulse Islet): 761, 408
+<div class="lvgrid" markdown="0"><div class="lvc"><b>Scouring Islet (Scouring Islet)</b><span>447, -713</span></div><div class="lvc"><b>Sand Dunes Entrance (Desiccated Dunes)</b><span>282, 160</span></div><div class="lvc"><b>Sandbar of Solitude (Desiccated Dunes)</b><span>529, 40</span></div><div class="lvc"><b>Thirst's End (Desiccated Dunes)</b><span>684, 113</span></div><div class="lvc"><b>Desert Backbone (Desiccated Dunes)</b><span>541, 187</span></div><div class="lvc"><b>Desiccated Coast (Desiccated Dunes)</b><span>694, 301</span></div><div class="lvc"><b>Windwatch Outlook (Desiccated Dunes)</b><span>199, 296</span></div><div class="lvc"><b>Duneshelter (Desiccated Dunes)</b><span>356, 347</span></div><div class="lvc"><b>Deep Sand Dunes (Desiccated Dunes)</b><span>528, 526</span></div><div class="lvc"><b>Frozen Dune Cape (Desiccated Dunes)</b><span>254, 544</span></div><div class="lvc"><b>Seaward Passage (Desiccated Dunes)</b><span>322, 659</span></div><div class="lvc"><b>The Furthest Flats (Desiccated Dunes)</b><span>473, 686</span></div><div class="lvc"><b>PIDF Tower Entrance (Desiccated Dunes)</b><span>542, 335</span></div><div class="lvc"><b>Arena Entrance (Desiccated Dunes)</b><span>629, 15</span></div><div class="lvc"><b>Oasis Isle (Oasis Isle)</b><span>885, 196</span></div><div class="lvc"><b>Flamepulse Islet (Flamepulse Islet)</b><span>761, 408</span></div></div>
 - Cold Shore (Foot of the Astral Mountains): -43, 11
 - No Man's Trail (Foot of the Astral Mountains): -36, 95
 - Icy Weasel Hill (Foot of the Astral Mountains): 4, 184
@@ -235,21 +202,7 @@
 - The Azure Tapestry (Sunreach): -479, -1382
 - Azure Covenant Tower Entrance (Sunreach): -433, -1424
 - Foot of the World Tree (Foot of the World Tree): -839, 689
-- The Verdant Rootpath (WIP): 103, 772
-- Whimsical Wisteria Grove (WIP): 60, 781
-- Alluvion Lakefront (WIP): 40, 757
-- Spore Cloister (WIP): -19, 750
-- Shinespore Root (WIP): -61, 693
-- Dusty Ravine (WIP): 67, 816
-- Corroded Hollow (WIP): 36, 838
-- Rotmist Root (WIP): 28, 859
-- Remnant Riverside (WIP): 16, 833
-- Gilded City Ruins (WIP): -18, 777
-- Lacrymal Shoal (WIP): -58, 746
-- Boreal Summit (WIP): -25, 840
-- Abandoned Laboratory (WIP): -71, 854
-- Forbidden Laboratory (WIP): -83, 854
-- Within the Seal (WIP): -76, 764
+<div class="lvgrid" markdown="0"><div class="lvc"><b>The Verdant Rootpath (WIP)</b><span>103, 772</span></div><div class="lvc"><b>Whimsical Wisteria Grove (WIP)</b><span>60, 781</span></div><div class="lvc"><b>Alluvion Lakefront (WIP)</b><span>40, 757</span></div><div class="lvc"><b>Spore Cloister (WIP)</b><span>-19, 750</span></div><div class="lvc"><b>Shinespore Root (WIP)</b><span>-61, 693</span></div><div class="lvc"><b>Dusty Ravine (WIP)</b><span>67, 816</span></div><div class="lvc"><b>Corroded Hollow (WIP)</b><span>36, 838</span></div><div class="lvc"><b>Rotmist Root (WIP)</b><span>28, 859</span></div><div class="lvc"><b>Remnant Riverside (WIP)</b><span>16, 833</span></div><div class="lvc"><b>Gilded City Ruins (WIP)</b><span>-18, 777</span></div><div class="lvc"><b>Lacrymal Shoal (WIP)</b><span>-58, 746</span></div><div class="lvc"><b>Boreal Summit (WIP)</b><span>-25, 840</span></div><div class="lvc"><b>Abandoned Laboratory (WIP)</b><span>-71, 854</span></div><div class="lvc"><b>Forbidden Laboratory (WIP)</b><span>-83, 854</span></div><div class="lvc"><b>Within the Seal (WIP)</b><span>-76, 764</span></div></div>
 
 ## Подземелья
 

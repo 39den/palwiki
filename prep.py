@@ -602,7 +602,7 @@ if os.path.exists(_ef):
   _KI={k:i for i,k in enumerate(_KIT)}
   def _card(d):
     low=min((_KI.get(k,9) for k in d['k']),default=9)
-    bc=''.join(f'<span class="fb fb-{"neg" if ng else ef}">{"🔻" if ng else next((i for e,_,i in _EFX if e==ef),"•")} {esc_h(lb)} <b>{"−" if ng else "+"}{v}%</b></span>' for ef,lb,v,ng in d['b'])
+    bc=''.join(f'<span class="fb fb-{"neg" if ng else ef}">{"🔻" if ng else next((i for e,_,i in _EFX if e==ef),"•")} {esc_h(lb)} <b>{"" if ng else "+"}{v}%</b></span>' for ef,lb,v,ng in d['b'])
     kc=''.join(f'<span class="fk{" low" if _KI.get(k,9)==low else ""}">{esc_h(k)}</span>' for k in d['k']) or '<span class="fk none">не готовится — только найти</span>'
     st=sum(v*(-1 if ng else 1) for _,_,v,ng in d['b'])
     efs=' '.join(sorted({ef for ef,_,_,ng in d['b'] if not ng}))

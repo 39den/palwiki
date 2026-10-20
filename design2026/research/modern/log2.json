@@ -1,0 +1,70 @@
+[
+ {
+  "site": "nothing",
+  "url": "https://nothing.tech/",
+  "robots": "ok",
+  "title": "Nothing | UK",
+  "fonts": [
+   "Arial",
+   "LatteraMonoLL",
+   "Ndot-Bold",
+   "NType82-Regular",
+   "\"Geist Variable\""
+  ],
+  "h1px": "48px",
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "framer",
+  "url": "https://www.framer.com/",
+  "robots": "ok",
+  "title": "Framer: AI design agent",
+  "fonts": [
+   "sans-serif",
+   "\"Inter Variable\"",
+   "\"GT Walsheim Medium\"",
+   "Inter"
+  ],
+  "h1px": "54px",
+  "video": 4,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "lusion",
+  "url": "https://lusion.co/",
+  "robots": "ok",
+  "title": "Lusion - Award Winning 3D and Interactive Web Studio",
+  "fonts": [
+   "Aeonik"
+  ],
+  "h1px": "36px",
+  "video": 0,
+  "canvas": 3,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "godly",
+  "url": "https://godly.website/",
+  "robots": "robots unreadable",
+  "status_d": "err Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://godly.",
+  "status_m": "err Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://godly."
+ },
+ {
+  "site": "mihoyo_hi3",
+  "url": "https://honkaiimpact3.hoyoverse.com/global/en-us",
+  "robots": "ok",
+  "title": "Honkai Impact 3 Official Site - Fight for All That is Beautiful in the World!",
+  "fonts": [],
+  "h1px": null,
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ }
+]
