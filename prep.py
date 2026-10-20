@@ -386,4 +386,9 @@ for f in glob.glob(D+'/**/*.md',recursive=True):
   if f not in keep: os.remove(f)
 import yaml
 y=yaml.safe_dump({'nav':nav},allow_unicode=True,sort_keys=False)
+import glob as _g
+_HR=re.compile(r'\s*\((?:по внутренн[^)]*|\d+(?:\.\d+)*|v?\d[\d.]*\+?|[A-Za-z][A-Za-z0-9 \x27\u2019:&/.,-]*)\)')
+for _f in _g.glob(D+'/**/*.md',recursive=True):
+  _t0=open(_f).read();_t1=re.sub(r'(?m)^(#{1,6} )(.+)$',lambda m:m.group(1)+_HR.sub('',m.group(2)).rstrip(),_t0)
+  if _t1!=_t0:open(_f,'w').write(_t1)
 import time as _t;_v=str(int(_t.time()));open('/workspace/palsite/mkdocs.yml','w').write(re.sub(r'assets/(\w+)\.(js|css)',lambda m:"'"+m.group(0)+'?v='+_v+"'",open('/workspace/palsite/mkdocs.base.yml').read())+y)
