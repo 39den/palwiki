@@ -1,6 +1,14 @@
 # #127 Якумо (Yakumo)
 
-![Якумо](../../img/127_GuardianDog.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/127_GuardianDog.webp" alt="Якумо" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#127 · Yakumo</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span></div>
+<div class="partner"><b>Рыбак рыбака видит издалека</b> 🐾 выпущен 🐎 верхом</div>
+<div class="stats">❤️ 85 · ⚔️ 85 · 🛡 85</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

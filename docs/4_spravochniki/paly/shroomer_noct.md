@@ -1,6 +1,14 @@
 # #118B Шрумер Нокт (Shroomer Noct)
 
-![Шрумер Нокт](../../img/118B_MushroomDragon_Dark.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/118B_MushroomDragon_Dark.webp" alt="Шрумер Нокт" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#118B · Shroomer Noct</div>
+<div class="chips"><span class="el el-grass">Трава</span><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span></div>
+<div class="partner"><b>Дымящиеся споры</b> 🐎 верхом 🏠 на базе</div>
+<div class="stats">❤️ 110 · ⚔️ 85 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

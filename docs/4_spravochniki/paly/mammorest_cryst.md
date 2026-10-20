@@ -1,6 +1,14 @@
 # #87B Мамморест Крист (Mammorest Cryst)
 
-![Мамморест Крист](../../img/87B_GrassMammoth_Ice.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/87B_GrassMammoth_Ice.webp" alt="Мамморест Крист" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#87B · Mammorest Cryst</div>
+<div class="chips"><span class="el el-ice">Лёд</span><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span><span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Рубка деревьев 5">🪓 Рубка деревьев <b>5</b></span><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span><span class="work" title="Охлаждение 5">❄️ Охлаждение <b>5</b></span></div>
+<div class="partner"><b>Криокрушитель</b> 🐎 верхом</div>
+<div class="stats">❤️ 150 · ⚔️ 85 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

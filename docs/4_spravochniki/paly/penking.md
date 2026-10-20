@@ -1,6 +1,14 @@
 # #18 Пенкинг (Penking)
 
-![Пенкинг](../../img/18_CaptainPenguin.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/18_CaptainPenguin.webp" alt="Пенкинг" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#18 · Penking</div>
+<div class="chips"><span class="el el-water">Вода</span><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Охлаждение 2">❄️ Охлаждение <b>2</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
+<div class="partner"><b>Отважный воин морей</b> 🎒 из команды</div>
+<div class="stats">❤️ 95 · ⚔️ 95 · 🛡 95</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

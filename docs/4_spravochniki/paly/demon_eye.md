@@ -1,6 +1,14 @@
 # #T3 Демонический глаз (Demon Eye)
 
-![Демонический глаз](../../img/T3_Demon_Eye.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/T3_Demon_Eye.webp" alt="Демонический глаз" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#T3 · Demon Eye</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Демоническое зрение</b> 🎒 из команды</div>
+<div class="stats">❤️ 105 · ⚔️ 110 · 🛡 95</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #180 Люмен (Loomen)
 
-![Люмен](../../img/180_LanternButler.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/180_LanternButler.webp" alt="Люмен" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#180 · Loomen</div>
+<div class="chips"><span class="el el-dark">Тьма</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Разжигание огня 4">🔥 Разжигание огня <b>4</b></span><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Фармацевтика 4">💊 Фармацевтика <b>4</b></span></div>
+<div class="partner"><b>Зачарованный фонарь</b> 🎒 из команды</div>
+<div class="stats">❤️ 90 · ⚔️ 100 · 🛡 95</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

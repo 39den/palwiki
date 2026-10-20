@@ -1,0 +1,38 @@
+site_name: Энциклопедия Palworld
+site_url: https://39den.github.io/palwiki/
+site_description: Энциклопедия Palworld на русском — палы, боссы, предметы, пассивки, разведение
+docs_dir: docs
+theme:
+  name: material
+  custom_dir: overrides
+  language: ru
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  font:
+    text: Nunito
+    code: JetBrains Mono
+  features: [navigation.tabs, navigation.tabs.sticky, navigation.top, navigation.indexes, search.suggest, search.highlight, content.code.copy]
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-night, name: Тёмная тема}
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-sunny, name: Светлая тема}
+plugins:
+  - search:
+      lang: [ru, en]
+extra_css: [assets/extra.css]
+extra_javascript: [assets/smart.js, assets/site.js]
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}

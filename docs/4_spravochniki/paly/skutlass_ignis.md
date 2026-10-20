@@ -1,6 +1,14 @@
 # #128B Скатласс Игнис (Skutlass Ignis)
 
-![Скатласс Игнис](../../img/128B_SwordCutlassfish_Fire.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/128B_SwordCutlassfish_Fire.webp" alt="Скатласс Игнис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#128B · Skutlass Ignis</div>
+<div class="chips"><span class="el el-water">Вода</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>
+<div class="partner"><b>Жечь плоть, разрубать кости</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 70 · ⚔️ 105 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

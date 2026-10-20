@@ -1,6 +1,14 @@
 # #17 Пенгуллет (Pengullet)
 
-![Пенгуллет](../../img/17_Penguin.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/17_Penguin.webp" alt="Пенгуллет" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#17 · Pengullet</div>
+<div class="chips"><span class="el el-water">Вода</span><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Охлаждение 1">❄️ Охлаждение <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Пенгуллетомёт</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 70 · ⚔️ 75 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

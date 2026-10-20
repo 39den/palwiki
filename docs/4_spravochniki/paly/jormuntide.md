@@ -1,6 +1,14 @@
 # #121 Йормунтайд (Jormuntide)
 
-![Йормунтайд](../../img/121_Umihebi.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/121_Umihebi.webp" alt="Йормунтайд" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#121 · Jormuntide</div>
+<div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-ice">Лёд</span><span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 7">💧 Полив <b>7</b></span></div>
+<div class="partner"><b>Морской дракон, зовущий бурю</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 130 · ⚔️ 120 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

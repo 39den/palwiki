@@ -1,6 +1,14 @@
 # #92 Даззи (Dazzi)
 
-![Даззи](../../img/92_RaijinDaughter.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/92_RaijinDaughter.webp" alt="Даззи" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#92 · Dazzi</div>
+<div class="chips"><span class="el el-electric">Молния</span></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
+<div class="works"><span class="work" title="Генерация энергии 3">⚡ Генерация энергии <b>3</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Дочь грома</b> 🎒 из команды</div>
+<div class="stats">❤️ 70 · ⚔️ 80 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

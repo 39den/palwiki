@@ -1,6 +1,14 @@
 # #101 Рейндрикс (Reindrix)
 
-![Рейндрикс](../../img/101_IceDeer.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/101_IceDeer.webp" alt="Рейндрикс" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#101 · Reindrix</div>
+<div class="chips"><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Охлаждение 3">❄️ Охлаждение <b>3</b></span></div>
+<div class="partner"><b>Прохладное тело</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 100 · ⚔️ 85 · 🛡 110</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

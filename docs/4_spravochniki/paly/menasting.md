@@ -1,6 +1,14 @@
 # #99 Менастинг (Menasting)
 
-![Менастинг](../../img/99_DarkScorpion.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/99_DarkScorpion.webp" alt="Менастинг" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#99 · Menasting</div>
+<div class="chips"><span class="el el-dark">Тьма</span><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span></div>
+<div class="partner"><b>Стальной скорпион</b> 🎒 из команды</div>
+<div class="stats">❤️ 100 · ⚔️ 100 · 🛡 130</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #80B Хэлзефир Лакс (Helzephyr Lux)
 
-![Хэлзефир Лакс](../../img/80B_HadesBird_Electric.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/80B_HadesBird_Electric.webp" alt="Хэлзефир Лакс" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#80B · Helzephyr Lux</div>
+<div class="chips"><span class="el el-dark">Тьма</span><span class="el el-electric">Молния</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-ground">Земля</span></div>
+<div class="works"><span class="work" title="Генерация энергии 4">⚡ Генерация энергии <b>4</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>
+<div class="partner"><b>Громовые крылья</b> 🐎 верхом</div>
+<div class="stats">❤️ 105 · ⚔️ 125 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #105B Молдрон Крист (Moldron Cryst)
 
-![Молдрон Крист](../../img/105B_VolcanoDragon_Ice.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/105B_VolcanoDragon_Ice.webp" alt="Молдрон Крист" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#105B · Moldron Cryst</div>
+<div class="chips"><span class="el el-ice">Лёд</span><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span><span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span><span class="work" title="Охлаждение 5">❄️ Охлаждение <b>5</b></span></div>
+<div class="partner"><b>Владыка льда</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 110 · ⚔️ 125 · 🛡 120</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

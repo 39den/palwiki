@@ -1,6 +1,14 @@
 # #22 Даэдрим (Daedream)
 
-![Даэдрим](../../img/22_DreamDemon.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/22_DreamDemon.webp" alt="Даэдрим" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#22 · Daedream</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Погоня за мечтой</b> 🎒 из команды</div>
+<div class="stats">❤️ 70 · ⚔️ 75 · 🛡 60</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

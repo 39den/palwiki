@@ -1,6 +1,14 @@
 # #126 Бронебол (Kikit)
 
-![Бронебол](../../img/126_SmallArmadillo.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/126_SmallArmadillo.webp" alt="Бронебол" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#126 · Kikit</div>
+<div class="chips"><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Добыча 1">⛏️ Добыча <b>1</b></span></div>
+<div class="partner"><b>Пляжный катящийся мяч</b> 🎒 из команды</div>
+<div class="stats">❤️ 75 · ⚔️ 70 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

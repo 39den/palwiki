@@ -1,6 +1,14 @@
 # #89B Петаллия Игнис (Petallia Ignis)
 
-![Петаллия Игнис](../../img/89B_FlowerDoll_Fire.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/89B_FlowerDoll_Fire.webp" alt="Петаллия Игнис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#89B · Petallia Ignis</div>
+<div class="chips"><span class="el el-grass">Трава</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Разжигание огня 4">🔥 Разжигание огня <b>4</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Фармацевтика 4">💊 Фармацевтика <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Пыл духа цветов</b> 🎒 из команды 🔘 кнопкой</div>
+<div class="stats">❤️ 95 · ⚔️ 105 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

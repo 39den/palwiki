@@ -1,6 +1,14 @@
 # #123 Дазему (Dazemu)
 
-![Дазему](../../img/123_FeatherOstrich.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/123_FeatherOstrich.webp" alt="Дазему" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#123 · Dazemu</div>
+<div class="chips"><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span></div>
+<div class="partner"><b>Песчаный рывок</b> 🐎 верхом</div>
+<div class="stats">❤️ 95 · ⚔️ 90 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

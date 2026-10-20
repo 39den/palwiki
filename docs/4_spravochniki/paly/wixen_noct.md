@@ -1,6 +1,14 @@
 # #78B Виксен Нокт (Wixen Noct)
 
-![Виксен Нокт](../../img/78B_FoxMage_Dark.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/78B_FoxMage_Dark.webp" alt="Виксен Нокт" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#78B · Wixen Noct</div>
+<div class="chips"><span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Разжигание огня 4">🔥 Разжигание огня <b>4</b></span><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Госпожа тёмная лисица</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 90 · ⚔️ 110 · 🛡 85</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

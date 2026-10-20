@@ -1,6 +1,14 @@
 # #54 Юнивольт (Univolt)
 
-![Юнивольт](../../img/54_Kirin.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/54_Kirin.webp" alt="Юнивольт" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#54 · Univolt</div>
+<div class="chips"><span class="el el-electric">Молния</span></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
+<div class="works"><span class="work" title="Генерация энергии 3">⚡ Генерация энергии <b>3</b></span><span class="work" title="Рубка деревьев 1">🪓 Рубка деревьев <b>1</b></span></div>
+<div class="partner"><b>Молниеносный рывок</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 80 · ⚔️ 105 · 🛡 105</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

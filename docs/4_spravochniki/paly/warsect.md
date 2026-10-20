@@ -1,6 +1,14 @@
 # #113 Ворсект (Warsect)
 
-![Ворсект](../../img/113_HerculesBeetle.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/113_HerculesBeetle.webp" alt="Ворсект" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#113 · Warsect</div>
+<div class="chips"><span class="el el-ground">Земля</span><span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span><span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>
+<div class="partner"><b>Чёрная броня единства</b> 🎒 из команды</div>
+<div class="stats">❤️ 120 · ⚔️ 100 · 🛡 120</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

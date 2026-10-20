@@ -1,6 +1,14 @@
 # #145 Зеноведа (Xenovader)
 
-![Зеноведа](../../img/145_DarkAlien.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/145_DarkAlien.webp" alt="Зеноведа" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#145 · Xenovader</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Неизвестный захватчик</b> 🎒 из команды</div>
+<div class="stats">❤️ 90 · ⚔️ 125 · 🛡 85</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

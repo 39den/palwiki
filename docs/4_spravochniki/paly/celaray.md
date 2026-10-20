@@ -1,6 +1,14 @@
 # #7 Селарай (Celaray)
 
-![Селарай](../../img/7_FlyingManta.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/7_FlyingManta.webp" alt="Селарай" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#7 · Celaray</div>
+<div class="chips"><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Глайдер ласкового ветра</b> 🎒 из команды</div>
+<div class="stats">❤️ 80 · ⚔️ 70 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

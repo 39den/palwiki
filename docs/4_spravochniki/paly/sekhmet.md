@@ -1,6 +1,14 @@
 # #140 Сехмет (Sekhmet)
 
-![Сехмет](../../img/140_Sekhmet.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/140_Sekhmet.webp" alt="Сехмет" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#140 · Sekhmet</div>
+<div class="chips"><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Императрица пустыни</b> 🏠 на базе</div>
+<div class="stats">❤️ 110 · ⚔️ 115 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

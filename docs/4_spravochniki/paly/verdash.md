@@ -1,6 +1,14 @@
 # #152 Вердаш (Verdash)
 
-![Вердаш](../../img/152_GrassRabbitMan.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/152_GrassRabbitMan.webp" alt="Вердаш" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#152 · Verdash</div>
+<div class="chips"><span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 4">🌱 Посев семян <b>4</b></span><span class="work" title="Ручная работа 5">🖐️ Ручная работа <b>5</b></span><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
+<div class="partner"><b>Звёздный акробат равнин</b> 🎒 из команды</div>
+<div class="stats">❤️ 90 · ⚔️ 115 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

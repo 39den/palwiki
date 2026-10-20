@@ -1,6 +1,14 @@
 # #173 Тропикау (Tropicaw)
 
-![Тропикау](../../img/173_RedFlowerBird.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/173_RedFlowerBird.webp" alt="Тропикау" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#173 · Tropicaw</div>
+<div class="chips"><span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 5">🌱 Посев семян <b>5</b></span><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span></div>
+<div class="partner"><b>Танец цветов</b> 🎒 из команды</div>
+<div class="stats">❤️ 85 · ⚔️ 85 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

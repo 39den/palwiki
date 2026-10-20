@@ -1,6 +1,14 @@
 # #91B Инсинерам Нокт (Incineram Noct)
 
-![Инсинерам Нокт](../../img/91B_Baphomet_Dark.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/91B_Baphomet_Dark.webp" alt="Инсинерам Нокт" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#91B · Incineram Noct</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
+<div class="partner"><b>Когтистый охотник тьмы</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 95 · ⚔️ 105 · 🛡 85</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

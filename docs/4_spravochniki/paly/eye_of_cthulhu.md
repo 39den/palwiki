@@ -1,6 +1,14 @@
 # #T5 Глаз Ктулху (Eye of Cthulhu)
 
-![Глаз Ктулху](../../img/T5_Eye_of_Cthulhu.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/T5_Eye_of_Cthulhu.webp" alt="Глаз Ктулху" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#T5 · Eye of Cthulhu</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>
+<div class="partner"><b>Рывок глаза Ктулху</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 110 · ⚔️ 105 · 🛡 95</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

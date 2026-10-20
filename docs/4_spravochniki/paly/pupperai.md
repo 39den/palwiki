@@ -1,6 +1,14 @@
 # #13 Паппирай (Pupperai)
 
-![Паппирай](../../img/13_SamuraiDog.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/13_SamuraiDog.webp" alt="Паппирай" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#13 · Pupperai</div>
+<div class="chips"><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Рубка деревьев 1">🪓 Рубка деревьев <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Старательная поддержка</b> 🎒 из команды</div>
+<div class="stats">❤️ 70 · ⚔️ 80 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

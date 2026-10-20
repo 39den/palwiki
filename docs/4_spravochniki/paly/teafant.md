@@ -1,6 +1,14 @@
 # #11 Тифант (Teafant)
 
-![Тифант](../../img/11_Ganesha.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/11_Ganesha.webp" alt="Тифант" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#11 · Teafant</div>
+<div class="chips"><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span></div>
+<div class="partner"><b>Исцеляющий душ</b> 🎒 из команды</div>
+<div class="stats">❤️ 70 · ⚔️ 60 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #151 Валаска (Whalaska)
 
-![Валаска](../../img/151_IceNarwhal.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/151_IceNarwhal.webp" alt="Валаска" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#151 · Whalaska</div>
+<div class="chips"><span class="el el-ice">Лёд</span><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Полив 5">💧 Полив <b>5</b></span><span class="work" title="Охлаждение 6">❄️ Охлаждение <b>6</b></span></div>
+<div class="partner"><b>Холодный китоход</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 105 · ⚔️ 115 · 🛡 110</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

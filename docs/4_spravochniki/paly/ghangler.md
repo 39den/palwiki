@@ -1,6 +1,14 @@
 # #97 Ганглер (Ghangler)
 
-![Ганглер](../../img/97_GhostAnglerfish.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/97_GhostAnglerfish.webp" alt="Ганглер" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#97 · Ghangler</div>
+<div class="chips"><span class="el el-dark">Тьма</span><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 5">💧 Полив <b>5</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Проводник ночной тьмы</b> 🐎 верхом 🐾 выпущен</div>
+<div class="stats">❤️ 90 · ⚔️ 125 · 🛡 105</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

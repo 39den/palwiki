@@ -1,6 +1,14 @@
 # #137 Блазамут (Blazamut)
 
-![Блазамут](../../img/137_KingBahamut.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/137_KingBahamut.webp" alt="Блазамут" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#137 · Blazamut</div>
+<div class="chips"><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span></div>
+<div class="works"><span class="work" title="Разжигание огня 6">🔥 Разжигание огня <b>6</b></span><span class="work" title="Добыча 7">⛏️ Добыча <b>7</b></span></div>
+<div class="partner"><b>Кайзер магмы</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 100 · ⚔️ 125 · 🛡 120</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

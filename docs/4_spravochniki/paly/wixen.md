@@ -1,6 +1,14 @@
 # #78 Виксен (Wixen)
 
-![Виксен](../../img/78_FoxMage.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/78_FoxMage.webp" alt="Виксен" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#78 · Wixen</div>
+<div class="chips"><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span></div>
+<div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Госпожа лисица</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 90 · ⚔️ 110 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #196 Зенолорд (Xenolord)
 
-![Зенолорд](../../img/196_DarkMechaDragon.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/196_DarkMechaDragon.webp" alt="Зенолорд" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#196 · Xenolord</div>
+<div class="chips"><span class="el el-dark">Тьма</span><span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-ice">Лёд</span></div>
+<div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span></div>
+<div class="partner"><b>Метеоритные крылья</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 130 · ⚔️ 120 · 🛡 120</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

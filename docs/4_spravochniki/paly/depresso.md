@@ -1,6 +1,14 @@
 # #16 Депрессо (Depresso)
 
-![Депрессо](../../img/16_NegativeKoala.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/16_NegativeKoala.webp" alt="Депрессо" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#16 · Depresso</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Добыча 1">⛏️ Добыча <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
+<div class="partner"><b>Доза кофеина</b> 🔘 кнопкой 🏠 на базе</div>
+<div class="stats">❤️ 70 · ⚔️ 70 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

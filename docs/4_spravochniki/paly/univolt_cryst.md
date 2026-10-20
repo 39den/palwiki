@@ -1,6 +1,14 @@
 # #54B Юнивольт Крист (Univolt Cryst)
 
-![Юнивольт Крист](../../img/54B_Kirin_Ice.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/54B_Kirin_Ice.webp" alt="Юнивольт Крист" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#54B · Univolt Cryst</div>
+<div class="chips"><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Охлаждение 6">❄️ Охлаждение <b>6</b></span></div>
+<div class="partner"><b>Буря ледяных лепестков</b> 🐎 верхом</div>
+<div class="stats">❤️ 80 · ⚔️ 105 · 🛡 110</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

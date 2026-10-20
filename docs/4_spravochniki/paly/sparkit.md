@@ -1,6 +1,14 @@
 # #42 Спаркит (Sparkit)
 
-![Спаркит](../../img/42_ElecCat.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/42_ElecCat.webp" alt="Спаркит" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#42 · Sparkit</div>
+<div class="chips"><span class="el el-electric">Молния</span></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
+<div class="works"><span class="work" title="Генерация энергии 1">⚡ Генерация энергии <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
+<div class="partner"><b>Статическое электричество</b> 🎒 из команды 🏠 на базе</div>
+<div class="stats">❤️ 60 · ⚔️ 75 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

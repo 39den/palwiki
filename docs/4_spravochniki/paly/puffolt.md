@@ -1,6 +1,14 @@
 # #62 Пуффольт (Puffolt)
 
-![Пуффольт](../../img/62_ElecPomeranian.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/62_ElecPomeranian.webp" alt="Пуффольт" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#62 · Puffolt</div>
+<div class="chips"><span class="el el-electric">Молния</span></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
+<div class="works"><span class="work" title="Генерация энергии 2">⚡ Генерация энергии <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Искрящийся усилитель</b> 🏠 на базе</div>
+<div class="stats">❤️ 75 · ⚔️ 80 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

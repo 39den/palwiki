@@ -1,6 +1,14 @@
 # #95 Фоксайкл (Foxcicle)
 
-![Фоксайкл](../../img/95_IceFox.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/95_IceFox.webp" alt="Фоксайкл" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#95 · Foxcicle</div>
+<div class="chips"><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Охлаждение 4">❄️ Охлаждение <b>4</b></span><span class="work" title="Фермерство 3">🐑 Фермерство <b>3</b></span></div>
+<div class="partner"><b>Путеводная Аврора</b> 🎒 из команды 🏠 на базе</div>
+<div class="stats">❤️ 90 · ⚔️ 95 · 🛡 105</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

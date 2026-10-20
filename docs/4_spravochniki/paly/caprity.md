@@ -1,6 +1,14 @@
 # #34 Каприти (Caprity)
 
-![Каприти](../../img/34_BerryGoat.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/34_BerryGoat.webp" alt="Каприти" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#34 · Caprity</div>
+<div class="chips"><span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 2">🌱 Посев семян <b>2</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
+<div class="partner"><b>Сбор ягод</b> 🎒 из команды</div>
+<div class="stats">❤️ 100 · ⚔️ 70 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

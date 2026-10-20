@@ -1,3 +1,5 @@
 site/
 *.log
 __pycache__/
+.imgcache/
+shots/

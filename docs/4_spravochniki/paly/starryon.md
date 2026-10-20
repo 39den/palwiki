@@ -1,6 +1,14 @@
 # #130 Старрион (Starryon)
 
-![Старрион](../../img/130_NightBlueHorse.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/130_NightBlueHorse.webp" alt="Старрион" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#130 · Starryon</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span></div>
+<div class="partner"><b>Ночной танцор</b> 🐾 выпущен 🐎 верхом</div>
+<div class="stats">❤️ 110 · ⚔️ 100 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

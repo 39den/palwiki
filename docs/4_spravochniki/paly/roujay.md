@@ -1,6 +1,14 @@
 # #177 Роуджей (Roujay)
 
-![Роуджей](../../img/177_ThiefBird.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/177_ThiefBird.webp" alt="Роуджей" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#177 · Roujay</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>
+<div class="partner"><b>Тёмная чудовищная птица</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 110 · ⚔️ 115 · 🛡 95</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

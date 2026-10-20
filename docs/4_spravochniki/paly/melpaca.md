@@ -1,6 +1,14 @@
 # #20 Мелпака (Melpaca)
 
-![Мелпака](../../img/20_Alpaca.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/20_Alpaca.webp" alt="Мелпака" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#20 · Melpaca</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Фермерство 2">🐑 Фермерство <b>2</b></span></div>
+<div class="partner"><b>Шерсть пака-пака</b> 🎒 из команды 🐎 верхом 🏠 на базе</div>
+<div class="stats">❤️ 90 · ⚔️ 75 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #26 Руби (Rooby)
 
-![Руби](../../img/26_FlameBambi.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/26_FlameBambi.webp" alt="Руби" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#26 · Rooby</div>
+<div class="chips"><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span></div>
+<div class="works"><span class="work" title="Разжигание огня 1">🔥 Разжигание огня <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
+<div class="partner"><b>Маленькие искры</b> 🎒 из команды 🏠 на базе</div>
+<div class="stats">❤️ 75 · ⚔️ 70 · 🛡 75</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

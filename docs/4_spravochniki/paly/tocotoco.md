@@ -1,6 +1,14 @@
 # #53 Токотоко (Tocotoco)
 
-![Токотоко](../../img/53_ColorfulBird.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/53_ColorfulBird.webp" alt="Токотоко" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#53 · Tocotoco</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span></div>
+<div class="partner"><b>Яйцемёт</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 60 · ⚔️ 75 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

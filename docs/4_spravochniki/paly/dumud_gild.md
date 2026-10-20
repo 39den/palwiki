@@ -1,6 +1,14 @@
 # #109B Думад Гилд (Dumud Gild)
 
-![Думад Гилд](../../img/109B_LazyCatfish_Gold.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/109B_LazyCatfish_Gold.webp" alt="Думад Гилд" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#109B · Dumud Gild</div>
+<div class="chips"><span class="el el-ground">Земля</span><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Добыча 2">⛏️ Добыча <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span><span class="work" title="Фермерство 4">🐑 Фермерство <b>4</b></span></div>
+<div class="partner"><b>Золотой урожай</b> 🎒 из команды 🏠 на базе</div>
+<div class="stats">❤️ 105 · ⚔️ 75 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

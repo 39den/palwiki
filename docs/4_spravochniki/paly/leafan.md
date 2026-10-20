@@ -1,6 +1,14 @@
 # #90 Лифан (Leafan)
 
-![Лифан](../../img/90_PandaGirl.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/90_PandaGirl.webp" alt="Лифан" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#90 · Leafan</div>
+<div class="chips"><span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Полная самоотдача</b> 🐾 выпущен</div>
+<div class="stats">❤️ 100 · ⚔️ 115 · 🛡 95</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

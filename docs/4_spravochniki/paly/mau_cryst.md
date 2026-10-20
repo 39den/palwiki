@@ -1,6 +1,14 @@
 # #27B Мау Крист (Mau Cryst)
 
-![Мау Крист](../../img/27B_Bastet_Ice.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/27B_Bastet_Ice.webp" alt="Мау Крист" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#27B · Mau Cryst</div>
+<div class="chips"><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Охлаждение 1">❄️ Охлаждение <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
+<div class="partner"><b>Ледяной сюрприз</b> 🏠 на базе 🐾 выпущен</div>
+<div class="stats">❤️ 70 · ⚔️ 65 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

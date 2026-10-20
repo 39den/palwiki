@@ -1,68 +1,76 @@
 site_name: Энциклопедия Palworld
 site_url: https://39den.github.io/palwiki/
+site_description: Энциклопедия Palworld на русском — палы, боссы, предметы, пассивки, разведение
 docs_dir: docs
 theme:
   name: material
+  custom_dir: overrides
   language: ru
-  features:
-  - navigation.tabs
-  - navigation.sections
-  - navigation.top
-  - search.suggest
-  - search.highlight
-  - navigation.instant
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  font:
+    text: Nunito
+    code: JetBrains Mono
+  features: [navigation.tabs, navigation.tabs.sticky, navigation.top, navigation.indexes, search.suggest, search.highlight, content.code.copy]
   palette:
-  - scheme: default
-    primary: teal
-    toggle:
-      icon: material/weather-night
-      name: Тёмная тема
-  - scheme: slate
-    primary: teal
-    toggle:
-      icon: material/weather-sunny
-      name: Светлая тема
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-night, name: Тёмная тема}
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-sunny, name: Светлая тема}
 plugins:
-- search:
-    lang:
-    - ru
-    - en
+  - search:
+      lang: [ru, en]
+extra_css: [assets/extra.css]
+extra_javascript: [assets/smart.js, assets/site.js]
 markdown_extensions:
-- tables
-- attr_list
-- admonition
-- toc
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
 nav:
 - Главная: index.md
-- Прохождение (гайд):
-  - Баги и проблемы - что делать: guide/15_problemy.md
-  - База - всё о строительстве и работе палов: guide/09_baza.md
-  - Боссы - башни, рейды, альфы, подземелья: guide/10_bossy.md
-  - Влияние патчей (что поменялось и что это значит для тебя): guide/patchi.md
-  - Еда и баффы: guide/eda.md
-  - Как ловить палов: guide/05_lovlya.md
-  - Как сделать пала сильнее (все способы): guide/08_usilenie.md
-  - Координаты (карта): guide/koordinaty.md
-  - Механики для знатоков (цифры и формулы): guide/14_mehaniki.md
-  - Мир - регионы, перемещение, торговцы, рыбалка, экспедиции, нефтевышки: guide/11_mir.md
-  - Партнёрские навыки - как они включаются: guide/partnerskie_navyki.md
-  - Персонаж - уровень, статы, сброс, смерть: guide/04_personazh.md
-  - Прохождение от 0 до 80 уровня (пошагово): guide/03_prohozhdenie_1_80.md
-  - Разведение (Breeding): guide/07_razvedenie.md
-  - Свой сервер и игра с друзьями: guide/12_server.md
-  - Секреты и пасхалки: guide/sekrety.md
-  - Стихии - кто кого бьёт: guide/06_stihii.md
-  - Управление на ПК (клавиши по умолчанию): guide/02_upravlenie.md
-  - Фарм и лут - где брать всё: guide/13_farm.md
-  - Что такое Palworld и с чего начать: guide/01_chto_eto.md
-  - Эндгейм 75–80 - как стать сильнее (бой палами): guide/16_endgame_75_80.md
-- Начни здесь:
-  - Влияние патчей (что поменялось и что это значит для тебя): 0_nachni_zdes/patchi.md
-  - Управление на ПК (клавиши по умолчанию): 0_nachni_zdes/upravlenie.md
-  - Что такое Palworld и с чего начать: 0_nachni_zdes/nachni_zdes.md
-- Прохождение:
-  - Прохождение от 0 до 80 уровня (пошагово): 1_prohozhdenie/prohozhdenie_0_80.md
-  - Эндгейм 75–80 - как стать сильнее (бой палами): 1_prohozhdenie/endgame_75_80.md
+- Галерея: gallery.md
+- Карта: map.md
+- Сравнить: compare.md
+- Гайд:
+  - Начни здесь:
+    - Влияние патчей (что поменялось и что это значит для тебя): 0_nachni_zdes/patchi.md
+    - Управление на ПК (клавиши по умолчанию): 0_nachni_zdes/upravlenie.md
+    - Что такое Palworld и с чего начать: 0_nachni_zdes/nachni_zdes.md
+  - Гайд по темам:
+    - Баги и проблемы - что делать: guide/15_problemy.md
+    - База - всё о строительстве и работе палов: guide/09_baza.md
+    - Боссы - башни, рейды, альфы, подземелья: guide/10_bossy.md
+    - Влияние патчей (что поменялось и что это значит для тебя): guide/patchi.md
+    - Еда и баффы: guide/eda.md
+    - Как ловить палов: guide/05_lovlya.md
+    - Как сделать пала сильнее (все способы): guide/08_usilenie.md
+    - Координаты (карта): guide/koordinaty.md
+    - Механики для знатоков (цифры и формулы): guide/14_mehaniki.md
+    - Мир - регионы, перемещение, торговцы, рыбалка, экспедиции, нефтевышки: guide/11_mir.md
+    - Партнёрские навыки - как они включаются: guide/partnerskie_navyki.md
+    - Персонаж - уровень, статы, сброс, смерть: guide/04_personazh.md
+    - Прохождение от 0 до 80 уровня (пошагово): guide/03_prohozhdenie_1_80.md
+    - Разведение (Breeding): guide/07_razvedenie.md
+    - Свой сервер и игра с друзьями: guide/12_server.md
+    - Секреты и пасхалки: guide/sekrety.md
+    - Стихии - кто кого бьёт: guide/06_stihii.md
+    - Управление на ПК (клавиши по умолчанию): guide/02_upravlenie.md
+    - Фарм и лут - где брать всё: guide/13_farm.md
+    - Что такое Palworld и с чего начать: guide/01_chto_eto.md
+    - Эндгейм 75–80 - как стать сильнее (бой палами): guide/16_endgame_75_80.md
+  - Прохождение:
+    - Прохождение от 0 до 80 уровня (пошагово): 1_prohozhdenie/prohozhdenie_0_80.md
+    - Эндгейм 75–80 - как стать сильнее (бой палами): 1_prohozhdenie/endgame_75_80.md
 - Палы:
   - Все палы (таблица): 4_spravochniki/paly/README.md
   - '#1 Ламболл (Lamball)': 4_spravochniki/paly/lamball.md
@@ -364,117 +372,122 @@ nav:
   - '#T7 Светящаяся летучая мышь (Illuminant Bat)': 4_spravochniki/paly/illuminant_bat.md
   - '#T8 Светящийся слизень (Illuminant Slime)': 4_spravochniki/paly/illuminant_slime.md
   - '#T9 Фиолетовый слизень (Purple Slime)': 4_spravochniki/paly/purple_slime.md
-- Предметы:
-  - Предметы и ресурсы: 4_spravochniki/predmety/README.md
-  - Предметы - Аксессуары: 4_spravochniki/predmety/аксессуары.md
-  - Предметы - Боеприпасы: 4_spravochniki/predmety/боеприпасы.md
-  - Предметы - Глайдеры: 4_spravochniki/predmety/глайдеры.md
-  - Предметы - Ингредиент: 4_spravochniki/predmety/ингредиент.md
-  - Предметы - Ключевые предметы: 4_spravochniki/predmety/ключевые_предметы.md
-  - Предметы - Материалы: 4_spravochniki/predmety/материалы.md
-  - Предметы - Модуль для сферы: 4_spravochniki/predmety/модуль_для_сферы.md
-  - Предметы - Обломки плит: 4_spravochniki/predmety/обломки_плит.md
-  - Предметы - Оружие: 4_spravochniki/predmety/оружие.md
-  - Предметы - Прочее: 4_spravochniki/predmety/прочее.md
-  - Предметы - Расходник: 4_spravochniki/predmety/расходник.md
-  - Предметы - Снаряжение: 4_spravochniki/predmety/снаряжение.md
-  - Предметы - Сферы: 4_spravochniki/predmety/сферы.md
-  - Предметы - Чертёж: 4_spravochniki/predmety/чертёж.md
-- Справочники и боссы:
-  - Боссы - башни, рейды, альфы, подземелья: 4_spravochniki/bossy_obzor.md
-  - Карточки боссов, башен, рейдов и подземелий: 4_spravochniki/bossy.md
-  - Особые комбинации разведения: 4_spravochniki/osobye_kombinacii.md
-  - Палы по стихиям и по работе: 4_spravochniki/paly_po_stihiyam_i_rabote.md
+- Справочники:
+  - Предметы:
+    - Предметы и ресурсы: 4_spravochniki/predmety/README.md
+    - Предметы - Аксессуары: 4_spravochniki/predmety/аксессуары.md
+    - Предметы - Боеприпасы: 4_spravochniki/predmety/боеприпасы.md
+    - Предметы - Глайдеры: 4_spravochniki/predmety/глайдеры.md
+    - Предметы - Ингредиент: 4_spravochniki/predmety/ингредиент.md
+    - Предметы - Ключевые предметы: 4_spravochniki/predmety/ключевые_предметы.md
+    - Предметы - Материалы: 4_spravochniki/predmety/материалы.md
+    - Предметы - Модуль для сферы: 4_spravochniki/predmety/модуль_для_сферы.md
+    - Предметы - Обломки плит: 4_spravochniki/predmety/обломки_плит.md
+    - Предметы - Оружие: 4_spravochniki/predmety/оружие.md
+    - Предметы - Прочее: 4_spravochniki/predmety/прочее.md
+    - Предметы - Расходник: 4_spravochniki/predmety/расходник.md
+    - Предметы - Снаряжение: 4_spravochniki/predmety/снаряжение.md
+    - Предметы - Сферы: 4_spravochniki/predmety/сферы.md
+    - Предметы - Чертёж: 4_spravochniki/predmety/чертёж.md
+  - Боссы и таблицы:
+    - Боссы - башни, рейды, альфы, подземелья: 4_spravochniki/bossy_obzor.md
+    - Карточки боссов, башен, рейдов и подземелий: 4_spravochniki/bossy.md
+    - Особые комбинации разведения: 4_spravochniki/osobye_kombinacii.md
+    - Палы по стихиям и по работе: 4_spravochniki/paly_po_stihiyam_i_rabote.md
+  - Сырые таблицы:
+    - Справочник (точные данные из игры): ref/README.md
+    - Аксессуары: ref/accessory.md
+    - База: ref/base.md
+    - Башни и их боссы: ref/tower.md
+    - Бродячий торговец — товары: ref/wandering_merchant.md
+    - Броня: ref/armor.md
+    - Буйствующие палы: ref/rampaging.md
+    - Виды работы: ref/work_suitability.md
+    - Все активные навыки: ref/active_skills.md
+    - Все альфа-палы (боссы на карте): ref/alpha_pals.md
+    - Все навыки партнёров: ref/partner_skill.md
+    - Все торговцы: ref/merchant.md
+    - Дневники (записки): ref/journals.md
+    - Древние руины: ref/ancient_ruin.md
+    - Души палов: ref/pal_souls.md
+    - Еда: ref/food.md
+    - Ездовые палы: ref/mounts.md
+    - Калькулятор IV (скрытые таланты): ref/iv_calc.md
+    - Ключевые предметы: ref/key_items.md
+    - Конденсация (Капсула с эссенцией): ref/pal_essence_condenser.md
+    - Лагеря врагов: ref/enemy_camp.md
+    - Легендарные предметы и чертежи: ref/legendary.md
+    - Люди (NPC и враги): ref/humans.md
+    - Миссии (квесты): ref/mission.md
+    - Модули сфер: ref/sphere_module.md
+    - Монумент Силы, души и статуи: ref/statue_of_power.md
+    - Мутации: ref/mutation.md
+    - Оборона базы: ref/defenses.md
+    - Операционный стол (смена пассивок): ref/pal_surgery_table.md
+    - Оружие: ref/weapon.md
+    - Палы, увеличивающие вес: ref/weight_increase.md
+    - Палы-бафферы отряда: ref/party_buffs.md
+    - Палы-глайдеры: ref/glider.md
+    - Пастбище свиданий (разведение): ref/breeding_farm.md
+    - Патроны: ref/ammo.md
+    - Плоды навыков: ref/skill_fruit.md
+    - Подземелья: ref/dungeons.md
+    - Подсказки из игры: ref/tips.md
+    - Подъём со дна (Salvage): ref/salvage.md
+    - Постройки: ref/structures.md
+    - Приоритет работы: ref/work_priority.md
+    - Рассудок (SAN): ref/san.md
+    - Расходники: ref/consumable.md
+    - Рейды и налёты на базу: ref/raid.md
+    - Рыбалка - места и улов: ref/fishing.md
+    - Смена стихии атаки: ref/element_swap.md
+    - События (инциденты): ref/incidents.md
+    - Спойлеры: ref/spoiler.md
+    - Статы палов: ref/pal_stats.md
+    - Сферы: ref/sphere.md
+    - Таблицы лута (сундуки, вышки и т.д.): ref/loots.md
+    - Технологии (сырые данные): ref/technologies.md
+    - Торговец арены: ref/arena_merchant.md
+    - Торговец медалями: ref/medal_merchant.md
+    - Торговец наградами (баунти): ref/bounty_merchant.md
+    - Торговец палами: ref/pal_merchant.md
+    - Торговый караван: ref/caravan_merchant.md
+    - Чёрный торговец: ref/black_marketeer.md
+    - Шансы дропа: ref/drop_rate.md
+    - Экспедиции - награды: ref/pal_expedition_station.md
+    - Яйца: ref/eggs.md
 - Механики:
-  - Все активные навыки: 2_mehaniki/aktivki.md
-  - Все пассивки: 2_mehaniki/passivki.md
-  - Где взять пассивку и как её перенести: 2_mehaniki/passivki_gde_vzyat.md
-  - Как ловить палов: 2_mehaniki/lovlya.md
-  - Как сделать пала сильнее (все способы): 2_mehaniki/usilenie_palov.md
-  - Механики для знатоков (цифры и формулы): 2_mehaniki/formuly.md
-  - Партнёрские навыки - как они включаются: 2_mehaniki/partnerskie_navyki.md
-  - Персонаж - уровень, статы, сброс, смерть: 2_mehaniki/personazh_staty.md
-  - Разведение (Breeding): 2_mehaniki/razvedenie.md
-  - Стихии - кто кого бьёт: 2_mehaniki/stihii.md
-  - Технологии по уровням: 2_mehaniki/tehnologii.md
-- Базы:
-  - База - всё о строительстве и работе палов: 3_bazy/bazy.md
-  - Еда и баффы: 3_bazy/eda.md
-- Лут и фарм:
-  - Обратный поиск - где взять предмет X: 5_lut_i_farm/gde_vzyat.md
-  - Таблица дропа всех палов: 5_lut_i_farm/drop_palov.md
-  - Фарм и лут - где брать всё: 5_lut_i_farm/farm.md
-- Мир и секреты:
-  - Координаты (карта): 6_mir/koordinaty.md
-  - Мир - регионы, перемещение, торговцы, рыбалка, экспедиции, нефтевышки: 6_mir/mir.md
-  - Секреты и пасхалки: 6_mir/sekrety.md
-- Сервер:
-  - Свой сервер и игра с друзьями: 7_server/server.md
+  - Механики:
+    - Все активные навыки: 2_mehaniki/aktivki.md
+    - Все пассивки: 2_mehaniki/passivki.md
+    - Где взять пассивку и как её перенести: 2_mehaniki/passivki_gde_vzyat.md
+    - Как ловить палов: 2_mehaniki/lovlya.md
+    - Как сделать пала сильнее (все способы): 2_mehaniki/usilenie_palov.md
+    - Механики для знатоков (цифры и формулы): 2_mehaniki/formuly.md
+    - Партнёрские навыки - как они включаются: 2_mehaniki/partnerskie_navyki.md
+    - Персонаж - уровень, статы, сброс, смерть: 2_mehaniki/personazh_staty.md
+    - Разведение (Breeding): 2_mehaniki/razvedenie.md
+    - Стихии - кто кого бьёт: 2_mehaniki/stihii.md
+    - Технологии по уровням: 2_mehaniki/tehnologii.md
+  - Базы:
+    - База - всё о строительстве и работе палов: 3_bazy/bazy.md
+    - Еда и баффы: 3_bazy/eda.md
+  - Лут и фарм:
+    - Обратный поиск - где взять предмет X: 5_lut_i_farm/gde_vzyat.md
+    - Таблица дропа всех палов: 5_lut_i_farm/drop_palov.md
+    - Фарм и лут - где брать всё: 5_lut_i_farm/farm.md
+- Мир:
+  - Мир и секреты:
+    - Координаты (карта): 6_mir/koordinaty.md
+    - Мир - регионы, перемещение, торговцы, рыбалка, экспедиции, нефтевышки: 6_mir/mir.md
+    - Секреты и пасхалки: 6_mir/sekrety.md
+  - Сервер:
+    - Свой сервер и игра с друзьями: 7_server/server.md
 - FAQ:
-  - FAQ — вопросы и ответы: 9_faq/faq.md
-- Глоссарий:
-  - Словарь терминов и сленга: 8_slovar/slovar.md
-- Баги:
-  - Баги и проблемы - что делать: 10_bagi/bagi.md
-- Сырые таблицы:
-  - Справочник (точные данные из игры): ref/README.md
-  - Аксессуары: ref/accessory.md
-  - База: ref/base.md
-  - Башни и их боссы: ref/tower.md
-  - Бродячий торговец — товары: ref/wandering_merchant.md
-  - Броня: ref/armor.md
-  - Буйствующие палы: ref/rampaging.md
-  - Виды работы: ref/work_suitability.md
-  - Все активные навыки: ref/active_skills.md
-  - Все альфа-палы (боссы на карте): ref/alpha_pals.md
-  - Все навыки партнёров: ref/partner_skill.md
-  - Все торговцы: ref/merchant.md
-  - Дневники (записки): ref/journals.md
-  - Древние руины: ref/ancient_ruin.md
-  - Души палов: ref/pal_souls.md
-  - Еда: ref/food.md
-  - Ездовые палы: ref/mounts.md
-  - Калькулятор IV (скрытые таланты): ref/iv_calc.md
-  - Ключевые предметы: ref/key_items.md
-  - Конденсация (Капсула с эссенцией): ref/pal_essence_condenser.md
-  - Лагеря врагов: ref/enemy_camp.md
-  - Легендарные предметы и чертежи: ref/legendary.md
-  - Люди (NPC и враги): ref/humans.md
-  - Миссии (квесты): ref/mission.md
-  - Модули сфер: ref/sphere_module.md
-  - Монумент Силы, души и статуи: ref/statue_of_power.md
-  - Мутации: ref/mutation.md
-  - Оборона базы: ref/defenses.md
-  - Операционный стол (смена пассивок): ref/pal_surgery_table.md
-  - Оружие: ref/weapon.md
-  - Палы, увеличивающие вес: ref/weight_increase.md
-  - Палы-бафферы отряда: ref/party_buffs.md
-  - Палы-глайдеры: ref/glider.md
-  - Пастбище свиданий (разведение): ref/breeding_farm.md
-  - Патроны: ref/ammo.md
-  - Плоды навыков: ref/skill_fruit.md
-  - Подземелья: ref/dungeons.md
-  - Подсказки из игры: ref/tips.md
-  - Подъём со дна (Salvage): ref/salvage.md
-  - Постройки: ref/structures.md
-  - Приоритет работы: ref/work_priority.md
-  - Рассудок (SAN): ref/san.md
-  - Расходники: ref/consumable.md
-  - Рейды и налёты на базу: ref/raid.md
-  - Рыбалка - места и улов: ref/fishing.md
-  - Смена стихии атаки: ref/element_swap.md
-  - События (инциденты): ref/incidents.md
-  - Спойлеры: ref/spoiler.md
-  - Статы палов: ref/pal_stats.md
-  - Сферы: ref/sphere.md
-  - Таблицы лута (сундуки, вышки и т.д.): ref/loots.md
-  - Технологии (сырые данные): ref/technologies.md
-  - Торговец арены: ref/arena_merchant.md
-  - Торговец медалями: ref/medal_merchant.md
-  - Торговец наградами (баунти): ref/bounty_merchant.md
-  - Торговец палами: ref/pal_merchant.md
-  - Торговый караван: ref/caravan_merchant.md
-  - Чёрный торговец: ref/black_marketeer.md
-  - Шансы дропа: ref/drop_rate.md
-  - Экспедиции - награды: ref/pal_expedition_station.md
-  - Яйца: ref/eggs.md
+  - FAQ:
+    - FAQ — вопросы и ответы: 9_faq/faq.md
+  - Глоссарий:
+    - Словарь терминов и сленга: 8_slovar/slovar.md
+  - Баги:
+    - Баги и проблемы - что делать: 10_bagi/bagi.md
+- Бот: bot.md

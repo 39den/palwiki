@@ -1,6 +1,14 @@
 # #74 Горират (Gorirat)
 
-![Горират](../../img/74_Gorilla.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/74_Gorilla.webp" alt="Горират" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#74 · Gorirat</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
+<div class="partner"><b>Максимальный режим гориллы</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 90 · ⚔️ 95 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

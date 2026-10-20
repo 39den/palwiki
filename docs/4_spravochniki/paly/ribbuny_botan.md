@@ -1,6 +1,14 @@
 # #44B Риббани Ботан (Ribbuny Botan)
 
-![Риббани Ботан](../../img/44B_PinkRabbit_Grass.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/44B_PinkRabbit_Grass.webp" alt="Риббани Ботан" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#44B · Ribbuny Botan</div>
+<div class="chips"><span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 2">🌱 Посев семян <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Дубасящий травяной кролик</b> 🎒 из команды</div>
+<div class="stats">❤️ 80 · ⚔️ 65 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

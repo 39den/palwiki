@@ -1,6 +1,14 @@
 # #103B Чиллет Игнис (Chillet Ignis)
 
-![Чиллет Игнис](../../img/103B_WeaselDragon_Fire.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/103B_WeaselDragon_Fire.webp" alt="Чиллет Игнис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#103B · Chillet Ignis</div>
+<div class="chips"><span class="el el-fire">Огонь</span><span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-ice">Лёд</span></div>
+<div class="works"><span class="work" title="Разжигание огня 4">🔥 Разжигание огня <b>4</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span></div>
+<div class="partner"><b>Искрящаяся ласка</b> 🐎 верхом</div>
+<div class="stats">❤️ 90 · ⚔️ 85 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #130B Старрион Примо (Starryon Primo)
 
-![Старрион Примо](../../img/130B_NightBlueHorse_Neutral.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/130B_NightBlueHorse_Neutral.webp" alt="Старрион Примо" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#130B · Starryon Primo</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Сбор 7">🌾 Сбор <b>7</b></span></div>
+<div class="partner"><b>Танцор света</b> 🐾 выпущен 🐎 верхом</div>
+<div class="stats">❤️ 110 · ⚔️ 105 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

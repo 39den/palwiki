@@ -1,6 +1,14 @@
 # #141B Скорпио Лакс (Prixter Lux)
 
-![Скорпио Лакс](../../img/141B_ScorpionMan_Electric.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/141B_ScorpionMan_Electric.webp" alt="Скорпио Лакс" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#141B · Prixter Lux</div>
+<div class="chips"><span class="el el-electric">Молния</span><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля</span><span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Генерация энергии 3">⚡ Генерация энергии <b>3</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span><span class="work" title="Фармацевтика 2">💊 Фармацевтика <b>2</b></span></div>
+<div class="partner"><b>Низкочастотный скорпион</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 90 · ⚔️ 115 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

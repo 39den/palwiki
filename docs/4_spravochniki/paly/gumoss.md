@@ -1,6 +1,14 @@
 # #12 Гумосс (Gumoss)
 
-![Гумосс](../../img/12_PlantSlime.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/12_PlantSlime.webp" alt="Гумосс" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#12 · Gumoss</div>
+<div class="chips"><span class="el el-grass">Трава</span><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span><span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Посев семян 1">🌱 Посев семян <b>1</b></span></div>
+<div class="partner"><b>Помощь в рубке</b> 🎒 из команды</div>
+<div class="stats">❤️ 70 · ⚔️ 70 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

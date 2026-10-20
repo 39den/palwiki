@@ -1,6 +1,14 @@
 # #204 Астралим (Astralym)
 
-![Астралим](../../img/204_WorldTreeDragon.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/204_WorldTreeDragon.webp" alt="Астралим" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#204 · Astralym</div>
+<div class="chips"></div>
+<div class="weak">Слабость: </div>
+<div class="works"></div>
+<div class="partner"><b>-</b> 🐾 выпущен</div>
+<div class="stats">❤️ 200 · ⚔️ 200 · 🛡 200</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

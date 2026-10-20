@@ -1,6 +1,14 @@
 # #146 Зеногард (Xenogard)
 
-![Зеногард](../../img/146_WhiteAlienDragon.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/146_WhiteAlienDragon.webp" alt="Зеногард" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#146 · Xenogard</div>
+<div class="chips"><span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-ice">Лёд</span></div>
+<div class="works"><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span></div>
+<div class="partner"><b>Неизвестный нарушитель</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 110 · ⚔️ 120 · 🛡 130</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

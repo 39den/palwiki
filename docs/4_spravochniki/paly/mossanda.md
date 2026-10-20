@@ -1,6 +1,14 @@
 # #102 Моссанда (Mossanda)
 
-![Моссанда](../../img/102_GrassPanda.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/102_GrassPanda.webp" alt="Моссанда" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#102 · Mossanda</div>
+<div class="chips"><span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>
+<div class="partner"><b>Панда-гранатомётчик</b> 🐎 верхом</div>
+<div class="stats">❤️ 100 · ⚔️ 90 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

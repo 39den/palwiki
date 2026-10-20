@@ -1,6 +1,14 @@
 # #200B Фросталлион Нокт (Frostallion Noct)
 
-![Фросталлион Нокт](../../img/200B_IceHorse_Dark.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/200B_IceHorse_Dark.webp" alt="Фросталлион Нокт" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#200B · Frostallion Noct</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Сбор 7">🌾 Сбор <b>7</b></span></div>
+<div class="partner"><b>Тёмный Пегас</b> 🐎 верхом</div>
+<div class="stats">❤️ 140 · ⚔️ 140 · 🛡 135</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

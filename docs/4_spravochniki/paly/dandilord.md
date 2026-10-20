@@ -1,6 +1,14 @@
 # #194 Дандилорд (Dandilord)
 
-![Дандилорд](../../img/194_FlowerPrince.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/194_FlowerPrince.webp" alt="Дандилорд" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#194 · Dandilord</div>
+<div class="chips"><span class="el el-grass">Трава</span><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 8">🌱 Посев семян <b>8</b></span><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span><span class="work" title="Фармацевтика 6">💊 Фармацевтика <b>6</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
+<div class="partner"><b>Страж тумана</b> 🎒 из команды 🔘 кнопкой</div>
+<div class="stats">❤️ 125 · ⚔️ 135 · 🛡 110</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

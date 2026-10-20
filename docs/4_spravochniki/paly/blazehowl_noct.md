@@ -1,6 +1,14 @@
 # #112B Блейзхаул Нокт (Blazehowl Noct)
 
-![Блейзхаул Нокт](../../img/112B_Manticore_Dark.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/112B_Manticore_Dark.webp" alt="Блейзхаул Нокт" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#112B · Blazehowl Noct</div>
+<div class="chips"><span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>
+<div class="partner"><b>Лев Чёрного пламени</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 105 · ⚔️ 115 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

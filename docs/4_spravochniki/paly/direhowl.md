@@ -1,6 +1,14 @@
 # #33 Дайэхаул (Direhowl)
 
-![Дайэхаул](../../img/33_Garm.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/33_Garm.webp" alt="Дайэхаул" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#33 · Direhowl</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span></div>
+<div class="partner"><b>Оседлать Дайэхаула</b> 🐎 верхом</div>
+<div class="stats">❤️ 80 · ⚔️ 90 · 🛡 75</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #37B Туртакл Терра (Turtacle Terra)
 
-![Туртакл Терра](../../img/37B_TentacleTurtle_Ground.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/37B_TentacleTurtle_Ground.webp" alt="Туртакл Терра" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#37B · Turtacle Terra</div>
+<div class="chips"><span class="el el-water">Вода</span><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Сверкающий носильщик</b> 🎒 из команды</div>
+<div class="stats">❤️ 85 · ⚔️ 85 · 🛡 125</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #147 Прунелия (Prunelia)
 
-![Прунелия](../../img/147_BlueberryFairy.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/147_BlueberryFairy.webp" alt="Прунелия" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#147 · Prunelia</div>
+<div class="chips"><span class="el el-grass">Трава</span><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Фармацевтика 3">💊 Фармацевтика <b>3</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Молитва об урожае</b> 🏠 на базе</div>
+<div class="stats">❤️ 105 · ⚔️ 95 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

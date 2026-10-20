@@ -1,6 +1,14 @@
 # #63B Элфидран Аква (Elphidran Aqua)
 
-![Элфидран Аква](../../img/63B_FairyDragon_Water.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/63B_FairyDragon_Water.webp" alt="Элфидран Аква" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#63B · Elphidran Aqua</div>
+<div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-ice">Лёд</span><span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 4">💧 Полив <b>4</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>
+<div class="partner"><b>Добросердечный водный дракон</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 115 · ⚔️ 80 · 🛡 95</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

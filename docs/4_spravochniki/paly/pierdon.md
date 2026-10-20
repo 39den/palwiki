@@ -1,6 +1,14 @@
 # #131 Пиродон (Pierdon)
 
-![Пиродон](../../img/131_RockBeast.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/131_RockBeast.webp" alt="Пиродон" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#131 · Pierdon</div>
+<div class="chips"><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span></div>
+<div class="partner"><b>Сила камня</b> 🎒 из команды</div>
+<div class="stats">❤️ 100 · ⚔️ 105 · 🛡 120</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

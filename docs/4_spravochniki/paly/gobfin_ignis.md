@@ -1,6 +1,14 @@
 # #55B Гобфин Игнис (Gobfin Ignis)
 
-![Гобфин Игнис](../../img/55B_SharkKid_Fire.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/55B_SharkKid_Fire.webp" alt="Гобфин Игнис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#55B · Gobfin Ignis</div>
+<div class="chips"><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span></div>
+<div class="works"><span class="work" title="Разжигание огня 2">🔥 Разжигание огня <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Акулка-злюка</b> 🎒 из команды 🐾 выпущен 🔘 кнопкой</div>
+<div class="stats">❤️ 90 · ⚔️ 90 · 🛡 75</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #97B Ганглер Игнис (Ghangler Ignis)
 
-![Ганглер Игнис](../../img/97B_GhostAnglerfish_Fire.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/97B_GhostAnglerfish_Fire.webp" alt="Ганглер Игнис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#97B · Ghangler Ignis</div>
+<div class="chips"><span class="el el-fire">Огонь</span><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span><span class="work" title="Полив 5">💧 Полив <b>5</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Знаменитый шеф морских глубин</b> 🐎 верхом 🐾 выпущен</div>
+<div class="stats">❤️ 90 · ⚔️ 130 · 🛡 105</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

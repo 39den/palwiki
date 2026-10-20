@@ -1,6 +1,14 @@
 # #9 Кроадзиро (Croajiro)
 
-![Кроадзиро](../../img/9_KendoFrog.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/9_KendoFrog.webp" alt="Кроадзиро" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#9 · Croajiro</div>
+<div class="chips"><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Подготовка к прыжку</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 80 · ⚔️ 100 · 🛡 85</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

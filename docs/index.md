@@ -1,14 +1,11 @@
-# Энциклопедия Palworld 🐾
-
-Полный справочник по Palworld v1.0.5 на русском: уровни 0–80, все палы с карточками, предметы, боссы, механики, разведение, секреты и FAQ.
-
-- 🧭 [С чего начать](0_nachni_zdes/nachni_zdes.md)
-- 🐾 [Все палы](4_spravochniki/paly/README.md)
-- 🎒 [Предметы](4_spravochniki/predmety/README.md)
-- 👑 [Боссы](4_spravochniki/bossy.md)
-- 🗺 [Прохождение 1–80](guide/03_prohozhdenie_1_80.md)
-- 🤫 [Секреты](guide/sekrety.md)
-
-Используй 🔍 поиск сверху — он понимает русский.
-
-🤖 Есть вопрос? Спроси Telegram-бота **[@PalGuideBot](https://t.me/PalGuideBot)**.
+---
+hide: [navigation, toc]
+---
+<div class="hero" markdown="0"><div class="hero-art"><img src="art/HadesBird.webp" alt="" loading="lazy"><img src="art/WindChimes.webp" alt="" loading="lazy"><img src="art/ThunderBird.webp" alt="" loading="lazy"><img src="art/Cave_Bat.webp" alt="" loading="lazy"><img src="art/Hedgehog.webp" alt="" loading="lazy"><img src="art/Alpaca.webp" alt="" loading="lazy"><img src="art/Yeti.webp" alt="" loading="lazy"><img src="art/LavaGirl.webp" alt="" loading="lazy"><img src="art/Baphomet.webp" alt="" loading="lazy"><img src="art/BlackMetalDragon.webp" alt="" loading="lazy"><img src="art/NegativeKoala.webp" alt="" loading="lazy"><img src="art/SkyDragon.webp" alt="" loading="lazy"><img src="art/Werewolf.webp" alt="" loading="lazy"><img src="art/KendoFrog.webp" alt="" loading="lazy"></div><div class="hero-in">
+<h1>Энциклопедия Palworld</h1><p>Всё о Palworld v1.0.5 на русском: уровни 0–80, 299 палов, 1599 предметов, боссы, пассивки, разведение и секреты.</p>
+<div class="smart-box"><input id="home-q" type="search" placeholder="Спроси что угодно: «кто лучше копает», «чем бить Зои», «где взять серу»…" autocomplete="off"></div>
+<div id="home-answer" class="smart-out"></div></div></div>
+<div class="tiles" markdown="0">
+<a class="tile" href="gallery/"><span class="ti">🐾</span><b>Палы</b><small>галерея с фильтрами</small></a><a class="tile" href="4_spravochniki/bossy/"><span class="ti">👑</span><b>Боссы</b><small>башни, рейды, альфы</small></a><a class="tile" href="guide/03_prohozhdenie_1_80/"><span class="ti">🗺️</span><b>Прохождение</b><small>с 1 до 80 уровня</small></a><a class="tile" href="2_mehaniki/passivki/"><span class="ti">✨</span><b>Пассивки</b><small>лучшие наборы</small></a><a class="tile" href="guide/sekrety/"><span class="ti">🤫</span><b>Секреты</b><small>пасхалки и тайники</small></a><a class="tile" href="map/"><span class="ti">📍</span><b>Карта</b><small>альфы, башни, телепорты</small></a><a class="tile" href="4_spravochniki/predmety/"><span class="ti">🎒</span><b>Предметы</b><small>где взять и крафт</small></a><a class="tile" href="compare/"><span class="ti">⚔️</span><b>Сравнить</b><small>два пала рядом</small></a><a class="tile" href="https://t.me/PalGuideBot"><span class="ti">🤖</span><b>Бот @PalGuideBot</b><small>спроси в Telegram</small></a>
+</div>
+<div class="potd-wrap" markdown="0"><h2>⭐ Пал дня</h2><div id="potd"></div></div>

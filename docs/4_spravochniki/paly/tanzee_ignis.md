@@ -1,6 +1,14 @@
 # #23B Танзи Игнис (Tanzee Ignis)
 
-![Танзи Игнис](../../img/23B_Monkey_Fire.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/23B_Monkey_Fire.webp" alt="Танзи Игнис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#23B · Tanzee Ignis</div>
+<div class="chips"><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span></div>
+<div class="works"><span class="work" title="Разжигание огня 1">🔥 Разжигание огня <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Рубка деревьев 1">🪓 Рубка деревьев <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Весёлая пальба</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 80 · ⚔️ 75 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

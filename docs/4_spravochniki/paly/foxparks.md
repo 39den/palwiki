@@ -1,6 +1,14 @@
 # #29 Фокспаркс (Foxparks)
 
-![Фокспаркс](../../img/29_Kitsunebi.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/29_Kitsunebi.webp" alt="Фокспаркс" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#29 · Foxparks</div>
+<div class="chips"><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span></div>
+<div class="works"><span class="work" title="Разжигание огня 1">🔥 Разжигание огня <b>1</b></span></div>
+<div class="partner"><b>Пламенные объятия</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 65 · ⚔️ 75 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #43 Келпси (Kelpsea)
 
-![Келпси](../../img/43_Kelpie.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/43_Kelpie.webp" alt="Келпси" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#43 · Kelpsea</div>
+<div class="chips"><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
+<div class="partner"><b>Обливание водой</b> 🎒 из команды 🏠 на базе</div>
+<div class="stats">❤️ 70 · ⚔️ 70 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #175 Офидия (Ophydia)
 
-![Офидия](../../img/175_LotusDragon.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/175_LotusDragon.webp" alt="Офидия" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#175 · Ophydia</div>
+<div class="chips"><span class="el el-grass">Трава</span><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Полив 5">💧 Полив <b>5</b></span><span class="work" title="Посев семян 7">🌱 Посев семян <b>7</b></span></div>
+<div class="partner"><b>Величественный туман</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 130 · ⚔️ 115 · 🛡 120</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

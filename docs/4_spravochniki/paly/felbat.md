@@ -1,6 +1,14 @@
 # #65 Фелбэт (Felbat)
 
-![Фелбэт](../../img/65_CatVampire.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/65_CatVampire.webp" alt="Фелбэт" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#65 · Felbat</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Фармацевтика 3">💊 Фармацевтика <b>3</b></span></div>
+<div class="partner"><b>Кража жизни</b> 🐾 выпущен</div>
+<div class="stats">❤️ 100 · ⚔️ 105 · 🛡 110</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

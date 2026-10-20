@@ -1,6 +1,14 @@
 # #151B Валаска Игнис (Whalaska Ignis)
 
-![Валаска Игнис](../../img/151B_IceNarwhal_Fire.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/151B_IceNarwhal_Fire.webp" alt="Валаска Игнис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#151B · Whalaska Ignis</div>
+<div class="chips"><span class="el el-ice">Лёд</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span><span class="work" title="Охлаждение 6">❄️ Охлаждение <b>6</b></span></div>
+<div class="partner"><b>Тёплый китоход</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 105 · ⚔️ 120 · 🛡 110</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

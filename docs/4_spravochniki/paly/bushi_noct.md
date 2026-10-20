@@ -1,6 +1,14 @@
 # #85B Буси Нокт (Bushi Noct)
 
-![Буси Нокт](../../img/85B_Ronin_Dark.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/85B_Ronin_Dark.webp" alt="Буси Нокт" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#85B · Bushi Noct</div>
+<div class="chips"><span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Разжигание огня 2">🔥 Разжигание огня <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Рубка деревьев 5">🪓 Рубка деревьев <b>5</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Тёмная фиолетовая молния</b> 🔘 кнопкой 🎒 из команды</div>
+<div class="stats">❤️ 80 · ⚔️ 130 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

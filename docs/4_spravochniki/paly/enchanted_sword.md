@@ -1,6 +1,14 @@
 # #T4 Зачарованный меч (Enchanted Sword)
 
-![Зачарованный меч](../../img/T4_Enchanted_Sword.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/T4_Enchanted_Sword.webp" alt="Зачарованный меч" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#T4 · Enchanted Sword</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Рубка деревьев 1">🪓 Рубка деревьев <b>1</b></span></div>
+<div class="partner"><b>Зачарование</b> 🎒 из команды</div>
+<div class="stats">❤️ 95 · ⚔️ 105 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

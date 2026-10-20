@@ -1,6 +1,14 @@
 # #72 Полапап (Polapup)
 
-![Полапап](../../img/72_IceSeal.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/72_IceSeal.webp" alt="Полапап" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#72 · Polapup</div>
+<div class="chips"><span class="el el-ice">Лёд</span><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Полив 3">💧 Полив <b>3</b></span><span class="work" title="Охлаждение 4">❄️ Охлаждение <b>4</b></span></div>
+<div class="partner"><b>Наездник снежной горы</b> 🐎 верхом</div>
+<div class="stats">❤️ 95 · ⚔️ 105 · 🛡 105</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

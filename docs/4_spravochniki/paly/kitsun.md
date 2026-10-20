@@ -1,6 +1,14 @@
 # #111 Кицун (Kitsun)
 
-![Кицун](../../img/111_AmaterasuWolf.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/111_AmaterasuWolf.webp" alt="Кицун" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#111 · Kitsun</div>
+<div class="chips"><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span></div>
+<div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span></div>
+<div class="partner"><b>Солнечный волк</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 100 · ⚔️ 115 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

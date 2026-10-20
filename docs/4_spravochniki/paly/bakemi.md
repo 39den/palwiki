@@ -1,6 +1,14 @@
 # #168 Бакеми (Bakemi)
 
-![Бакеми](../../img/168_OniGhostGirl.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/168_OniGhostGirl.webp" alt="Бакеми" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#168 · Bakemi</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Фармацевтика 4">💊 Фармацевтика <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Улыбчивая нежить</b> 🎒 из команды</div>
+<div class="stats">❤️ 70 · ⚔️ 85 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

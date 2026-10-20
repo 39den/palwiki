@@ -1,6 +1,14 @@
 # #116 Сибеликс (Sibelyx)
 
-![Сибеликс](../../img/116_WhiteMoth.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/116_WhiteMoth.webp" alt="Сибеликс" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#116 · Sibelyx</div>
+<div class="chips"><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Фармацевтика 3">💊 Фармацевтика <b>3</b></span><span class="work" title="Охлаждение 3">❄️ Охлаждение <b>3</b></span><span class="work" title="Фермерство 3">🐑 Фермерство <b>3</b></span></div>
+<div class="partner"><b>Мистический шёлковый покров</b> 🐾 выпущен 🔘 кнопкой 🏠 на базе</div>
+<div class="stats">❤️ 110 · ⚔️ 90 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #171B Айдролон Игнис (Eidrolon Ignis)
 
-![Айдролон Игнис](../../img/171B_GhostDragon_Fire.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/171B_GhostDragon_Fire.webp" alt="Айдролон Игнис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#171B · Eidrolon Ignis</div>
+<div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-ice">Лёд</span></div>
+<div class="works"><span class="work" title="Разжигание огня 6">🔥 Разжигание огня <b>6</b></span><span class="work" title="Транспортировка 6">📦 Транспортировка <b>6</b></span></div>
+<div class="partner"><b>Гневный крылатый дракон</b> 🐾 выпущен 🐎 верхом</div>
+<div class="stats">❤️ 115 · ⚔️ 130 · 🛡 120</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

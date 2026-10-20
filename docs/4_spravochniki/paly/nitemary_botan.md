@@ -1,6 +1,14 @@
 # #148B Найтмери Ботан (Nitemary Botan)
 
-![Найтмери Ботан](../../img/148B_GhostRabbit_Grass.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/148B_GhostRabbit_Grass.webp" alt="Найтмери Ботан" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#148B · Nitemary Botan</div>
+<div class="chips"><span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Призрачный кролик-пленитель душ</b> 🎒 из команды</div>
+<div class="stats">❤️ 110 · ⚔️ 95 · 🛡 105</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

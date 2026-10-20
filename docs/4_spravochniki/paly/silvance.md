@@ -1,6 +1,14 @@
 # #193 Сильванс (Silvance)
 
-![Сильванс](../../img/193_Mothman.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/193_Mothman.webp" alt="Сильванс" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#193 · Silvance</div>
+<div class="chips"><span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 6">🌱 Посев семян <b>6</b></span><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Фармацевтика 8">💊 Фармацевтика <b>8</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Хранитель спор</b> 🎒 из команды</div>
+<div class="stats">❤️ 140 · ⚔️ 120 · 🛡 110</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

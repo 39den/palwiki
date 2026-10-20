@@ -1,6 +1,14 @@
 # #47 Амиона (Amione)
 
-![Амиона](../../img/47_ClioneTwins.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/47_ClioneTwins.webp" alt="Амиона" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#47 · Amione</div>
+<div class="chips"><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Магическая двойная сила</b> 🏠 на базе</div>
+<div class="stats">❤️ 65 · ⚔️ 70 · 🛡 65</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

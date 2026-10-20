@@ -1,6 +1,14 @@
 # #76 Робинквилл (Robinquill)
 
-![Робинквилл](../../img/76_RobinHood.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/76_RobinHood.webp" alt="Робинквилл" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#76 · Robinquill</div>
+<div class="chips"><span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 2">🌱 Посев семян <b>2</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span><span class="work" title="Фармацевтика 1">💊 Фармацевтика <b>1</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Мастер стрельбы из лука</b> 🎒 из команды</div>
+<div class="stats">❤️ 90 · ⚔️ 105 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

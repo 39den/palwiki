@@ -1,6 +1,14 @@
 # #32 Иктирдир (Eikthyrdeer)
 
-![Иктирдир](../../img/32_Deer.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/32_Deer.webp" alt="Иктирдир" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#32 · Eikthyrdeer</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span></div>
+<div class="partner"><b>Хранитель леса</b> 🐎 верхом</div>
+<div class="stats">❤️ 95 · ⚔️ 80 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

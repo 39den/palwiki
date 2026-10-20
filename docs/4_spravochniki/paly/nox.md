@@ -1,6 +1,14 @@
 # #24 Нокс (Nox)
 
-![Нокс](../../img/24_NightFox.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/24_NightFox.webp" alt="Нокс" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#24 · Nox</div>
+<div class="chips"><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span></div>
+<div class="partner"><b>Кудэрэ</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 75 · ⚔️ 85 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

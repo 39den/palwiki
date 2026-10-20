@@ -1,6 +1,14 @@
 # #63 Элфидран (Elphidran)
 
-![Элфидран](../../img/63_FairyDragon.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/63_FairyDragon.webp" alt="Элфидран" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#63 · Elphidran</div>
+<div class="chips"><span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-ice">Лёд</span></div>
+<div class="works"><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>
+<div class="partner"><b>Добросердечный святой дракон</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 110 · ⚔️ 80 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

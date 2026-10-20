@@ -1,6 +1,14 @@
 # #5B Камоноске Игнис (Fuack Ignis)
 
-![Камоноске Игнис](../../img/5B_BluePlatypus_Fire.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/5B_BluePlatypus_Fire.webp" alt="Камоноске Игнис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#5B · Fuack Ignis</div>
+<div class="chips"><span class="el el-water">Вода</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Разжигание огня 2">🔥 Разжигание огня <b>2</b></span><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Пламенный натиск</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 60 · ⚔️ 85 · 🛡 60</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

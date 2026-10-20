@@ -1,6 +1,14 @@
 # #135 Гостлайт (Sootseer)
 
-![Гостлайт](../../img/135_CandleGhost.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/135_CandleGhost.webp" alt="Гостлайт" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#135 · Sootseer</div>
+<div class="chips"><span class="el el-dark">Тьма</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-dragon">Дракон</span></div>
+<div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Фермерство 2">🐑 Фермерство <b>2</b></span></div>
+<div class="partner"><b>Расхититель могил</b> 🎒 из команды 🏠 на базе</div>
+<div class="stats">❤️ 105 · ⚔️ 125 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

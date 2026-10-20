@@ -1,6 +1,14 @@
 # #132B Криолинкс Терра (Cryolinx Terra)
 
-![Криолинкс Терра](../../img/132B_WhiteTiger_Ground.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/132B_WhiteTiger_Ground.webp" alt="Криолинкс Терра" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#132B · Cryolinx Terra</div>
+<div class="chips"><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Рубка деревьев 6">🪓 Рубка деревьев <b>6</b></span><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>
+<div class="partner"><b>Могучая рука разрушения</b> 🎒 из команды</div>
+<div class="stats">❤️ 100 · ⚔️ 105 · 🛡 110</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

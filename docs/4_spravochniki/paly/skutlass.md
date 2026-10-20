@@ -1,6 +1,14 @@
 # #128 Скатласс (Skutlass)
 
-![Скатласс](../../img/128_SwordCutlassfish.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/128_SwordCutlassfish.webp" alt="Скатласс" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#128 · Skutlass</div>
+<div class="chips"><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 4">💧 Полив <b>4</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span></div>
+<div class="partner"><b>Рвать плоть, ломать кости</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 70 · ⚔️ 100 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

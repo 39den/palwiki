@@ -1,6 +1,14 @@
 # #40 Моззарина (Mozzarina)
 
-![Моззарина](../../img/40_CowPal.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/40_CowPal.webp" alt="Моззарина" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#40 · Mozzarina</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Фермерство 2">🐑 Фермерство <b>2</b></span></div>
+<div class="partner"><b>Дойка</b> 🏠 на базе</div>
+<div class="stats">❤️ 90 · ⚔️ 50 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

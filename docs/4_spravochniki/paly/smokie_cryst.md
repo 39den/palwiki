@@ -1,6 +1,14 @@
 # #149B Смоки Крист (Smokie Cryst)
 
-![Смоки Крист](../../img/149B_BlackPuppy_Ice.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/149B_BlackPuppy_Ice.webp" alt="Смоки Крист" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#149B · Smokie Cryst</div>
+<div class="chips"><span class="el el-dark">Тьма</span><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Охлаждение 2">❄️ Охлаждение <b>2</b></span></div>
+<div class="partner"><b>Верный пёс Смоки Крист</b> 🏠 на базе</div>
+<div class="stats">❤️ 85 · ⚔️ 90 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

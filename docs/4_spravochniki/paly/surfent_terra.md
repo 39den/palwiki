@@ -1,6 +1,14 @@
 # #75B Серфент Терра (Surfent Terra)
 
-![Серфент Терра](../../img/75B_Serpent_Ground.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/75B_Serpent_Ground.webp" alt="Серфент Терра" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#75B · Surfent Terra</div>
+<div class="chips"><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span></div>
+<div class="partner"><b>Пловец песков</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 90 · ⚔️ 90 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

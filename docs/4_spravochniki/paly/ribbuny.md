@@ -1,6 +1,14 @@
 # #44 Риббани (Ribbuny)
 
-![Риббани](../../img/44_PinkRabbit.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/44_PinkRabbit.webp" alt="Риббани" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#44 · Ribbuny</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Улыбчивая леди-кролик</b> 🎒 из команды 🏠 на базе</div>
+<div class="stats">❤️ 75 · ⚔️ 65 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

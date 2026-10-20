@@ -1,6 +1,14 @@
 # #68 Элизаби (Elizabee)
 
-![Элизаби](../../img/68_QueenBee.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/68_QueenBee.webp" alt="Элизаби" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#68 · Elizabee</div>
+<div class="chips"><span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Посев семян 4">🌱 Посев семян <b>4</b></span><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Фармацевтика 4">💊 Фармацевтика <b>4</b></span></div>
+<div class="partner"><b>Воля королевы</b> 🐾 выпущен</div>
+<div class="stats">❤️ 90 · ⚔️ 105 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

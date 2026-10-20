@@ -1,6 +1,14 @@
 # #131B Пиродон Крист (Pierdon Cryst)
 
-![Пиродон Крист](../../img/131B_RockBeast_Ice.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/131B_RockBeast_Ice.webp" alt="Пиродон Крист" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#131B · Pierdon Cryst</div>
+<div class="chips"><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span><span class="work" title="Охлаждение 6">❄️ Охлаждение <b>6</b></span></div>
+<div class="partner"><b>Сила кристалла</b> 🎒 из команды</div>
+<div class="stats">❤️ 100 · ⚔️ 110 · 🛡 120</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

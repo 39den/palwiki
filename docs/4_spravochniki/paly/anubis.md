@@ -1,6 +1,14 @@
 # #139 Анубис (Anubis)
 
-![Анубис](../../img/139_Anubis.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/139_Anubis.webp" alt="Анубис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#139 · Anubis</div>
+<div class="chips"><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Добыча 6">⛏️ Добыча <b>6</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>
+<div class="partner"><b>Хранитель пустыни</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 120 · ⚔️ 130 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

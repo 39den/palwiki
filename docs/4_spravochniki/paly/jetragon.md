@@ -1,6 +1,14 @@
 # #202 Джетрагон (Jetragon)
 
-![Джетрагон](../../img/202_JetDragon.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/202_JetDragon.webp" alt="Джетрагон" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#202 · Jetragon</div>
+<div class="chips"><span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-ice">Лёд</span></div>
+<div class="works"><span class="work" title="Сбор 8">🌾 Сбор <b>8</b></span></div>
+<div class="partner"><b>Воздушные ракеты</b> 🐎 верхом</div>
+<div class="stats">❤️ 115 · ⚔️ 140 · 🛡 120</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

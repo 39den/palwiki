@@ -1,6 +1,14 @@
 # #134 Вумпо (Wumpo)
 
-![Вумпо](../../img/134_Yeti.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/134_Yeti.webp" alt="Вумпо" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#134 · Wumpo</div>
+<div class="chips"><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Рубка деревьев 5">🪓 Рубка деревьев <b>5</b></span><span class="work" title="Охлаждение 5">❄️ Охлаждение <b>5</b></span><span class="work" title="Транспортировка 6">📦 Транспортировка <b>6</b></span></div>
+<div class="partner"><b>Гигант снежных гор</b> 🐎 верхом 🏠 на базе</div>
+<div class="stats">❤️ 140 · ⚔️ 80 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

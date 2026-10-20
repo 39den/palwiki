@@ -1,6 +1,14 @@
 # #83B Фенглоп Лакс (Fenglope Lux)
 
-![Фенглоп Лакс](../../img/83B_FengyunDeeper_Electric.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/83B_FengyunDeeper_Electric.webp" alt="Фенглоп Лакс" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#83B · Fenglope Lux</div>
+<div class="chips"><span class="el el-electric">Молния</span></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
+<div class="works"><span class="work" title="Генерация энергии 5">⚡ Генерация энергии <b>5</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span></div>
+<div class="partner"><b>Грозовое облако</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 110 · ⚔️ 115 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

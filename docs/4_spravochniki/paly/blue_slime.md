@@ -1,6 +1,14 @@
 # #T1 Синий слизень (Blue Slime)
 
-![Синий слизень](../../img/T1_Blue_Slime.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/T1_Blue_Slime.webp" alt="Синий слизень" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#T1 · Blue Slime</div>
+<div class="chips"><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Тело слизня</b> 🐎 верхом</div>
+<div class="stats">❤️ 70 · ⚔️ 70 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

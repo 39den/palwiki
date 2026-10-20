@@ -1,6 +1,14 @@
 # #70 Гринтэйл (Grintale)
 
-![Гринтэйл](../../img/70_NaughtyCat.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/70_NaughtyCat.webp" alt="Гринтэйл" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#70 · Grintale</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span></div>
+<div class="partner"><b>Сияющий кошачий глаз</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 110 · ⚔️ 80 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

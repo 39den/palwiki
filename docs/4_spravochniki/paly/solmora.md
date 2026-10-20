@@ -1,6 +1,14 @@
 # #169 Солмора (Solmora)
 
-![Солмора](../../img/169_KingSunfish.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/169_KingSunfish.webp" alt="Солмора" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#169 · Solmora</div>
+<div class="chips"><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 4">💧 Полив <b>4</b></span></div>
+<div class="partner"><b>Харизматичная рыбка</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 90 · ⚔️ 90 · 🛡 85</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

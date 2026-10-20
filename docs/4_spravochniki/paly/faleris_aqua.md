@@ -1,6 +1,14 @@
 # #188B Фалерис Аква (Faleris Aqua)
 
-![Фалерис Аква](../../img/188B_Horus_Water.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/188B_Horus_Water.webp" alt="Фалерис Аква" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#188B · Faleris Aqua</div>
+<div class="chips"><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 6">💧 Полив <b>6</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>
+<div class="partner"><b>Хищник прилива</b> 🎒 из команды 🐎 верхом</div>
+<div class="stats">❤️ 110 · ⚔️ 110 · 🛡 115</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

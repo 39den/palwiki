@@ -1,6 +1,14 @@
 # #5 Камоноске (Fuack)
 
-![Камоноске](../../img/5_BluePlatypus.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/5_BluePlatypus.webp" alt="Камоноске" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#5 · Fuack</div>
+<div class="chips"><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Серфинг-слэм</b> 🔘 кнопкой</div>
+<div class="stats">❤️ 60 · ⚔️ 80 · 🛡 60</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

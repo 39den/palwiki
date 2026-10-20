@@ -1,6 +1,14 @@
 # #158 Астегон (Astegon)
 
-![Астегон](../../img/158_BlackMetalDragon.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/158_BlackMetalDragon.webp" alt="Астегон" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#158 · Astegon</div>
+<div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-ice">Лёд</span></div>
+<div class="works"><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Добыча 7">⛏️ Добыча <b>7</b></span></div>
+<div class="partner"><b>Дракон в чёрных доспехах</b> 🐎 верхом</div>
+<div class="stats">❤️ 100 · ⚔️ 125 · 🛡 125</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

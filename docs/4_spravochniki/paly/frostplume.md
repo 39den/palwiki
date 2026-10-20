@@ -1,6 +1,14 @@
 # #114 Фростплюм (Frostplume)
 
-![Фростплюм](../../img/114_SnowPeafowl.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/114_SnowPeafowl.webp" alt="Фростплюм" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#114 · Frostplume</div>
+<div class="chips"><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Охлаждение 4">❄️ Охлаждение <b>4</b></span></div>
+<div class="partner"><b>Павлиний выпад</b> 🎒 из команды</div>
+<div class="stats">❤️ 110 · ⚔️ 100 · 🛡 100</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

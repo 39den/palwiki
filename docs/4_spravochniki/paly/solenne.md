@@ -1,6 +1,14 @@
 # #182 Соленна (Solenne)
 
-![Соленна](../../img/182_MonochromeQueen.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/182_MonochromeQueen.webp" alt="Соленна" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#182 · Solenne</div>
+<div class="chips"><span class="el el-dark">Тьма</span><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Ручная работа 8">🖐️ Ручная работа <b>8</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Незапятнанная леди-одиночка</b> 🎒 из команды</div>
+<div class="stats">❤️ 110 · ⚔️ 115 · 🛡 115</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

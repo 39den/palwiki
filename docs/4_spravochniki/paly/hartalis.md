@@ -1,6 +1,14 @@
 # #197 Харталис (Hartalis)
 
-![Харталис](../../img/197_LegendDeer.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/197_LegendDeer.webp" alt="Харталис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#197 · Hartalis</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Сбор 7">🌾 Сбор <b>7</b></span><span class="work" title="Рубка деревьев 7">🪓 Рубка деревьев <b>7</b></span></div>
+<div class="partner"><b>Священный барьер</b> 🐎 верхом</div>
+<div class="stats">❤️ 135 · ⚔️ 130 · 🛡 110</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

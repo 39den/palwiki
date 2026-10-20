@@ -1,6 +1,14 @@
 # #T10 Радужный слизень (Rainbow Slime)
 
-![Радужный слизень](../../img/T10_Rainbow_Slime.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/T10_Rainbow_Slime.webp" alt="Радужный слизень" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#T10 · Rainbow Slime</div>
+<div class="chips"><span class="el el-neutral">Нейтральный</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="works"><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Тело слизня</b> 🐎 верхом</div>
+<div class="stats">❤️ 105 · ⚔️ 95 · 🛡 105</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

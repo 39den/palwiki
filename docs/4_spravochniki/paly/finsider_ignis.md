@@ -1,6 +1,14 @@
 # #88B Финсайдер Игнис (Finsider Ignis)
 
-![Финсайдер Игнис](../../img/88B_StuffedShark_Fire.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/88B_StuffedShark_Fire.webp" alt="Финсайдер Игнис" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#88B · Finsider Ignis</div>
+<div class="chips"><span class="el el-water">Вода</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Разжигание огня 2">🔥 Разжигание огня <b>2</b></span><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Пылающая комната</b> 🎒 из команды</div>
+<div class="stats">❤️ 75 · ⚔️ 90 · 🛡 80</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

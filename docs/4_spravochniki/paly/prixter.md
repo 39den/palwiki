@@ -1,6 +1,14 @@
 # #141 Скорпио (Prixter)
 
-![Скорпио](../../img/141_ScorpionMan.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/141_ScorpionMan.webp" alt="Скорпио" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#141 · Prixter</div>
+<div class="chips"><span class="el el-dark">Тьма</span><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span><span class="work" title="Фармацевтика 2">💊 Фармацевтика <b>2</b></span></div>
+<div class="partner"><b>Неядовитый скорпион</b> 🎒 из команды</div>
+<div class="stats">❤️ 90 · ⚔️ 110 · 🛡 90</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

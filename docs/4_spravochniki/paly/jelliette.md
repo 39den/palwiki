@@ -1,6 +1,14 @@
 # #45 Джелиэтта (Jelliette)
 
-![Джелиэтта](../../img/45_JellyfishFairy.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/45_JellyfishFairy.webp" alt="Джелиэтта" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#45 · Jelliette</div>
+<div class="chips"><span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
+<div class="partner"><b>Дроп Джелиэтты</b> 🎒 из команды 🏠 на базе</div>
+<div class="stats">❤️ 75 · ⚔️ 90 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

@@ -1,6 +1,14 @@
 # #38 Хангю (Hangyu)
 
-![Хангю](../../img/38_WindChimes.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/38_WindChimes.webp" alt="Хангю" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#38 · Hangyu</div>
+<div class="chips"><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
+<div class="partner"><b>Небесные качели</b> 🎒 из команды</div>
+<div class="stats">❤️ 80 · ⚔️ 70 · 🛡 70</div></div></div>
+
 
 | Поле | Значение |
 |---|---|

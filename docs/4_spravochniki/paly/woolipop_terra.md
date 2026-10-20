@@ -1,6 +1,14 @@
 # #39B Вулипоп Терра (Woolipop Terra)
 
-![Вулипоп Терра](../../img/39B_SweetsSheep_Ground.png){ width=360 }
+<div class="pal-hero" markdown="0">
+<img class="pal-card" src="../../../img/39B_SweetsSheep_Ground.webp" alt="Вулипоп Терра" loading="lazy" width="360">
+<div class="pal-info"><div class="pal-no">#39B · Woolipop Terra</div>
+<div class="chips"><span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
+<div class="works"><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
+<div class="partner"><b>Горький Поп</b> 🏠 на базе</div>
+<div class="stats">❤️ 70 · ⚔️ 70 · 🛡 95</div></div></div>
+
 
 | Поле | Значение |
 |---|---|
