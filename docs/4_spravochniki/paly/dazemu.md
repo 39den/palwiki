@@ -29,7 +29,7 @@
 
 
     #### Партнёрский навык: Песчаный рывок
-    Можно оседлать для передвижения. Пока находишься на песке , скорость передвижения увеличивается на (50~100)% . Технологии 28 level value 1 MoveSpeed_Up_GroundType_PartnerSkill 50 2 MoveSpeed_Up_GroundType_PartnerSkill 62 3 MoveSpeed_Up_GroundType_PartnerSkill 74 4 MoveSpeed_Up_GroundType_PartnerSkill 86 5 MoveSpeed_Up_GroundType_PartnerSkill 100
+    Можно оседлать для передвижения. Пока находишься на песке, скорость передвижения увеличивается на 50–100%. Технологии 28. По звёздам: 0★ 50 · 1★ 62 · 2★ 74 · 3★ 86 · 4★ 100
 
 
     #### Чем хорош / чем плох
@@ -87,9 +87,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Император земли (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Император земли" href="../../../passivki/earth_emperor/">Император земли</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🐎 Ездовой</div><div class="pset-w">быстрее бегает или летает с тобой верхом</div><div class="tags"><a class="psv r-4" data-psv="Божественная скорость" href="../../../passivki/swift/">Божественная скорость</a><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Вечный двигатель" href="../../../passivki/eternal_engine/">Вечный двигатель</a><a class="psv r-4" data-psv="Небесное скольжение" href="../../../passivki/sky_strider/">Небесное скольжение</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

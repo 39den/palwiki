@@ -30,11 +30,11 @@
 
 
     #### Партнёрский навык: Верный пёс Смоки Крист
-    Пока находится на базе, уровень работы Охлаждение других Палов повышается на +1 . (Эффект не суммируется) level value 1 WorkSuitabilityAddRank_Cool 1 OverWriteCoolTime 3 2 WorkSuitabilityAddRank_Cool 1 OverWriteCoolTime 2.8 3 WorkSuitabilityAddRank_Cool 1 OverWriteCoolTime 2.6 4 WorkSuitabilityAddRank_Cool 1 OverWriteCoolTime 2.4 5 WorkSuitabilityAddRank_Cool 1 OverWriteCoolTime 2
+    Пока находится на базе, уровень работы Охлаждение других Палов повышается на +1. (Эффект не суммируется).
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ разводится только особой парой
 
     > Бледно-голубое пламя на ощупь лишь немного холодное, но всё, что касается его слишком долго, медленно замерзает. Стоит лишь поднести бутылку молока — получается замороженное молоко!
@@ -88,9 +88,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король тьмы (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король тьмы" href="../../../passivki/lord_of_the_underworld/">Король тьмы</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

@@ -30,7 +30,7 @@
 
 
     #### Партнёрский навык: Дракон в чёрных доспехах
-    Можно оседлать, чтобы передвигаться по воздуху. Во время полёта увеличивается урон по залежам руды на (1100~3300)% . Количество добываемой Металлическая руда увеличивается на (150~300)% . Технологии 39 level value 1 Mining_up4_Otomo_only 1100 CollectItemDrop_PartnerSkill_Ride 150 2 Mining_up5_Otomo_only 1500 CollectItemDrop_PartnerSkill_Ride 180 3 Mining_up6_Otomo_only 2000 CollectItemDrop_PartnerSkill_Ride 210 4 Mining_up7_Otomo_only 2600 CollectItemDrop_PartnerSkill_Ride 240 5 Mining_up8_Otomo_only 3300 CollectItemDrop_PartnerSkill_Ride 300
+    Можно оседлать, чтобы передвигаться по воздуху. Во время полёта увеличивается урон по залежам руды на 1100–3300%. Количество добываемой Металлическая руда увеличивается на 150–300%. Технологии 39. По звёздам: 0★ 1100 · 1★ 1500 · 2★ 2000 · 3★ 2600 · 4★ 3300
 
 
     #### Чем хорош / чем плох
@@ -87,11 +87,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - по обзору: Легенда, Демон-бог, Божественный дракон, Мастеровитый
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Божественный дракон (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Божественный дракон" href="../../../passivki/divine_dragon/">Божественный дракон</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div><div class="pset"><div class="pset-h">🐎 Ездовой</div><div class="pset-w">быстрее бегает или летает с тобой верхом</div><div class="tags"><a class="psv r-4" data-psv="Божественная скорость" href="../../../passivki/swift/">Божественная скорость</a><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Вечный двигатель" href="../../../passivki/eternal_engine/">Вечный двигатель</a><a class="psv r-3" data-psv="Умелый бегун" href="../../../passivki/runner/">Умелый бегун</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

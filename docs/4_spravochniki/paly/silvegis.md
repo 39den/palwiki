@@ -29,7 +29,7 @@
 
 
     #### Партнёрский навык: Щит Эгиды
-    Можно оседлать для передвижения. Пока находится в команде, время до начала восстановления щита игрока сокращается на (30~60)% , а урон, получаемый щитом, снижается на (65~80)% . (Эффект не суммируется) Технологии 60 level value 1 ReduceCoolTime_RecoveryPlayerShield_PartnerSkill 30 ShieldDamageCutRate_PartnerSkill 65 2 ReduceCoolTime_RecoveryPlayerShield_PartnerSkill 34 ShieldDamageCutRate_PartnerSkill 68 3 ReduceCoolTime_RecoveryPlayerShield_PartnerSkill 40 ShieldDamageCutRate_PartnerSkill 71 4 ReduceCoolTime_RecoveryPlayerShield_PartnerSkill 48 ShieldDamageCutRate_PartnerSkill 75 5 ReduceCoolTime_RecoveryPlayerShield_PartnerSkill 60 ShieldDamageCutRate_PartnerSkill 80
+    Можно оседлать для передвижения. Пока находится в команде, время до начала восстановления щита игрока сокращается на 30–60%, а урон, получаемый щитом, снижается на 65–80%. (Эффект не суммируется) Технологии 60. По звёздам: 0★ 30 · 1★ 34 · 2★ 40 · 3★ 48 · 4★ 60
 
 
     #### Чем хорош / чем плох
@@ -84,11 +84,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - по обзору: Алмазное тело, Особая конституция, Легенда, Живая стена святилища
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Божественный дракон (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Божественный дракон" href="../../../passivki/divine_dragon/">Божественный дракон</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div><div class="pset"><div class="pset-h">🐎 Ездовой</div><div class="pset-w">быстрее бегает или летает с тобой верхом</div><div class="tags"><a class="psv r-4" data-psv="Божественная скорость" href="../../../passivki/swift/">Божественная скорость</a><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Вечный двигатель" href="../../../passivki/eternal_engine/">Вечный двигатель</a><a class="psv r-4" data-psv="Небесное скольжение" href="../../../passivki/sky_strider/">Небесное скольжение</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

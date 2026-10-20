@@ -1,0 +1,23 @@
+import sys,os,re,json
+sys.path.insert(0,'/workspace/palcards');import make_card as M
+from PIL import Image
+def clean(s):
+  s=re.split(r'\s*Lv\.\s*Skill',s)[0]
+  s=re.sub(r'\((ToTrainer|ToSelf|ToOtomo|ToEnemy)\)','',s);s=re.sub(r'\bElement[A-Z]\w*(\s+[\d.]+)?','',s)
+  s=re.sub(r'(?<![\w/.-])[A-Z][A-Za-z0-9]*_[A-Za-z0-9_]+','',s);s=re.sub(r'\s+',' ',s).strip()
+  return s.replace(' .','.').replace(' ,',',')
+_orig=M.short_partner;M.short_partner=lambda s:clean(_orig(s))
+_art=M.art
+def art(p):
+  if os.path.exists(f"/workspace/palcards/art/{p['id']}.png"):return _art(p)
+  ic=f"/workspace/palcards/art/icons/{p['id']}.png"
+  return Image.open(ic).convert('RGBA') if os.path.exists(ic) else _art(p)
+M.art=art
+os.makedirs('/workspace/palsite/.cards',exist_ok=True)
+pals=json.load(open('/workspace/palwiki/data/pals.json'))
+src=os.path.getmtime('/workspace/palwiki/data/pals.json')
+for p in pals:
+  fn=f"/workspace/palsite/.cards/{p['no']}_{p['id']}.png"
+  if os.path.exists(fn) and os.path.getmtime(fn)>src and os.path.getmtime(fn)>os.path.getmtime(__file__):continue
+  M.card(p).save(fn)
+print('cards ok',len(os.listdir('/workspace/palsite/.cards')))

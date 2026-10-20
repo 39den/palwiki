@@ -32,11 +32,11 @@
 
 
     #### Партнёрский навык: Цветочное усиление
-    Пока находится на базе, Нежноцвет наполняет ферму энергией, увеличивая скорость роста урожая на (50~70)% . level value 1 FarmCropGrowupSpeed_Up 50 2 FarmCropGrowupSpeed_Up 55 3 FarmCropGrowupSpeed_Up 60 4 FarmCropGrowupSpeed_Up 65 5 FarmCropGrowupSpeed_Up 70
+    Пока находится на базе, Нежноцвет наполняет ферму энергией, увеличивая скорость роста урожая на 50–70%. По звёздам: 0★ 50 · 1★ 55 · 2★ 60 · 3★ 65 · 4★ 70
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ явных минусов нет
 
     > С приходом весны ветер разносит по острову клубы пыльцы. В своей аллергии на неё Флопи винит Нежноцвет .
@@ -90,10 +90,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король духов (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король духов" href="../../../passivki/spirit_emperor/">Король духов</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

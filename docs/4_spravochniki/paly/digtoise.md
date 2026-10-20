@@ -29,11 +29,11 @@
 
 
     #### Партнёрский навык: Дробящий бур
-    При активации входит в состояние Ураганный панцирь . Вращаясь, следует за игроком и повышает эффективность разрушения руды на (800~2000)% . level value 1 Mining_up_PartnerSkill_DrillGame 640 MainValue 1.25 2 Mining_up_PartnerSkill_DrillGame 640 MainValue 1.5 3 Mining_up_PartnerSkill_DrillGame 640 MainValue 1.875 4 Mining_up_PartnerSkill_DrillGame 640 MainValue 2.25 5 Mining_up_PartnerSkill_DrillGame 640 MainValue 3.125
+    При активации входит в состояние Ураганный панцирь. Вращаясь, следует за игроком и повышает эффективность разрушения руды на 800–2000%. По звёздам: 0★ 640 · 1★ 640 · 2★ 640 · 3★ 640 · 4★ 640
 
 
     #### Чем хорош / чем плох
-    - ✅ крепкая защита (120); можно оседлать
+    - ✅ крепкая защита (120)
     - ❌ явных минусов нет
 
     > | Дигтос и бур| — поучительная история о Дигтос с самым прочным панцирем и буром, который размышляет о природе противоречий.
@@ -88,10 +88,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Император земли (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Император земли" href="../../../passivki/earth_emperor/">Император земли</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

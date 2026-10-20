@@ -31,11 +31,11 @@
 
 
     #### Партнёрский навык: Улыбчивая нежить
-    Пока находится в команде, если атаковать врага в состоянии Яд , его атаку снижается на (40~80)% . (Эффект не суммируется) level value 1 OniGhostGirl_PartnerSkill 40 2 OniGhostGirl_PartnerSkill 50 3 OniGhostGirl_PartnerSkill 60 4 OniGhostGirl_PartnerSkill 70 5 OniGhostGirl_PartnerSkill 80
+    Пока находится в команде, если атаковать врага в состоянии Яд, его атаку снижается на 40–80%. (Эффект не суммируется). По звёздам: 0★ 40 · 1★ 50 · 2★ 60 · 3★ 70 · 4★ 80
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ явных минусов нет
 
     > Живёт ради того, чтобы пугать, но совсем не страшный. Однако все лишь делают вид, что пугаются его милоты, и в итоге Бакеми стал вестником улыбок.
@@ -88,10 +88,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король тьмы (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король тьмы" href="../../../passivki/lord_of_the_underworld/">Король тьмы</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

@@ -29,11 +29,11 @@
 
 
     #### Партнёрский навык: Помощь в рубке
-    Пока находится в команде, урон игрока при рубке деревьев увеличивается на (30~50)% , а вес всех видов древесины уменьшается на (40~60)% . (Эффект не суммируется) level value 1 TrainerLogging_up_PartnerSkill 30 ItemWeightReduction_PartnerSkill_PlantSlime 40 2 TrainerLogging_up_PartnerSkill 35 ItemWeightReduction_PartnerSkill_PlantSlime 45 3 TrainerLogging_up_PartnerSkill 40 ItemWeightReduction_PartnerSkill_PlantSlime 50 4 TrainerLogging_up_PartnerSkill 45 ItemWeightReduction_PartnerSkill_PlantSlime 55 5 TrainerLogging_up_PartnerSkill 50 ItemWeightReduction_PartnerSkill_PlantSlime 60
+    Пока находится в команде, урон игрока при рубке деревьев увеличивается на 30–50%, а вес всех видов древесины уменьшается на 40–60%. (Эффект не суммируется). По звёздам: 0★ 30 · 1★ 35 · 2★ 40 · 3★ 45 · 4★ 50
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ слабая атака (70)
 
     > Удивительный Пал с телом, похожим на древесный сок. Если он теряет свою шапочку, то начинает постепенно увядать — и в конце концов окончательно сгнивает.
@@ -86,9 +86,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король духов (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король духов" href="../../../passivki/spirit_emperor/">Король духов</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

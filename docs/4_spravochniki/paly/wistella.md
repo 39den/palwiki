@@ -31,11 +31,11 @@
 
 
     #### Партнёрский навык: Скрытая тёмная энергия
-    Пока находится в команде, защита Палов Тьма увеличивается на (15~30)% . (Эффект не суммируется) level value 1 DefenseUp_Dark_PartnerSkill 15 2 DefenseUp_Dark_PartnerSkill 17 3 DefenseUp_Dark_PartnerSkill 20 4 DefenseUp_Dark_PartnerSkill 24 5 DefenseUp_Dark_PartnerSkill 30
+    Пока находится в команде, защита Палов Тьма увеличивается на 15–30%. (Эффект не суммируется). По звёздам: 0★ 15 · 1★ 17 · 2★ 20 · 3★ 24 · 4★ 30
 
 
     #### Чем хорош / чем плох
-    - ✅ отличный рабочий (пригодность 6); можно оседлать
+    - ✅ отличный рабочий (пригодность 6)
     - ❌ явных минусов нет
 
     > Когда жизнь подходит к концу, где-то в этом небе загорается ещё одна звезда. Чем больше воспоминаний, тем ярче она светит.
@@ -87,10 +87,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король тьмы (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король тьмы" href="../../../passivki/lord_of_the_underworld/">Король тьмы</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

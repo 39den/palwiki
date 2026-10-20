@@ -29,7 +29,7 @@
 
 
     #### Партнёрский навык: Властелин океана
-    Сражаясь вместе с игроком, наносит дополнительные атаки копьём Вода вслед за атаками игрока. Можно оседлать для передвижения по воде. Во время езды по воде способен высоко подпрыгивать. Технологии 64 level value 2 SwimSpeed_up_PartnerSkill_1 10 OverWriteCoolTime 3 Пробуждение : (Скорость передвижения по воде: +10% , сокращение перезарядки: Небольшое ) 3 SwimSpeed_up_PartnerSkill_2 14 OverWriteCoolTime 2.4 Пробуждение : (Скорость передвижения по воде: +14% , сокращение перезарядки: Среднее ) 4 SwimSpeed_up_PartnerSkill_3 18 OverWriteCoolTime 1.8 Пробуждение : (Скорость передвижения по воде: +18% , сокращение перезарядки: Большое ) 5 SwimSpeed_up_PartnerSkill_4 25 OverWriteCoolTime 1 Пробуждение : (Скорость передвижения по воде: +25% , сокращение перезарядки: Очень большое ) 1 OverWriteCoolTime 3.6 Пробуждение :
+    Сражаясь вместе с игроком, наносит дополнительные атаки копьём Вода вслед за атаками игрока. Можно оседлать для передвижения по воде. Во время езды по воде способен высоко подпрыгивать. Технологии 64.
 
 
     #### Чем хорош / чем плох
@@ -90,10 +90,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Владыка морей (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Владыка морей" href="../../../passivki/lord_of_the_sea/">Владыка морей</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div><div class="pset"><div class="pset-h">🐎 Ездовой</div><div class="pset-w">быстрее бегает или летает с тобой верхом</div><div class="tags"><a class="psv r-4" data-psv="Божественная скорость" href="../../../passivki/swift/">Божественная скорость</a><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Вечный двигатель" href="../../../passivki/eternal_engine/">Вечный двигатель</a><a class="psv r-4" data-psv="Небесное скольжение" href="../../../passivki/sky_strider/">Небесное скольжение</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

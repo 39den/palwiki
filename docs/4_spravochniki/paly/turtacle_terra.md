@@ -31,11 +31,11 @@
 
 
     #### Партнёрский навык: Сверкающий носильщик
-    Пока находится в команде, снижает вес Сера и Уголь на (80~100)% , а также увеличивает урон игрока и Пала при поражении элементальной слабости врага с помощью Земля на (25~40)% . (Эффект не суммируется) level value 1 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 80  2 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 84  3 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 88  4 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 92  5 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 100
+    Пока находится в команде, снижает вес Сера и Уголь на 80–100%, а также увеличивает урон игрока и Пала при поражении элементальной слабости врага с помощью Земля на 25–40%. (Эффект не суммируется). По звёздам: 0★ 80 · 1★ 84 · 2★ 88 · 3★ 92 · 4★ 100
 
 
     #### Чем хорош / чем плох
-    - ✅ крепкая защита (125); можно оседлать
+    - ✅ крепкая защита (125)
     - ❌ разводится только особой парой
 
     > Чтобы защитить своё уязвимое тело, он обзавёлся прочным панцирем. Большая часть его осязания сосредоточена в лапах и панцире, и если тайком прикоснуться к самому телу, он этого даже не почувствует.
@@ -89,10 +89,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Владыка морей (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Владыка морей" href="../../../passivki/lord_of_the_sea/">Владыка морей</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

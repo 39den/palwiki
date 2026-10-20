@@ -2,7 +2,7 @@
 const ACT={party:'🎒 из команды',summoned:'🐾 выпущен',mounted:'🐎 верхом',active:'🔘 кнопкой',base:'🏠 на базе'};
 const WORKS=['Добыча','Рубка деревьев','Разжигание огня','Полив','Посев семян','Генерация энергии','Ручная работа','Сбор','Фармацевтика','Охлаждение','Транспортировка','Фермерство'];
 const ELS=['Нейтральный','Огонь','Вода','Трава','Молния','Лёд','Земля','Тьма','Дракон'];
-const card=p=>`<a class="pc card-link" href="${B+p.url}"><img src="${B+p.thumb}" alt="${esc(p.ru)}" loading="lazy" width="110" height="110"><small>#${esc(p.no)}</small><b>${esc(p.ru)}</b><span>${p.el.map(chip).join('')}</span></a>`;
+const card=p=>`<a class="pc card-link g-${({"Нейтральный":"neutral","Огонь":"fire","Вода":"water","Трава":"grass","Молния":"electric","Лёд":"ice","Земля":"ground","Тьма":"dark","Дракон":"dragon"})[p.el[0]]}" href="${B+p.url}"><img src="${B+p.thumb}" alt="${esc(p.ru)}" loading="lazy" width="110" height="110"><small>#${esc(p.no)}</small><b>${esc(p.ru)}</b><span>${p.el.map(chip).join('')}</span></a>`;
 function gallery(D){const f=document.getElementById('gal-filters'),g=document.getElementById('gallery');
  const sel=(id,label,opts)=>`<select id="${id}"><option value="">${label}</option>${opts.map(o=>`<option value="${esc(o[0])}">${esc(o[1])}</option>`).join('')}</select>`;
  f.innerHTML=`<input id="gq" type="search" placeholder="Имя…">`+sel('ge','Стихия',ELS.map(e=>[e,e]))+sel('gw','Работа',WORKS.map(e=>[e,e]))+sel('gl','Ур. работы ≥',[1,2,3,4,5].map(e=>[e,'≥ '+e]))+sel('gm','Езда',[['ride','🐎 ездовой'],['fly','🦅 летающий']])+sel('ga','Партнёрка',Object.entries(ACT))+sel('gs','Сортировка',[['no','по номеру'],['ru','по имени'],['atk','атака ↓'],['hp','HP ↓'],['work','уровень работы ↓'],['sprint','скорость ↓']])+`<span class="gal-count" id="gc"></span>`;
@@ -14,7 +14,7 @@ function gallery(D){const f=document.getElementById('gal-filters'),g=document.ge
   r.sort(s=='ru'?(x,y)=>x.ru.localeCompare(y.ru,'ru'):s=='no'?(x,y)=>num(x)-num(y)||x.no.localeCompare(y.no):s=='work'?(x,y)=>(w?wl(y)-wl(x):Math.max(0,...y.work.map(z=>z[1]))-Math.max(0,...x.work.map(z=>z[1]))):(x,y)=>y[s]-x[s]);
   g.innerHTML=r.map(card).join('');document.getElementById('gc').textContent='Найдено: '+r.length;};
  f.addEventListener('input',run);f.addEventListener('change',run);run();}
-function potd(D){const ps=D.pals.filter(p=>p.url&&p.thumb.startsWith('art'));const d=new Date();const p=ps[(d.getFullYear()*372+d.getMonth()*31+d.getDate())%ps.length];
+function potd(D){const ps=D.pals.filter(p=>p.url&&p.thumb);const d=new Date();const p=ps[(d.getFullYear()*372+d.getMonth()*31+d.getDate())%ps.length];
  document.getElementById('potd').innerHTML=`<a class="potd card-link" href="${B+p.url}"><img src="${B+p.thumb}" alt="" loading="lazy"><div><h3>${esc(p.ru)} <small>#${esc(p.no)}</small></h3>${p.el.map(chip).join('')}<div>${p.work.map(w=>esc(w[0])+' '+w[1]).join(' · ')}</div><div>Партнёрка: <b>${esc(p.psk)}</b> ${p.act.map(x=>ACT[x]||'').join(' ')}</div><span class="open">Открыть →</span></div></a>`;}
 function compare(D){const box=document.getElementById('cmp');const ps=D.pals.filter(p=>p.url).sort((a,b)=>a.ru.localeCompare(b.ru,'ru'));
  const dl='<datalist id="cmpl">'+ps.map(p=>`<option value="${esc(p.ru)}">`).join('')+'</datalist>';
@@ -95,3 +95,14 @@ function table(D){const g=document.getElementById('gallery'),f=document.getEleme
  sw.querySelectorAll('button').forEach(b=>b.onclick=()=>{view=b.dataset.v;sw.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));g.style.display=view=='grid'?'':'none';const t=document.getElementById('gtable');if(t)t.style.display=view=='grid'?'none':'';draw();});
  new MutationObserver(draw).observe(g,{childList:true});}
 document.addEventListener('DOMContentLoaded',()=>{tabbar();window.PW_data().then(D=>{palPage(D);homeLists(D);setTimeout(()=>table(D),0);});});})();
+(function(){const B=window.PW_BASE;const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function close(){document.querySelectorAll('.sheet,.sheet-bg').forEach(e=>e.remove());}
+document.addEventListener('keydown',e=>{if(e.key=='Escape')close();});
+document.addEventListener('click',e=>{const a=e.target.closest('a.psv[data-psv]');if(!a||e.metaKey||e.ctrlKey)return;e.preventDefault();
+ window.PW_data().then(D=>{const q=D.passives.find(x=>x.name==a.dataset.psv);if(!q){location.href=a.href;return;}close();
+  const rk=+q.rank||0;const g=[];if(q.nat&&q.nat.length)g.push('🐣 С рождения: '+q.nat.slice(0,6).map(esc).join(', ')+(q.nat.length>6?'…':''));if(q.breed)g.push('🧬 Передаётся разведением');
+  if(q.how=='gold')g.push('🏥 Операционный стол: '+String(q.gold).replace(/\B(?=(\d{3})+$)/g,' ')+' золота');if(q.how=='disposable')g.push('💉 Имплант из Древних реликвий');
+  const bg=document.createElement('div');bg.className='sheet-bg';bg.onclick=close;const s=document.createElement('div');s.className='sheet';s.setAttribute('role','dialog');
+  s.innerHTML=`<button class="x" aria-label="Закрыть">×</button><span class="psv ${a.className.split(' ').find(c=>c.startsWith('r-'))||''}">${esc(q.name)}</span> <small>ранг ${rk}</small><h3>${rk<0?'Плохая пассивка':rk>=4?'Топовая пассивка':'Что даёт'}</h3><div>${esc(q.desc)}</div><ul>${g.map(x=>'<li>'+x+'</li>').join('')}</ul><a href="${a.href}">Подробнее →</a>`;
+  document.body.append(bg,s);s.querySelector('.x').onclick=close;
+  if(window.innerWidth>700){const r=a.getBoundingClientRect();s.style.left=Math.min(r.left,window.innerWidth-440)+'px';s.style.top=Math.min(r.bottom+8,window.innerHeight-s.offsetHeight-10)+'px';}});});})();

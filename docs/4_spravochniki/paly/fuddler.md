@@ -31,11 +31,11 @@
 
 
     #### Партнёрский навык: Помощь в добыче руды
-    Пока находится в команде, урон игрока при добыче ресурсов на (30~60)% , а вес Камень уменьшается на (80~100)% . (Эффект не суммируется) level value 1 TrainerMining_up_PartnerSkill_CuteMole 30 ItemWeightReduction_PartnerSkill_CuteMole 80 2 TrainerMining_up_PartnerSkill_CuteMole 34 ItemWeightReduction_PartnerSkill_CuteMole 84 3 TrainerMining_up_PartnerSkill_CuteMole 40 ItemWeightReduction_PartnerSkill_CuteMole 88 4 TrainerMining_up_PartnerSkill_CuteMole 48 ItemWeightReduction_PartnerSkill_CuteMole 92 5 TrainerMining_up_PartnerSkill_CuteMole 60 ItemWeightReduction_PartnerSkill_CuteMole 100
+    Пока находится в команде, урон игрока при добыче ресурсов на 30–60%, а вес Камень уменьшается на 80–100%. (Эффект не суммируется). По звёздам: 0★ 30 · 1★ 34 · 2★ 40 · 3★ 48 · 4★ 60
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ мало здоровья (65)
 
     > Большие когти этого Пала прочны, как алмаз, но на их заточку он тратит почти всю свою энергию. Иногда это всё, что он успевает сделать за день.
@@ -89,9 +89,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Император земли (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Император земли" href="../../../passivki/earth_emperor/">Император земли</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

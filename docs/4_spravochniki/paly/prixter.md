@@ -31,7 +31,7 @@
 
 
     #### Партнёрский навык: Неядовитый скорпион
-    Пока находится в команде, урон игрока и Пала по врагам в состоянии Яд увеличивается на (50~65)% . (Эффект не суммируется) level value 1 DamageUpTrainerAndOtomo_ToPoison_PartnerSkill_ScorpionMan 50 OverWriteCoolTime 60 2 DamageUpTrainerAndOtomo_ToPoison_PartnerSkill_ScorpionMan 53 OverWriteCoolTime 45 3 DamageUpTrainerAndOtomo_ToPoison_PartnerSkill_ScorpionMan 56 OverWriteCoolTime 30 4 DamageUpTrainerAndOtomo_ToPoison_PartnerSkill_ScorpionMan 60 OverWriteCoolTime 20 5 DamageUpTrainerAndOtomo_ToPoison_PartnerSkill_ScorpionMan 65 OverWriteCoolTime 10
+    Пока находится в команде, урон игрока и Пала по врагам в состоянии Яд увеличивается на 50–65%. (Эффект не суммируется). По звёздам: 0★ 50 · 1★ 53 · 2★ 56 · 3★ 60 · 4★ 65
 
 
     #### Чем хорош / чем плох
@@ -87,9 +87,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король тьмы (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король тьмы" href="../../../passivki/lord_of_the_underworld/">Король тьмы</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

@@ -29,7 +29,7 @@
 
 
     #### Партнёрский навык: Твердоголовый
-    Можно оседлать для передвижения. Во время езды эффективность разрушения камней увеличивается на (500~2000)% . Технологии 6 level value 1 Mining_up2_Otomo_only 500 2 Mining_up3_Otomo_only 750 3 Mining_up4_Otomo_only 1100 4 Mining_up5_Otomo_only 1500 5 Mining_up6_Otomo_only 2000
+    Можно оседлать для передвижения. Во время езды эффективность разрушения камней увеличивается на 500–2000%. Технологии 6. По звёздам: 0★ 500 · 1★ 750 · 2★ 1100 · 3★ 1500 · 4★ 2000
 
 
     #### Чем хорош / чем плох
@@ -87,9 +87,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Император земли (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Император земли" href="../../../passivki/earth_emperor/">Император земли</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🐎 Ездовой</div><div class="pset-w">быстрее бегает или летает с тобой верхом</div><div class="tags"><a class="psv r-4" data-psv="Божественная скорость" href="../../../passivki/swift/">Божественная скорость</a><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Вечный двигатель" href="../../../passivki/eternal_engine/">Вечный двигатель</a><a class="psv r-4" data-psv="Небесное скольжение" href="../../../passivki/sky_strider/">Небесное скольжение</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

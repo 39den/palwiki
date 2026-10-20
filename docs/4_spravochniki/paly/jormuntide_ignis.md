@@ -29,7 +29,7 @@
 
 
     #### Партнёрский навык: Лавовый дракон, зовущий бурю
-    Можно оседлать для передвижения. Пока находится в команде, полностью игнорирует урон от лавы и увеличивает урон, наносимый игроком и Палом по врагам в состоянии Возгорание , на (50~65)% . (Эффект не суммируется) Технологии 59 level value 1 DamageUpTrainerAndOtomo_ToWetness_PartnerSkill_Umihebi_Fire 50 LavaDamageInvalid_PartnerSkill 1 Пробуждение : 2 DamageUpTrainerAndOtomo_ToWetness_PartnerSkill_Umihebi_Fire 53 LavaDamageInvalid_PartnerSkill 1 MoveSpeed_up_PartnerSkill_Ride_1 10 Пробуждение : (Скорость передвижения верхом: +10% ) 3 DamageUpTrainerAndOtomo_ToWetness_PartnerSkill_Umihebi_Fire 56 LavaDamageInvalid_PartnerSkill 1 MoveSpeed_up_PartnerSkill_Ride_2 12 Пробуждение : (Скорость передвижения верхом: +12% ) 4 DamageUpTrainerAndOtomo_ToWetness_PartnerSkill_Umihebi_Fire 60 LavaDamageInvalid_PartnerSkill 1 MoveSpeed_up_PartnerSkill_Ride_3 15 Пробуждение : (Скорость передвижения верхом: +15% ) 5 DamageUpTrainerAndOtomo_ToWetness_PartnerSkill_Umihebi_Fire 65 LavaDamageInvalid_PartnerSkill 1 MoveSpeed_up_PartnerSkill_Ride_4 20 Пробуждение : (Скорость передвижения верхом: +20% )
+    Можно оседлать для передвижения. Пока находится в команде, полностью игнорирует урон от лавы и увеличивает урон, наносимый игроком и Палом по врагам в состоянии Возгорание, на 50–65%. (Эффект не суммируется) Технологии 59.
 
 
     #### Чем хорош / чем плох
@@ -87,11 +87,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - по обзору: Мастеровитый, Виртуоз, Легенда, Император огня
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Божественный дракон (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Божественный дракон" href="../../../passivki/divine_dragon/">Божественный дракон</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div><div class="pset"><div class="pset-h">🐎 Ездовой</div><div class="pset-w">быстрее бегает или летает с тобой верхом</div><div class="tags"><a class="psv r-4" data-psv="Божественная скорость" href="../../../passivki/swift/">Божественная скорость</a><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Вечный двигатель" href="../../../passivki/eternal_engine/">Вечный двигатель</a><a class="psv r-4" data-psv="Небесное скольжение" href="../../../passivki/sky_strider/">Небесное скольжение</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

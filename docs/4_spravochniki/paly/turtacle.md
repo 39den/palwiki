@@ -31,11 +31,11 @@
 
 
     #### Партнёрский навык: Колючий носильщик
-    Пока находится в команде, вес Металлическая руда уменьшается на (80~100)% . (Эффект не суммируется) level value 1 ItemWeightReduction_PartnerSkill_TentacleTurtle 80 2 ItemWeightReduction_PartnerSkill_TentacleTurtle 84 3 ItemWeightReduction_PartnerSkill_TentacleTurtle 88 4 ItemWeightReduction_PartnerSkill_TentacleTurtle 92 5 ItemWeightReduction_PartnerSkill_TentacleTurtle 100
+    Пока находится в команде, вес Металлическая руда уменьшается на 80–100%. (Эффект не суммируется). По звёздам: 0★ 80 · 1★ 84 · 2★ 88 · 3★ 92 · 4★ 100
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ слабая атака (75)
 
     > Для защиты слабого тела он обзавёлся мощным панцирем. Но теперь его тело настолько уязвимо, что даже от лёгкой щекотки он теряет сознание.
@@ -90,9 +90,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Владыка морей (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Владыка морей" href="../../../passivki/lord_of_the_sea/">Владыка морей</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

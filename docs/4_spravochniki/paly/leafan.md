@@ -32,11 +32,11 @@
 
 
     #### Партнёрский навык: Полная самоотдача
-    Сила атаки и защита этого Пала увеличиваются на (2~6)% за каждого Пала Трава в команде, кроме Лифан . level value 1 ShotAttack_Defence_PartnerSkill_SpecificElement 2, 2 2 ShotAttack_Defence_PartnerSkill_SpecificElement 3, 3 3 ShotAttack_Defence_PartnerSkill_SpecificElement 4, 4 4 ShotAttack_Defence_PartnerSkill_SpecificElement 5, 5 5 ShotAttack_Defence_PartnerSkill_SpecificElement 6, 6
+    Сила атаки и защита этого Пала увеличиваются на 2–6% за каждого Пала Трава в команде, кроме Лифан.
 
 
     #### Чем хорош / чем плох
-    - ✅ хорошая атака (115); можно оседлать
+    - ✅ хорошая атака (115)
     - ❌ много ест (530)
 
     > Чтобы отточить боевое искусство, передаваемое единственному наследнику, только ежедневные тренировки! Терять голову из-за любви — недопустимо! Только ежедневная практика! Но час настал! В атаку на ту, что не даёт покоя! Итог — одно разбитое сердце! Техники любви не передаются по наследству! Остаётся лишь сожаление!
@@ -87,10 +87,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король духов (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король духов" href="../../../passivki/spirit_emperor/">Король духов</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

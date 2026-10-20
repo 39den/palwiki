@@ -30,7 +30,7 @@
 
 
     #### Партнёрский навык: Тёплый китоход
-    Можно оседлать для передвижения по воде. Пока находится в команде, мини-игра рыбалки начинается с полосой захвата, увеличенной на (7~17)% от обычного значения, а во время перекрытия индикаторов скорость заполнения полосы захвата увеличивается на (7~17)% . (Эффект не суммируется) Технологии 71 level value 1 Fishing_StartProgressAdd_IceNarWhal_Fire_PartnerSkill 7 Fishing_SuccessAmountUp_IceNarWhal_Fire_PartnerSkill 7 Пробуждение : 2 Fishing_StartProgressAdd_IceNarWhal_Fire_PartnerSkill 9 Fishing_SuccessAmountUp_IceNarWhal_Fire_PartnerSkill 9 SwimSpeed_up_PartnerSkill_1 10 Пробуждение : (Скорость передвижения по воде: +10% ) 3 Fishing_StartProgressAdd_IceNarWhal_Fire_PartnerSkill 11 Fishing_SuccessAmountUp_IceNarWhal_Fire_PartnerSkill 11 SwimSpeed_up_PartnerSkill_2 14 Пробуждение : (Скорость передвижения по воде: +14% ) 4 Fishing_StartProgressAdd_IceNarWhal_Fire_PartnerSkill 13 Fishing_SuccessAmountUp_IceNarWhal_Fire_PartnerSkill 13 SwimSpeed_up_PartnerSkill_3 18 Пробуждение : (Скорость передвижения по воде: +18% ) 5 Fishing_StartProgressAdd_IceNarWhal_Fire_PartnerSkill 17 Fishing_SuccessAmountUp_IceNarWhal_Fire_PartnerSkill 17 SwimSpeed_up_PartnerSkill_4 25 Пробуждение : (Скорость передвижения по воде: +25% )
+    Можно оседлать для передвижения по воде. Пока находится в команде, мини-игра рыбалки начинается с полосой захвата, увеличенной на 7–17% от обычного значения, а во время перекрытия индикаторов скорость заполнения полосы захвата увеличивается на 7–17%. (Эффект не суммируется) Технологии 71.
 
 
     #### Чем хорош / чем плох
@@ -89,10 +89,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Император льда (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Император льда" href="../../../passivki/ice_emperor/">Император льда</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div><div class="pset"><div class="pset-h">🐎 Ездовой</div><div class="pset-w">быстрее бегает или летает с тобой верхом</div><div class="tags"><a class="psv r-4" data-psv="Божественная скорость" href="../../../passivki/swift/">Божественная скорость</a><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Вечный двигатель" href="../../../passivki/eternal_engine/">Вечный двигатель</a><a class="psv r-4" data-psv="Небесное скольжение" href="../../../passivki/sky_strider/">Небесное скольжение</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

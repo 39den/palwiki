@@ -32,11 +32,11 @@
 
 
     #### Партнёрский навык: Дроп Джелроя
-    Пока находится в команде, количество предметов, получаемых при сборе увеличивается на (55~95)% . (Эффект не суммируется). Также, если Джелиэтта и Джелрой находятся на базе, скорость полива у Джелрой увеличивается на (50~120)% . (Эффект не суммируется) level value 1 FishingSalvage_ItemDrop_JellyfishGhost_PartnerSkill 55 WorkSpeedUp_JellyfishGhost_PartnerSkill 50 WorkSpeedUp_Farm_JellyfishGhost_PartnerSkill 50 2 FishingSalvage_ItemDrop_JellyfishGhost_PartnerSkill 65 WorkSpeedUp_JellyfishGhost_PartnerSkill 60 WorkSpeedUp_Farm_JellyfishGhost_PartnerSkill 60 3 FishingSalvage_ItemDrop_JellyfishGhost_PartnerSkill 75 WorkSpeedUp_JellyfishGhost_PartnerSkill 70 WorkSpeedUp_Farm_JellyfishGhost_PartnerSkill 70 4 FishingSalvage_ItemDrop_JellyfishGhost_PartnerSkill 85 WorkSpeedUp_JellyfishGhost_PartnerSkill 90 WorkSpeedUp_Farm_JellyfishGhost_PartnerSkill 90 5 FishingSalvage_ItemDrop_JellyfishGhost_PartnerSkill 95 WorkSpeedUp_JellyfishGhost_PartnerSkill 120 WorkSpeedUp_Farm_JellyfishGhost_PartnerSkill 120
+    Пока находится в команде, количество предметов, получаемых при сборе увеличивается на 55–95%. (Эффект не суммируется). Также, если Джелиэтта и Джелрой находятся на базе, скорость полива у Джелрой увеличивается на 50–120%. (Эффект не суммируется). По звёздам: 0★ 55 · 49★ 50 · 1★ 65 · 59★ 60 · 2★ 75 · 69★ 70 · 3★ 85 · 89★ 90 · 4★ 95 · 119★ 120
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ слабая атака (75)
 
     > Пал, внешне очень похожий на Джелиэтта . Когда у Джелиэтта не получается прийти, он иногда появляется вместо него. Его игра настолько убедительна, что никто не замечает подмены.
@@ -89,9 +89,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Владыка морей (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Владыка морей" href="../../../passivki/lord_of_the_sea/">Владыка морей</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

@@ -31,11 +31,11 @@
 
 
     #### Партнёрский навык: Холодная пасть
-    Пока находится в команде, вес ингредиентов и приготовленной еды уменьшается на (30~60)% , а эффект замедления порчи продуктов у Палов Лёд усиливается на (-30~-80)% . (Эффект не суммируется) level value 1 ItemWeightReduction_PartnerSkill_IceCrocodile 30 ItemCorruptionSpeedRate_IceCrocodile_PartnerSkill -30 2 ItemWeightReduction_PartnerSkill_IceCrocodile 35 ItemCorruptionSpeedRate_IceCrocodile_PartnerSkill -42 3 ItemWeightReduction_PartnerSkill_IceCrocodile 40 ItemCorruptionSpeedRate_IceCrocodile_PartnerSkill -54 4 ItemWeightReduction_PartnerSkill_IceCrocodile 50 ItemCorruptionSpeedRate_IceCrocodile_PartnerSkill -66 5 ItemWeightReduction_PartnerSkill_IceCrocodile 60 ItemCorruptionSpeedRate_IceCrocodile_PartnerSkill -80
+    Пока находится в команде, вес ингредиентов и приготовленной еды уменьшается на 30–60%, а эффект замедления порчи продуктов у Палов Лёд усиливается на (-30~-80)%. (Эффект не суммируется). По звёздам: 0★ 30 · 1★ 35 · 2★ 40 · 3★ 50 · 4★ 60
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ явных минусов нет
 
     > Во рту у него очень прохладно, а если он его закрывает — становится прямо-таки как в холодильнике. Особые вещества в его слюне предотвращают порчу пищи. Теоретически его можно использовать как хранилище для продуктов, но с точки зрения гигиены — лучше держать рот закрытым.
@@ -90,10 +90,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Император льда (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Император льда" href="../../../passivki/ice_emperor/">Император льда</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

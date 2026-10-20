@@ -30,11 +30,11 @@
 
 
     #### Партнёрский навык: Фея одуванчиков
-    Пока находится в команде, шанс поимки Палов в состоянии Путы увеличивается. (Эффект не суммируется) level value 1 CaptureLevelUpIfTarget_IvyCling_PartnerSkill_DandelionGirl 1 Пробуждение : 2 CaptureLevelUpIfTarget_IvyCling_PartnerSkill_DandelionGirl 2 Пробуждение : (Повышение шанса поимки: Небольшое ) 3 CaptureLevelUpIfTarget_IvyCling_PartnerSkill_DandelionGirl 3 Пробуждение : (Повышение шанса поимки: Среднее ) 4 CaptureLevelUpIfTarget_IvyCling_PartnerSkill_DandelionGirl 4 Пробуждение : (Повышение шанса поимки: Большое ) 5 CaptureLevelUpIfTarget_IvyCling_PartnerSkill_DandelionGirl 5 Пробуждение : (Повышение шанса поимки: Очень большое )
+    Пока находится в команде, шанс поимки Палов в состоянии Путы увеличивается. (Эффект не суммируется).
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ слабая атака (75)
 
     > Внутрь пуха можно набить неприятные воспоминания. Стоит ветру унести его прочь, и тёмному настроению можно сказать прощай.
@@ -85,9 +85,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король духов (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король духов" href="../../../passivki/spirit_emperor/">Король духов</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

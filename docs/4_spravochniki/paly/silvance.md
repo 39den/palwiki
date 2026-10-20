@@ -33,11 +33,11 @@
 
 
     #### Партнёрский навык: Хранитель спор
-    Пока находится в команде, если игрок атакует врага в состоянии Путы , враг взрывается , дополнительно нанося (40~60)% урона от атаки игрока. (Эффект не суммируется) Кроме того, игрок и Палы нейтрализуют взрывоопасные споры Мирового Древа . level value 1 Defuser_ExplosiveSpore_PartnerSkill 1 Mothman_PlayerInflictEffect_PartnerSkill 40 2 Defuser_ExplosiveSpore_PartnerSkill 1 Mothman_PlayerInflictEffect_PartnerSkill 44 3 Defuser_ExplosiveSpore_PartnerSkill 1 Mothman_PlayerInflictEffect_PartnerSkill 48 4 Defuser_ExplosiveSpore_PartnerSkill 1 Mothman_PlayerInflictEffect_PartnerSkill 52 5 Defuser_ExplosiveSpore_PartnerSkill 1 Mothman_PlayerInflictEffect_PartnerSkill 60
+    Пока находится в команде, если игрок атакует врага в состоянии Путы, враг взрывается, дополнительно нанося 40–60% урона от атаки игрока. (Эффект не суммируется) Кроме того, игрок и Палы нейтрализуют взрывоопасные споры Мирового Древа.
 
 
     #### Чем хорош / чем плох
-    - ✅ Фармацевтика 8, посев 6; мини-босс Древа; очень высокая атака (120); много здоровья (140); отличный рабочий (пригодность 8); можно оседлать
+    - ✅ Фармацевтика 8, посев 6; мини-босс Древа; очень высокая атака (120); много здоровья (140); отличный рабочий (пригодность 8)
     - ❌ Поздний; много ест (630); разводится только особой парой
 
     > С незапамятных времён он стоит у Древа и продолжает что-то охранять. Что именно он защищает сейчас и почему делает это — сам Сильванс не знает. Потому что так велит Древо. Потому что споры, которыми он управляет, должны знать, кто является врагом.
@@ -91,11 +91,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - по обзору: Мастеровитый, Виртуоз, Трудоголик, Аскет
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король духов (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король духов" href="../../../passivki/spirit_emperor/">Король духов</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

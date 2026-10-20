@@ -31,11 +31,11 @@
 
 
     #### Партнёрский навык: Пылающее будущее
-    Пока находится в команде, при попадании атакой игрока по врагу в состоянии Возгорание враг взрывается , нанося дополнительный урон, равный (40~60)% от атаки игрока. (Эффект не суммируется) level value 1 FoxExorcist_PlayerInflictEffect_PartnerSkill 40 2 FoxExorcist_PlayerInflictEffect_PartnerSkill 44 3 FoxExorcist_PlayerInflictEffect_PartnerSkill 48 4 FoxExorcist_PlayerInflictEffect_PartnerSkill 52 5 FoxExorcist_PlayerInflictEffect_PartnerSkill 60
+    Пока находится в команде, при попадании атакой игрока по врагу в состоянии Возгорание враг взрывается, нанося дополнительный урон, равный 40–60% от атаки игрока. (Эффект не суммируется). По звёздам: 0★ 40 · 1★ 44 · 2★ 48 · 3★ 52 · 4★ 60
 
 
     #### Чем хорош / чем плох
-    - ✅ очень высокая атака (125); отличный рабочий (пригодность 7); можно оседлать
+    - ✅ очень высокая атака (125); отличный рабочий (пригодность 7)
     - ❌ много ест (600)
 
     > Сосредотачивается и выискивает будущее в пламени. Если будущее не устраивает, повторяет, пока не выпадет лучшее. Поэтому будущее Фларакл всегда сияет!
@@ -87,10 +87,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Император огня (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Император огня" href="../../../passivki/flame_emperor/">Император огня</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

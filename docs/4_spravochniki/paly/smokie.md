@@ -29,11 +29,11 @@
 
 
     #### Партнёрский навык: Верный пёс Смоки
-    При активации обнаруживает поблизости Хромаит с помощью своего острого нюха. Сражаясь вместе с игроком, увеличивает количество получаемой руды Хромаит на +(100~200)% . Технологии 58 level value 1 CollectItemDrop_PartnerSkill_BlackPuppy 100 OverWriteCoolTime 3 2 CollectItemDrop_PartnerSkill_BlackPuppy 110 OverWriteCoolTime 2.8 3 CollectItemDrop_PartnerSkill_BlackPuppy 130 OverWriteCoolTime 2.6 4 CollectItemDrop_PartnerSkill_BlackPuppy 160 OverWriteCoolTime 2.4 5 CollectItemDrop_PartnerSkill_BlackPuppy 200 OverWriteCoolTime 2
+    При активации обнаруживает поблизости Хромаит с помощью своего острого нюха. Сражаясь вместе с игроком, увеличивает количество получаемой руды Хромаит на +100–200%. Технологии 58. По звёздам: 0★ 100 · 1★ 110 · 2★ 130 · 3★ 160 · 4★ 200
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ явных минусов нет
 
     > Чёрное пламя на ощупь лишь слегка тёплое, но всё, что касается его слишком долго, медленно плавится изнутри. Стоит лишь поднести кусок сыра — получается настоящий деликатес.
@@ -88,9 +88,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король тьмы (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король тьмы" href="../../../passivki/lord_of_the_underworld/">Король тьмы</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

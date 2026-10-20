@@ -29,7 +29,7 @@
 
 
     #### Партнёрский навык: Хранитель леса
-    Можно оседлать для передвижения. Во время езды верхом доступен двойной прыжок , а эффективность рубки деревьев увеличивается на (220~500)% . Технологии 12 level value 1 Logging_up2_Otomo_only 220 2 Logging_up3_Otomo_only 260 3 Logging_up4_Otomo_only 320 4 Logging_up5_Otomo_only 400 5 Logging_up6_Otomo_only 500
+    Можно оседлать для передвижения. Во время езды верхом доступен двойной прыжок, а эффективность рубки деревьев увеличивается на 220–500%. Технологии 12. По звёздам: 0★ 220 · 1★ 260 · 2★ 320 · 3★ 400 · 4★ 500
 
 
     #### Чем хорош / чем плох
@@ -89,9 +89,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Святое небо (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Святое небо" href="../../../passivki/celestial_emperor/">Святое небо</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🐎 Ездовой</div><div class="pset-w">быстрее бегает или летает с тобой верхом</div><div class="tags"><a class="psv r-4" data-psv="Божественная скорость" href="../../../passivki/swift/">Божественная скорость</a><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Вечный двигатель" href="../../../passivki/eternal_engine/">Вечный двигатель</a><a class="psv r-4" data-psv="Небесное скольжение" href="../../../passivki/sky_strider/">Небесное скольжение</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

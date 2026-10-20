@@ -31,7 +31,7 @@
 
 
     #### Партнёрский навык: Геокрушитель
-    Можно оседлать для передвижения. Во время езды эффективность рубки деревьев увеличивается на (220~500)% , а эффективность добычи руды — на (500~2000)% . Технологии 28 level value 1 Logging_up2_Otomo_only 220 Mining_up2_Otomo_only 500 2 Logging_up3_Otomo_only 260 Mining_up3_Otomo_only 750 3 Logging_up4_Otomo_only 320 Mining_up4_Otomo_only 1100 4 Logging_up5_Otomo_only 400 Mining_up5_Otomo_only 1500 5 Logging_up6_Otomo_only 500 Mining_up6_Otomo_only 2000
+    Можно оседлать для передвижения. Во время езды эффективность рубки деревьев увеличивается на 220–500%, а эффективность добычи руды — на 500–2000%. Технологии 28. По звёздам: 0★ 220 · 1★ 260 · 2★ 320 · 3★ 400 · 4★ 500
 
 
     #### Чем хорош / чем плох
@@ -90,11 +90,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - по обзору: Мастеровитый, Легенда, Трудоголик, Аскет
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король духов (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король духов" href="../../../passivki/spirit_emperor/">Король духов</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div><div class="pset"><div class="pset-h">🐎 Ездовой</div><div class="pset-w">быстрее бегает или летает с тобой верхом</div><div class="tags"><a class="psv r-4" data-psv="Божественная скорость" href="../../../passivki/swift/">Божественная скорость</a><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Вечный двигатель" href="../../../passivki/eternal_engine/">Вечный двигатель</a><a class="psv r-4" data-psv="Небесное скольжение" href="../../../passivki/sky_strider/">Небесное скольжение</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

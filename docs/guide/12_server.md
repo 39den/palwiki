@@ -15,7 +15,7 @@
 ## Что значат главные настройки (значения «по умолчанию» = 1.0 — обычно)
 | Настройка | Что делает |
 |---|---|
-| Difficulty | Сложность (None/Normal/Hard) |
+| Difficulty | Сложность (—/Normal/Hard) |
 | DayTimeSpeedRate / NightTimeSpeedRate | Скорость дня/ночи |
 | ExpRate | Множитель опыта |
 | PalCaptureRate | Множитель шанса поимки |
@@ -31,7 +31,7 @@
 | CollectionObjectHpRate | «Прочность» деревьев/камней |
 | CollectionObjectRespawnSpeedRate | Как быстро вырастают обратно |
 | EnemyDropItemRate | Множитель дропа с врагов |
-| DeathPenalty | Что теряешь при смерти: None / Item / ItemAndEquipment / All |
+| DeathPenalty | Что теряешь при смерти: — / Item / ItemAndEquipment / All |
 | bEnableInvaderEnemy | Налёты на базу |
 | bEnableFriendlyFire | Урон по своим |
 | PalEggDefaultHatchingTime | Время вылупления (часы) |

@@ -32,11 +32,11 @@
 
 
     #### Партнёрский навык: Одержимая кошка
-    Пока находится в команде, увеличивается шанс поимки при бонусе атаки со спины . (Эффект не суммируется) level value 1 CaptureLevel_SneakBonus_PartnerSkill_GhostBlackCat 1 Пробуждение : 2 CaptureLevel_SneakBonus_PartnerSkill_GhostBlackCat 2 Пробуждение : (Повышение шанса поимки: Небольшое ) 3 CaptureLevel_SneakBonus_PartnerSkill_GhostBlackCat 3 Пробуждение : (Повышение шанса поимки: Среднее ) 4 CaptureLevel_SneakBonus_PartnerSkill_GhostBlackCat 4 Пробуждение : (Повышение шанса поимки: Большое ) 5 CaptureLevel_SneakBonus_PartnerSkill_GhostBlackCat 5 Пробуждение : (Повышение шанса поимки: Очень большое )
+    Пока находится в команде, увеличивается шанс поимки при бонусе атаки со спины. (Эффект не суммируется).
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ явных минусов нет
 
     > Руки за спиной наполнены мыслями всех людей, которые воспитывали род до сих пор. В последнее время, похоже, все решили баловать Виспау .
@@ -88,9 +88,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король тьмы (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король тьмы" href="../../../passivki/lord_of_the_underworld/">Король тьмы</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

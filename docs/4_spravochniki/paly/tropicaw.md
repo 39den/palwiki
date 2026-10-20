@@ -30,11 +30,11 @@
 
 
     #### Партнёрский навык: Танец цветов
-    Пока находится в команде, время неуязвимости при перекатах и уклонениях игрока увеличивается на (15~30)% . (Эффект не суммируется) level value 1 AvoidDurationUp_PartnerSkill_RedFlowerBird 5 2 AvoidDurationUp_PartnerSkill_RedFlowerBird 6 3 AvoidDurationUp_PartnerSkill_RedFlowerBird 7 4 AvoidDurationUp_PartnerSkill_RedFlowerBird 8 5 AvoidDurationUp_PartnerSkill_RedFlowerBird 9
+    Пока находится в команде, время неуязвимости при перекатах и уклонениях игрока увеличивается на 15–30%. (Эффект не суммируется). По звёздам: 0★ 5 · 1★ 6 · 2★ 7 · 3★ 8 · 4★ 9
 
 
     #### Чем хорош / чем плох
-    - ✅ отличный рабочий (пригодность 5); можно оседлать
+    - ✅ отличный рабочий (пригодность 5)
     - ❌ явных минусов нет
 
     > Яростные размахивания телом якобы служат маскировкой под цветок, колышущийся на ветру, чтобы избегать врагов. Но есть мнение, что быстро мечущийся красный цветок слишком жуток, и потому к нему никто не подходит.
@@ -86,10 +86,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король духов (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король духов" href="../../../passivki/spirit_emperor/">Король духов</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

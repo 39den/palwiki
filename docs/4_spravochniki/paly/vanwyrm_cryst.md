@@ -30,7 +30,7 @@
 
 
     #### Партнёрский навык: Воздушный налётчик
-    Можно оседлать, чтобы передвигаться по воздуху. Пока находится в команде, при атаке игрока по уязвимым точкам противника урон увеличивается на (30~50)% . (Эффект не суммируется) Технологии 22 level value 1 WeakDamage_ActiveOtomo_BirdDragon_Ice 30 2 WeakDamage_ActiveOtomo_BirdDragon_Ice 32 3 WeakDamage_ActiveOtomo_BirdDragon_Ice 36 4 WeakDamage_ActiveOtomo_BirdDragon_Ice 42 5 WeakDamage_ActiveOtomo_BirdDragon_Ice 50
+    Можно оседлать, чтобы передвигаться по воздуху. Пока находится в команде, при атаке игрока по уязвимым точкам противника урон увеличивается на 30–50%. (Эффект не суммируется) Технологии 22. По звёздам: 0★ 30 · 1★ 32 · 2★ 36 · 3★ 42 · 4★ 50
 
 
     #### Чем хорош / чем плох
@@ -90,10 +90,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Император льда (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Император льда" href="../../../passivki/ice_emperor/">Император льда</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div><div class="pset"><div class="pset-h">🐎 Ездовой</div><div class="pset-w">быстрее бегает или летает с тобой верхом</div><div class="tags"><a class="psv r-4" data-psv="Божественная скорость" href="../../../passivki/swift/">Божественная скорость</a><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Вечный двигатель" href="../../../passivki/eternal_engine/">Вечный двигатель</a><a class="psv r-3" data-psv="Умелый бегун" href="../../../passivki/runner/">Умелый бегун</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

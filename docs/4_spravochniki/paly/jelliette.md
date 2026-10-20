@@ -31,11 +31,11 @@
 
 
     #### Партнёрский навык: Дроп Джелиэтты
-    Пока находится в команде, количество получаемых при рыбалке предметов увеличивается на (55~95)% . (Эффект не суммируется) Также, если Джелиэтта и Джелрой находятся на базе, скорость полива у Джелиэтта увеличивается на (50~120)% . (Эффект не суммируется) level value 1 Fishing_ItemAddDrop_JellyfishFairy_PartnerSkill 55 Fishing_EnemyAddDrop_JellyfishFairy 55 WorkSpeedUp_JellyfishFairy_PartnerSkill 50 WorkSpeedUp_Farm_JellyfishFairy_PartnerSkill 50 2 Fishing_ItemAddDrop_JellyfishFairy_PartnerSkill 65 Fishing_EnemyAddDrop_JellyfishFairy 65 WorkSpeedUp_JellyfishFairy_PartnerSkill 60 WorkSpeedUp_Farm_JellyfishFairy_PartnerSkill 60 3 Fishing_ItemAddDrop_JellyfishFairy_PartnerSkill 75 Fishing_EnemyAddDrop_JellyfishFairy 75 WorkSpeedUp_JellyfishFairy_PartnerSkill 70 WorkSpeedUp_Farm_JellyfishFairy_PartnerSkill 70 4 Fishing_ItemAddDrop_JellyfishFairy_PartnerSkill 85 Fishing_EnemyAddDrop_JellyfishFairy 85 WorkSpeedUp_JellyfishFairy_PartnerSkill 90 WorkSpeedUp_Farm_JellyfishFairy_PartnerSkill 90 5 Fishing_ItemAddDrop_JellyfishFairy_PartnerSkill 95 Fishing_EnemyAddDrop_JellyfishFairy 95 WorkSpeedUp_JellyfishFairy_PartnerSkill 120 WorkSpeedUp_Farm_JellyfishFairy_PartnerSkill 120
+    Пока находится в команде, количество получаемых при рыбалке предметов увеличивается на 55–95%. (Эффект не суммируется) Также, если Джелиэтта и Джелрой находятся на базе, скорость полива у Джелиэтта увеличивается на 50–120%. (Эффект не суммируется). По звёздам: 0★ 55 · 54★ 50 · 1★ 65 · 64★ 60 · 2★ 75 · 74★ 70 · 3★ 85 · 84★ 90 · 4★ 95 · 94★ 120
 
 
     #### Чем хорош / чем плох
-    - ✅ +55–95% улова на рыбалке; можно оседлать
+    - ✅ +55–95% улова на рыбалке
     - ❌ явных минусов нет
 
     > Пал, внешне очень похожий на Джелрой . Он ведёт активную социальную жизнь, и когда планы пересекаются, просит своего близкого друга Джелрой сходить вместо него. Плата за это — одно свидание.
@@ -88,9 +88,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Владыка морей (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Владыка морей" href="../../../passivki/lord_of_the_sea/">Владыка морей</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

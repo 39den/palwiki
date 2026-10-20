@@ -32,11 +32,11 @@
 
 
     #### Партнёрский навык: Трик-шоу Рапи-Рапи
-    Пока находится в команде, когда HP игрока падает ниже 50%, Дупин создаёт вокруг игрока взрывную волну ( Огонь / Сила: (100~200) / Возгорание Накопление: 777 ). Кроме того, пока HP игрока ниже 50%, его атака повышается на (30~50)% . (Эффект не суммируется.) level value 1 ClownRabbit_PlayerLowHealthBlast_PartnerSkill 100 AttackRateHPThreshold_PartnerSkill 30 2 ClownRabbit_PlayerLowHealthBlast_PartnerSkill 110 AttackRateHPThreshold_PartnerSkill 35 3 ClownRabbit_PlayerLowHealthBlast_PartnerSkill 130 AttackRateHPThreshold_PartnerSkill 40 4 ClownRabbit_PlayerLowHealthBlast_PartnerSkill 160 AttackRateHPThreshold_PartnerSkill 45 5 ClownRabbit_PlayerLowHealthBlast_PartnerSkill 200 AttackRateHPThreshold_PartnerSkill 50
+    Пока находится в команде, когда HP игрока падает ниже 50%, Дупин создаёт вокруг игрока взрывную волну ( Огонь / Сила: 100–200/ Возгорание Накопление: 777 ). Кроме того, пока HP игрока ниже 50%, его атака повышается на 30–50%. (Эффект не суммируется.). По звёздам: 0★ 100 · 1★ 110 · 2★ 130 · 3★ 160 · 4★ 200
 
 
     #### Чем хорош / чем плох
-    - ✅ хорошая атака (110); отличный рабочий (пригодность 7); можно оседлать
+    - ✅ хорошая атака (110); отличный рабочий (пригодность 7)
     - ❌ много ест (600)
 
     > Иногда вызванный двойник одерживает верх и занимает место оригинала. Тот ли Дупин сегодня, что и вчера, не вполне ясно даже самому Дупин .
@@ -88,10 +88,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Император огня (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Император огня" href="../../../passivki/flame_emperor/">Император огня</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

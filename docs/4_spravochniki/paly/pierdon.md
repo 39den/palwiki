@@ -29,11 +29,11 @@
 
 
     #### Партнёрский навык: Сила камня
-    Пока находится в команде, увеличивает урон, наносимый игроком и Палом по врагам в состоянии Грязь , на (50~65)% . (Эффект не суммируется) level value 1 DamageUpTrainerAndOtomo_ToMuddy_PartnerSkill_RockBeast 50 2 DamageUpTrainerAndOtomo_ToMuddy_PartnerSkill_RockBeast 53 3 DamageUpTrainerAndOtomo_ToMuddy_PartnerSkill_RockBeast 56 4 DamageUpTrainerAndOtomo_ToMuddy_PartnerSkill_RockBeast 60 5 DamageUpTrainerAndOtomo_ToMuddy_PartnerSkill_RockBeast 65
+    Пока находится в команде, увеличивает урон, наносимый игроком и Палом по врагам в состоянии Грязь, на 50–65%. (Эффект не суммируется). По звёздам: 0★ 50 · 1★ 53 · 2★ 56 · 3★ 60 · 4★ 65
 
 
     #### Чем хорош / чем плох
-    - ✅ хорошая атака (105); крепкая защита (120); отличный рабочий (пригодность 5); можно оседлать
+    - ✅ хорошая атака (105); крепкая защита (120); отличный рабочий (пригодность 5)
     - ❌ много ест (580)
 
     > Бьётся о твёрдые камни, чтобы держать тело в желаемой форме. Особей с вмятинами лучше просто оставить в покое. Если провести аналогию с людьми, это как если бы слишком коротко подстричь челку.
@@ -87,10 +87,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Император земли (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Император земли" href="../../../passivki/earth_emperor/">Император земли</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

@@ -376,7 +376,7 @@
 
 ## Морозостойкость ур.3 (Cold Resistance Lv. 3)
 - ранг 3
-- TemperatureResist_Cold +3%
+-  +3%
 
 ## Сокращение тёмного урона ур.3 (Dark Damage Reduction Lv. 3)
 - ранг 3
@@ -416,11 +416,11 @@
 
 ## Жаростойкость ур.3 (Heat Resistance Lv. 3)
 - ранг 3
-- TemperatureResist_Heat +3%
+-  +3%
 
 ## Жаростойкость ур.3 / Морозостойкость ур.3 (Heat Resistance Lv. 3 / Cold Resistance Lv. 3)
 - ранг 3
-- TemperatureResist_Cold +3% TemperatureResist_Heat +3%
+-  +3%  +3%
 
 ## Сокращение ледяного урона ур.3 (Ice Damage Reduction Lv. 3)
 - ранг 3
@@ -488,7 +488,7 @@
 
 ## Увеличение опыта Пала ур.3 (Pal EXP Up Lv. 3)
 - ранг 3
-- PalExp_Increase +50%
+-  +50%
 
 ## Увеличение грозового урона Палов ур.3 (Pal Electric Damage Enhancement Lv. 3)
 - ранг 3
@@ -552,7 +552,7 @@
 
 ## Морозостойкость ур.2 (Cold Resistance Lv. 2)
 - ранг 2
-- TemperatureResist_Cold +2%
+-  +2%
 
 ## Сокращение тёмного урона ур.2 (Dark Damage Reduction Lv. 2)
 - ранг 2
@@ -588,11 +588,11 @@
 
 ## Жаростойкость ур.2 (Heat Resistance Lv. 2)
 - ранг 2
-- TemperatureResist_Heat +2%
+-  +2%
 
 ## Жаростойкость ур.2 / Морозостойкость ур.2 (Heat Resistance Lv. 2 / Cold Resistance Lv. 2)
 - ранг 2
-- TemperatureResist_Cold +2% TemperatureResist_Heat +2%
+-  +2%  +2%
 
 ## Сокращение ледяного урона ур.2 (Ice Damage Reduction Lv. 2)
 - ранг 2
@@ -620,7 +620,7 @@
 
 ## Увеличение опыта Пала ур.2 (Pal EXP Up Lv. 2)
 - ранг 2
-- PalExp_Increase +40%
+-  +40%
 
 ## Увеличение грозового урона Палов ур.2 (Pal Electric Damage Enhancement Lv. 2)
 - ранг 2
@@ -852,7 +852,7 @@
 
 ## Морозостойкость ур.1 (Cold Resistance Lv. 1)
 - ранг 1
-- TemperatureResist_Cold +1%
+-  +1%
 
 ## Большое увеличение тёмного урона (Dark Damage Enhancement (Large))
 - ранг 1
@@ -1060,11 +1060,11 @@
 
 ## Иммунитет к урону от взрывов (Explosion Immunity)
 - ранг 1
-- Defuser_ExplosiveSpore +1% Defuser_ExplosiveSpore +1% ExplosionResist +100% ExplosionResist +100%
+-  +1%  +1% ExplosionResist +100% ExplosionResist +100%
 
 ## Увеличение времени неуязвимости при уклонении (Extended Dodge Invincibility)
 - ранг 1
-- AvoidDurationUp_EquipSkill +20%
+-  +20%
 
 ## Большое увеличение огненного урона (Fire Damage Enhancement (Large))
 - ранг 1
@@ -1264,11 +1264,11 @@
 
 ## Жаростойкость ур.1 (Heat Resistance Lv. 1)
 - ранг 1
-- TemperatureResist_Heat +1%
+-  +1%
 
 ## Жаростойкость ур.1 / Морозостойкость ур.1 (Heat Resistance Lv. 1 / Cold Resistance Lv. 1)
 - ранг 1
-- TemperatureResist_Cold +1% TemperatureResist_Heat +1%
+-  +1%  +1%
 
 ## Большое увеличение ледяного урона (Ice Damage Enhancement (Large))
 - ранг 1
@@ -1436,7 +1436,7 @@
 
 ## Увеличение опыта Пала ур.1 (Pal EXP Up Lv. 1)
 - ранг 1
-- PalExp_Increase +30%
+-  +30%
 
 ## Увеличение грозового урона Палов ур.1 (Pal Electric Damage Enhancement Lv. 1)
 - ранг 1
@@ -1592,19 +1592,19 @@
 
 ## Священная сила: ближний бой (Hallowed Power: Close Range)
 - особая/снаряжение
-- DamageUpIfEquipped_YakushimaMeleeWeapon +20%
+- Урон с оружием Якусимы (ближний бой) +20%
 
 ## Священная сила: магия (Hallowed Power: Magic)
 - особая/снаряжение
-- DamageUpIfEquipped_YakushimaMagicWeapon +20%
+- Урон с оружием Якусимы (магия) +20%
 
 ## Священная сила: дальний бой (Hallowed Power: Ranged)
 - особая/снаряжение
-- DamageUpIfEquipped_YakushimaRangedWeapon +20%
+- Урон с оружием Якусимы (дальний бой) +20%
 
 ## Священная сила: призыв (Hallowed Power: Summon)
 - особая/снаряжение
-- DamageUpIfEquipped_YakushimaSummonWeapon +20%
+- Урон с оружием Якусимы (призыв) +20%
 
 ## Увеличение макс. переносимого веса ур.1 (Max Carrying Capacity Lv. 1)
 - особая/снаряжение
@@ -1624,7 +1624,7 @@
 
 ## Ускорение роста доверия у Палов в команде (Party Pal Trust Boost)
 - особая/снаряжение · ⭐М
-- FriendshipPoint_Increase +50%
+-  +50%
 
 ## Бездонный желудок (Bottomless Stomach)
 - -2

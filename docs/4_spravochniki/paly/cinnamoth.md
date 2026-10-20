@@ -31,11 +31,11 @@
 
 
     #### Партнёрский навык: Загадочные чешуйки
-    При активации атакует выбранного врага с помощью Ядовитый туман . Пока находится на базе, уровень пригодности к работе Фермерство у других Палов на базе увеличивается на +1 . (Эффект не суммируется) level value 1 WorkSuitabilityAddRank_MonsterFarm_ToBaseCampPal 1 MainValue 1.1 2 WorkSuitabilityAddRank_MonsterFarm_ToBaseCampPal 1 MainValue 1.3 3 WorkSuitabilityAddRank_MonsterFarm_ToBaseCampPal 1 MainValue 1.6 4 WorkSuitabilityAddRank_MonsterFarm_ToBaseCampPal 1 MainValue 2 5 WorkSuitabilityAddRank_MonsterFarm_ToBaseCampPal 1 MainValue 2.5
+    При активации атакует выбранного врага с помощью Ядовитый туман. Пока находится на базе, уровень пригодности к работе Фермерство у других Палов на базе увеличивается на +1. (Эффект не суммируется).
 
 
     #### Чем хорош / чем плох
-    - ✅ можно оседлать
+    - ✅
     - ❌ явных минусов нет
 
     > Вдыхая чешуйки с его крыльев, можно испытать блаженство, словно возносишься к небесам. Хотя предпринимаются меры по усилению контроля, они буксуют из-за сопротивления Организации по Защите Палов.
@@ -89,9 +89,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король духов (вместо Бессмертия, если нет мутации)
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король духов" href="../../../passivki/spirit_emperor/">Король духов</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 

@@ -12,7 +12,7 @@ theme:
   font:
     text: Nunito
     code: JetBrains Mono
-  features: [navigation.path, content.tabs.link,navigation.tabs, navigation.tabs.sticky, navigation.top, navigation.indexes, search.suggest, search.highlight, content.code.copy]
+  features: [navigation.path, content.tabs.link,navigation.tabs, navigation.tabs.sticky, navigation.indexes, search.suggest, content.code.copy]
   palette:
     - scheme: slate
       primary: custom

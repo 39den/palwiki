@@ -18,6 +18,7 @@ def webp(src,dst,w):
     if im.width>w: im=im.resize((w,round(im.height*w/im.width)),Image.LANCZOS)
     im.save(dst,'WEBP',quality=80,method=5)
 cards={os.path.basename(f).split('_',1)[1][:-4]:f for f in glob.glob('/workspace/palcards/out/*.png')}
+cards.update({os.path.basename(f).split('_',1)[1][:-4]:f for f in glob.glob('/workspace/palsite/.cards/*.png')})
 arts={os.path.basename(f)[:-4]:f for f in glob.glob('/workspace/palcards/art/*.png')}
 os.makedirs(D+'/img',exist_ok=True);os.makedirs(D+'/art',exist_ok=True)
 pals=json.load(open(W+'/data/pals.json'))
@@ -36,6 +37,14 @@ for p in pals:
     b=os.path.basename(f)[:-4];webp(f,f'{C}/card/{b}.webp',520);shutil.copy(f'{C}/card/{b}.webp',D+'/img/');img='img/'+b+'.webp'
   a=arts.get(p['id'])
   if a: webp(a,f'{C}/art/{p["id"]}.webp',256);shutil.copy(f'{C}/art/{p["id"]}.webp',D+'/art/');thumb='art/'+p['id']+'.webp'
+  ic='/workspace/palcards/art/icons/'+p['id']+'.png';icon=''
+  if os.path.exists(ic):
+    dst=f'{C}/icon_{p["id"]}.webp'
+    if not os.path.exists(dst) or os.path.getmtime(dst)<os.path.getmtime(ic):
+      im=Image.open(ic).convert('RGBA');bb=im.getbbox();im=im.crop(bb) if bb else im;im.thumbnail((168,168),Image.LANCZOS)
+      cv=Image.new('RGBA',(192,192),(0,0,0,0));cv.paste(im,((192-im.width)//2,(192-im.height)//2),im);cv.save(dst,'WEBP',quality=82,method=5)
+    os.makedirs(D+'/icon',exist_ok=True);shutil.copy(dst,D+'/icon/'+p['id']+'.webp');icon='icon/'+p['id']+'.webp'
+  else: print('NO ICON',p['id'],p['en'])
   ps=p.get('partner_skill') or {};acts=ps.get('activations') or []
   desc=(p.get('partner') or {}).get('desc','')
   mount='fly' if re.search('по воздуху|летат|полёт|полет',desc) else ('ride' if 'оседлать' in desc else '')
@@ -53,33 +62,15 @@ for p in pals:
 <div class="stats">❤️ {p['stats']['hp']} · ⚔️ {p['stats']['attack']} · 🛡 {p['stats']['defense']}</div></div></div>
 '''
     rest=L[1] if len(L)>1 else ''
+    dsc=(p.get('partner') or {}).get('desc','');lv=re.findall(r'(?:^|\s)([1-5]) ([^()]+?) \((?:ToTrainer|ToSelf|ToOtomo)\)',dsc.split('Lv. Skill',1)[1]) if 'Lv. Skill' in dsc else []
+    seen={};[seen.setdefault(a,b.strip()) for a,b in lv]
+    if seen: rest=re.sub(r'(?m)^(## Партнёрский навык.*\n(?:.*\n)?)',lambda m:m.group(1)+'\n**По уровням навыка:** '+' · '.join(f'{k}★ {v}' for k,v in seen.items())+'\n',rest,1)
     open(path,'w').write(L[0]+'\n\n'+head+'\n'+rest);n+=1
   SP.append({'no':p['no'],'id':p['id'],'ru':p['ru'],'en':p['en'],'el':p['elements'],'weak':p['weak_to'],'work':[[w['work'],w['level']] for w in p['work']],
     'act':acts,'mount':mount,'sprint':int(re.sub(r'\D','',str(p['stats'].get('mount_sprint') or 0)) or 0),'hp':p['stats']['hp'],'atk':p['stats']['attack'],'def':p['stats']['defense'],
-    'rarity':int(p['rarity'] or 0),'url':url,'img':img,'thumb':thumb or img,'bp':p.get('best_passives',{}),'rank':int(p['breeding'].get('combi_rank') or 0),
+    'rarity':int(p['rarity'] or 0),'url':url,'img':img,'thumb':icon,'art':thumb,'bp':p.get('best_passives',{}),'rank':int(p['breeding'].get('combi_rank') or 0),
     'up':p['breeding'].get('unique_parents'),'psk':ps.get('name',''),'egg':(p.get('habitat') or {}).get('egg','')})
 print('pal headers',n)
-TABMAP=[('Обзор',('Работа','Партнёрск','Чем хорош')),('Атаки',('Атаки',)),('Где живёт',('Где водится',)),('Дроп',('Дроп',)),('Разведение',('Разведение',)),('Пассивки',('Лучшие пассивки','Пассивк'))]
-order=sorted([x for x in SP if x['url']],key=lambda x:(float(re.match(r'\d+',x['no']).group()) if re.match(r'\d+',x['no']) else 999,x['no']))
-for i,x in enumerate(order):
-  path=D+'/'+x['url'].rstrip('/')+'.md';t=open(path).read()
-  m=re.search(r'(?m)^## ',t)
-  if m:
-    head,body=t[:m.start()],t[m.start():]
-    secs=re.split(r'(?m)^## ',body)[1:];tabs={}
-    for sc in secs:
-      ttl,_,txt=sc.partition('\n');name='Обзор'
-      for tn,keys in TABMAP:
-        if any(ttl.startswith(k) for k in keys):name=tn;break
-      tabs.setdefault(name,[]).append('#### '+ttl.strip()+'\n'+txt)
-    out=head
-    for tn,_ in TABMAP:
-      if tn in tabs: out+=f'=== "{tn}"\n\n'+'\n'.join('    '+l if l.strip() else '' for l in '\n'.join(tabs[tn]).split('\n'))+'\n\n'
-    t=out
-  pv,nx=order[i-1] if i else None,order[i+1] if i+1<len(order) else None
-  nav='<div class="pn" markdown="0">'+(f'<a class="card-link" href="../{pv["url"].split("/")[-2]}/">← {pv["ru"]}</a>' if pv else '<span></span>')+(f'<a class="card-link" href="../{nx["url"].split("/")[-2]}/">{nx["ru"]} →</a>' if nx else '')+'</div>'
-  t=t.replace('<div class="pal-info">',f'<div class="pal-info" data-pal="{x["id"]}">',1)+'\n'+nav+'\n'
-  open(path,'w').write(t)
 
 # ---------- clean reader-facing text
 UNV='<span class="unv" title="Ещё перепроверяется">ⓘ</span>'
@@ -115,6 +106,14 @@ def clean(t,html=True):
   t=re.sub(r'\s*\([^()\n]*ToSelf[^()\n]*\)','',t)
   t=re.sub(r'(?m)^\*\*Что такое ToSelf.*\n.*\n?','',t)
   t=re.sub(r'(?m)^.*ToSelf.*\n?','',t)
+  t=re.sub(r'\{(TargetItem|ItemName)\}','нужный предмет',t);t=re.sub(r'\{(PalName|TargetPal)\}','пал',t);t=re.sub(r'\{(Num|Count|Value)\}','N',t)
+  t=re.sub(r'\{[A-Za-z_ ]+\}','',t)
+  t=re.sub(r'\b(?:CharacterSpawnItem|EnemyCamp_)\w*','',t)
+  t=re.sub(r'DamageUpIfEquipped_Yakushima(Melee|Magic|Ranged|Summon)Weapon',lambda m:'Урон с оружием Якусимы ('+{'Melee':'ближний бой','Magic':'магия','Ranged':'дальний бой','Summon':'призыв'}[m.group(1)]+')',t)
+  t=re.sub(r'(?<![\w/.-])[A-Z][A-Za-z0-9]*_[A-Za-z0-9_]+(?![\w/.-])','',t)
+  t=re.sub(r'(?<![\w-])(None|nan|null)(?![\w-])','—',t)
+  t=re.sub(r'(?<![/\w])\w+\.(json|py)\b','',t)
+  t=re.sub(r'\(\s*[,;·]?\s*\)','',t);t=re.sub(r'(,\s*){2,}',', ',t);t=re.sub(r'[ \t]*·[ \t]*(?=·)','',t)
   t=re.sub(r'(?m) +$','',t)
   return t
 def secrets(t):
@@ -158,7 +157,49 @@ for b in bosses:
   team=[t['pal'] for t in ((b.get('recommended_team') or {}).get('main') or [])][:4] or b.get('team',[])[:4]
   SB.append({'name':b['name'],'kind':b['kind'],'pal':b.get('pal',''),'place':b.get('place',''),'level':b.get('level'),'hp':b.get('hp'),'el':b.get('elements',[]),'weak':b.get('weak_to',[]),'team':team,'tactics':b.get('tactics',''),'url':link(b['name'])})
 pas=json.load(open(W+'/data/passives.json'))
-SPS=[{'name':x['name'],'en':x.get('en',''),'rank':x.get('rank'),'desc':x.get('desc',''),'url':link(x['name'])} for x in pas]
+PSRC={x['ru']:x for x in json.load(open(W+'/data/passive_sources.json'))}
+IEN={i['en']:i['ru'] for i in items}
+os.makedirs(D+'/passivki',exist_ok=True)
+def pslug(en):return slug(en.replace('’','').replace("'",''))
+def rcls(r):
+  r=int(r or 0);return 'r-neg' if r<0 else f'r-{min(r,5)}'
+SPS=[];PSU={}
+for x in pas:
+  sr=PSRC.get(x['name'],{});u='passivki/'+pslug(x.get('en') or x['name'])+'/';PSU[x['name']]=u
+  sg=sr.get('surgery') or {}
+  SPS.append({'name':x['name'],'en':x.get('en',''),'rank':x.get('rank'),'desc':x.get('desc',''),'url':u,
+   'nat':[n['pal'] for n in sr.get('natural',[])],'breed':bool(sr.get('breeding',True)),'how':sg.get('how'),'gold':sg.get('gold'),
+   'drops':[[IEN.get(d['from'],d['from']),d['rate']] for d in sg.get('drops',[])]})
+def plink(name,R):
+  u=PSU.get(name);return f'<a class="psv {rcls(next((q["rank"] for q in SPS if q["name"]==name),1))}" data-psv="{name}" href="{R}{u}">{name}</a>' if u else f'<span class="psv">{name}</span>'
+RANKTXT={5:'легендарная ⭐',4:'очень редкая',3:'редкая',2:'хорошая',1:'обычная',-1:'плохая',-2:'плохая',-3:'очень плохая'}
+for q in SPS:
+  sp=f"{D}/{q['url'].rstrip('/')}.md";R='../../'
+  nat=''.join(f'<a class="tag" href="{R}{PU0[n]}">{n}</a>' if n in PU0 else f'<span class="tag">{n}</span>' for n in q['nat']) if (PU0:={x['ru']:x['url'] for x in SP if x['url']}) else ''
+  gets=[]
+  if q['nat']:gets.append('🐣 **С рождения** бывает у палов ниже — их и разводи.')
+  if q['breed']:gets.append('🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).')
+  if q['how']=='gold':gets.append(f"🏥 **Операционный стол:** ставится за {q['gold']:,} золота".replace(',',' ')+' (открывается после победы на арене).')
+  if q['how']=='disposable':gets.append('💉 **Имплант** (одноразовый): падает из Древних реликвий — '+', '.join(f'{a} {b}' for a,b in q['drops'])+'.')
+  rk=int(q['rank'] or 0)
+  plain='Это **плохая** пассивка — лучше от неё избавиться при разведении.' if rk<0 else ('Одна из **лучших** пассивок в игре.' if rk>=4 else 'Полезная пассивка.')
+  open(sp,'w').write(f'''# {q['name']}
+
+<div class="psv-hero" markdown="0"><span class="psv {rcls(rk)} big">{q['name']}</span> <span class="rk">Ранг {rk} · {RANKTXT.get(rk,'')}</span><div class="en">{q['en']}</div></div>
+
+**Что даёт:** {q['desc'] or '—'}
+
+{plain} Одинаковые пассивки на одном пале не складываются.
+
+## Где взять
+
+{chr(10).join('- '+g for g in gets) or '- Только у палов с рождения.'}
+
+''' +(f'''## У каких палов есть с рождения
+
+<div class="tags" markdown="0">{nat}</div>
+''' if q['nat'] else ''))
+open(D+'/passivki/index.md','w').write('# Все пассивки\n\n'+''.join(f"\n## {RANKTXT.get(r,'Ранг '+str(r)).capitalize()}\n\n<div class=\"tags\" markdown=\"0\">"+''.join(plink(q['name'],'../') for q in SPS if int(q['rank'] or 0)==r)+'</div>\n' for r in (5,4,3,2,1,-1,-2,-3)))
 faq=[]
 for fn in ['faq_extra.json','faq.json']:
   for q in json.load(open(W+'/data/'+fn)): faq.append({'q':q['q'],'a':q['a']})
@@ -182,6 +223,30 @@ SI=cj(SI);SB=cj(SB);SPS=cj(SPS);faq=cj(faq);MP=cj(MP)
 json.dump({'map':MP,'pals':SP,'items':SI,'bosses':SB,'passives':SPS,'faq':faq,'syn':syn,'built':datetime.date.today().isoformat()},open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
 shutil.move(A+'/manifest.webmanifest',D+'/manifest.webmanifest');open(D+'/sw.js','w').write(open(A+'/sw.js').read().replace('__BUILD__',datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d%H%M')));os.remove(A+'/sw.js')
 print('map points',len(MP));print('search_data KB',os.path.getsize(A+'/search_data.json')//1024)
+TABMAP=[('Обзор',('Работа','Партнёрск','Чем хорош')),('Атаки',('Атаки',)),('Где живёт',('Где водится',)),('Дроп',('Дроп',)),('Разведение',('Разведение',)),('Пассивки',('Лучшие пассивки','Пассивк'))]
+order=sorted([x for x in SP if x['url']],key=lambda x:(float(re.match(r'\d+',x['no']).group()) if re.match(r'\d+',x['no']) else 999,x['no']))
+for i,x in enumerate(order):
+  path=D+'/'+x['url'].rstrip('/')+'.md';t=open(path).read()
+  m=re.search(r'(?m)^## ',t)
+  if m:
+    head,body=t[:m.start()],t[m.start():]
+    secs=re.split(r'(?m)^## ',body)[1:];tabs={}
+    ROLEI={'боец':('⚔️ Боец','максимум урона и живучести в бою'),'рабочий':('🛠 Рабочий','работает быстрее и меньше устаёт на базе'),'ездовой':('🐎 Ездовой','быстрее бегает или летает с тобой верхом')}
+    for sc in secs:
+      ttl,_,txt=sc.partition('\n');name='Обзор'
+      if ttl.startswith('Лучшие пассивки'):
+        txt='\n<div class="psets" markdown="0">'+''.join(f'<div class="pset"><div class="pset-h">{ROLEI.get(r,(r,""))[0]}</div><div class="pset-w">{ROLEI.get(r,("",""))[1]}</div><div class="tags">'+''.join(plink(n,"../../../") for n in v[:4])+'</div></div>' for r,v in x['bp'].items())+'</div>\n\n<small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>\n'
+      for tn,keys in TABMAP:
+        if any(ttl.startswith(k) for k in keys):name=tn;break
+      tabs.setdefault(name,[]).append('#### '+ttl.strip()+'\n'+txt)
+    out=head
+    for tn,_ in TABMAP:
+      if tn in tabs: out+=f'=== "{tn}"\n\n'+'\n'.join('    '+l if l.strip() else '' for l in '\n'.join(tabs[tn]).split('\n'))+'\n\n'
+    t=out
+  pv,nx=order[i-1] if i else None,order[i+1] if i+1<len(order) else None
+  nav='<div class="pn" markdown="0">'+(f'<a class="card-link" href="../{pv["url"].split("/")[-2]}/">← {pv["ru"]}</a>' if pv else '<span></span>')+(f'<a class="card-link" href="../{nx["url"].split("/")[-2]}/">{nx["ru"]} →</a>' if nx else '')+'</div>'
+  t=t.replace('<div class="pal-info">',f'<div class="pal-info" data-pal="{x["id"]}">',1)+'\n'+nav+'\n'
+  open(path,'w').write(t)
 # ---------- grouped pal page
 open(D+'/4_spravochniki/paly_po_stihiyam_i_rabote.md','w').write('---\nhide: [toc]\n---\n# Палы по стихиям и по работе\n<div id="bygroup" markdown="0"></div>\n')
 # ---------- walls of comma lists -> chips
@@ -202,6 +267,7 @@ for f in glob.glob(D+'/**/*.md',recursive=True):
   out=[]
   for l in t.split('\n'):
     c=chips(l)
+    if '/passivki/' not in f: c=re.sub(r'«([^»]{3,30})»|\*\*([^*]{3,30})\*\*',lambda m:plink(m.group(1) or m.group(2),'{R}') if (m.group(1) or m.group(2)) in PSU else m.group(0),c)
     if c!=l:NW+=1
     out.append(c.replace('{R}',R))
   open(f,'w').write('\n'.join(out))
@@ -232,7 +298,7 @@ for f in glob.glob(D+'/**/*.md',recursive=True):
   open(f,'w').write(re.sub(r'(?<!!)\[([^\]]*)\]\(([^)\s]+)\)',fx,s))
 print('broken links removed',bad)
 # ---------- pages
-hero=''.join(f'<img src="art/{p["id"]}.webp" alt="" loading="lazy">' for p in random.Random(7).sample([p for p in SP if p['thumb'].startswith('art')],14))
+hero=''.join(f'<img src="art/{p["id"]}.webp" alt="" loading="lazy">' for p in random.Random(7).sample([p for p in SP if p['art']],14))
 T=lambda u,i,t,d:f'<a class="tile card-link" href="{u}"><span class="ti">{i}</span><b>{t}</b><small>{d}</small></a>'
 open(D+'/index.md','w').write(f'''---
 hide: [navigation, toc]
@@ -282,11 +348,11 @@ spr=G(('4_spravochniki/predmety','Предметы'))+sec('4_spravochniki')
 nav=[{'Главная':'index.md'},
  {'Палы':[{'Галерея':'gallery.md'},{'По стихиям и работе':'4_spravochniki/paly_po_stihiyam_i_rabote.md'},{'Сравнить двух':'compare.md'},{'Все палы по алфавиту':pal_pages}]},
  {'Гайд':sec('guide')+sec('0_nachni_zdes')+sec('1_prohozhdenie')},
- {'Справочник':spr+sec('2_mehaniki')+sec('3_bazy')+sec('5_lut_i_farm')},
+ {'Справочник':[{'Все пассивки':['passivki/index.md']+sorted([q['url'].rstrip('/')+'.md' for q in SPS])}]+spr+sec('2_mehaniki')+sec('3_bazy')+sec('5_lut_i_farm')},
  {'Мир и карта':[{'Интерактивная карта':'map.md'}]+mir+sec('6_mir')+sec('7_server')},
  {'FAQ':sec('9_faq')+sec('8_slovar')+sec('10_bagi')},
  {'Бот':'bot.md'}]
-keep=used|{D+'/index.md',D+'/gallery.md',D+'/bot.md',D+'/compare.md',D+'/map.md'}
+keep=used|{D+'/passivki/'+os.path.basename(f) for f in glob.glob(D+'/passivki/*.md')}|{D+'/index.md',D+'/gallery.md',D+'/bot.md',D+'/compare.md',D+'/map.md'}
 for f in glob.glob(D+'/**/*.md',recursive=True):
   if f not in keep: os.remove(f)
 import yaml

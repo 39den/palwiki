@@ -29,7 +29,7 @@
 
 
     #### Партнёрский навык: Тёмный Пегас
-    Можно оседлать для передвижения по воздуху. Во время езды атаки игрока получают элемент Тьма , сила атаки игрока увеличивается на (10~40)% , а атаки накладывают Слепота со значением (2~6) . Технологии 62 level value 1 GiveADark_Ride 1 GiveElement_TrainerATK_UP_PartnerSkill_Ride_Legend 10 AdditionalEffect_Darkness_Ride 2 2 GiveADark_Ride 1 GiveElement_TrainerATK_UP_PartnerSkill_Ride_Legend 14 AdditionalEffect_Darkness_Ride 3 3 GiveADark_Ride 1 GiveElement_TrainerATK_UP_PartnerSkill_Ride_Legend 20 AdditionalEffect_Darkness_Ride 4 4 GiveADark_Ride 1 GiveElement_TrainerATK_UP_PartnerSkill_Ride_Legend 28 AdditionalEffect_Darkness_Ride 5 5 GiveADark_Ride 1 GiveElement_TrainerATK_UP_PartnerSkill_Ride_Legend 40 AdditionalEffect_Darkness_Ride 6
+    Можно оседлать для передвижения по воздуху. Во время езды атаки игрока получают элемент Тьма, сила атаки игрока увеличивается на 10–40%, а атаки накладывают Слепота со значением 2–6. Технологии 62.
 
 
     #### Чем хорош / чем плох
@@ -89,11 +89,10 @@
 === "Пассивки"
 
     #### Лучшие пассивки по роли
-    - по обзору: Легенда, Демон-бог, Хладнокровный, Король тьмы
-    - боец: Легенда, Демон-бог, Хладнокровный, Бессмертие, Король тьмы (вместо Бессмертия, если нет мутации)
-    - рабочий: Дьявольские руки, Виртуоз, Мастеровитый, Небожитель/Трудоголик
-    - ездовой: Божественная скорость, Легенда, Вечный двигатель, Небесное скольжение
 
+    <div class="psets" markdown="0"><div class="pset"><div class="pset-h">⚔️ Боец</div><div class="pset-w">максимум урона и живучести в бою</div><div class="tags"><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Демон-бог" href="../../../passivki/demon_god/">Демон-бог</a><a class="psv r-3" data-psv="Король тьмы" href="../../../passivki/lord_of_the_underworld/">Король тьмы</a><a class="psv r-3" data-psv="Хладнокровный" href="../../../passivki/serenity/">Хладнокровный</a></div></div><div class="pset"><div class="pset-h">🛠 Рабочий</div><div class="pset-w">работает быстрее и меньше устаёт на базе</div><div class="tags"><a class="psv r-5" data-psv="Дьявольские руки" href="../../../passivki/demons_hand/">Дьявольские руки</a><a class="psv r-4" data-psv="Виртуоз" href="../../../passivki/remarkable_craftsmanship/">Виртуоз</a><a class="psv r-3" data-psv="Мастеровитый" href="../../../passivki/artisan/">Мастеровитый</a><a class="psv r-3" data-psv="Трудоголик" href="../../../passivki/workaholic/">Трудоголик</a></div></div><div class="pset"><div class="pset-h">🐎 Ездовой</div><div class="pset-w">быстрее бегает или летает с тобой верхом</div><div class="tags"><a class="psv r-4" data-psv="Божественная скорость" href="../../../passivki/swift/">Божественная скорость</a><a class="psv r-4" data-psv="Легенда" href="../../../passivki/legend/">Легенда</a><a class="psv r-4" data-psv="Вечный двигатель" href="../../../passivki/eternal_engine/">Вечный двигатель</a><a class="psv r-3" data-psv="Умелый бегун" href="../../../passivki/runner/">Умелый бегун</a></div></div></div>
+
+    <small>Нажми на пассивку, чтобы узнать, что она даёт и где её взять.</small>
 
 
 
