@@ -91,7 +91,10 @@ const chip=e=>`<span class="el el-${EL[e]||'neutral'}">${esc(e)}</span>`;root.PW
 const pl=p=>p.url?`<a href="${BASE+p.url}">${esc(p.ru)}</a>`:esc(p.ru);
 const lk=(u,t)=>u?`<a href="${BASE+u}">${esc(t)}</a>`:esc(t);
 let core=null,loading=null;
-root.PW_data=()=>loading||(loading=fetch(BASE+'assets/search_data.json').then(r=>r.json()).then(d=>{core=Core(d);root.PW_core=core;return d;}));
+const real=()=>loading||(loading=fetch(BASE+'assets/search_data.json').then(r=>r.json()).then(d=>{core=Core(d);root.PW_core=core;return d;}));
+const NEED='#gallery,#potd,#cmp,#pwmap,#breed,#mylists,.pal-info,.boss-hero,#bygroup,#ask,#recent,#favs,#home-answer,.pgrid';
+root.PW_load=()=>{if(root._pwGo)root._pwGo();return real();};
+root.PW_data=()=>{if(loading||typeof document=='undefined'||document.querySelector(NEED))return real();return root._pend||(root._pend=new Promise(r=>{root._pwGo=()=>r(real());['pointerdown','keydown','touchstart'].forEach(ev=>addEventListener(ev,()=>setTimeout(root.PW_load,1500),{once:true,passive:true}));}));};
 function render(a){if(!a)return '';let h='';const C=core.D;
  const fx=a.fixed?`<div class="dym">Понял как: «${esc(a.fixed)}»</div>`:'';
  const mini=p=>`<div class="mini">${p.thumb?`<img src="${BASE+p.thumb}" alt="" loading="lazy">`:''}<div><h3>${pl(p)} <small>#${esc(p.no)}</small></h3>${p.el.map(chip).join('')} <span>слабость: ${p.weak.map(chip).join('')}</span></div></div>`;
