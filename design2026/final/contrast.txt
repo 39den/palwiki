@@ -1,0 +1,32 @@
+light ink on bg 15.0
+light ink on bg2 13.6
+light ink on card 16.3
+light mu on bg 6.9
+light mu on bg2 6.2
+light mu on card 7.5
+light red on bg 6.0
+light red on bg2 5.4
+light red on card 6.5
+light chip text on #f2c200 14.8
+light chip text on #3fb950 13.9
+light chip text on #5cc8ef 14.5
+light chip text on #8b5cf6 13.0
+dark ink on bg 16.5
+dark ink on bg2 15.3
+dark ink on card 14.7
+dark mu on bg 8.9
+dark mu on bg2 8.2
+dark mu on card 7.9
+dark red on bg 6.8
+dark red on bg2 6.3
+dark red on card 6.0
+dark chip text on #f2c200 9.9
+dark chip text on #3fb950 10.8
+dark chip text on #5cc8ef 10.0
+dark chip text on #8b5cf6 12.0
+white on red button  5.0
+hero body #e9eef2 on overlay rgba(8,20,30,.6) over light sky #bfe3f7 (worst) 5.1
+hero h1 white on overlay .5 over sky 4.4
+b-ai body #c9d2d9 on #13202a 10.8
+boss text #c9d2d9 on #0b0f14 12.5 boss label #aab4bd 9.1
+r5 small #5c4400 on #ffe08f 7.1
