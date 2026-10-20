@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/jormuntide/">Йормунтайд</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/divine_dragon/">← Божественный дракон</a><a class="card-link" href="../../passivki/jarl_of_feybreak/">Вождь Тэнраку →</a></div>

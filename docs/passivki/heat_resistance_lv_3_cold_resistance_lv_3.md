@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/heat_resistance_lv_3/">← Жаростойкость ур.3</a><a class="card-link" href="../../passivki/earth_emperor/">Император земли →</a></div>

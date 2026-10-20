@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/sphere_homing/">← Самонаведение сферы</a><a class="card-link" href="../../passivki/power_of_gaia/">Сила земли →</a></div>

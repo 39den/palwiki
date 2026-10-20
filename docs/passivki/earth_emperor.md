@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/anubis/">Анубис</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/heat_resistance_lv_3_cold_resistance_lv_3/">← Жаростойкость ур.3 / Морозостойкость ур.3</a><a class="card-link" href="../../passivki/ice_emperor/">Император льда →</a></div>

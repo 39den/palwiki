@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/cattiva/">Каттива</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/mercy_hit/">← Сдерживание силы</a><a class="card-link" href="../../passivki/max_carrying_capacity_lv_1/">Увеличение макс. переносимого веса ур.1 →</a></div>

@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/frostallion_noct/">Фросталлион Нокт</a><a class="tag" href="../../4_spravochniki/paly/necromus/">Некромус</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/spirit_emperor/">← Король духов</a><a class="card-link" href="../../passivki/burly_body/">Крепкое тело →</a></div>

@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/conceited/">← Тщеславный</a><a class="card-link" href="../../passivki/health_up_lv_1/">Увеличение HP ур.1 →</a></div>

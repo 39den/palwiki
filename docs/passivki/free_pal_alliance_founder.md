@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/speedy_worker_lv_3/">← Ускоренная работа ур.3</a><a class="card-link" href="../../passivki/philanthropist/">Филантроп →</a></div>

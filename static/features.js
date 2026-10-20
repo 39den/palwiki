@@ -17,7 +17,7 @@ function breedCore(D){if(D.BJ){const J=D.BJ,ix={};J.pals.forEach((x,i)=>ix[x.ru]
  const parents=(ch,lim=30)=>{if(ch.up)return [[ch.up[0],ch.up[1]]];const o=[];for(let i=0;i<BR.length;i++)for(let j=i;j<BR.length;j++){const [c]=breed(BR[i],BR[j]);if(c.ru==ch.ru&&BR[i].ru!=ch.ru&&BR[j].ru!=ch.ru){o.push([BR[i].ru,BR[j].ru]);}}
   const pop=n=>{const p=D.pals.find(x=>x.ru==n);return p?p.rarity:9};o.sort((x,y)=>pop(x[0])+pop(x[1])-pop(y[0])-pop(y[1]));return o.slice(0,lim);};
  return {breed,parents,BR};}
-function breedPage(D){const el=document.getElementById('breed');if(!el)return;const C=breedCore(D);if(!D.BJ){fetch(B+'assets/breeding.json').then(r=>r.json()).then(j=>{D.BJ=j;el.innerHTML='';breedPage(D);});return;}const ps=D.pals.filter(p=>p.url).sort((a,b)=>a.ru.localeCompare(b.ru,'ru'));
+function breedPage(D){const el=document.getElementById('breed');if(!el||window.PW_breed2)return;const C=breedCore(D);if(!D.BJ){fetch(B+'assets/breeding.json').then(r=>r.json()).then(j=>{D.BJ=j;el.innerHTML='';breedPage(D);});return;}const ps=D.pals.filter(p=>p.url).sort((a,b)=>a.ru.localeCompare(b.ru,'ru'));
  const by=n=>D.pals.find(p=>p.ru==n);const pk=v=>{const a=window.PW_core.find(v,['pal']);return a?D.pals[a.ref]:null;};
  const mini=p=>p?`<a class="mc card-link" href="${B+p.url}"><img src="${B+p.thumb}" width="60" height="60" alt=""><span>${esc(p.ru)}</span></a>`:'';
  const u=new URLSearchParams(location.search);
@@ -55,6 +55,7 @@ function palLists(D){const info=document.querySelector('.pal-info[data-pal]');if
 function galleryExtra(D){const f=document.getElementById('gal-filters');if(!f||document.getElementById('gr'))return;
  f.insertAdjacentHTML('beforeend','<select id="gr"><option value="">Редкость</option><option value="1-4">обычные (1–4)</option><option value="5-7">редкие (5–7)</option><option value="8-20">легендарные (8+)</option></select><select id="gp"><option value="">Врождённая пассивка</option><option value="4">ранг 4+</option><option value="3">ранг 3+</option><option value="1">любая</option></select>');
  const by=Object.fromEntries(D.pals.map(p=>[B+p.url,p]));
+ setTimeout(()=>gsheet(f),0);
  const apply=()=>{const r=document.getElementById('gr').value,pr=+document.getElementById('gp').value||0;let n=0;
   document.querySelectorAll('#gallery a.pc').forEach(a=>{const p=by[a.getAttribute('href')];let ok=true;if(p){if(r){const [lo,hi]=r.split('-').map(Number);ok=p.rarity>=lo&&p.rarity<=hi;}if(ok&&pr)ok=(p.natp||[]).some(x=>x[1]>=pr);}a.style.display=ok?'':'none';n+=ok;});
   const gc=document.getElementById('gc');if(gc)gc.textContent='Найдено: '+n;
@@ -66,6 +67,17 @@ function galleryExtra(D){const f=document.getElementById('gal-filters');if(!f||d
  document.getElementById('gallery').addEventListener('click',e=>{const s=e.target.closest('.star');if(!s)return;e.preventDefault();e.stopPropagation();const L=lists();const id=s.dataset.id;const a=L['Избранное'];L['Избранное']=a.includes(id)?a.filter(x=>x!=id):[id,...a];saveL(L);s.classList.toggle('on');s.textContent=s.classList.contains('on')?'★':'☆';});
  const addStars=()=>{const fav=new Set(lists()['Избранное']);document.querySelectorAll('#gallery a.pc').forEach(a=>{if(a.querySelector('.star'))return;const p=by[a.getAttribute('href')];if(!p)return;a.insertAdjacentHTML('afterbegin',`<span class="star ${fav.has(p.id)?'on':''}" data-id="${p.id}" role="button" aria-label="В избранное">${fav.has(p.id)?'★':'☆'}</span>`);});};
  new MutationObserver(addStars).observe(document.getElementById('gallery'),{childList:true});addStars();}
+function gsheet(f){if(f.querySelector('.gsheet'))return;const q=document.getElementById('gq');const sh=document.createElement('div');sh.className='gsheet';sh.hidden=true;
+ sh.innerHTML='<div class="gsh">Фильтры <button type="button" class="x gdone" aria-label="Закрыть">×</button></div>';
+ const sels=[...f.querySelectorAll('select')].filter(x=>x.id!='gs');sels.forEach(x=>sh.appendChild(x));const done=document.createElement('button');done.type='button';done.className='md-button md-button--primary gdone';done.textContent='Показать';sh.appendChild(done);
+ const top=document.createElement('div');top.className='gtop';if(q)top.appendChild(q);const bt=document.createElement('button');bt.type='button';bt.className='gfbtn';top.appendChild(bt);const so=document.getElementById('gs');if(so)top.appendChild(so);
+ const act=document.createElement('div');act.className='gactive';const gc=document.getElementById('gc');if(gc)gc.className='gcount';
+ f.prepend(top);f.appendChild(sh);f.appendChild(act);const gv=document.getElementById('gview');if(gv)f.appendChild(gv);if(gc)f.appendChild(gc);
+ let bg=null;const close=()=>{sh.hidden=true;if(bg){bg.remove();bg=null;}};const open=()=>{sh.hidden=false;bg=document.createElement('div');bg.className='sheet-bg';bg.onclick=close;document.body.appendChild(bg);};
+ bt.onclick=open;sh.querySelectorAll('.gdone').forEach(b=>b.onclick=close);
+ const upd=()=>{const on=sels.filter(x=>x.value);bt.innerHTML='⚙️ Фильтры'+(on.length?' <b>'+on.length+'</b>':'');act.innerHTML=on.map(x=>`<button type="button" data-id="${x.id}">${esc(x.options[x.selectedIndex].text)} ✕</button>`).join('');
+  act.querySelectorAll('button').forEach(b=>b.onclick=()=>{const x=document.getElementById(b.dataset.id);x.value='';x.dispatchEvent(new Event('change',{bubbles:true}));upd();});};
+ f.addEventListener('change',upd);upd();}
 /* ---------- passives index filter ---------- */
 function psvFilter(){if(!/\/passivki\/$/.test(location.pathname))return;const art=document.querySelector('article');const i=document.createElement('input');i.type='search';i.placeholder='Найти пассивку…';i.className='psvq';art.querySelector('h1').after(i);
  i.oninput=()=>{const q=window.PW_core?window.PW_core.norm(i.value):i.value.toLowerCase();art.querySelectorAll('a.psv').forEach(a=>a.style.display=!q||a.textContent.toLowerCase().replace(/ё/g,'е').includes(q)?'':'none');};}
@@ -198,3 +210,15 @@ const open=b=>{close();const t=b.dataset.tip||H[b.dataset.h]||b.title;if(!t)retu
 document.addEventListener('click',e=>{const b=e.target.closest('.hlp');if(b){e.preventDefault();e.stopPropagation();pop&&pop._b===b?close():(open(b),pop&&(pop._b=b));return;}close();},true);
 document.addEventListener('mouseover',e=>{const b=e.target.closest&&e.target.closest('.hlp');if(b&&matchMedia('(hover:hover)').matches){open(b);pop&&(pop._b=b);}});
 document.addEventListener('mouseout',e=>{if(e.target.closest&&e.target.closest('.hlp')&&matchMedia('(hover:hover)').matches)close();});addEventListener('scroll',close,{passive:true});})();
+(function(){document.addEventListener('DOMContentLoaded',()=>{const pn=document.querySelector('.pn');if(!pn)return;const as=[...pn.querySelectorAll('a')];const prev=as.find(a=>a.textContent.trim().startsWith('←')),next=as.find(a=>a.textContent.trim().endsWith('→'));
+ const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ [prev,next].forEach(a=>{if(!a)return;const l=document.createElement('link');l.rel='prefetch';l.href=a.href;document.head.appendChild(l);});
+ const hero=document.querySelector('.pal-hero,.boss-hero,.psv-hero');const art=document.querySelector('article');
+ const go=(a,dir)=>{if(!a)return;if(!RM&&art){art.style.transition='transform .22s ease,opacity .22s';art.style.transform=`translateX(${dir*-40}px)`;art.style.opacity='.2';}setTimeout(()=>location.href=a.href,RM?0:180);};
+ // edge arrows
+ if(hero){hero.style.position=hero.style.position||'relative';[[prev,'l','‹'],[next,'r','›']].forEach(([a,c,t])=>{if(!a)return;const b=document.createElement('a');b.className='edge e'+c;b.href=a.href;b.innerHTML=`<span>${t}</span><small>${a.textContent.replace(/[←→]/g,'').trim()}</small>`;b.onclick=e=>{e.preventDefault();go(a,c=='l'?-1:1);};hero.appendChild(b);});}
+ const tgt=hero||art;let x0=null,y0=0,t0=0;
+ const skip=e=>e.target.closest('input,select,textarea,button,.leaflet-container,.md-typeset__table,.tabbed-labels,.mini-row,.bchips,#gtable,[data-noswipe],.pk,.sheet');
+ tgt&&tgt.addEventListener('touchstart',e=>{if(e.touches.length!=1||skip(e)){x0=null;return;}x0=e.touches[0].clientX;y0=e.touches[0].clientY;t0=Date.now();},{passive:true});
+ tgt&&tgt.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;if(String(getSelection())) return;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.8&&Date.now()-t0<700){dx<0?go(next,1):go(prev,-1);}},{passive:true});
+ document.addEventListener('keydown',e=>{if(e.target.closest('input,select,textarea,[contenteditable]')||e.metaKey||e.ctrlKey||e.altKey)return;if(document.getElementById('__search')&&document.getElementById('__search').checked)return;if(e.key=='ArrowLeft')go(prev,-1);if(e.key=='ArrowRight')go(next,1);});});})();

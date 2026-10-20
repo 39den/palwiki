@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/defense_up_lv_1/">← Увеличение защиты ур.1</a><a class="card-link" href="../../passivki/pal_ice_damage_enhancement_lv_1/">Увеличение ледяного урона Палов ур.1 →</a></div>

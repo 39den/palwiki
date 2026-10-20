@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/hallowed_guard/">← Священная защита</a><a class="card-link" href="../../passivki/hallowed_power_ranged/">Священная сила: дальний бой →</a></div>

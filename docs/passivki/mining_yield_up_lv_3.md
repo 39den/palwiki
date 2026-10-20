@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/mine_foreman/">← Начальник рудника</a><a class="card-link" href="../../passivki/mining_yield_up_lv_4/">Объёмы добычи руды ур.4 →</a></div>

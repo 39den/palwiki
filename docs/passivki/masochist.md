@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/suntan_lover/">← Любитель загара</a><a class="card-link" href="../../passivki/attack_up_s_lv_1/">Малое увеличение атаки ур.1 →</a></div>

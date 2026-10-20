@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/abnormal/">← Аномальный</a><a class="card-link" href="../../passivki/coldblooded/">Бессердечный →</a></div>

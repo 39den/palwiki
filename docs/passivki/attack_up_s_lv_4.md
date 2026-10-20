@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/lightfooted/">← Лёгкое тело</a><a class="card-link" href="../../passivki/sky_strider/">Небесное скольжение →</a></div>

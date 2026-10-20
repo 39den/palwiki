@@ -15,3 +15,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/astegon/">Астегон</a><a class="tag" href="../../4_spravochniki/paly/digtoise/">Дигтос</a><a class="tag" href="../../4_spravochniki/paly/warsect/">Ворсект</a><a class="tag" href="../../4_spravochniki/paly/warsect_terra/">Ворсект Терра</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/serious/">← Старательный</a><a class="card-link" href="../../passivki/conceited/">Тщеславный →</a></div>

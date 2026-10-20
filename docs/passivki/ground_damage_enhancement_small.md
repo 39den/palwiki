@@ -10,3 +10,21 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/dragon_damage_enhancement_small/">← Малое увеличение драконьего урона</a><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">Малое увеличение земного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">← Малое увеличение земного урона</a><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">Малое увеличение земного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">← Малое увеличение земного урона</a><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">Малое увеличение земного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">← Малое увеличение земного урона</a><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">Малое увеличение земного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">← Малое увеличение земного урона</a><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">Малое увеличение земного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">← Малое увеличение земного урона</a><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">Малое увеличение земного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">← Малое увеличение земного урона</a><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">Малое увеличение земного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">← Малое увеличение земного урона</a><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">Малое увеличение земного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/ground_damage_enhancement_small/">← Малое увеличение земного урона</a><a class="card-link" href="../../passivki/ice_damage_enhancement_small/">Малое увеличение ледяного урона →</a></div>

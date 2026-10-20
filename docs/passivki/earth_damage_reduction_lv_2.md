@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/dragon_damage_reduction_lv_2/">← Сокращение драконьего урона ур.2</a><a class="card-link" href="../../passivki/ice_damage_reduction_lv_2/">Сокращение ледяного урона ур.2 →</a></div>

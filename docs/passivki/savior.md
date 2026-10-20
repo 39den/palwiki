@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/hartalis/">Харталис</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/electric_damage_reduction_lv_4/">← Сокращение урона молнии ур.4</a><a class="card-link" href="../../passivki/heavily_armored/">Тяжёлая броня →</a></div>

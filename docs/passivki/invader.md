@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/xenolord/">Зенолорд</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/demon_god/">← Демон-бог</a><a class="card-link" href="../../passivki/blood_is_fuel/">Кровь - это топливо →</a></div>

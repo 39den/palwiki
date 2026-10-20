@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/pal_water_damage_enhancement_lv_3/">← Увеличение водного урона Палов ур. 3</a><a class="card-link" href="../../passivki/logging_mining_yield_up/">Увеличение добычи и вырубки →</a></div>

@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/mining_yield_up_lv_3/">← Объёмы добычи руды ур.3</a><a class="card-link" href="../../passivki/logging_yield_up_lv_3/">Объёмы лесозаготовки ур.3 →</a></div>

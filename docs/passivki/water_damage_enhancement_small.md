@@ -10,3 +10,11 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/attack_up_s_lv_1/">← Малое увеличение атаки ур.1</a><a class="card-link" href="../../passivki/water_damage_enhancement_small/">Малое увеличение водного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/water_damage_enhancement_small/">← Малое увеличение водного урона</a><a class="card-link" href="../../passivki/water_damage_enhancement_small/">Малое увеличение водного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/water_damage_enhancement_small/">← Малое увеличение водного урона</a><a class="card-link" href="../../passivki/water_damage_enhancement_small/">Малое увеличение водного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/water_damage_enhancement_small/">← Малое увеличение водного урона</a><a class="card-link" href="../../passivki/electric_damage_enhancement_small/">Малое увеличение грозового урона →</a></div>

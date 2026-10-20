@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/capture_strength_2/">← Увеличение силы захвата +2</a><a class="card-link" href="../../passivki/capture_strength_4/">Увеличение силы захвата +4 →</a></div>

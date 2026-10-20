@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/health_up_lv_4/">← Увеличение HP ур.4</a><a class="card-link" href="../../passivki/attack_up_lv_4/">Увеличение атаки ур.4 →</a></div>

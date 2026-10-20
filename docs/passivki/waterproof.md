@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/sphere_weight_1/">← Вес сфер +1</a><a class="card-link" href="../../passivki/heated_body/">Горячее тело →</a></div>

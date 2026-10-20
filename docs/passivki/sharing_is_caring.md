@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/fine_furs/">← Ценная шкура</a><a class="card-link" href="../../passivki/downtrodden/">Мягкотелый →</a></div>

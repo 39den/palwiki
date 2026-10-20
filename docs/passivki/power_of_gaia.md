@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/earthquake_resistant/">← Сейсмостойкость</a><a class="card-link" href="../../passivki/water_damage_reduction_lv_1/">Сокращение водного урона ур.1 →</a></div>

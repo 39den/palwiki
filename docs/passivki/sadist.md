@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/splatterina/">Сплаттерина</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/aerial_dash_4/">← Рывок в воздухе +4</a><a class="card-link" href="../../passivki/sphere_homing/">Самонаведение сферы →</a></div>

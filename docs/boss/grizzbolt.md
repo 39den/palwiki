@@ -21,3 +21,7 @@ hide: [toc]
 ## 🧠 Тактика
 
 Мини-босс Мирового Древа
+
+<div class="pn" markdown="0"><span></span><a class="card-link" href="../../boss/lyleen/">Лили и Лилин →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../boss/silvance/">← Вечная пурпурная тень — Сильванс</a><a class="card-link" href="../../boss/alpha_gumoss/">Гумосс →</a></div>

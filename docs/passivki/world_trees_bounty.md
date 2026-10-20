@@ -11,3 +11,5 @@
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 - 💉 **Имплант** (одноразовый): падает из Древних реликвий — .
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/dimensional_leap/">← Прыжок между измерениями</a><a class="card-link" href="../../passivki/diamond_body/">Алмазное тело →</a></div>

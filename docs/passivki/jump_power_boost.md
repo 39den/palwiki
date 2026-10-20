@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/capture_strength_6/">← Увеличение силы захвата +6</a><a class="card-link" href="../../passivki/pal_grass_damage_enhancement_lv_1/">Увеличение травяного урона Палов ур.1 →</a></div>

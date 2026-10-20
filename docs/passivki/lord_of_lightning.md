@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/orserk/">Орсерк</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/ice_emperor/">← Император льда</a><a class="card-link" href="../../passivki/flame_emperor/">Император огня →</a></div>

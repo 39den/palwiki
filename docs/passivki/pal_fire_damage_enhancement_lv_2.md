@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/pal_neutral_damage_enhancement_lv_2/">← Увеличение нейтрального урона Палов ур.2</a><a class="card-link" href="../../passivki/pal_exp_up_lv_2/">Увеличение опыта Пала ур.2 →</a></div>

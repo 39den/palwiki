@@ -212,6 +212,10 @@ for q in SPS:
 
 <div class="tags" markdown="0">{nat}</div>
 ''' if q['nat'] else ''))
+_PO=sorted(SPS,key=lambda q:(-int(q['rank'] or 0),q['name']))
+for _i,_q in enumerate(_PO):
+  _pv=_PO[_i-1] if _i>0 else None;_nx=_PO[_i+1] if _i+1<len(_PO) else None
+  with open(f"{D}/{_q['url'].rstrip('/')}.md",'a') as _fh:_fh.write('\n<div class="pn" markdown="0">'+(f'<a class="card-link" href="../../{_pv["url"]}">← {_pv["name"]}</a>' if _pv else '<span></span>')+(f'<a class="card-link" href="../../{_nx["url"]}">{_nx["name"]} →</a>' if _nx else '')+'</div>\n')
 open(D+'/passivki/index.md','w').write('# Все пассивки\n\n'+''.join(f"\n## {RANKTXT.get(r,'Ранг '+str(r)).capitalize()}\n\n<div class=\"tags\" markdown=\"0\">"+''.join(plink(q['name'],'../') for q in SPS if int(q['rank'] or 0)==r)+'</div>\n' for r in (5,4,3,2,1,-1,-2,-3)))
 faq=[]
 for fn in ['faq_extra.json','faq.json']:
@@ -354,7 +358,7 @@ hide: [navigation, toc]
 <div class="smart-box"><input id="home-q" type="search" placeholder="Спроси что угодно: «кто лучше копает», «чем бить Зои», «где взять серу»…" autocomplete="off"></div>
 <div id="home-answer" class="smart-out"></div></div></div>
 <div class="tiles bento" markdown="0">
-{T('gallery/','🐾','Палы','галерея с фильтрами')}{T('4_spravochniki/bossy/','👑','Боссы','башни, рейды, альфы')}{T('guide/03_prohozhdenie_1_80/','🗺️','Прохождение','с 1 до 80 уровня')}{T('2_mehaniki/passivki/','✨','Пассивки','лучшие наборы')}{T('guide/sekrety/','🤫','Секреты','пасхалки и тайники')}{T('map/','📍','Карта','альфы, башни, телепорты')}{T('4_spravochniki/predmety/','🎒','Предметы','где взять и крафт')}{T('breed/','🧬','Разведение','калькулятор пар')}{T('my/','⭐','Мои списки','команда и фарм')}{T('https://t.me/PalGuideBot','🤖','Бот @PalGuideBot','спроси в Telegram')}
+{T('gallery/','🐾','Палы','галерея с фильтрами')}{T('compare/','⚖️','Сравнить','двух палов рядом')}{T('boss/','👑','Все боссы','карточки и кем бить')}{T('4_spravochniki/bossy/','👑','Боссы','башни, рейды, альфы')}{T('guide/03_prohozhdenie_1_80/','🗺️','Прохождение','с 1 до 80 уровня')}{T('2_mehaniki/passivki/','✨','Пассивки','лучшие наборы')}{T('guide/sekrety/','🤫','Секреты','пасхалки и тайники')}{T('map/','📍','Карта','альфы, башни, телепорты')}{T('4_spravochniki/predmety/','🎒','Предметы','где взять и крафт')}{T('breed/','🧬','Разведение','калькулятор пар')}{T('my/','⭐','Мои списки','команда и фарм')}{T('https://t.me/PalGuideBot','🤖','Бот @PalGuideBot','спроси в Telegram')}
 </div>
 <div class="bento2" markdown="0"><div class="potd-wrap"><h2>⭐ Пал дня</h2><div id="potd"><div class="skel" style="height:170px"></div></div></div><div><h2>🕘 Недавние</h2><div id="recent" class="mini-row"><small>Открой пару палов — они появятся здесь.</small></div><h2>⭐ Избранное</h2><div id="favs" class="mini-row"><small>Нажми ☆ на странице пала.</small></div></div></div>
 ''')
@@ -449,6 +453,9 @@ hide: [toc]
 ''' if cn else '')+(f'\n## 🧠 Тактика\n\n{tac}\n' if tac else '')
   open(D+'/boss/'+sl+'.md','w').write(md)
   BJS.append({'n':g['name'],'k':g['kind'],'pal':g['pal'],'el':g['el'],'w':g['weak'],'lv':[m['lvl'] for m in g['modes']],'u':g['url'],'t':(p or {}).get('thumb','')})
+for _i,_b in enumerate(BJS):
+  _pv=BJS[_i-1] if _i>0 else None;_nx=BJS[_i+1] if _i+1<len(BJS) else None
+  with open(D+'/'+_b['u'].rstrip('/')+'.md','a') as _fh:_fh.write('\n<div class="pn" markdown="0">'+(f'<a class="card-link" href="../../{_pv["u"]}">← {_pv["n"]}</a>' if _pv else '<span></span>')+(f'<a class="card-link" href="../../{_nx["u"]}">{_nx["n"]} →</a>' if _nx else '')+'</div>\n')
 def _lv(x):
   try:return int(str(x).split('–')[0])
   except:return 0

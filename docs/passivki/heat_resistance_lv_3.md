@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/brothers_of_the_eternal_pyre_soul_leader/">← Духовный лидер Братства Вечного Пламени</a><a class="card-link" href="../../passivki/heat_resistance_lv_3_cold_resistance_lv_3/">Жаростойкость ур.3 / Морозостойкость ур.3 →</a></div>

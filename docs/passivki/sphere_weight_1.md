@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/botanical_barrier/">← Ботанический барьер</a><a class="card-link" href="../../passivki/waterproof/">Водостойкость →</a></div>

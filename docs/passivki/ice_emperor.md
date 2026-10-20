@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/frostallion/">Фросталлион</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/earth_emperor/">← Император земли</a><a class="card-link" href="../../passivki/lord_of_lightning/">Император молнии →</a></div>

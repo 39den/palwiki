@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/wellness_watcher/">← Снижение усталости</a><a class="card-link" href="../../passivki/dragon_damage_reduction_lv_3/">Сокращение драконьего урона ур.3 →</a></div>

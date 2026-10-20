@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/frostallion/">Фросталлион</a><a class="tag" href="../../4_spravochniki/paly/frostallion_noct/">Фросталлион Нокт</a><a class="tag" href="../../4_spravochniki/paly/jetragon/">Джетрагон</a><a class="tag" href="../../4_spravochniki/paly/necromus/">Некромус</a><a class="tag" href="../../4_spravochniki/paly/neptilius/">Нептилиус</a><a class="tag" href="../../4_spravochniki/paly/panthalus/">Панталус</a><a class="tag" href="../../4_spravochniki/paly/paladius/">Паладиус</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/blood_is_fuel/">← Кровь - это топливо</a><a class="card-link" href="../../passivki/lightfooted/">Лёгкое тело →</a></div>

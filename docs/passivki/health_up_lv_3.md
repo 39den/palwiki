@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/workaholic/">← Трудоголик</a><a class="card-link" href="../../passivki/pal_attack_up_lv_3/">Увеличение атаки Пала ур.3 →</a></div>

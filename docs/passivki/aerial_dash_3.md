@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/aerial_dash_2/">← Рывок в воздухе +2</a><a class="card-link" href="../../passivki/aerial_dash_4/">Рывок в воздухе +4 →</a></div>

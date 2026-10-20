@@ -11,3 +11,5 @@
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 - 🏥 **Операционный стол:** ставится за 50 000 золота (открывается после победы на арене).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/celestial_emperor/">← Святое небо</a><a class="card-link" href="../../passivki/water_damage_reduction_lv_3/">Сокращение водного урона ур.3 →</a></div>

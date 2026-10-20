@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/pal_electric_damage_enhancement_lv_4/">← Увеличение грозового урона Палов ур.4</a><a class="card-link" href="../../passivki/pal_defense_up_lv_4/">Увеличение защиты Пала ур.4 →</a></div>

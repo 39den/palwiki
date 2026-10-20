@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/heat_resistance_lv_1/">← Жаростойкость ур.1</a><a class="card-link" href="../../passivki/cheery/">Жизнерадостный →</a></div>

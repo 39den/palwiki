@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/lunker/">← Царь-рыба</a><a class="card-link" href="../../passivki/infinite_stamina/">Бесконечная выносливость →</a></div>

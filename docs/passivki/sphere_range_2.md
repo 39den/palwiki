@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/sphere_range_1/">← Дальность полёта сферы +1</a><a class="card-link" href="../../passivki/insulated_body/">Диэлектрик →</a></div>

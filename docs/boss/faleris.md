@@ -27,3 +27,5 @@ hide: [toc]
 ## 🧠 Тактика
 
 Держись за палом, кувырок (Ctrl) от больших атак, средняя кнопка мыши — приказ атаковать. Ограничение по времени<span class="unv" title="Ещё перепроверяется">ⓘ</span>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../boss/orserk/">← Аксель и Орсерк</a><a class="card-link" href="../../boss/shadowbeak/">Виктор и Шэдоубик →</a></div>

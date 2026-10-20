@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/power_of_gaia/">← Сила земли</a><a class="card-link" href="../../passivki/dragon_damage_reduction_lv_1/">Сокращение драконьего урона ур.1 →</a></div>

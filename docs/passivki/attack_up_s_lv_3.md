@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/leader_of_the_moonflowers/">← Лидер общества Лунных цветов</a><a class="card-link" href="../../passivki/stronghold_strategist/">Мастер обороны →</a></div>

@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/water_damage_reduction_lv_4/">← Сокращение водного урона ур.4</a><a class="card-link" href="../../passivki/ground_damage_reduction_lv_4/">Сокращение земного урона ур.4 →</a></div>

@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/blazamut_ryu/">Блазамут Рю</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/siren_of_the_void/">← Ведьма</a><a class="card-link" href="../../passivki/eternal_engine/">Вечный двигатель →</a></div>

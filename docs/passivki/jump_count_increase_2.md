@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/jump_count_increase_1/">← Дополнительный прыжок +1</a><a class="card-link" href="../../passivki/jump_count_increase_3/">Дополнительный прыжок +3 →</a></div>

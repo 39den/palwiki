@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/toxic_gas_immunity/">← Иммунитет к урону от ядовитого газа</a><a class="card-link" href="../../passivki/capacitor/">Конденсатор →</a></div>

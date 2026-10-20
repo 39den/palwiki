@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/lovander/">Ловандер</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/aggressive/">← Агрессивный</a><a class="card-link" href="../../passivki/fragrant_foliage/">Аромат трав →</a></div>

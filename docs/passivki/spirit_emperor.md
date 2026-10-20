@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/lyleen/">Лилин</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/vanguard/">← Командир штурма</a><a class="card-link" href="../../passivki/lord_of_the_underworld/">Король тьмы →</a></div>

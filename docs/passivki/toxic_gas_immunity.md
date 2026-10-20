@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/explosion_immunity/">← Иммунитет к урону от взрывов</a><a class="card-link" href="../../passivki/sphere_curve_1/">Искривление траектории сферы +1 →</a></div>

@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/night_owl/">← Полуночник</a><a class="card-link" href="../../passivki/hallowed_power_close_range/">Священная сила: ближний бой →</a></div>

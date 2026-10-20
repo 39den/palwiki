@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/party_pal_trust_boost/">← Ускорение роста доверия у Палов в команде</a><a class="card-link" href="../../passivki/glutton/">Чревоугодник →</a></div>

@@ -16,3 +16,5 @@ hide: [toc]
 ## 🧠 Тактика
 
 <span class="unv" title="Ещё перепроверяется">ⓘ</span>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../boss/hartalis/">← Царь-спаситель Харталис</a><a class="card-link" href="../../boss/dandilord/">Призрачный туман в тенях деревьев — Дандилорд →</a></div>

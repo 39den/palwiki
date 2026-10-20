@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/xenovader/">Зеноведа</a><a class="tag" href="../../4_spravochniki/paly/xenogard/">Зеногард</a><a class="tag" href="../../4_spravochniki/paly/xenolord/">Зенолорд</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/cold_resistance_lv_1/">← Морозостойкость ур.1</a><a class="card-link" href="../../passivki/impatient/">Нетерпеливый →</a></div>

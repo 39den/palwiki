@@ -10,3 +10,11 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/neutral_damage_enhancement_medium/">← Среднее увеличение нейтрального урона</a><a class="card-link" href="../../passivki/fire_damage_enhancement_medium/">Среднее увеличение огненного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/fire_damage_enhancement_medium/">← Среднее увеличение огненного урона</a><a class="card-link" href="../../passivki/fire_damage_enhancement_medium/">Среднее увеличение огненного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/fire_damage_enhancement_medium/">← Среднее увеличение огненного урона</a><a class="card-link" href="../../passivki/fire_damage_enhancement_medium/">Среднее увеличение огненного урона →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/fire_damage_enhancement_medium/">← Среднее увеличение огненного урона</a><a class="card-link" href="../../passivki/grass_damage_enhancement_medium/">Среднее увеличение травяного урона →</a></div>

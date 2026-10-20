@@ -10,3 +10,7 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/pal_ice_damage_enhancement_lv_3/">← Увеличение ледяного урона Палов ур.3</a><a class="card-link" href="../../passivki/pal_neutral_damage_enhancement_lv_3/">Увеличение нейтрального урона Палов ур.3 →</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/max_carrying_capacity_lv_2/">← Увеличение макс. переносимого веса ур.2</a><a class="card-link" href="../../passivki/max_carrying_capacity_lv_4/">Увеличение макс. переносимого веса ур.4 →</a></div>

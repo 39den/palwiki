@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/rayne_syndicate_boss/">← Офицер отряда Браконьеров Рейн</a><a class="card-link" href="../../passivki/ferocious/">Свирепый →</a></div>

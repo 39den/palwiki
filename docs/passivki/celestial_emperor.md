@@ -14,3 +14,5 @@
 ## У каких палов есть с рождения
 
 <div class="tags" markdown="0"><a class="tag" href="../../4_spravochniki/paly/paladius/">Паладиус</a></div>
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/ferocious/">← Свирепый</a><a class="card-link" href="../../passivki/wellness_watcher/">Снижение усталости →</a></div>

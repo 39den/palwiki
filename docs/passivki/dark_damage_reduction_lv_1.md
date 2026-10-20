@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/grass_damage_reduction_lv_1/">← Сокращение травяного урона ур.1</a><a class="card-link" href="../../passivki/electric_damage_reduction_lv_1/">Сокращение урона молнии ур.1 →</a></div>

@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/sphere_curve_1/">← Искривление траектории сферы +1</a><a class="card-link" href="../../passivki/work_slave/">Корпоративный раб →</a></div>

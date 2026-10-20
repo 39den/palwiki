@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/insulated_body/">← Диэлектрик</a><a class="card-link" href="../../passivki/jump_count_increase_2/">Дополнительный прыжок +2 →</a></div>

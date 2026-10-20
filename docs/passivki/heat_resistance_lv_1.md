@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/blood_of_the_dragon/">← Драконья кровь</a><a class="card-link" href="../../passivki/heat_resistance_lv_1_cold_resistance_lv_1/">Жаростойкость ур.1 / Морозостойкость ур.1 →</a></div>

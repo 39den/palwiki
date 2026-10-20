@@ -10,3 +10,5 @@
 
 - 🧬 **Разведение:** передаётся от родителей детям (шанс выше, если пассивка у обоих).
 
+
+<div class="pn" markdown="0"><a class="card-link" href="../../passivki/earth_damage_reduction_lv_3/">← Сокращение земного урона ур.3</a><a class="card-link" href="../../passivki/neutral_damage_reduction_lv_3/">Сокращение нейтрального урона ур.3 →</a></div>
