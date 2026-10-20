@@ -108,7 +108,7 @@ function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(
   ${cmpRoles(p,ps,P)}
   ${vsBoss(p,s,D)}
   <div class="bld-row"><button class="md-button md-button--primary" id="bsave">💾 Сохранить</button><button class="md-button" id="bshare">🔗 Ссылка</button><a class="md-button" href="https://t.me/PalGuideBot?start=build_${code()}" target="_blank" rel="noopener">🤖 Открыть в боте</a></div>
-  <p class="map-note">Статы по формуле игры (сверено с таблицей paldb для 80 ур.). Влияние пассивок на статы — приблизительно: проценты складываются.</p>`;
+  <p class="approx" title="Влияние пассивок посчитано приблизительно">ⓘ приблизительно</p>`;
   box.querySelectorAll('[data-st]').forEach(b=>b.onclick=()=>{st=+b.dataset.st;draw();});
   box.querySelector('#blv').oninput=e=>{lv=+e.target.value;draw();box.querySelector('#blv').focus();};box.querySelector('#biv').oninput=e=>{iv=+e.target.value;draw();box.querySelector('#biv').focus();};
   box.querySelectorAll('.rmp').forEach(b=>b.onclick=()=>{ps.splice(+b.dataset.k,1);draw();});
@@ -122,8 +122,11 @@ function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(
  draw();}
 function cmpRoles(p,ps,P){const roles=Object.entries(p.bp||{});if(!roles.length||!ps.length)return '';const mine=new Set(ps.map(j=>P[j].name));
  return `<div class="bnote"><b>Сравнение с типовыми сборками:</b><ul>${roles.map(([r,v])=>{const hit=v.filter(n=>mine.has(n)).length;return `<li>${r}: совпадает ${hit} из ${v.length}${hit<v.length?' — не хватает: '+v.filter(n=>!mine.has(n)).join(', '):' ✅'}</li>`;}).join('')}</ul></div>`;}
-function vsBoss(p,s,D){const bs=D.bosses.filter(b=>b.weak&&b.weak.length&&b.level);if(!bs.length)return '';const U=a=>[...new Set(a.map(b=>b.name.replace(/\s*\(.*?\)/g,'')))].slice(0,6);const good=bs.filter(b=>b.weak.some(w=>p.el.includes(w)));const bad=bs.filter(b=>(b.el||[]).some(e=>p.weak.includes(e))).slice(0,6);
- return `<div class="bnote"><b>Против боссов</b> <small>(по стихиям, без расчёта урона)</small><ul>${good.length?`<li>✅ Бьёт по слабости (урон ×2): ${U(good).map(esc).join(', ')}</li>`:''}${bad.length?`<li>⚠️ Опасно — босс бьёт по его слабости: ${U(bad).map(esc).join(', ')}</li>`:''}${!good.length&&!bad.length?'<li>Нейтрален против всех башен.</li>':''}</ul></div>`;}
+function vsBoss(p,s,D){const bs=D.bosses.filter(b=>b.weak&&b.weak.length&&b.level);if(!bs.length)return '';const byRu=Object.fromEntries(D.pals.map(x=>[x.ru,x]));
+ const grp=a=>{const m=new Map();a.forEach(b=>{const n=b.name.replace(/\s*\(.*?\)/g,'').trim();const md=(b.name.match(/\((.*?)\)/)||[])[1];const g=m.get(n)||{n,pal:b.pal,url:b.url,md:new Set()};if(md)g.md.add(md);m.set(n,g);});return [...m.values()];};
+ const ch=(g,c)=>{const pp=byRu[g.pal];return `<a class="bchip ${c}" ${g.url?`href="${B+g.url}"`:''}>${pp?`<img src="${B+pp.thumb}" width="22" height="22" alt="">`:''}<span>${esc(g.n)}</span>${g.md.size?`<small>${[...g.md].map(esc).join(' · ')}</small>`:''}</a>`;};
+ const good=grp(bs.filter(b=>b.weak.some(w=>p.el.includes(w)))),bad=grp(bs.filter(b=>(b.el||[]).some(e=>p.weak.includes(e))));
+ return `<div class="bnote"><b>Против боссов</b>${good.length?`<div class="bl">✅ Бьёт по слабости</div><div class="bchips">${good.map(g=>ch(g,'ok')).join('')}</div>`:''}${bad.length?`<div class="bl">⚠️ Опасно</div><div class="bchips">${bad.map(g=>ch(g,'bad')).join('')}</div>`:''}${!good.length&&!bad.length?'<div>Нейтрален против всех боссов.</div>':''}</div>`;}
 const fix=D=>{if(D._f)return D;D._f=1;D.QI={};D.passives.forEach(q=>D.QI[q.i]=q);D.PI={};D.pals.forEach(q=>D.PI[q.i]=q);return D;};
 document.addEventListener('DOMContentLoaded',()=>{psvFilter();setTimeout(showInstall,4000);if(!window.PW_data)return;window.PW_data().then(D=>{fix(D);breedPage(D);myPage(D);palLists(D);galleryExtra(D);popular(D);builder(D);setTimeout(()=>mapPal(D),300);});});
 })();
