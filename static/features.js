@@ -43,7 +43,7 @@ function myPage(D){const el=document.getElementById('mylists');if(!el)return;con
   document.getElementById('nlb').onclick=()=>{const v=document.getElementById('nl').value.trim();if(!v)return;const L=lists();L[v]=L[v]||[];saveL(L);draw();};};
  draw();}
 function builds(D){const S=LS.get('pw_builds',[]);if(!S.length)return '<h2>🛠 Мои сборки</h2><small>Сохраняй сборки на страницах палов (вкладка «Сборка»).</small>';
- return '<h2>🛠 Мои сборки</h2>'+S.map((s,i)=>{const p=D.pals[s.p];if(!p)return '';return `<div class="pset"><div class="pset-h"><a href="${B+p.url}#b=${s.code}">${esc(p.ru)} · ★${s.st} · ур. ${s.lv}</a> <button class="lnk" data-bdel="${i}">удалить</button></div><div class="tags">${s.ps.map(j=>`<span class="psv">${esc((D.passives[j]||{}).name||'')}</span>`).join('')}</div></div>`;}).join('');}
+ return '<h2>🛠 Мои сборки</h2>'+S.map((s,i)=>{const p=D.PI[s.p];if(!p)return '';return `<div class="pset"><div class="pset-h"><a href="${B+p.url}#b=${s.code}">${esc(p.ru)} · ★${s.st} · ур. ${s.lv}</a> <button class="lnk" data-bdel="${i}">удалить</button></div><div class="tags">${s.ps.map(j=>`<span class="psv">${esc((D.QI[j]||{}).name||'')}</span>`).join('')}</div></div>`;}).join('');}
 /* ---------- list buttons on pal page ---------- */
 function palLists(D){const info=document.querySelector('.pal-info[data-pal]');if(!info)return;const id=info.dataset.pal;const old=info.querySelector('.fav');if(old)old.remove();
  const w=document.createElement('div');w.className='lbtns';const draw=()=>{const L=lists();w.innerHTML=Object.keys(L).map(n=>`<button class="fav ${L[n].includes(id)?'on':''}" data-n="${esc(n)}">${n=='Избранное'?'★':n=='Команда'?'⚔️':n=='Фарм'?'🌾':'📋'} ${esc(n)}</button>`).join('');
@@ -83,14 +83,14 @@ function popular(D){const el=document.getElementById('potd');if(!el||!D.popular|
 /* ---------- BUILDER ---------- */
 const STAT_RE=[[/\bAttack\s*([+-])\s*(\d+)\s*%/i,'atk'],[/\bDefense\s*([+-])\s*(\d+)\s*%/i,'def'],[/\bWork Speed\s*([+-])\s*(\d+)\s*%/i,'ws'],[/Max Health\s*([+-])\s*(\d+)\s*%/i,'hp']];
 function effects(q){const o={atk:0,def:0,ws:0,hp:0};let rest=q.de||'';for(const [r,k] of STAT_RE){const m=rest.match(r);if(m){o[k]+=(m[1]=='-'?-1:1)*+m[2];}}return o;}
-function stats(p,st,lv,iv,ps,D){const c=1+.05*st,i=1+iv/100;let e={atk:0,def:0,ws:0,hp:0};ps.forEach(j=>{const x=effects(D.passives[j]);for(const k in e)e[k]+=x[k];});
+function stats(p,st,lv,iv,ps,D){const c=1+.05*st,i=1+iv/100;let e={atk:0,def:0,ws:0,hp:0};ps.forEach(j=>{const x=effects(D.QI[j]);for(const k in e)e[k]+=x[k];});
  const hp=(500+5*lv+p.hp*.5*lv*i)*c*(1+e.hp/100),atk=(100+p.atk*.075*lv*i)*c*(1+e.atk/100),df=(50+p.def*.075*lv*i)*c*(1+e.def/100);return {hp:Math.floor(hp),atk:Math.floor(atk),def:Math.floor(df),ws:Math.round(100*c*(1+e.ws/100)),e};}
 function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(!info||document.getElementById('bld'))return;const p=D.pals.find(x=>x.id==info.dataset.pal);if(!p)return;
  const box=document.createElement('section');box.id='bld';box.className='bld';
  const tabs=document.querySelector('.tabbed-set');(tabs||info.closest('.pal-hero')).after(box);
  let st=0,lv=50,iv=0,ps=[];const h=new URLSearchParams(location.hash.slice(1)).get('b');
- if(h&&h.length>=6){st=+h[2]||0;lv=parseInt(h.slice(3,5),36)||50;const ivc=h[5];iv=ivc=='a'?30:(+ivc||0)*3;for(let k=6;k+1<h.length+1&&ps.length<4;k+=2){const j=parseInt(h.slice(k,k+2),36);if(!isNaN(j)&&D.passives[j])ps.push(j);}}
- const P=D.passives;const rc=r=>r<0?'r-neg':'r-'+Math.min(5,r||1);
+ if(h&&h.length>=6){st=+h[2]||0;lv=parseInt(h.slice(3,5),36)||50;const ivc=h[5];iv=ivc=='a'?30:(+ivc||0)*3;for(let k=6;k+1<h.length+1&&ps.length<4;k+=2){const j=parseInt(h.slice(k,k+2),36);if(!isNaN(j)&&D.QI[j])ps.push(j);}}
+ const P=D.QI,PL=D.passives;const rc=r=>r<0?'r-neg':'r-'+Math.min(5,r||1);
  const code=()=>b36(p.i,2)+st+b36(lv,2)+(iv>=30?'a':String(Math.round(iv/3)))+ps.map(j=>b36(j,2)).join('');
  const roles=Object.keys(p.bp||{});const base=stats(p,0,lv,iv,[],D);
  const draw=()=>{const s=stats(p,st,lv,iv,ps,D),b0=stats(p,st,lv,iv,[],D);
@@ -112,9 +112,9 @@ function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(
   box.querySelectorAll('[data-st]').forEach(b=>b.onclick=()=>{st=+b.dataset.st;draw();});
   box.querySelector('#blv').oninput=e=>{lv=+e.target.value;draw();box.querySelector('#blv').focus();};box.querySelector('#biv').oninput=e=>{iv=+e.target.value;draw();box.querySelector('#biv').focus();};
   box.querySelectorAll('.rmp').forEach(b=>b.onclick=()=>{ps.splice(+b.dataset.k,1);draw();});
-  box.querySelectorAll('[data-role]').forEach(b=>b.onclick=()=>{ps=(p.bp[b.dataset.role]||[]).map(n=>P.findIndex(q=>q.name==n)).filter(j=>j>=0).slice(0,4);draw();});
+  box.querySelectorAll('[data-role]').forEach(b=>b.onclick=()=>{ps=(p.bp[b.dataset.role]||[]).map(n=>(PL.find(q=>q.name==n)||{}).i).filter(j=>j!=null).slice(0,4);draw();});
   const q=box.querySelector('#bq');if(q){q.oninput=()=>{const v=window.PW_core.norm(q.value);const o=box.querySelector('#bqo');if(v.length<2){o.innerHTML='';return;}
-   const hit=P.filter(x=>window.PW_core.norm(x.name+' '+x.en).includes(v)).slice(0,10);o.innerHTML=hit.map(x=>{const dup=ps.includes(x.i);return `<button class="psv ${rc(x.rank)}" data-add="${x.i}" ${dup?'disabled title="Уже выбрана"':''}>${esc(x.name)}</button>`;}).join('')||'<small>Не найдено</small>';
+   const hit=PL.filter(x=>window.PW_core.norm(x.name+' '+x.en).includes(v)).slice(0,10);o.innerHTML=hit.map(x=>{const dup=ps.includes(x.i);return `<button class="psv ${rc(x.rank)}" data-add="${x.i}" ${dup?'disabled title="Уже выбрана"':''}>${esc(x.name)}</button>`;}).join('')||'<small>Не найдено</small>';
    o.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>{if(ps.length<4&&!ps.includes(+b.dataset.add))ps.push(+b.dataset.add);draw();setTimeout(()=>{const n=box.querySelector('#bq');if(n)n.focus();},0);});};}
   box.querySelector('#bsave').onclick=()=>{const S=LS.get('pw_builds',[]);S.unshift({p:p.i,st,lv,iv,ps,code:code()});LS.set('pw_builds',S.slice(0,30));box.querySelector('#bsave').textContent='✅ Сохранено в «Мои списки»';};
   box.querySelector('#bshare').onclick=async()=>{const u=location.origin+location.pathname+'#b='+code();try{if(navigator.share)await navigator.share({title:p.ru+' — сборка',url:u});else{await navigator.clipboard.writeText(u);box.querySelector('#bshare').textContent='✅ Скопировано';}}catch(e){}};
@@ -124,5 +124,6 @@ function cmpRoles(p,ps,P){const roles=Object.entries(p.bp||{});if(!roles.length|
  return `<div class="bnote"><b>Сравнение с типовыми сборками:</b><ul>${roles.map(([r,v])=>{const hit=v.filter(n=>mine.has(n)).length;return `<li>${r}: совпадает ${hit} из ${v.length}${hit<v.length?' — не хватает: '+v.filter(n=>!mine.has(n)).join(', '):' ✅'}</li>`;}).join('')}</ul></div>`;}
 function vsBoss(p,s,D){const bs=D.bosses.filter(b=>b.weak&&b.weak.length&&b.level);if(!bs.length)return '';const U=a=>[...new Set(a.map(b=>b.name.replace(/\s*\(.*?\)/g,'')))].slice(0,6);const good=bs.filter(b=>b.weak.some(w=>p.el.includes(w)));const bad=bs.filter(b=>(b.el||[]).some(e=>p.weak.includes(e))).slice(0,6);
  return `<div class="bnote"><b>Против боссов</b> <small>(по стихиям, без расчёта урона)</small><ul>${good.length?`<li>✅ Бьёт по слабости (урон ×2): ${U(good).map(esc).join(', ')}</li>`:''}${bad.length?`<li>⚠️ Опасно — босс бьёт по его слабости: ${U(bad).map(esc).join(', ')}</li>`:''}${!good.length&&!bad.length?'<li>Нейтрален против всех башен.</li>':''}</ul></div>`;}
-document.addEventListener('DOMContentLoaded',()=>{psvFilter();setTimeout(showInstall,4000);if(!window.PW_data)return;window.PW_data().then(D=>{breedPage(D);myPage(D);palLists(D);galleryExtra(D);popular(D);builder(D);setTimeout(()=>mapPal(D),300);});});
+const fix=D=>{if(D._f)return D;D._f=1;D.QI={};D.passives.forEach(q=>D.QI[q.i]=q);D.PI={};D.pals.forEach(q=>D.PI[q.i]=q);return D;};
+document.addEventListener('DOMContentLoaded',()=>{psvFilter();setTimeout(showInstall,4000);if(!window.PW_data)return;window.PW_data().then(D=>{fix(D);breedPage(D);myPage(D);palLists(D);galleryExtra(D);popular(D);builder(D);setTimeout(()=>mapPal(D),300);});});
 })();

@@ -234,6 +234,15 @@ try:
 except Exception as e: print('popular skip',e)
 POPL=sorted(POP.items(),key=lambda z:-z[1])[:12]
 SI=cj(SI);SB=cj(SB);SPS=cj(SPS);faq=cj(faq);MP=cj(MP)
+_fz=W.replace('palwiki','palsite')+'/build_index.json'
+try:_F=json.load(open(_fz))
+except Exception:_F={'pals':[],'passives':[]}
+for _k,_arr,_key in (('pals',SP,'id'),('passives',SPS,'name')):
+  for _x in _arr:
+    if _x[_key] not in _F[_k]:_F[_k].append(_x[_key])
+  _ix={v:i for i,v in enumerate(_F[_k])}
+  for _x in _arr:_x['i']=_ix[_x[_key]]
+json.dump(_F,open(_fz,'w'),ensure_ascii=False,indent=0)
 json.dump({'popular':POPL,'map':MP,'pals':SP,'items':SI,'bosses':SB,'passives':SPS,'faq':faq,'syn':syn,'built':datetime.date.today().isoformat()},open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
 shutil.move(A+'/manifest.webmanifest',D+'/manifest.webmanifest');open(D+'/sw.js','w').write(open(A+'/sw.js').read().replace('__BUILD__',datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d%H%M')));os.remove(A+'/sw.js')
 print('map points',len(MP));print('search_data KB',os.path.getsize(A+'/search_data.json')//1024)
