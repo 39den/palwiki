@@ -1,7 +1,5 @@
 # Мутации
 
-_Источник: paldb.cc/ru/Mutation (данные игры v1.0.5)._
-
 MutationPal Пассивный навык /5 · Mutation · MutationPal Пассивный навык /5 · Нянька · Пока находится на базе, скорость разведение яиц Палов на племенной ферме + 30%, скорость вылупления +30% · Тяжёлая броня · Иммунитет к урону от взрывов · Особая конституция · Регенерация HP Палов и игрока +50% · Защита +25% · Иммунитет к урону от яда · Иммунитет к урону от горения · Бессмертие · Восстанавливает HP в размере 5% от нанесённого урона.
 
 Естественное восстановление HP Палла +100% · Атака +15% · Небесное скольжение · Количество прыжков во время езды: + 2 · Mutation · Mutation is a new mechanic where breeding has a low chance of producing a Pal stronger than the normal breeding result. Pals born from mutated eggs have higher stats and a unique passive skill.

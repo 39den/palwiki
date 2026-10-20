@@ -1,7 +1,5 @@
 # Оружие
 
-_Источник: paldb.cc/ru/Weapon (данные игры v1.0.5)._
-
 Оружие /388 · Weapon · Sphere · Sphere Module · Armor · Accessory · Material · Consumable · Ammo · Ingredient · Key Items · Glider · Schematic · Штурмовая винтовка · Оружие · Обычный · Атака 320 Технологии 45 · Штурмовая винтовка ведёт плотный подавляющий огонь.
 
 Идеально подходит для сражений с сильными противниками.

@@ -1,6 +1,6 @@
 import sys,asyncio
 from playwright.async_api import async_playwright
-U=sys.argv[1].rstrip('/');pages=[('home','/'),('gallery','/gallery/'),('pal','/4_spravochniki/paly/anubis/'),('map','/map/'),('compare','/compare/')]
+U=sys.argv[1].rstrip('/');pages=[('secrets','/guide/sekrety/'),('home','/'),('gallery','/gallery/'),('pal','/4_spravochniki/paly/anubis/'),('map','/map/'),('compare','/compare/')]
 async def main():
   async with async_playwright() as p:
     b=await p.chromium.launch()

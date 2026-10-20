@@ -1,7 +1,5 @@
 # Сферы
 
-_Источник: paldb.cc/ru/Sphere (данные игры v1.0.5)._
-
 Сферы /12 · Weapon · Sphere · Sphere Module · Armor · Accessory · Material · Consumable · Ammo · Ingredient · Key Items · Glider · Schematic · Пал-сфера · Сферы · Обычный · Технологии 2 Маст-во поимки 7 · Метательное приспособление для поимки Палов.
 
 Серийная модель, эффективная только против Палов низкого уровня.

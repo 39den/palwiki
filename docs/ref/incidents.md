@@ -1,7 +1,5 @@
 # События (инциденты)
 
-_Источник: paldb.cc/ru/Incidents (данные игры v1.0.5)._
-
 IncidentSpawner /1 · IncidentSpawner_DarkIsland_DarkArea /11 · IncidentSpawner_DarkIsland_RedArea_Desert /9 · IncidentSpawner_DarkIsland_RedArea_Magma /8 · IncidentSpawner_DarkIsland_RedArea_North /9 · IncidentSpawner_DarkIsland_RedArea_South /9 · IncidentSpawner_DarkIsland_YellowArea /9 · IncidentSpawner_Desert /14 · IncidentSpawner_Forest /18 · IncidentSpawner_Forest_B /18 · IncidentSpawner_Forest_Frost /5 · IncidentSpawner_Sakurajima /14 · IncidentSpawner_Sakurajima_B /14 · IncidentSpawner_SkyIsland_A /0
 
 IncidentSpawner_Snow /15 · IncidentSpawner_Volcano /15 · IncidentSpawner_grass /20 · IncidentSpawner_grass_B /18 · IncidentSpawner_grass_desert /9 · Incidents · IncidentSpawner /1 · Rate: 100 · World Map: Map · Rate: 100 · Воздушный налётчик Ванвирм Lv.40 · Ванвирм Lv.35 · Ванвирм Lv.35 · Ванвирм Lv.36 · Ванвирм Lv.37 · Ванвирм Lv.38 · Ванвирм Lv.36 · Ванвирм Lv.37 · Ванвирм Lv.35 · Ванвирм Lv.36 · IncidentSpawner_DarkIsland_DarkArea /11 · Rate: 40 · World Map: Map · Rate: 100 · Искусный укротитель Палов Lv.49

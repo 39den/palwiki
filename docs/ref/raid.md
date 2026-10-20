@@ -1,7 +1,5 @@
 # Рейды и налёты на базу
 
-_Источник: paldb.cc/ru/Raid (данные игры v1.0.5)._
-
 Summoning Altar /11 · Нападение /240 · Raid · Summoning Altar /11 · Безумная Леди Бэллануар Level: 35 · Hp: 333,000 · Damage Reduction: 0% · Attack Damage: 150% · Таинственная Леди Бэллануар Либеро Level: 45 · Hp: 411,000 · Damage Reduction: 60% · Attack Damage: 200% · Таинственная Леди (ультра) Бэллануар Либеро Level: 80 · Hp: 2,394,000 · Damage Reduction: 91% · Attack Damage: 1000% · Манифестация Вечного пламени Блазамут Рю Level: 55 · Hp: 512,680 · Damage Reduction: 60% · Attack Damage: 200% · Манифестация Вечного пламени (ультра) Блазамут Рю Level: 80
 
 Hp: 2,550,000 · Damage Reduction: 91% · Attack Damage: 800% · Захватчик из космоса Зенолорд Level: 65 · Hp: 1,414,000 · Damage Reduction: 65% · Attack Damage: 500% · Захватчик из космоса (ультра) Зенолорд Level: 80 · Hp: 2,562,000 · Damage Reduction: 91.5% · Attack Damage: 1300% · Лунный лорд Level: 50 · Hp: 422,500 · Damage Reduction: 0% · Attack Damage: 100% · [Мастер] Лунный лорд Level: 80 · Hp: 2,352,000 · Damage Reduction: 75% · Attack Damage: 700% · Царь-спаситель Харталис Level: 70 · Hp: 972,000

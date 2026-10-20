@@ -1,7 +1,5 @@
 # Калькулятор IV (скрытые таланты)
 
-_Источник: paldb.cc/ru/Iv_Calc (данные игры v1.0.5)._
-
 Independent Variable Calc · Pal · Lv.
 
 Pal Essence Condenser · 0 (+0%) · 1 (+5%) · 2 (+10%) · 3 (+15%) · 4 (+20%) · HP · ShotAttack · Defense · Work Speed · Statue of Power · 0 (HP+0%) · 1 (HP+3%) · 2 (HP+6%) · 3 (HP+9%) · 4 (HP+12%) · 5 (HP+15%) · 6 (HP+18%) · 7 (HP+21%) · 8 (HP+24%) · 9 (HP+27%) · 10 (HP+30%) · 11 (HP+33%) · 12 (HP+36%) · 13 (HP+39%) · 14 (HP+42%) · 15 (HP+45%) · 16 (HP+48%) · 17 (HP+51%) · 18 (HP+54%) · 19 (HP+57%) · 20 (HP+60%) · Statue of Power · 0 (Attack+0%) · 1 (Attack+3%) · 2 (Attack+6%) · 3 (Attack+9%) · 4 (Attack+12%)

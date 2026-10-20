@@ -1,7 +1,5 @@
 # Операционный стол (смена пассивок)
 
-_Источник: paldb.cc/ru/Pal_Surgery_Table (данные игры v1.0.5)._
-
 Операционный стол для Палов · Surgery /54 · Pal Surgery Table · Операционный стол для Палов · Палы · Технологии 38 SAN Rate 0.1 ReviveSpeedMultiplier 1 · Позволяет проводить Палам операции · для смены пола и пассивных навыков.
 
 Слиток рафинированного металла · 30 · Качественная ткань · 20 · Едкий растворитель · 10 · Stats · Type · Палы · Трудоспособность · Ручная работа x Lv.1: 20s · Code · OperatingTable · Defense · 3 · Others · Hp · 5000 · Hp_PVP · 5000 · Defense_PVP · 25 · bBelongToBaseCamp · 1 · DeteriorationDamage · 0.1 · ExtinguishBurnWorkAmount · 1000 · bShowHPGauge · 1 · TypeA · Pal · SortId · 11 · TypeB · Other · TypeUIDisplay · PalTraining · Rank · 1 · AssetValue · 1 · BuildExpRate · 1.37 · Production · Materials Product Schematic

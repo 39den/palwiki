@@ -1,7 +1,5 @@
 # Расходники
 
-_Источник: paldb.cc/ru/Consumable (данные игры v1.0.5)._
-
 Расходник /237 · Weapon · Sphere · Sphere Module · Armor · Accessory · Material · Consumable · Ammo · Ingredient · Key Items · Glider · Schematic · Медикаменты низкого качества · Расходник · Обычный · Питательность 1 · Медикаменты низкого качества — средство от Простуда, Растяжение и Обжора.
 
 При употреблении не восстанавливает HP.

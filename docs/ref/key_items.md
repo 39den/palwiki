@@ -1,7 +1,5 @@
 # Ключевые предметы
 
-_Источник: paldb.cc/ru/Key_Items (данные игры v1.0.5)._
-
 Ключевые предметы /334 · Weapon · Sphere · Sphere Module · Armor · Accessory · Material · Consumable · Ammo · Ingredient · Key Items · Glider · Schematic · Статуя Лифманка · Ключевые предметы · Редкий · Загадочные статуи Палов, встречающиеся по всему острову Палпагос.
 
 Подношение у особой статуи позволяет усилить игрока.

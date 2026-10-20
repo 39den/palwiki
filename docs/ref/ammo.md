@@ -1,7 +1,5 @@
 # Патроны
 
-_Источник: paldb.cc/ru/Ammo (данные игры v1.0.5)._
-
 Боеприпасы /38 · Weapon · Sphere · Sphere Module · Armor · Accessory · Material · Consumable · Ammo · Ingredient · Key Items · Glider · Schematic · Стрела · Боеприпасы · Обычный · Технологии 3 · Стрела для стрельбы из лука.
 
 Создаётся на Примитивный верстак .

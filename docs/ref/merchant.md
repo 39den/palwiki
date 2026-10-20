@@ -1,7 +1,5 @@
 # Все торговцы
 
-_Источник: paldb.cc/ru/Merchant (данные игры v1.0.5)._
-
 Shop /587 · icon · name · id · Чертёж ободка с длинными ушами 1 1 Village_Shop_1 · Чертёж ведьминого колпака 1 1 Village_Shop_1 · Чертёж шляпы земледельца 1 1 Village_Shop_1 · Чертёж шляпы-котелка 1 1 Village_Shop_1 · Чертёж шляпы Токотоко 1 1 Village_Shop_1 · Чертёж шляпы Гумосса 1 1 Village_Shop_1 · Чертёж шляпы Пенкинга 1 1 Village_Shop_1 · Чертёж ободка Риббани 1 1 Village_Shop_1 · Твёрдая древесина 1 Village_Shop_1 · Пал-сфера 1 Village_Shop_1 · Простая приманка 1 Village_Shop_1 · Стрела 1 Village_Shop_1
 
 Медикаменты низкого качества 1 Village_Shop_1 · Медикаменты 1 Village_Shop_1 · Качественные медикаменты 1 Village_Shop_1 · Семена ягод 1 Village_Shop_1 · Семена пшеницы 1 Village_Shop_1 · Яйцо 1 Village_Shop_1 · Молоко 1 Village_Shop_1 · Красная ягода 1 Village_Shop_1 · Пшеница 1 Village_Shop_1 · Мясо Чикипи 1 Village_Shop_1 · Мясо Ламболла 1 Village_Shop_1 · Шерсть 1 Village_Shop_1 · Кожа 1 Village_Shop_1 · Кость 1 Village_Shop_1 · Рог 1 Village_Shop_1 · Электрический орган 1 Village_Shop_1 · Ядовитая железа 1 Village_Shop_1

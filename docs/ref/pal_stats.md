@@ -1,7 +1,5 @@
 # Статы палов
 
-_Источник: paldb.cc/ru/Pal_Stats (данные игры v1.0.5)._
-
 Max Stats with Trust with Awakening /299 · Alpha Max Stats with Trust with Awakening /299 · Max Stats with Trust /299 · Alpha Max Stats with Trust /299 · Max Stats /299 · Alpha Max Stats /299 · Stats with Trust /288 · Alpha Stats with Trust /299 · Stats /288 · Alpha Stats /299 · Element Amount /9 · Max Stats with Trust with Awakening /299 · Level 80, Bonus is IV +30%, Pal Essence Condenser +20%, Statue of Power +60%, Trust Lv.10, Awakening · name · element · Health · Attack · Defense · Боевая мощь
 
 Ламболл Нейтральный 14906 1899 1803 167075 · Каттива Нейтральный 14906 1899 1803 167075 · Чикипи Нейтральный 14307 1794 1698 158825 · Лифманк Трава 15256 1899 1803 168825 · Камоноске Вода 14307 2004 1698 164075 · Камоноске Игнис Вода Огонь 14307 2056 1698 165375 · Викси Нейтральный 14906 1899 1803 167075 · Селарай Вода 15505 1899 1908 172700 · Селарай Лакс Вода Молния 15505 1951 1908 174000 · Кремис Нейтральный 14906 1899 1855 168375 · Кроадзиро Вода 15505 2213 1960 181850 · Кроадзиро Нокт Вода Тьма 15855 2318 2012 187525

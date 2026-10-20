@@ -58,6 +58,49 @@ for p in pals:
     'rarity':int(p['rarity'] or 0),'url':url,'img':img,'thumb':thumb or img,'bp':p.get('best_passives',{}),'rank':int(p['breeding'].get('combi_rank') or 0),
     'up':p['breeding'].get('unique_parents'),'psk':ps.get('name',''),'egg':(p.get('habitat') or {}).get('egg','')})
 print('pal headers',n)
+
+# ---------- clean reader-facing text
+UNV='<span class="unv" title="Ещё перепроверяется">ⓘ</span>'
+def strip_src(t):
+  out='';i=0;low=t.lower()
+  while True:
+    m=re.search(r'\s*[(（]\s*(источник|источники|source|по данным|ист\.)',low[i:])
+    if not m: out+=t[i:];break
+    st=i+m.start();out+=t[i:st];d=0;j=st
+    while j<len(t):
+      if t[j]=='(':d+=1
+      elif t[j]==')':
+        d-=1
+        if d==0:break
+      j+=1
+    i=j+1
+  return out
+def clean(t,html=True):
+  t=strip_src(t)
+  t=re.sub(r'(?ms)^#{2,3} (Источники|Источник|Sources)\s*$.*?(?=^#{1,3} |\Z)','',t)
+  t=re.sub(r'(?im)^\s*[_*]*(источник|источники|source)[_*]*\s*:.*$\n?','',t)
+  t=re.sub(r'\s*\[(проверить|патч|проверь)[^\]]*\]',UNV if html else '',t)
+  t=re.sub(r'(?m)^(#{1,4} .*?)\s*\(\d+\)\s*$',r'\1',t)
+  t=re.sub(r'\s*—?\s*\[?проверить\]? — пока один источник\.?','',t)
+  t=t.replace(UNV+' — пока один источник.','').replace(' Источник указан у каждой строки.','')
+  t=re.sub(r'(?m) +$','',t)
+  return t
+def secrets(t):
+  def card(m):
+    body=m.group(1);sp='🙈 ' in body;body=body.replace('🙈 ','')
+    if ' — ' in body: a,b=body.split(' — ',1)
+    else: a,b=body,''
+    return f'<div class="secret{" spoiler" if sp else ""}" markdown="1"><b>{a.strip()}</b>{"<span class=sp>спойлер</span>" if sp else ""}<br>{b.strip()}</div>'
+  return re.sub(r'(?m)^- (.+)$',card,t)
+for f in glob.glob(D+'/**/*.md',recursive=True):
+  s0=open(f).read();s1=clean(s0)
+  if f.endswith('sekrety.md'): s1=secrets(s1.replace('🙈 = спойлер (сюжет/эндгейм).','🙈 — спойлер.'))
+  if s1!=s0:open(f,'w').write(s1)
+def cj(o):
+  if isinstance(o,str):return clean(o,False).strip()
+  if isinstance(o,list):return [cj(x) for x in o]
+  if isinstance(o,dict):return {k:cj(v) for k,v in o.items()}
+  return o
 # ---------- heading index for anchors
 HI={}
 for f in glob.glob(D+'/**/*.md',recursive=True):
@@ -98,6 +141,7 @@ for a in L.get('towers',[]):
   if a.get('x') is not None:MP.append({'t':'tower','name':a['name'],'x':a['x'],'y':a['y'],'info':a.get('en','')})
 for a in L.get('sealed_realms',[]):
   if a.get('xy'):MP.append({'t':'sealed','name':a['name_en'],'x':a['xy'][0],'y':a['xy'][1],'info':a.get('pal','')+' ур. '+str(a.get('level',''))})
+SI=cj(SI);SB=cj(SB);SPS=cj(SPS);faq=cj(faq);MP=cj(MP)
 json.dump({'map':MP,'pals':SP,'items':SI,'bosses':SB,'passives':SPS,'faq':faq,'syn':syn,'built':datetime.date.today().isoformat()},open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
 shutil.move(A+'/manifest.webmanifest',D+'/manifest.webmanifest');open(D+'/sw.js','w').write(open(A+'/sw.js').read().replace('__BUILD__',datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d%H%M')));os.remove(A+'/sw.js')
 print('map points',len(MP));print('search_data KB',os.path.getsize(A+'/search_data.json')//1024)

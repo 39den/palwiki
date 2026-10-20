@@ -1,7 +1,5 @@
 # Яйца
 
-_Источник: paldb.cc/ru/Eggs (данные игры v1.0.5)._
-
 Wild Eggs /754 · Eggs /27 · Wild Eggs /754 · Egg CoolDown Time: 180 minutes.
 
 Egg column is draw points in the area, not to get the actual egg. Refer to the egg display on the Map page .
