@@ -10,7 +10,7 @@ window.PW_lists={lists,saveL};
 function breedCore(D){const BR=D.pals.filter(p=>p.rank&&!p.collab);const UQ={};D.pals.forEach(p=>{if(p.up)UQ[p.up.slice().sort().join('|')]=p;});const kids=new Set(Object.values(UQ).map(p=>p.ru));
  const FORM=BR.filter(p=>!kids.has(p.ru)&&p.rank<9999);
  const breed=(a,b)=>{if(a.ru==b.ru)return [a,'тот же вид'];const u=UQ[[a.ru,b.ru].sort().join('|')];if(u)return [u,'особая пара'];const t=Math.floor((a.rank+b.rank+1)/2);
-  let c=FORM[0];for(const p of FORM){const d=Math.abs(p.rank-t),dc=Math.abs(c.rank-t);if(d<dc||(d==dc&&p.rank<c.rank))c=p;}return [c,'по рангу '+t];};
+  let c=FORM[0];for(const p of FORM){const d=Math.abs(p.rank-t),dc=Math.abs(c.rank-t);if(d<dc||(d==dc&&p.rank<c.rank))c=p;}return [c,'по рангам разведения'];};
  const parents=(ch,lim=30)=>{if(ch.up)return [[ch.up[0],ch.up[1]]];const o=[];for(let i=0;i<BR.length;i++)for(let j=i;j<BR.length;j++){const [c]=breed(BR[i],BR[j]);if(c.ru==ch.ru&&BR[i].ru!=ch.ru&&BR[j].ru!=ch.ru){o.push([BR[i].ru,BR[j].ru]);}}
   const pop=n=>{const p=D.pals.find(x=>x.ru==n);return p?p.rarity:9};o.sort((x,y)=>pop(x[0])+pop(x[1])-pop(y[0])-pop(y[1]));return o.slice(0,lim);};
  return {breed,parents,BR};}
@@ -122,7 +122,7 @@ function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(
  draw();}
 function cmpRoles(p,ps,P){const roles=Object.entries(p.bp||{});if(!roles.length||!ps.length)return '';const mine=new Set(ps.map(j=>P[j].name));
  return `<div class="bnote"><b>Сравнение с типовыми сборками:</b><ul>${roles.map(([r,v])=>{const hit=v.filter(n=>mine.has(n)).length;return `<li>${r}: совпадает ${hit} из ${v.length}${hit<v.length?' — не хватает: '+v.filter(n=>!mine.has(n)).join(', '):' ✅'}</li>`;}).join('')}</ul></div>`;}
-function vsBoss(p,s,D){const bs=D.bosses.filter(b=>b.weak&&b.weak.length&&b.level);if(!bs.length)return '';const good=bs.filter(b=>b.weak.some(w=>p.el.includes(w))).slice(0,6);const bad=bs.filter(b=>(b.el||[]).some(e=>p.weak.includes(e))).slice(0,6);
- return `<div class="bnote"><b>Против боссов</b> <small>(по стихиям, без расчёта урона)</small><ul>${good.length?`<li>✅ Бьёт по слабости (урон ×2): ${good.map(b=>esc(b.name)).join(', ')}</li>`:''}${bad.length?`<li>⚠️ Опасно — босс бьёт по его слабости: ${bad.map(b=>esc(b.name)).join(', ')}</li>`:''}${!good.length&&!bad.length?'<li>Нейтрален против всех башен.</li>':''}</ul></div>`;}
+function vsBoss(p,s,D){const bs=D.bosses.filter(b=>b.weak&&b.weak.length&&b.level);if(!bs.length)return '';const U=a=>[...new Set(a.map(b=>b.name.replace(/\s*\(.*?\)/g,'')))].slice(0,6);const good=bs.filter(b=>b.weak.some(w=>p.el.includes(w)));const bad=bs.filter(b=>(b.el||[]).some(e=>p.weak.includes(e))).slice(0,6);
+ return `<div class="bnote"><b>Против боссов</b> <small>(по стихиям, без расчёта урона)</small><ul>${good.length?`<li>✅ Бьёт по слабости (урон ×2): ${U(good).map(esc).join(', ')}</li>`:''}${bad.length?`<li>⚠️ Опасно — босс бьёт по его слабости: ${U(bad).map(esc).join(', ')}</li>`:''}${!good.length&&!bad.length?'<li>Нейтрален против всех башен.</li>':''}</ul></div>`;}
 document.addEventListener('DOMContentLoaded',()=>{psvFilter();setTimeout(showInstall,4000);if(!window.PW_data)return;window.PW_data().then(D=>{breedPage(D);myPage(D);palLists(D);galleryExtra(D);popular(D);builder(D);setTimeout(()=>mapPal(D),300);});});
 })();
