@@ -25,8 +25,8 @@ theme:
 plugins:
   - search:
       lang: [ru, en]
-extra_css: ['assets/extra.css?v=1792509223']
-extra_javascript: ['assets/smart.js?v=1792509223', 'assets/site.js?v=1792509223', 'assets/features.js?v=1792509223']
+extra_css: ['assets/extra.css?v=1792509517']
+extra_javascript: ['assets/smart.js?v=1792509517', 'assets/site.js?v=1792509517', 'assets/features.js?v=1792509517']
 markdown_extensions:
   - tables
   - attr_list
@@ -98,8 +98,10 @@ nav:
   - Технологии по уровням: 2_mehaniki/tehnologii.md
   - Обратный поиск: 5_lut_i_farm/gde_vzyat.md
   - Таблица дропа всех палов: 5_lut_i_farm/drop_palov.md
+- 👑 Боссы: boss/index.md
 - 🗺️ Мир и карта:
   - Интерактивная карта: map.md
+  - Мировое древо: https://39den.github.io/palwiki/map/#tree
   - Мир: guide/11_mir.md
   - Координаты: guide/koordinaty.md
   - Секреты и пасхалки: guide/sekrety.md

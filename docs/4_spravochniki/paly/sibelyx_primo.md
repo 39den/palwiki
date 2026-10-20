@@ -10,17 +10,8 @@
 <div class="stats">❤️ 115 · ⚔️ 90 · 🛡 100</div></div></div>
 
 
-| Поле | Значение |
-|---|---|
-| Стихия | Нейтральный |
-| Слабость (кто бьёт сильнее) | Тьма |
-| Редкость | 8 |
-| Размер | L |
-| HP / Атака / Защита (база вида) | 115 / 90 / 100 |
-| Сколько ест | 350 |
-| Цена продажи | 2094 |
-| Множитель поимки | ×1 |
-| Скорость рывка верхом | 550 |
+
+<div class="infotiles" markdown="0"><div class="itg"><div class="itg-h">Основное</div><div class="itiles"><div class="it"><span class="ii">💎</span><span class="il">Редкость <button class="hlp" data-tip="Чем выше число, тем реже встречается пал. 1–4 — обычные, 5–7 — редкие, 8+ — легендарные.">?</button></span><b>8</b></div><div class="it"><span class="ii">📏</span><span class="il">Размер</span><b>L</b></div><div class="it"><span class="ii">💰</span><span class="il">Цена продажи <button class="hlp" data-tip="Сколько золота даст торговец за пала.">?</button></span><b>2094</b></div></div></div><div class="itg"><div class="itg-h">Бой</div><div class="itiles"><div class="it"><span class="ii">🎯</span><span class="il">Множитель поимки <button class="hlp" data-tip="Насколько легче или труднее поймать: ×1 — обычно, меньше — сложнее.">?</button></span><b>×1</b></div><div class="it"><span class="ii">🐎</span><span class="il">Скорость рывка верхом <button class="hlp" data-tip="Скорость, если сесть на пала и бежать рывком.">?</button></span><b>550</b></div></div></div><div class="itg"><div class="itg-h">Ферма и еда</div><div class="itiles"><div class="it"><span class="ii">🍖</span><span class="il">Сколько ест <button class="hlp" data-tip="Сколько сытости пал тратит — чем больше, тем больше еды нужно на базе.">?</button></span><b>350</b></div></div></div><div class="itg"><div class="itg-h">Разведение</div><div class="itiles"><div class="it"><span class="ii">🧬</span><span class="il">Сила разведения <button class="hlp" data-tip="Скрытое число игры: у детёныша оно примерно среднее от родителей. Чем меньше — тем «сильнее» пал.">?</button></span><b>650</b></div><div class="it"><span class="ii">💞</span><span class="il">Особая пара <button class="hlp" data-tip="Этого пала можно вывести только от этой пары.">?</button></span><b>Сибеликс + Немофи</b></div></div></div></div>
 
 === "Обзор"
 

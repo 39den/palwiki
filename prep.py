@@ -393,21 +393,114 @@ G=lambda *xs:[{n:sec(d)} for d,n in xs if glob.glob(f'{D}/{d}/*.md')]
 mir=[{title(D+'/guide/'+x):'guide/'+x} for x in ('11_mir.md','koordinaty.md','sekrety.md')];used.update(D+'/guide/'+x for x in ('11_mir.md','koordinaty.md','sekrety.md'))
 pal_pages=sec('4_spravochniki/paly')
 spr=G(('4_spravochniki/predmety','Предметы'))+sec('4_spravochniki')
+# ---- boss cards ----
+os.makedirs(D+'/boss',exist_ok=True)
+PBR={x['ru']:x for x in SP}
+def _mode(n):
+  m=re.search(r'\((обычный|сложный|ультра)\)',n)
+  if m:return m.group(1)
+  if n.startswith('[Мастер]'):return 'мастер'
+  return 'обычный'
+def _base(n):return re.sub(r'\s+',' ',re.sub(r'\((обычный|сложный|ультра)\)|\[Мастер\]','',n)).strip()
+BG={};BORD=[]
+for b in bosses:
+  if b['kind']=='подземелье' or not b.get('pal'):continue
+  k=b['pal'] if b['kind']=='рейд' else _base(b['name'])
+  if k not in BG:BG[k]={'name':_base(b['name']),'kind':b['kind'],'pal':b['pal'],'place':b.get('place') or '','coords':b.get('coords'),'el':b.get('elements',[]),'weak':b.get('weak_to',[]),'team':[t['pal'] for t in ((b.get('recommended_team') or {}).get('main') or [])],'tactics':b.get('tactics') or '','modes':[]};BORD.append(k)
+  BG[k]['modes'].append({'m':_mode(b['name']),'lvl':b.get('level'),'hp':b.get('hp'),'loot':b.get('loot') or ''})
+for a in L.get('alphas',[]):
+  if a['pal'] in BG:continue
+  p=PBR.get(a['pal'])
+  if not p:continue
+  BG[a['pal']]={'name':a['pal'],'kind':'альфа','pal':a['pal'],'place':'','coords':a.get('xy') and f"{a['xy'][0]}, {a['xy'][1]}",'el':p['el'],'weak':p['weak'],'team':[],'tactics':'','modes':[{'m':'альфа','lvl':a.get('level'),'hp':None,'loot':''}]};BORD.append(a['pal'])
+KT={'башня':'🏯 Башня','рейд':'⚔️ Рейд','босс':'🌊 Мировой босс','мини-босс Мирового Древа':'🌳 Мировое древо','альфа':'👑 Альфа'}
+def _cl(t):
+  t=clean(str(t)) if t else '';t=re.sub(r'\[[^\]]*(провер|патч)[^\]]*\]','',t).strip(' ;,.')
+  return t
+BJS=[]
+for k in BORD:
+  g=BG[k];sl=slug(PBR[g['pal']]['en'] if g['pal'] in PBR else g['name']) or 'boss';
+  if g['kind']=='альфа':sl='alpha_'+sl
+  g['url']='boss/'+sl+'/';p=PBR.get(g['pal']);R='../../'
+  img=f'<img class="bimg" src="{R}{p["art"] if p and p.get("art") else (p["thumb"] if p else "")}" alt="" width="260" height="260">' if p else ''
+  ctr=[x for x in SP if x['url'] and set(x['el'])&set(g['weak'])];ctr.sort(key=lambda x:-x['atk']);ctr=([PBR[t] for t in g['team'] if t in PBR and set(PBR[t]['el'])&set(g['weak'])]+[c for c in ctr if c['ru'] not in g['team']])[:8]
+  q=g['place'] or g['pal'];maplink=f'<a class="md-button" href="{R}map/?q={q}">📍 На карте</a>' if g['coords'] else ''
+  tabs=''
+  for m in g['modes']:
+    rows=[('Уровень',m['lvl']),('Здоровье',f"{m['hp']:,}".replace(',',' ') if isinstance(m['hp'],int) else None)]
+    lt=_cl(m['loot'])
+    body=''.join(f'<div><span>{a}</span><b>{v}</b></div>' for a,v in rows if v not in (None,'',0))
+    tabs+=f'=== "{m["m"].capitalize()}"\n\n    <div class="bstats" markdown="0">{body}</div>\n\n'+(f'    **Награда:** {lt}\n\n' if lt else '')
+  cn=''.join(f'<a class="mc card-link" href="{R}{c["url"]}#bld"><img src="{R}{c["thumb"]}" width="56" height="56" alt="" loading="lazy"><span>{c["ru"]}</span></a>' for c in ctr)
+  tac=_cl(g['tactics'])
+  md=f'''---
+hide: [toc]
+---
+# {g['name']}
+
+<div class="boss-hero" data-el="{EL.get((g['el'] or ['Нейтральный'])[0],'neutral')}" markdown="0">{img}<div class="bi"><span class="kind">{KT.get(g['kind'],g['kind'])} <button class="hlp" data-h="boss">?</button></span><h2>{g['pal']}</h2><div>{''.join(chip(e) for e in g['el'])}</div><div class="wk">Слабость: {''.join(chip(e) for e in g['weak']) or '—'}</div>{f'<div class="pl">📍 {g["place"]}</div>' if g['place'] else ''}<div class="bb">{maplink}{f'<a class="md-button" href="{R}{p["url"]}">Страница пала</a>' if p and p['url'] else ''}</div></div></div>
+
+{tabs}
+'''+(f'''## 💥 Кем бить <button class="hlp" data-h="counter">?</button>
+
+Палы, которые бьют по слабости босса. Нажми — откроется сборка пала, там видно, как он против этого босса.
+
+<div class="mini-row" markdown="0">{cn}</div>
+''' if cn else '')+(f'\n## 🧠 Тактика\n\n{tac}\n' if tac else '')
+  open(D+'/boss/'+sl+'.md','w').write(md)
+  BJS.append({'n':g['name'],'k':g['kind'],'pal':g['pal'],'el':g['el'],'w':g['weak'],'lv':[m['lvl'] for m in g['modes']],'u':g['url'],'t':(p or {}).get('thumb','')})
+def _lv(x):
+  try:return int(str(x).split('–')[0])
+  except:return 0
+open(D+'/boss/index.md','w').write('''---
+hide: [toc]
+---
+# 👑 Боссы
+
+<div class="gal-filters" id="bfl" markdown="0"><input id="bq2" type="search" placeholder="Найти босса…"><select id="bk"><option value="">Все типы</option>'''+''.join(f'<option value="{k}">{v}</option>' for k,v in KT.items())+'''</select><select id="be"><option value="">Стихия</option>'''+''.join(f'<option>{e}</option>' for e in EL)+'''</select><select id="bl"><option value="">Уровень</option><option value="0-30">до 30</option><option value="31-60">31–60</option><option value="61-200">61+</option></select><span id="bcnt" class="mcnt"></span></div>
+<div class="bgal" markdown="0">'''+''.join(f'<a class="pc bc" href="../{b["u"]}" data-k="{b["k"]}" data-el="{" ".join(b["el"])}" data-lv="{max(_lv(x) for x in b["lv"])}" data-n="{b["n"].lower()} {b["pal"].lower()}"><img src="../{b["t"]}" width="96" height="96" alt="" loading="lazy"><b>{b["n"]}</b><small>{KT.get(b["k"],"")} · ур. {" / ".join(str(x) for x in b["lv"] if x)}</small><span>{"".join(chip(e) for e in b["el"])}</span></a>' for b in BJS)+'</div>\n')
+for x in SB:
+  g=BG.get(x['pal'] if x['kind']=='рейд' else _base(x['name']))
+  if g:x['url']=g['url']
+_sd=json.load(open(A+'/search_data.json'));_sd['bosses']=SB;_sd['bcards']=BJS;json.dump(_sd,open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
+
 nav=[{'🏠 Главная':'index.md'},
  {'🐾 Палы':[{'Галерея и фильтры':'gallery.md'},{'По стихиям и работе':'4_spravochniki/paly_po_stihiyam_i_rabote.md'},{'Сравнить двух':'compare.md'},{'Калькулятор разведения':'breed.md'},{'Мои списки':'my.md'}]},
  {'🧭 Гайд':sec('guide')+sec('0_nachni_zdes')+sec('1_prohozhdenie')},
  {'📚 Справочник':[{'Все пассивки':'passivki/index.md'}]+spr+sec('2_mehaniki')+sec('3_bazy')+sec('5_lut_i_farm')},
- {'🗺️ Мир и карта':[{'Интерактивная карта':'map.md'}]+mir+sec('6_mir')+sec('7_server')},
+ {'👑 Боссы':'boss/index.md'},
+ {'🗺️ Мир и карта':[{'Интерактивная карта':'map.md'},{'Мировое древо':'https://39den.github.io/palwiki/map/#tree'}]+mir+sec('6_mir')+sec('7_server')},
  {'❓ FAQ':sec('9_faq')+sec('8_slovar')+sec('10_bagi')},
  {'🤖 Бот':'bot.md'}]
-keep=used|{D+'/passivki/'+os.path.basename(f) for f in glob.glob(D+'/passivki/*.md')}|{D+'/index.md',D+'/gallery.md',D+'/bot.md',D+'/compare.md',D+'/map.md',D+'/breed.md',D+'/my.md'}
+keep=used|{D+'/passivki/'+os.path.basename(f) for f in glob.glob(D+'/passivki/*.md')}|{D+'/boss/'+os.path.basename(f) for f in glob.glob(D+'/boss/*.md')}|{D+'/index.md',D+'/gallery.md',D+'/bot.md',D+'/compare.md',D+'/map.md',D+'/breed.md',D+'/my.md'}
 for f in glob.glob(D+'/**/*.md',recursive=True):
   if f not in keep: os.remove(f)
 import yaml
 y=yaml.safe_dump({'nav':nav},allow_unicode=True,sort_keys=False)
 import glob as _g
+
+_TI={'Редкость':('💎','Основное','Чем выше число, тем реже встречается пал. 1–4 — обычные, 5–7 — редкие, 8+ — легендарные.'),'Размер':('📏','Основное',''),'Цена продажи':('💰','Основное','Сколько золота даст торговец за пала.'),'Коллаборация':('🤝','Основное',''),
+ 'Множитель поимки':('🎯','Бой','Насколько легче или труднее поймать: ×1 — обычно, меньше — сложнее.'),'Скорость рывка верхом':('🐎','Бой','Скорость, если сесть на пала и бежать рывком.'),
+ 'Сколько ест':('🍖','Ферма и еда','Сколько сытости пал тратит — чем больше, тем больше еды нужно на базе.')}
+_SKIP={'Стихия','Слабость (кто бьёт сильнее)','HP / Атака / Защита (база вида)','Поле'}
+_PBU={D+'/'+x['url'].rstrip('/')+'.md':x for x in SP if x['url']}
+def _tiles(m,f):
+  rows=[[c.strip() for c in l.strip().strip('|').split('|')] for l in m.group(0).strip().split('\n')[2:]]
+  G={}
+  for r in rows:
+    if len(r)<2 or r[0] in _SKIP or r[1] in ('','—'):continue
+    ic,g,h=_TI.get(r[0],('ℹ️','Основное',''));G.setdefault(g,[]).append((ic,r[0],r[1],h))
+  px=_PBU.get(f)
+  if px and px.get('rank'):G.setdefault('Разведение',[]).append(('🧬','Сила разведения',str(px['rank']),'Скрытое число игры: у детёныша оно примерно среднее от родителей. Чем меньше — тем «сильнее» пал.'))
+  if px and px.get('up'):G.setdefault('Разведение',[]).append(('💞','Особая пара',' + '.join(px['up']),'Этого пала можно вывести только от этой пары.'))
+  out=''
+  for g in ('Основное','Бой','Ферма и еда','Разведение'):
+    if g not in G:continue
+    out+=f'<div class="itg"><div class="itg-h">{g}</div><div class="itiles">'+''.join(f'<div class="it"><span class="ii">{ic}</span><span class="il">{lb}{f" <button class=\"hlp\" data-tip=\"{h}\">?</button>" if h else ""}</span><b>{v}</b></div>' for ic,lb,v,h in G[g])+'</div></div>'
+  return '\n<div class="infotiles" markdown="0">'+out+'</div>\n'
+_TB=re.compile(r'(?m)^\| Поле \| Значение \|\n\|---\|---\|\n(?:\|.*\|\n?)+')
 _HR=re.compile(r'\s*\((?:по внутренн[^)]*|\d+(?:\.\d+)*|v?\d[\d.]*\+?|(?=[^)А-Яа-яЁё]*[A-Za-z])[^)А-Яа-яЁё]+)\)')
 for _f in _g.glob(D+'/**/*.md',recursive=True):
-  _t0=open(_f).read();_t1=re.sub(r'(?m)^(#{1,6} )(.+)$',lambda m:m.group(1)+_HR.sub('',m.group(2)).rstrip(),_t0)
+  _t0=open(_f).read();_t0b=_TB.sub(lambda m,_f=_f:_tiles(m,_f),_t0);_t1=re.sub(r'(?m)^(#{1,6} )(.+)$',lambda m:m.group(1)+_HR.sub('',m.group(2)).rstrip(),_t0b)
   if _t1!=_t0:open(_f,'w').write(_t1)
 import time as _t;_v=str(int(_t.time()));open('/workspace/palsite/mkdocs.yml','w').write(re.sub(r'assets/(\w+)\.(js|css)',lambda m:"'"+m.group(0)+'?v='+_v+"'",open('/workspace/palsite/mkdocs.base.yml').read())+y)

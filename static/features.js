@@ -83,7 +83,7 @@ function mapPal(D){const M=window.PW_map;const s=document.getElementById('mapq')
  const pal=p=>p.t=='alpha'?p.name:p.t=='sealed'?(p.info.split('· ')[1]||''):'';
  const twBoss=p=>D.bosses.find(b=>b.place&&N(b.place)==N(p.name));
  const d2=(a,b)=>(a.x-b.x)**2+(a.y-b.y)**2;
- const fixq=q=>{let n=N(q);const f=C.fixLayout?C.fixLayout(n):null;return [n,f&&f!=n?f:null];};
+ const fixq=q=>{const f=C.fixLayout?C.fixLayout(q.toLowerCase()):null;const n=N(q);return f&&f[1]?[N(f[0]),n]:[n,null];};
  function search(q){let [n,alt]=fixq(q);n=n.replace(/^(где|как)\s+(найти|найт|искать|поймать|взять)\s+/,'').replace(/^(где|найти)\s+/,'').trim();const R=[];
   const near=n.match(/^(телепорт|статуя|статую|тп)\s+(рядом с|возле|у|около)\s+(.+)$/);
   if(near){const t=search(near[3]).filter(r=>r.pts.length)[0];if(t){const c=t.pts[0];const tr=M.all.filter(([p])=>p.t=='travel').sort((a,b)=>d2(a[0],c)-d2(b[0],c)).slice(0,3);return [{lbl:'Телепорты рядом с '+t.lbl,ic:'🗿',ty:'ближайшие',pts:tr.map(z=>z[0])}];}}
@@ -92,7 +92,7 @@ function mapPal(D){const M=window.PW_map;const s=document.getElementById('mapq')
   if(/^(телепорт|статуи|статуя|тп)$/.test(n))R.push({lbl:'Все телепорты',ic:'🗿',ty:'телепорты',pts:M.all.filter(([p])=>p.t=='travel').map(z=>z[0])});
   if(/^альф/.test(n))R.push({lbl:'Все альфы',ic:'👑',ty:'альфы',pts:M.all.filter(([p])=>p.t=='alpha').map(z=>z[0])});
   const terms=[n,alt].filter(Boolean);const hit=f=>terms.some(t=>t.length>1&&N(f).includes(t));
-  const pm=C.find(n,['pal']);const pn=pm?D.pals[pm.ref].ru:null;const groups=new Map();
+  const pm=C.find(n,['pal'])||(alt?C.find(alt,['pal']):null);const pn=pm?D.pals[pm.ref].ru:null;const groups=new Map();
   M.all.forEach(([p])=>{const pp=pal(p);const b=p.t=='tower'?twBoss(p):null;if(hit(p.name)||hit(pp)||(pn&&pp==pn)||(b&&(hit(b.name)||hit(b.pal||'')))){const k=pp||p.name;const g=groups.get(k)||{lbl:k,ic:byRu[pp]?'':'📍',img:byRu[pp]?B+byRu[pp].thumb:'',ty:new Set(),pts:[]};g.ty.add(TL[p.t]);g.pts.push(p);groups.set(k,g);}});
   groups.forEach(g=>R.push({...g,ty:[...g.ty].join(' · ')}));
   if(pn&&!groups.has(pn))R.push({lbl:pn,img:B+byRu[pn].thumb,ty:'на карте нет точек — смотри страницу пала',pts:[],url:byRu[pn].url});
@@ -119,6 +119,7 @@ function popular(D){const el=document.getElementById('potd');if(!el||!D.popular|
 /* ---------- BUILDER ---------- */
 const STAT_RE=[[/\bAttack\s*([+-])\s*(\d+)\s*%/i,'atk'],[/\bDefense\s*([+-])\s*(\d+)\s*%/i,'def'],[/\bWork Speed\s*([+-])\s*(\d+)\s*%/i,'ws'],[/Max Health\s*([+-])\s*(\d+)\s*%/i,'hp']];
 function effects(q){const o={atk:0,def:0,ws:0,hp:0};let rest=q.de||'';for(const [r,k] of STAT_RE){const m=rest.match(r);if(m){o[k]+=(m[1]=='-'?-1:1)*+m[2];}}return o;}
+function statsH(s,b0){const d=(a,b)=>{const x=a-b;return x?`<em class="${x>0?'up':'dn'}">${x>0?'+':''}${x}</em>`:''};return `<div class="bstats"><div><span>❤️ HP</span><b>${s.hp}</b>${d(s.hp,b0.hp)}</div><div><span>⚔️ Атака</span><b>${s.atk}</b>${d(s.atk,b0.atk)}</div><div><span>🛡 Защита</span><b>${s.def}</b>${d(s.def,b0.def)}</div><div><span>⚙️ Работа</span><b>${s.ws}%</b>${d(s.ws,b0.ws)}</div></div>`;}
 function stats(p,st,lv,iv,ps,D,stt){const c=1+.05*st,i=1+iv/100,su=1+(stt||0)/100;let e={atk:0,def:0,ws:0,hp:0};ps.forEach(j=>{const x=effects(D.QI[j]);for(const k in e)e[k]+=x[k];});
  const hp=(500+5*lv+p.hp*.5*lv*i)*c*su*(1+e.hp/100),atk=(100+p.atk*.075*lv*i)*c*su*(1+e.atk/100),df=(50+p.def*.075*lv*i)*c*su*(1+e.def/100);return {hp:Math.floor(hp),atk:Math.floor(atk),def:Math.floor(df),ws:Math.round(100*c*(1+e.ws/100)),e};}
 function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(!info||document.getElementById('bld'))return;const p=D.pals.find(x=>x.id==info.dataset.pal);if(!p)return;
@@ -131,13 +132,14 @@ function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(
  const roles=Object.keys(p.bp||{});const base=stats(p,0,lv,iv,[],D);
  const draw=()=>{const s=stats(p,st,lv,iv,ps,D,stt),b0=stats(p,st,lv,iv,[],D,stt);
   const d=(a,b)=>{const x=a-b;return x?`<em class="${x>0?'up':'dn'}">${x>0?'+':''}${x}</em>`:''};
+  
   const other=ps.map(j=>P[j]).filter(q=>{const e=effects(q);return !(e.atk||e.def||e.ws||e.hp)||/[A-Za-zА-Яа-я]/.test((q.de||'').replace(/(Attack|Defense|Work Speed|Max Health)\s*[+-]\s*\d+\s*%|\(ToSelf\)/gi,'').replace(/[\d%+.,\s-]/g,''));});
   box.innerHTML=`<h2>🛠 Сборка</h2>
   <div class="bld-row"><span class="lbl">Звёзды конденсации</span><div class="stars">${[0,1,2,3,4].map(k=>`<button data-st="${k}" class="${k<=st&&k>0?'on':''} ${k==0?'zero':''}" aria-label="${k} звёзд">${k==0?'0':'★'}</button>`).join('')}</div><small>+${st*5}% к HP, атаке, защите и скорости работы</small></div>
-  <div class="bld-row"><span class="lbl">Уровень <b>${lv}</b></span><input type="range" min="1" max="80" value="${lv}" id="blv"></div>
-  <div class="bld-row"><span class="lbl">Таланты (IV) <b>+${iv}%</b></span><input type="range" min="0" max="30" step="3" value="${iv}" id="biv"></div>
-  <div class="bld-row"><span class="lbl">Статуя силы <b>+${stt}%</b></span><input type="range" min="0" max="60" step="3" value="${stt}" id="bstt"></div>
-  <div class="bstats"><div><span>❤️ HP</span><b>${s.hp}</b>${d(s.hp,b0.hp)}</div><div><span>⚔️ Атака</span><b>${s.atk}</b>${d(s.atk,b0.atk)}</div><div><span>🛡 Защита</span><b>${s.def}</b>${d(s.def,b0.def)}</div><div><span>⚙️ Работа</span><b>${s.ws}%</b>${d(s.ws,b0.ws)}</div></div>
+  <div class="bld-row"><span class="lbl">Уровень <b class="v" data-for="blv">${lv}</b></span><div class="rng"><button type="button" class="stp" data-s="blv" data-d="-1" aria-label="Меньше">−</button><input type="range" min="1" max="80" step="1" value="${lv}" id="blv" aria-label="Уровень"><button type="button" class="stp" data-s="blv" data-d="1" aria-label="Больше">+</button></div></div>
+  <div class="bld-row"><span class="lbl">Таланты (IV) <b class="v" data-for="biv">+${iv}%</b></span><div class="rng"><button type="button" class="stp" data-s="biv" data-d="-3" aria-label="Меньше">−</button><input type="range" min="0" max="30" step="3" value="${iv}" id="biv" aria-label="Таланты (IV)"><button type="button" class="stp" data-s="biv" data-d="3" aria-label="Больше">+</button></div></div>
+  <div class="bld-row"><span class="lbl">Статуя силы <b class="v" data-for="bstt">+${stt}%</b></span><div class="rng"><button type="button" class="stp" data-s="bstt" data-d="-3" aria-label="Меньше">−</button><input type="range" min="0" max="60" step="3" value="${stt}" id="bstt" aria-label="Статуя силы"><button type="button" class="stp" data-s="bstt" data-d="3" aria-label="Больше">+</button></div></div>
+  ${statsH(s,b0)}
   <div class="bld-row"><span class="lbl">Пассивки (${ps.length}/4)</span><div class="tags">${ps.map((j,k)=>`<span class="psv ${rc(P[j].rank)}">${esc(P[j].name)} <button class="rmp" data-k="${k}" aria-label="Убрать">×</button></span>`).join('')}${ps.length<4?'<button type="button" id="bq" class="addp">+ добавить пассивку</button>':''}</div></div>
   ${roles.length?`<div class="bld-row"><span class="lbl">Готовая сборка</span>${roles.map(r=>`<button class="fav" data-role="${r}">${r=='боец'?'⚔️':r=='рабочий'?'🛠':'🐎'} ${r}</button>`).join('')}</div>`:''}
   ${other.length?`<div class="bnote"><b>Другие эффекты:</b><ul>${other.map(q=>`<li>${esc(q.name)}: ${esc(q.desc)}</li>`).join('')}</ul></div>`:''}
@@ -147,7 +149,11 @@ function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(
   <div class="bld-row"><button class="md-button md-button--primary" id="bsave">💾 Сохранить</button><button class="md-button" id="bshare">🔗 Ссылка</button><a class="md-button" href="https://t.me/PalGuideBot?start=build_${code()}" target="_blank" rel="noopener">🤖 Открыть в боте</a></div>
   <p class="approx" title="Влияние пассивок посчитано приблизительно">ⓘ приблизительно</p>`;
   box.querySelectorAll('[data-st]').forEach(b=>b.onclick=()=>{st=+b.dataset.st;draw();});
-  box.querySelector('#blv').oninput=e=>{lv=+e.target.value;draw();box.querySelector('#blv').focus();};box.querySelector('#bstt').oninput=e=>{stt=+e.target.value;draw();box.querySelector('#bstt').focus();};box.querySelector('#biv').oninput=e=>{iv=+e.target.value;draw();box.querySelector('#biv').focus();};
+  const V={blv:[v=>lv=v,()=>lv,''],biv:[v=>iv=v,()=>iv,'+','%'],bstt:[v=>stt=v,()=>stt,'+','%']};
+  const upd=()=>{const s2=stats(p,st,lv,iv,ps,D,stt),b2=stats(p,st,lv,iv,[],D,stt);box.querySelector('.bstats').outerHTML=statsH(s2,b2);for(const k in V){const e=box.querySelector('[data-for='+k+']');e.textContent=(V[k][2]||'')+V[k][1]()+(V[k][3]||'');}history.replaceState(null,'','#b='+code());};
+  for(const k in V){const r=box.querySelector('#'+k);r.addEventListener('input',()=>{V[k][0](+r.value);upd();});r.addEventListener('change',()=>{V[k][0](+r.value);draw();});}
+  box.querySelectorAll('.stp').forEach(b=>b.onclick=()=>{const r=box.querySelector('#'+b.dataset.s);r.value=Math.min(+r.max,Math.max(+r.min,+r.value+ +b.dataset.d));V[b.dataset.s][0](+r.value);draw();});
+  box.querySelectorAll('.v').forEach(e=>e.onclick=()=>{const k=e.dataset.for,r=box.querySelector('#'+k);const n=prompt('Введите значение ('+r.min+'–'+r.max+')',r.value);if(n==null||isNaN(+n))return;V[k][0](Math.min(+r.max,Math.max(+r.min,Math.round(+n))));draw();});
   box.querySelectorAll('.rmp').forEach(b=>b.onclick=()=>{ps.splice(+b.dataset.k,1);draw();});
   box.querySelectorAll('[data-role]').forEach(b=>b.onclick=()=>{ps=(p.bp[b.dataset.role]||[]).map(n=>(PL.find(q=>q.name==n)||{}).i).filter(j=>j!=null).slice(0,4);draw();});
   const q=box.querySelector('#bq');if(q)q.onclick=()=>picker(p,P,PL,ps,j=>{if(ps.length<4&&!ps.includes(j))ps.push(j);draw();});
@@ -173,11 +179,22 @@ function cmpRoles(p,ps,P){const roles=Object.entries(p.bp||{});if(!roles.length|
 function vsBoss(p,s,D){const bs=D.bosses.filter(b=>b.weak&&b.weak.length&&b.level);if(!bs.length)return '';const byRu=Object.fromEntries(D.pals.map(x=>[x.ru,x]));
  const grp=a=>{const m=new Map();a.forEach(b=>{const n=b.name.replace(/\s*\(.*?\)/g,'').trim();const md=(b.name.match(/\((.*?)\)/)||[])[1];const g=m.get(n)||{n,pal:b.pal,url:b.url,md:new Set()};if(md)g.md.add(md);m.set(n,g);});return [...m.values()];};
  const ch=(g,c)=>{const pp=byRu[g.pal];return `<a class="bchip ${c}" ${g.url?`href="${B+g.url}"`:''}>${pp?`<img src="${B+pp.thumb}" width="22" height="22" alt="">`:''}<span>${esc(g.n)}</span>${g.md.size?`<small>${[...g.md].map(esc).join(' · ')}</small>`:''}</a>`;};
- const good=grp(bs.filter(b=>b.weak.some(w=>p.el.includes(w)))),bad=grp(bs.filter(b=>(b.el||[]).some(e=>p.weak.includes(e))));
- return `<div class="bnote"><b>Против боссов</b>${good.length?`<div class="bl">✅ Бьёт по слабости (урон выше)</div><div class="bchips">${good.map(g=>ch(g,'ok')).join('')}</div>`:''}${bad.length?`<div class="bl">⚠️ Опасно</div><div class="bchips">${bad.map(g=>ch(g,'bad')).join('')}</div>`:''}${!good.length&&!bad.length?'<div>Нейтрален против всех боссов.</div>':''}</div>`;}
+ const sc=b=>{let v=0;if(b.weak.some(w=>p.el.includes(w)))v++;if((b.el||[]).some(e=>p.weak.includes(e)))v--;return v;};const both=b=>b.weak.some(w=>p.el.includes(w))&&(b.el||[]).some(e=>p.weak.includes(e));
+ const good=grp(bs.filter(b=>sc(b)>0)),bad=grp(bs.filter(b=>sc(b)<0)),mix=grp(bs.filter(both));const MX=new Set(mix.map(g=>g.n));const _g=good.filter(g=>!MX.has(g.n)),_b=bad.filter(g=>!MX.has(g.n));good.length=0;good.push(..._g);bad.length=0;bad.push(..._b);
+ return `<div class="bnote"><b>Против боссов</b><button class="hlp" data-h="vsboss">?</button>${good.length?`<div class="bl">✅ Бьёт по слабости</div><div class="bchips">${good.map(g=>ch(g,'ok')).join('')}</div>`:''}${bad.length?`<div class="bl">⚠️ Опасно</div><div class="bchips">${bad.map(g=>ch(g,'bad')).join('')}</div>`:''}${mix.length?`<div class="bl">⚖️ Смешанно</div><div class="bchips">${mix.map(g=>ch(g,'mix').replace('<a ','<a title="Пал бьёт по слабости босса, но и босс бьёт по слабости пала" ')).join('')}</div>`:''}${!good.length&&!bad.length&&!mix.length?'<div>Нейтрален против всех боссов.</div>':''}</div>`;}
 const fix=D=>{if(D._f)return D;D._f=1;D.QI={};D.passives.forEach(q=>D.QI[q.i]=q);D.PI={};D.pals.forEach(q=>D.PI[q.i]=q);return D;};
 document.addEventListener('DOMContentLoaded',()=>{psvFilter();setTimeout(showInstall,4000);if(!window.PW_data)return;window.PW_data().then(D=>{fix(D);breedPage(D);myPage(D);palLists(D);galleryExtra(D);popular(D);builder(D);setTimeout(()=>mapPal(D),300);});});
 })();
 (function(){let y=0,on=false;const set=v=>{if(v==on)return;on=v;const b=document.body;if(v){y=scrollY;b.style.position='fixed';b.style.top=-y+'px';b.style.left='0';b.style.right='0';b.style.overflow='hidden';}else{b.style.position=b.style.top=b.style.left=b.style.right=b.style.overflow='';scrollTo(0,y);}};
 document.addEventListener('change',e=>{if(e.target&&e.target.id=='__drawer')set(e.target.checked);});
 document.addEventListener('DOMContentLoaded',()=>{const d=document.getElementById('__drawer');if(!d)return;new MutationObserver(()=>{}).observe(d,{attributes:true});setInterval(()=>set(d.checked),250);});})();
+(function(){document.addEventListener('DOMContentLoaded',()=>{const f=document.getElementById('bfl');if(!f)return;const run=()=>{const q=(document.getElementById('bq2').value||'').toLowerCase().replace(/ё/g,'е'),k=document.getElementById('bk').value,e=document.getElementById('be').value,l=document.getElementById('bl').value;let n=0;
+ document.querySelectorAll('.bgal .bc').forEach(a=>{let ok=(!q||a.dataset.n.replace(/ё/g,'е').includes(q))&&(!k||a.dataset.k==k)&&(!e||a.dataset.el.includes(e));if(ok&&l){const [lo,hi]=l.split('-').map(Number);const v=+a.dataset.lv;ok=v>=lo&&v<=hi;}a.style.display=ok?'':'none';n+=ok;});document.getElementById('bcnt').textContent='найдено '+n;};
+ f.addEventListener('input',run);f.addEventListener('change',run);run();});})();
+
+(function(){const H={boss:'Тип босса: башня, рейд, альфа или босс Мирового древа.',counter:'Палы, чья стихия бьёт по слабости босса: их атаки наносят больше урона.',vsboss:'Сравнение стихий пала и босса. Зелёные — пал бьёт по слабости, красные — босс бьёт по слабости пала, жёлтые — и то и другое.'};
+let pop=null;const close=()=>{if(pop){pop.remove();pop=null;}};
+const open=b=>{close();const t=b.dataset.tip||H[b.dataset.h]||b.title;if(!t)return;pop=document.createElement('div');pop.className='hlp-pop';pop.setAttribute('role','tooltip');pop.textContent=t;document.body.appendChild(pop);const r=b.getBoundingClientRect();pop.style.left=Math.max(8,Math.min(r.left-20,innerWidth-pop.offsetWidth-8))+'px';pop.style.top=(r.bottom+8+pop.offsetHeight>innerHeight?r.top-pop.offsetHeight-8:r.bottom+8)+'px';};
+document.addEventListener('click',e=>{const b=e.target.closest('.hlp');if(b){e.preventDefault();e.stopPropagation();pop&&pop._b===b?close():(open(b),pop&&(pop._b=b));return;}close();},true);
+document.addEventListener('mouseover',e=>{const b=e.target.closest&&e.target.closest('.hlp');if(b&&matchMedia('(hover:hover)').matches){open(b);pop&&(pop._b=b);}});
+document.addEventListener('mouseout',e=>{if(e.target.closest&&e.target.closest('.hlp')&&matchMedia('(hover:hover)').matches)close();});addEventListener('scroll',close,{passive:true});})();

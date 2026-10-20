@@ -10,17 +10,8 @@
 <div class="stats">❤️ 90 · ⚔️ 115 · 🛡 90</div></div></div>
 
 
-| Поле | Значение |
-|---|---|
-| Стихия | Молния, Земля |
-| Слабость (кто бьёт сильнее) | Земля, Трава |
-| Редкость | 6 |
-| Размер | S |
-| HP / Атака / Защита (база вида) | 90 / 115 / 90 |
-| Сколько ест | 380 |
-| Цена продажи | 1773 |
-| Множитель поимки | ×1 |
-| Скорость рывка верхом | — |
+
+<div class="infotiles" markdown="0"><div class="itg"><div class="itg-h">Основное</div><div class="itiles"><div class="it"><span class="ii">💎</span><span class="il">Редкость <button class="hlp" data-tip="Чем выше число, тем реже встречается пал. 1–4 — обычные, 5–7 — редкие, 8+ — легендарные.">?</button></span><b>6</b></div><div class="it"><span class="ii">📏</span><span class="il">Размер</span><b>S</b></div><div class="it"><span class="ii">💰</span><span class="il">Цена продажи <button class="hlp" data-tip="Сколько золота даст торговец за пала.">?</button></span><b>1773</b></div></div></div><div class="itg"><div class="itg-h">Бой</div><div class="itiles"><div class="it"><span class="ii">🎯</span><span class="il">Множитель поимки <button class="hlp" data-tip="Насколько легче или труднее поймать: ×1 — обычно, меньше — сложнее.">?</button></span><b>×1</b></div></div></div><div class="itg"><div class="itg-h">Ферма и еда</div><div class="itiles"><div class="it"><span class="ii">🍖</span><span class="il">Сколько ест <button class="hlp" data-tip="Сколько сытости пал тратит — чем больше, тем больше еды нужно на базе.">?</button></span><b>380</b></div></div></div><div class="itg"><div class="itg-h">Разведение</div><div class="itiles"><div class="it"><span class="ii">🧬</span><span class="il">Сила разведения <button class="hlp" data-tip="Скрытое число игры: у детёныша оно примерно среднее от родителей. Чем меньше — тем «сильнее» пал.">?</button></span><b>850</b></div><div class="it"><span class="ii">💞</span><span class="il">Особая пара <button class="hlp" data-tip="Этого пала можно вывести только от этой пары.">?</button></span><b>Скорпио + Хэлзефир Лакс</b></div></div></div></div>
 
 === "Обзор"
 

@@ -1,0 +1,23 @@
+---
+hide: [toc]
+---
+# Экстремальная модификация — Гриззболт
+
+<div class="boss-hero" data-el="electric" markdown="0"><img class="bimg" src="../../art/ElecPanda.webp" alt="" width="260" height="260"><div class="bi"><span class="kind">🌳 Мировое древо <button class="hlp" data-h="boss">?</button></span><h2>Гриззболт</h2><div><span class="el el-electric">Молния</span></div><div class="wk">Слабость: <span class="el el-ground">Земля</span></div><div class="bb"><a class="md-button" href="../../4_spravochniki/paly/grizzbolt/">Страница пала</a></div></div></div>
+
+=== "Обычный"
+
+    <div class="bstats" markdown="0"><div><span>Уровень</span><b>78</b></div></div>
+
+    **Награда:** <span class="unv" title="Ещё перепроверяется">ⓘ</span>
+
+
+## 💥 Кем бить <button class="hlp" data-h="counter">?</button>
+
+Палы, которые бьют по слабости босса. Нажми — откроется сборка пала, там видно, как он против этого босса.
+
+<div class="mini-row" markdown="0"><a class="mc card-link" href="../../4_spravochniki/paly/anubis/#bld"><img src="../../icon/Anubis.webp" width="56" height="56" alt="" loading="lazy"><span>Анубис</span></a><a class="mc card-link" href="../../4_spravochniki/paly/aegidron/#bld"><img src="../../icon/DomeArmorDragon.webp" width="56" height="56" alt="" loading="lazy"><span>Аэгидрон</span></a><a class="mc card-link" href="../../4_spravochniki/paly/moldron/#bld"><img src="../../icon/VolcanoDragon.webp" width="56" height="56" alt="" loading="lazy"><span>Молдрон</span></a><a class="mc card-link" href="../../4_spravochniki/paly/moldron_cryst/#bld"><img src="../../icon/VolcanoDragon_Ice.webp" width="56" height="56" alt="" loading="lazy"><span>Молдрон Крист</span></a><a class="mc card-link" href="../../4_spravochniki/paly/gildra/#bld"><img src="../../icon/MummyPal.webp" width="56" height="56" alt="" loading="lazy"><span>Йомира</span></a><a class="mc card-link" href="../../4_spravochniki/paly/sekhmet/#bld"><img src="../../icon/Sekhmet.webp" width="56" height="56" alt="" loading="lazy"><span>Сехмет</span></a><a class="mc card-link" href="../../4_spravochniki/paly/prixter_lux/#bld"><img src="../../icon/ScorpionMan_Electric.webp" width="56" height="56" alt="" loading="lazy"><span>Скорпио Лакс</span></a><a class="mc card-link" href="../../4_spravochniki/paly/dualith_noct/#bld"><img src="../../icon/GrassGolem_Dark.webp" width="56" height="56" alt="" loading="lazy"><span>Дуалит Нокт</span></a></div>
+
+## 🧠 Тактика
+
+Мини-босс Мирового Древа
