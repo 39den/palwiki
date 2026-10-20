@@ -66,7 +66,7 @@ for p in pals:
     seen={};[seen.setdefault(a,b.strip()) for a,b in lv]
     if seen: rest=re.sub(r'(?m)^(## Партнёрский навык.*\n(?:.*\n)?)',lambda m:m.group(1)+'\n**По уровням навыка:** '+' · '.join(f'{k}★ {v}' for k,v in seen.items())+'\n',rest,1)
     open(path,'w').write('# '+p['ru']+'\n\n'+head+'\n'+rest);n+=1
-  SP.append({'no':p['no'],'id':p['id'],'ru':p['ru'],'en':p['en'],'el':p['elements'],'weak':p['weak_to'],'work':[[w['work'],w['level']] for w in p['work']],
+  SP.append({'i':len(SP),'no':p['no'],'id':p['id'],'ru':p['ru'],'en':p['en'],'el':p['elements'],'weak':p['weak_to'],'work':[[w['work'],w['level']] for w in p['work']],
     'act':acts,'mount':mount,'sprint':int(re.sub(r'\D','',str(p['stats'].get('mount_sprint') or 0)) or 0),'hp':p['stats']['hp'],'atk':p['stats']['attack'],'def':p['stats']['defense'],
     'rarity':int(p['rarity'] or 0),'url':url,'img':img,'thumb':icon,'art':thumb,'bp':p.get('best_passives',{}),'rank':int(p['breeding'].get('combi_rank') or 0),
     'up':p['breeding'].get('unique_parents'),'collab':bool(p.get('collab')),'psk':ps.get('name',''),'egg':(p.get('habitat') or {}).get('egg','')})
@@ -167,7 +167,7 @@ SPS=[];PSU={}
 for x in pas:
   sr=PSRC.get(x['name'],{});u='passivki/'+pslug(x.get('en') or x['name'])+'/';PSU[x['name']]=u
   sg=sr.get('surgery') or {}
-  SPS.append({'name':x['name'],'en':x.get('en',''),'rank':x.get('rank'),'desc':x.get('desc',''),'url':u,
+  SPS.append({'i':len(SPS),'de':x.get('desc_en',''),'name':x['name'],'en':x.get('en',''),'rank':x.get('rank'),'desc':x.get('desc',''),'url':u,
    'nat':[n['pal'] for n in sr.get('natural',[])],'breed':bool(sr.get('breeding',True)),'how':sg.get('how'),'gold':sg.get('gold'),
    'drops':[[IEN.get(d['from'],d['from']),d['rate']] for d in sg.get('drops',[])]})
 def plink(name,R):
