@@ -20,7 +20,7 @@ hide: [toc]
 
 ## 🧠 Тактика
 
-Мини-босс Мирового Древа
+<div class="tips" markdown="0"><div class="tip"><span>💡</span>Мини-босс Мирового Древа</div></div>
 
 <div class="pn" markdown="0"><span></span><a class="card-link" href="../../boss/lyleen/">Лили и Лилин →</a></div>
 

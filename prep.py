@@ -75,7 +75,7 @@ for p in pals:
     seen={};[seen.setdefault(a,b.strip()) for a,b in lv]
     if seen: rest=re.sub(r'(?m)^(## Партнёрский навык.*\n(?:.*\n)?)',lambda m:m.group(1)+'\n**По уровням навыка:** '+' · '.join(f'{k}★ {v}' for k,v in seen.items())+'\n',rest,1)
     open(path,'w').write('# '+p['ru']+'\n\n'+head+'\n'+rest);n+=1
-  SP.append({'i':len(SP),'no':p['no'],'id':p['id'],'ru':p['ru'],'en':p['en'],'el':p['elements'],'weak':p['weak_to'],'work':[[w['work'],w['level']] for w in p['work']],
+  SP.append({'j':len(SP),'i':len(SP),'no':p['no'],'id':p['id'],'ru':p['ru'],'en':p['en'],'el':p['elements'],'weak':p['weak_to'],'work':[[w['work'],w['level']] for w in p['work']],
     'act':acts,'mount':mount,'sprint':int(re.sub(r'\D','',str(p['stats'].get('mount_sprint') or 0)) or 0),'hp':p['stats']['hp'],'atk':p['stats']['attack'],'def':p['stats']['defense'],
     'rarity':int(p['rarity'] or 0),'url':url,'img':img,'thumb':icon,'art':thumb,'bp':{k:v for k,v in (p.get('best_passives') or {}).items() if k!='ездовой' or p.get('rideable',True)},'rank':int(p['breeding'].get('combi_rank') or 0),
     'up':p['breeding'].get('unique_parents'),'collab':bool(p.get('collab')),'psk':ps.get('name',''),'egg':(p.get('habitat') or {}).get('egg','')})
@@ -216,7 +216,68 @@ _PO=sorted(SPS,key=lambda q:(-int(q['rank'] or 0),q['name']))
 for _i,_q in enumerate(_PO):
   _pv=_PO[_i-1] if _i>0 else None;_nx=_PO[_i+1] if _i+1<len(_PO) else None
   with open(f"{D}/{_q['url'].rstrip('/')}.md",'a') as _fh:_fh.write('\n<div class="pn" markdown="0">'+(f'<a class="card-link" href="../../{_pv["url"]}">← {_pv["name"]}</a>' if _pv else '<span></span>')+(f'<a class="card-link" href="../../{_nx["url"]}">{_nx["name"]} →</a>' if _nx else '')+'</div>\n')
-open(D+'/passivki/index.md','w').write('# Все пассивки\n\n'+''.join(f"\n## {RANKTXT.get(r,'Ранг '+str(r)).capitalize()}\n\n<div class=\"tags\" markdown=\"0\">"+''.join(plink(q['name'],'../') for q in SPS if int(q['rank'] or 0)==r)+'</div>\n' for r in (5,4,3,2,1,-1,-2,-3)))
+# ---- passive cards ----
+def _norm_num(t):
+  t=re.sub(r'([+\-−])\s+(\d)',r'\1\2',t);t=re.sub(r'(\d)\s+%',r'\1%',t);t=re.sub(r'(\d+)\.0(?=%|\b)',r'\1',t);return t
+def _effects(desc):
+  out=[]
+  for part in re.split(r';\s*',_norm_num(desc or '')):
+    part=part.strip()
+    if not part:continue
+    if re.search('Мирового Древа|Мировое Древо',part):out.append(('wt','🌳 не исчезает у Мирового древа',part));continue
+    m=re.search(r'([+\-−])\d',part)
+    if not m:out.append(('n',part,part));continue
+    neg=m.group(1) in '-−'
+    bad_up=re.search(r'(Рассуд|Голод|сытост|расход|получаем)',part,re.I) and re.search('быстрее|\\+',part)
+    if re.search(r'(Рассуд|Голод|сытост|расход|получаем)',part,re.I):good=neg
+    else:good=not neg
+    out.append(('up' if good else 'dn',part,part))
+  return out
+def _cats(desc):
+  c=[]
+  if re.search('атак|урон|защит|здоров|HP|крит',desc,re.I):c.append('бой')
+  if re.search('работ',desc,re.I):c.append('работа')
+  if re.search('передвиж|скорость (ходьбы|бега|движ)|выносл|полёт|прыж',desc,re.I):c.append('езда')
+  if re.search('рассуд|голод|сытост|база',desc,re.I):c.append('база')
+  return c or ['прочее']
+_PTH={x['ru']:x for x in SP if x['url']}
+_RL={5:'Радужная',4:'Золотая',3:'Редкая',2:'Хорошая',1:'Обычная',-1:'Плохая',-2:'Плохая',-3:'Очень плохая'}
+def _rarity_cls(n):
+  return {'Glistening':'r5','Glowing':'r4','Gorgeous':'r3','Dormant':'r2','Decayed':'r1'}.get(n.split()[0],'r1')
+def pcard(q,R,detail=False):
+  rk=int(q['rank'] or 0);eff=_effects(q['desc']);cats=_cats(q['desc'])
+  ch=''.join(f'<span class="ef {k}">{esc_h(t)}</span>' if k!='wt' else f'<span class="ef wt" title="{esc_h(full)}">🌳</span>' for k,t,full in eff if k!='n')
+  notes=''.join(f'<small class="efn">{esc_h(t)}</small>' for k,t,_ in eff if k=='n')
+  nat=[n for n in q['nat'] if n in _PTH]
+  av=''.join(f'<img src="{R}{_PTH[n]["thumb"]}" width="28" height="28" alt="{esc_h(n)}" title="{esc_h(n)}" loading="lazy">' for n in nat[:4])+(f'<span class="more">+{len(nat)-4}</span>' if len(nat)>4 else '')
+  how=[]
+  if q['nat']:how.append(('nat','🐣','с рождения',f'Есть у {len(q["nat"])} палов: '+', '.join(q['nat'][:8])+('…' if len(q['nat'])>8 else '')))
+  if q['breed']:how.append(('br','🧬','разведение','Передаётся детёнышу от родителя с этой пассивкой.'))
+  if q['how']=='gold':how.append(('op','🏥','операционный стол',f"Стоимость: {q['gold']:,} золота".replace(',',' ')))
+  if q['how']=='disposable':
+    rows=''.join(f'<tr class="{_rarity_cls(a_en)}"><td>{esc_h(a)}</td><td>{round(float(str(r).rstrip("%")),2)}%</td></tr>' for (a,r),a_en in zip(q['drops'][:3],[d.get('from','') for d in (PSRC.get(q['name'],{}).get('surgery') or {}).get('drops',[])][:3]))
+    how.append(('im','💉','имплант · расходуется',f'Падает из Древних реликвий:<table class="dch">{rows}</table>'))
+  badges=''.join((f'<details class="hw {k}"><summary>{i} {t}</summary><div>{d}</div></details>' if detail else f'<span class="hw {k}" title="{esc_h(re.sub("<[^>]+>"," ",d))}">{i} {t}</span>') for k,i,t,d in how)
+  cls=f'pcard r-{"neg" if rk<0 else min(rk,5)}';attrs=f'data-rk="{rk}" data-cat="{" ".join(cats)}" data-n="{esc_h((q["name"]+" "+q["en"]).lower())}"'
+  head=f'<div class="pch"><span class="rkb">{_RL.get(rk,"")}</span><b>{esc_h(q["name"])}</b></div><div class="efs">{ch}</div>{notes}'
+  if detail:return f'<div class="{cls}" {attrs}>{head}<div class="hws">{badges}</div>{f"<div class=pav>{av}</div>" if av else ""}<a class="pmore" href="{R}{q["url"]}">Подробнее →</a></div>'
+  return f'<a class="{cls}" href="{R}{q["url"]}" data-psv="{esc_h(q["name"])}" {attrs}>{head}<div class="hws">{badges}</div>{f"<div class=pav>{av}</div>" if av else ""}</a>'
+def pfilters(withcat=True):
+  rk=''.join(f'<button type="button" data-rk="{v}">{t}</button>' for v,t in (('5','🌈 Радужные'),('4','🥇 Золотые'),('3','Редкие'),('1-2','Обычные'),('neg','🔻 Отрицательные')))
+  ct=''.join(f'<button type="button" data-cat="{c}">{t}</button>' for c,t in (('бой','⚔️ Бой'),('работа','🛠 Работа'),('езда','🐎 Езда'),('база','🏠 База')))
+  return f'<div class="pfl" markdown="0"><input type="search" class="pfq" placeholder="Найти пассивку…" autocomplete="off"><div class="pfc">{rk}</div>'+(f'<div class="pfc">{ct}</div>' if withcat else '')+'<span class="gcount pfn"></span></div>'
+def esc_h(t):return str(t).replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').replace('"','&quot;')
+
+open(D+'/passivki/index.md','w').write('---\nhide: [toc]\n---\n# ✨ Все пассивки\n\n'+pfilters()+'\n<div class="pgrid" markdown="0">'+''.join(pcard(q,'../') for q in sorted(SPS,key=lambda q:(-int(q['rank'] or 0),q['name'])))+'</div>\n')
+_how=f'''---
+hide: [toc]
+---
+# Где взять пассивку и как её перенести
+
+<div class="howt" markdown="0"><div class="ht"><span>🧬</span><b>Разведение</b><p>Детёныш наследует пассивки родителей. Чем больше у родителей нужных пассивок, тем выше шанс.</p></div><div class="ht"><span>🏥</span><b>Операционный стол</b><p>Ставит пассивку за золото. Открывается технологией после победы на арене.</p></div><div class="ht"><span>💉</span><b>Имплант</b><p>Одноразовый предмет из Древних реликвий — расходуется при установке.</p></div></div>
+
+'''+pfilters(False)+'\n<div class="pgrid" markdown="0">'+''.join(pcard(q,'../../',True) for q in sorted(SPS,key=lambda q:(-int(q['rank'] or 0),q['name'])))+'</div>\n'
+if os.path.exists(D+'/2_mehaniki/passivki_gde_vzyat.md'):open(D+'/2_mehaniki/passivki_gde_vzyat.md','w').write(_how)
 faq=[]
 for fn in ['faq_extra.json','faq.json']:
   for q in json.load(open(W+'/data/'+fn)): faq.append({'q':q['q'],'a':q['a']})
@@ -423,7 +484,7 @@ def _cl(t):
   return t
 BJS=[]
 for k in BORD:
-  g=BG[k];sl=slug(PBR[g['pal']]['en'] if g['pal'] in PBR else g['name']) or 'boss';
+  g=BG[k];sl=slug(PBR[g['pal']]['en'] if g['pal'] in PBR else g['name']) or ('boss_'+str(len(BJS)));
   if g['kind']=='альфа':sl='alpha_'+sl
   g['url']='boss/'+sl+'/';p=PBR.get(g['pal']);R='../../'
   img=f'<img class="bimg" src="{R}{p["art"] if p and p.get("art") else (p["thumb"] if p else "")}" alt="" width="260" height="260">' if p else ''
@@ -450,7 +511,7 @@ hide: [toc]
 Палы, которые бьют по слабости босса. Нажми — откроется сборка пала, там видно, как он против этого босса.
 
 <div class="mini-row" markdown="0">{cn}</div>
-''' if cn else '')+(f'\n## 🧠 Тактика\n\n{tac}\n' if tac else '')
+''' if cn else '')+(('\n## 🧠 Тактика\n\n<div class="tips" markdown="0">'+''.join(f'<div class="tip"><span>💡</span>{esc_h(x.strip())}</div>' for x in re.split(r'(?<=[.!?])\s+',tac) if len(x.strip())>3)[:8000]+'</div>\n') if tac else '')
   open(D+'/boss/'+sl+'.md','w').write(md)
   BJS.append({'n':g['name'],'k':g['kind'],'pal':g['pal'],'el':g['el'],'w':g['weak'],'lv':[m['lvl'] for m in g['modes']],'u':g['url'],'t':(p or {}).get('thumb','')})
 for _i,_b in enumerate(BJS):
@@ -484,6 +545,28 @@ for f in glob.glob(D+'/**/*.md',recursive=True):
   if f not in keep: os.remove(f)
 import yaml
 y=yaml.safe_dump({'nav':nav},allow_unicode=True,sort_keys=False)
+
+# ---- FAQ assistant page ----
+_fq=D+'/9_faq/faq.md'
+if os.path.exists(_fq):
+  _t=open(_fq).read();_lv=None;_Q=[]
+  for blk in re.split(r'\n(?=## |\*\*)',_t):
+    m=re.match(r'## (.+)',blk)
+    if m:_lv=m.group(1).strip();continue
+    m=re.match(r'\*\*(.+?)\*\*\s*\n(.*)',blk,re.S)
+    if m and _lv:_Q.append((_lv,m.group(1).strip(),m.group(2).strip()))
+  _CT=[('upr','🎮 Управление','клавиш|кнопк|нажм|открыть|управлен'),('lov','🎯 Ловля','пойма|ловл|сфер'),('baz','🏠 База','баз|постро|строит|верстак|ферм'),('boi','⚔️ Бой','бой|босс|башн|урон|атак|убить'),('bre','🧬 Разведение','развед|яйц|скрест|вывест'),('pas','✨ Пассивки','пассив'),('mir','🗺️ Мир','карт|найти|где|остров|регион')]
+  _KEYS=r'\b(Tab|Esc|Shift|Ctrl|Alt|Пробел|ЛКМ|ПКМ|F\d{1,2}|[A-Z]|\d)\b'
+  def _kb(a):return re.sub(r'(Клавиш[аиу]|Нажми|клавиш[аиу]|кнопк[аиу])\s+([A-Za-zА-Я0-9]+(?:\s+и\s+[A-Za-z0-9]+)?)',lambda m:m.group(1)+' '+re.sub(r'([A-Za-z0-9]+|Пробел)',r'<kbd>\1</kbd>',m.group(2)),a).replace('Пробел.','<kbd>Пробел</kbd>.') if True else a
+  def _cat(q,a):
+    for k,_,r in _CT:
+      if re.search(r,q,re.I):return k
+    return 'misc'
+  _LVS=[];[_LVS.append(l) for l,_,_ in _Q if l not in _LVS]
+  _md=lambda t:re.sub(r'\*\*(.+?)\*\*',r'<b>\1</b>',t)
+  acc=''.join(f'<details class="fq" data-lv="{_LVS.index(l)}" data-cat="{_cat(q,a)}"><summary>{esc_h(q)}</summary><div class="fa">{_kb(_md(esc_h(a)).replace(chr(10),"<br>"))}</div></details>' for l,q,a in _Q)
+  top=[x for x in _Q if x[0]==_LVS[0]][:10]
+  open(_fq,'w').write('---\nhide: [toc]\n---\n# 🤖 Спроси про Palworld\n\n<div class="ask" id="ask" markdown="0"><div class="ask-box"><input id="askq" type="search" autocomplete="off" enterkeyhint="send" placeholder="Спроси про Palworld…"><button type="button" id="asks" aria-label="Спросить">➤</button></div><div class="ask-chips">'+''.join(f'<button type="button" data-q="{q}">{q}</button>' for q in ['как поймать пала','где взять серу','как вывести анубиса','чем бить зои','лучшие пассивки для работы','как открыть карту'])+'</div><div id="asko" aria-live="polite"></div></div>\n\n## 🔥 Топ-10 для старта\n\n<div class="fqs" markdown="0">'+''.join(f'<details class="fq"><summary>{esc_h(q)}</summary><div class="fa">{_kb(_md(esc_h(a)))}</div></details>' for _,q,a in top)+'</div>\n\n## 📚 Все вопросы\n\n<div class="fqf" markdown="0"><div class="seg fqlv"><button type="button" class="on" data-lv="">Все</button>'+''.join(f'<button type="button" data-lv="{i}">{esc_h(l.replace("Совсем ",""))}</button>' for i,l in enumerate(_LVS))+'</div><div class="pfc fqc">'+''.join(f'<button type="button" data-cat="{k}">{t}</button>' for k,t,_ in _CT)+'</div></div>\n<div class="fqs" id="fqall" markdown="0">'+acc+'</div>\n')
 import glob as _g
 
 _TI={'Редкость':('💎','Основное','Чем выше число, тем реже встречается пал. 1–4 — обычные, 5–7 — редкие, 8+ — легендарные.'),'Размер':('📏','Основное',''),'Цена продажи':('💰','Основное','Сколько золота даст торговец за пала.'),'Коллаборация':('🤝','Основное',''),

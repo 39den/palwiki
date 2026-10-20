@@ -20,6 +20,6 @@ hide: [toc]
 
 ## 🧠 Тактика
 
-Мини-босс Мирового Древа
+<div class="tips" markdown="0"><div class="tip"><span>💡</span>Мини-босс Мирового Древа</div></div>
 
 <div class="pn" markdown="0"><a class="card-link" href="../../boss/panthalus/">← Легендарный владыка морей Панталус</a><a class="card-link" href="../../boss/silvance/">Вечная пурпурная тень — Сильванс →</a></div>

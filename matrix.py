@@ -1,0 +1,92 @@
+import sys,json
+from playwright.sync_api import sync_playwright
+U=sys.argv[1] if len(sys.argv)>1 else 'http://localhost:8899/';S='/workspace/palsite/shots/mx_'
+PAGES=['','gallery/','4_spravochniki/paly/anubis/','map/','breed/','compare/','my/']
+OV="""w=>{let n=0;document.querySelectorAll('body *').forEach(e=>{const r=e.getBoundingClientRect();if(!r.width||getComputedStyle(e).position=='fixed'||e.closest('.md-sidebar,.md-search,.pk,.sheet,.gsheet,.sx,.leaflet-container'))return;let x=e.parentElement;while(x&&x!=document.body){if(['hidden','auto','scroll','clip'].includes(getComputedStyle(x).overflowX))return;x=x.parentElement;}if(r.right>w+1||r.left<-1)n++;});return n+(document.documentElement.scrollWidth>w?1000:0)}"""
+res={}
+with sync_playwright() as p:
+  M=[('chromium','desktop',{'viewport':{'width':1366,'height':800}}),('chromium','Pixel 7',p.devices['Pixel 7']),('chromium','Galaxy S9+',{**p.devices['Galaxy S9+'],'viewport':{'width':360,'height':740}}),
+     ('webkit','desktop',{'viewport':{'width':1366,'height':800}}),('webkit','iPhone 13',p.devices['iPhone 13']),('firefox','desktop',{'viewport':{'width':1366,'height':800}}),('firefox','mobile 390',{'viewport':{'width':390,'height':844},'has_touch':True})]
+  for br,name,opt in M:
+    k=f'{br} / {name}';r=res[k]={}
+    try:b=getattr(p,br).launch()
+    except Exception as e:res[k]={'launch':'FAIL '+str(e)[:60]};continue
+    c=b.new_context(**opt,color_scheme='dark');pg=c.new_page();E=[];pg.on('pageerror',lambda e:E.append(str(e)[:120]))
+    mob=opt.get('viewport',{}).get('width',1366)<800;W=opt.get('viewport',{}).get('width',1366)
+    ovf=0
+    for u in PAGES:
+      pg.goto(U+u+'?test=1',wait_until='networkidle');pg.wait_for_timeout(500);ovf+=pg.evaluate(OV,W)
+    r['overflow']='PASS' if ovf==0 else f'FAIL({ovf})'
+    # search
+    try:
+      pg.goto(U,wait_until='networkidle');pg.wait_for_timeout(600);pg.keyboard.press('/');pg.wait_for_timeout(500)
+      if not pg.locator('.sx').count():pg.locator('.md-header label[for=__search]').first.click();pg.wait_for_timeout(500)
+      pg.keyboard.type('анубис',delay=40);pg.wait_for_timeout(600);r['search']='PASS' if pg.locator('.sx-r').count()>0 else 'FAIL'
+      if br in('webkit','firefox') and mob:pg.screenshot(path=S+br+'_search.png')
+    except Exception as e:r['search']='FAIL '+str(e)[:50]
+    # slider + picker
+    try:
+      pg.goto(U+'4_spravochniki/paly/anubis/',wait_until='networkidle');pg.wait_for_selector('#blv',state='attached',timeout=8000);s=pg.locator('#blv');s.scroll_into_view_if_needed();bb=s.bounding_box();v0=s.input_value()
+      y=bb['y']+bb['height']/2;pg.mouse.move(bb['x']+bb['width']*.62,y);pg.mouse.down();pg.mouse.move(bb['x']+bb['width']*.2,y,steps=8);pg.mouse.up();pg.wait_for_timeout(300)
+      r['slider']='PASS' if s.input_value()!=v0 else 'FAIL'
+      pg.locator('#bq').scroll_into_view_if_needed();pg.locator('#bq').click();pg.wait_for_timeout(500);r['picker']='PASS' if pg.locator('.pki').count()>10 else 'FAIL';pg.keyboard.press('Escape')
+      if br in('webkit','firefox') and mob:pg.locator('.pkhd .x').click();pg.locator('#bld').screenshot(path=S+br+'_builder.png')
+    except Exception as e:r.setdefault('slider','FAIL '+str(e)[:50]);r.setdefault('picker','FAIL')
+    # map
+    try:
+      pg.goto(U+'map/',wait_until='networkidle');pg.wait_for_timeout(1500);r['map']='PASS' if pg.locator('.leaflet-marker-icon').count()>5 and pg.locator('.leaflet-tile-loaded').count()>0 else 'FAIL'
+    except Exception as e:r['map']='FAIL'
+    # drawer
+    if mob:
+      try:
+        pg.goto(U+'4_spravochniki/paly/anubis/',wait_until='networkidle');pg.wait_for_timeout(600);pg.evaluate('scrollTo(0,300)');y0=pg.evaluate('scrollY')
+        pg.locator('.md-header label[for=__drawer]').first.click();pg.wait_for_timeout(600)
+        lab=pg.locator('.md-sidebar--primary .md-nav__container',has_text='Справочник').locator('label').first
+        if lab.count():lab.click();pg.wait_for_timeout(600)
+        if br=='webkit':pg.screenshot(path=S+'webkit_drawer_top.png')
+        f="()=>[...document.querySelectorAll('.md-sidebar--primary .md-nav__list')].reduce((a,n)=>a+n.scrollTop,0)"
+        a0=pg.evaluate(f)
+        opened=pg.evaluate("document.getElementById('__drawer').checked&&document.querySelector('.md-sidebar--primary').getBoundingClientRect().right>100")
+        if not opened:raise Exception('drawer not open')
+        if br=='webkit':pg.evaluate("[...document.querySelectorAll('.md-sidebar--primary .md-nav__list')].filter(n=>n.getBoundingClientRect().left>=0&&n.getBoundingClientRect().width>0&&getComputedStyle(n).overflowY=='auto'&&n.scrollHeight>n.clientHeight).forEach(n=>n.scrollBy(0,2000))");pg.wait_for_timeout(300)
+        else:
+          for _ in range(6):pg.mouse.move(120,500);pg.mouse.wheel(0,500);pg.wait_for_timeout(120)
+        a1=pg.evaluate(f);y1=pg.evaluate('scrollY')
+        if br=='webkit':pg.screenshot(path=S+'webkit_drawer_bottom.png')
+        r['drawer']='PASS' if a1>a0 and abs(y1-y0)<2 else f'FAIL({a0}->{a1},body {y0}->{y1})'
+      except Exception as e:r['drawer']='FAIL '+str(e)[:50]
+    if mob:
+      try:
+        pg.goto(U+'4_spravochniki/paly/anubis/?test=1',wait_until='networkidle');pg.wait_for_timeout(800);h=pg.locator('.hlp').first;h.scroll_into_view_if_needed();h.tap() if opt.get('has_touch') else h.click();pg.wait_for_timeout(300)
+        r['help_tip']='PASS' if pg.locator('.hlp-pop').count() else 'FAIL'
+      except Exception as e:r['help_tip']='FAIL '+str(e)[:40]
+      try:
+        pg.goto(U+'map/?test=1',wait_until='networkidle');pg.wait_for_timeout(1200);b2=pg.locator('.mapsw [data-w=t]');b2.tap() if opt.get('has_touch') else b2.click();pg.wait_for_timeout(300)
+        r['worldtree']='PASS' if pg.locator('#wtree:not([hidden])').count() else 'FAIL'
+      except Exception as e:r['worldtree']='FAIL '+str(e)[:40]
+      try:
+        pg.goto(U+'9_faq/faq/?test=1',wait_until='networkidle');pg.wait_for_timeout(800);pg.fill('#askq','как поймать пала');pg.keyboard.press('Enter');pg.wait_for_timeout(500)
+        r['faq']='PASS' if pg.locator('.bub.ai').count() and pg.locator('details.fq').count()>50 else 'FAIL'
+        if br in('webkit','firefox'):pg.screenshot(path=S+br+'_faq.png')
+      except Exception as e:r['faq']='FAIL '+str(e)[:40]
+      try:
+        pg.goto(U+'?test=1',wait_until='networkidle');pg.wait_for_timeout(500);pg.keyboard.press('/');pg.wait_for_timeout(400)
+        if not pg.locator('.sx').count():pg.locator('.md-header label[for=__search]').first.click();pg.wait_for_timeout(400)
+        pg.keyboard.type('сравнить анубис и джетрагон',delay=15);pg.wait_for_timeout(500);ok1=pg.locator('.sx-cmp').count()>0
+        pg.fill('.sx-top input','');pg.keyboard.type('анубс',delay=30);pg.wait_for_timeout(500);ok2=pg.locator('.sx-r').count()>1
+        r['search_cmp_typo']='PASS' if ok1 and ok2 else f'FAIL(cmp={ok1},typo={ok2})'
+      except Exception as e:r['search_cmp_typo']='FAIL '+str(e)[:40]
+      try:
+        pg.goto(U+'2_mehaniki/passivki_gde_vzyat/?test=1',wait_until='networkidle');pg.wait_for_timeout(500);pg.evaluate('scrollTo(0,document.body.scrollHeight)');pg.wait_for_timeout(300)
+        ov=pg.evaluate("(()=>{const t=document.querySelector('.tabbar');if(!t||getComputedStyle(t).display=='none')return 0;const tb=t.getBoundingClientRect().top;const last=[...document.querySelectorAll('article .pcard')].pop();return last&&last.getBoundingClientRect().bottom>tb+2?1:0})()")
+        r['bottom_bar']='PASS' if not ov else 'FAIL'
+        if br=='webkit':pg.screenshot(path=S+'webkit_where.png')
+      except Exception as e:r['bottom_bar']='FAIL '+str(e)[:40]
+    r['js_errors']='PASS' if not E else 'FAIL: '+'; '.join(sorted(set(E))[:2])
+    if br=='webkit' and mob:pg.goto(U,wait_until='networkidle');pg.wait_for_timeout(800);pg.screenshot(path=S+'webkit_home.png')
+    b.close()
+json.dump(res,open('/workspace/palsite/matrix.json','w'),ensure_ascii=False,indent=1)
+bad=0
+for k,v in res.items():
+  print(f'{k:24}',' '.join(f'{a}:{b}' for a,b in v.items()));bad+=sum(1 for b in v.values() if not str(b).startswith('PASS'))
+print('MATRIX FAILS',bad);sys.exit(1 if bad else 0)

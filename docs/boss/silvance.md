@@ -20,6 +20,6 @@ hide: [toc]
 
 ## 🧠 Тактика
 
-Мини-босс Мирового Древа
+<div class="tips" markdown="0"><div class="tip"><span>💡</span>Мини-босс Мирового Древа</div></div>
 
 <div class="pn" markdown="0"><a class="card-link" href="../../boss/dandilord/">← Призрачный туман в тенях деревьев — Дандилорд</a><a class="card-link" href="../../boss/grizzbolt/">Экстремальная модификация — Гриззболт →</a></div>

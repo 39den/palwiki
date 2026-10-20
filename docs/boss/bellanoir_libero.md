@@ -26,6 +26,6 @@ hide: [toc]
 
 ## 🧠 Тактика
 
-Вся команда 3–4 игрока: 2 бойца по слабости, 1 щит+лечение, 1 баффер (Орсерк+стрельба). На ультра — палы 4★, души, лучшие пассивки
+<div class="tips" markdown="0"><div class="tip"><span>💡</span>Вся команда 3–4 игрока: 2 бойца по слабости, 1 щит+лечение, 1 баффер (Орсерк+стрельба).</div><div class="tip"><span>💡</span>На ультра — палы 4★, души, лучшие пассивки</div></div>
 
-<div class="pn" markdown="0"><a class="card-link" href="../../boss/bellanoir/">← Безумная Леди Бэллануар</a><a class="card-link" href="../../boss/boss/">Лунный лорд →</a></div>
+<div class="pn" markdown="0"><a class="card-link" href="../../boss/bellanoir/">← Безумная Леди Бэллануар</a><a class="card-link" href="../../boss/boss_11/">Лунный лорд →</a></div>

@@ -2,7 +2,7 @@
 const LS={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 const chip=e=>window.PW_chip?window.PW_chip(e):`<span class="el">${esc(e)}</span>`;
 window.PW_breed2=true;
-let lock=0,ly=0;const bodyLock=v=>{const b=document.body;if(v){if(lock++)return;ly=scrollY;b.style.position='fixed';b.style.top=-ly+'px';b.style.left=b.style.right='0';}else{if(--lock>0)return;lock=0;b.style.position=b.style.top=b.style.left=b.style.right='';scrollTo(0,ly);}};
+let lock=0;const bodyLock=v=>{lock=Math.max(0,lock+(v?1:-1));document.documentElement.classList.toggle('sheet-open',lock>0);};
 /* ---------- generic index ---------- */
 let IDX=null;function index(D){if(IDX)return IDX;const N=window.PW_core.norm;IDX=[];const add=o=>{o.k=N(o.label+' '+(o.alt||''));IDX.push(o);};
  const pop=Object.fromEntries((D.popular||[]).map(([i,c])=>[i,c]));
@@ -35,13 +35,13 @@ window.PW_pickPal=function(D,title,cb){const sh=document.createElement('div');sh
  L.addEventListener('click',e=>{const b=e.target.closest('.pp');if(!b)return;const p=D.pals.find(x=>x.id==b.dataset.id);close();cb(p);});
  inp.addEventListener('keydown',e=>{if(e.key=='Enter'){const b=L.querySelector('.pp');if(b)b.click();}});};
 /* ---------- full-screen search ---------- */
-let SX=null;function openSearch(pre){window.PW_data().then(D=>{if(SX){SX.querySelector('input').focus();return;}
+let SX=null;function openSearch(pre){(window.PW_load||window.PW_data)().then(D=>{if(SX){SX.querySelector('input').focus();return;}
  const s=document.getElementById('__search');if(s)s.checked=false;
  SX=document.createElement('div');SX.className='sx';SX.setAttribute('role','dialog');SX.setAttribute('aria-label','Поиск');bodyLock(true);
  const recQ=()=>LS.get('pw_recentq',[]);const pushQ=q=>{q=q.trim();if(q.length<2)return;LS.set('pw_recentq',[q,...recQ().filter(x=>x!=q)].slice(0,8));};
  const pop=(D.popular||[]).map(([i])=>D.pals.find(p=>p.id==i)).filter(p=>p&&p.url).slice(0,8);
  const tiles=[['🐾','Палы','gallery/'],['👑','Боссы','boss/'],['✨','Пассивки','passivki/'],['📦','Предметы','4_spravochniki/predmety/'],['🗺️','Карта','map/'],['🧬','Разведение','breed/'],['🛠','Сборка','my/'],['⚖️','Сравнить','compare/']];
- const ex=['кто лучше копает','чем бить зои','где взять серу','пассивки фросталион боец','как вывести анубиса','сравнить анубис и джетрагон','fye,bc'];
+ const ex=['кто лучше копает','чем бить зои','где взять серу','пассивки фросталион боец','как вывести анубиса','сравнить анубис и джетрагон'];
  const empty=()=>`${recQ().length?`<div class="sx-h">Недавние</div><div class="sx-chips">${recQ().map(q=>`<span class="sx-c"><button type="button" data-q="${esc(q)}">🕘 ${esc(q)}</button><button type="button" class="sx-del" data-del="${esc(q)}" aria-label="Удалить">×</button></span>`).join('')}</div>`:''}
   ${pop.length?`<div class="sx-h">Популярное</div><div class="sx-chips">${pop.map(p=>`<a class="sx-c sx-p" href="${B+p.url}"><img src="${B+p.thumb}" width="22" height="22" alt="">${esc(p.ru)}</a>`).join('')}</div>`:''}
   <div class="sx-h">Разделы</div><div class="sx-tiles">${tiles.map(([i,l,u])=>`<a href="${B+u}"><span>${i}</span>${l}</a>`).join('')}</div>
@@ -100,4 +100,82 @@ function breed2(D){const el=document.getElementById('breed');if(!el)return;fetch
   const sw=el.querySelector('.bswap');if(sw)sw.onclick=()=>{[A,Bp]=[Bp,A];draw();};
   const mm=el.querySelector('.bmine input');if(mm)mm.onchange=()=>{onlyMine=mm.checked;page=1;draw();};const mo=el.querySelector('.bmore');if(mo)mo.onclick=()=>{page++;draw();};};
  draw();});}
+})();
+(function(){const B=window.PW_BASE;const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+/* passive card filters */
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.pfl').forEach(f=>{const g=f.nextElementSibling&&f.nextElementSibling.classList.contains('pgrid')?f.nextElementSibling:document.querySelector('.pgrid');if(!g)return;let rk=null,cat=null;const q=f.querySelector('.pfq'),n=f.querySelector('.pfn');
+ const run=()=>{const v=(q.value||'').toLowerCase().replace(/ё/g,'е');let c=0;g.querySelectorAll('.pcard').forEach(x=>{const r=+x.dataset.rk;let ok=!v||x.dataset.n.replace(/ё/g,'е').includes(v);if(ok&&rk)ok=rk=='neg'?r<0:rk.includes('-')?(r>=+rk.split('-')[0]&&r<=+rk.split('-')[1]):r==+rk;if(ok&&cat)ok=x.dataset.cat.split(' ').includes(cat);x.style.display=ok?'':'none';c+=ok;});n.textContent='найдено '+c;};
+ f.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.rk!=null){rk=rk==b.dataset.rk?null:b.dataset.rk;f.querySelectorAll('[data-rk]').forEach(x=>x.classList.toggle('on',x.dataset.rk==rk));}if(b.dataset.cat!=null){cat=cat==b.dataset.cat?null:b.dataset.cat;f.querySelectorAll('[data-cat]').forEach(x=>x.classList.toggle('on',x.dataset.cat==cat));}run();});q.addEventListener('input',run);run();});
+ /* faq filters */
+ const fa=document.getElementById('fqall');if(fa){let lv='',cat=null;const run=()=>fa.querySelectorAll('.fq').forEach(d=>{d.style.display=(!lv||d.dataset.lv==lv)&&(!cat||d.dataset.cat==cat)?'':'none';});
+  document.querySelectorAll('.fqlv button').forEach(b=>b.onclick=()=>{lv=b.dataset.lv;document.querySelectorAll('.fqlv button').forEach(x=>x.classList.toggle('on',x===b));run();});
+  document.querySelectorAll('.fqc button').forEach(b=>b.onclick=()=>{cat=cat==b.dataset.cat?null:b.dataset.cat;document.querySelectorAll('.fqc button').forEach(x=>x.classList.toggle('on',x.dataset.cat==cat));run();});}
+ /* ask assistant */
+ const ask=document.getElementById('ask');if(ask)window.PW_data().then(D=>{const C=window.PW_core,N=C.norm;const st=w=>w.length>5?w.slice(0,5):w;const SW=new Set('как где что кто чем для это или the а в на и с по у о из'.split(' '));
+  const FQ=D.faq.map(f=>({f,w:new Set(N(f.q).split(' ').filter(w=>!SW.has(w)).map(st))}));
+  const inp=document.getElementById('askq'),out=document.getElementById('asko');
+  const ph=['Спроси про Palworld…','Например: где взять серу?','Например: чем бить Зои?','Например: как вывести Анубиса?'];let pi=0;setInterval(()=>{if(!inp.value&&document.activeElement!==inp){pi=(pi+1)%ph.length;inp.placeholder=ph[pi];}},2600);
+  const kb=t=>esc(t).replace(/(Клавиш[аиу]|Нажми|клавиш[аиу])\s+([A-Za-z0-9]+)/g,(m,a,k)=>a+' <kbd>'+k+'</kbd>');
+  const go=()=>{const raw=inp.value.trim();if(raw.length<2)return;const fx=C.fixLayout(raw.toLowerCase());const q=fx&&fx[1]?fx[0]:raw;const ws=N(q).split(' ').filter(w=>!SW.has(w)).map(st);
+   const sc=FQ.map(x=>[ws.reduce((a,w)=>a+(x.w.has(w)?1:0),0)/Math.max(2,x.w.size)**.5,x.f]).filter(x=>x[0]>0).sort((a,b)=>b[0]-a[0]);
+   let ent='';try{const a=C.answer(q);if(a&&a.type!='none'&&a.type!='faq')ent=window.PW_render(a);}catch(e){}
+   const best=sc[0]&&sc[0][0]>=.5?sc[0][1]:null;const rel=sc.slice(best?1:0,5).map(x=>x[1].q);
+   out.innerHTML=`<div class="bub me">${esc(raw)}</div>`+((best||ent)?`<div class="bub ai"><span class="ai-av">🐑</span><div>${best?`<b>${esc(best.q)}</b><p>${kb(best.a)}</p>`:''}${ent?`<div class="sx-card">${ent}</div>`:''}</div></div>`:`<div class="bub ai"><span class="ai-av">🐑</span><div><p>Пока не знаю точного ответа.</p><a class="md-button md-button--primary" href="https://t.me/PalGuideBot?start=ask" target="_blank" rel="noopener">Спросить в боте</a></div></div>`)+(rel.length?`<div class="ask-chips rel">${rel.map(r=>`<button type="button" data-q="${esc(r)}">${esc(r)}</button>`).join('')}</div>`:'');};
+  ask.addEventListener('click',e=>{const b=e.target.closest('[data-q]');if(b){inp.value=b.dataset.q;go();}});document.getElementById('asks').onclick=go;inp.addEventListener('keydown',e=>{if(e.key=='Enter')go();});
+  const u=new URLSearchParams(location.search).get('ask');if(u){inp.value=u;go();}});
+ /* ask box on pal / boss pages */
+ const info=document.querySelector('.pal-info[data-pal]'),bh=document.querySelector('.boss-hero');if(info||bh){const name=(document.querySelector('article h1')||{}).textContent||'';const nm=name.trim();
+  const qs=info?[['📍 где найти','где найти '+nm],['✨ лучшие пассивки','пассивки '+nm],['🧬 разведение','как вывести '+nm],['🎯 слабость','чем бить '+nm]]:[['🎯 чем бить','чем бить '+nm],['📍 где','где '+nm]];
+  const box=document.createElement('div');box.className='askmini';box.innerHTML=`<div class="am-h">🤖 Спроси про ${info?'этого пала':'этого босса'}</div><div class="ask-chips">${qs.map(([l,q])=>`<button type="button" data-q="${esc(q)}">${l}</button>`).join('')}<button type="button" data-ig>🎮 В игре</button></div>`;box.querySelector('[data-ig]').onclick=()=>window.PW_ingame&&window.PW_ingame(true);
+  (info?info.closest('.pal-hero'):bh).after(box);box.addEventListener('click',e=>{const b=e.target.closest('[data-q]');if(b&&window.PW_search)window.PW_search(b.dataset.q);});}
+ /* sync to bot */
+ const my=document.getElementById('mylists');if(my)window.PW_data().then(D=>{const by=Object.fromEntries(D.pals.map(p=>[p.id,p]));
+  const mk=()=>{const L=JSON.parse(localStorage.getItem('pw_lists')||'null')||{};const seg=(c,ids)=>c+ids.map(i=>i.toString(36).padStart(2,'0')).join('');const segs=[];
+   [['f','Избранное'],['t','Команда'],['m','Фарм']].forEach(([c,n])=>{const ids=(L[n]||[]).map(id=>by[id]).filter(Boolean).map(p=>p.j);for(let k=0;k<ids.length;k+=28)segs.push(seg(c,ids.slice(k,k+28)));});
+   const links=[];let cur='';segs.forEach(s=>{if(cur&&(cur+'-'+s).length>59){links.push(cur);cur=s;}else cur=cur?cur+'-'+s:s;});if(cur)links.push(cur);return links;};
+  const w=document.createElement('div');w.className='syncb';my.before(w);
+  const draw=()=>{const l=mk();w.innerHTML=`<div class="am-h">📲 Перенести списки в бота <button type="button" class="hlp" data-tip="Избранное, Команда и Фарм откроются в боте @PalGuideBot. Нажми ссылку — бот добавит палов в свои списки.">?</button></div>`+(l.length?l.map((c,i)=>`<a class="md-button md-button--primary" target="_blank" rel="noopener" href="https://t.me/PalGuideBot?start=sync_${c}">В бота${l.length>1?' · часть '+(i+1):''}</a>`).join(' '):'<small>Списки пусты — добавь палов, и появится кнопка.</small>');};
+  draw();my.addEventListener('click',()=>setTimeout(draw,50));});
+});})();
+(function(){document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('article.md-content__inner > ul, article .tabbed-block > ul').forEach(ul=>{const n=ul.children.length;if(n<=8||ul.closest('.md-nav'))return;ul.classList.add('lgrid');
+ if(n>30){const f=document.createElement('input');f.type='search';f.className='pfq lgq';f.placeholder='Фильтр по списку ('+n+')…';ul.before(f);const items=[...ul.children];let lim=60;const show=()=>{const v=f.value.toLowerCase().replace(/ё/g,'е');let c=0;items.forEach(li=>{const ok=!v||li.textContent.toLowerCase().replace(/ё/g,'е').includes(v);li.style.display=ok&&(v||c<lim)?'':'none';if(ok)c++;});mb.hidden=!!v||c<=lim;};
+  const mb=document.createElement('button');mb.type='button';mb.className='md-button lgmore';mb.textContent='Показать ещё';mb.onclick=()=>{lim+=60;show();};ul.after(mb);f.oninput=show;show();}});});})();
+(function(){const B=window.PW_BASE;const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const LS={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+/* settings */
+const S=Object.assign({fs:'m',mode:'full'},LS.get('pw_set',{}));const apply=()=>{const h=document.documentElement;h.classList.toggle('fs-l',S.fs=='l');h.classList.toggle('fs-xl',S.fs=='xl');h.classList.toggle('simple',S.mode=='simple');};apply();
+function scheme(v){const b=document.body;if(!b)return;b.setAttribute('data-md-color-scheme',v=='light'?'default':'slate');try{const k=Object.keys(localStorage).find(k=>k.endsWith('/__palette'));if(k){const o=JSON.parse(localStorage[k]);o.index=v=='light'?1:0;o.color=o.color||{};o.color.scheme=v=='light'?'default':'slate';localStorage[k]=JSON.stringify(o);}}catch(e){}}
+function panel(){const bg=document.createElement('div');bg.className='sheet-bg';const p=document.createElement('div');p.className='setp';p.setAttribute('role','dialog');const cur=document.body.getAttribute('data-md-color-scheme')=='default'?'light':'dark';
+ const seg=(k,opts,v)=>`<div class="seg" data-k="${k}">${opts.map(([a,t])=>`<button type="button" data-v="${a}" class="${a==v?'on':''}">${t}</button>`).join('')}</div>`;
+ p.innerHTML=`<h3>⚙️ Настройки</h3><div class="row"><span>Тема</span>${seg('th',[['dark','🌙 Тёмная'],['light','☀️ Светлая']],cur)}</div><div class="row"><span>Размер текста</span>${seg('fs',[['m','А'],['l','А+'],['xl','А++']],S.fs)}</div><div class="row"><span>Подробность</span>${seg('mode',[['full','Подробно'],['simple','Просто']],S.mode)}</div><div class="row"><span>Режим «В игре»</span><button type="button" class="md-button" data-ig>${document.documentElement.classList.contains('ingame')?'Выключить':'🎮 Включить — экран не гаснет'}</button></div><button type="button" class="md-button" data-tour>Показать обучение</button><button type="button" class="md-button md-button--primary" data-x>Готово</button>`;
+ const close=()=>{p.remove();bg.remove();};bg.onclick=close;document.body.append(bg,p);
+ p.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const sg=b.closest('.seg');if(sg){sg.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));const k=sg.dataset.k;if(k=='th')scheme(b.dataset.v);else{S[k]=b.dataset.v;LS.set('pw_set',S);apply();}}
+  if(b.hasAttribute('data-x'))close();if(b.hasAttribute('data-tour')){close();tour(true);}if(b.hasAttribute('data-ig')){ingame(!document.documentElement.classList.contains('ingame'));close();}});}
+/* in-game mode with Wake Lock */
+let wl=null;async function ingame(on){document.documentElement.classList.toggle('ingame',on);LS.set('pw_ingame',on);let ib=document.querySelector('.igb');
+ if(on){try{if('wakeLock' in navigator){wl=await navigator.wakeLock.request('screen');}}catch(e){}if(!ib){ib=document.createElement('button');ib.className='igb';ib.type='button';ib.onclick=()=>ingame(false);document.body.appendChild(ib);}ib.textContent='🎮 В игре'+(wl?' · экран не гаснет':'')+' ✕';}
+ else{try{wl&&wl.release();}catch(e){}wl=null;ib&&ib.remove();}}
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState=='visible'&&document.documentElement.classList.contains('ingame')&&'wakeLock' in navigator)navigator.wakeLock.request('screen').then(w=>wl=w).catch(()=>{});});
+/* onboarding */
+function tour(force){if(!force&&LS.get('pw_onb',false))return;const steps=[['🔍','Ищи что угодно','Нажми «Поиск» внизу или клавишу /. Понимаю опечатки и английскую раскладку: «fye,bc» — это «Анубис».'],['🛠','Собирай палов','На странице пала есть конструктор: звёзды, уровень, пассивки. Сборку можно сохранить и отправить в бота.'],['⭐','Списки и бот','Добавляй палов в Избранное, Команду и Фарм. В «Мои списки» есть кнопка «В бота» — списки окажутся в @PalGuideBot.']];let i=0;
+ const bg=document.createElement('div');bg.className='sheet-bg';const p=document.createElement('div');p.className='setp onb';p.setAttribute('role','dialog');document.body.append(bg,p);const close=()=>{p.remove();bg.remove();LS.set('pw_onb',true);};bg.onclick=close;
+ const draw=()=>{const [e,t,d]=steps[i];p.innerHTML=`<div class="big">${e}</div><h3>${t}</h3><p>${d}</p><div class="dots">${steps.map((_,k)=>`<i class="${k==i?'on':''}"></i>`).join('')}</div><div class="seg" style="justify-content:space-between"><button type="button" data-s>Пропустить</button><button type="button" class="on" data-n>${i<2?'Дальше':'Начать'}</button></div>`;
+  p.querySelector('[data-s]').onclick=close;p.querySelector('[data-n]').onclick=()=>{if(i<2){i++;draw();}else close();};};draw();}
+/* hover / long-press preview for pal & passive links */
+let pv=null,tmr=null;const hide=()=>{clearTimeout(tmr);if(pv){pv.remove();pv=null;}};
+function preview(a,x,y){(window.PW_load||window.PW_data)().then(D=>{hide();const h=a.getAttribute('href')||'';let html='';const pn=a.dataset.psv;
+  if(pn){const q=D.passives.find(z=>z.name==pn);if(q)html=`<b>${esc(q.name)}</b><small>ранг ${q.rank}</small><div>${esc(q.desc)}</div>`;}
+  else{const p=D.pals.find(z=>z.url&&h.split('#')[0].endsWith(z.url));if(p)html=`<img src="${B+p.thumb}" width="56" height="56" alt=""><b>${esc(p.ru)}</b><div>${p.el.map(e=>window.PW_chip?window.PW_chip(e):e).join('')}</div><small>❤️ ${p.hp} · ⚔️ ${p.atk} · 🛡 ${p.def}</small>`;
+   else{const b=(D.bcards||[]).find(z=>h.split('#')[0].endsWith(z.u));if(b)html=`<img src="${B+b.t}" width="56" height="56" alt=""><b>${esc(b.n)}</b><small>${esc(b.k)} · ур. ${b.lv.filter(Boolean).join(' / ')}</small><div>Слабость: ${b.w.map(e=>window.PW_chip?window.PW_chip(e):e).join('')}</div>`;}}
+  if(!html)return;pv=document.createElement('div');pv.className='pvw';pv.innerHTML=html;document.body.appendChild(pv);pv.style.left=Math.max(8,Math.min(x+12,innerWidth-275))+'px';pv.style.top=(y+20+pv.offsetHeight>innerHeight?y-pv.offsetHeight-12:y+16)+'px';});}
+const tgt=e=>e.target.closest&&e.target.closest('article a[href*="/paly/"],article a[href*="/boss/"],article a.psv[data-psv],.sx a[href*="/paly/"]');
+document.addEventListener('mouseover',e=>{if(!matchMedia('(hover:hover)').matches)return;const a=tgt(e);if(!a)return;clearTimeout(tmr);tmr=setTimeout(()=>preview(a,e.clientX,e.clientY),350);});
+document.addEventListener('mouseout',e=>{if(tgt(e))hide();});
+let lp=null;document.addEventListener('touchstart',e=>{const a=tgt(e);if(!a)return;const t=e.touches[0];lp=setTimeout(()=>{lp='fired';preview(a,t.clientX,t.clientY);if(navigator.vibrate)navigator.vibrate(10);},450);},{passive:true});
+document.addEventListener('touchmove',()=>{if(lp&&lp!=='fired')clearTimeout(lp);},{passive:true});
+document.addEventListener('touchend',e=>{if(lp==='fired'){e.preventDefault();setTimeout(hide,1800);}else clearTimeout(lp);lp=null;});
+document.addEventListener('contextmenu',e=>{if(tgt(e)&&matchMedia('(pointer:coarse)').matches)e.preventDefault();});addEventListener('scroll',hide,{passive:true});
+document.addEventListener('DOMContentLoaded',()=>{const b=document.createElement('button');b.type='button';b.className='setb';b.setAttribute('aria-label','Настройки');b.textContent='⚙️';b.onclick=panel;document.body.appendChild(b);
+ if(LS.get('pw_ingame',false))ingame(true);if(!/[?&](nobanner|test)/.test(location.search)&&!navigator.webdriver)setTimeout(()=>tour(false),1200);
+ const hm=document.querySelector('.hero, .home-hero');window.PW_settings=panel;window.PW_tour=tour;window.PW_ingame=ingame;});
 })();

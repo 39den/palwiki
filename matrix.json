@@ -1,0 +1,82 @@
+{
+ "chromium / desktop": {
+  "overflow": "PASS",
+  "search": "PASS",
+  "slider": "PASS",
+  "picker": "PASS",
+  "map": "PASS",
+  "js_errors": "PASS"
+ },
+ "chromium / Pixel 7": {
+  "overflow": "PASS",
+  "search": "PASS",
+  "slider": "PASS",
+  "picker": "PASS",
+  "map": "PASS",
+  "drawer": "PASS",
+  "help_tip": "PASS",
+  "worldtree": "PASS",
+  "faq": "PASS",
+  "search_cmp_typo": "PASS",
+  "bottom_bar": "PASS",
+  "js_errors": "PASS"
+ },
+ "chromium / Galaxy S9+": {
+  "overflow": "PASS",
+  "search": "PASS",
+  "slider": "PASS",
+  "picker": "PASS",
+  "map": "PASS",
+  "drawer": "PASS",
+  "help_tip": "PASS",
+  "worldtree": "PASS",
+  "faq": "PASS",
+  "search_cmp_typo": "PASS",
+  "bottom_bar": "PASS",
+  "js_errors": "PASS"
+ },
+ "webkit / desktop": {
+  "overflow": "PASS",
+  "search": "PASS",
+  "slider": "PASS",
+  "picker": "PASS",
+  "map": "PASS",
+  "js_errors": "PASS"
+ },
+ "webkit / iPhone 13": {
+  "overflow": "PASS",
+  "search": "PASS",
+  "slider": "PASS",
+  "picker": "PASS",
+  "map": "PASS",
+  "drawer": "PASS",
+  "help_tip": "PASS",
+  "worldtree": "PASS",
+  "faq": "PASS",
+  "search_cmp_typo": "PASS",
+  "bottom_bar": "PASS",
+  "js_errors": "PASS"
+ },
+ "firefox / desktop": {
+  "overflow": "PASS",
+  "search": "PASS",
+  "slider": "PASS",
+  "picker": "PASS",
+  "map": "PASS",
+  "js_errors": "PASS"
+ },
+ "firefox / mobile 390": {
+  "overflow": "PASS",
+  "search": "PASS",
+  "slider": "PASS",
+  "picker": "PASS",
+  "map": "PASS",
+  "drawer": "PASS",
+  "help_tip": "PASS",
+  "worldtree": "PASS",
+  "faq": "PASS",
+  "search_cmp_typo": "PASS",
+  "bottom_bar": "PASS",
+  "js_errors": "PASS"
+ }
+}

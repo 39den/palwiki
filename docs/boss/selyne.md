@@ -26,6 +26,6 @@ hide: [toc]
 
 ## 🧠 Тактика
 
-Держись за палом, кувырок (Ctrl) от больших атак, средняя кнопка мыши — приказ атаковать. Ограничение по времени<span class="unv" title="Ещё перепроверяется">ⓘ</span>
+<div class="tips" markdown="0"><div class="tip"><span>💡</span>Держись за палом, кувырок (Ctrl) от больших атак, средняя кнопка мыши — приказ атаковать.</div><div class="tip"><span>💡</span>Ограничение по времени&lt;span class=&quot;unv&quot; title=&quot;Ещё перепроверяется&quot;&gt;ⓘ&lt;/span&gt;</div></div>
 
 <div class="pn" markdown="0"><a class="card-link" href="../../boss/shadowbeak/">← Виктор и Шэдоубик</a><a class="card-link" href="../../boss/bastigor/">Бьёрн и Бастигор →</a></div>
