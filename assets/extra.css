@@ -221,3 +221,7 @@ table.cmp td.lose{background:color-mix(in srgb,#e5484d 12%,transparent)}
 .md-sidebar--primary .md-sidebar__scrollwrap{position:absolute;inset:0;overflow-y:auto!important;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;touch-action:pan-y}
 .md-sidebar--primary .md-sidebar__inner,.md-sidebar--primary .md-nav--primary{min-height:auto;padding-bottom:calc(6rem + env(safe-area-inset-bottom))}
 .md-nav--primary .md-nav{overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}}
+.bchip>span{flex:1}.bchip small{white-space:nowrap;flex:none}
+@media (max-width:59.984em){[data-md-toggle=search]:checked~.md-header .md-search__inner{height:100dvh}
+[data-md-toggle=search]:checked~.md-header .md-search__output{height:calc(100dvh - 2.4rem)}
+[data-md-toggle=search]:checked~.md-header .md-search__scrollwrap{height:100%;max-height:none}}
