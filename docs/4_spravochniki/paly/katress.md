@@ -28,7 +28,7 @@
 - Транспортировка — ур. 2
 
 ## Партнёрский навык: Зловещая тёмная магия
-Пока находится в команде, количество выпадаемых предметов при победе над Палами Нейтральный увеличивается на (40~80)% . Также при броске пал-сферы есть (10~50)% шанс не расходовать её. (Эффект не суммируется) level value 1 ElementAddDrop_Normal_1_PAL 40, 40 CatMage_Fire_PartnerSkill 10 2 ElementAddDrop_Normal_2_PAL 50, 50 CatMage_Fire_PartnerSkill 15 3 ElementAddDrop_Normal_3_PAL 60, 60 CatMage_Fire_PartnerSkill 20 4 ElementAddDrop_Normal_4_PAL 70, 70 CatMage_Fire_PartnerSkill 30 5 ElementAddDrop_Normal_5_PAL 80, 80 CatMage_Fire_PartnerSkill 50
+Пока находится в команде, количество выпадаемых предметов при победе над Палами Нейтральный увеличивается на (40~80)% . Также при броске пал-сферы есть (10~50)% шанс не расходовать её. (Эффект не суммируется) level value 1 , 40 CatMage_Fire_PartnerSkill 10 2 , 50 CatMage_Fire_PartnerSkill 15 3 , 60 CatMage_Fire_PartnerSkill 20 4 , 70 CatMage_Fire_PartnerSkill 30 5 , 80 CatMage_Fire_PartnerSkill 50
 
 ## Атаки по уровням
 - ур. 1: Огненный выстрел (Огонь, сила 40)
@@ -71,4 +71,4 @@
 
 > Управляет тёмной силой и творит странные заклинания. Любую еду предпочитает есть сырой. Плохо ладит с Виксен .
 
-См. также: [Стихии](../../2_mehaniki/stihii.md) · [Разведение](../../2_mehaniki/razvedenie.md) · [Все палы](README.md)
+См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)

@@ -28,7 +28,7 @@
 - Транспортировка — ур. 3
 
 ## Партнёрский навык: Звёздная тьма
-Можно оседлать полумесяц за спиной, чтобы передвигаться по воздуху. Во время езды усиливаются атаки элементами Нейтральный и Тьма на (15~30)% . Технологии 53 level value 1 ElementBoost_Normal_PAL_PartnerSKill 15 ElementBoost_Dark_PAL_PartnerSKill 15 2 ElementBoost_Normal_PAL_PartnerSKill 17 ElementBoost_Dark_PAL_PartnerSKill 17 3 ElementBoost_Normal_PAL_PartnerSKill 20 ElementBoost_Dark_PAL_PartnerSKill 20 4 ElementBoost_Normal_PAL_PartnerSKill 24 ElementBoost_Dark_PAL_PartnerSKill 24 5 ElementBoost_Normal_PAL_PartnerSKill 30 ElementBoost_Dark_PAL_PartnerSKill 30
+Можно оседлать полумесяц за спиной, чтобы передвигаться по воздуху. Во время езды усиливаются атаки элементами Нейтральный и Тьма на (15~30)% . Технологии 53 level value 1   2   3   4   5
 
 ## Атаки по уровням
 - ур. 1: Тёмная пушка (Тьма, сила 70)
@@ -70,4 +70,4 @@
 
 > Объект, похожий на луну, витающий за спиной этого Пала, с каждым новым поколением понемногу приближается к идеальному кругу. Что произойдёт, когда луна станет полной — никто не знает.
 
-См. также: [Стихии](../../2_mehaniki/stihii.md) · [Разведение](../../2_mehaniki/razvedenie.md) · [Все палы](README.md)
+См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)

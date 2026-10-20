@@ -30,7 +30,7 @@
 - Транспортировка — ур. 3
 
 ## Партнёрский навык: Страж тумана
-При активации атаки игрока получают (2~6) к накоплению негативного эффекта Яд . Пока находится в команде, игрок и Палы получают иммунитет к состоянию Яд , а также нейтрализуют ядовитый газ в зоне Мирового Древа. (Эффект не суммируется) Lv. Skill 1 AdditionalEffect_Poison +2% (ToTrainer) 2 AdditionalEffect_Poison +3% (ToTrainer) 3 AdditionalEffect_Poison +4% (ToTrainer) 4 AdditionalEffect_Poison +5% (ToTrainer) 5 AdditionalEffect_Poison +6% (ToTrainer) level value 1 ResistAdditionalEffect_Poison_PartnerSkill_FlowerPrince 0, 100 2 ResistAdditionalEffect_Poison_PartnerSkill_FlowerPrince 0, 100 3 ResistAdditionalEffect_Poison_PartnerSkill_FlowerPrince 0, 100 4 ResistAdditionalEffect_Poison_PartnerSkill_FlowerPrince 0, 100 5 ResistAdditionalEffect_Poison_PartnerSkill_FlowerPrince 0, 100
+При активации атаки игрока получают (2~6) к накоплению негативного эффекта Яд . Пока находится в команде, игрок и Палы получают иммунитет к состоянию Яд , а также нейтрализуют ядовитый газ в зоне Мирового Древа. (Эффект не суммируется)
 
 ## Атаки по уровням
 - ур. 1: Тёмная пушка (Тьма, сила 70)
@@ -72,4 +72,4 @@
 
 > С незапамятных времён он стоит у Древа и продолжает что-то охранять. Что именно он защищает сейчас и почему делает это — Дандилорд не пытается постичь. Потому что Древо знает ответ. Потому что лишь подвластный ему туман позволяет увидеть истину.
 
-См. также: [Стихии](../../2_mehaniki/stihii.md) · [Разведение](../../2_mehaniki/razvedenie.md) · [Все палы](README.md)
+См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)

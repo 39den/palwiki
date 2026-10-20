@@ -4,11 +4,12 @@ import pymdownx.slugs as S
 SL=S.slugify(case='lower')
 W='/workspace/palwiki';D='/workspace/palsite/docs';A=D+'/assets'
 shutil.rmtree(D,ignore_errors=True);os.makedirs(D)
-SKIP={'raw','raw_new','backups','data','gdocs','__pycache__','reports'}
+SKIP={'raw','raw_new','backups','data','gdocs','__pycache__','reports','ref'}
 for d in os.listdir(W):
   p=os.path.join(W,d)
   if os.path.isdir(p) and d not in SKIP: shutil.copytree(p,os.path.join(D,d),ignore=shutil.ignore_patterns('*.py','__pycache__'))
 shutil.copytree('/workspace/palsite/static',A)
+shutil.rmtree(D+'/4_spravochniki/syrye_dannye',ignore_errors=True)
 # ---------- images -> webp (cached)
 C='/workspace/palsite/.imgcache';os.makedirs(C+'/card',exist_ok=True);os.makedirs(C+'/art',exist_ok=True)
 def webp(src,dst,w):
@@ -83,6 +84,16 @@ def clean(t,html=True):
   t=re.sub(r'(?m)^(#{1,4} .*?)\s*\(\d+\)\s*$',r'\1',t)
   t=re.sub(r'\s*—?\s*\[?проверить\]? — пока один источник\.?','',t)
   t=t.replace(UNV+' — пока один источник.','').replace(' Источник указан у каждой строки.','')
+  t=re.sub(r'\s*Lv\. Skill.*$','',t,flags=re.M)
+  t=re.sub(r'\s*\((ToSelf|ToOtomo|ToTrainer|ToEnemy)\)','',t)
+  t=re.sub(r'\bElement[A-Z]\w*(\s+[\d.]+)?','',t)
+  t=re.sub(r'\{([A-Z][A-Za-z_]+)\}',r'\1',t)
+  t=re.sub(r'\s*\([^()\n]*(paldb|wiki\.gg|v1\.0\.5|сверка|\.json)[^()\n]*\)','',t,flags=re.I)
+  t=re.sub(r'[^.\n|]*(paldb|wiki\.gg|v1\.0\.5)[^.\n|]*\.?','',t,flags=re.I)
+  t=re.sub(r'(?m)^\s*[-*]\s*$\n?','',t)
+  t=re.sub(r'\s*\([^()\n]*ToSelf[^()\n]*\)','',t)
+  t=re.sub(r'(?m)^\*\*Что такое ToSelf.*\n.*\n?','',t)
+  t=re.sub(r'(?m)^.*ToSelf.*\n?','',t)
   t=re.sub(r'(?m) +$','',t)
   return t
 def secrets(t):
@@ -145,6 +156,17 @@ SI=cj(SI);SB=cj(SB);SPS=cj(SPS);faq=cj(faq);MP=cj(MP)
 json.dump({'map':MP,'pals':SP,'items':SI,'bosses':SB,'passives':SPS,'faq':faq,'syn':syn,'built':datetime.date.today().isoformat()},open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
 shutil.move(A+'/manifest.webmanifest',D+'/manifest.webmanifest');open(D+'/sw.js','w').write(open(A+'/sw.js').read().replace('__BUILD__',datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d%H%M')));os.remove(A+'/sw.js')
 print('map points',len(MP));print('search_data KB',os.path.getsize(A+'/search_data.json')//1024)
+# ---------- dedupe: keep guide/ version when same H1 exists elsewhere
+def h1(f):
+  for l in open(f):
+    if l.startswith('# '):return l[2:].strip()
+  return ''
+GT={h1(f):f for f in glob.glob(D+'/guide/*.md')}
+DUP={}
+for f in glob.glob(D+'/*/*.md'):
+  if '/guide/' in f:continue
+  if h1(f) in GT: DUP[os.path.normpath(f)]=GT[h1(f)];os.remove(f)
+print('duplicates merged',len(DUP))
 # ---------- fix links
 bad=0
 for f in glob.glob(D+'/**/*.md',recursive=True):
@@ -153,7 +175,9 @@ for f in glob.glob(D+'/**/*.md',recursive=True):
     global bad
     t=m.group(2);u=t.split('#')[0]
     if not u or re.match(r'\w+:',t) or re.search(r'\.(png|webp)$',u):return m.group(0)
-    if os.path.exists(os.path.normpath(os.path.join(os.path.dirname(f),u))):return m.group(0)
+    tgt=os.path.normpath(os.path.join(os.path.dirname(f),u))
+    if os.path.exists(tgt):return m.group(0)
+    if tgt in DUP:return '['+m.group(1)+']('+os.path.relpath(DUP[tgt],os.path.dirname(f))+(('#'+t.split('#',1)[1]) if '#' in t else '')+')'
     bad+=1;return m.group(1)
   open(f,'w').write(re.sub(r'(?<!!)\[([^\]]*)\]\(([^)\s]+)\)',fx,s))
 print('broken links removed',bad)
@@ -164,7 +188,7 @@ open(D+'/index.md','w').write(f'''---
 hide: [navigation, toc]
 ---
 <div class="hero" markdown="0"><div class="hero-art">{hero}</div><div class="hero-in">
-<h1>Энциклопедия Palworld</h1><p>Всё о Palworld v1.0.5 на русском: уровни 0–80, {len(SP)} палов, {len(SI)} предметов, боссы, пассивки, разведение и секреты.</p>
+<h1>Энциклопедия Palworld</h1><p>Всё о Palworld на русском: уровни 0–80, {len(SP)} палов, {len(SI)} предметов, боссы, пассивки, разведение и секреты.</p>
 <div class="smart-box"><input id="home-q" type="search" placeholder="Спроси что угодно: «кто лучше копает», «чем бить Зои», «где взять серу»…" autocomplete="off"></div>
 <div id="home-answer" class="smart-out"></div></div></div>
 <div class="tiles" markdown="0">
@@ -180,7 +204,7 @@ hide: [toc]
 <div id="gallery" class="gallery" markdown="0"></div>
 ''')
 open(D+'/compare.md','w').write('---\nhide: [toc]\n---\n# ⚔️ Сравнение двух палов\n<div id="cmp" markdown="0"></div>\n')
-open(D+'/map.md','w').write('---\nhide: [toc]\nleaflet: true\n---\n# 📍 Интерактивная карта\nСетка в игровых координатах (X, Y как на карте в игре). Включай и выключай слои справа, ищи по названию.\n\n<div class="gal-filters" markdown="0"><input id="mapq" type="search" placeholder="Найти точку: Анубис, Rayne, ..."></div>\n<div id="pwmap" markdown="0"></div>\n\n!!! note "Нет на карте"\n    Статуэтки Лифмунка и входы в подземелья не отмечены: у них нет постоянных координат в открытых текстовых источниках [проверить]. Для них смотри paldb.cc/en/Map.\n')
+open(D+'/map.md','w').write('---\nhide: [toc]\nleaflet: true\n---\n# 📍 Интерактивная карта\nСетка в игровых координатах (X, Y как на карте в игре). Включай и выключай слои справа, ищи по названию.\n\n<div class="gal-filters" markdown="0"><input id="mapq" type="search" placeholder="Найти точку: Анубис, Rayne, ..."></div>\n<div id="pwmap" markdown="0"></div>\n\n!!! note "Нет на карте"\n    Статуэтки Лифмунка и входы в подземелья не отмечены: у них нет постоянных координат в открытых текстовых источниках [проверить].\n')
 open(D+'/bot.md','w').write('''---
 hide: [toc]
 ---
@@ -192,22 +216,23 @@ hide: [toc]
 Что умеет: карточки палов, лучшие пассивки по ролям, слабости боссов, где взять предметы, разведение, советы по уровню, секреты (`/sekret`), сравнение палов (`/sravni`).
 ''')
 def title(f):
-  for l in open(f):
-    if l.startswith('# '):return l[2:].strip().replace(':',' -').replace('"','')
-  return os.path.basename(f)[:-3]
+  t=h1(f) or os.path.basename(f)[:-3]
+  t=re.sub(r'^#\d+\w*\s+','',t);t=re.sub(r'\s*\([^)]*\)\s*$','',t);t=re.sub(r'^Предметы:\s*','',t)
+  t=re.split(r' — | - |: ',t)[0].strip()
+  return t.replace('"','')
 used=set()
 def sec(d):
   fs=sorted(f for f in glob.glob(f'{D}/{d}/*.md') if f not in used);used.update(fs)
-  fs.sort(key=lambda f:(not f.endswith('README.md'),title(f)))
+  fs.sort(key=lambda f:(not f.endswith('README.md'),int(m.group(1)) if (m:=re.match(r'(\d+)_',os.path.basename(f))) else 99,title(f)))
   return [{title(f):os.path.relpath(f,D)} for f in fs]
 G=lambda *xs:[{n:sec(d)} for d,n in xs if glob.glob(f'{D}/{d}/*.md')]
 nav=[{'Главная':'index.md'},{'Галерея':'gallery.md'},{'Карта':'map.md'},{'Сравнить':'compare.md'},
- {'Гайд':G(('0_nachni_zdes','Начни здесь'),('guide','Гайд по темам'),('1_prohozhdenie','Прохождение'))},
+ {'Мир':[{title(D+'/guide/'+x):'guide/'+x} for x in ('11_mir.md','koordinaty.md','sekrety.md')]+sec('6_mir')+sec('7_server')},
+ {'Гайд':(used.update(D+'/guide/'+x for x in ('11_mir.md','koordinaty.md','sekrety.md')) or sec('guide'))+sec('0_nachni_zdes')+sec('1_prohozhdenie')},
  {'Палы':sec('4_spravochniki/paly')},
- {'Справочники':G(('4_spravochniki/predmety','Предметы'),('4_spravochniki','Боссы и таблицы'),('ref','Сырые таблицы'))},
- {'Механики':G(('2_mehaniki','Механики'),('3_bazy','Базы'),('5_lut_i_farm','Лут и фарм'))},
- {'Мир':G(('6_mir','Мир и секреты'),('7_server','Сервер'))},
- {'FAQ':G(('9_faq','FAQ'),('8_slovar','Глоссарий'),('10_bagi','Баги'))},
+ {'Справочники':G(('4_spravochniki/predmety','Предметы'))+sec('4_spravochniki')},
+ {'Механики':sec('2_mehaniki')+sec('3_bazy')+sec('5_lut_i_farm')},
+ {'FAQ':sec('9_faq')+sec('8_slovar')+sec('10_bagi')},
  {'Бот':'bot.md'}]
 keep=used|{D+'/index.md',D+'/gallery.md',D+'/bot.md',D+'/compare.md',D+'/map.md'}
 for f in glob.glob(D+'/**/*.md',recursive=True):

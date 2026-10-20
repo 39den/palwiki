@@ -55,9 +55,9 @@
 - Маффли (Muffly) — Пушистик-кругляш: capture
 - Бристла (Bristla) — Взгляд принцессы: damage, element-boost
 - Элфидран (Elphidran) — Добросердечный святой дракон: drop, movement
-- Элфидран Аква (Elphidran Aqua) — Добросердечный водный дракон: damage, defense, movement<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Ванвирм (Vanwyrm) — Воздушный налётчик: damage<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Ванвирм Крист (Vanwyrm Cryst) — Воздушный налётчик: damage<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
+
+
 - Ваэлет (Vaelet) — Очищение земли: drop, element-boost
 - Бигард (Beegarde) — Рабочая пчелка: other
 - Гринтэйл (Grintale) — Сияющий кошачий глаз: other
@@ -70,9 +70,9 @@
 - Элгрув Крист (Elgrove Cryst) — Угроза вечной мерзлоты: damage
 - Лунарис (Lunaris) — Антигравитация: weight, capture
 - Фенглоп Лакс (Fenglope Lux) — Грозовое облако: drop, movement
-- Диноссум (Dinossom) — Цветочный дракон: defense<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Диноссум Лакс (Dinossom Lux) — Грозоцветный дракон: defense<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Буси Нокт (Bushi Noct) — Тёмная фиолетовая молния: damage<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
+
+
 - Манчилл (Munchill) — Холодная пасть: weight
 - Финсайдер Игнис (Finsider Ignis) — Пылающая комната: damage, weight
 - Петаллия Игнис (Petallia Ignis) — Пыл духа цветов: damage, heal
@@ -84,14 +84,14 @@
 - Менастинг Терра (Menasting Terra) — Золотой скорпион: defense, gathering
 - Нидолл (Needoll) — Обними меня: damage
 - Нидолл Нокт (Needoll Noct) — Обнимаю тебя крепко: damage
-- Рейндрикс (Reindrix) — Прохладное тело: other<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Молдрон Крист (Moldron Cryst) — Владыка льда: damage
-- Брончерри (Broncherry) — Цветущий дракон первой любви: other<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Брончерри Аква (Broncherry Aqua) — Цветущий дракон чистоты: other
 - Думад (Dumud) — Улучшение почвы: damage
 - Думад Гилд (Dumud Gild) — Золотой урожай: drop
 - Кицун (Kitsun) — Солнечный волк: damage, defense
-- Кицун Нокт (Kitsun Noct) — Мрачный волк: damage, defense<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Блейзхаул (Blazehowl) — Лев Преисподней: element-boost, gathering
 - Блейзхаул Нокт (Blazehowl Noct) — Лев Чёрного пламени: element-boost, gathering
 - Ворсект (Warsect) — Чёрная броня единства: other
@@ -99,12 +99,12 @@
 - Фростплюм (Frostplume) — Павлиний выпад: movement
 - Маджекс (Majex) — Заклинание тёмной лисицы: damage
 - Сибеликс Примо (Sibelyx Primo) — Мистические золотые нити: defense
-- Мараит (Maraith) — Посланник загробного мира: other<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Йормунтайд (Jormuntide) — Морской дракон, зовущий бурю: damage<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Йормунтайд Игнис (Jormuntide Ignis) — Лавовый дракон, зовущий бурю: damage<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Фэски (Quivern) — Милосердие небесного дракона: damage<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
+
+
+
 - Бронебол (Kikit) — Пляжный катящийся мяч: defense
-- Рептиро (Reptyro) — Зверь, пожирающий руду: weight, gathering<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Рептиро Крист (Reptyro Cryst) — Зверь, пожирающий лёд: weight, gathering
 - Пиродон (Pierdon) — Сила камня: damage
 - Пиродон Крист (Pierdon Cryst) — Сила кристалла: other
@@ -112,13 +112,13 @@
 - Криолинкс Терра (Cryolinx Terra) — Могучая рука разрушения: damage
 - Снаглоу (Snugloo) — Невидимый глаз: utility
 - Вумпо Ботан (Wumpo Botan) — Южный гигант: damage, defense
-- Гостлайт (Sootseer) — Расхититель могил: damage<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Карнибора (Carnibora) — Цепкий язык: damage
-- Блазамут (Blazamut) — Кайзер магмы: damage, defense<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Блазамут Рю (Blazamut Ryu) — Кайзер драконов: damage<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
+
 - Скорпио (Prixter) — Неядовитый скорпион: damage
 - Тетроис Примо (Tetroise Primo) — Камневал - Древняя черепаха: other
-- Няфия (Nyafia) — Кошачий обстрел: damage<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Зеноведа (Xenovader) — Неизвестный захватчик: damage
 - Зеногард (Xenogard) — Неизвестный нарушитель: damage
 - Найтмери (Nitemary) — Призрачный кролик-похититель душ: other
@@ -127,11 +127,11 @@
 - Валаска (Whalaska) — Холодный китоход: movement
 - Валаска Игнис (Whalaska Ignis) — Тёплый китоход: movement
 - Вердаш (Verdash) — Звёздный акробат равнин: movement
-- Сплаттерина (Splatterina) — Клинок безумной любви: drop<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Буллдос (Bulldosu) — Аура ёкодзуна: damage, defense<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Селесдир (Celesdir) — Очищающее благословение: damage, heal, movement<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
+
+
 - Селесдир Нокт (Celesdir Noct) — Благословение хаоса: damage
-- Силвегис (Silvegis) — Щит Эгиды: defense<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Валентейл (Valentail) — Кошка-тянучка: movement
 - Снок (Snock) — Дэн-дэн батарея: damage
 - Снок Терра (Snock Terra) — Дон-дон панцирь: damage, defense
@@ -140,7 +140,7 @@
 - Худл (Hoodle) — Притаившийся в пустоте: damage
 - Слоуватт (Slowatt) — Переключатель расслабления: damage
 - Бакеми (Bakemi) — Улыбчивая нежить: other
-- Солмора (Solmora) — Харизматичная рыбка: other<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Солмора Лакс (Solmora Lux) — Плазменная рыбка: damage
 - Немофи (Lapure) — Длиннорукавная поддержка: other
 - Тропикау (Tropicaw) — Танец цветов: defense
@@ -169,12 +169,12 @@
 - Чикипи (Chikipi) — Яйцеклад: other
 - Мау (Mau) — Кошке — золотая монета: other
 - Мау Крист (Mau Cryst) — Ледяной сюрприз: other
-- Фелбэт (Felbat) — Кража жизни: damage, heal<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Элизаби (Elizabee) — Воля королевы: other<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Ловандер (Lovander) — Иссушение сердца: damage, heal<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
+
+
 - Лифан (Leafan) — Полная самоотдача: damage, defense
-- Йомира (Gildra) — С того света: other<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Мимидог (Mimog) — Взлом замков: utility<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
+
 - Астралим (Astralym) — -: other
 
 ## 🐎 Верхом
@@ -204,8 +204,8 @@
 - Релаксаурус Лакс (Relaxaurus Lux) — Ракетная вечеринка: damage, weight
 - Райберд (Beakon) — Гром с неба: damage
 - Райберд Крист (Beakon Cryst) — Небесный град: damage
-- Ганглер (Ghangler) — Проводник ночной тьмы: element-boost<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Ганглер Игнис (Ghangler Ignis) — Знаменитый шеф морских глубин: element-boost<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
+
 - Райхаунд (Rayhound) — Грозовой пёс: element-boost, movement
 - Моссанда (Mossanda) — Панда-гранатомётчик: damage, weight
 - Моссанда Лакс (Mossanda Lux) — Панда-гранатомётчик: damage, weight
@@ -221,10 +221,10 @@
 - Судзаку Аква (Suzaku Aqua) — Водные крылья: element-boost
 - Дазему (Dazemu) — Песчаный рывок: movement
 - Фэски Ботан (Quivern Botan) — Милосердие травяного дракона: damage
-- Якумо (Yakumo) — Рыбак рыбака видит издалека: other<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Старрион (Starryon) — Ночной танцор: movement
 - Старрион Примо (Starryon Primo) — Танцор света: movement
-- Вумпо (Wumpo) — Гигант снежных гор: other<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Дуалит (Dualith) — Лесной лазер: other
 - Дуалит Нокт (Dualith Noct) — Лазер порчи: other
 - Тетроис (Tetroise) — Камнепад - Древняя черепаха: other
@@ -244,7 +244,7 @@
 - Некромус (Necromus) — Тёмный рыцарь бездны: movement
 - Фросталлион (Frostallion) — Ледяной Пегас: damage, element-boost
 - Фросталлион Нокт (Frostallion Noct) — Тёмный Пегас: damage, element-boost
-- Нептилиус (Neptilius) — Властелин океана: damage<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Джетрагон (Jetragon) — Воздушные ракеты: damage, weight
 - Панталус (Panthalus) — Хранитель эха: damage
 - Синий слизень (Blue Slime) — Тело слизня: other
@@ -277,22 +277,22 @@
 - Лизпанк (Leezpunk) — Невидимость: other
 - Лизпанк Игнис (Leezpunk Ignis) — Невидимость: other
 - Горират (Gorirat) — Максимальный режим гориллы: damage
-- Виксен (Wixen) — Госпожа лисица: damage, element-boost<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
-- Виксен Нокт (Wixen Noct) — Госпожа тёмная лисица: damage, element-boost<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
+
 - Элгрув (Elgrove) — Природная угроза: damage
 - Буси (Bushi) — Фиолетовая молния: other
-- Финсайдер (Finsider) — Водяной триггер: damage, element-boost<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Петаллия (Petallia) — Благословение духа цветов: heal
 - Инсинерам (Incineram) — Когтистый охотник пламени: other
 - Инсинерам Нокт (Incineram Noct) — Когтистый охотник тьмы: other
 - Дигтос (Digtoise) — Дробящий бур: gathering
 - Сибеликс (Sibelyx) — Мистический шёлковый покров: other
-- Айселин (Icelyn) — Ведьминский холод: damage, element-boost<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Скатласс (Skutlass) — Рвать плоть, ломать кости: other
 - Скатласс Игнис (Skutlass Ignis) — Жечь плоть, разрубать кости: other
-- Анубис (Anubis) — Хранитель пустыни: damage<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Скорпио Лакс (Prixter Lux) — Низкочастотный скорпион: damage
-- Смоки (Smokie) — Верный пёс Смоки: gathering, utility<span class="unv" title="Ещё перепроверяется">ⓘ</span> wiki.gg расходится
+
 - Ванфу (Dogen) — Молитва возвращения: other
 - Теранайт (Knocklem) — Режим стального стража: damage, defense
 - Теранайт Игнис (Knocklem Ignis) — Режим железного стража: damage, defense

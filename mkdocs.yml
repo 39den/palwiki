@@ -2,6 +2,7 @@ site_name: Энциклопедия Palworld
 site_url: https://39den.github.io/palwiki/
 site_description: Энциклопедия Palworld на русском — палы, боссы, предметы, пассивки, разведение
 docs_dir: docs
+copyright: "Данные: версия игры 1.0.5 · фан-энциклопедия, не официальный продукт"
 theme:
   name: material
   custom_dir: overrides
@@ -36,458 +37,369 @@ markdown_extensions:
   - toc:
       permalink: true
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/PalGuideBot
+      name: "@PalGuideBot"
 nav:
 - Главная: index.md
 - Галерея: gallery.md
 - Карта: map.md
 - Сравнить: compare.md
+- Мир:
+  - Мир: guide/11_mir.md
+  - Координаты: guide/koordinaty.md
+  - Секреты и пасхалки: guide/sekrety.md
 - Гайд:
-  - Начни здесь:
-    - Влияние патчей (что поменялось и что это значит для тебя): 0_nachni_zdes/patchi.md
-    - Управление на ПК (клавиши по умолчанию): 0_nachni_zdes/upravlenie.md
-    - Что такое Palworld и с чего начать: 0_nachni_zdes/nachni_zdes.md
-  - Гайд по темам:
-    - Баги и проблемы - что делать: guide/15_problemy.md
-    - База - всё о строительстве и работе палов: guide/09_baza.md
-    - Боссы - башни, рейды, альфы, подземелья: guide/10_bossy.md
-    - Влияние патчей (что поменялось и что это значит для тебя): guide/patchi.md
-    - Еда и баффы: guide/eda.md
-    - Как ловить палов: guide/05_lovlya.md
-    - Как сделать пала сильнее (все способы): guide/08_usilenie.md
-    - Координаты (карта): guide/koordinaty.md
-    - Механики для знатоков (цифры и формулы): guide/14_mehaniki.md
-    - Мир - регионы, перемещение, торговцы, рыбалка, экспедиции, нефтевышки: guide/11_mir.md
-    - Партнёрские навыки - как они включаются: guide/partnerskie_navyki.md
-    - Персонаж - уровень, статы, сброс, смерть: guide/04_personazh.md
-    - Прохождение от 0 до 80 уровня (пошагово): guide/03_prohozhdenie_1_80.md
-    - Разведение (Breeding): guide/07_razvedenie.md
-    - Свой сервер и игра с друзьями: guide/12_server.md
-    - Секреты и пасхалки: guide/sekrety.md
-    - Стихии - кто кого бьёт: guide/06_stihii.md
-    - Управление на ПК (клавиши по умолчанию): guide/02_upravlenie.md
-    - Фарм и лут - где брать всё: guide/13_farm.md
-    - Что такое Palworld и с чего начать: guide/01_chto_eto.md
-    - Эндгейм 75–80 - как стать сильнее (бой палами): guide/16_endgame_75_80.md
-  - Прохождение:
-    - Прохождение от 0 до 80 уровня (пошагово): 1_prohozhdenie/prohozhdenie_0_80.md
-    - Эндгейм 75–80 - как стать сильнее (бой палами): 1_prohozhdenie/endgame_75_80.md
+  - Что такое Palworld и с чего начать: guide/01_chto_eto.md
+  - Управление на ПК: guide/02_upravlenie.md
+  - Прохождение от 0 до 80 уровня: guide/03_prohozhdenie_1_80.md
+  - Персонаж: guide/04_personazh.md
+  - Как ловить палов: guide/05_lovlya.md
+  - Стихии: guide/06_stihii.md
+  - Разведение: guide/07_razvedenie.md
+  - Как сделать пала сильнее: guide/08_usilenie.md
+  - База: guide/09_baza.md
+  - Боссы: guide/10_bossy.md
+  - Свой сервер и игра с друзьями: guide/12_server.md
+  - Фарм и лут: guide/13_farm.md
+  - Механики для знатоков: guide/14_mehaniki.md
+  - Баги и проблемы: guide/15_problemy.md
+  - Эндгейм 75–80: guide/16_endgame_75_80.md
+  - Влияние патчей: guide/patchi.md
+  - Еда и баффы: guide/eda.md
+  - Партнёрские навыки: guide/partnerskie_navyki.md
 - Палы:
-  - Все палы (таблица): 4_spravochniki/paly/README.md
-  - '#1 Ламболл (Lamball)': 4_spravochniki/paly/lamball.md
-  - '#10 Хербил (Herbil)': 4_spravochniki/paly/herbil.md
-  - '#100 Нидолл (Needoll)': 4_spravochniki/paly/needoll.md
-  - '#100B Нидолл Нокт (Needoll Noct)': 4_spravochniki/paly/needoll_noct.md
-  - '#101 Рейндрикс (Reindrix)': 4_spravochniki/paly/reindrix.md
-  - '#102 Моссанда (Mossanda)': 4_spravochniki/paly/mossanda.md
-  - '#102B Моссанда Лакс (Mossanda Lux)': 4_spravochniki/paly/mossanda_lux.md
-  - '#103 Чиллет (Chillet)': 4_spravochniki/paly/chillet.md
-  - '#103B Чиллет Игнис (Chillet Ignis)': 4_spravochniki/paly/chillet_ignis.md
-  - '#104 Рагнахавк (Ragnahawk)': 4_spravochniki/paly/ragnahawk.md
-  - '#105 Молдрон (Moldron)': 4_spravochniki/paly/moldron.md
-  - '#105B Молдрон Крист (Moldron Cryst)': 4_spravochniki/paly/moldron_cryst.md
-  - '#106 Палумба (Palumba)': 4_spravochniki/paly/palumba.md
-  - '#107 Дигтос (Digtoise)': 4_spravochniki/paly/digtoise.md
-  - '#108 Брончерри (Broncherry)': 4_spravochniki/paly/broncherry.md
-  - '#108B Брончерри Аква (Broncherry Aqua)': 4_spravochniki/paly/broncherry_aqua.md
-  - '#109 Думад (Dumud)': 4_spravochniki/paly/dumud.md
-  - '#109B Думад Гилд (Dumud Gild)': 4_spravochniki/paly/dumud_gild.md
-  - '#11 Тифант (Teafant)': 4_spravochniki/paly/teafant.md
-  - '#110 Бралоха (Braloha)': 4_spravochniki/paly/braloha.md
-  - '#111 Кицун (Kitsun)': 4_spravochniki/paly/kitsun.md
-  - '#111B Кицун Нокт (Kitsun Noct)': 4_spravochniki/paly/kitsun_noct.md
-  - '#112 Блейзхаул (Blazehowl)': 4_spravochniki/paly/blazehowl.md
-  - '#112B Блейзхаул Нокт (Blazehowl Noct)': 4_spravochniki/paly/blazehowl_noct.md
-  - '#113 Ворсект (Warsect)': 4_spravochniki/paly/warsect.md
-  - '#113B Ворсект Терра (Warsect Terra)': 4_spravochniki/paly/warsect_terra.md
-  - '#114 Фростплюм (Frostplume)': 4_spravochniki/paly/frostplume.md
-  - '#115 Маджекс (Majex)': 4_spravochniki/paly/majex.md
-  - '#116 Сибеликс (Sibelyx)': 4_spravochniki/paly/sibelyx.md
-  - '#116B Сибеликс Примо (Sibelyx Primo)': 4_spravochniki/paly/sibelyx_primo.md
-  - '#117 Мараит (Maraith)': 4_spravochniki/paly/maraith.md
-  - '#118 Шрумер (Shroomer)': 4_spravochniki/paly/shroomer.md
-  - '#118B Шрумер Нокт (Shroomer Noct)': 4_spravochniki/paly/shroomer_noct.md
-  - '#119 Айселин (Icelyn)': 4_spravochniki/paly/icelyn.md
-  - '#12 Гумосс (Gumoss)': 4_spravochniki/paly/gumoss.md
-  - '#120 Йомира (Gildra)': 4_spravochniki/paly/gildra.md
-  - '#121 Йормунтайд (Jormuntide)': 4_spravochniki/paly/jormuntide.md
-  - '#121B Йормунтайд Игнис (Jormuntide Ignis)': 4_spravochniki/paly/jormuntide_ignis.md
-  - '#122 Судзаку (Suzaku)': 4_spravochniki/paly/suzaku.md
-  - '#122B Судзаку Аква (Suzaku Aqua)': 4_spravochniki/paly/suzaku_aqua.md
-  - '#123 Дазему (Dazemu)': 4_spravochniki/paly/dazemu.md
-  - '#124 Фэски (Quivern)': 4_spravochniki/paly/quivern.md
-  - '#124B Фэски Ботан (Quivern Botan)': 4_spravochniki/paly/quivern_botan.md
-  - '#125 Нежноцвет (Lullu)': 4_spravochniki/paly/lullu.md
-  - '#126 Бронебол (Kikit)': 4_spravochniki/paly/kikit.md
-  - '#127 Якумо (Yakumo)': 4_spravochniki/paly/yakumo.md
-  - '#128 Скатласс (Skutlass)': 4_spravochniki/paly/skutlass.md
-  - '#128B Скатласс Игнис (Skutlass Ignis)': 4_spravochniki/paly/skutlass_ignis.md
-  - '#129 Рептиро (Reptyro)': 4_spravochniki/paly/reptyro.md
-  - '#129B Рептиро Крист (Reptyro Cryst)': 4_spravochniki/paly/reptyro_cryst.md
-  - '#13 Паппирай (Pupperai)': 4_spravochniki/paly/pupperai.md
-  - '#130 Старрион (Starryon)': 4_spravochniki/paly/starryon.md
-  - '#130B Старрион Примо (Starryon Primo)': 4_spravochniki/paly/starryon_primo.md
-  - '#131 Пиродон (Pierdon)': 4_spravochniki/paly/pierdon.md
-  - '#131B Пиродон Крист (Pierdon Cryst)': 4_spravochniki/paly/pierdon_cryst.md
-  - '#132 Криолинкс (Cryolinx)': 4_spravochniki/paly/cryolinx.md
-  - '#132B Криолинкс Терра (Cryolinx Terra)': 4_spravochniki/paly/cryolinx_terra.md
-  - '#133 Снаглоу (Snugloo)': 4_spravochniki/paly/snugloo.md
-  - '#134 Вумпо (Wumpo)': 4_spravochniki/paly/wumpo.md
-  - '#134B Вумпо Ботан (Wumpo Botan)': 4_spravochniki/paly/wumpo_botan.md
-  - '#135 Гостлайт (Sootseer)': 4_spravochniki/paly/sootseer.md
-  - '#136 Карнибора (Carnibora)': 4_spravochniki/paly/carnibora.md
-  - '#137 Блазамут (Blazamut)': 4_spravochniki/paly/blazamut.md
-  - '#137B Блазамут Рю (Blazamut Ryu)': 4_spravochniki/paly/blazamut_ryu.md
-  - '#138 Дуалит (Dualith)': 4_spravochniki/paly/dualith.md
-  - '#138B Дуалит Нокт (Dualith Noct)': 4_spravochniki/paly/dualith_noct.md
-  - '#139 Анубис (Anubis)': 4_spravochniki/paly/anubis.md
-  - '#14 Клови (Clovee)': 4_spravochniki/paly/clovee.md
-  - '#140 Сехмет (Sekhmet)': 4_spravochniki/paly/sekhmet.md
-  - '#141 Скорпио (Prixter)': 4_spravochniki/paly/prixter.md
-  - '#141B Скорпио Лакс (Prixter Lux)': 4_spravochniki/paly/prixter_lux.md
-  - '#142 Тетроис (Tetroise)': 4_spravochniki/paly/tetroise.md
-  - '#142B Тетроис Примо (Tetroise Primo)': 4_spravochniki/paly/tetroise_primo.md
-  - '#143 Няфия (Nyafia)': 4_spravochniki/paly/nyafia.md
-  - '#144 Мимидог (Mimog)': 4_spravochniki/paly/mimog.md
-  - '#145 Зеноведа (Xenovader)': 4_spravochniki/paly/xenovader.md
-  - '#146 Зеногард (Xenogard)': 4_spravochniki/paly/xenogard.md
-  - '#147 Прунелия (Prunelia)': 4_spravochniki/paly/prunelia.md
-  - '#148 Найтмери (Nitemary)': 4_spravochniki/paly/nitemary.md
-  - '#148B Найтмери Ботан (Nitemary Botan)': 4_spravochniki/paly/nitemary_botan.md
-  - '#149 Смоки (Smokie)': 4_spravochniki/paly/smokie.md
-  - '#149B Смоки Крист (Smokie Cryst)': 4_spravochniki/paly/smokie_cryst.md
-  - '#15 Джолтхог (Jolthog)': 4_spravochniki/paly/jolthog.md
-  - '#150 Омаскул (Omascul)': 4_spravochniki/paly/omascul.md
-  - '#151 Валаска (Whalaska)': 4_spravochniki/paly/whalaska.md
-  - '#151B Валаска Игнис (Whalaska Ignis)': 4_spravochniki/paly/whalaska_ignis.md
-  - '#152 Вердаш (Verdash)': 4_spravochniki/paly/verdash.md
-  - '#153 Сплаттерина (Splatterina)': 4_spravochniki/paly/splatterina.md
-  - '#154 Гилдейн (Gildane)': 4_spravochniki/paly/gildane.md
-  - '#155 Ванфу (Dogen)': 4_spravochniki/paly/dogen.md
-  - '#156 Буллдос (Bulldosu)': 4_spravochniki/paly/bulldosu.md
-  - '#157 Селесдир (Celesdir)': 4_spravochniki/paly/celesdir.md
-  - '#157B Селесдир Нокт (Celesdir Noct)': 4_spravochniki/paly/celesdir_noct.md
-  - '#158 Астегон (Astegon)': 4_spravochniki/paly/astegon.md
-  - '#159 Теранайт (Knocklem)': 4_spravochniki/paly/knocklem.md
-  - '#159B Теранайт Игнис (Knocklem Ignis)': 4_spravochniki/paly/knocklem_ignis.md
-  - '#15B Джолтхог Крист (Jolthog Cryst)': 4_spravochniki/paly/jolthog_cryst.md
-  - '#16 Депрессо (Depresso)': 4_spravochniki/paly/depresso.md
-  - '#160 Силвегис (Silvegis)': 4_spravochniki/paly/silvegis.md
-  - '#161 Азурмейн (Azurmane)': 4_spravochniki/paly/azurmane.md
-  - '#162 Валентейл (Valentail)': 4_spravochniki/paly/valentail.md
-  - '#163 Снок (Snock)': 4_spravochniki/paly/snock.md
-  - '#163B Снок Терра (Snock Terra)': 4_spravochniki/paly/snock_terra.md
-  - '#164 Суффлин (Souffline)': 4_spravochniki/paly/souffline.md
-  - '#165 Лапирон (Lapiron)': 4_spravochniki/paly/lapiron.md
-  - '#166 Худл (Hoodle)': 4_spravochniki/paly/hoodle.md
-  - '#167 Слоуватт (Slowatt)': 4_spravochniki/paly/slowatt.md
-  - '#168 Бакеми (Bakemi)': 4_spravochniki/paly/bakemi.md
-  - '#169 Солмора (Solmora)': 4_spravochniki/paly/solmora.md
-  - '#169B Солмора Лакс (Solmora Lux)': 4_spravochniki/paly/solmora_lux.md
-  - '#17 Пенгуллет (Pengullet)': 4_spravochniki/paly/pengullet.md
-  - '#170 Немофи (Lapure)': 4_spravochniki/paly/lapure.md
-  - '#171 Айдролон (Eidrolon)': 4_spravochniki/paly/eidrolon.md
-  - '#171B Айдролон Игнис (Eidrolon Ignis)': 4_spravochniki/paly/eidrolon_ignis.md
-  - '#172 Динамофф (Dynamoff)': 4_spravochniki/paly/dynamoff.md
-  - '#173 Тропикау (Tropicaw)': 4_spravochniki/paly/tropicaw.md
-  - '#174 Фларакл (Flaracle)': 4_spravochniki/paly/flaracle.md
-  - '#175 Офидия (Ophydia)': 4_spravochniki/paly/ophydia.md
-  - '#176 Дупин (Dupin)': 4_spravochniki/paly/dupin.md
-  - '#177 Роуджей (Roujay)': 4_spravochniki/paly/roujay.md
-  - '#178 Медуна (Venusa)': 4_spravochniki/paly/venusa.md
-  - '#179 Микора (Mycora)': 4_spravochniki/paly/mycora.md
-  - '#17B Пенгуллет Лакс (Pengullet Lux)': 4_spravochniki/paly/pengullet_lux.md
-  - '#18 Пенкинг (Penking)': 4_spravochniki/paly/penking.md
-  - '#180 Люмен (Loomen)': 4_spravochniki/paly/loomen.md
-  - '#181 Вистелла (Wistella)': 4_spravochniki/paly/wistella.md
-  - '#182 Соленна (Solenne)': 4_spravochniki/paly/solenne.md
-  - '#183 Рэндзиши (Renjishi)': 4_spravochniki/paly/renjishi.md
-  - '#184 Аэгидрон (Aegidron)': 4_spravochniki/paly/aegidron.md
-  - '#185 Гриззболт (Grizzbolt)': 4_spravochniki/paly/grizzbolt.md
-  - '#186 Лилин (Lyleen)': 4_spravochniki/paly/lyleen.md
-  - '#186B Лилин Нокт (Lyleen Noct)': 4_spravochniki/paly/lyleen_noct.md
-  - '#187 Орсерк (Orserk)': 4_spravochniki/paly/orserk.md
-  - '#188 Фалерис (Faleris)': 4_spravochniki/paly/faleris.md
-  - '#188B Фалерис Аква (Faleris Aqua)': 4_spravochniki/paly/faleris_aqua.md
-  - '#189 Шэдоубик (Shadowbeak)': 4_spravochniki/paly/shadowbeak.md
-  - '#18B Пенкинг Лакс (Penking Lux)': 4_spravochniki/paly/penking_lux.md
-  - '#19 Хукрат (Hoocrates)': 4_spravochniki/paly/hoocrates.md
-  - '#190 Селена (Selyne)': 4_spravochniki/paly/selyne.md
-  - '#191 Бастигор (Bastigor)': 4_spravochniki/paly/bastigor.md
-  - '#192 Шаолонг (Shaolong)': 4_spravochniki/paly/shaolong.md
-  - '#193 Сильванс (Silvance)': 4_spravochniki/paly/silvance.md
-  - '#194 Дандилорд (Dandilord)': 4_spravochniki/paly/dandilord.md
-  - '#195 Бэллануар (Bellanoir)': 4_spravochniki/paly/bellanoir.md
-  - '#195B Бэллануар Либеро (Bellanoir Libero)': 4_spravochniki/paly/bellanoir_libero.md
-  - '#196 Зенолорд (Xenolord)': 4_spravochniki/paly/xenolord.md
-  - '#197 Харталис (Hartalis)': 4_spravochniki/paly/hartalis.md
-  - '#198 Паладиус (Paladius)': 4_spravochniki/paly/paladius.md
-  - '#199 Некромус (Necromus)': 4_spravochniki/paly/necromus.md
-  - '#2 Каттива (Cattiva)': 4_spravochniki/paly/cattiva.md
-  - '#20 Мелпака (Melpaca)': 4_spravochniki/paly/melpaca.md
-  - '#200 Фросталлион (Frostallion)': 4_spravochniki/paly/frostallion.md
-  - '#200B Фросталлион Нокт (Frostallion Noct)': 4_spravochniki/paly/frostallion_noct.md
-  - '#201 Нептилиус (Neptilius)': 4_spravochniki/paly/neptilius.md
-  - '#202 Джетрагон (Jetragon)': 4_spravochniki/paly/jetragon.md
-  - '#203 Панталус (Panthalus)': 4_spravochniki/paly/panthalus.md
-  - '#204 Астралим (Astralym)': 4_spravochniki/paly/astralym.md
-  - '#21 Кингпака (Kingpaca)': 4_spravochniki/paly/kingpaca.md
-  - '#21B Кингпака Крист (Kingpaca Cryst)': 4_spravochniki/paly/kingpaca_cryst.md
-  - '#22 Даэдрим (Daedream)': 4_spravochniki/paly/daedream.md
-  - '#23 Танзи (Tanzee)': 4_spravochniki/paly/tanzee.md
-  - '#23B Танзи Игнис (Tanzee Ignis)': 4_spravochniki/paly/tanzee_ignis.md
-  - '#24 Нокс (Nox)': 4_spravochniki/paly/nox.md
-  - '#25 Фламбелль (Flambelle)': 4_spravochniki/paly/flambelle.md
-  - '#26 Руби (Rooby)': 4_spravochniki/paly/rooby.md
-  - '#27 Мау (Mau)': 4_spravochniki/paly/mau.md
-  - '#27B Мау Крист (Mau Cryst)': 4_spravochniki/paly/mau_cryst.md
-  - '#28 Рашоа (Rushoar)': 4_spravochniki/paly/rushoar.md
-  - '#29 Фокспаркс (Foxparks)': 4_spravochniki/paly/foxparks.md
-  - '#29B Фокспаркс Крист (Foxparks Cryst)': 4_spravochniki/paly/foxparks_cryst.md
-  - '#3 Чикипи (Chikipi)': 4_spravochniki/paly/chikipi.md
-  - '#30 Килламари (Killamari)': 4_spravochniki/paly/killamari.md
-  - '#30B Килламари Примо (Killamari Primo)': 4_spravochniki/paly/killamari_primo.md
-  - '#31 Фуддлер (Fuddler)': 4_spravochniki/paly/fuddler.md
-  - '#32 Иктирдир (Eikthyrdeer)': 4_spravochniki/paly/eikthyrdeer.md
-  - '#32B Иктирдир Тэрра (Eikthyrdeer Terra)': 4_spravochniki/paly/eikthyrdeer_terra.md
-  - '#33 Дайэхаул (Direhowl)': 4_spravochniki/paly/direhowl.md
-  - '#34 Каприти (Caprity)': 4_spravochniki/paly/caprity.md
-  - '#34B Каприти Нокт (Caprity Noct)': 4_spravochniki/paly/caprity_noct.md
-  - '#35 Сви (Swee)': 4_spravochniki/paly/swee.md
-  - '#36 Свипа (Sweepa)': 4_spravochniki/paly/sweepa.md
-  - '#37 Туртакл (Turtacle)': 4_spravochniki/paly/turtacle.md
-  - '#37B Туртакл Терра (Turtacle Terra)': 4_spravochniki/paly/turtacle_terra.md
-  - '#38 Хангю (Hangyu)': 4_spravochniki/paly/hangyu.md
-  - '#38B Хангю Крист (Hangyu Cryst)': 4_spravochniki/paly/hangyu_cryst.md
-  - '#39 Вулипоп (Woolipop)': 4_spravochniki/paly/woolipop.md
-  - '#39B Вулипоп Терра (Woolipop Terra)': 4_spravochniki/paly/woolipop_terra.md
-  - '#4 Лифманк (Lifmunk)': 4_spravochniki/paly/lifmunk.md
-  - '#40 Моззарина (Mozzarina)': 4_spravochniki/paly/mozzarina.md
-  - '#41 Азуроб (Azurobe)': 4_spravochniki/paly/azurobe.md
-  - '#41B Азуроб Крист (Azurobe Cryst)': 4_spravochniki/paly/azurobe_cryst.md
-  - '#42 Спаркит (Sparkit)': 4_spravochniki/paly/sparkit.md
-  - '#43 Келпси (Kelpsea)': 4_spravochniki/paly/kelpsea.md
-  - '#43B Келпси Игнис (Kelpsea Ignis)': 4_spravochniki/paly/kelpsea_ignis.md
-  - '#44 Риббани (Ribbuny)': 4_spravochniki/paly/ribbuny.md
-  - '#44B Риббани Ботан (Ribbuny Botan)': 4_spravochniki/paly/ribbuny_botan.md
-  - '#45 Джелиэтта (Jelliette)': 4_spravochniki/paly/jelliette.md
-  - '#46 Джелрой (Jellroy)': 4_spravochniki/paly/jellroy.md
-  - '#47 Амиона (Amione)': 4_spravochniki/paly/amione.md
-  - '#48 Глуппи (Gloopie)': 4_spravochniki/paly/gloopie.md
-  - '#48B Глуппи Примо (Gloopie Primo)': 4_spravochniki/paly/gloopie_primo.md
-  - '#49 Эрмург (Galeclaw)': 4_spravochniki/paly/galeclaw.md
-  - '#5 Камоноске (Fuack)': 4_spravochniki/paly/fuack.md
-  - '#50 Виспау (Wispaw)': 4_spravochniki/paly/wispaw.md
-  - '#51 Найтвинг (Nitewing)': 4_spravochniki/paly/nitewing.md
-  - '#52 Томбат (Tombat)': 4_spravochniki/paly/tombat.md
-  - '#53 Токотоко (Tocotoco)': 4_spravochniki/paly/tocotoco.md
-  - '#54 Юнивольт (Univolt)': 4_spravochniki/paly/univolt.md
-  - '#54B Юнивольт Крист (Univolt Cryst)': 4_spravochniki/paly/univolt_cryst.md
-  - '#55 Гобфин (Gobfin)': 4_spravochniki/paly/gobfin.md
-  - '#55B Гобфин Игнис (Gobfin Ignis)': 4_spravochniki/paly/gobfin_ignis.md
-  - '#56 Лупмун (Loupmoon)': 4_spravochniki/paly/loupmoon.md
-  - '#56B Лупмун Крист (Loupmoon Cryst)': 4_spravochniki/paly/loupmoon_cryst.md
-  - '#57 Когнито (Cawgnito)': 4_spravochniki/paly/cawgnito.md
-  - '#58 Арсокс (Arsox)': 4_spravochniki/paly/arsox.md
-  - '#59 Маффли (Muffly)': 4_spravochniki/paly/muffly.md
-  - '#5B Камоноске Игнис (Fuack Ignis)': 4_spravochniki/paly/fuack_ignis.md
-  - '#6 Викси (Vixy)': 4_spravochniki/paly/vixy.md
-  - '#60 Бристла (Bristla)': 4_spravochniki/paly/bristla.md
-  - '#61 Синнамос (Cinnamoth)': 4_spravochniki/paly/cinnamoth.md
-  - '#62 Пуффольт (Puffolt)': 4_spravochniki/paly/puffolt.md
-  - '#63 Элфидран (Elphidran)': 4_spravochniki/paly/elphidran.md
-  - '#63B Элфидран Аква (Elphidran Aqua)': 4_spravochniki/paly/elphidran_aqua.md
-  - '#64 Ванвирм (Vanwyrm)': 4_spravochniki/paly/vanwyrm.md
-  - '#64B Ванвирм Крист (Vanwyrm Cryst)': 4_spravochniki/paly/vanwyrm_cryst.md
-  - '#65 Фелбэт (Felbat)': 4_spravochniki/paly/felbat.md
-  - '#66 Ваэлет (Vaelet)': 4_spravochniki/paly/vaelet.md
-  - '#67 Бигард (Beegarde)': 4_spravochniki/paly/beegarde.md
-  - '#68 Элизаби (Elizabee)': 4_spravochniki/paly/elizabee.md
-  - '#69 Ловандер (Lovander)': 4_spravochniki/paly/lovander.md
-  - '#7 Селарай (Celaray)': 4_spravochniki/paly/celaray.md
-  - '#70 Гринтэйл (Grintale)': 4_spravochniki/paly/grintale.md
-  - '#71 Тарантрисс (Tarantriss)': 4_spravochniki/paly/tarantriss.md
-  - '#72 Полапап (Polapup)': 4_spravochniki/paly/polapup.md
-  - '#72B Полапап Терра (Polapup Terra)': 4_spravochniki/paly/polapup_terra.md
-  - '#73 Лизпанк (Leezpunk)': 4_spravochniki/paly/leezpunk.md
-  - '#73B Лизпанк Игнис (Leezpunk Ignis)': 4_spravochniki/paly/leezpunk_ignis.md
-  - '#74 Горират (Gorirat)': 4_spravochniki/paly/gorirat.md
-  - '#74B Горират Терра (Gorirat Terra)': 4_spravochniki/paly/gorirat_terra.md
-  - '#75 Серфент (Surfent)': 4_spravochniki/paly/surfent.md
-  - '#75B Серфент Терра (Surfent Terra)': 4_spravochniki/paly/surfent_terra.md
-  - '#76 Робинквилл (Robinquill)': 4_spravochniki/paly/robinquill.md
-  - '#76B Робинквилл Терра (Robinquill Terra)': 4_spravochniki/paly/robinquill_terra.md
-  - '#77 Флопи (Flopie)': 4_spravochniki/paly/flopie.md
-  - '#78 Виксен (Wixen)': 4_spravochniki/paly/wixen.md
-  - '#78B Виксен Нокт (Wixen Noct)': 4_spravochniki/paly/wixen_noct.md
-  - '#79 Катресс (Katress)': 4_spravochniki/paly/katress.md
-  - '#79B Катресс Игнис (Katress Ignis)': 4_spravochniki/paly/katress_ignis.md
-  - '#7B Селарай Лакс (Celaray Lux)': 4_spravochniki/paly/celaray_lux.md
-  - '#8 Кремис (Cremis)': 4_spravochniki/paly/cremis.md
-  - '#80 Хэлзефир (Helzephyr)': 4_spravochniki/paly/helzephyr.md
-  - '#80B Хэлзефир Лакс (Helzephyr Lux)': 4_spravochniki/paly/helzephyr_lux.md
-  - '#81 Элгрув (Elgrove)': 4_spravochniki/paly/elgrove.md
-  - '#81B Элгрув Крист (Elgrove Cryst)': 4_spravochniki/paly/elgrove_cryst.md
-  - '#82 Лунарис (Lunaris)': 4_spravochniki/paly/lunaris.md
-  - '#83 Фенглоп (Fenglope)': 4_spravochniki/paly/fenglope.md
-  - '#83B Фенглоп Лакс (Fenglope Lux)': 4_spravochniki/paly/fenglope_lux.md
-  - '#84 Диноссум (Dinossom)': 4_spravochniki/paly/dinossom.md
-  - '#84B Диноссум Лакс (Dinossom Lux)': 4_spravochniki/paly/dinossom_lux.md
-  - '#85 Буси (Bushi)': 4_spravochniki/paly/bushi.md
-  - '#85B Буси Нокт (Bushi Noct)': 4_spravochniki/paly/bushi_noct.md
-  - '#86 Манчилл (Munchill)': 4_spravochniki/paly/munchill.md
-  - '#87 Мамморест (Mammorest)': 4_spravochniki/paly/mammorest.md
-  - '#87B Мамморест Крист (Mammorest Cryst)': 4_spravochniki/paly/mammorest_cryst.md
-  - '#88 Финсайдер (Finsider)': 4_spravochniki/paly/finsider.md
-  - '#88B Финсайдер Игнис (Finsider Ignis)': 4_spravochniki/paly/finsider_ignis.md
-  - '#89 Петаллия (Petallia)': 4_spravochniki/paly/petallia.md
-  - '#89B Петаллия Игнис (Petallia Ignis)': 4_spravochniki/paly/petallia_ignis.md
-  - '#9 Кроадзиро (Croajiro)': 4_spravochniki/paly/croajiro.md
-  - '#90 Лифан (Leafan)': 4_spravochniki/paly/leafan.md
-  - '#91 Инсинерам (Incineram)': 4_spravochniki/paly/incineram.md
-  - '#91B Инсинерам Нокт (Incineram Noct)': 4_spravochniki/paly/incineram_noct.md
-  - '#92 Даззи (Dazzi)': 4_spravochniki/paly/dazzi.md
-  - '#92B Даззи Нокт (Dazzi Noct)': 4_spravochniki/paly/dazzi_noct.md
-  - '#93 Пирин (Pyrin)': 4_spravochniki/paly/pyrin.md
-  - '#93B Пирин Нокт (Pyrin Noct)': 4_spravochniki/paly/pyrin_noct.md
-  - '#94 Релаксаурус (Relaxaurus)': 4_spravochniki/paly/relaxaurus.md
-  - '#94B Релаксаурус Лакс (Relaxaurus Lux)': 4_spravochniki/paly/relaxaurus_lux.md
-  - '#95 Фоксайкл (Foxcicle)': 4_spravochniki/paly/foxcicle.md
-  - '#96 Райберд (Beakon)': 4_spravochniki/paly/beakon.md
-  - '#96B Райберд Крист (Beakon Cryst)': 4_spravochniki/paly/beakon_cryst.md
-  - '#97 Ганглер (Ghangler)': 4_spravochniki/paly/ghangler.md
-  - '#97B Ганглер Игнис (Ghangler Ignis)': 4_spravochniki/paly/ghangler_ignis.md
-  - '#98 Райхаунд (Rayhound)': 4_spravochniki/paly/rayhound.md
-  - '#98B Райхаунд Крист (Rayhound Cryst)': 4_spravochniki/paly/rayhound_cryst.md
-  - '#99 Менастинг (Menasting)': 4_spravochniki/paly/menasting.md
-  - '#99B Менастинг Терра (Menasting Terra)': 4_spravochniki/paly/menasting_terra.md
-  - '#9B Кроадзиро Нокт (Croajiro Noct)': 4_spravochniki/paly/croajiro_noct.md
-  - '#T1 Синий слизень (Blue Slime)': 4_spravochniki/paly/blue_slime.md
-  - '#T10 Радужный слизень (Rainbow Slime)': 4_spravochniki/paly/rainbow_slime.md
-  - '#T11 Красный слизень (Red Slime)': 4_spravochniki/paly/red_slime.md
-  - '#T2 Пещерная летучая мышь (Cave Bat)': 4_spravochniki/paly/cave_bat.md
-  - '#T3 Демонический глаз (Demon Eye)': 4_spravochniki/paly/demon_eye.md
-  - '#T4 Зачарованный меч (Enchanted Sword)': 4_spravochniki/paly/enchanted_sword.md
-  - '#T5 Глаз Ктулху (Eye of Cthulhu)': 4_spravochniki/paly/eye_of_cthulhu.md
-  - '#T6 Зеленый слизень (Green Slime)': 4_spravochniki/paly/green_slime.md
-  - '#T7 Светящаяся летучая мышь (Illuminant Bat)': 4_spravochniki/paly/illuminant_bat.md
-  - '#T8 Светящийся слизень (Illuminant Slime)': 4_spravochniki/paly/illuminant_slime.md
-  - '#T9 Фиолетовый слизень (Purple Slime)': 4_spravochniki/paly/purple_slime.md
+  - Все палы: 4_spravochniki/paly/README.md
+  - '#T1 Синий слизень': 4_spravochniki/paly/blue_slime.md
+  - '#T10 Радужный слизень': 4_spravochniki/paly/rainbow_slime.md
+  - '#T11 Красный слизень': 4_spravochniki/paly/red_slime.md
+  - '#T2 Пещерная летучая мышь': 4_spravochniki/paly/cave_bat.md
+  - '#T3 Демонический глаз': 4_spravochniki/paly/demon_eye.md
+  - '#T4 Зачарованный меч': 4_spravochniki/paly/enchanted_sword.md
+  - '#T5 Глаз Ктулху': 4_spravochniki/paly/eye_of_cthulhu.md
+  - '#T6 Зеленый слизень': 4_spravochniki/paly/green_slime.md
+  - '#T7 Светящаяся летучая мышь': 4_spravochniki/paly/illuminant_bat.md
+  - '#T8 Светящийся слизень': 4_spravochniki/paly/illuminant_slime.md
+  - '#T9 Фиолетовый слизень': 4_spravochniki/paly/purple_slime.md
+  - Азурмейн: 4_spravochniki/paly/azurmane.md
+  - Азуроб: 4_spravochniki/paly/azurobe.md
+  - Азуроб Крист: 4_spravochniki/paly/azurobe_cryst.md
+  - Айдролон: 4_spravochniki/paly/eidrolon.md
+  - Айдролон Игнис: 4_spravochniki/paly/eidrolon_ignis.md
+  - Айселин: 4_spravochniki/paly/icelyn.md
+  - Амиона: 4_spravochniki/paly/amione.md
+  - Анубис: 4_spravochniki/paly/anubis.md
+  - Арсокс: 4_spravochniki/paly/arsox.md
+  - Астегон: 4_spravochniki/paly/astegon.md
+  - Астралим: 4_spravochniki/paly/astralym.md
+  - Аэгидрон: 4_spravochniki/paly/aegidron.md
+  - Бакеми: 4_spravochniki/paly/bakemi.md
+  - Бастигор: 4_spravochniki/paly/bastigor.md
+  - Бигард: 4_spravochniki/paly/beegarde.md
+  - Блазамут: 4_spravochniki/paly/blazamut.md
+  - Блазамут Рю: 4_spravochniki/paly/blazamut_ryu.md
+  - Блейзхаул: 4_spravochniki/paly/blazehowl.md
+  - Блейзхаул Нокт: 4_spravochniki/paly/blazehowl_noct.md
+  - Бралоха: 4_spravochniki/paly/braloha.md
+  - Бристла: 4_spravochniki/paly/bristla.md
+  - Бронебол: 4_spravochniki/paly/kikit.md
+  - Брончерри: 4_spravochniki/paly/broncherry.md
+  - Брончерри Аква: 4_spravochniki/paly/broncherry_aqua.md
+  - Буллдос: 4_spravochniki/paly/bulldosu.md
+  - Буси: 4_spravochniki/paly/bushi.md
+  - Буси Нокт: 4_spravochniki/paly/bushi_noct.md
+  - Бэллануар: 4_spravochniki/paly/bellanoir.md
+  - Бэллануар Либеро: 4_spravochniki/paly/bellanoir_libero.md
+  - Валаска: 4_spravochniki/paly/whalaska.md
+  - Валаска Игнис: 4_spravochniki/paly/whalaska_ignis.md
+  - Валентейл: 4_spravochniki/paly/valentail.md
+  - Ванвирм: 4_spravochniki/paly/vanwyrm.md
+  - Ванвирм Крист: 4_spravochniki/paly/vanwyrm_cryst.md
+  - Ванфу: 4_spravochniki/paly/dogen.md
+  - Ваэлет: 4_spravochniki/paly/vaelet.md
+  - Вердаш: 4_spravochniki/paly/verdash.md
+  - Виксен: 4_spravochniki/paly/wixen.md
+  - Виксен Нокт: 4_spravochniki/paly/wixen_noct.md
+  - Викси: 4_spravochniki/paly/vixy.md
+  - Виспау: 4_spravochniki/paly/wispaw.md
+  - Вистелла: 4_spravochniki/paly/wistella.md
+  - Ворсект: 4_spravochniki/paly/warsect.md
+  - Ворсект Терра: 4_spravochniki/paly/warsect_terra.md
+  - Вулипоп: 4_spravochniki/paly/woolipop.md
+  - Вулипоп Терра: 4_spravochniki/paly/woolipop_terra.md
+  - Вумпо: 4_spravochniki/paly/wumpo.md
+  - Вумпо Ботан: 4_spravochniki/paly/wumpo_botan.md
+  - Ганглер: 4_spravochniki/paly/ghangler.md
+  - Ганглер Игнис: 4_spravochniki/paly/ghangler_ignis.md
+  - Гилдейн: 4_spravochniki/paly/gildane.md
+  - Глуппи: 4_spravochniki/paly/gloopie.md
+  - Глуппи Примо: 4_spravochniki/paly/gloopie_primo.md
+  - Гобфин: 4_spravochniki/paly/gobfin.md
+  - Гобфин Игнис: 4_spravochniki/paly/gobfin_ignis.md
+  - Горират: 4_spravochniki/paly/gorirat.md
+  - Горират Терра: 4_spravochniki/paly/gorirat_terra.md
+  - Гостлайт: 4_spravochniki/paly/sootseer.md
+  - Гриззболт: 4_spravochniki/paly/grizzbolt.md
+  - Гринтэйл: 4_spravochniki/paly/grintale.md
+  - Гумосс: 4_spravochniki/paly/gumoss.md
+  - Дазему: 4_spravochniki/paly/dazemu.md
+  - Даззи: 4_spravochniki/paly/dazzi.md
+  - Даззи Нокт: 4_spravochniki/paly/dazzi_noct.md
+  - Дайэхаул: 4_spravochniki/paly/direhowl.md
+  - Дандилорд: 4_spravochniki/paly/dandilord.md
+  - Даэдрим: 4_spravochniki/paly/daedream.md
+  - Депрессо: 4_spravochniki/paly/depresso.md
+  - Джелиэтта: 4_spravochniki/paly/jelliette.md
+  - Джелрой: 4_spravochniki/paly/jellroy.md
+  - Джетрагон: 4_spravochniki/paly/jetragon.md
+  - Джолтхог: 4_spravochniki/paly/jolthog.md
+  - Джолтхог Крист: 4_spravochniki/paly/jolthog_cryst.md
+  - Дигтос: 4_spravochniki/paly/digtoise.md
+  - Динамофф: 4_spravochniki/paly/dynamoff.md
+  - Диноссум: 4_spravochniki/paly/dinossom.md
+  - Диноссум Лакс: 4_spravochniki/paly/dinossom_lux.md
+  - Дуалит: 4_spravochniki/paly/dualith.md
+  - Дуалит Нокт: 4_spravochniki/paly/dualith_noct.md
+  - Думад: 4_spravochniki/paly/dumud.md
+  - Думад Гилд: 4_spravochniki/paly/dumud_gild.md
+  - Дупин: 4_spravochniki/paly/dupin.md
+  - Зеноведа: 4_spravochniki/paly/xenovader.md
+  - Зеногард: 4_spravochniki/paly/xenogard.md
+  - Зенолорд: 4_spravochniki/paly/xenolord.md
+  - Иктирдир: 4_spravochniki/paly/eikthyrdeer.md
+  - Иктирдир Тэрра: 4_spravochniki/paly/eikthyrdeer_terra.md
+  - Инсинерам: 4_spravochniki/paly/incineram.md
+  - Инсинерам Нокт: 4_spravochniki/paly/incineram_noct.md
+  - Йомира: 4_spravochniki/paly/gildra.md
+  - Йормунтайд: 4_spravochniki/paly/jormuntide.md
+  - Йормунтайд Игнис: 4_spravochniki/paly/jormuntide_ignis.md
+  - Камоноске: 4_spravochniki/paly/fuack.md
+  - Камоноске Игнис: 4_spravochniki/paly/fuack_ignis.md
+  - Каприти: 4_spravochniki/paly/caprity.md
+  - Каприти Нокт: 4_spravochniki/paly/caprity_noct.md
+  - Карнибора: 4_spravochniki/paly/carnibora.md
+  - Катресс: 4_spravochniki/paly/katress.md
+  - Катресс Игнис: 4_spravochniki/paly/katress_ignis.md
+  - Каттива: 4_spravochniki/paly/cattiva.md
+  - Келпси: 4_spravochniki/paly/kelpsea.md
+  - Келпси Игнис: 4_spravochniki/paly/kelpsea_ignis.md
+  - Килламари: 4_spravochniki/paly/killamari.md
+  - Килламари Примо: 4_spravochniki/paly/killamari_primo.md
+  - Кингпака: 4_spravochniki/paly/kingpaca.md
+  - Кингпака Крист: 4_spravochniki/paly/kingpaca_cryst.md
+  - Кицун: 4_spravochniki/paly/kitsun.md
+  - Кицун Нокт: 4_spravochniki/paly/kitsun_noct.md
+  - Клови: 4_spravochniki/paly/clovee.md
+  - Когнито: 4_spravochniki/paly/cawgnito.md
+  - Кремис: 4_spravochniki/paly/cremis.md
+  - Криолинкс: 4_spravochniki/paly/cryolinx.md
+  - Криолинкс Терра: 4_spravochniki/paly/cryolinx_terra.md
+  - Кроадзиро: 4_spravochniki/paly/croajiro.md
+  - Кроадзиро Нокт: 4_spravochniki/paly/croajiro_noct.md
+  - Ламболл: 4_spravochniki/paly/lamball.md
+  - Лапирон: 4_spravochniki/paly/lapiron.md
+  - Лизпанк: 4_spravochniki/paly/leezpunk.md
+  - Лизпанк Игнис: 4_spravochniki/paly/leezpunk_ignis.md
+  - Лилин: 4_spravochniki/paly/lyleen.md
+  - Лилин Нокт: 4_spravochniki/paly/lyleen_noct.md
+  - Лифан: 4_spravochniki/paly/leafan.md
+  - Лифманк: 4_spravochniki/paly/lifmunk.md
+  - Ловандер: 4_spravochniki/paly/lovander.md
+  - Лунарис: 4_spravochniki/paly/lunaris.md
+  - Лупмун: 4_spravochniki/paly/loupmoon.md
+  - Лупмун Крист: 4_spravochniki/paly/loupmoon_cryst.md
+  - Люмен: 4_spravochniki/paly/loomen.md
+  - Маджекс: 4_spravochniki/paly/majex.md
+  - Мамморест: 4_spravochniki/paly/mammorest.md
+  - Мамморест Крист: 4_spravochniki/paly/mammorest_cryst.md
+  - Манчилл: 4_spravochniki/paly/munchill.md
+  - Мараит: 4_spravochniki/paly/maraith.md
+  - Мау: 4_spravochniki/paly/mau.md
+  - Мау Крист: 4_spravochniki/paly/mau_cryst.md
+  - Маффли: 4_spravochniki/paly/muffly.md
+  - Медуна: 4_spravochniki/paly/venusa.md
+  - Мелпака: 4_spravochniki/paly/melpaca.md
+  - Менастинг: 4_spravochniki/paly/menasting.md
+  - Менастинг Терра: 4_spravochniki/paly/menasting_terra.md
+  - Микора: 4_spravochniki/paly/mycora.md
+  - Мимидог: 4_spravochniki/paly/mimog.md
+  - Моззарина: 4_spravochniki/paly/mozzarina.md
+  - Молдрон: 4_spravochniki/paly/moldron.md
+  - Молдрон Крист: 4_spravochniki/paly/moldron_cryst.md
+  - Моссанда: 4_spravochniki/paly/mossanda.md
+  - Моссанда Лакс: 4_spravochniki/paly/mossanda_lux.md
+  - Найтвинг: 4_spravochniki/paly/nitewing.md
+  - Найтмери: 4_spravochniki/paly/nitemary.md
+  - Найтмери Ботан: 4_spravochniki/paly/nitemary_botan.md
+  - Нежноцвет: 4_spravochniki/paly/lullu.md
+  - Некромус: 4_spravochniki/paly/necromus.md
+  - Немофи: 4_spravochniki/paly/lapure.md
+  - Нептилиус: 4_spravochniki/paly/neptilius.md
+  - Нидолл: 4_spravochniki/paly/needoll.md
+  - Нидолл Нокт: 4_spravochniki/paly/needoll_noct.md
+  - Нокс: 4_spravochniki/paly/nox.md
+  - Няфия: 4_spravochniki/paly/nyafia.md
+  - Омаскул: 4_spravochniki/paly/omascul.md
+  - Орсерк: 4_spravochniki/paly/orserk.md
+  - Офидия: 4_spravochniki/paly/ophydia.md
+  - Паладиус: 4_spravochniki/paly/paladius.md
+  - Палумба: 4_spravochniki/paly/palumba.md
+  - Панталус: 4_spravochniki/paly/panthalus.md
+  - Паппирай: 4_spravochniki/paly/pupperai.md
+  - Пенгуллет: 4_spravochniki/paly/pengullet.md
+  - Пенгуллет Лакс: 4_spravochniki/paly/pengullet_lux.md
+  - Пенкинг: 4_spravochniki/paly/penking.md
+  - Пенкинг Лакс: 4_spravochniki/paly/penking_lux.md
+  - Петаллия: 4_spravochniki/paly/petallia.md
+  - Петаллия Игнис: 4_spravochniki/paly/petallia_ignis.md
+  - Пирин: 4_spravochniki/paly/pyrin.md
+  - Пирин Нокт: 4_spravochniki/paly/pyrin_noct.md
+  - Пиродон: 4_spravochniki/paly/pierdon.md
+  - Пиродон Крист: 4_spravochniki/paly/pierdon_cryst.md
+  - Полапап: 4_spravochniki/paly/polapup.md
+  - Полапап Терра: 4_spravochniki/paly/polapup_terra.md
+  - Прунелия: 4_spravochniki/paly/prunelia.md
+  - Пуффольт: 4_spravochniki/paly/puffolt.md
+  - Рагнахавк: 4_spravochniki/paly/ragnahawk.md
+  - Райберд: 4_spravochniki/paly/beakon.md
+  - Райберд Крист: 4_spravochniki/paly/beakon_cryst.md
+  - Райхаунд: 4_spravochniki/paly/rayhound.md
+  - Райхаунд Крист: 4_spravochniki/paly/rayhound_cryst.md
+  - Рашоа: 4_spravochniki/paly/rushoar.md
+  - Рейндрикс: 4_spravochniki/paly/reindrix.md
+  - Релаксаурус: 4_spravochniki/paly/relaxaurus.md
+  - Релаксаурус Лакс: 4_spravochniki/paly/relaxaurus_lux.md
+  - Рептиро: 4_spravochniki/paly/reptyro.md
+  - Рептиро Крист: 4_spravochniki/paly/reptyro_cryst.md
+  - Риббани: 4_spravochniki/paly/ribbuny.md
+  - Риббани Ботан: 4_spravochniki/paly/ribbuny_botan.md
+  - Робинквилл: 4_spravochniki/paly/robinquill.md
+  - Робинквилл Терра: 4_spravochniki/paly/robinquill_terra.md
+  - Роуджей: 4_spravochniki/paly/roujay.md
+  - Руби: 4_spravochniki/paly/rooby.md
+  - Рэндзиши: 4_spravochniki/paly/renjishi.md
+  - Сви: 4_spravochniki/paly/swee.md
+  - Свипа: 4_spravochniki/paly/sweepa.md
+  - Селарай: 4_spravochniki/paly/celaray.md
+  - Селарай Лакс: 4_spravochniki/paly/celaray_lux.md
+  - Селена: 4_spravochniki/paly/selyne.md
+  - Селесдир: 4_spravochniki/paly/celesdir.md
+  - Селесдир Нокт: 4_spravochniki/paly/celesdir_noct.md
+  - Серфент: 4_spravochniki/paly/surfent.md
+  - Серфент Терра: 4_spravochniki/paly/surfent_terra.md
+  - Сехмет: 4_spravochniki/paly/sekhmet.md
+  - Сибеликс: 4_spravochniki/paly/sibelyx.md
+  - Сибеликс Примо: 4_spravochniki/paly/sibelyx_primo.md
+  - Силвегис: 4_spravochniki/paly/silvegis.md
+  - Сильванс: 4_spravochniki/paly/silvance.md
+  - Синнамос: 4_spravochniki/paly/cinnamoth.md
+  - Скатласс: 4_spravochniki/paly/skutlass.md
+  - Скатласс Игнис: 4_spravochniki/paly/skutlass_ignis.md
+  - Скорпио: 4_spravochniki/paly/prixter.md
+  - Скорпио Лакс: 4_spravochniki/paly/prixter_lux.md
+  - Слоуватт: 4_spravochniki/paly/slowatt.md
+  - Смоки: 4_spravochniki/paly/smokie.md
+  - Смоки Крист: 4_spravochniki/paly/smokie_cryst.md
+  - Снаглоу: 4_spravochniki/paly/snugloo.md
+  - Снок: 4_spravochniki/paly/snock.md
+  - Снок Терра: 4_spravochniki/paly/snock_terra.md
+  - Соленна: 4_spravochniki/paly/solenne.md
+  - Солмора: 4_spravochniki/paly/solmora.md
+  - Солмора Лакс: 4_spravochniki/paly/solmora_lux.md
+  - Спаркит: 4_spravochniki/paly/sparkit.md
+  - Сплаттерина: 4_spravochniki/paly/splatterina.md
+  - Старрион: 4_spravochniki/paly/starryon.md
+  - Старрион Примо: 4_spravochniki/paly/starryon_primo.md
+  - Судзаку: 4_spravochniki/paly/suzaku.md
+  - Судзаку Аква: 4_spravochniki/paly/suzaku_aqua.md
+  - Суффлин: 4_spravochniki/paly/souffline.md
+  - Танзи: 4_spravochniki/paly/tanzee.md
+  - Танзи Игнис: 4_spravochniki/paly/tanzee_ignis.md
+  - Тарантрисс: 4_spravochniki/paly/tarantriss.md
+  - Теранайт: 4_spravochniki/paly/knocklem.md
+  - Теранайт Игнис: 4_spravochniki/paly/knocklem_ignis.md
+  - Тетроис: 4_spravochniki/paly/tetroise.md
+  - Тетроис Примо: 4_spravochniki/paly/tetroise_primo.md
+  - Тифант: 4_spravochniki/paly/teafant.md
+  - Токотоко: 4_spravochniki/paly/tocotoco.md
+  - Томбат: 4_spravochniki/paly/tombat.md
+  - Тропикау: 4_spravochniki/paly/tropicaw.md
+  - Туртакл: 4_spravochniki/paly/turtacle.md
+  - Туртакл Терра: 4_spravochniki/paly/turtacle_terra.md
+  - Фалерис: 4_spravochniki/paly/faleris.md
+  - Фалерис Аква: 4_spravochniki/paly/faleris_aqua.md
+  - Фелбэт: 4_spravochniki/paly/felbat.md
+  - Фенглоп: 4_spravochniki/paly/fenglope.md
+  - Фенглоп Лакс: 4_spravochniki/paly/fenglope_lux.md
+  - Финсайдер: 4_spravochniki/paly/finsider.md
+  - Финсайдер Игнис: 4_spravochniki/paly/finsider_ignis.md
+  - Фламбелль: 4_spravochniki/paly/flambelle.md
+  - Фларакл: 4_spravochniki/paly/flaracle.md
+  - Флопи: 4_spravochniki/paly/flopie.md
+  - Фоксайкл: 4_spravochniki/paly/foxcicle.md
+  - Фокспаркс: 4_spravochniki/paly/foxparks.md
+  - Фокспаркс Крист: 4_spravochniki/paly/foxparks_cryst.md
+  - Фросталлион: 4_spravochniki/paly/frostallion.md
+  - Фросталлион Нокт: 4_spravochniki/paly/frostallion_noct.md
+  - Фростплюм: 4_spravochniki/paly/frostplume.md
+  - Фуддлер: 4_spravochniki/paly/fuddler.md
+  - Фэски: 4_spravochniki/paly/quivern.md
+  - Фэски Ботан: 4_spravochniki/paly/quivern_botan.md
+  - Хангю: 4_spravochniki/paly/hangyu.md
+  - Хангю Крист: 4_spravochniki/paly/hangyu_cryst.md
+  - Харталис: 4_spravochniki/paly/hartalis.md
+  - Хербил: 4_spravochniki/paly/herbil.md
+  - Худл: 4_spravochniki/paly/hoodle.md
+  - Хукрат: 4_spravochniki/paly/hoocrates.md
+  - Хэлзефир: 4_spravochniki/paly/helzephyr.md
+  - Хэлзефир Лакс: 4_spravochniki/paly/helzephyr_lux.md
+  - Чикипи: 4_spravochniki/paly/chikipi.md
+  - Чиллет: 4_spravochniki/paly/chillet.md
+  - Чиллет Игнис: 4_spravochniki/paly/chillet_ignis.md
+  - Шаолонг: 4_spravochniki/paly/shaolong.md
+  - Шрумер: 4_spravochniki/paly/shroomer.md
+  - Шрумер Нокт: 4_spravochniki/paly/shroomer_noct.md
+  - Шэдоубик: 4_spravochniki/paly/shadowbeak.md
+  - Элгрув: 4_spravochniki/paly/elgrove.md
+  - Элгрув Крист: 4_spravochniki/paly/elgrove_cryst.md
+  - Элизаби: 4_spravochniki/paly/elizabee.md
+  - Элфидран: 4_spravochniki/paly/elphidran.md
+  - Элфидран Аква: 4_spravochniki/paly/elphidran_aqua.md
+  - Эрмург: 4_spravochniki/paly/galeclaw.md
+  - Юнивольт: 4_spravochniki/paly/univolt.md
+  - Юнивольт Крист: 4_spravochniki/paly/univolt_cryst.md
+  - Якумо: 4_spravochniki/paly/yakumo.md
 - Справочники:
   - Предметы:
     - Предметы и ресурсы: 4_spravochniki/predmety/README.md
-    - Предметы - Аксессуары: 4_spravochniki/predmety/аксессуары.md
-    - Предметы - Боеприпасы: 4_spravochniki/predmety/боеприпасы.md
-    - Предметы - Глайдеры: 4_spravochniki/predmety/глайдеры.md
-    - Предметы - Ингредиент: 4_spravochniki/predmety/ингредиент.md
-    - Предметы - Ключевые предметы: 4_spravochniki/predmety/ключевые_предметы.md
-    - Предметы - Материалы: 4_spravochniki/predmety/материалы.md
-    - Предметы - Модуль для сферы: 4_spravochniki/predmety/модуль_для_сферы.md
-    - Предметы - Обломки плит: 4_spravochniki/predmety/обломки_плит.md
-    - Предметы - Оружие: 4_spravochniki/predmety/оружие.md
-    - Предметы - Прочее: 4_spravochniki/predmety/прочее.md
-    - Предметы - Расходник: 4_spravochniki/predmety/расходник.md
-    - Предметы - Снаряжение: 4_spravochniki/predmety/снаряжение.md
-    - Предметы - Сферы: 4_spravochniki/predmety/сферы.md
-    - Предметы - Чертёж: 4_spravochniki/predmety/чертёж.md
-  - Боссы и таблицы:
-    - Боссы - башни, рейды, альфы, подземелья: 4_spravochniki/bossy_obzor.md
-    - Карточки боссов, башен, рейдов и подземелий: 4_spravochniki/bossy.md
-    - Особые комбинации разведения: 4_spravochniki/osobye_kombinacii.md
-    - Палы по стихиям и по работе: 4_spravochniki/paly_po_stihiyam_i_rabote.md
-  - Сырые таблицы:
-    - Справочник (точные данные из игры): ref/README.md
-    - Аксессуары: ref/accessory.md
-    - База: ref/base.md
-    - Башни и их боссы: ref/tower.md
-    - Бродячий торговец — товары: ref/wandering_merchant.md
-    - Броня: ref/armor.md
-    - Буйствующие палы: ref/rampaging.md
-    - Виды работы: ref/work_suitability.md
-    - Все активные навыки: ref/active_skills.md
-    - Все альфа-палы (боссы на карте): ref/alpha_pals.md
-    - Все навыки партнёров: ref/partner_skill.md
-    - Все торговцы: ref/merchant.md
-    - Дневники (записки): ref/journals.md
-    - Древние руины: ref/ancient_ruin.md
-    - Души палов: ref/pal_souls.md
-    - Еда: ref/food.md
-    - Ездовые палы: ref/mounts.md
-    - Калькулятор IV (скрытые таланты): ref/iv_calc.md
-    - Ключевые предметы: ref/key_items.md
-    - Конденсация (Капсула с эссенцией): ref/pal_essence_condenser.md
-    - Лагеря врагов: ref/enemy_camp.md
-    - Легендарные предметы и чертежи: ref/legendary.md
-    - Люди (NPC и враги): ref/humans.md
-    - Миссии (квесты): ref/mission.md
-    - Модули сфер: ref/sphere_module.md
-    - Монумент Силы, души и статуи: ref/statue_of_power.md
-    - Мутации: ref/mutation.md
-    - Оборона базы: ref/defenses.md
-    - Операционный стол (смена пассивок): ref/pal_surgery_table.md
-    - Оружие: ref/weapon.md
-    - Палы, увеличивающие вес: ref/weight_increase.md
-    - Палы-бафферы отряда: ref/party_buffs.md
-    - Палы-глайдеры: ref/glider.md
-    - Пастбище свиданий (разведение): ref/breeding_farm.md
-    - Патроны: ref/ammo.md
-    - Плоды навыков: ref/skill_fruit.md
-    - Подземелья: ref/dungeons.md
-    - Подсказки из игры: ref/tips.md
-    - Подъём со дна (Salvage): ref/salvage.md
-    - Постройки: ref/structures.md
-    - Приоритет работы: ref/work_priority.md
-    - Рассудок (SAN): ref/san.md
-    - Расходники: ref/consumable.md
-    - Рейды и налёты на базу: ref/raid.md
-    - Рыбалка - места и улов: ref/fishing.md
-    - Смена стихии атаки: ref/element_swap.md
-    - События (инциденты): ref/incidents.md
-    - Спойлеры: ref/spoiler.md
-    - Статы палов: ref/pal_stats.md
-    - Сферы: ref/sphere.md
-    - Таблицы лута (сундуки, вышки и т.д.): ref/loots.md
-    - Технологии (сырые данные): ref/technologies.md
-    - Торговец арены: ref/arena_merchant.md
-    - Торговец медалями: ref/medal_merchant.md
-    - Торговец наградами (баунти): ref/bounty_merchant.md
-    - Торговец палами: ref/pal_merchant.md
-    - Торговый караван: ref/caravan_merchant.md
-    - Чёрный торговец: ref/black_marketeer.md
-    - Шансы дропа: ref/drop_rate.md
-    - Экспедиции - награды: ref/pal_expedition_station.md
-    - Яйца: ref/eggs.md
+    - Аксессуары: 4_spravochniki/predmety/аксессуары.md
+    - Боеприпасы: 4_spravochniki/predmety/боеприпасы.md
+    - Глайдеры: 4_spravochniki/predmety/глайдеры.md
+    - Ингредиент: 4_spravochniki/predmety/ингредиент.md
+    - Ключевые предметы: 4_spravochniki/predmety/ключевые_предметы.md
+    - Материалы: 4_spravochniki/predmety/материалы.md
+    - Модуль для сферы: 4_spravochniki/predmety/модуль_для_сферы.md
+    - Обломки плит: 4_spravochniki/predmety/обломки_плит.md
+    - Оружие: 4_spravochniki/predmety/оружие.md
+    - Прочее: 4_spravochniki/predmety/прочее.md
+    - Расходник: 4_spravochniki/predmety/расходник.md
+    - Снаряжение: 4_spravochniki/predmety/снаряжение.md
+    - Сферы: 4_spravochniki/predmety/сферы.md
+    - Чертёж: 4_spravochniki/predmety/чертёж.md
+  - Карточки боссов, башен, рейдов и подземелий: 4_spravochniki/bossy.md
+  - Особые комбинации разведения: 4_spravochniki/osobye_kombinacii.md
+  - Палы по стихиям и по работе: 4_spravochniki/paly_po_stihiyam_i_rabote.md
 - Механики:
-  - Механики:
-    - Все активные навыки: 2_mehaniki/aktivki.md
-    - Все пассивки: 2_mehaniki/passivki.md
-    - Где взять пассивку и как её перенести: 2_mehaniki/passivki_gde_vzyat.md
-    - Как ловить палов: 2_mehaniki/lovlya.md
-    - Как сделать пала сильнее (все способы): 2_mehaniki/usilenie_palov.md
-    - Механики для знатоков (цифры и формулы): 2_mehaniki/formuly.md
-    - Партнёрские навыки - как они включаются: 2_mehaniki/partnerskie_navyki.md
-    - Персонаж - уровень, статы, сброс, смерть: 2_mehaniki/personazh_staty.md
-    - Разведение (Breeding): 2_mehaniki/razvedenie.md
-    - Стихии - кто кого бьёт: 2_mehaniki/stihii.md
-    - Технологии по уровням: 2_mehaniki/tehnologii.md
-  - Базы:
-    - База - всё о строительстве и работе палов: 3_bazy/bazy.md
-    - Еда и баффы: 3_bazy/eda.md
-  - Лут и фарм:
-    - Обратный поиск - где взять предмет X: 5_lut_i_farm/gde_vzyat.md
-    - Таблица дропа всех палов: 5_lut_i_farm/drop_palov.md
-    - Фарм и лут - где брать всё: 5_lut_i_farm/farm.md
-- Мир:
-  - Мир и секреты:
-    - Координаты (карта): 6_mir/koordinaty.md
-    - Мир - регионы, перемещение, торговцы, рыбалка, экспедиции, нефтевышки: 6_mir/mir.md
-    - Секреты и пасхалки: 6_mir/sekrety.md
-  - Сервер:
-    - Свой сервер и игра с друзьями: 7_server/server.md
+  - Все активные навыки: 2_mehaniki/aktivki.md
+  - Все пассивки: 2_mehaniki/passivki.md
+  - Где взять пассивку и как её перенести: 2_mehaniki/passivki_gde_vzyat.md
+  - Технологии по уровням: 2_mehaniki/tehnologii.md
+  - Обратный поиск: 5_lut_i_farm/gde_vzyat.md
+  - Таблица дропа всех палов: 5_lut_i_farm/drop_palov.md
 - FAQ:
-  - FAQ:
-    - FAQ — вопросы и ответы: 9_faq/faq.md
-  - Глоссарий:
-    - Словарь терминов и сленга: 8_slovar/slovar.md
-  - Баги:
-    - Баги и проблемы - что делать: 10_bagi/bagi.md
+  - FAQ: 9_faq/faq.md
+  - Словарь терминов и сленга: 8_slovar/slovar.md
 - Бот: bot.md

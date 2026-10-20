@@ -29,7 +29,7 @@
 - Транспортировка — ур. 3
 
 ## Партнёрский навык: Угроза вечной мерзлоты
-Пока находится в команде, атака игрока по врагу в состоянии Промокание мгновенно накладывает на него Обледенение . Lv. Skill 1 Атака +30% (ToTrainer) ElementLeaf 1 (ToTrainer) 2 Атака +35% (ToTrainer) ElementLeaf 1 (ToTrainer) 3 Атака +40% (ToTrainer) ElementLeaf 1 (ToTrainer) 4 Атака +45% (ToTrainer) ElementLeaf 1 (ToTrainer) 5 Атака +50% (ToTrainer) ElementLeaf 1 (ToTrainer) level value 1 PlayerInflictEffect_AttackWet_ApplyFreeze 100 2 PlayerInflictEffect_AttackWet_ApplyFreeze 100 3 PlayerInflictEffect_AttackWet_ApplyFreeze 100 4 PlayerInflictEffect_AttackWet_ApplyFreeze 100 5 PlayerInflictEffect_AttackWet_ApplyFreeze 100
+Пока находится в команде, атака игрока по врагу в состоянии Промокание мгновенно накладывает на него Обледенение .
 
 ## Атаки по уровням
 - ур. 1: Грязевой выстрел (Земля, сила 40)
@@ -69,4 +69,4 @@
 
 > Ледяные рога не тают на протяжении жизни. Капли воды, стекающие с них, предупреждают о том, что тело Элгрув Крист постепенно теряет тепло.
 
-См. также: [Стихии](../../2_mehaniki/stihii.md) · [Разведение](../../2_mehaniki/razvedenie.md) · [Все палы](README.md)
+См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)

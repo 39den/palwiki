@@ -29,7 +29,7 @@
 - Транспортировка — ур. 1
 
 ## Партнёрский навык: Дубасящий травяной кролик
-Пока находится в команде, урон игрока и Пала при поражении элементальной слабости врага с помощью Трава увеличивается на (25~40)% . (Эффект не суммируется) Эффективность работы Риббани Ботан на оружейном верстаке, сборочной линии оружия развитой цивилизации и других подобных объектах увеличивается на (200~400)% . level value 1 ElementBoostWeakness_Leaf_PartnerSkill 25 CraftSpeed_PartnerSkill 200 2 ElementBoostWeakness_Leaf_PartnerSkill 27 CraftSpeed_PartnerSkill 220 3 ElementBoostWeakness_Leaf_PartnerSkill 30 CraftSpeed_PartnerSkill 260 4 ElementBoostWeakness_Leaf_PartnerSkill 34 CraftSpeed_PartnerSkill 320 5 ElementBoostWeakness_Leaf_PartnerSkill 40 CraftSpeed_PartnerSkill 400
+Пока находится в команде, урон игрока и Пала при поражении элементальной слабости врага с помощью Трава увеличивается на (25~40)% . (Эффект не суммируется) Эффективность работы Риббани Ботан на оружейном верстаке, сборочной линии оружия развитой цивилизации и других подобных объектах увеличивается на (200~400)% . level value 1  CraftSpeed_PartnerSkill 200 2  CraftSpeed_PartnerSkill 220 3  CraftSpeed_PartnerSkill 260 4  CraftSpeed_PartnerSkill 320 5  CraftSpeed_PartnerSkill 400
 
 ## Атаки по уровням
 - ур. 1: Ветряной клинок (Трава, сила 40)
@@ -70,4 +70,4 @@
 
 > С лица этого Пала никогда не сходит лучезарная улыбка. Иногда Каттива ради шутки завязывает ему щупальца в тугой узел. В такие моменты он избивает обидчика — всё с той же улыбкой на лице.
 
-См. также: [Стихии](../../2_mehaniki/stihii.md) · [Разведение](../../2_mehaniki/razvedenie.md) · [Все палы](README.md)
+См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)

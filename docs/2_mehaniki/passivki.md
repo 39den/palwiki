@@ -1,6 +1,6 @@
 # Все пассивки
 
-Всего: 411. (ToSelf — на самого пала; ToOtomo — на палов отряда; «игрока» — на тебя, пока пал в отряде; ⭐М — бывает у мутации.)
+Всего: 411.
 
 ## Дьявольские руки (Demon’s Hand)
 - 🌈 ранг 5
@@ -36,7 +36,7 @@
 
 ## Демон-бог (Demon God)
 - 🟡 ранг 4
-- Атака +30% (ToSelf) Защита +5% (ToSelf)
+- Атака +30% Защита +5%
 
 ## Алмазное тело (Diamond Body)
 - 🟡 ранг 4
@@ -88,7 +88,7 @@
 
 ## Удачливый (Lucky)
 - 🟡 ранг 4
-- Атака +15% (ToSelf) Защита +15% (ToSelf) Скорость работы +20% (ToSelf)
+- Атака +15% Защита +15% Скорость работы +20%
 
 ## Царь-рыба (Lunker)
 - 🟡 ранг 4
@@ -104,7 +104,7 @@
 
 ## Виртуоз (Remarkable Craftsmanship)
 - 🟡 ранг 4
-- Скорость работы +75% (ToSelf)
+- Скорость работы +75%
 
 ## Спаситель (Savior)
 - 🟡 ранг 4
@@ -128,11 +128,11 @@
 
 ## Малое увеличение атаки ур.4 (Attack Up (S) Lv. 4)
 - 🟡 ранг 4
-- Атака +12% (ToSelf)
+- Атака +12%
 
 ## Увеличение атаки ур.4 (Attack Up Lv. 4)
 - 🟡 ранг 4
-- Атака +20% (ToSelf)
+- Атака +20%
 
 ## Кровь - это топливо (Blood Is Fuel)
 - 🟡 ранг 4
@@ -140,39 +140,39 @@
 
 ## Сокращение тёмного урона ур.4 (Dark Damage Reduction Lv. 4)
 - 🟡 ранг 4
-- ElementResist_Dark +35% (ToSelf)
+-  +35%
 
 ## Увеличение защиты ур.4 (Defense Up Lv. 4)
 - 🟡 ранг 4
-- Защита +25% (ToSelf)
+- Защита +25%
 
 ## Сокращение драконьего урона ур.4 (Dragon Damage Reduction Lv. 4)
 - 🟡 ранг 4
-- ElementResist_Dragon +35% (ToSelf)
+-  +35%
 
 ## Сокращение урона молнии ур.4 (Electric Damage Reduction Lv. 4)
 - 🟡 ранг 4
-- ElementResist_Electricity +35% (ToSelf)
+-  +35%
 
 ## Сокращение огненного урона ур.4 (Fire Damage Reduction Lv. 4)
 - 🟡 ранг 4
-- ElementResist_Fire +35% (ToSelf)
+-  +35%
 
 ## Сокращение травяного урона ур.4 (Grass Damage Reduction Lv. 4)
 - 🟡 ранг 4
-- ElementResist_Leaf +35% (ToSelf)
+-  +35%
 
 ## Сокращение земного урона ур.4 (Ground Damage Reduction Lv. 4)
 - 🟡 ранг 4
-- ElementResist_Earth +35% (ToSelf)
+-  +35%
 
 ## Увеличение HP ур.4 (Health Up Lv. 4)
 - 🟡 ранг 4
-- Макс. HP +25% (ToSelf)
+- Макс. HP +25%
 
 ## Сокращение ледяного урона ур.4 (Ice Damage Reduction Lv. 4)
 - 🟡 ранг 4
-- ElementResist_Ice +35% (ToSelf)
+-  +35%
 
 ## Объёмы лесозаготовки ур.5 (Logging Yield Up Lv. 5)
 - 🟡 ранг 4
@@ -184,55 +184,55 @@
 
 ## Сокращение нейтрального урона ур.4 (Neutral Damage Reduction Lv. 4)
 - 🟡 ранг 4
-- ElementResist_Normal +35% (ToSelf)
+-  +35%
 
 ## Увеличение атаки Пала ур.4 (Pal Attack Up Lv. 4)
 - 🟡 ранг 4
-- Атака +16% (ToOtomo)
+- Атака +16%
 
 ## Увеличение тёмного урона Палов ур.4 (Pal Dark Damage Enhancement Lv. 4)
 - 🟡 ранг 4
-- ElementBoost_Dark +20% (ToOtomo)
+-  +20%
 
 ## Увеличение защиты Пала ур.4 (Pal Defense Up Lv. 4)
 - 🟡 ранг 4
-- Защита +20% (ToOtomo)
+- Защита +20%
 
 ## Увеличение драконьего урона Палов ур.4 (Pal Dragon Damage Enhancement Lv. 4)
 - 🟡 ранг 4
-- ElementBoost_Dragon +20% (ToOtomo)
+-  +20%
 
 ## Увеличение грозового урона Палов ур.4 (Pal Electric Damage Enhancement Lv. 4)
 - 🟡 ранг 4
-- ElementBoost_Electricity +20% (ToOtomo)
+-  +20%
 
 ## Увеличение огненного урона Палов ур.4 (Pal Fire Damage Enhancement Lv. 4)
 - 🟡 ранг 4
-- ElementBoost_Fire +20% (ToOtomo)
+-  +20%
 
 ## Увеличение травяного урона Палов ур.4 (Pal Grass Damage Enhancement Lv. 4)
 - 🟡 ранг 4
-- ElementBoost_Leaf +20% (ToOtomo)
+-  +20%
 
 ## Увеличение земного урона Палов ур.4 (Pal Ground Damage Enhancement Lv. 4)
 - 🟡 ранг 4
-- ElementBoost_Earth +20% (ToOtomo)
+-  +20%
 
 ## Увеличение ледяного урона Палов ур.4 (Pal Ice Damage Enhancement Lv. 4)
 - 🟡 ранг 4
-- ElementBoost_Ice +20% (ToOtomo)
+-  +20%
 
 ## Увеличение нейтрального урона Палов ур.4 (Pal Neutral Damage Enhancement Lv. 4)
 - 🟡 ранг 4
-- ElementBoost_Normal +20% (ToOtomo)
+-  +20%
 
 ## Увеличение водного урона Палов ур.4 (Pal Water Damage Enhancement Lv. 4)
 - 🟡 ранг 4
-- ElementBoost_Water +20% (ToOtomo)
+-  +20%
 
 ## Ускоренная работа ур.4 (Speedy Worker Lv. 4)
 - 🟡 ранг 4
-- Скорость работы +25% (ToSelf)
+- Скорость работы +25%
 
 ## Ураганный нрав (Tempest Fury)
 - 🟡 ранг 4
@@ -240,7 +240,7 @@
 
 ## Сокращение водного урона ур.4 (Water Damage Reduction Lv. 4)
 - 🟡 ранг 4
-- ElementResist_Water +35% (ToSelf)
+-  +35%
 
 ## Уверенно плавает (Ace Swimmer)
 - ранг 3
@@ -248,7 +248,7 @@
 
 ## Мастеровитый (Artisan)
 - ранг 3
-- Скорость работы +50% (ToSelf)
+- Скорость работы +50%
 
 ## Крепкое тело (Burly Body)
 - ранг 3
@@ -276,7 +276,7 @@
 
 ## Свирепый (Ferocious)
 - ранг 3
-- Атака +20% (ToSelf)
+- Атака +20%
 
 ## Император огня (Flame Emperor)
 - ранг 3
@@ -364,75 +364,75 @@
 
 ## Малое увеличение атаки ур.3 (Attack Up (S) Lv. 3)
 - ранг 3
-- Атака +9% (ToSelf)
+- Атака +9%
 
 ## Увеличение атаки ур.3 (Attack Up Lv. 3)
 - ранг 3
-- Атака +15% (ToSelf)
+- Атака +15%
 
 ## Духовный лидер Братства Вечного Пламени (Brothers of the Eternal Pyre Soul Leader)
 - ранг 3
-- Атака +20% (ToSelf) MoveSpeed +10% (ToSelf)
+- Атака +20% MoveSpeed +10%
 
 ## Морозостойкость ур.3 (Cold Resistance Lv. 3)
 - ранг 3
-- TemperatureResist_Cold +3% (ToSelf)
+- TemperatureResist_Cold +3%
 
 ## Сокращение тёмного урона ур.3 (Dark Damage Reduction Lv. 3)
 - ранг 3
-- ElementResist_Dark +30% (ToSelf)
+-  +30%
 
 ## Увеличение защиты ур.3 (Defense Up Lv. 3)
 - ранг 3
-- Защита +20% (ToSelf)
+- Защита +20%
 
 ## Сокращение драконьего урона ур.3 (Dragon Damage Reduction Lv. 3)
 - ранг 3
-- ElementResist_Dragon +30% (ToSelf)
+-  +30%
 
 ## Сокращение земного урона ур.3 (Earth Damage Reduction Lv. 3)
 - ранг 3
-- ElementResist_Earth +30% (ToSelf)
+-  +30%
 
 ## Сокращение урона молнии ур.3 (Electric Damage Reduction Lv. 3)
 - ранг 3
-- ElementResist_Electricity +30% (ToSelf)
+-  +30%
 
 ## Сокращение огненного урона ур.3 (Fire Damage Reduction Lv. 3)
 - ранг 3
-- ElementResist_Fire +30% (ToSelf)
+-  +30%
 
 ## Учредитель Организации по Защите Палов (Free Pal Alliance Founder)
 - ранг 3
-- Атака +20% (ToSelf) MoveSpeed +10% (ToSelf)
+- Атака +20% MoveSpeed +10%
 
 ## Сокращение травяного урона ур.3 (Grass Damage Reduction Lv. 3)
 - ранг 3
-- ElementResist_Leaf +30% (ToSelf)
+-  +30%
 
 ## Увеличение HP ур.3 (Health Up Lv. 3)
 - ранг 3
-- Макс. HP +20% (ToSelf)
+- Макс. HP +20%
 
 ## Жаростойкость ур.3 (Heat Resistance Lv. 3)
 - ранг 3
-- TemperatureResist_Heat +3% (ToSelf)
+- TemperatureResist_Heat +3%
 
 ## Жаростойкость ур.3 / Морозостойкость ур.3 (Heat Resistance Lv. 3 / Cold Resistance Lv. 3)
 - ранг 3
-- TemperatureResist_Cold +3% (ToSelf) TemperatureResist_Heat +3% (ToSelf)
+- TemperatureResist_Cold +3% TemperatureResist_Heat +3%
 
 ## Сокращение ледяного урона ур.3 (Ice Damage Reduction Lv. 3)
 - ранг 3
-- ElementResist_Ice +30% (ToSelf)
+-  +30%
 
 ## Вождь Тэнраку (Jarl of Feybreak)
 - ранг 3
-- Атака +20% (ToSelf) MoveSpeed +10% (ToSelf)
+- Атака +20% MoveSpeed +10%
 
 ## Лидер общества Лунных цветов (Leader of the Moonflowers)
 - ранг 3
-- Атака +20% (ToSelf) MoveSpeed +10% (ToSelf)
+- Атака +20% MoveSpeed +10%
 
 ## Объёмы лесозаготовки ур.3 (Logging Yield Up Lv. 3)
 - ранг 3
@@ -448,7 +448,7 @@
 
 ## Увеличение макс. переносимого веса ур.3 (Max Carrying Capacity Lv. 3)
 - ранг 3
-- Переносимый вес +200 (ToTrainer)
+- Переносимый вес +200
 
 ## Объёмы добычи руды ур.3 (Mining Yield Up Lv. 3)
 - ранг 3
@@ -460,63 +460,63 @@
 
 ## Сокращение нейтрального урона ур.3 (Neutral Damage Reduction Lv. 3)
 - ранг 3
-- ElementResist_Normal +30% (ToSelf)
+-  +30%
 
 ## Начальник отряда Генетических Исследований (PAL Genetic Research Unit Commander)
 - ранг 3
-- Атака +20% (ToSelf) MoveSpeed +10% (ToSelf)
+- Атака +20% MoveSpeed +10%
 
 ## Офицер Общества Вигилантов острова Палпагос (PIDF Commander)
 - ранг 3
-- Атака +20% (ToSelf) MoveSpeed +10% (ToSelf)
+- Атака +20% MoveSpeed +10%
 
 ## Увеличение атаки Пала ур.3 (Pal Attack Up Lv. 3)
 - ранг 3
-- Атака +12% (ToOtomo)
+- Атака +12%
 
 ## Увеличение тёмного урона Палов ур.3 (Pal Dark Damage Enhancement Lv. 3)
 - ранг 3
-- ElementBoost_Dark +18% (ToOtomo)
+-  +18%
 
 ## Увеличение защиты Пала ур.3 (Pal Defense Up Lv. 3)
 - ранг 3
-- Защита +15% (ToOtomo)
+- Защита +15%
 
 ## Увеличение драконьего урона Палов ур.3 (Pal Dragon Damage Enhancement Lv. 3)
 - ранг 3
-- ElementBoost_Dragon +18% (ToOtomo)
+-  +18%
 
 ## Увеличение опыта Пала ур.3 (Pal EXP Up Lv. 3)
 - ранг 3
-- PalExp_Increase +50% (ToSelf)
+- PalExp_Increase +50%
 
 ## Увеличение грозового урона Палов ур.3 (Pal Electric Damage Enhancement Lv. 3)
 - ранг 3
-- ElementBoost_Electricity +18% (ToOtomo)
+-  +18%
 
 ## Увеличение огненного урона Палов ур.3 (Pal Fire Damage Enhancement Lv. 3)
 - ранг 3
-- ElementBoost_Fire +18% (ToOtomo)
+-  +18%
 
 ## Увеличение травяного урона Палов ур.3 (Pal Grass Damage Enhancement Lv. 3)
 - ранг 3
-- ElementBoost_Leaf +18% (ToOtomo)
+-  +18%
 
 ## Увеличение земного урона Палов ур.3 (Pal Ground Damage Enhancement Lv. 3)
 - ранг 3
-- ElementBoost_Earth +18% (ToOtomo)
+-  +18%
 
 ## Увеличение ледяного урона Палов ур.3 (Pal Ice Damage Enhancement Lv. 3)
 - ранг 3
-- ElementBoost_Ice +18% (ToOtomo)
+-  +18%
 
 ## Увеличение нейтрального урона Палов ур.3 (Pal Neutral Damage Enhancement Lv. 3)
 - ранг 3
-- ElementBoost_Normal +18% (ToOtomo)
+-  +18%
 
 ## Увеличение водного урона Палов ур. 3 (Pal Water Damage Enhancement Lv. 3)
 - ранг 3
-- ElementBoost_Water +18% (ToOtomo)
+-  +18%
 
 ## Офицер отряда Браконьеров Рейн (Rayne Syndicate Boss)
 - ранг 3
@@ -524,11 +524,11 @@
 
 ## Ускоренная работа ур.3 (Speedy Worker Lv. 3)
 - ранг 3
-- Скорость работы +20% (ToSelf)
+- Скорость работы +20%
 
 ## Сокращение водного урона ур.3 (Water Damage Reduction Lv. 3)
 - ранг 3
-- ElementResist_Water +30% (ToSelf)
+-  +30%
 
 ## Крупная рыбка (Whopper)
 - ранг 3
@@ -540,123 +540,123 @@
 
 ## Мистер мускул (Musclehead)
 - ранг 2
-- Атака +30% (ToSelf) Скорость работы -50% (ToSelf)
+- Атака +30% Скорость работы -50%
 
 ## Малое увеличение атаки ур.2 (Attack Up (S) Lv. 2)
 - ранг 2
-- Атака +6% (ToSelf)
+- Атака +6%
 
 ## Увеличение атаки ур.2 (Attack Up Lv. 2)
 - ранг 2
-- Атака +10% (ToSelf)
+- Атака +10%
 
 ## Морозостойкость ур.2 (Cold Resistance Lv. 2)
 - ранг 2
-- TemperatureResist_Cold +2% (ToSelf)
+- TemperatureResist_Cold +2%
 
 ## Сокращение тёмного урона ур.2 (Dark Damage Reduction Lv. 2)
 - ранг 2
-- ElementResist_Dark +25% (ToSelf)
+-  +25%
 
 ## Увеличение защиты ур.2 (Defense Up Lv. 2)
 - ранг 2
-- Защита +15% (ToSelf)
+- Защита +15%
 
 ## Сокращение драконьего урона ур.2 (Dragon Damage Reduction Lv. 2)
 - ранг 2
-- ElementResist_Dragon +25% (ToSelf)
+-  +25%
 
 ## Сокращение земного урона ур.2 (Earth Damage Reduction Lv. 2)
 - ранг 2
-- ElementResist_Earth +25% (ToSelf)
+-  +25%
 
 ## Сокращение урона молнии ур.2 (Electric Damage Reduction Lv. 2)
 - ранг 2
-- ElementResist_Electricity +25% (ToSelf)
+-  +25%
 
 ## Сокращение огненного урона ур.2 (Fire Damage Reduction Lv. 2)
 - ранг 2
-- ElementResist_Fire +25% (ToSelf)
+-  +25%
 
 ## Сокращение травяного урона ур.2 (Grass Damage Reduction Lv. 2)
 - ранг 2
-- ElementResist_Leaf +25% (ToSelf)
+-  +25%
 
 ## Увеличение HP ур.2 (Health Up Lv. 2)
 - ранг 2
-- Макс. HP +15% (ToSelf)
+- Макс. HP +15%
 
 ## Жаростойкость ур.2 (Heat Resistance Lv. 2)
 - ранг 2
-- TemperatureResist_Heat +2% (ToSelf)
+- TemperatureResist_Heat +2%
 
 ## Жаростойкость ур.2 / Морозостойкость ур.2 (Heat Resistance Lv. 2 / Cold Resistance Lv. 2)
 - ранг 2
-- TemperatureResist_Cold +2% (ToSelf) TemperatureResist_Heat +2% (ToSelf)
+- TemperatureResist_Cold +2% TemperatureResist_Heat +2%
 
 ## Сокращение ледяного урона ур.2 (Ice Damage Reduction Lv. 2)
 - ранг 2
-- ElementResist_Ice +25% (ToSelf)
+-  +25%
 
 ## Сокращение нейтрального урона ур.2 (Neutral Damage Reduction Lv. 2)
 - ранг 2
-- ElementResist_Normal +25% (ToSelf)
+-  +25%
 
 ## Увеличение атаки Пала ур.2 (Pal Attack Up Lv. 2)
 - ранг 2
-- Атака +8% (ToOtomo)
+- Атака +8%
 
 ## Увеличение тёмного урона Палов ур.2 (Pal Dark Damage Enhancement Lv. 2)
 - ранг 2
-- ElementBoost_Dark +12% (ToOtomo)
+-  +12%
 
 ## Увеличение защиты Пала ур.2 (Pal Defense Up Lv. 2)
 - ранг 2
-- Защита +10% (ToOtomo)
+- Защита +10%
 
 ## Увеличение драконьего урона Палов ур.2 (Pal Dragon Damage Enhancement Lv. 2)
 - ранг 2
-- ElementBoost_Dragon +12% (ToOtomo)
+-  +12%
 
 ## Увеличение опыта Пала ур.2 (Pal EXP Up Lv. 2)
 - ранг 2
-- PalExp_Increase +40% (ToSelf)
+- PalExp_Increase +40%
 
 ## Увеличение грозового урона Палов ур.2 (Pal Electric Damage Enhancement Lv. 2)
 - ранг 2
-- ElementBoost_Electricity +12% (ToOtomo)
+-  +12%
 
 ## Увеличение огненного урона Палов ур.2 (Pal Fire Damage Enhancement Lv. 2)
 - ранг 2
-- ElementBoost_Fire +12% (ToOtomo)
+-  +12%
 
 ## Увеличение травяного урона Палов ур.2 (Pal Grass Damage Enhancement Lv. 2)
 - ранг 2
-- ElementBoost_Leaf +12% (ToOtomo)
+-  +12%
 
 ## Увеличение земного урона Палов ур.2 (Pal Ground Damage Enhancement Lv. 2)
 - ранг 2
-- ElementBoost_Earth +12% (ToOtomo)
+-  +12%
 
 ## Увеличение ледяного урона Палов ур.2 (Pal Ice Damage Enhancement Lv. 2)
 - ранг 2
-- ElementBoost_Ice +12% (ToOtomo)
+-  +12%
 
 ## Увеличение нейтрального урона Палов ур.2 (Pal Neutral Damage Enhancement Lv. 2)
 - ранг 2
-- ElementBoost_Normal +12% (ToOtomo)
+-  +12%
 
 ## Увеличение водного урона Палов ур. 2 (Pal Water Damage Enhancement Lv. 2)
 - ранг 2
-- ElementBoost_Water +12% (ToOtomo)
+-  +12%
 
 ## Ускоренная работа ур.2 (Speedy Worker Lv. 2)
 - ранг 2
-- Скорость работы +15% (ToSelf)
+- Скорость работы +15%
 
 ## Сокращение водного урона ур.2 (Water Damage Reduction Lv. 2)
 - ранг 2
-- ElementResist_Water +25% (ToSelf)
+-  +25%
 
 ## Аномальный (Abnormal)
 - ранг 1
@@ -664,7 +664,7 @@
 
 ## Агрессивный (Aggressive)
 - ранг 1
-- Атака +10% (ToSelf) Защита -10% (ToSelf)
+- Атака +10% Защита -10%
 
 ## Драконья кровь (Blood of the Dragon)
 - ранг 1
@@ -676,7 +676,7 @@
 
 ## Отважный (Brave)
 - ранг 1
-- Атака +10% (ToSelf)
+- Атака +10%
 
 ## Конденсатор (Capacitor)
 - ранг 1
@@ -692,7 +692,7 @@
 
 ## Тщеславный (Conceited)
 - ранг 1
-- Скорость работы +10% (ToSelf) Защита -10% (ToSelf)
+- Скорость работы +10% Защита -10%
 
 ## Малоежка (Dainty Eater)
 - ранг 1
@@ -720,7 +720,7 @@
 
 ## Толстокожий (Hard Skin)
 - ранг 1
-- Защита +10% (ToSelf)
+- Защита +10%
 
 ## Горячее тело (Heated Body)
 - ранг 1
@@ -728,7 +728,7 @@
 
 ## Грубый (Hooligan)
 - ранг 1
-- Атака +15% (ToSelf) Скорость работы -10% (ToSelf)
+- Атака +15% Скорость работы -10%
 
 ## Играющий с водой (Hydromaniac)
 - ранг 1
@@ -748,7 +748,7 @@
 
 ## Мазохист (Masochist)
 - ранг 1
-- Защита +15% (ToSelf) Атака -15% (ToSelf)
+- Защита +15% Атака -15%
 
 ## Проворный (Nimble)
 - ранг 1
@@ -772,11 +772,11 @@
 
 ## Садист (Sadist)
 - ранг 1
-- Атака +15% (ToSelf) Защита -15% (ToSelf)
+- Атака +15% Защита -15%
 
 ## Старательный (Serious)
 - ранг 1
-- Скорость работы +20% (ToSelf)
+- Скорость работы +20%
 
 ## Изящное плавание (Sleek Stroke)
 - ранг 1
@@ -800,7 +800,7 @@
 
 ## Корпоративный раб (Work Slave)
 - ранг 1
-- Скорость работы +30% (ToSelf) Атака -30% (ToSelf)
+- Скорость работы +30% Атака -30%
 
 ## Рывок в воздухе +1 (Aerial Dash +1)
 - ранг 1
@@ -820,515 +820,515 @@
 
 ## Малое увеличение атаки ур.1 (Attack Up (S) Lv. 1)
 - ранг 1
-- Атака +3% (ToSelf)
+- Атака +3%
 
 ## Увеличение атаки ур.1 (Attack Up Lv. 1)
 - ранг 1
-- Атака +5% (ToSelf)
+- Атака +5%
 
 ## Увеличение силы захвата +1 (Capture Strength +1)
 - ранг 1
-- CaptureLevel +1% (ToSelf)
+- CaptureLevel +1%
 
 ## Увеличение силы захвата +2 (Capture Strength +2)
 - ранг 1
-- CaptureLevel +2% (ToSelf)
+- CaptureLevel +2%
 
 ## Увеличение силы захвата +3 (Capture Strength +3)
 - ранг 1
-- CaptureLevel +3% (ToSelf)
+- CaptureLevel +3%
 
 ## Увеличение силы захвата +4 (Capture Strength +4)
 - ранг 1
-- CaptureLevel +4% (ToSelf)
+- CaptureLevel +4%
 
 ## Увеличение силы захвата +5 (Capture Strength +5)
 - ранг 1
-- CaptureLevel +5% (ToSelf)
+- CaptureLevel +5%
 
 ## Увеличение силы захвата +6 (Capture Strength +6)
 - ранг 1
-- CaptureLevel +6% (ToSelf)
+- CaptureLevel +6%
 
 ## Морозостойкость ур.1 (Cold Resistance Lv. 1)
 - ранг 1
-- TemperatureResist_Cold +1% (ToSelf)
+- TemperatureResist_Cold +1%
 
 ## Большое увеличение тёмного урона (Dark Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Dark +3% (ToOtomo)
+-  +3%
 
 ## Среднее увеличение тёмного урона (Dark Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Dark +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение тёмного урона (Dark Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Dark +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение тёмного урона (Dark Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Dark +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение тёмного урона (Dark Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Dark +2% (ToOtomo)
+-  +2%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение тёмного урона (Dark Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dark +1% (ToOtomo)
+-  +1%
 
 ## Сокращение тёмного урона ур.1 (Dark Damage Reduction Lv. 1)
 - ранг 1
-- ElementResist_Dark +15% (ToSelf)
+-  +15%
 
 ## Увеличение защиты ур.1 (Defense Up Lv. 1)
 - ранг 1
-- Защита +10% (ToSelf)
+- Защита +10%
 
 ## Большое увеличение драконьего урона (Dragon Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Dragon +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение драконьего урона (Dragon Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Dragon +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение драконьего урона (Dragon Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Dragon +3% (ToOtomo)
+-  +3%
 
 ## Среднее увеличение драконьего урона (Dragon Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Dragon +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение драконьего урона (Dragon Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Dragon +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение драконьего урона (Dragon Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Dragon +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение драконьего урона (Dragon Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Dragon +2% (ToOtomo)
+-  +2%
 
 ## Малое увеличение драконьего урона (Dragon Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dragon +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение драконьего урона (Dragon Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dragon +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение драконьего урона (Dragon Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dragon +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение драконьего урона (Dragon Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Dragon +1% (ToOtomo)
+-  +1%
 
 ## Сокращение драконьего урона ур.1 (Dragon Damage Reduction Lv. 1)
 - ранг 1
-- ElementResist_Dragon +15% (ToSelf)
+-  +15%
 
 ## Сокращение земного урона ур.1 (Earth Damage Reduction Lv. 1)
 - ранг 1
-- ElementResist_Earth +15% (ToSelf)
+-  +15%
 
 ## Большое увеличение урона молнией (Electric Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Electricity +3% (ToOtomo)
+-  +3%
 
 ## Среднее увеличение урона молнией (Electric Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Electricity +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение грозового урона (Electric Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Electricity +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение грозового урона (Electric Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Electricity +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение грозового урона (Electric Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Electricity +2% (ToOtomo)
+-  +2%
 
 ## Малое увеличение урона молнией (Electric Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Electricity +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение грозового урона (Electric Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Electricity +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение грозового урона (Electric Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Electricity +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение грозового урона (Electric Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Electricity +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение грозового урона (Electric Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Electricity +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение грозового урона (Electric Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Electricity +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение грозового урона (Electric Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Electricity +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение грозового урона (Electric Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Electricity +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение грозового урона (Electric Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Electricity +1% (ToOtomo)
+-  +1%
 
 ## Сокращение урона молнии ур.1 (Electric Damage Reduction Lv. 1)
 - ранг 1
-- ElementResist_Electricity +15% (ToSelf)
+-  +15%
 
 ## Иммунитет к урону от взрывов (Explosion Immunity)
 - ранг 1
-- Defuser_ExplosiveSpore +1% (ToSelf) Defuser_ExplosiveSpore +1% (ToOtomo) ExplosionResist +100% (ToSelf) ExplosionResist +100% (ToOtomo)
+- Defuser_ExplosiveSpore +1% Defuser_ExplosiveSpore +1% ExplosionResist +100% ExplosionResist +100%
 
 ## Увеличение времени неуязвимости при уклонении (Extended Dodge Invincibility)
 - ранг 1
-- AvoidDurationUp_EquipSkill +20% (ToSelf)
+- AvoidDurationUp_EquipSkill +20%
 
 ## Большое увеличение огненного урона (Fire Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Fire +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение огненного урона (Fire Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Fire +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение огненного урона (Fire Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Fire +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение огненного урона (Fire Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Fire +3% (ToOtomo)
+-  +3%
 
 ## Среднее увеличение огненного урона (Fire Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Fire +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение огненного урона (Fire Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Fire +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение огненного урона (Fire Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Fire +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение огненного урона (Fire Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Fire +2% (ToOtomo)
+-  +2%
 
 ## Малое увеличение огненного урона (Fire Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Fire +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение огненного урона (Fire Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Fire +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение огненного урона (Fire Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Fire +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение огненного урона (Fire Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Fire +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение огненного урона (Fire Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Fire +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение огненного урона (Fire Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Fire +1% (ToOtomo)
+-  +1%
 
 ## Сокращение огненного урона ур.1 (Fire Damage Reduction Lv. 1)
 - ранг 1
-- ElementResist_Fire +15% (ToSelf)
+-  +15%
 
 ## Большое увеличение травяного урона (Grass Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Leaf +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение травяного урона (Grass Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Leaf +3% (ToOtomo)
+-  +3%
 
 ## Среднее увеличение травяного урона (Grass Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Leaf +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение травяного урона (Grass Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Leaf +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение травяного урона (Grass Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Leaf +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение травяного урона (Grass Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Leaf +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение травяного урона (Grass Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Leaf +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение травяного урона (Grass Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Leaf +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение травяного урона (Grass Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Leaf +2% (ToOtomo)
+-  +2%
 
 ## Малое увеличение травяного урона (Grass Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Leaf +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение травяного урона (Grass Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Leaf +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение травяного урона (Grass Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Leaf +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение травяного урона (Grass Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Leaf +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение травяного урона (Grass Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Leaf +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение травяного урона (Grass Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Leaf +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение травяного урона (Grass Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Leaf +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение травяного урона (Grass Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Leaf +1% (ToOtomo)
+-  +1%
 
 ## Сокращение травяного урона ур.1 (Grass Damage Reduction Lv. 1)
 - ранг 1
-- ElementResist_Leaf +15% (ToSelf)
+-  +15%
 
 ## Большое увеличение земного урона (Ground Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Earth +3% (ToOtomo)
+-  +3%
 
 ## Среднее увеличение земного урона (Ground Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Earth +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение земного урона (Ground Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Earth +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение земного урона (Ground Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Earth +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение земного урона (Ground Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Earth +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение земного урона (Ground Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Earth +2% (ToOtomo)
+-  +2%
 
 ## Малое увеличение земного урона (Ground Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Earth +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение земного урона (Ground Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Earth +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение земного урона (Ground Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Earth +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение земного урона (Ground Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Earth +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение земного урона (Ground Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Earth +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение земного урона (Ground Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Earth +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение земного урона (Ground Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Earth +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение земного урона (Ground Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Earth +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение земного урона (Ground Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Earth +1% (ToOtomo)
+-  +1%
 
 ## Увеличение HP ур.1 (Health Up Lv. 1)
 - ранг 1
-- Макс. HP +10% (ToSelf)
+- Макс. HP +10%
 
 ## Жаростойкость ур.1 (Heat Resistance Lv. 1)
 - ранг 1
-- TemperatureResist_Heat +1% (ToSelf)
+- TemperatureResist_Heat +1%
 
 ## Жаростойкость ур.1 / Морозостойкость ур.1 (Heat Resistance Lv. 1 / Cold Resistance Lv. 1)
 - ранг 1
-- TemperatureResist_Cold +1% (ToSelf) TemperatureResist_Heat +1% (ToSelf)
+- TemperatureResist_Cold +1% TemperatureResist_Heat +1%
 
 ## Большое увеличение ледяного урона (Ice Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Ice +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение ледяного урона (Ice Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Ice +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение ледяного урона (Ice Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Ice +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение ледяного урона (Ice Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Ice +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение ледяного урона (Ice Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Ice +3% (ToOtomo)
+-  +3%
 
 ## Среднее увеличение ледяного урона (Ice Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Ice +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение ледяного урона (Ice Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Ice +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение ледяного урона (Ice Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Ice +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение ледяного урона (Ice Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Ice +2% (ToOtomo)
+-  +2%
 
 ## Малое увеличение ледяного урона (Ice Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Ice +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение ледяного урона (Ice Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Ice +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение ледяного урона (Ice Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Ice +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение ледяного урона (Ice Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Ice +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение ледяного урона (Ice Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Ice +1% (ToOtomo)
+-  +1%
 
 ## Сокращение ледяного урона ур.1 (Ice Damage Reduction Lv. 1)
 - ранг 1
-- ElementResist_Ice +15% (ToSelf)
+-  +15%
 
 ## Дополнительный прыжок +1 (Jump Count Increase +1)
 - ранг 1
@@ -1356,11 +1356,11 @@
 
 ## Увеличение макс. переносимого веса ур.1 (Max Carrying Capacity Lv. 1)
 - ранг 1
-- Переносимый вес +50 (ToTrainer)
+- Переносимый вес +50
 
 ## Увеличение макс. переносимого веса ур.2 (Max Carrying Capacity Lv. 2)
 - ранг 1
-- Переносимый вес +150 (ToTrainer)
+- Переносимый вес +150
 
 ## Объёмы добычи руды ур.1 (Mining Yield Up Lv. 1)
 - ранг 1
@@ -1372,99 +1372,99 @@
 
 ## Большое увеличение нейтрального урона (Neutral Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Normal +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение нейтрального урона (Neutral Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Normal +3% (ToOtomo)
+-  +3%
 
 ## Среднее увеличение нейтрального урона (Neutral Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Normal +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение нейтрального урона (Neutral Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Normal +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение нейтрального урона (Neutral Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Normal +2% (ToOtomo)
+-  +2%
 
 ## Малое увеличение нейтрального урона (Neutral Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Normal +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение нейтрального урона (Neutral Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Normal +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение нейтрального урона (Neutral Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Normal +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение нейтрального урона (Neutral Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Normal +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение нейтрального урона (Neutral Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Normal +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение нейтрального урона (Neutral Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Normal +1% (ToOtomo)
+-  +1%
 
 ## Сокращение нейтрального урона ур.1 (Neutral Damage Reduction Lv. 1)
 - ранг 1
-- ElementResist_Normal +15% (ToSelf)
+-  +15%
 
 ## Увеличение атаки Пала ур.1 (Pal Attack Up Lv. 1)
 - ранг 1
-- Атака +4% (ToOtomo)
+- Атака +4%
 
 ## Увеличение тёмного урона Палов ур. 1 (Pal Dark Damage Enhancement Lv. 1)
 - ранг 1
-- ElementBoost_Dark +6% (ToOtomo)
+-  +6%
 
 ## Увеличение защиты Пала ур.1 (Pal Defense Up Lv. 1)
 - ранг 1
-- Защита +5% (ToOtomo)
+- Защита +5%
 
 ## Увеличение драконьего урона Палов ур. 1 (Pal Dragon Damage Enhancement Lv. 1)
 - ранг 1
-- ElementBoost_Dragon +6% (ToOtomo)
+-  +6%
 
 ## Увеличение опыта Пала ур.1 (Pal EXP Up Lv. 1)
 - ранг 1
-- PalExp_Increase +30% (ToSelf)
+- PalExp_Increase +30%
 
 ## Увеличение грозового урона Палов ур.1 (Pal Electric Damage Enhancement Lv. 1)
 - ранг 1
-- ElementBoost_Electricity +6% (ToOtomo)
+-  +6%
 
 ## Увеличение огненного урона Палов ур.1 (Pal Fire Damage Enhancement Lv. 1)
 - ранг 1
-- ElementBoost_Fire +6% (ToOtomo)
+-  +6%
 
 ## Увеличение травяного урона Палов ур.1 (Pal Grass Damage Enhancement Lv. 1)
 - ранг 1
-- ElementBoost_Leaf +6% (ToOtomo)
+-  +6%
 
 ## Увеличение земного урона Палов ур. 1 (Pal Ground Damage Enhancement Lv. 1)
 - ранг 1
-- ElementBoost_Earth +6% (ToOtomo)
+-  +6%
 
 ## Увеличение ледяного урона Палов ур.1 (Pal Ice Damage Enhancement Lv. 1)
 - ранг 1
-- ElementBoost_Ice +6% (ToOtomo)
+-  +6%
 
 ## Увеличение нейтрального урона Палов ур. 1 (Pal Neutral Damage Enhancement Lv. 1)
 - ранг 1
-- ElementBoost_Normal +6% (ToOtomo)
+-  +6%
 
 ## Увеличение водного урона Палов ур. 1 (Pal Water Damage Enhancement Lv. 1)
 - ранг 1
-- ElementBoost_Water +6% (ToOtomo)
+-  +6%
 
 ## Щедрая доля (Sharing is Caring)
 - ранг 1
@@ -1472,91 +1472,91 @@
 
 ## Ускоренная работа ур.1 (Speedy Worker Lv. 1)
 - ранг 1
-- Скорость работы +10% (ToSelf)
+- Скорость работы +10%
 
 ## Искривление траектории сферы +1 (Sphere Curve +1)
 - ранг 1
-- CurveType +7% (ToSelf)
+- CurveType +7%
 
 ## Самонаведение сферы (Sphere Homing)
 - ранг 1
-- CurveType +19% (ToSelf)
+- CurveType +19%
 
 ## Дальность полёта сферы +1 (Sphere Range +1)
 - ранг 1
-- CurveType +1% (ToSelf)
+- CurveType +1%
 
 ## Дальность полёта сферы +2 (Sphere Range +2)
 - ранг 1
-- CurveType +2% (ToSelf)
+- CurveType +2%
 
 ## Отклонение траектории сферы (Sphere Slider)
 - ранг 1
-- CurveType +8% (ToSelf)
+- CurveType +8%
 
 ## Вес сфер +1 (Sphere Weight +1)
 - ранг 1
-- CurveType +16% (ToSelf)
+- CurveType +16%
 
 ## Иммунитет к урону от ядовитого газа (Toxic Gas Immunity)
 - ранг 1
-- InvalidToxicGas +0% (ToSelf) InvalidToxicGas +0% (ToOtomo)
+- InvalidToxicGas +0% InvalidToxicGas +0%
 
 ## Большое увеличение водного урона (Water Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Water +3% (ToOtomo)
+-  +3%
 
 ## Большое увеличение водного урона (Water Damage Enhancement (Large))
 - ранг 1
-- ElementBoost_Water +3% (ToOtomo)
+-  +3%
 
 ## Среднее увеличение водного урона (Water Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Water +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение водного урона (Water Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Water +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение водного урона (Water Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Water +2% (ToOtomo)
+-  +2%
 
 ## Среднее увеличение водного урона (Water Damage Enhancement (Medium))
 - ранг 1
-- ElementBoost_Water +2% (ToOtomo)
+-  +2%
 
 ## Малое увеличение водного урона (Water Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Water +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение водного урона (Water Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Water +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение водного урона (Water Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Water +1% (ToOtomo)
+-  +1%
 
 ## Малое увеличение водного урона (Water Damage Enhancement (Small))
 - ранг 1
-- ElementBoost_Water +1% (ToOtomo)
+-  +1%
 
 ## Сокращение водного урона ур.1 (Water Damage Reduction Lv. 1)
 - ранг 1
-- ElementResist_Water +15% (ToSelf)
+-  +15%
 
 ## Неуклюжий (Clumsy)
 - особая/снаряжение
-- Скорость работы -10% (ToSelf)
+- Скорость работы -10%
 
 ## Трусливый (Coward)
 - особая/снаряжение
-- Атака -10% (ToSelf)
+- Атака -10%
 
 ## Мягкотелый (Downtrodden)
 - особая/снаряжение
-- Защита -10% (ToSelf)
+- Защита -10%
 
 ## Неторопливый (Easygoing)
 - особая/снаряжение
@@ -1588,43 +1588,43 @@
 
 ## Священная защита (Hallowed Guard)
 - особая/снаряжение
-- ForYakushimaDefenceRate +30% (ToSelf)
+- ForYakushimaDefenceRate +30%
 
 ## Священная сила: ближний бой (Hallowed Power: Close Range)
 - особая/снаряжение
-- DamageUpIfEquipped_YakushimaMeleeWeapon +20% (ToSelf)
+- DamageUpIfEquipped_YakushimaMeleeWeapon +20%
 
 ## Священная сила: магия (Hallowed Power: Magic)
 - особая/снаряжение
-- DamageUpIfEquipped_YakushimaMagicWeapon +20% (ToSelf)
+- DamageUpIfEquipped_YakushimaMagicWeapon +20%
 
 ## Священная сила: дальний бой (Hallowed Power: Ranged)
 - особая/снаряжение
-- DamageUpIfEquipped_YakushimaRangedWeapon +20% (ToSelf)
+- DamageUpIfEquipped_YakushimaRangedWeapon +20%
 
 ## Священная сила: призыв (Hallowed Power: Summon)
 - особая/снаряжение
-- DamageUpIfEquipped_YakushimaSummonWeapon +20% (ToSelf)
+- DamageUpIfEquipped_YakushimaSummonWeapon +20%
 
 ## Увеличение макс. переносимого веса ур.1 (Max Carrying Capacity Lv. 1)
 - особая/снаряжение
-- Переносимый вес +50 (ToSelf)
+- Переносимый вес +50
 
 ## Увеличение макс. переносимого веса ур.2 (Max Carrying Capacity Lv. 2)
 - особая/снаряжение
-- Переносимый вес +100 (ToSelf)
+- Переносимый вес +100
 
 ## Увеличение макс. переносимого веса ур.3 (Max Carrying Capacity Lv. 3)
 - особая/снаряжение
-- Переносимый вес +200 (ToSelf)
+- Переносимый вес +200
 
 ## Увеличение макс. переносимого веса ур.4 (Max Carrying Capacity Lv. 4)
 - особая/снаряжение
-- Переносимый вес +300 (ToSelf)
+- Переносимый вес +300
 
 ## Ускорение роста доверия у Палов в команде (Party Pal Trust Boost)
 - особая/снаряжение · ⭐М
-- FriendshipPoint_Increase +50% (ToOtomo)
+- FriendshipPoint_Increase +50%
 
 ## Бездонный желудок (Bottomless Stomach)
 - -2
@@ -1636,12 +1636,12 @@
 
 ## Хрупкие кости (Brittle)
 - -3
-- Защита -20% (ToSelf)
+- Защита -20%
 
 ## Бегущий от проблем (Pacifist)
 - -3
-- Атака -20% (ToSelf)
+- Атака -20%
 
 ## Халтурщик (Slacker)
 - -3
-- Скорость работы -30% (ToSelf)
+- Скорость работы -30%

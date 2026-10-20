@@ -28,7 +28,7 @@
 - Транспортировка — ур. 1
 
 ## Партнёрский навык: Пылающая комната
-Пока находится в команде, Финсайдер Игнис берёт на себя часть груза, снижая вес оружия в инвентаре на (60~100)% . Кроме того, урон игрока и Пала при поражении элементальной слабости врага с помощью Огонь увеличивается на (25~40)% . (Эффект не суммируется) Lv. Skill 1 Атака +30% (ToTrainer) ElementWater 1 (ToTrainer) 2 Атака +35% (ToTrainer) ElementWater 1 (ToTrainer) 3 Атака +40% (ToTrainer) ElementWater 1 (ToTrainer) 4 Атака +45% (ToTrainer) ElementWater 1 (ToTrainer) 5 Атака +50% (ToTrainer) ElementWater 1 (ToTrainer) level value 1 ItemWeightReduction_Gun_PartnerSkill 60 ElementBoostWeakness_Fire_PartnerSkill 25 2 ItemWeightReduction_Gun_PartnerSkill 70 ElementBoostWeakness_Fire_PartnerSkill 27 3 ItemWeightReduction_Gun_PartnerSkill 80 ElementBoostWeakness_Fire_PartnerSkill 30 4 ItemWeightReduction_Gun_PartnerSkill 90 ElementBoostWeakness_Fire_PartnerSkill 34 5 ItemWeightReduction_Gun_PartnerSkill 100 ElementBoostWeakness_Fire_PartnerSkill 40
+Пока находится в команде, Финсайдер Игнис берёт на себя часть груза, снижая вес оружия в инвентаре на (60~100)% . Кроме того, урон игрока и Пала при поражении элементальной слабости врага с помощью Огонь увеличивается на (25~40)% . (Эффект не суммируется)
 
 ## Атаки по уровням
 - ур. 1: Огненный выстрел (Огонь, сила 40)
@@ -67,4 +67,4 @@
 
 > Руку можно засовывать ему в пасть сколько угодно глубоко — внутри пусто. Один исследователь решил, что это, возможно, карманное измерение, и попытался целиком в него залезть, как в спальный мешок. Но Пала начало тошнить — видимо, это всё-таки его внутренности.
 
-См. также: [Стихии](../../2_mehaniki/stihii.md) · [Разведение](../../2_mehaniki/razvedenie.md) · [Все палы](README.md)
+См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)

@@ -27,7 +27,7 @@
 - Добыча — ур. 6
 
 ## Партнёрский навык: Золотой скорпион
-Пока находится в команде, защита игрока увеличивается на (5~10)% , а количество добычи при победе над Палами Молния элемента увеличивается на (40~80)% . (Эффект не суммируется) level value 1 ElementAddDrop_Thunder_1_PAL 40, 40 TrainerDEF_UP_PartnerSkill_Otomo 5 2 ElementAddDrop_Thunder_2_PAL 50, 50 TrainerDEF_UP_PartnerSkill_Otomo 6 3 ElementAddDrop_Thunder_3_PAL 60, 60 TrainerDEF_UP_PartnerSkill_Otomo 7 4 ElementAddDrop_Thunder_4_PAL 70, 70 TrainerDEF_UP_PartnerSkill_Otomo 8 5 ElementAddDrop_Thunder_5_PAL 80, 80 TrainerDEF_UP_PartnerSkill_Otomo 10
+Пока находится в команде, защита игрока увеличивается на (5~10)% , а количество добычи при победе над Палами Молния элемента увеличивается на (40~80)% . (Эффект не суммируется) level value 1 , 40 TrainerDEF_UP_PartnerSkill_Otomo 5 2 , 50 TrainerDEF_UP_PartnerSkill_Otomo 6 3 , 60 TrainerDEF_UP_PartnerSkill_Otomo 7 4 , 70 TrainerDEF_UP_PartnerSkill_Otomo 8 5 , 80 TrainerDEF_UP_PartnerSkill_Otomo 10
 
 ## Атаки по уровням
 - ур. 1: Грязевой выстрел (Земля, сила 40)
@@ -66,4 +66,4 @@
 
 > Их настоящее тело — сгусток энергии, а внутри лишь пустота. Наполняя свой панцирь землёй и минералами, они приобретают колоссальную массу. Тот, кто попадёт под их удар, может лишь стонать, словно в аду.
 
-См. также: [Стихии](../../2_mehaniki/stihii.md) · [Разведение](../../2_mehaniki/razvedenie.md) · [Все палы](README.md)
+См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)

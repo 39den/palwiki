@@ -28,7 +28,7 @@
 - Транспортировка — ур. 1
 
 ## Партнёрский навык: Сверкающий носильщик
-Пока находится в команде, снижает вес Сера и Уголь на (80~100)% , а также увеличивает урон игрока и Пала при поражении элементальной слабости врага с помощью Земля на (25~40)% . (Эффект не суммируется) level value 1 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 80 ElementBoostWeakness_Earth_PartnerSkill 25 2 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 84 ElementBoostWeakness_Earth_PartnerSkill 27 3 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 88 ElementBoostWeakness_Earth_PartnerSkill 30 4 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 92 ElementBoostWeakness_Earth_PartnerSkill 34 5 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 100 ElementBoostWeakness_Earth_PartnerSkill 40
+Пока находится в команде, снижает вес Сера и Уголь на (80~100)% , а также увеличивает урон игрока и Пала при поражении элементальной слабости врага с помощью Земля на (25~40)% . (Эффект не суммируется) level value 1 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 80  2 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 84  3 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 88  4 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 92  5 ItemWeightReduction_PartnerSkill_TentacleTurtle_Ground 100
 
 ## Атаки по уровням
 - ур. 1: Грязевой выстрел (Земля, сила 40)
@@ -68,4 +68,4 @@
 
 > Чтобы защитить своё уязвимое тело, он обзавёлся прочным панцирем. Большая часть его осязания сосредоточена в лапах и панцире, и если тайком прикоснуться к самому телу, он этого даже не почувствует.
 
-См. также: [Стихии](../../2_mehaniki/stihii.md) · [Разведение](../../2_mehaniki/razvedenie.md) · [Все палы](README.md)
+См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
