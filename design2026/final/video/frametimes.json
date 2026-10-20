@@ -1,0 +1,44 @@
+{
+ "scroll_reveal_mobile": {
+  "frames": 239,
+  "avg": 16.7,
+  "max": 16.8,
+  "over33": 0,
+  "over50": 0
+ },
+ "scroll_reveal_desktop": {
+  "frames": 239,
+  "avg": 16.7,
+  "max": 16.8,
+  "over33": 0,
+  "over50": 0
+ },
+ "hover_tilt_desktop": {
+  "frames": 239,
+  "avg": 17.5,
+  "max": 50,
+  "over33": 2,
+  "over50": 0
+ },
+ "search_open_desktop": {
+  "frames": 239,
+  "avg": 24.8,
+  "max": 50.1,
+  "over33": 20,
+  "over50": 2
+ },
+ "theme_switch_mobile": {
+  "frames": 239,
+  "avg": 16.7,
+  "max": 16.8,
+  "over33": 0,
+  "over50": 0
+ },
+ "search_open_mobile": {
+  "frames": 239,
+  "avg": 16.7,
+  "max": 16.8,
+  "over33": 0,
+  "over50": 0
+ }
+}

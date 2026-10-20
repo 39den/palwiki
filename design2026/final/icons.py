@@ -30,3 +30,5 @@ I={
 'bolt2':'<path d="M4 14h4l2-6 4 12 2-6h4"/>',
 }
 def ic(n,s=20,cls='i'): return f'<svg class="{cls}" width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{I[n]}</svg>'
+I['moon']='<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>'
+I['raid']='<path d="M12 3 4 7v5c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7z"/><path d="M9 12l2 2 4-4"/>'

@@ -490,3 +490,4 @@ html.mapfull article h1,html.mapfull .map-note{display:none}html.mapfull .md-foo
 .cx-els .el:nth-child(n+2){display:none}.cx-els .el{font-size:0;width:10px;height:10px;padding:0;border-radius:50%;min-height:0}
 .cx-pal .cx-chg{position:absolute;inset:0;width:auto;min-height:0;opacity:0;margin:0}.cx-swap{width:36px;height:36px}.cx-pal.cx-empty{min-height:0;height:48px;flex-direction:row}}
 .fimg{width:48px;height:48px;object-fit:contain;flex:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3))}
+.js .md-typeset .tabbed-set>.tabbed-labels{position:-webkit-sticky;position:sticky}

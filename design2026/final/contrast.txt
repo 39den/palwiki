@@ -1,32 +1,27 @@
-light ink on bg 15.0
-light ink on bg2 13.6
-light ink on card 16.3
-light mu on bg 6.9
-light mu on bg2 6.2
-light mu on card 7.5
-light red on bg 6.0
-light red on bg2 5.4
-light red on card 6.5
-light chip text on #f2c200 14.8
-light chip text on #3fb950 13.9
-light chip text on #5cc8ef 14.5
-light chip text on #8b5cf6 13.0
-dark ink on bg 16.5
-dark ink on bg2 15.3
-dark ink on card 14.7
-dark mu on bg 8.9
-dark mu on bg2 8.2
-dark mu on card 7.9
-dark red on bg 6.8
-dark red on bg2 6.3
-dark red on card 6.0
-dark chip text on #f2c200 9.9
-dark chip text on #3fb950 10.8
-dark chip text on #5cc8ef 10.0
-dark chip text on #8b5cf6 12.0
-white on red button  5.0
-hero body #e9eef2 on overlay rgba(8,20,30,.6) over light sky #bfe3f7 (worst) 5.1
-hero h1 white on overlay .5 over sky 4.4
-b-ai body #c9d2d9 on #13202a 10.8
-boss text #c9d2d9 on #0b0f14 12.5 boss label #aab4bd 9.1
-r5 small #5c4400 on #ffe08f 7.1
+ 13.2  OK   light: ink on bg2 (worst surface)
+  6.1  OK   light: mu on bg2 (worst surface)
+  5.3  OK   light: red on bg2 (worst surface)
+ 14.8  OK   light: chip text on element #f2c200
+ 13.9  OK   light: chip text on element #3fb950
+ 14.5  OK   light: chip text on element #5cc8ef
+ 13.0  OK   light: chip text on element #8b5cf6
+ 13.5  OK   light: chip text on element #ff6a2b
+ 15.1  OK   dark: ink on bg2 (worst surface)
+  8.2  OK   dark: mu on bg2 (worst surface)
+  6.8  OK   dark: red on bg2 (worst surface)
+ 10.0  OK   dark: chip text on element #f2c200
+ 10.9  OK   dark: chip text on element #3fb950
+ 10.1  OK   dark: chip text on element #5cc8ef
+ 12.1  OK   dark: chip text on element #8b5cf6
+ 11.6  OK   dark: chip text on element #ff6a2b
+  5.0  OK   white on red button #d42b22
+ 12.3  OK   hero p #e8eef2 on mobile gradient .82 over meadow #4d9a6a
+  5.4  OK   hero p #e8eef2 desktop: gradient .6 over sky #9fd6f3 (right edge of text)
+  6.4  OK   hero h1 white desktop .6 over sky (large text, needs 3)
+ 12.9  OK   map legend #dfe6ea on #0f2231
+ 14.4  OK   ai body #13202a on #f3efe6
+ 12.9  OK   boss sub #d8d0cb on #0e0a09
+  8.2  OK   boss small #b9b0aa on .06 white over #0e0a09
+ 11.3  OK   boss eyebrow #ffb38a on #0e0a09
+  6.5  OK   r4 small #5c4400 on #ffd27a
+  6.8  OK   footer mu on bg light
