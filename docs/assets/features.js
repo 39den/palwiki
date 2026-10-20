@@ -7,14 +7,17 @@ const lists=()=>{const L=LS.get('pw_lists',null)||{'Избранное':LS.get('
 const saveL=L=>{LS.set('pw_lists',L);LS.set('pw_fav',L['Избранное']||[]);};
 window.PW_lists={lists,saveL};
 /* ---------- breeding ---------- */
-function breedCore(D){const BR=D.pals.filter(p=>p.rank&&!p.collab);const UQ={};D.pals.forEach(p=>{if(p.up)UQ[p.up.slice().sort().join('|')]=p;});const kids=new Set(Object.values(UQ).map(p=>p.ru));
+function breedCore(D){if(D.BJ){const J=D.BJ,ix={};J.pals.forEach((x,i)=>ix[x.ru]=i);const by=n=>D.pals.find(p=>p.ru==n)||{ru:n};const sp={};J.special.forEach(x=>sp[[x.a,x.b].sort().join('|')]=x.child);
+  const breed=(a,b)=>{const k=sp[[a.ru,b.ru].sort().join('|')];if(k)return [by(k),'особая пара'];const i=ix[a.ru],j=ix[b.ru];if(i==null||j==null)return [a,'нет данных'];const c=J.pairs[Math.min(i,j)+','+Math.max(i,j)];return [by(J.pals[c].ru),a.ru==b.ru?'тот же вид':'по рангам разведения'];};
+  const parents=(ch,lim=30)=>{const o=[];J.special.forEach(x=>{if(x.child==ch.ru)o.push([x.a,x.b]);});const t=ix[ch.ru];if(!o.length)for(const k in J.pairs)if(J.pairs[k]==t){const [i,j]=k.split(',').map(Number);if(i!=t&&j!=t)o.push([J.pals[i].ru,J.pals[j].ru]);}
+   const pop=n=>(D.pals.find(x=>x.ru==n)||{rarity:9}).rarity;o.sort((x,y)=>pop(x[0])+pop(x[1])-pop(y[0])-pop(y[1]));return o.slice(0,lim);};return {breed,parents};}const BR=D.pals.filter(p=>p.rank&&!p.collab);const UQ={};D.pals.forEach(p=>{if(p.up)UQ[p.up.slice().sort().join('|')]=p;});const kids=new Set(Object.values(UQ).map(p=>p.ru));
  const FORM=BR.filter(p=>!kids.has(p.ru)&&p.rank<9999);
  const breed=(a,b)=>{if(a.ru==b.ru)return [a,'тот же вид'];const u=UQ[[a.ru,b.ru].sort().join('|')];if(u)return [u,'особая пара'];const t=Math.floor((a.rank+b.rank+1)/2);
   let c=FORM[0];for(const p of FORM){const d=Math.abs(p.rank-t),dc=Math.abs(c.rank-t);if(d<dc||(d==dc&&p.rank<c.rank))c=p;}return [c,'по рангам разведения'];};
  const parents=(ch,lim=30)=>{if(ch.up)return [[ch.up[0],ch.up[1]]];const o=[];for(let i=0;i<BR.length;i++)for(let j=i;j<BR.length;j++){const [c]=breed(BR[i],BR[j]);if(c.ru==ch.ru&&BR[i].ru!=ch.ru&&BR[j].ru!=ch.ru){o.push([BR[i].ru,BR[j].ru]);}}
   const pop=n=>{const p=D.pals.find(x=>x.ru==n);return p?p.rarity:9};o.sort((x,y)=>pop(x[0])+pop(x[1])-pop(y[0])-pop(y[1]));return o.slice(0,lim);};
  return {breed,parents,BR};}
-function breedPage(D){const el=document.getElementById('breed');if(!el)return;const C=breedCore(D);const ps=D.pals.filter(p=>p.url).sort((a,b)=>a.ru.localeCompare(b.ru,'ru'));
+function breedPage(D){const el=document.getElementById('breed');if(!el)return;const C=breedCore(D);if(!D.BJ){fetch(B+'assets/breeding.json').then(r=>r.json()).then(j=>{D.BJ=j;el.innerHTML='';breedPage(D);});return;}const ps=D.pals.filter(p=>p.url).sort((a,b)=>a.ru.localeCompare(b.ru,'ru'));
  const by=n=>D.pals.find(p=>p.ru==n);const pk=v=>{const a=window.PW_core.find(v,['pal']);return a?D.pals[a.ref]:null;};
  const mini=p=>p?`<a class="mc card-link" href="${B+p.url}"><img src="${B+p.thumb}" width="60" height="60" alt=""><span>${esc(p.ru)}</span></a>`:'';
  const u=new URLSearchParams(location.search);
@@ -25,7 +28,7 @@ function breedPage(D){const el=document.getElementById('breed');if(!el)return;co
  <p class="map-note">Расчёт по рангам разведения из данных игры; особые пары учтены. Пол родителей на результат не влияет, кроме нескольких особых пар — таких данных у нас пока нет.</p>`;
  const f=()=>{const a=pk(document.getElementById('p1').value),b=pk(document.getElementById('p2').value);const o=document.getElementById('bo');if(!a||!b){o.innerHTML='';return;}const [c,how]=C.breed(a,b);
   o.innerHTML=`<div class="bres">${mini(a)}<span class="op">+</span>${mini(b)}<span class="op">=</span>${mini(c)}</div><div class="map-note">${esc(how)}</div>`;history.replaceState(null,'','?a='+encodeURIComponent(a.ru)+'&b='+encodeURIComponent(b.ru));};
- const r=()=>{const t=pk(document.getElementById('pt').value);const o=document.getElementById('bro');if(!t){o.innerHTML='';return;}const pr=C.parents(t);
+ const r=()=>{const t=pk(document.getElementById('pt').value);const o=document.getElementById('bro');if(!t){o.innerHTML='';return;}const pr=C.parents(t);t.up=pr.length&&D.BJ.special.some(x=>x.child==t.ru);
   o.innerHTML=pr.length?`<div class="map-note">${t.up?'Особая пара — только так:':'Самые доступные пары (из '+pr.length+'+):'}</div>`+pr.slice(0,12).map(([x,y])=>`<div class="bres sm">${mini(by(x))}<span class="op">+</span>${mini(by(y))}</div>`).join(''):'<p>Этого пала нельзя вывести — только поймать.</p>';history.replaceState(null,'','?t='+encodeURIComponent(t.ru));};
  el.querySelectorAll('#bm button').forEach(b=>b.onclick=()=>{el.querySelectorAll('#bm button').forEach(x=>x.classList.toggle('on',x===b));document.getElementById('bf').hidden=b.dataset.m!='f';document.getElementById('br').hidden=b.dataset.m!='r';(b.dataset.m=='f'?f:r)();});
  ['p1','p2'].forEach(i=>document.getElementById(i).addEventListener('change',f));document.getElementById('pt').addEventListener('change',r);
@@ -83,23 +86,24 @@ function popular(D){const el=document.getElementById('potd');if(!el||!D.popular|
 /* ---------- BUILDER ---------- */
 const STAT_RE=[[/\bAttack\s*([+-])\s*(\d+)\s*%/i,'atk'],[/\bDefense\s*([+-])\s*(\d+)\s*%/i,'def'],[/\bWork Speed\s*([+-])\s*(\d+)\s*%/i,'ws'],[/Max Health\s*([+-])\s*(\d+)\s*%/i,'hp']];
 function effects(q){const o={atk:0,def:0,ws:0,hp:0};let rest=q.de||'';for(const [r,k] of STAT_RE){const m=rest.match(r);if(m){o[k]+=(m[1]=='-'?-1:1)*+m[2];}}return o;}
-function stats(p,st,lv,iv,ps,D){const c=1+.05*st,i=1+iv/100;let e={atk:0,def:0,ws:0,hp:0};ps.forEach(j=>{const x=effects(D.QI[j]);for(const k in e)e[k]+=x[k];});
- const hp=(500+5*lv+p.hp*.5*lv*i)*c*(1+e.hp/100),atk=(100+p.atk*.075*lv*i)*c*(1+e.atk/100),df=(50+p.def*.075*lv*i)*c*(1+e.def/100);return {hp:Math.floor(hp),atk:Math.floor(atk),def:Math.floor(df),ws:Math.round(100*c*(1+e.ws/100)),e};}
+function stats(p,st,lv,iv,ps,D,stt){const c=1+.05*st,i=1+iv/100,su=1+(stt||0)/100;let e={atk:0,def:0,ws:0,hp:0};ps.forEach(j=>{const x=effects(D.QI[j]);for(const k in e)e[k]+=x[k];});
+ const hp=(500+5*lv+p.hp*.5*lv*i)*c*su*(1+e.hp/100),atk=(100+p.atk*.075*lv*i)*c*su*(1+e.atk/100),df=(50+p.def*.075*lv*i)*c*su*(1+e.def/100);return {hp:Math.floor(hp),atk:Math.floor(atk),def:Math.floor(df),ws:Math.round(100*c*(1+e.ws/100)),e};}
 function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(!info||document.getElementById('bld'))return;const p=D.pals.find(x=>x.id==info.dataset.pal);if(!p)return;
  const box=document.createElement('section');box.id='bld';box.className='bld';
  const tabs=document.querySelector('.tabbed-set');(tabs||info.closest('.pal-hero')).after(box);
- let st=0,lv=50,iv=0,ps=[];const h=new URLSearchParams(location.hash.slice(1)).get('b');
+ let st=0,lv=50,iv=0,ps=[],stt=0;const h=new URLSearchParams(location.hash.slice(1)).get('b');
  if(h&&h.length>=6){st=+h[2]||0;lv=parseInt(h.slice(3,5),36)||50;const ivc=h[5];iv=ivc=='a'?30:(+ivc||0)*3;for(let k=6;k+1<h.length+1&&ps.length<4;k+=2){const j=parseInt(h.slice(k,k+2),36);if(!isNaN(j)&&D.QI[j])ps.push(j);}}
  const P=D.QI,PL=D.passives;const rc=r=>r<0?'r-neg':'r-'+Math.min(5,r||1);
  const code=()=>b36(p.i,2)+st+b36(lv,2)+(iv>=30?'a':String(Math.round(iv/3)))+ps.map(j=>b36(j,2)).join('');
  const roles=Object.keys(p.bp||{});const base=stats(p,0,lv,iv,[],D);
- const draw=()=>{const s=stats(p,st,lv,iv,ps,D),b0=stats(p,st,lv,iv,[],D);
+ const draw=()=>{const s=stats(p,st,lv,iv,ps,D,stt),b0=stats(p,st,lv,iv,[],D,stt);
   const d=(a,b)=>{const x=a-b;return x?`<em class="${x>0?'up':'dn'}">${x>0?'+':''}${x}</em>`:''};
   const other=ps.map(j=>P[j]).filter(q=>{const e=effects(q);return !(e.atk||e.def||e.ws||e.hp)||/[A-Za-zА-Яа-я]/.test((q.de||'').replace(/(Attack|Defense|Work Speed|Max Health)\s*[+-]\s*\d+\s*%|\(ToSelf\)/gi,'').replace(/[\d%+.,\s-]/g,''));});
   box.innerHTML=`<h2>🛠 Сборка</h2>
   <div class="bld-row"><span class="lbl">Звёзды конденсации</span><div class="stars">${[0,1,2,3,4].map(k=>`<button data-st="${k}" class="${k<=st&&k>0?'on':''} ${k==0?'zero':''}" aria-label="${k} звёзд">${k==0?'0':'★'}</button>`).join('')}</div><small>+${st*5}% к HP, атаке, защите и скорости работы</small></div>
   <div class="bld-row"><span class="lbl">Уровень <b>${lv}</b></span><input type="range" min="1" max="80" value="${lv}" id="blv"></div>
   <div class="bld-row"><span class="lbl">Таланты (IV) <b>+${iv}%</b></span><input type="range" min="0" max="30" step="3" value="${iv}" id="biv"></div>
+  <div class="bld-row"><span class="lbl">Статуя силы <b>+${stt}%</b></span><input type="range" min="0" max="60" step="3" value="${stt}" id="bstt"></div>
   <div class="bstats"><div><span>❤️ HP</span><b>${s.hp}</b>${d(s.hp,b0.hp)}</div><div><span>⚔️ Атака</span><b>${s.atk}</b>${d(s.atk,b0.atk)}</div><div><span>🛡 Защита</span><b>${s.def}</b>${d(s.def,b0.def)}</div><div><span>⚙️ Работа</span><b>${s.ws}%</b>${d(s.ws,b0.ws)}</div></div>
   <div class="bld-row"><span class="lbl">Пассивки (${ps.length}/4)</span><div class="tags">${ps.map((j,k)=>`<span class="psv ${rc(P[j].rank)}">${esc(P[j].name)} <button class="rmp" data-k="${k}" aria-label="Убрать">×</button></span>`).join('')}${ps.length<4?'<button type="button" id="bq" class="addp">+ добавить пассивку</button>':''}</div></div>
   ${roles.length?`<div class="bld-row"><span class="lbl">Готовая сборка</span>${roles.map(r=>`<button class="fav" data-role="${r}">${r=='боец'?'⚔️':r=='рабочий'?'🛠':'🐎'} ${r}</button>`).join('')}</div>`:''}
@@ -110,12 +114,10 @@ function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(
   <div class="bld-row"><button class="md-button md-button--primary" id="bsave">💾 Сохранить</button><button class="md-button" id="bshare">🔗 Ссылка</button><a class="md-button" href="https://t.me/PalGuideBot?start=build_${code()}" target="_blank" rel="noopener">🤖 Открыть в боте</a></div>
   <p class="approx" title="Влияние пассивок посчитано приблизительно">ⓘ приблизительно</p>`;
   box.querySelectorAll('[data-st]').forEach(b=>b.onclick=()=>{st=+b.dataset.st;draw();});
-  box.querySelector('#blv').oninput=e=>{lv=+e.target.value;draw();box.querySelector('#blv').focus();};box.querySelector('#biv').oninput=e=>{iv=+e.target.value;draw();box.querySelector('#biv').focus();};
+  box.querySelector('#blv').oninput=e=>{lv=+e.target.value;draw();box.querySelector('#blv').focus();};box.querySelector('#bstt').oninput=e=>{stt=+e.target.value;draw();box.querySelector('#bstt').focus();};box.querySelector('#biv').oninput=e=>{iv=+e.target.value;draw();box.querySelector('#biv').focus();};
   box.querySelectorAll('.rmp').forEach(b=>b.onclick=()=>{ps.splice(+b.dataset.k,1);draw();});
   box.querySelectorAll('[data-role]').forEach(b=>b.onclick=()=>{ps=(p.bp[b.dataset.role]||[]).map(n=>(PL.find(q=>q.name==n)||{}).i).filter(j=>j!=null).slice(0,4);draw();});
   const q=box.querySelector('#bq');if(q)q.onclick=()=>picker(p,P,PL,ps,j=>{if(ps.length<4&&!ps.includes(j))ps.push(j);draw();});
-   const hit=PL.filter(x=>window.PW_core.norm(x.name+' '+x.en).includes(v)).slice(0,10);o.innerHTML=hit.map(x=>{const dup=ps.includes(x.i);return `<button class="psv ${rc(x.rank)}" data-add="${x.i}" ${dup?'disabled title="Уже выбрана"':''}>${esc(x.name)}</button>`;}).join('')||'<small>Не найдено</small>';
-   o.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>{if(ps.length<4&&!ps.includes(+b.dataset.add))ps.push(+b.dataset.add);draw();setTimeout(()=>{const n=box.querySelector('#bq');if(n)n.focus();},0);});};}
   box.querySelector('#bsave').onclick=()=>{const S=LS.get('pw_builds',[]);S.unshift({p:p.i,st,lv,iv,ps,code:code()});LS.set('pw_builds',S.slice(0,30));box.querySelector('#bsave').textContent='✅ Сохранено в «Мои списки»';};
   box.querySelector('#bshare').onclick=async()=>{const u=location.origin+location.pathname+'#b='+code();try{if(navigator.share)await navigator.share({title:p.ru+' — сборка',url:u});else{await navigator.clipboard.writeText(u);box.querySelector('#bshare').textContent='✅ Скопировано';}}catch(e){}};
   history.replaceState(null,'','#b='+code());};
@@ -139,7 +141,7 @@ function vsBoss(p,s,D){const bs=D.bosses.filter(b=>b.weak&&b.weak.length&&b.leve
  const grp=a=>{const m=new Map();a.forEach(b=>{const n=b.name.replace(/\s*\(.*?\)/g,'').trim();const md=(b.name.match(/\((.*?)\)/)||[])[1];const g=m.get(n)||{n,pal:b.pal,url:b.url,md:new Set()};if(md)g.md.add(md);m.set(n,g);});return [...m.values()];};
  const ch=(g,c)=>{const pp=byRu[g.pal];return `<a class="bchip ${c}" ${g.url?`href="${B+g.url}"`:''}>${pp?`<img src="${B+pp.thumb}" width="22" height="22" alt="">`:''}<span>${esc(g.n)}</span>${g.md.size?`<small>${[...g.md].map(esc).join(' · ')}</small>`:''}</a>`;};
  const good=grp(bs.filter(b=>b.weak.some(w=>p.el.includes(w)))),bad=grp(bs.filter(b=>(b.el||[]).some(e=>p.weak.includes(e))));
- return `<div class="bnote"><b>Против боссов</b>${good.length?`<div class="bl">✅ Бьёт по слабости</div><div class="bchips">${good.map(g=>ch(g,'ok')).join('')}</div>`:''}${bad.length?`<div class="bl">⚠️ Опасно</div><div class="bchips">${bad.map(g=>ch(g,'bad')).join('')}</div>`:''}${!good.length&&!bad.length?'<div>Нейтрален против всех боссов.</div>':''}</div>`;}
+ return `<div class="bnote"><b>Против боссов</b>${good.length?`<div class="bl">✅ Бьёт по слабости (урон выше)</div><div class="bchips">${good.map(g=>ch(g,'ok')).join('')}</div>`:''}${bad.length?`<div class="bl">⚠️ Опасно</div><div class="bchips">${bad.map(g=>ch(g,'bad')).join('')}</div>`:''}${!good.length&&!bad.length?'<div>Нейтрален против всех боссов.</div>':''}</div>`;}
 const fix=D=>{if(D._f)return D;D._f=1;D.QI={};D.passives.forEach(q=>D.QI[q.i]=q);D.PI={};D.pals.forEach(q=>D.PI[q.i]=q);return D;};
 document.addEventListener('DOMContentLoaded',()=>{psvFilter();setTimeout(showInstall,4000);if(!window.PW_data)return;window.PW_data().then(D=>{fix(D);breedPage(D);myPage(D);palLists(D);galleryExtra(D);popular(D);builder(D);setTimeout(()=>mapPal(D),300);});});
 })();

@@ -9,6 +9,7 @@ for d in os.listdir(W):
   p=os.path.join(W,d)
   if os.path.isdir(p) and d not in SKIP: shutil.copytree(p,os.path.join(D,d),ignore=shutil.ignore_patterns('*.py','__pycache__'))
 shutil.copytree('/workspace/palsite/static',A)
+shutil.copy(W+'/data/breeding.json',A+'/breeding.json')
 shutil.rmtree(D+'/4_spravochniki/syrye_dannye',ignore_errors=True)
 # ---------- images -> webp (cached)
 C='/workspace/palsite/.imgcache';os.makedirs(C+'/card',exist_ok=True);os.makedirs(C+'/art',exist_ok=True)
@@ -236,6 +237,16 @@ try:
     for x in SP:
       if len(x['ru'])>3 and x['ru'].lower() in t: POP[x['id']]=POP.get(x['id'],0)+1
 except Exception as e: print('popular skip',e)
+_pj=W+'/data/popular.json'
+if os.path.exists(_pj):
+  try:
+    _pd=json.load(open(_pj));_it=_pd.get('pals',_pd) if isinstance(_pd,dict) else _pd
+    _ru={x['ru']:x['id'] for x in SP};POP={}
+    for _e in (_it.items() if isinstance(_it,dict) else _it):
+      n,c=(_e if isinstance(_e,(list,tuple)) else (_e.get('ru') or _e.get('name'),_e.get('count',1)))
+      if n in _ru:POP[_ru[n]]=c
+      elif n in {x['id'] for x in SP}:POP[n]=c
+  except Exception as e:print('popular.json skip',e)
 POPL=sorted(POP.items(),key=lambda z:-z[1])[:12]
 SI=cj(SI);SB=cj(SB);SPS=cj(SPS);faq=cj(faq);MP=cj(MP)
 _fz=W.replace('palwiki','palsite')+'/build_index.json'
