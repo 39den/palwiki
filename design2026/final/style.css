@@ -191,3 +191,5 @@ body:after,[data-theme=dark] body:after{mix-blend-mode:normal;opacity:.035}
 [data-theme=dark] .so .scrim{background:rgba(0,0,0,.6)}
 .so .box{will-change:transform,opacity}
 .so .box{box-shadow:0 24px 48px -24px rgba(0,0,0,.55)}.so.open~*{} .so.open .box{contain:paint}
+@media(min-width:900px){.cast .ct{right:36%;bottom:auto;top:44%;width:9%}.cast .ly{right:12%}}
+@media(min-width:900px){.cast .ct{display:none}}
