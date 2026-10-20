@@ -67,3 +67,14 @@ table.cmp{width:100%}table.cmp td{text-align:center;vertical-align:top}table.cmp
 [data-md-color-scheme=default] .secret{background:#fff}
 .secret b{font-size:1.02em}.secret.spoiler{border-left-color:var(--pw-coral)}
 .secret .sp{margin-left:.5em;font-size:.68em;padding:.05em .55em;border-radius:999px;background:rgba(255,122,89,.18);color:var(--pw-coral);font-weight:700;vertical-align:middle}
+/* whole-card links */
+.md-typeset a.card-link,.md-typeset a.potd{cursor:pointer;color:var(--md-default-fg-color);text-decoration:none;display:flex;transition:transform .15s,box-shadow .15s;-webkit-tap-highlight-color:transparent}
+.md-typeset a.card-link:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(20,184,166,.28)}
+.md-typeset a.card-link:active{transform:scale(.98)}
+.md-typeset a.card-link:focus-visible{outline:3px solid var(--pw-sun);outline-offset:3px}
+.potd .open{display:inline-block;margin-top:.4rem;font-weight:800;color:var(--md-typeset-a-color);font-size:.85em}
+.potd small,.pal-no{opacity:.55;font-size:.8em;font-weight:600}
+.cmp-pal{flex-direction:column;align-items:center;padding:.4rem;border-radius:14px}
+.sa .mini{position:relative}.sa .mini h3 a::after{content:'';position:absolute;inset:0}
+.md-footer-meta .md-copyright{font-size:.7rem;opacity:.7}
+.md-copyright__highlight{display:block}
