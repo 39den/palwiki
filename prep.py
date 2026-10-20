@@ -289,14 +289,14 @@ def wt(x,y):return y>735 and -220<x<130
 for a in L.get('alphas',[]):
   if a.get('xy') and not wt(*a['xy']):MP.append({'t':'alpha','name':a['pal'],'x':a['xy'][0],'y':a['xy'][1],'lvl':a.get('level',''),'info':'Альфа','url':PU.get(a['pal'],'')})
 for a in L.get('fast_travel',[]):
-  if a.get('xy') and a.get('region')!='WIP' and not wt(*a['xy']):MP.append({'t':'travel','name':a['name_en'],'x':a['xy'][0],'y':a['xy'][1],'info':'Телепорт','url':''})
+  if a.get('xy') and a.get('region')!='WIP' and not wt(*a['xy']):MP.append({'t':'travel','name':a.get('name_ru') or a['name_en'],'x':a['xy'][0],'y':a['xy'][1],'info':'Телепорт','url':''})
 for a in L.get('towers',[]):
   if a.get('x') is not None:
     bu=next((b['url'] for b in SB if b['place']==a['name'] and b['url']),'')
     bl=next((b['level'] for b in SB if b['place']==a['name']),'')
     MP.append({'t':'tower','name':a['name'],'x':a['x'],'y':a['y'],'lvl':bl,'info':'Башня','url':bu})
 for a in L.get('sealed_realms',[]):
-  if a.get('xy') and not wt(*a['xy']):MP.append({'t':'sealed','name':a['name_en'],'x':a['xy'][0],'y':a['xy'][1],'lvl':a.get('level',''),'info':'Запечатанные земли · '+a.get('pal',''),'url':PU.get(a.get('pal',''),'')})
+  if a.get('xy') and not wt(*a['xy']):MP.append({'t':'sealed','name':a.get('name_ru') or a['name_en'],'x':a['xy'][0],'y':a['xy'][1],'lvl':a.get('level',''),'info':'Запечатанные земли · '+a.get('pal',''),'url':PU.get(a.get('pal',''),'')})
 NATP={}
 for q in SPS:
   for n in q['nat']: NATP.setdefault(n,[]).append([q['name'],int(q['rank'] or 0)])
@@ -419,7 +419,7 @@ hide: [navigation, toc]
 <div class="smart-box"><input id="home-q" type="search" placeholder="Спроси что угодно: «кто лучше копает», «чем бить Зои», «где взять серу»…" autocomplete="off"></div>
 <div id="home-answer" class="smart-out"></div></div></div>
 <div class="tiles bento" markdown="0">
-{T('gallery/','🐾','Палы','галерея с фильтрами')}{T('compare/','⚖️','Сравнить','двух палов рядом')}{T('boss/','👑','Боссы','башни, рейды, альфы')}{T('guide/03_prohozhdenie_1_80/','🗺️','Прохождение','с 1 до 80 уровня')}{T('2_mehaniki/passivki/','✨','Пассивки','лучшие наборы')}{T('guide/sekrety/','🤫','Секреты','пасхалки и тайники')}{T('map/','📍','Карта','альфы, башни, телепорты')}{T('4_spravochniki/predmety/','🎒','Предметы','где взять и крафт')}{T('breed/','🧬','Разведение','калькулятор пар')}{T('my/','⭐','Мои списки','команда и фарм')}{T('https://t.me/PalGuideBot','🤖','Бот @PalGuideBot','спроси в Telegram')}
+{T('gallery/','🐾','Палы','галерея с фильтрами')}{T('compare/','⚖️','Сравнить','двух палов рядом')}{T('boss/','👑','Боссы','башни, рейды, альфы')}{T('guide/03_prohozhdenie_1_80/','🗺️','Прохождение','с 1 до 80 уровня')}{T('2_mehaniki/passivki/','✨','Пассивки','лучшие наборы')}{T('guide/sekrety/','🤫','Секреты','пасхалки и тайники')}{T('map/','📍','Карта','альфы, башни, телепорты')}{T('4_spravochniki/predmety/','🎒','Предметы','где взять и крафт')}{T('breed/','🧬','Разведение','калькулятор пар')}{T('guide/eda/','🍲','Еда и баффы','блюда, бафы, кухни')}{T('my/','⭐','Мои списки','команда и фарм')}{T('https://t.me/PalGuideBot','🤖','Бот @PalGuideBot','спроси в Telegram')}
 </div>
 <div class="bento2" markdown="0"><div class="potd-wrap"><h2>⭐ Пал дня</h2><div id="potd"><div class="skel" style="height:170px"></div></div></div><div><h2>🕘 Недавние</h2><div id="recent" class="mini-row"><small>Открой пару палов — они появятся здесь.</small></div><h2>⭐ Избранное</h2><div id="favs" class="mini-row"><small>Нажми ☆ на странице пала.</small></div></div></div>
 ''')
@@ -574,6 +574,63 @@ for _ty,_lst in _items_by.items():
     desc=esc_h((i.get('desc') or '').replace('\n',' '))
     out.append(f'## {i["ru"]}\n\n<div class="icard r{min(r,4)}" data-n="{esc_h((i["ru"]+" "+i.get("en","")).lower())}" markdown="0"><p class="idesc">{desc}</p><div class="itiles">{tl}</div>'+(f'<div class="isec"><span class="ish">🔨 Крафт</span><div class="ichips">{rec}</div>'+(f'<small class="ist">{esc_h(i["station"])}</small>' if i.get('station') else '')+'</div>' if rec else '')+(f'<div class="isec"><span class="ish">📍 Где взять</span><div class="ichips">{"".join(src[:24])}</div></div>' if src else '')+'</div>\n')
   open(_fn,'w').write('\n'.join(out))
+
+# ---- food page as dish cards ----
+_ef=D+'/guide/eda.md'
+if os.path.exists(_ef):
+  _src=open(_ef).read();_dishes=[]
+  _EFX=[('атака',r'Атака','⚔️'),('защита',r'Защита','🛡'),('работа',r'Скорость работы','🛠'),('опыт',r'Опыт','✨'),('голод',r'голод','🍖'),('рассудок',r'Рассудок','🧠')]
+  _KIT=['Котелок','Электрическая кухня','Большая кухня','Древняя кухня']
+  for m in re.finditer(r'(?m)^- \*\*(.+?)\*\*: (.+)$',_src):
+    nm,rest=m.groups();parts=[x.strip() for x in rest.split(';')]
+    buffs=[];full=dur='';kit=[]
+    for x in parts:
+      if x.startswith('сытость'):full=x.split()[-1]
+      elif re.match(r'^\d+\s*(мин|сек|ч)',x):dur=x
+      elif x.startswith('где готовить'):kit=[k.strip() for k in x.split(':',1)[1].split(',') if k.strip() not in ('','—','-')]
+      else:
+        for b in x.split(','):
+          b=b.strip();mm=re.search(r'([+-]+)\s*(\d+)\s*%',b)
+          if not mm:continue
+          v=int(mm.group(2));neg='-' in mm.group(1)
+          ef=next((e for e,rx,_ in _EFX if re.search(rx,b,re.I)),'прочее')
+          if ef=='голод':lab='Голод быстрее' if neg else 'Голод медленнее'
+          elif ef=='рассудок':lab='Рассудок падает быстрее' if neg else 'Рассудок падает медленнее'
+          else:lab=re.sub(r'\s*[+-]+\s*\d+\s*%','',b)
+          buffs.append((ef,lab,v,neg))
+    _dishes.append(dict(n=nm,b=buffs,f=int(full or 0),d=dur,k=kit))
+  _KI={k:i for i,k in enumerate(_KIT)}
+  def _card(d):
+    low=min((_KI.get(k,9) for k in d['k']),default=9)
+    bc=''.join(f'<span class="fb fb-{"neg" if ng else ef}">{"🔻" if ng else next((i for e,_,i in _EFX if e==ef),"•")} {esc_h(lb)} <b>{"−" if ng else "+"}{v}%</b></span>' for ef,lb,v,ng in d['b'])
+    kc=''.join(f'<span class="fk{" low" if _KI.get(k,9)==low else ""}">{esc_h(k)}</span>' for k in d['k']) or '<span class="fk none">не готовится — только найти</span>'
+    st=sum(v*(-1 if ng else 1) for _,_,v,ng in d['b'])
+    efs=' '.join(sorted({ef for ef,_,_,ng in d['b'] if not ng}))
+    ic=next((i for e,_,i in _EFX if d['b'] and e==d['b'][0][0]),'🍽')
+    return f'<div class="fcard" data-n="{esc_h(d["n"].lower())}" data-e="{efs}" data-s="{st}" data-f="{d["f"]}"><div class="fh"><span class="fic">{ic}</span><b>{esc_h(d["n"])}</b></div><div class="fbs">{bc or "<span class=fk>без баффа</span>"}</div><div class="itiles"><div class="it"><span class="ii">🍖</span><span class="il">Сытость</span><b>{d["f"]}</b></div><div class="it"><span class="ii">⏱</span><span class="il">Длительность</span><b>{esc_h(d["d"] or "—")}</b></div></div><div class="fks">{kc}</div></div>'
+  def _best(pred,key):
+    c=[d for d in _dishes if pred(d)];c.sort(key=key,reverse=True);return c[:3]
+  _cmb=lambda d:sum(v for ef,_,v,ng in d['b'] if ef in('атака','защита') and not ng)
+  _bas=lambda d:sum(v for ef,_,v,ng in d['b'] if ef in('работа','рассудок','голод') and not ng)
+  _top=[('⚔️ Лучшее для боя',_best(lambda d:_cmb(d)>0,_cmb)),('🏠 Для базы',_best(lambda d:_bas(d)>0,lambda d:(_bas(d),d['f']))),('🍲 На старте (Котелок)',_best(lambda d:'Котелок' in d['k'] and d['b'],lambda d:(sum(v for *_,v,ng in d['b'] if not ng),d['f'])))]
+  tb='<div class="ftop">'+''.join(f'<div class="ftb"><div class="itg-h">{t}</div>'+''.join(f'<div class="ftr"><b>{esc_h(d["n"])}</b><small>{esc_h(", ".join(("−" if ng else "+")+str(v)+"% "+lb for _,lb,v,ng in d["b"]))}</small></div>' for d in L)+'</div>' for t,L in _top)+'</div>'
+  fl='<div class="ffl"><input type="search" class="ffq" placeholder="Найти блюдо…" autocomplete="off"><select class="ffs" aria-label="Сортировка"><option value="s">По силе баффа</option><option value="f">По сытости</option><option value="n">По названию</option></select></div><div class="ffc">'+'<button type="button" class="fc on" data-e="">Все</button>'+''.join(f'<button type="button" class="fc" data-e="{e}">{i} {e.capitalize() if e!="работа" else "Скорость работы"}</button>' for e,_,i in _EFX)+'<span class="gcount ffn"></span></div>'
+  rest=_src[_src.find('\n## ',_src.find('- **')):] if '\n## ' in _src[_src.find('- **'):] else ''
+  open(_ef,'w').write('---\nhide: [toc]\n---\n# Еда и баффы\n\n<div class="food" markdown="0"><p class="fnote">ℹ️ Бафф держится указанное время после еды. Сытость — сколько голода закрывает блюдо.</p>'+tb+fl+'<div class="fgrid">'+''.join(_card(d) for d in _dishes)+'</div></div>\n')
+
+# ---- long 'label: value' bullet runs on guide pages -> card grid ----
+_LVL=re.compile(r'^\s*[-*]\s+(?:\*\*([^*]{1,60})\*\*|([^:*]{1,40})):\s*(\S.*)$')
+_md=lambda s:re.sub(r'\*\*(.+?)\*\*',r'<b>\1</b>',re.sub(r'\[([^\]]+)\]\(([^)]+)\)',lambda m:f'<a href="{m.group(2).replace(".md","/") if not m.group(2).startswith("http") else m.group(2)}">{m.group(1)}</a>',esc_h(s).replace('&quot;','"')))
+for _gf in glob.glob(D+'/guide/*.md'):
+  L=open(_gf).read().split('\n');out=[];i=0;ch=False
+  while i<len(L):
+    j=i
+    while j<len(L) and _LVL.match(L[j]):j+=1
+    if j-i>8:
+      cards=''.join(f'<div class="lvc"><b>{esc_h((m.group(1) or m.group(2)).strip())}</b><span>{_md(m.group(3))}</span></div>' for m in map(_LVL.match,L[i:j]))
+      out.append('<div class="lvgrid" markdown="0">'+cards+'</div>');i=j;ch=True
+    else:out.append(L[i]);i+=1
+  if ch:open(_gf,'w').write('\n'.join(out))
 
 nav=[{'🏠 Главная':'index.md'},
  {'🐾 Палы':[{'Галерея и фильтры':'gallery.md'},{'По стихиям и работе':'4_spravochniki/paly_po_stihiyam_i_rabote.md'},{'Сравнить двух':'compare.md'},{'Калькулятор разведения':'breed.md'},{'Мои списки':'my.md'}]},

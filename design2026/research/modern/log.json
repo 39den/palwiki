@@ -1,0 +1,393 @@
+[
+ {
+  "site": "awwwards",
+  "url": "https://www.awwwards.com/websites/sites_of_the_day/",
+  "status": "skipped: robots.txt disallow"
+ },
+ {
+  "site": "zzz",
+  "url": "https://zenless.hoyoverse.com/en-us/",
+  "robots": "ok",
+  "title": "Zenless Zone Zero Official Website - Version 3.2 \"Their Secret Histories\" Is Now Live!",
+  "fonts": [
+   "Tahoma"
+  ],
+  "h1px": null,
+  "video": 1,
+  "canvas": 3,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "genshin",
+  "url": "https://genshin.hoyoverse.com/en/",
+  "robots": "ok",
+  "title": "A Rekviem for the Underworld",
+  "fonts": [
+   "Tahoma",
+   "sans-serif"
+  ],
+  "h1px": null,
+  "video": 1,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "godly",
+  "url": "https://godly.website/",
+  "robots": "robots unreadable",
+  "status_d": "err Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://godly.",
+  "status_m": "err Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://godly."
+ },
+ {
+  "site": "league",
+  "url": "https://www.leagueoflegends.com/en-us/",
+  "robots": "ok",
+  "title": "League of Legends Homepage",
+  "fonts": [
+   "Helvetica",
+   "Inter",
+   "system-ui",
+   "\"Beaufort for LOL\"",
+   "Spiegel"
+  ],
+  "h1px": "20px",
+  "video": 3,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "nintendo",
+  "url": "https://www.nintendo.com/us/",
+  "robots": "ok",
+  "title": "Nintendo - Official Site: Consoles, Games, News, and More",
+  "fonts": [
+   "\"Geologica Variable\""
+  ],
+  "h1px": "16px",
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "valorant",
+  "url": "https://playvalorant.com/en-us/",
+  "robots": "ok",
+  "title": "VALORANT",
+  "fonts": [
+   "Helvetica",
+   "Inter",
+   "system-ui",
+   "Tungsten-Bold",
+   "DINNextW1G"
+  ],
+  "h1px": "28px",
+  "video": 2,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "hsr",
+  "url": "https://hsr.hoyoverse.com/en-us/",
+  "robots": "ok",
+  "title": "Honkai: Star Rail official site — The brand-new Version 4.6 \"Dance With the Beast Before Moonrise\" is now online!",
+  "fonts": [
+   "meSubFont",
+   "\"6a9a63c194b8ee0044d7fc4d\"",
+   "sans-serif"
+  ],
+  "h1px": null,
+  "video": 0,
+  "canvas": 2,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "endfield",
+  "url": "https://endfield.gryphline.com/en-us",
+  "robots": "ok",
+  "title": "Arknights: Endfield - Over the Frontier, Into the Front",
+  "fonts": [
+   "sans-serif",
+   "SansMedium",
+   "SansBold"
+  ],
+  "h1px": "18px",
+  "video": 2,
+  "canvas": 1,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "pokemon",
+  "url": "https://www.pokemon.com/us",
+  "robots": "ok",
+  "title": "The Official Pokémon Website | Pokemon.com",
+  "fonts": [
+   "\"Times New Roman\"",
+   "Roboto",
+   "Flexo-Demi",
+   "Flexo-Regular",
+   "Flexo-Medium"
+  ],
+  "h1px": "30px",
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "wuwa",
+  "url": "https://wutheringwaves.kurogames.com/en/",
+  "robots": "ok",
+  "title": "Wuthering Waves Official Website",
+  "fonts": [
+   "mc-gamefont"
+  ],
+  "h1px": "22.05px",
+  "video": 1,
+  "canvas": 1,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "supercell",
+  "url": "https://supercell.com/en/",
+  "robots": "ok",
+  "title": "Supercell",
+  "fonts": [
+   "SupercellText-Regular",
+   "SupercellText-Medium",
+   "SupercellHeadline-Heavy",
+   "SupercellText-Bold"
+  ],
+  "h1px": "56px",
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "bungie",
+  "url": "https://www.bungie.net/7/en/Destiny",
+  "robots": "ok",
+  "title": "Destiny 2 | Bungie.net",
+  "fonts": [
+   "-apple-system",
+   "Montserrat"
+  ],
+  "h1px": "32px",
+  "video": 1,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "linear",
+  "url": "https://linear.app/",
+  "robots": "ok",
+  "title": "Linear – The system for product development",
+  "fonts": [
+   "\"Inter Variable\"",
+   "\"Berkeley Mono\""
+  ],
+  "h1px": "64px",
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "hades2",
+  "url": "https://www.supergiantgames.com/games/hades-ii/",
+  "robots": "ok",
+  "title": "Supergiant Games",
+  "fonts": [
+   "proxima-nova",
+   "\"Font Awesome 5 Brands\"",
+   "quatro-slab"
+  ],
+  "h1px": "24px",
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "arcraiders",
+  "url": "https://arcraiders.com/",
+  "robots": "ok",
+  "title": "ARC Raiders",
+  "fonts": [
+   "fontBarlow"
+  ],
+  "h1px": "96px",
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "arc",
+  "url": "https://arc.net/",
+  "status": "skipped: robots.txt disallow"
+ },
+ {
+  "site": "apple",
+  "url": "https://www.apple.com/",
+  "robots": "ok",
+  "title": "Apple",
+  "fonts": [
+   "\"SF Pro Text\"",
+   "\"SF Pro Display\""
+  ],
+  "h1px": "34px",
+  "video": 2,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "vercel",
+  "url": "https://vercel.com/",
+  "robots": "ok",
+  "title": "Agentic Infrastructure - Vercel",
+  "fonts": [
+   "GeistSans"
+  ],
+  "h1px": "64px",
+  "video": 0,
+  "canvas": 1,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "raycast",
+  "url": "https://www.raycast.com/",
+  "robots": "ok",
+  "title": "Raycast - Your shortcut to everything",
+  "fonts": [
+   "Inter",
+   "GeistMono"
+  ],
+  "h1px": "64px",
+  "video": 0,
+  "canvas": 1,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "notion",
+  "url": "https://www.notion.com/",
+  "status": "skipped: robots.txt disallow"
+ },
+ {
+  "site": "perplexity",
+  "url": "https://www.perplexity.ai/",
+  "robots": "ok",
+  "title": "Perplexity",
+  "fonts": [
+   "pplxSans"
+  ],
+  "h1px": "16px",
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "spotify",
+  "url": "https://newsroom.spotify.com/wrapped/",
+  "robots": "ok",
+  "title": "Wrapped 2019 Character Cards — Spotify",
+  "fonts": [
+   "\"Spotify Mix\"",
+   "\"Spotify Mix-Narrow\"",
+   "\"Spotify Mix Wide\""
+  ],
+  "h1px": "100px",
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "stripe",
+  "url": "https://stripe.com/",
+  "robots": "ok",
+  "title": "Online-Bezahldienst und Zahlungsdienstleister | Stripe",
+  "fonts": [
+   "sohne-var"
+  ],
+  "h1px": "44px",
+  "video": 0,
+  "canvas": 5,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "palworld",
+  "url": "https://www.pocketpair.jp/games/palworld/",
+  "robots": "ok",
+  "title": "Palworld | Pocketpair Inc.",
+  "fonts": [
+   "\"Noto Sans JP\"",
+   "Outfit",
+   "\"M PLUS 1\""
+  ],
+  "h1px": "32px",
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "mobbin",
+  "url": "https://mobbin.com/",
+  "robots": "ok",
+  "title": "Mobbin — UI & UX design inspiration for mobile & web apps",
+  "fonts": [
+   "saans"
+  ],
+  "h1px": "80px",
+  "video": 1,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "duolingo",
+  "url": "https://www.duolingo.com/",
+  "robots": "ok",
+  "title": "Duolingo - The world’s most popular way to learn",
+  "fonts": [
+   "duolingo-sans",
+   "feather"
+  ],
+  "h1px": "32px",
+  "video": 0,
+  "canvas": 0,
+  "status_d": "ok",
+  "status_m": "ok"
+ },
+ {
+  "site": "pokemonlegends",
+  "url": "https://legends.pokemon.com/en-us",
+  "robots": "ok",
+  "title": "Latest Updates | Pokémon Legends: Z-A",
+  "fonts": [
+   "Onest",
+   "\"Times New Roman\"",
+   "\"Bai Jamjuree\""
+  ],
+  "h1px": "16px",
+  "video": 3,
+  "canvas": 1,
+  "status_d": "ok",
+  "status_m": "ok"
+ }
+]

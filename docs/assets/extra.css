@@ -462,3 +462,5 @@ html.mapfull article h1,html.mapfull .map-note{display:none}html.mapfull .md-foo
 .cx-common{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:0 0 8px;margin:0 0 8px;border-bottom:1px dashed var(--cx-line)}
 .cx-cl{font-size:.7rem;font-weight:700;opacity:.75;margin-right:4px}.cx-none{opacity:.5}.cx-hint{text-align:center;opacity:.75}
 @media(max-width:400px){.cx-wk{font-size:0;gap:0}.cx-wk span{font-size:.85rem}.cx-wk b{font-size:.72rem}}
+#cmp .psv{max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:center}
+@media(max-width:600px){.cx-head{padding:6px;gap:4px}.cx-pal{flex-direction:row;text-align:left;padding:4px 6px;gap:6px;flex-wrap:wrap;align-items:center}.cx-av img{width:40px;height:40px}.cx-nm{align-items:flex-start;width:auto;flex:1}.cx-no{display:none}.cx-els{justify-content:flex-start}.cx-chg{min-height:32px;width:100%;padding:2px 6px}.cx-swap{height:40px}}

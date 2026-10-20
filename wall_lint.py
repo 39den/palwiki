@@ -8,6 +8,13 @@ for f in sorted(glob.glob(D+'/**/*.md',recursive=True)):
     if re.match(r'\s*([-*]|\d+\.)\s',l):run+=1;mx=max(mx,run)
     elif l.strip():run=0
     if not re.match(r'\s*([-*#|]|\d+\.)',l) and len(l.strip())>400:longp+=1
+  lvr=lvm=0
+  for l in t.split('\n'):
+    if re.match(r'\s*[-*]\s+(\*\*[^*]{1,60}\*\*|[^:]{1,40}):\s*\S',l):lvr+=1;lvm=max(lvm,lvr)
+    elif l.strip():lvr=0
+  if lvm>8:
+    R.append((rel,'bullet-label-value',lvm))
+    if rel.startswith(('guide/',)+DATA):FAIL.append(rel)
   if mx>8 or longp:
     R.append((rel,mx,longp))
     if rel.startswith(DATA):FAIL.append(rel)
