@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/102B_GrassPanda_Electric.webp" alt="Моссанда Лакс" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#102B · Mossanda Lux</div>
+<div class="pal-info"><div class="pal-no">№ 102B</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
 <div class="works"><span class="work" title="Генерация энергии 4">⚡ Генерация энергии <b>4</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>

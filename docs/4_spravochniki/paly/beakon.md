@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/96_ThunderBird.webp" alt="Райберд" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#96 · Beakon</div>
+<div class="pal-info"><div class="pal-no">№ 96</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
 <div class="works"><span class="work" title="Генерация энергии 4">⚡ Генерация энергии <b>4</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>

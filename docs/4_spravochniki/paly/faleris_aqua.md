@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/188B_Horus_Water.webp" alt="Фалерис Аква" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#188B · Faleris Aqua</div>
+<div class="pal-info"><div class="pal-no">№ 188B</div>
 <div class="chips"><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 6">💧 Полив <b>6</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>

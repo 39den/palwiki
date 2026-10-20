@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/T6_Green_Slime.webp" alt="Зеленый слизень" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#T6 · Green Slime</div>
+<div class="pal-info"><div class="pal-no">№ T6</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

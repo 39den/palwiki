@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/10_LeafMomonga.webp" alt="Хербил" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#10 · Herbil</div>
+<div class="pal-info"><div class="pal-no">№ 10</div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Посев семян 1">🌱 Посев семян <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

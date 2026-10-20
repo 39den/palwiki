@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/30_NegativeOctopus.webp" alt="Килламари" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#30 · Killamari</div>
+<div class="pal-info"><div class="pal-no">№ 30</div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

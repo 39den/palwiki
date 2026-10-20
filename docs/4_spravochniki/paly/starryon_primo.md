@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/130B_NightBlueHorse_Neutral.webp" alt="Старрион Примо" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#130B · Starryon Primo</div>
+<div class="pal-info"><div class="pal-no">№ 130B</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Сбор 7">🌾 Сбор <b>7</b></span></div>

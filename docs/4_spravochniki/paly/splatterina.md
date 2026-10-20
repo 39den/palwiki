@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/153_GrimGirl.webp" alt="Сплаттерина" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#153 · Splatterina</div>
+<div class="pal-info"><div class="pal-no">№ 153</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Фармацевтика 5">💊 Фармацевтика <b>5</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

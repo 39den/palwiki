@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/74B_Gorilla_Ground.webp" alt="Горират Терра" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#74B · Gorirat Terra</div>
+<div class="pal-info"><div class="pal-no">№ 74B</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

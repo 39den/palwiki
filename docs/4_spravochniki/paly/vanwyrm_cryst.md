@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/64B_BirdDragon_Ice.webp" alt="Ванвирм Крист" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#64B · Vanwyrm Cryst</div>
+<div class="pal-info"><div class="pal-no">№ 64B</div>
 <div class="chips"><span class="el el-ice">Лёд</span><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Охлаждение 2">❄️ Охлаждение <b>2</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

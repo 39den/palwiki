@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/94B_LazyDragon_Electric.webp" alt="Релаксаурус Лакс" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#94B · Relaxaurus Lux</div>
+<div class="pal-info"><div class="pal-no">№ 94B</div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span><span class="el el-ice">Лёд</span></div>
 <div class="works"><span class="work" title="Генерация энергии 4">⚡ Генерация энергии <b>4</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

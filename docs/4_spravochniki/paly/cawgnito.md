@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/57_DarkCrow.webp" alt="Когнито" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#57 · Cawgnito</div>
+<div class="pal-info"><div class="pal-no">№ 57</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>

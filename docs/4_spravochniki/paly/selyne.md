@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/190_MoonQueen.webp" alt="Селена" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#190 · Selyne</div>
+<div class="pal-info"><div class="pal-no">№ 190</div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Ручная работа 7">🖐️ Ручная работа <b>7</b></span><span class="work" title="Фармацевтика 6">💊 Фармацевтика <b>6</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

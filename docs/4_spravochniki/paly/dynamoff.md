@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/172_ThunderFluffyBird.webp" alt="Динамофф" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#172 · Dynamoff</div>
+<div class="pal-info"><div class="pal-no">№ 172</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
 <div class="works"><span class="work" title="Генерация энергии 6">⚡ Генерация энергии <b>6</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/35_MopBaby.webp" alt="Сви" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#35 · Swee</div>
+<div class="pal-info"><div class="pal-no">№ 35</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Охлаждение 1">❄️ Охлаждение <b>1</b></span></div>

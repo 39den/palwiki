@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/122_Suzaku.webp" alt="Судзаку" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#122 · Suzaku</div>
+<div class="pal-info"><div class="pal-no">№ 122</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span></div>

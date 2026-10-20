@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/171_GhostDragon.webp" alt="Айдролон" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#171 · Eidrolon</div>
+<div class="pal-info"><div class="pal-no">№ 171</div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-ice">Лёд</span></div>
 <div class="works"><span class="work" title="Транспортировка 6">📦 Транспортировка <b>6</b></span></div>

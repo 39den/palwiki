@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/156_SumoDog.webp" alt="Буллдос" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#156 · Bulldosu</div>
+<div class="pal-info"><div class="pal-no">№ 156</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

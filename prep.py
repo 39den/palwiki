@@ -45,7 +45,7 @@ for p in pals:
     works=''.join(f'<span class="work" title="{w["work"]} {w["level"]}">{WI.get(w["work"],"•")} {w["work"]} <b>{w["level"]}</b></span>' for w in p['work'])
     head=f'''<div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../{img}" alt="{p['ru']}" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#{p['no']} · {p['en']}</div>
+<div class="pal-info"><div class="pal-no">№ {p["no"]}</div>
 <div class="chips">{''.join(chip(e) for e in p['elements'])}</div>
 <div class="weak">Слабость: {''.join(chip(e) for e in p['weak_to'])}</div>
 <div class="works">{works}</div>
@@ -183,7 +183,7 @@ for f in glob.glob(D+'/**/*.md',recursive=True):
 print('broken links removed',bad)
 # ---------- pages
 hero=''.join(f'<img src="art/{p["id"]}.webp" alt="" loading="lazy">' for p in random.Random(7).sample([p for p in SP if p['thumb'].startswith('art')],14))
-T=lambda u,i,t,d:f'<a class="tile" href="{u}"><span class="ti">{i}</span><b>{t}</b><small>{d}</small></a>'
+T=lambda u,i,t,d:f'<a class="tile card-link" href="{u}"><span class="ti">{i}</span><b>{t}</b><small>{d}</small></a>'
 open(D+'/index.md','w').write(f'''---
 hide: [navigation, toc]
 ---

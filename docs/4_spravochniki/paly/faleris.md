@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/188_Horus.webp" alt="Фалерис" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#188 · Faleris</div>
+<div class="pal-info"><div class="pal-no">№ 188</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 6">🔥 Разжигание огня <b>6</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>

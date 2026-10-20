@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/204_WorldTreeDragon.webp" alt="Астралим" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#204 · Astralym</div>
+<div class="pal-info"><div class="pal-no">№ 204</div>
 <div class="chips"></div>
 <div class="weak">Слабость: </div>
 <div class="works"></div>

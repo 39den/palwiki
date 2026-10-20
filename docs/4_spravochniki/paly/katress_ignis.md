@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/79B_CatMage_Fire.webp" alt="Катресс Игнис" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#79B · Katress Ignis</div>
+<div class="pal-info"><div class="pal-no">№ 79B</div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Фармацевтика 3">💊 Фармацевтика <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

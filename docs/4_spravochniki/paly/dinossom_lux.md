@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/84B_FlowerDinosaur_Electric.webp" alt="Диноссум Лакс" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#84B · Dinossom Lux</div>
+<div class="pal-info"><div class="pal-no">№ 84B</div>
 <div class="chips"><span class="el el-electric">Молния</span><span class="el el-dragon">Дракон</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span><span class="el el-ice">Лёд</span></div>
 <div class="works"><span class="work" title="Генерация энергии 3">⚡ Генерация энергии <b>3</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span></div>

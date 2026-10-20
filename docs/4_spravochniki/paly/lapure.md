@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/170_SleeveRabbit.webp" alt="Немофи" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#170 · Lapure</div>
+<div class="pal-info"><div class="pal-no">№ 170</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span></div>

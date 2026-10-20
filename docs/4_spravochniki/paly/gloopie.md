@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/48_OctopusGirl.webp" alt="Глуппи" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#48 · Gloopie</div>
+<div class="pal-info"><div class="pal-no">№ 48</div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

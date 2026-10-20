@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/73B_LizardMan_Fire.webp" alt="Лизпанк Игнис" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#73B · Leezpunk Ignis</div>
+<div class="pal-info"><div class="pal-no">№ 73B</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 2">🔥 Разжигание огня <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

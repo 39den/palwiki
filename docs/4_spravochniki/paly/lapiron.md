@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/165_BrownRabbit.webp" alt="Лапирон" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#165 · Lapiron</div>
+<div class="pal-info"><div class="pal-no">№ 165</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Добыча 2">⛏️ Добыча <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

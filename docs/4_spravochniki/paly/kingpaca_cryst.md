@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/21B_KingAlpaca_Ice.webp" alt="Кингпака Крист" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#21B · Kingpaca Cryst</div>
+<div class="pal-info"><div class="pal-no">№ 21B</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Охлаждение 4">❄️ Охлаждение <b>4</b></span></div>

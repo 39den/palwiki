@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/174_FoxExorcist.webp" alt="Фларакл" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#174 · Flaracle</div>
+<div class="pal-info"><div class="pal-no">№ 174</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 7">🔥 Разжигание огня <b>7</b></span><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/137B_KingBahamut_Dragon.webp" alt="Блазамут Рю" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#137B · Blazamut Ryu</div>
+<div class="pal-info"><div class="pal-no">№ 137B</div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-ice">Лёд</span></div>
 <div class="works"><span class="work" title="Разжигание огня 6">🔥 Разжигание огня <b>6</b></span><span class="work" title="Добыча 7">⛏️ Добыча <b>7</b></span></div>

@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/191_SnowTigerBeastman.webp" alt="Бастигор" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#191 · Bastigor</div>
+<div class="pal-info"><div class="pal-no">№ 191</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Рубка деревьев 6">🪓 Рубка деревьев <b>6</b></span><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span><span class="work" title="Охлаждение 8">❄️ Охлаждение <b>8</b></span></div>

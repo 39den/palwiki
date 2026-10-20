@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/125_LeafPrincess.webp" alt="Нежноцвет" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#125 · Lullu</div>
+<div class="pal-info"><div class="pal-no">№ 125</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Фармацевтика 3">💊 Фармацевтика <b>3</b></span></div>

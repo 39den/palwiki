@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/154_GoldenHorse.webp" alt="Гилдейн" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#154 · Gildane</div>
+<div class="pal-info"><div class="pal-no">№ 154</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span></div>

@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/148_GhostRabbit.webp" alt="Найтмери" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#148 · Nitemary</div>
+<div class="pal-info"><div class="pal-no">№ 148</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

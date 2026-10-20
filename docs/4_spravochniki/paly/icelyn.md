@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/119_IceWitch.webp" alt="Айселин" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#119 · Icelyn</div>
+<div class="pal-info"><div class="pal-no">№ 119</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Ручная работа 5">🖐️ Ручная работа <b>5</b></span><span class="work" title="Фармацевтика 4">💊 Фармацевтика <b>4</b></span><span class="work" title="Охлаждение 5">❄️ Охлаждение <b>5</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

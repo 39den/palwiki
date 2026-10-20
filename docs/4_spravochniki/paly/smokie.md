@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/149_BlackPuppy.webp" alt="Смоки" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#149 · Smokie</div>
+<div class="pal-info"><div class="pal-no">№ 149</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span></div>

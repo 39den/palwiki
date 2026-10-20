@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/98B_ThunderDog_Ice.webp" alt="Райхаунд Крист" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#98B · Rayhound Cryst</div>
+<div class="pal-info"><div class="pal-no">№ 98B</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Охлаждение 3">❄️ Охлаждение <b>3</b></span></div>

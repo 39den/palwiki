@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/142B_CubeTurtle_Neutral.webp" alt="Тетроис Примо" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#142B · Tetroise Primo</div>
+<div class="pal-info"><div class="pal-no">№ 142B</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Добыча 6">⛏️ Добыча <b>6</b></span></div>

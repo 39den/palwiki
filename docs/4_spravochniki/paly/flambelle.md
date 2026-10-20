@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/25_LavaGirl.webp" alt="Фламбелль" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#25 · Flambelle</div>
+<div class="pal-info"><div class="pal-no">№ 25</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода</span></div>
 <div class="works"><span class="work" title="Разжигание огня 1">🔥 Разжигание огня <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>

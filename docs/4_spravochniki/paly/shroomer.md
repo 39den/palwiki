@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/118_MushroomDragon.webp" alt="Шрумер" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#118 · Shroomer</div>
+<div class="pal-info"><div class="pal-no">№ 118</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span><span class="work" title="Фермерство 3">🐑 Фермерство <b>3</b></span></div>

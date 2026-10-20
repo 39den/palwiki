@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/15B_Hedgehog_Ice.webp" alt="Джолтхог Крист" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#15B · Jolthog Cryst</div>
+<div class="pal-info"><div class="pal-no">№ 15B</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Охлаждение 1">❄️ Охлаждение <b>1</b></span></div>

@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/39_SweetsSheep.webp" alt="Вулипоп" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#39 · Woolipop</div>
+<div class="pal-info"><div class="pal-no">№ 39</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>

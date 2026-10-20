@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/83_FengyunDeeper.webp" alt="Фенглоп" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#83 · Fenglope</div>
+<div class="pal-info"><div class="pal-no">№ 83</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>

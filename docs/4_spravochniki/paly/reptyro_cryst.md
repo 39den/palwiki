@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/129B_VolcanicMonster_Ice.webp" alt="Рептиро Крист" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#129B · Reptyro Cryst</div>
+<div class="pal-info"><div class="pal-no">№ 129B</div>
 <div class="chips"><span class="el el-ice">Лёд</span><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span><span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span><span class="work" title="Охлаждение 5">❄️ Охлаждение <b>5</b></span></div>

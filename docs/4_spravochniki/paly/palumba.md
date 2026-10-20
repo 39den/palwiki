@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/106_TropicalOstrich.webp" alt="Палумба" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#106 · Palumba</div>
+<div class="pal-info"><div class="pal-no">№ 106</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 4">🌱 Посев семян <b>4</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span></div>

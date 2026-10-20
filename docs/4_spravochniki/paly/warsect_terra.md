@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/113B_HerculesBeetle_Ground.webp" alt="Ворсект Терра" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#113B · Warsect Terra</div>
+<div class="pal-info"><div class="pal-no">№ 113B</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>

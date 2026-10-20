@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/163_ElecSnail.webp" alt="Снок" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#163 · Snock</div>
+<div class="pal-info"><div class="pal-no">№ 163</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
 <div class="works"><span class="work" title="Генерация энергии 4">⚡ Генерация энергии <b>4</b></span></div>

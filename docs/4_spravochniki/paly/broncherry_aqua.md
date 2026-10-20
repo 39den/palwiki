@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/108B_SakuraSaurus_Water.webp" alt="Брончерри Аква" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#108B · Broncherry Aqua</div>
+<div class="pal-info"><div class="pal-no">№ 108B</div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Полив 5">💧 Полив <b>5</b></span></div>

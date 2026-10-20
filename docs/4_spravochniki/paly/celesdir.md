@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/157_WhiteDeer.webp" alt="Селесдир" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#157 · Celesdir</div>
+<div class="pal-info"><div class="pal-no">№ 157</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Рубка деревьев 7">🪓 Рубка деревьев <b>7</b></span></div>

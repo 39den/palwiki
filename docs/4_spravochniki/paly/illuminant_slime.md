@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/T8_Illuminant_Slime.webp" alt="Светящийся слизень" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#T8 · Illuminant Slime</div>
+<div class="pal-info"><div class="pal-no">№ T8</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
 <div class="works"><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>

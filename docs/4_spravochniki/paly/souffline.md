@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/164_DandelionGirl.webp" alt="Суффлин" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#164 · Souffline</div>
+<div class="pal-info"><div class="pal-no">№ 164</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 2">🌱 Посев семян <b>2</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>

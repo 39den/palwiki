@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/203_KingWhale.webp" alt="Панталус" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#203 · Panthalus</div>
+<div class="pal-info"><div class="pal-no">№ 203</div>
 <div class="chips"><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
 <div class="works"></div>

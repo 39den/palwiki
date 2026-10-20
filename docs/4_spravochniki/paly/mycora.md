@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/179_MushroomLady.webp" alt="Микора" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#179 · Mycora</div>
+<div class="pal-info"><div class="pal-no">№ 179</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 6">🌱 Посев семян <b>6</b></span><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Фармацевтика 6">💊 Фармацевтика <b>6</b></span></div>

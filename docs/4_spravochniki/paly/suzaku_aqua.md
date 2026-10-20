@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/122B_Suzaku_Water.webp" alt="Судзаку Аква" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#122B · Suzaku Aqua</div>
+<div class="pal-info"><div class="pal-no">№ 122B</div>
 <div class="chips"><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 6">💧 Полив <b>6</b></span></div>

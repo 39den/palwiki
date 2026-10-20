@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/28_Boar.webp" alt="Рашоа" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#28 · Rushoar</div>
+<div class="pal-info"><div class="pal-no">№ 28</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
 <div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Добыча 1">⛏️ Добыча <b>1</b></span></div>

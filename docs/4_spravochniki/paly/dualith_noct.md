@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/138B_GrassGolem_Dark.webp" alt="Дуалит Нокт" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#138B · Dualith Noct</div>
+<div class="pal-info"><div class="pal-no">№ 138B</div>
 <div class="chips"><span class="el el-ground">Земля</span><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-grass">Трава</span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Рубка деревьев 5">🪓 Рубка деревьев <b>5</b></span><span class="work" title="Добыча 6">⛏️ Добыча <b>6</b></span><span class="work" title="Транспортировка 6">📦 Транспортировка <b>6</b></span></div>

@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/134B_Yeti_Grass.webp" alt="Вумпо Ботан" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#134B · Wumpo Botan</div>
+<div class="pal-info"><div class="pal-no">№ 134B</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Рубка деревьев 5">🪓 Рубка деревьев <b>5</b></span><span class="work" title="Транспортировка 6">📦 Транспортировка <b>6</b></span></div>

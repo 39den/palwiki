@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/186B_LilyQueen_Dark.webp" alt="Лилин Нокт" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#186B · Lyleen Noct</div>
+<div class="pal-info"><div class="pal-no">№ 186B</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
 <div class="works"><span class="work" title="Ручная работа 5">🖐️ Ручная работа <b>5</b></span><span class="work" title="Сбор 6">🌾 Сбор <b>6</b></span><span class="work" title="Фармацевтика 7">💊 Фармацевтика <b>7</b></span></div>

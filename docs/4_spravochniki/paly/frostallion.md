@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/200_IceHorse.webp" alt="Фросталлион" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#200 · Frostallion</div>
+<div class="pal-info"><div class="pal-no">№ 200</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
 <div class="works"><span class="work" title="Охлаждение 7">❄️ Охлаждение <b>7</b></span></div>

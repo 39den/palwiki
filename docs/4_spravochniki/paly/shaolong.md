@@ -2,7 +2,7 @@
 
 <div class="pal-hero" markdown="0">
 <img class="pal-card" src="../../../img/192_BlueSkyDragon.webp" alt="Шаолонг" loading="lazy" width="360">
-<div class="pal-info"><div class="pal-no">#192 · Shaolong</div>
+<div class="pal-info"><div class="pal-no">№ 192</div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-ice">Лёд</span><span class="el el-electric">Молния</span></div>
 <div class="works"><span class="work" title="Полив 8">💧 Полив <b>8</b></span><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span></div>
