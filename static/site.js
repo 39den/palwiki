@@ -16,18 +16,35 @@ function gallery(D){const f=document.getElementById('gal-filters'),g=document.ge
  f.addEventListener('input',run);f.addEventListener('change',run);run();}
 function potd(D){const ps=D.pals.filter(p=>p.url&&p.thumb);const d=new Date();const p=ps[(d.getFullYear()*372+d.getMonth()*31+d.getDate())%ps.length];
  document.getElementById('potd').innerHTML=`<a class="potd card-link" href="${B+p.url}"><img src="${B+p.thumb}" alt="" loading="lazy"><div><h3>${esc(p.ru)} <small>#${esc(p.no)}</small></h3>${p.el.map(chip).join('')}<div>${p.work.map(w=>esc(w[0])+' '+w[1]).join(' · ')}</div><div>Партнёрка: <b>${esc(p.psk)}</b> ${p.act.map(x=>ACT[x]||'').join(' ')}</div><span class="open">Открыть →</span></div></a>`;}
-function compare(D){const box=document.getElementById('cmp');const ps=D.pals.filter(p=>p.url).sort((a,b)=>a.ru.localeCompare(b.ru,'ru'));
- const dl='<datalist id="cmpl">'+ps.map(p=>`<option value="${esc(p.ru)}">`).join('')+'</datalist>';
- const u=new URLSearchParams(location.search);
- box.innerHTML=dl+`<div class="gal-filters"><input id="c1" list="cmpl" placeholder="Первый пал" value="${esc(u.get('a')||'Анубис')}"><span>⚔️</span><input id="c2" list="cmpl" placeholder="Второй пал" value="${esc(u.get('b')||'Джетрагон')}"></div><div id="cmpo"></div>`;
- const pick=v=>{const a=window.PW_core.find(v,['pal']);return a?D.pals[a.ref]:null;};
- const run=()=>{const a=pick(document.getElementById('c1').value),b=pick(document.getElementById('c2').value);if(!a||!b){document.getElementById('cmpo').innerHTML='<p>Выбери двух палов.</p>';return;}
-  const row=(t,f,num)=>{const x=f(a),y=f(b);let cx='',cy='';if(num){if(x>y){cx=' class="win"';cy=' class="lose"';}else if(y>x){cy=' class="win"';cx=' class="lose"';}}return `<tr><th>${t}</th><td${cx}>${x}</td><td${cy}>${y}</td></tr>`;};
-  const wk=p=>p.work.map(w=>esc(w[0])+' <b>'+w[1]+'</b>').join('<br>');
-  document.getElementById('cmpo').innerHTML=`<table class="cmp"><tr><th></th><td><a class="cmp-pal card-link" href="${B+a.url}"><img src="${B+a.thumb}" width="120" loading="lazy"><br>${esc(a.ru)}</a></td><td><a class="cmp-pal card-link" href="${B+b.url}"><img src="${B+b.thumb}" width="120" loading="lazy"><br>${esc(b.ru)}</a></td></tr>`+
-  row('Стихия',p=>p.el.map(chip).join(''))+row('Слабость',p=>p.weak.map(chip).join(''))+row('❤️ HP',p=>p.hp,1)+row('⚔️ Атака',p=>p.atk,1)+row('🛡 Защита',p=>p.def,1)+row('🐎 Рывок',p=>p.sprint||'—',1)+row('Редкость',p=>p.rarity,1)+row('Работы',wk)+row('Партнёрка',p=>'<b>'+esc(p.psk)+'</b><br>'+p.act.map(x=>ACT[x]||'').join(' '))+row('Врождённые пассивки',p=>(p.natp||[]).map(x=>esc(x[0])).join(', ')||'—')+row('Пассивки боец',p=>(p.bp['боец']||[]).map(esc).join(', ')||'—')+'</table>';
-  history.replaceState(null,'','?a='+encodeURIComponent(a.ru)+'&b='+encodeURIComponent(b.ru));};
- box.addEventListener('change',run);box.addEventListener('input',e=>{if(pick(e.target.value))run();});run();}
+function compare(D){const box=document.getElementById('cmp');const u=new URLSearchParams(location.search);
+ const WI={'Разжигание огня':'🔥','Полив':'💧','Посев семян':'🌱','Генерация энергии':'⚡','Ручная работа':'🖐️','Сбор':'🌾','Рубка деревьев':'🪓','Добыча':'⛏️','Фармацевтика':'💊','Охлаждение':'❄️','Транспортировка':'📦','Фермерство':'🐑'};
+ const PR=Object.fromEntries((D.passives||[]).map(q=>[q.name,q]));
+ const rc=r=>r<0?'r-neg':r>=2?'r-'+Math.min(r,5):'';
+ const pchip=n=>{const q=PR[n];return q&&q.url?`<a class="psv ${rc(q.rank)}" data-psv="${esc(n)}" href="${B+q.url}">${esc(n)}</a>`:`<span class="psv">${esc(n)}</span>`;};
+ box.innerHTML=`<input id="c1" type="hidden" value="${esc(u.get('a')||'Анубис')}"><input id="c2" type="hidden" value="${esc(u.has('b')?u.get('b'):'Джетрагон')}"><div id="cmpo"></div>`;
+ const c1=document.getElementById('c1'),c2=document.getElementById('c2');
+ const pick=v=>{if(!v)return null;const a=window.PW_core.find(v,['pal']);return a?D.pals[a.ref]:null;};
+ const setU=()=>{const q=new URLSearchParams();if(c1.value)q.set('a',c1.value);if(c2.value)q.set('b',c2.value);history.replaceState(null,'','?'+q);};
+ const choose=(inp,t)=>window.PW_pickPal(D,t,p=>{inp.value=p.ru;setU();run();});
+ const head=(p,i)=>p?`<div class="cx-pal cx-${i?'b':'a'}"><a href="${B+p.url}" class="cx-av"><img src="${B+p.thumb}" width="56" height="56" alt=""></a><div class="cx-nm"><b>${esc(p.ru)}</b><span class="cx-no">#${esc(p.no)}</span><span class="cx-els">${p.el.map(chip).join('')}</span></div><button type="button" class="cx-chg" data-i="${i}">Сравнить с другим</button></div>`:`<button type="button" class="cx-pal cx-empty cx-chg" data-i="${i}"><span class="plus">＋</span><b>Выбрать пала</b></button>`;
+ const run=()=>{const a=pick(c1.value),b=pick(c2.value);
+  let h=`<div class="cx-head">${head(a,0)}<button type="button" class="cx-swap" aria-label="Поменять местами" title="Поменять местами">⇄</button>${head(b,1)}</div>`;
+  if(!a||!b){document.getElementById('cmpo').innerHTML=h+'<p class="cx-hint">Выбери второго пала, чтобы сравнить.</p>';return bind();}
+  const st=[['❤️','HP','hp'],['⚔️','Атака','atk'],['🛡','Защита','def'],['🐎','Рывок','sprint']];
+  const bars=st.map(([ic,l,k])=>{const x=+a[k]||0,y=+b[k]||0,m=Math.max(x,y)||1,d=Math.abs(x-y);const wa=x>y?' win':'',wb=y>x?' win':'';
+   return `<div class="cx-st"><div class="cx-sl"><span class="cx-v${wa}">${x||'—'}</span><span class="cx-lb">${ic} ${l}${d?` <small class="cx-d">${x>y?'◀':''} +${d} ${y>x?'▶':''}</small>`:' <small class="cx-d">=</small>'}</span><span class="cx-v${wb}">${y||'—'}</span></div><div class="cx-bars"><div class="cx-bar l"><i class="${wa}" style="width:${x/m*100}%"></i></div><div class="cx-bar r"><i class="${wb}" style="width:${y/m*100}%"></i></div></div></div>`;}).join('');
+  const wk=p=>p.work.length?p.work.map(w=>`<span class="cx-wk" title="${esc(w[0])}"><span>${WI[w[0]]||'🔧'}</span>${esc(w[0])}<b>${w[1]}</b></span>`).join(''):'<span class="cx-none">нет</span>';
+  const ps=p=>`<div class="cx-psk"><b>${esc(p.psk||'—')}</b><small>${(p.act||[]).map(x=>ACT[x]||'').join(' · ')}</small></div>`;
+  const nat=p=>(p.natp||[]).map(x=>x[0]),na=nat(a),nb=nat(b),sh=na.filter(x=>nb.includes(x));
+  const bp=p=>(p.bp&&p.bp['боец'])||[],ba=bp(a),bb=bp(b),bsh=ba.filter(x=>bb.includes(x));
+  const prow=(t,xa,xb,s)=>{const oa=xa.filter(x=>!s.includes(x)),ob=xb.filter(x=>!s.includes(x));if(!xa.length&&!xb.length)return '';
+   return `<div class="cx-sec"><h3>${t}</h3>${s.length?`<div class="cx-common"><span class="cx-cl">Общие</span>${s.map(pchip).join('')}</div>`:''}<div class="cx-two"><div>${oa.map(pchip).join('')||'<span class="cx-none">—</span>'}</div><div>${ob.map(pchip).join('')||'<span class="cx-none">—</span>'}</div></div></div>`;};
+  const two=(t,f)=>`<div class="cx-sec"><h3>${t}</h3><div class="cx-two"><div>${f(a)}</div><div>${f(b)}</div></div></div>`;
+  h+=`<div class="cx-sec"><h3>Характеристики</h3>${bars}</div>`+two('Слабость',p=>p.weak.map(chip).join('')||'<span class="cx-none">—</span>')+two('Работа',wk)+two('Партнёрский навык',ps)+prow('Врождённые пассивки',na,nb,sh)+prow('Лучшие пассивки для боя',ba,bb,bsh);
+  document.getElementById('cmpo').innerHTML=h;bind();};
+ const bind=()=>{box.querySelectorAll('.cx-chg').forEach(x=>x.onclick=e=>{e.preventDefault();const i=+x.dataset.i;choose(i?c2:c1,i?'Второй пал…':'Первый пал…');});
+  const s=box.querySelector('.cx-swap');if(s)s.onclick=()=>{[c1.value,c2.value]=[c2.value,c1.value];setU();run();};};
+ run();}
 function map(D){const el=document.getElementById('pwmap');if(!el||!window.L)return;
  const T={alpha:['👑','Альфы','#ff7a59'],travel:['🗿','Телепорты','#14b8a6'],tower:['🏯','Башни','#9b5de5'],sealed:['🔒','Запечатанные земли','#2f8fe8']};
  const X0=-1923.225927,Y0=1032.79857101,X1=1234.833276624702,Y1=-2125.2606328,S=8192,Z=5;
@@ -92,8 +109,8 @@ function table(D){const g=document.getElementById('gallery'),f=document.getEleme
   let t=document.getElementById('gtable');if(!t){t=document.createElement('div');t.id='gtable';g.after(t);}
   t.innerHTML=`<div class="md-typeset__table"><table class="ptable"><thead><tr>${cols.map(([k,l])=>`<th data-k="${k}" class="${k==key?(dir>0?'asc':'desc'):''}">${l}</th>`).join('')}</tr></thead><tbody>${ps.map(p=>`<tr onclick="location.href='${B+p.url}'"><td>${esc(p.no)}</td><td><img src="${B+p.thumb}" width="32" height="32" loading="lazy" alt=""> <a href="${B+p.url}">${esc(p.ru)}</a></td><td>${p.el.map(window.PW_chip).join('')}</td><td>${p.hp}</td><td>${p.atk}</td><td>${p.def}</td><td>${p.sprint||'—'}</td><td>${esc(best(p)[0])} ${best(p)[1]||''}</td></tr>`).join('')}</tbody></table></div>`;
   t.querySelectorAll('th').forEach(th=>th.onclick=()=>{const k=th.dataset.k;dir=k==key?-dir:(['ru','no','el'].includes(k)?1:-1);key=k;draw();});};
- sw.querySelectorAll('button').forEach(b=>b.onclick=()=>{view=b.dataset.v;sw.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));g.style.display=view=='grid'?'':'none';const t=document.getElementById('gtable');if(t)t.style.display=view=='grid'?'none':'';draw();});
- new MutationObserver(draw).observe(g,{childList:true});}
+ sw.querySelectorAll('button').forEach(b=>b.onclick=()=>{view=b.dataset.v;try{localStorage.setItem('pw_gview',view)}catch(e){};sw.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));g.style.display=view=='grid'?'':'none';const t=document.getElementById('gtable');if(t)t.style.display=view=='grid'?'none':'';draw();});
+ new MutationObserver(draw).observe(g,{childList:true});const sv=localStorage.getItem('pw_gview');if(sv&&sv!='grid'){const bt=sw.querySelector('[data-v='+sv+']');bt&&setTimeout(()=>bt.click(),0);}}
 document.addEventListener('DOMContentLoaded',()=>{tabbar();window.PW_data().then(D=>{palPage(D);homeLists(D);setTimeout(()=>table(D),0);});});})();
 (function(){const B=window.PW_BASE;const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function close(){document.querySelectorAll('.sheet,.sheet-bg').forEach(e=>e.remove());}

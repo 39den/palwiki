@@ -25,8 +25,8 @@ theme:
 plugins:
   - search:
       lang: [ru, en]
-extra_css: ['assets/extra.css?v=1792512218']
-extra_javascript: ['assets/smart.js?v=1792512218', 'assets/site.js?v=1792512218', 'assets/features.js?v=1792512218', 'assets/ui2.js?v=1792512218']
+extra_css: ['assets/extra.css?v=1792514731']
+extra_javascript: ['assets/smart.js?v=1792514731', 'assets/site.js?v=1792514731', 'assets/features.js?v=1792514731', 'assets/ui2.js?v=1792514731', 'assets/ui3.js?v=1792514731']
 markdown_extensions:
   - tables
   - attr_list
@@ -62,7 +62,6 @@ nav:
   - Разведение: guide/07_razvedenie.md
   - Как сделать пала сильнее: guide/08_usilenie.md
   - База: guide/09_baza.md
-  - Боссы: guide/10_bossy.md
   - Свой сервер и игра с друзьями: guide/12_server.md
   - Фарм и лут: guide/13_farm.md
   - Механики для знатоков: guide/14_mehaniki.md
@@ -89,11 +88,9 @@ nav:
     - Снаряжение: 4_spravochniki/predmety/снаряжение.md
     - Сферы: 4_spravochniki/predmety/сферы.md
     - Чертёж: 4_spravochniki/predmety/чертёж.md
-  - Карточки боссов, башен, рейдов и подземелий: 4_spravochniki/bossy.md
   - Особые комбинации разведения: 4_spravochniki/osobye_kombinacii.md
-  - Палы по стихиям и по работе: 4_spravochniki/paly_po_stihiyam_i_rabote.md
   - Все активные навыки: 2_mehaniki/aktivki.md
-  - Все пассивки: 2_mehaniki/passivki.md
+  - Лучшие наборы пассивок: 2_mehaniki/passivki.md
   - Где взять пассивку и как её перенести: 2_mehaniki/passivki_gde_vzyat.md
   - Технологии по уровням: 2_mehaniki/tehnologii.md
   - Обратный поиск: 5_lut_i_farm/gde_vzyat.md

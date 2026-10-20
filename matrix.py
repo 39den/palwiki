@@ -44,13 +44,18 @@ with sync_playwright() as p:
         lab=pg.locator('.md-sidebar--primary .md-nav__container',has_text='Справочник').locator('label').first
         if lab.count():lab.click();pg.wait_for_timeout(600)
         if br=='webkit':pg.screenshot(path=S+'webkit_drawer_top.png')
-        f="()=>[...document.querySelectorAll('.md-sidebar--primary .md-nav__list')].reduce((a,n)=>a+n.scrollTop,0)"
+        vis="[...document.querySelectorAll('.md-sidebar--primary .md-nav__list')].filter(n=>{const r=n.getBoundingClientRect();return r.width>0&&r.left>=-1&&r.right<=innerWidth+1&&getComputedStyle(n).overflowY=='auto'&&n.scrollHeight>n.clientHeight+4})"
+        if not pg.evaluate(vis+".length"):
+          pg.locator('.md-sidebar--primary label',has_text='Предметы').first.click();pg.wait_for_timeout(600)
+        f="()=>"+vis+".reduce((a,n)=>a+n.scrollTop,0)"
         a0=pg.evaluate(f)
         opened=pg.evaluate("document.getElementById('__drawer').checked&&document.querySelector('.md-sidebar--primary').getBoundingClientRect().right>100")
         if not opened:raise Exception('drawer not open')
         if br=='webkit':pg.evaluate("[...document.querySelectorAll('.md-sidebar--primary .md-nav__list')].filter(n=>n.getBoundingClientRect().left>=0&&n.getBoundingClientRect().width>0&&getComputedStyle(n).overflowY=='auto'&&n.scrollHeight>n.clientHeight).forEach(n=>n.scrollBy(0,2000))");pg.wait_for_timeout(300)
         else:
-          for _ in range(6):pg.mouse.move(120,500);pg.mouse.wheel(0,500);pg.wait_for_timeout(120)
+          bx=pg.evaluate("(()=>{const n="+vis+"[0];if(!n)return null;const r=n.getBoundingClientRect();return [r.left+r.width/2,r.top+r.height/2]})()")
+          if not bx:raise Exception('no scrollable visible list')
+          for _ in range(6):pg.mouse.move(*bx);pg.mouse.wheel(0,500);pg.wait_for_timeout(120)
         a1=pg.evaluate(f);y1=pg.evaluate('scrollY')
         if br=='webkit':pg.screenshot(path=S+'webkit_drawer_bottom.png')
         r['drawer']='PASS' if a1>a0 and abs(y1-y0)<2 else f'FAIL({a0}->{a1},body {y0}->{y1})'
@@ -61,7 +66,7 @@ with sync_playwright() as p:
         r['help_tip']='PASS' if pg.locator('.hlp-pop').count() else 'FAIL'
       except Exception as e:r['help_tip']='FAIL '+str(e)[:40]
       try:
-        pg.goto(U+'map/?test=1',wait_until='networkidle');pg.wait_for_timeout(1200);b2=pg.locator('.mapsw [data-w=t]');b2.tap() if opt.get('has_touch') else b2.click();pg.wait_for_timeout(300)
+        pg.goto(U+'map/?test=1',wait_until='networkidle');pg.wait_for_timeout(1200);b2=pg.locator('.mapsw [data-w=t]').first;b2.tap() if opt.get('has_touch') else b2.click();pg.wait_for_timeout(300)
         r['worldtree']='PASS' if pg.locator('#wtree:not([hidden])').count() else 'FAIL'
       except Exception as e:r['worldtree']='FAIL '+str(e)[:40]
       try:
@@ -82,6 +87,24 @@ with sync_playwright() as p:
         r['bottom_bar']='PASS' if not ov else 'FAIL'
         if br=='webkit':pg.screenshot(path=S+'webkit_where.png')
       except Exception as e:r['bottom_bar']='FAIL '+str(e)[:40]
+    if mob:
+      try:
+        pg.goto(U+'4_spravochniki/paly/anubis/?test=1',wait_until='networkidle');pg.wait_for_timeout(800)
+        hh=pg.evaluate("[document.querySelector('.pal-card').getBoundingClientRect().width/innerWidth,document.querySelector('.pal-info h2,.pal-info .pal-no,.pal-info').getBoundingClientRect().top,innerHeight]");r['card_peek']='PASS' if hh[0]<=0.92 and hh[1]<hh[2]-40 else f'FAIL({hh})'
+        fr=pg.evaluate("window.PW_swipeSim?PW_swipeSim(200):null")
+        if fr:
+          fr=sorted(fr);p95=fr[int(len(fr)*.95)-1];r['swipe_fps']=('PASS' if p95<34 else 'FAIL')+f'(p95 {p95:.1f}ms, median {fr[len(fr)//2]:.1f}ms)'
+        else:r['swipe_fps']='FAIL(no sim)'
+        if br in('webkit','firefox'):pg.screenshot(path=S+br+'_pal.png')
+        pg.locator('.pal-card').click();pg.wait_for_timeout(300);r['art_tap']='PASS' if pg.locator('.lbx').count() else 'FAIL';pg.locator('.lbx').click()
+        pg.evaluate('scrollTo(0,1400)');pg.wait_for_timeout(300);pg.evaluate('scrollTo(0,1700)');pg.wait_for_timeout(500)
+        r['bar_hides']='PASS' if pg.evaluate("document.querySelector('.tabbar').classList.contains('hid')") else 'FAIL'
+        r['psv_effect']='PASS' if pg.locator('a.psv .pe').count() else 'FAIL'
+      except Exception as e:r.setdefault('compact_hero','FAIL '+str(e)[:40])
+      try:
+        pg.goto(U+'map/?test=1',wait_until='networkidle');pg.wait_for_timeout(1500);r['map_sheet']='PASS' if pg.locator('.msheet').count() and pg.evaluate("document.getElementById('pwmap').getBoundingClientRect().height>400") else 'FAIL'
+        if br=='webkit':pg.screenshot(path=S+'webkit_map.png')
+      except Exception as e:r['map_sheet']='FAIL '+str(e)[:40]
     r['js_errors']='PASS' if not E else 'FAIL: '+'; '.join(sorted(set(E))[:2])
     if br=='webkit' and mob:pg.goto(U,wait_until='networkidle');pg.wait_for_timeout(800);pg.screenshot(path=S+'webkit_home.png')
     b.close()

@@ -419,7 +419,7 @@ hide: [navigation, toc]
 <div class="smart-box"><input id="home-q" type="search" placeholder="Спроси что угодно: «кто лучше копает», «чем бить Зои», «где взять серу»…" autocomplete="off"></div>
 <div id="home-answer" class="smart-out"></div></div></div>
 <div class="tiles bento" markdown="0">
-{T('gallery/','🐾','Палы','галерея с фильтрами')}{T('compare/','⚖️','Сравнить','двух палов рядом')}{T('boss/','👑','Все боссы','карточки и кем бить')}{T('4_spravochniki/bossy/','👑','Боссы','башни, рейды, альфы')}{T('guide/03_prohozhdenie_1_80/','🗺️','Прохождение','с 1 до 80 уровня')}{T('2_mehaniki/passivki/','✨','Пассивки','лучшие наборы')}{T('guide/sekrety/','🤫','Секреты','пасхалки и тайники')}{T('map/','📍','Карта','альфы, башни, телепорты')}{T('4_spravochniki/predmety/','🎒','Предметы','где взять и крафт')}{T('breed/','🧬','Разведение','калькулятор пар')}{T('my/','⭐','Мои списки','команда и фарм')}{T('https://t.me/PalGuideBot','🤖','Бот @PalGuideBot','спроси в Telegram')}
+{T('gallery/','🐾','Палы','галерея с фильтрами')}{T('compare/','⚖️','Сравнить','двух палов рядом')}{T('boss/','👑','Боссы','башни, рейды, альфы')}{T('guide/03_prohozhdenie_1_80/','🗺️','Прохождение','с 1 до 80 уровня')}{T('2_mehaniki/passivki/','✨','Пассивки','лучшие наборы')}{T('guide/sekrety/','🤫','Секреты','пасхалки и тайники')}{T('map/','📍','Карта','альфы, башни, телепорты')}{T('4_spravochniki/predmety/','🎒','Предметы','где взять и крафт')}{T('breed/','🧬','Разведение','калькулятор пар')}{T('my/','⭐','Мои списки','команда и фарм')}{T('https://t.me/PalGuideBot','🤖','Бот @PalGuideBot','спроси в Telegram')}
 </div>
 <div class="bento2" markdown="0"><div class="potd-wrap"><h2>⭐ Пал дня</h2><div id="potd"><div class="skel" style="height:170px"></div></div></div><div><h2>🕘 Недавние</h2><div id="recent" class="mini-row"><small>Открой пару палов — они появятся здесь.</small></div><h2>⭐ Избранное</h2><div id="favs" class="mini-row"><small>Нажми ☆ на странице пала.</small></div></div></div>
 ''')
@@ -458,6 +458,17 @@ G=lambda *xs:[{n:sec(d)} for d,n in xs if glob.glob(f'{D}/{d}/*.md')]
 mir=[{title(D+'/guide/'+x):'guide/'+x} for x in ('11_mir.md','koordinaty.md','sekrety.md')];used.update(D+'/guide/'+x for x in ('11_mir.md','koordinaty.md','sekrety.md'))
 pal_pages=sec('4_spravochniki/paly')
 spr=G(('4_spravochniki/predmety','Предметы'))+sec('4_spravochniki')
+def _drop(L,f):
+  out=[]
+  for x in L:
+    if isinstance(x,dict):
+      k,v=next(iter(x.items()))
+      if isinstance(v,list):out.append({k:_drop(v,f)})
+      elif v!=f:out.append(x)
+    elif x!=f:out.append(x)
+  return out
+spr=_drop(spr,'4_spravochniki/bossy.md')
+open(D+'/4_spravochniki/bossy.md','w').write('---\nhide: [toc, navigation]\nsearch:\n  exclude: true\n---\n# Боссы\n\n<meta http-equiv="refresh" content="0; url=../../boss/">\n<script>location.replace("../../boss/")</script>\n\n<a class="md-button md-button--primary" href="../../boss/">Открыть карточки боссов →</a>\n')
 # ---- boss cards ----
 os.makedirs(D+'/boss',exist_ok=True)
 PBR={x['ru']:x for x in SP}
@@ -532,6 +543,38 @@ for x in SB:
   if g:x['url']=g['url']
 _sd=json.load(open(A+'/search_data.json'));_sd['bosses']=SB;_sd['bcards']=BJS;json.dump(_sd,open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
 
+# ---- item pages as cards ----
+_RAR=['Обычный','Необычный','Редкий','Эпический','Легендарный']
+_items_by={}
+for _i in items:_items_by.setdefault(_i.get('type') or 'Прочее',[]).append(_i)
+_PDIR=D+'/4_spravochniki/predmety/'
+_ILINK={x['ru']:x for x in items}
+for _ty,_lst in _items_by.items():
+  _fn=_PDIR+_ty.lower().replace(' ','_')+'.md'
+  if not os.path.exists(_fn):continue
+  out=[f'---\nhide: [toc]\n---\n# {_ty}\n\n<div class="pfl ifl" markdown="0"><input type="search" class="pfq" placeholder="Найти в разделе «{esc_h(_ty)}»…" autocomplete="off"><span class="gcount pfn"></span></div>\n']
+  for i in sorted(_lst,key=lambda z:z['ru']):
+    r=int(i.get('rarity') or 0);tiles=[('💎','Редкость',_RAR[min(r,4)]),('⚖️','Вес',i.get('weight')),('💰','Цена',i.get('price'))]
+    if i.get('tech_level'):tiles.append(('📘','Технология',f"ур. {i['tech_level']}"))
+    tl=''.join(f'<div class="it"><span class="ii">{a}</span><span class="il">{b}</span><b>{esc_h(c)}</b></div>' for a,b,c in tiles if c not in (None,'','0'))
+    rec=''.join(f'<span class="ichip">{esc_h(x["item"])} <b>×{esc_h(x["qty"])}</b></span>' for x in (i.get('recipe') or []))
+    src=[];seen=set()
+    for x in (i.get('sources') or []):
+      l=x.get('label') or x.get('source') or '';k=(l,x.get('qty'))
+      if not l or k in seen or re.search(r'[A-Za-z]{3,}_',l):continue
+      seen.add(k);src.append(f'<span class="ichip src">📦 {esc_h(l)} <small>{esc_h(x.get("qty",""))} · {esc_h(x.get("chance",""))}</small></span>')
+    seen=set()
+    for x in (i.get('from_npc') or []):
+      if x['who'] in seen:continue
+      seen.add(x['who']);src.append(f'<span class="ichip src">👤 {esc_h(x["who"])} <small>{esc_h(x.get("chance",""))}</small></span>')
+    for x in (i.get('from_pals') or [])[:12]:
+      n=x.get('pal') if isinstance(x,dict) else x;pp=_PTH.get(n)
+      src.append(f'<a class="ichip src" href="../../../{pp["url"]}"><img src="../../../{pp["thumb"]}" width="20" height="20" alt="">{esc_h(n)}</a>' if pp else f'<span class="ichip src">🐾 {esc_h(n)}</span>')
+    if i.get('merchant'):src.append('<span class="ichip src">🛒 торговец</span>')
+    desc=esc_h((i.get('desc') or '').replace('\n',' '))
+    out.append(f'## {i["ru"]}\n\n<div class="icard r{min(r,4)}" data-n="{esc_h((i["ru"]+" "+i.get("en","")).lower())}" markdown="0"><p class="idesc">{desc}</p><div class="itiles">{tl}</div>'+(f'<div class="isec"><span class="ish">🔨 Крафт</span><div class="ichips">{rec}</div>'+(f'<small class="ist">{esc_h(i["station"])}</small>' if i.get('station') else '')+'</div>' if rec else '')+(f'<div class="isec"><span class="ish">📍 Где взять</span><div class="ichips">{"".join(src[:24])}</div></div>' if src else '')+'</div>\n')
+  open(_fn,'w').write('\n'.join(out))
+
 nav=[{'🏠 Главная':'index.md'},
  {'🐾 Палы':[{'Галерея и фильтры':'gallery.md'},{'По стихиям и работе':'4_spravochniki/paly_po_stihiyam_i_rabote.md'},{'Сравнить двух':'compare.md'},{'Калькулятор разведения':'breed.md'},{'Мои списки':'my.md'}]},
  {'🧭 Гайд':sec('guide')+sec('0_nachni_zdes')+sec('1_prohozhdenie')},
@@ -540,6 +583,26 @@ nav=[{'🏠 Главная':'index.md'},
  {'🗺️ Мир и карта':[{'Интерактивная карта':'map.md'},{'Мировое древо':'https://39den.github.io/palwiki/map/#tree'}]+mir+sec('6_mir')+sec('7_server')},
  {'❓ FAQ':sec('9_faq')+sec('8_slovar')+sec('10_bagi')},
  {'🤖 Бот':'bot.md'}]
+nav=_drop(nav,'guide/10_bossy.md')
+open(D+'/guide/10_bossy.md','w').write('---\nhide: [toc, navigation]\nsearch:\n  exclude: true\n---\n# Боссы\n\n<meta http-equiv="refresh" content="0; url=../../boss/">\n<script>location.replace("../../boss/")</script>\n\n<a class="md-button" href="../../boss/">Все боссы →</a>\n')
+_seen=set()
+def _dedup(L):
+  out=[]
+  for x in L:
+    k,v=next(iter(x.items())) if isinstance(x,dict) else (None,x)
+    if isinstance(v,list):
+      v=_dedup(v)
+      if v:out.append({k:v})
+    elif v not in _seen:_seen.add(v);out.append(x)
+  return out
+nav=_dedup(nav)
+def _ren(L):
+  for i,x in enumerate(L):
+    if isinstance(x,dict):
+      k,v=next(iter(x.items()))
+      if isinstance(v,list):_ren(v)
+      elif v=='2_mehaniki/passivki.md':L[i]={'Лучшие наборы пассивок':v}
+_ren(nav)
 keep=used|{D+'/passivki/'+os.path.basename(f) for f in glob.glob(D+'/passivki/*.md')}|{D+'/boss/'+os.path.basename(f) for f in glob.glob(D+'/boss/*.md')}|{D+'/index.md',D+'/gallery.md',D+'/bot.md',D+'/compare.md',D+'/map.md',D+'/breed.md',D+'/my.md'}
 for f in glob.glob(D+'/**/*.md',recursive=True):
   if f not in keep: os.remove(f)
