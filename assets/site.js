@@ -106,3 +106,11 @@ document.addEventListener('click',e=>{const a=e.target.closest('a.psv[data-psv]'
   s.innerHTML=`<button class="x" aria-label="Закрыть">×</button><span class="psv ${a.className.split(' ').find(c=>c.startsWith('r-'))||''}">${esc(q.name)}</span> <small>ранг ${rk}</small><h3>${rk<0?'Плохая пассивка':rk>=4?'Топовая пассивка':'Что даёт'}</h3><div>${esc(q.desc)}</div><ul>${g.map(x=>'<li>'+x+'</li>').join('')}</ul><a href="${a.href}">Подробнее →</a>`;
   document.body.append(bg,s);s.querySelector('.x').onclick=close;
   if(window.innerWidth>700){const r=a.getBoundingClientRect();s.style.left=Math.min(r.left,window.innerWidth-440)+'px';s.style.top=Math.min(r.bottom+8,window.innerHeight-s.offsetHeight-10)+'px';}});});})();
+(function(){const h=document.querySelector('.pal-hero[data-el]');const c=document.getElementById('fx');if(!h||!c||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ const el=h.dataset.el,ctx=c.getContext('2d');const C={fire:['#ff8a4c','#ffcf6b'],ice:['#ffffff','#bfefff'],water:['#7cc4ff','#d6efff'],grass:['#7ee08f','#c9f2a0'],electric:['#ffe066','#fff6b0'],ground:['#d9a868','#f0d2a0'],dark:['#b28cff','#e0ccff'],dragon:['#ff8fd0','#ffd0ec'],neutral:['#e8e4d8','#ffffff']}[el]||['#fff','#fff'];
+ let W,H,P=[];const n=innerWidth<700?14:28;const rs=()=>{W=c.width=h.clientWidth;H=c.height=h.clientHeight;};rs();addEventListener('resize',rs);
+ const up=el=='fire'||el=='electric'||el=='dark'||el=='dragon';
+ for(let i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,r:1+Math.random()*2.5,v:.2+Math.random()*.6,d:Math.random()*6.28,c:C[i%2]});
+ let vis=true;new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(h);
+ (function f(){if(vis){ctx.clearRect(0,0,W,H);for(const p of P){p.d+=.02;p.x+=Math.sin(p.d)*.3;p.y+=up?-p.v:p.v;if(p.y<-5)p.y=H+5;if(p.y>H+5)p.y=-5;ctx.globalAlpha=.55;ctx.fillStyle=p.c;ctx.beginPath();
+  if(el=='grass'){ctx.ellipse(p.x,p.y,p.r*1.8,p.r,p.d,0,6.28);}else ctx.arc(p.x,p.y,p.r,0,6.28);ctx.fill();}}requestAnimationFrame(f);})();})();
