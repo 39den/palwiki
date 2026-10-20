@@ -6,12 +6,14 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Энциклопедия Palworld на русском — палы, боссы, предметы, пассивки, разведение">
+      
       
       
         <link rel="canonical" href="https://39den.github.io/palwiki/1_prohozhdenie/prohozhdenie_0_80/">
       
       
-        <link rel="prev" href="../../0_nachni_zdes/nachni_zdes/">
+        <link rel="prev" href="../../guide/16_endgame_75_80/">
       
       
         <link rel="next" href="../endgame_75_80/">
@@ -20,7 +22,7 @@
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
@@ -46,10 +48,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Nunito";--md-code-font:"JetBrains Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -57,6 +61,11 @@
 
     
     
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#1596c9">
+<link rel="apple-touch-icon" href="../../assets/icon-192.png">
+
+
   </head>
   
   
@@ -67,7 +76,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -76,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#0-80" class="md-skip">
+        <a href="#прохождение-от-0-до-80-уровня-пошагово" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -88,12 +97,13 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
     <a href="../.." title="Энциклопедия Palworld" class="md-header__button md-logo" aria-label="Энциклопедия Palworld" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -123,7 +133,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Тёмная тема"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Тёмная тема"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Тёмная тема" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
@@ -133,7 +143,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Светлая тема"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Светлая тема"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Светлая тема" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
@@ -193,14 +203,8 @@
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -229,18 +233,17 @@
   
   
   
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../guide/15_problemy/" class="md-tabs__link">
-          
+    <li class="md-tabs__item">
+      <a href="../../gallery/" class="md-tabs__link">
+        
   
   
-  Прохождение (гайд)
+    
+  
+  Галерея
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
@@ -249,22 +252,49 @@
   
   
   
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../0_nachni_zdes/patchi/" class="md-tabs__link">
-          
+    <li class="md-tabs__item">
+      <a href="../../map/" class="md-tabs__link">
+        
   
   
-  Начни здесь
+    
+  
+  Карта
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
         
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../compare/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Сравнить
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
   
   
   
@@ -274,14 +304,19 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../../0_nachni_zdes/patchi/" class="md-tabs__link">
           
   
   
-  Прохождение
+    
+  
+  Гайд
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -298,6 +333,8 @@
           
   
   
+    
+  
   Палы
 
         </a>
@@ -313,15 +350,27 @@
   
     
     
+      
+  
+  
+  
+  
+    
+    
       <li class="md-tabs__item">
         <a href="../../4_spravochniki/predmety/" class="md-tabs__link">
           
   
   
-  Предметы
+    
+  
+  Справочники
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -333,20 +382,7 @@
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../4_spravochniki/bossy_obzor/" class="md-tabs__link">
-          
-  
-  
-  Справочники и боссы
-
-        </a>
-      </li>
-    
-  
-
       
-        
   
   
   
@@ -358,6 +394,8 @@
           
   
   
+    
+  
   Механики
 
         </a>
@@ -365,23 +403,6 @@
     
   
 
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../3_bazy/bazy/" class="md-tabs__link">
-          
-  
-  
-  Базы
-
-        </a>
-      </li>
     
   
 
@@ -393,20 +414,7 @@
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../5_lut_i_farm/gde_vzyat/" class="md-tabs__link">
-          
-  
-  
-  Лут и фарм
-
-        </a>
-      </li>
-    
-  
-
       
-        
   
   
   
@@ -418,10 +426,15 @@
           
   
   
-  Мир и секреты
+    
+  
+  Мир
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -433,20 +446,7 @@
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../7_server/server/" class="md-tabs__link">
-          
-  
-  
-  Сервер
-
-        </a>
-      </li>
-    
-  
-
       
-        
   
   
   
@@ -458,6 +458,8 @@
           
   
   
+    
+  
   FAQ
 
         </a>
@@ -465,23 +467,6 @@
     
   
 
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../8_slovar/slovar/" class="md-tabs__link">
-          
-  
-  
-  Глоссарий
-
-        </a>
-      </li>
     
   
 
@@ -491,45 +476,30 @@
   
   
   
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../10_bagi/bagi/" class="md-tabs__link">
-          
-  
-  
-  Баги
-
-        </a>
-      </li>
-    
-  
-
-      
+    <li class="md-tabs__item">
+      <a href="../../bot/" class="md-tabs__link">
         
   
   
-  
-  
     
-    
-      <li class="md-tabs__item">
-        <a href="../../ref/" class="md-tabs__link">
-          
   
-  
-  Сырые таблицы
+  Бот
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -550,8 +520,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Энциклопедия Palworld" class="md-nav__button md-logo" aria-label="Энциклопедия Palworld" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     Энциклопедия Palworld
@@ -592,31 +561,123 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../gallery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     
+  
+    Галерея
+  
+
     
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Карта
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Сравнить
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
     
     
       
+        
+      
+        
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Прохождение (гайд)
+    Гайд
   
 
     
@@ -627,12 +688,256 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Прохождение (гайд)
+    Гайд
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Начни здесь
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Начни здесь
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0_nachni_zdes/patchi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Влияние патчей (что поменялось и что это значит для тебя)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0_nachni_zdes/upravlenie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Управление на ПК (клавиши по умолчанию)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0_nachni_zdes/nachni_zdes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Что такое Palworld и с чего начать
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Гайд по темам
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Гайд по темам
   
 
           </label>
@@ -1232,179 +1537,38 @@
     </li>
   
 
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
     
       
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
+        
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Начни здесь
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Начни здесь
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../0_nachni_zdes/patchi/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Влияние патчей (что поменялось и что это значит для тебя)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../0_nachni_zdes/upravlenie/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Управление на ПК (клавиши по умолчанию)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../0_nachni_zdes/nachni_zdes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Что такое Palworld и с чего начать
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
             
   
   
@@ -1422,8 +1586,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1500,7 +1664,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#05" class="md-nav__link">
+  <a href="#уровни-05-выжить-и-поймать-первых-палов" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 0–5: Выжить и поймать первых палов
@@ -1511,7 +1675,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#510" class="md-nav__link">
+  <a href="#уровни-510-нормальная-база-и-первые-ездовые" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 5–10: Нормальная база и первые ездовые
@@ -1522,7 +1686,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1015" class="md-nav__link">
+  <a href="#уровни-1015-первая-башня-и-металл" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 10–15: Первая башня и металл
@@ -1533,7 +1697,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1520" class="md-nav__link">
+  <a href="#уровни-1520-разведение-и-холоджар" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 15–20: Разведение и холод/жар
@@ -1544,7 +1708,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2025" class="md-nav__link">
+  <a href="#уровни-2025-сферы-посильнее-и-электричество" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 20–25: Сферы посильнее и электричество
@@ -1555,7 +1719,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2530" class="md-nav__link">
+  <a href="#уровни-2530-сильная-команда-и-третья-башня" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 25–30: Сильная команда и третья башня
@@ -1566,7 +1730,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3035" class="md-nav__link">
+  <a href="#уровни-3035-рафинированный-металл-рейд-бэллануар" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 30–35: Рафинированный металл, рейд Бэллануар
@@ -1577,7 +1741,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3540-" class="md-nav__link">
+  <a href="#уровни-3540-пал-металл-и-лучшие-ездовые" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 35–40: Пал-металл и лучшие ездовые
@@ -1588,7 +1752,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4045" class="md-nav__link">
+  <a href="#уровни-4045-легендарные-палы-начинаются" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 40–45: Легендарные палы начинаются
@@ -1599,7 +1763,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4550" class="md-nav__link">
+  <a href="#уровни-4550-пятая-башня" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 45–50: Пятая башня
@@ -1610,7 +1774,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5055" class="md-nav__link">
+  <a href="#уровни-5055-блазамут-рю-и-лунные-цветы" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 50–55: Блазамут Рю и Лунные Цветы
@@ -1621,7 +1785,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5560-feybreak" class="md-nav__link">
+  <a href="#уровни-5560-тёмный-остров-feybreak" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 55–60: Тёмный остров (Feybreak)
@@ -1632,7 +1796,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6065" class="md-nav__link">
+  <a href="#уровни-6065-зенолорд-и-солнечный-предел" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 60–65: Зенолорд и Солнечный предел
@@ -1643,7 +1807,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6570" class="md-nav__link">
+  <a href="#уровни-6570-завет-лазурных-небес" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 65–70: Завет Лазурных Небес
@@ -1654,7 +1818,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7075-" class="md-nav__link">
+  <a href="#уровни-7075-сложные-башни-и-ультра-рейды" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 70–75: Сложные башни и ультра-рейды
@@ -1665,7 +1829,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7580" class="md-nav__link">
+  <a href="#уровни-7580-эндгейм" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 75–80: Эндгейм
@@ -1676,7 +1840,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#каждый-уровень--что-делать-всегда" class="md-nav__link">
     <span class="md-ellipsis">
       
         Каждый уровень — что делать всегда
@@ -1729,6 +1893,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1738,11 +1910,613 @@
   
     
     
-    
-    
-      
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
       
     
     
@@ -1750,11 +2524,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../4_spravochniki/paly/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1768,11 +2543,17 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1782,32 +2563,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../4_spravochniki/paly/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Все палы (таблица)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -10197,11 +10952,17 @@
   
     
     
-    
-    
-      
       
         
+      
+        
+      
+        
+      
+    
+    
+    
+      
       
     
     
@@ -10209,17 +10970,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Предметы
+    Справочники
   
 
     
@@ -10230,12 +10991,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Предметы
+    Справочники
   
 
           </label>
@@ -10247,15 +11008,64 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../4_spravochniki/predmety/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../4_spravochniki/predmety/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
     
   
-    Предметы и ресурсы
+    Предметы
   
 
     
@@ -10263,10 +11073,26 @@
   
   
 
-      </a>
-    </li>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Предметы
   
 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
             
               
@@ -10667,20 +11493,29 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
   
     
     
-    
-    
-      
       
         
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
       
     
     
@@ -10688,17 +11523,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Справочники и боссы
+    Боссы и таблицы
   
 
     
@@ -10709,12 +11544,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Справочники и боссы
+    Боссы и таблицы
   
 
           </label>
@@ -10838,20 +11673,145 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
   
     
     
-    
-    
-      
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
       
     
     
@@ -10859,1127 +11819,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Механики
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Механики
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ref/" class="md-nav__link ">
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/aktivki/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Все активные навыки
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/passivki/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Все пассивки
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/passivki_gde_vzyat/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Где взять пассивку и как её перенести
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/lovlya/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Как ловить палов
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/usilenie_palov/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Как сделать пала сильнее (все способы)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/formuly/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Механики для знатоков (цифры и формулы)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/partnerskie_navyki/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Партнёрские навыки - как они включаются
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/personazh_staty/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Персонаж - уровень, статы, сброс, смерть
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/razvedenie/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Разведение (Breeding)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/stihii/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Стихии - кто кого бьёт
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/tehnologii/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Технологии по уровням
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Базы
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Базы
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3_bazy/bazy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    База - всё о строительстве и работе палов
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3_bazy/eda/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Еда и баффы
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
-        
-          
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Лут и фарм
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Лут и фарм
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../5_lut_i_farm/gde_vzyat/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Обратный поиск - где взять предмет X
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../5_lut_i_farm/drop_palov/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Таблица дропа всех палов
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../5_lut_i_farm/farm/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Фарм и лут - где брать всё
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Мир и секреты
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Мир и секреты
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../6_mir/koordinaty/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Координаты (карта)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../6_mir/mir/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Мир - регионы, перемещение, торговцы, рыбалка, экспедиции, нефтевышки
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../6_mir/sekrety/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Секреты и пасхалки
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
-        
-          
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Сервер
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Сервер
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../7_server/server/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Свой сервер и игра с друзьями
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
-        
-          
-          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FAQ
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    FAQ
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../9_faq/faq/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FAQ — вопросы и ответы
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
-        
-          
-          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Глоссарий
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_14">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Глоссарий
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../8_slovar/slovar/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Словарь терминов и сленга
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
-        
-          
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Баги
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Баги
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../10_bagi/bagi/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Баги и проблемы - что делать
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
-            
   
   
   <span class="md-ellipsis">
@@ -11993,11 +11838,17 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_16">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -12007,32 +11858,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ref/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Справочник (точные данные из игры)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -13721,6 +13546,1404 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Механики
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Механики
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Механики
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Механики
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/aktivki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Все активные навыки
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/passivki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Все пассивки
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/passivki_gde_vzyat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Где взять пассивку и как её перенести
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/lovlya/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Как ловить палов
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/usilenie_palov/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Как сделать пала сильнее (все способы)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/formuly/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Механики для знатоков (цифры и формулы)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/partnerskie_navyki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Партнёрские навыки - как они включаются
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/personazh_staty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Персонаж - уровень, статы, сброс, смерть
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/razvedenie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Разведение (Breeding)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/stihii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Стихии - кто кого бьёт
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/tehnologii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Технологии по уровням
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Базы
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Базы
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3_bazy/bazy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    База - всё о строительстве и работе палов
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3_bazy/eda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Еда и баффы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лут и фарм
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Лут и фарм
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5_lut_i_farm/gde_vzyat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Обратный поиск - где взять предмет X
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5_lut_i_farm/drop_palov/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Таблица дропа всех палов
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5_lut_i_farm/farm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Фарм и лут - где брать всё
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Мир
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Мир
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_1" id="__nav_9_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Мир и секреты
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Мир и секреты
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6_mir/koordinaty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Координаты (карта)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6_mir/mir/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Мир - регионы, перемещение, торговцы, рыбалка, экспедиции, нефтевышки
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6_mir/sekrety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Секреты и пасхалки
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Сервер
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Сервер
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7_server/server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Свой сервер и игра с друзьями
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    FAQ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_1" id="__nav_10_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    FAQ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../9_faq/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ — вопросы и ответы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_2" id="__nav_10_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Глоссарий
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Глоссарий
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8_slovar/slovar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Словарь терминов и сленга
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_3" id="__nav_10_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Баги
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Баги
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_bagi/bagi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Баги и проблемы - что делать
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Бот
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
     
   </ul>
 </nav>
@@ -13749,7 +14972,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#05" class="md-nav__link">
+  <a href="#уровни-05-выжить-и-поймать-первых-палов" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 0–5: Выжить и поймать первых палов
@@ -13760,7 +14983,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#510" class="md-nav__link">
+  <a href="#уровни-510-нормальная-база-и-первые-ездовые" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 5–10: Нормальная база и первые ездовые
@@ -13771,7 +14994,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1015" class="md-nav__link">
+  <a href="#уровни-1015-первая-башня-и-металл" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 10–15: Первая башня и металл
@@ -13782,7 +15005,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1520" class="md-nav__link">
+  <a href="#уровни-1520-разведение-и-холоджар" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 15–20: Разведение и холод/жар
@@ -13793,7 +15016,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2025" class="md-nav__link">
+  <a href="#уровни-2025-сферы-посильнее-и-электричество" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 20–25: Сферы посильнее и электричество
@@ -13804,7 +15027,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2530" class="md-nav__link">
+  <a href="#уровни-2530-сильная-команда-и-третья-башня" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 25–30: Сильная команда и третья башня
@@ -13815,7 +15038,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3035" class="md-nav__link">
+  <a href="#уровни-3035-рафинированный-металл-рейд-бэллануар" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 30–35: Рафинированный металл, рейд Бэллануар
@@ -13826,7 +15049,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3540-" class="md-nav__link">
+  <a href="#уровни-3540-пал-металл-и-лучшие-ездовые" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 35–40: Пал-металл и лучшие ездовые
@@ -13837,7 +15060,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4045" class="md-nav__link">
+  <a href="#уровни-4045-легендарные-палы-начинаются" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 40–45: Легендарные палы начинаются
@@ -13848,7 +15071,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4550" class="md-nav__link">
+  <a href="#уровни-4550-пятая-башня" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 45–50: Пятая башня
@@ -13859,7 +15082,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5055" class="md-nav__link">
+  <a href="#уровни-5055-блазамут-рю-и-лунные-цветы" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 50–55: Блазамут Рю и Лунные Цветы
@@ -13870,7 +15093,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5560-feybreak" class="md-nav__link">
+  <a href="#уровни-5560-тёмный-остров-feybreak" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 55–60: Тёмный остров (Feybreak)
@@ -13881,7 +15104,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6065" class="md-nav__link">
+  <a href="#уровни-6065-зенолорд-и-солнечный-предел" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 60–65: Зенолорд и Солнечный предел
@@ -13892,7 +15115,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6570" class="md-nav__link">
+  <a href="#уровни-6570-завет-лазурных-небес" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 65–70: Завет Лазурных Небес
@@ -13903,7 +15126,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7075-" class="md-nav__link">
+  <a href="#уровни-7075-сложные-башни-и-ультра-рейды" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 70–75: Сложные башни и ультра-рейды
@@ -13914,7 +15137,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7580" class="md-nav__link">
+  <a href="#уровни-7580-эндгейм" class="md-nav__link">
     <span class="md-ellipsis">
       
         Уровни 75–80: Эндгейм
@@ -13925,7 +15148,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#каждый-уровень--что-делать-всегда" class="md-nav__link">
     <span class="md-ellipsis">
       
         Каждый уровень — что делать всегда
@@ -13952,11 +15175,11 @@
 
 
 
-<h1 id="0-80">Прохождение от 0 до 80 уровня (пошагово)</h1>
+<h1 id="прохождение-от-0-до-80-уровня-пошагово">Прохождение от 0 до 80 уровня (пошагово)<a class="headerlink" href="#прохождение-от-0-до-80-уровня-пошагово" title="Permanent link">&para;</a></h1>
 <p>Это «маршрут» по игре. Делай отрезки по порядку. Уровни примерные: если трудно — пофарми ещё пару уровней.
 Технологии: в каждом отрезке ниже есть список <strong>всего, что открывается</strong> (из данных игры). Очки технологий копи на главное (сферы, станки, броню).
 Имена палов: русское (английское, где и на каком уровне они бывают в дикой природе по данным игры).</p>
-<h2 id="05">Уровни 0–5: Выжить и поймать первых палов</h2>
+<h2 id="уровни-05-выжить-и-поймать-первых-палов">Уровни 0–5: Выжить и поймать первых палов<a class="headerlink" href="#уровни-05-выжить-и-поймать-первых-палов" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Стартовая зона — Ветреные холмы (Windswept Hills) [проверить RU-название]. Не уходи далеко: враги вокруг ур. 1–5.</li>
 <li>🐾 <strong>Кого ловить:</strong> Ламболл (Lamball, дикие ур. 1–3), Каттива (Cattiva, дикие ур. 1–3), Чикипи (Chikipi, дикие ур. 1–3), Лифманк (Lifmunk, дикие ур. 1–3), Фокспаркс (Foxparks, дикие ур. 5–7) (огонь — нужен для костра и печи), Пенгуллет (Pengullet, дикие ур. 1–10) (вода — полив), Танзи (Tanzee, дикие ур. 4–6), Депрессо (Depresso, дикие ур. 4–7).</li>
@@ -13972,7 +15195,7 @@
 <li>ур.3: Старый лук, Стрела, Каменное копьё, Простая кровать, Соломенная кровать для Палов, Глобальный Палбокс</li>
 <li>ур.4: Обыкновенный щит, Тканая одежда, Ткань, Кормушка</li>
 </ul>
-<h2 id="510">Уровни 5–10: Нормальная база и первые ездовые</h2>
+<h2 id="уровни-510-нормальная-база-и-первые-ездовые">Уровни 5–10: Нормальная база и первые ездовые<a class="headerlink" href="#уровни-510-нормальная-база-и-первые-ездовые" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Исследуй холмы, открывай статуи быстрого перемещения (большие каменные статуи — Статуя Орлана [проверить]). Ищи голубой палдиум у рек.</li>
 <li>🐾 <strong>Кого ловить:</strong> Рашоа (Rushoar, дикие ур. 5–7) (первый ездовой), Викси (Vixy, дикие ур. 1–3) (копает сферы и предметы на пастбище), Даэдрим (Daedream, дикие ур. 4–7), Хукрат (Hoocrates, дикие ур. 4–7), Джолтхог (Jolthog, дикие ур. 4–8) (молния — генератор позже), Дайэхаул (Direhowl, дикие ур. 10–11) (быстрый ездовой).</li>
@@ -13989,7 +15212,7 @@
 <li>ур.8: Дробилка, Ядовитая стрела, Деревянная защитная стена, Деревянные ворота, Подвесная ловушка, Набор каминов</li>
 <li>ур.9: Монумент Силы, Маленький мешочек с кормом, Тропическая одежда, Тундровая одежда, Горячий источник, Шлейка с седлом для Дайэхаула, Набор ковров</li>
 </ul>
-<h2 id="1015">Уровни 10–15: Первая башня и металл</h2>
+<h2 id="уровни-1015-первая-башня-и-металл">Уровни 10–15: Первая башня и металл<a class="headerlink" href="#уровни-1015-первая-башня-и-металл" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Металлическая руда — серые камни с рыжими прожилками в горах. Ищи сундуки и лагеря врагов.</li>
 <li>🐾 <strong>Кого ловить:</strong> Иктирдир (Eikthyrdeer, дикие ур. 9–11) (рубит деревья + ездовой), Томбат (Tombat, дикие ур. 12–14), Найтвинг (Nitewing, дикие ур. 12–13) (первый летающий ездовой), Мау (Mau), Гумосс (Gumoss, дикие ур. 2–4), Робинквилл (Robinquill, дикие ур. 30–34).</li>
@@ -14006,7 +15229,7 @@
 <li>ур.13: Арбалет, Металлическое копьё, Металлический сундук, Термоконтейнер, Потрепанное чучело, Штурмовая винтовка Танзи Игнис, Набор антикварных шкафов для хранения</li>
 <li>ур.14: Мегасфера, Сферическая Мастерская, Средний мешочек с кормом, Настенный факел, Седло Юнивольта, Набор моделей осенних деревьев, Набор антикварных столов, Капсула с эссенцией Пала</li>
 </ul>
-<h2 id="1520">Уровни 15–20: Разведение и холод/жар</h2>
+<h2 id="уровни-1520-разведение-и-холоджар">Уровни 15–20: Разведение и холод/жар<a class="headerlink" href="#уровни-1520-разведение-и-холоджар" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Иди в лес и к пустыне/снегам по краям. Готовь тёплую/прохладную одежду.</li>
 <li>🐾 <strong>Кого ловить:</strong> Пенкинг (Penking, дикие ур. 20–23) (лёд/вода, добыча), Моссанда (Mossanda, дикие ур. 32–36) (сильный ездовой), Келпси (Kelpsea, дикие ур. 1–10), Селарай (Celaray, дикие ур. 1–10) (глайдер), Юнивольт (Univolt, дикие ур. 20–24), Свипа (Sweepa, дикие ур. 25–28), Мелпака (Melpaca, дикие ур. 5–7).</li>
@@ -14023,7 +15246,7 @@
 <li>ур.18: Мегаглайдер, Морозостойкая меховая броня, Кулер, Перчатки Токотоко, Ракетомёт Пенгуллет Лакс, Набор для ванной, Набор изысканной антикварной мебели, Кольцо сдерживания</li>
 <li>ур.19: Центр исследования труда Палов, Утяжеляющий модуль, Цемент, Набор для строительства: камень, Защитная стена, Каменные ворота, Седло Гринтэйла, Пастбище свиданий</li>
 </ul>
-<h2 id="2025">Уровни 20–25: Сферы посильнее и электричество</h2>
+<h2 id="уровни-2025-сферы-посильнее-и-электричество">Уровни 20–25: Сферы посильнее и электричество<a class="headerlink" href="#уровни-2025-сферы-посильнее-и-электричество" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Пещеры (подземелья) появляются и исчезают — значок на карте. В них сундуки и боссы.</li>
 <li>🐾 <strong>Кого ловить:</strong> Анубис (Anubis) (Ручная работа 4 — лучший крафтер ранней игры, альфа в пустыне), Гриззболт (Grizzbolt), Диноссум (Dinossom, дикие ур. 25–28), Ванвирм (Vanwyrm, дикие ур. 20–25), Бигард (Beegarde, дикие ур. 28–33), Элизаби (Elizabee, дикие ур. 34–38), Виксен (Wixen, дикие ур. 23–27).</li>
@@ -14040,7 +15263,7 @@
 <li>ур.23: Металлическая броня, Металлический шлем, Модуль дуги, Большой мешочек с кормом, Фонтан, Седло Кингпака, Набор моделей бамбука, Набор контейнеров для хранения, Набор для строительства на воде</li>
 <li>ур.24: Самодельный пистолет, Мягкая кровать для Палов, Шкафчик для лекарств, Клиника, Клумба, Шлейка Фокспаркс Криста, Седло Азуроба, Седло Диноссума, Рудник</li>
 </ul>
-<h2 id="2530">Уровни 25–30: Сильная команда и третья башня</h2>
+<h2 id="уровни-2530-сильная-команда-и-третья-башня">Уровни 25–30: Сильная команда и третья башня<a class="headerlink" href="#уровни-2530-сильная-команда-и-третья-башня" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Вулкан (Обсидиановая гора, Mount Obsidian) — нужна жаростойкая одежда.</li>
 <li>🐾 <strong>Кого ловить:</strong> Релаксаурус (Relaxaurus, дикие ур. 30–35), Кицун (Kitsun, дикие ур. 34–38), Катресс (Katress, дикие ур. 25–28), Инсинерам (Incineram, дикие ур. 30–34), Рейндрикс (Reindrix, дикие ур. 32–36), Вумпо (Wumpo, дикие ур. 45–48), Ловандер (Lovander, дикие ур. 30–33), Моззарина (Mozzarina, дикие ур. 9–11) (молоко).</li>
@@ -14057,7 +15280,7 @@
 <li>ур.28: Пистолет, Патрон для пистолета, Качественная кровать, Улучшенный пост наблюдения, Пень и топор, Набор флагов Братства Вечного Пламени, Седло Дазему, Седло Маммореста, Антигравитационный пояс</li>
 <li>ур.29: Гигащит, Меч, Средняя удочка (Каттива), Конвейерная фабрика, Картофельная плантация, Замораживающая граната, Седло Пирин, Седло Райберда, Улучшенный поясной фонарь</li>
 </ul>
-<h2 id="3035">Уровни 30–35: Рафинированный металл, рейд Бэллануар</h2>
+<h2 id="уровни-3035-рафинированный-металл-рейд-бэллануар">Уровни 30–35: Рафинированный металл, рейд Бэллануар<a class="headerlink" href="#уровни-3035-рафинированный-металл-рейд-бэллануар" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Пустыня (Сумеречные дюны, Twilight Dunes) и Снег (Астральные горы, Astral Mountains) [проверить RU].</li>
 <li>🐾 <strong>Кого ловить:</strong> Райберд (Beakon, дикие ур. 30–34) (Райберд — летающий, молния), Йормунтайд (Jormuntide), Хэлзефир (Helzephyr, дикие ур. 24–26), Пирин (Pyrin, дикие ур. 30–34), Блейзхаул (Blazehowl, дикие ур. 35–38), Фенглоп (Fenglope), Криолинкс (Cryolinx, дикие ур. 44–48).</li>
@@ -14074,7 +15297,7 @@
 <li>ур.33: Старый револьвер, Полимер, Электрическая мина, Водяная граната, Снеговик, Седло Блейзхаула, Седло Рагнахавка, Седло Брончерри, Алтарь для призыва</li>
 <li>ур.34: Улучшенная печь, Топор из рафинированного металла, Кирка из рафинированного металла, Копьё из рафинированного металла, Седло Пирин Нокта, Гранатомёт Моссанда Лакса, Седло Диноссум Лакса, Набор металлических бочек, Очки таланта</li>
 </ul>
-<h2 id="3540-">Уровни 35–40: Пал-металл и лучшие ездовые</h2>
+<h2 id="уровни-3540-пал-металл-и-лучшие-ездовые">Уровни 35–40: Пал-металл и лучшие ездовые<a class="headerlink" href="#уровни-3540-пал-металл-и-лучшие-ездовые" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Острова на юге/востоке; ищи Сакурадзиму позже.</li>
 <li>🐾 <strong>Кого ловить:</strong> Астегон (Astegon), Менастинг (Menasting, дикие ур. 31–35), Ворсект (Warsect, дикие ур. 34–38), Азуроб (Azurobe, дикие ур. 10–20), Фэски (Quivern, дикие ур. 40–44) (Фэски — летающий), Судзаку (Suzaku).</li>
@@ -14091,7 +15314,7 @@
 <li>ур.38: Операционный стол для Палов, Метеоромёт, Роскошная приманка, Холодильник, Замораживающая мина, Граната земли, Седло Фэски, Набор кожаных стульев, Рассеивающий сферомёт</li>
 <li>ур.39: Набор флагов Вигилантов, Двухствольный дробовик, Патрон для дробовика, Модуль слайдера, Сундук из рафинированного металла, Седло Астегона, Седло Шрумера, Седло Шрумер Нокта, Рудник II</li>
 </ul>
-<h2 id="4045">Уровни 40–45: Легендарные палы начинаются</h2>
+<h2 id="уровни-4045-легендарные-палы-начинаются">Уровни 40–45: Легендарные палы начинаются<a class="headerlink" href="#уровни-4045-легендарные-палы-начинаются" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Ищи легендарных: они стоят как альфы. Нужны Легендарные/Ультрасферы.</li>
 <li>🐾 <strong>Кого ловить:</strong> Паладиус (Paladius), Некромус (Necromus) [проверить уровень], Фросталлион (Frostallion), Джетрагон (Jetragon) (ур. 50+ в сложной зоне), Шэдоубик (Shadowbeak).</li>
@@ -14108,7 +15331,7 @@
 <li>ур.43: Помповый дробовик, Теращит, Средняя расширяющаяся сумка, Качественная деревянная доска, Электрический стол фармацевта, Седло Судзаку, Седло Рептиро Крист, Лесоповал Ⅱ</li>
 <li>ур.44: Легендарная сфера, Электрическая печь, Биобатарея, Катана, Кирка из пал-металла, Топор из пал-металла, Седло Судзаку Аква, Седло Брончерри Аква</li>
 </ul>
-<h2 id="4550">Уровни 45–50: Пятая башня</h2>
+<h2 id="уровни-4550-пятая-башня">Уровни 45–50: Пятая башня<a class="headerlink" href="#уровни-4550-пятая-башня" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Сакурадзима (Sakurajima) — остров с вишней. Сильные враги ур. 45–55.</li>
 <li>🐾 <strong>Кого ловить:</strong> Шэдоубик (Shadowbeak), Селена (Selyne), Бастигор (Bastigor) [проверить], Лилин (Lyleen), Петаллия (Petallia, дикие ур. 28–30), Силвегис (Silvegis).</li>
@@ -14125,7 +15348,7 @@
 <li>ур.48: Жаростойкая броня из Пал-Металла, Снайперский модуль II, Трансформаторная вышка, Ракетная установка Релаксаурус Лакса, Седло Дуалита, Седло Тетроиса, Набор для регулирования движения, Большой инкубатор</li>
 <li>ур.49: Механизм извлечения предметов, Большая кухня, Набор для строительства: японский стиль, Набор моделей заснеженных деревьев, Набор дорожных знаков, Набор баррикад, Тера-пистолет с крюком</li>
 </ul>
-<h2 id="5055">Уровни 50–55: Блазамут Рю и Лунные Цветы</h2>
+<h2 id="уровни-5055-блазамут-рю-и-лунные-цветы">Уровни 50–55: Блазамут Рю и Лунные Цветы<a class="headerlink" href="#уровни-5055-блазамут-рю-и-лунные-цветы" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Сакурадзима и окраины. Начинай копить Души палов для Монумента Силы.</li>
 <li>🐾 <strong>Кого ловить:</strong> Блазамут (Blazamut, дикие ур. 46–50), Орсерк (Orserk), Кицун (Kitsun, дикие ур. 34–38).</li>
@@ -14142,7 +15365,7 @@
 <li>ур.53: Большая расширяющаяся сумка, Жаростойкая сталепластиковая броня, Гранатомёт, Гранатомётный патрон, Улучшенная осколочная граната, Седло Селены, Седло Буллдоса, Профессиональная отмычка</li>
 <li>ур.54: Плазменный мультирезак, Морозостойкая сталепластиковая броня, Пулемёт Гатлинга, Гатлинговые патроны, Замораживающий измельчитель, Седло Гилдейна, Седло Селесдира, Дополнительный слот оружия 2</li>
 </ul>
-<h2 id="5560-feybreak">Уровни 55–60: Тёмный остров (Feybreak)</h2>
+<h2 id="уровни-5560-тёмный-остров-feybreak">Уровни 55–60: Тёмный остров (Feybreak)<a class="headerlink" href="#уровни-5560-тёмный-остров-feybreak" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Тёмный остров с Тэнраку (DarkIsland) [проверить RU]. Враги ур. 55–65. Хромаит.</li>
 <li>🐾 <strong>Кого ловить:</strong> Зенолорд (Xenolord) (рейд), Бастигор (Bastigor), сильные мутанты/альфы региона.</li>
@@ -14159,7 +15382,7 @@
 <li>ур.58: Сфера инфинити, Сборочная линия сфер разв. цив., Гексолит, ru_Text, Металлоискатель, Шлейка Смоки, Седло Азурмейна, Большой электроинкубатор</li>
 <li>ур.59: Сундук развитой цивилизации, Лазерный пулемёт Гатлинга, Кассета для лазерной картечницы Гатлинга, Гексолитовая броня, Термоядро, Седло Йормунтайда Игнис, Седло Кицун Нокта</li>
 </ul>
-<h2 id="6065">Уровни 60–65: Зенолорд и Солнечный предел</h2>
+<h2 id="уровни-6065-зенолорд-и-солнечный-предел">Уровни 60–65: Зенолорд и Солнечный предел<a class="headerlink" href="#уровни-6065-зенолорд-и-солнечный-предел" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Подготовка к Солнечному пределу (Sunreach, небесный остров). Соллайт и Кораллиновая руда.</li>
 <li>🐾 <strong>Кого ловить:</strong> Зенолорд (Xenolord), Фалерис (Faleris), Гилдейн (Gildane, дикие ур. 53–56) [проверить], новые палы 1.0.</li>
@@ -14176,7 +15399,7 @@
 <li>ур.63: Энергетическое ружье, Патрон для энергетического ружья, Сборочная линия оружия разв. цив., Жаростойкая броня из гексолита, Мегабустерная пушка, Ультрапистолет-гарпун</li>
 <li>ур.64: Перегревающаяся винтовка, Патрон для перегревающейся винтовки, Морозостойкая броня из гексолита, Горячий источник в японском стиле, Седло Юнивольт Криста, Седло Нептилус, Статуя Фросталлиона</li>
 </ul>
-<h2 id="6570">Уровни 65–70: Завет Лазурных Небес</h2>
+<h2 id="уровни-6570-завет-лазурных-небес">Уровни 65–70: Завет Лазурных Небес<a class="headerlink" href="#уровни-6570-завет-лазурных-небес" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Солнечный предел. Мировое Древо открывается после сюжета.</li>
 <li>🐾 <strong>Кого ловить:</strong> Харталис (Hartalis) (рейд ур. 70), Азурмейн (Azurmane, дикие ур. 63–66) [проверить].</li>
@@ -14193,7 +15416,7 @@
 <li>ур.68: Улучшенное копьё Лили, Боевой пистолет-пулемёт, Патрон для боевого пистолет-пулемёта, Древняя броня, Древний шлем, Седло Айдролон</li>
 <li>ур.69: Прототипный дробовик, Патрон для прототипного дробовика, Модуль самонаведения, Большой рыболовный пруд, Седло Дуалит Нокта</li>
 </ul>
-<h2 id="7075-">Уровни 70–75: Сложные башни и ультра-рейды</h2>
+<h2 id="уровни-7075-сложные-башни-и-ультра-рейды">Уровни 70–75: Сложные башни и ультра-рейды<a class="headerlink" href="#уровни-7075-сложные-башни-и-ультра-рейды" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Мировое Древо: собирай Древнюю кору, сияющие самоцветы для Пробуждения.</li>
 <li>🐾 <strong>Кого ловить:</strong> Мутанты, идеальные палы с 4 пассивками.</li>
@@ -14210,7 +15433,7 @@
 <li>ур.73: Лазерный меч, Сборочная линия золотых монет, Древняя клиника, Пал-кровать древней цивилизации, Молот Бастигора</li>
 <li>ур.74: Палкизитовый слиток, Древняя сфера, Конвертер артефактов древней цивилизации, Специальный торт</li>
 </ul>
-<h2 id="7580">Уровни 75–80: Эндгейм</h2>
+<h2 id="уровни-7580-эндгейм">Уровни 75–80: Эндгейм<a class="headerlink" href="#уровни-7580-эндгейм" title="Permanent link">&para;</a></h2>
 <ul>
 <li>🗺️ <strong>Куда идти:</strong> Мировое Древо и ??? — Зенара и Астралим (ур. 80, HP 420 000; сложно ур. 100, HP 6 237 000).</li>
 <li>🐾 <strong>Кого ловить:</strong> Самые сильные: Джетрагон (Jetragon), Фросталлион (Frostallion), Зенолорд (Xenolord), Блазамут (Blazamut, дикие ур. 46–50), Силвегис (Silvegis), Орсерк (Orserk).</li>
@@ -14228,7 +15451,7 @@
 <li>ур.79: Облегчённая древняя броня, Питательный препарат, Седло Аэгидрона</li>
 <li>ур.80: Лучемёт, Патрон для лучемёта, Крыловая энергоячейка, Крылатый ранец</li>
 </ul>
-<h2 id="_1">Каждый уровень — что делать всегда</h2>
+<h2 id="каждый-уровень--что-делать-всегда">Каждый уровень — что делать всегда<a class="headerlink" href="#каждый-уровень--что-делать-всегда" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Лови КАЖДОГО нового пала (опыт за первую поимку большой; за 5 поимок вида — бонусы).</li>
 <li>Убивай/лови альф — с них редкие вещи и чертежи.</li>
@@ -14291,10 +15514,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "navigation.instant"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/smart.js"></script>
+      
+        <script src="../../assets/site.js"></script>
       
     
   </body>
