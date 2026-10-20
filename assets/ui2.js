@@ -54,13 +54,16 @@ let SX=null;function openSearch(pre){(window.PW_load||window.PW_data)().then(D=>
  const draw=()=>{const v=inp.value;clr.hidden=!v;if(v.trim().length<1){body.innerHTML=empty();return;}
   const {res,fixed}=match(D,v);let h=fixed?`<div class="dym">Понял как: «${esc(fixed)}»</div>`:'';const c=cmp(v);if(c)h+=c;
   let ans='';try{const a=window.PW_core.answer(v);if(a&&a.type!='none'&&window.PW_render)ans=window.PW_render(a);}catch(e){}
-  if(ans&&!c)h+=`<div class="sx-card">${ans}</div>`;
+  let fu='';try{const a2=window.PW_core.answer(v);const pn=a2&&(a2.pal||a2.e&&a2.e.ru&&a2.e)&&(a2.pal||a2.e).ru;if(pn){const opts=[['✨ Лучшие пассивки','пассивки '+pn],['🧬 Как вывести','как вывести '+pn],['🎯 Чем бить','чем бить '+pn],['⚖️ Сравнить','сравнить '+pn+' и ']].filter(o=>window.PW_core.norm(o[1])!=window.PW_core.norm(v));fu=`<div class="sx-fu">${opts.map(([l,q])=>`<button type="button" class="sx-c" data-q="${esc(q)}">${l}</button>`).join('')}</div>`;}}catch(e){}
+  if(ans&&!c)h+=`<div class="sx-card ai"><span class="ai-tag">🤖 Ответ из базы</span>${ans}${fu}</div>`;
   if(res.length){const g={};res.slice(0,30).forEach(o=>(g[o.t]=g[o.t]||[]).push(o));h+=['pal','boss','passive','item','page'].filter(t=>g[t]).map(t=>`<div class="sx-h">${TT[t]}ы</div>`.replace('Палы','Палы').replace('Боссы','Боссы').replace('Пассивкаы','Пассивки').replace('Предметы','Предметы').replace('Разделы','Разделы')+g[t].slice(0,t=='pal'?8:5).map(row).join('')).join('');}
   else if(!ans&&!c){const s=window.PW_core.suggest?window.PW_core.suggest(v,4):[];h+=`<div class="sx-none"><b>Ничего не нашлось</b><p>Проверь написание или попробуй:</p><div class="sx-chips">${s.map(x=>`<button type="button" class="sx-c" data-q="${esc(x.name)}">${esc(x.name)}</button>`).join('')}${['анубис','башня','легенда'].map(q=>`<button type="button" class="sx-c" data-q="${q}">${q}</button>`).join('')}</div></div>`;}
   body.innerHTML=h;};
  let t;inp.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(draw,90);});clr.onclick=()=>{inp.value='';draw();inp.focus();};
  body.addEventListener('click',e=>{const d=e.target.closest('[data-del]');if(d){LS.set('pw_recentq',recQ().filter(x=>x!=d.dataset.del));draw();return;}const q=e.target.closest('[data-q]');if(q){e.preventDefault();inp.value=q.dataset.q;draw();return;}const a=e.target.closest('a');if(a)pushQ(inp.value);});
- inp.addEventListener('keydown',e=>{if(e.key=='Enter'){pushQ(inp.value);const a=body.querySelector('.sx-ans,.sx-r');if(a)location.href=a.href;}if(e.key=='Escape')close();});
+ let sel=-1;const items=()=>[...body.querySelectorAll('.sx-ans,.sx-r')];const mark=()=>items().forEach((x,i)=>x.classList.toggle('sel',i==sel));inp.addEventListener('input',()=>{sel=-1;});
+ inp.addEventListener('keydown',e=>{const it=items();if(e.key=='ArrowDown'){e.preventDefault();sel=Math.min(it.length-1,sel+1);mark();it[sel]&&it[sel].scrollIntoView({block:'nearest'});}else if(e.key=='ArrowUp'){e.preventDefault();sel=Math.max(-1,sel-1);mark();}
+  else if(e.key=='Enter'){pushQ(inp.value);const a=it[sel>=0?sel:0];if(a)location.href=a.href;}if(e.key=='Escape')close();});
  SX.addEventListener('keydown',e=>{if(e.key=='Escape')close();});
  if(pre){inp.value=pre;draw();}inp.focus();});}
 window.PW_search=openSearch;
