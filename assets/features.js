@@ -143,3 +143,6 @@ function vsBoss(p,s,D){const bs=D.bosses.filter(b=>b.weak&&b.weak.length&&b.leve
 const fix=D=>{if(D._f)return D;D._f=1;D.QI={};D.passives.forEach(q=>D.QI[q.i]=q);D.PI={};D.pals.forEach(q=>D.PI[q.i]=q);return D;};
 document.addEventListener('DOMContentLoaded',()=>{psvFilter();setTimeout(showInstall,4000);if(!window.PW_data)return;window.PW_data().then(D=>{fix(D);breedPage(D);myPage(D);palLists(D);galleryExtra(D);popular(D);builder(D);setTimeout(()=>mapPal(D),300);});});
 })();
+(function(){let y=0,on=false;const set=v=>{if(v==on)return;on=v;const b=document.body;if(v){y=scrollY;b.style.position='fixed';b.style.top=-y+'px';b.style.left='0';b.style.right='0';b.style.overflow='hidden';}else{b.style.position=b.style.top=b.style.left=b.style.right=b.style.overflow='';scrollTo(0,y);}};
+document.addEventListener('change',e=>{if(e.target&&e.target.id=='__drawer')set(e.target.checked);});
+document.addEventListener('DOMContentLoaded',()=>{const d=document.getElementById('__drawer');if(!d)return;new MutationObserver(()=>{}).observe(d,{attributes:true});setInterval(()=>set(d.checked),250);});})();
