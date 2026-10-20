@@ -100,3 +100,37 @@ table.cmp{width:100%}table.cmp td{text-align:center;vertical-align:top}table.cmp
 [data-md-color-scheme=default] .md-typeset table:not([class]) th{background:#e6f4fa}
 .md-typeset table:not([class]){font-size:.72rem}
 @media (max-width:600px){.mgrid{grid-template-columns:repeat(auto-fill,minmax(80px,1fr))}.md-typeset table:not([class]) td,.md-typeset table:not([class]) th{padding:.4em .6em}}
+/* bento */
+.tiles.bento{grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(110px,auto)}
+.tiles.bento a.tile:nth-child(1){grid-column:span 2;grid-row:span 2;background:linear-gradient(135deg,rgba(41,168,224,.25),rgba(92,194,58,.2))!important}
+.tiles.bento a.tile:nth-child(1) .ti{font-size:3.2rem}.tiles.bento a.tile:nth-child(1) b{font-size:1.3rem}
+.tiles.bento a.tile:nth-child(2){grid-column:span 2}
+.tiles.bento a.tile:last-child{grid-column:span 2;background:linear-gradient(135deg,rgba(41,168,224,.3),rgba(20,184,166,.2))!important}
+.bento2{display:grid;grid-template-columns:1.2fr 1fr;gap:1rem}
+.mini-row{display:flex;gap:.5rem;overflow-x:auto;padding:.3rem 0 .6rem;scroll-snap-type:x mandatory}.mini-row a.mc{min-width:84px;scroll-snap-align:start;background:var(--md-default-bg-color--light);border:1px solid rgba(41,168,224,.2)}
+[data-md-color-scheme=slate] .md-typeset a.tile,[data-md-color-scheme=slate] .md-typeset a.pc,[data-md-color-scheme=slate] .grp{background:rgba(255,255,255,.04);backdrop-filter:blur(8px);border-color:rgba(95,208,255,.18)}
+@media (max-width:760px){.tiles.bento{grid-template-columns:1fr 1fr}.bento2{grid-template-columns:1fr}}
+/* skeleton */
+.skel{border-radius:var(--r);background:linear-gradient(90deg,rgba(127,160,180,.12) 25%,rgba(127,160,180,.25) 37%,rgba(127,160,180,.12) 63%);background-size:400% 100%;animation:sk 1.3s ease infinite}
+.skel.pcs{height:170px}@keyframes sk{0%{background-position:100% 50%}100%{background-position:0 50%}}
+/* tabbar */
+.tabbar{display:none}
+@media (max-width:76.1875em){.tabbar{display:flex;position:fixed;left:.5rem;right:.5rem;bottom:.5rem;z-index:5;justify-content:space-around;padding:.35rem .2rem calc(.35rem + env(safe-area-inset-bottom));border-radius:20px;background:rgba(15,40,55,.72);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px);box-shadow:0 8px 30px rgba(0,0,0,.3)}
+ .tabbar a{display:flex;flex-direction:column;align-items:center;font-size:.62rem;color:#e6f6ff;gap:.1rem;padding:.2rem .5rem;border-radius:12px;transition:background .15s}
+ .tabbar a span{font-size:1.15rem}.tabbar a.on{background:rgba(95,208,255,.22)}.tabbar a:active{transform:scale(.95)}
+ .md-container{padding-bottom:4.5rem}.md-top{bottom:5.5rem}}
+/* pal page */
+.fav{align-self:flex-start;font:inherit;font-size:.8rem;font-weight:700;padding:.35rem .9rem;border-radius:999px;border:1px solid var(--pw-sun);background:transparent;color:var(--md-default-fg-color);cursor:pointer}
+.fav.on{background:var(--pw-sun);color:#3a2400}
+.pn{display:flex;justify-content:space-between;gap:.6rem;margin:1.5rem 0}.md-typeset .pn a{padding:.6rem 1rem;border-radius:14px;border:1px solid rgba(41,168,224,.3);font-weight:700}
+.md-typeset .tabbed-labels>label{font-weight:700;font-size:.78rem}
+table.ptable tbody tr{cursor:pointer}table.ptable tbody tr:hover{background:rgba(20,184,166,.1)}table.ptable th{cursor:pointer;user-select:none;white-space:nowrap}table.ptable th.asc::after{content:' ▲'}table.ptable th.desc::after{content:' ▼'}table.ptable img{vertical-align:middle;object-fit:contain}
+#pwmap{background:#0c161e}
+.pmk{display:flex;align-items:center;justify-content:center;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.45);font-size:15px}
+.pmk-alpha{background:#ff7a59}.pmk-travel{background:#14b8a6}.pmk-tower{background:#9b5de5}.pmk-sealed{background:#2f8fe8}
+.mleg{background:rgba(15,30,40,.82);backdrop-filter:blur(10px);color:#eaf6ff;border-radius:14px;padding:.4rem .6rem;font-size:.75rem;box-shadow:0 4px 18px rgba(0,0,0,.35)}
+.mleg-t{font:inherit;font-weight:700;background:none;border:0;color:inherit;cursor:pointer;padding:.2rem}
+.mleg-b label{display:block;padding:.15rem 0;cursor:pointer}.mleg small{opacity:.6}
+.mpop{font-family:Nunito,sans-serif;min-width:150px}.mpop .mk{font-size:.75em;opacity:.7}.mpop b{font-size:1.05em}.mpop .xy{font-size:.75em;opacity:.65}
+.map-note{font-size:.7rem;opacity:.55;margin-top:.4rem}
+.marker-cluster div{font-weight:800}
