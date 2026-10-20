@@ -43,8 +43,8 @@ function map(D){const el=document.getElementById('pwmap');if(!el||!window.L)retu
   d.innerHTML=`<button class="mleg-t">🗺 Слои</button><div class="mleg-b" ${small?'hidden':''}>`+Object.entries(T).map(([k,v])=>`<label><input type="checkbox" checked data-k="${k}"> ${v[0]} ${v[1]} <small>${D.map.filter(p=>p.t==k).length}</small></label>`).join('')+'</div>';
   L.DomEvent.disableClickPropagation(d);d.querySelector('.mleg-t').onclick=()=>{const b=d.querySelector('.mleg-b');b.hidden=!b.hidden;};
   d.querySelectorAll('input').forEach(i=>i.onchange=()=>{i.checked?m.addLayer(groups[i.dataset.k]):m.removeLayer(groups[i.dataset.k]);});return d;};Lg.addTo(m);
- const s=document.getElementById('mapq');s.addEventListener('input',()=>{const q=window.PW_core.norm(s.value);if(q.length<2)return;const h=all.find(([p])=>window.PW_core.norm(p.name).includes(q));if(h){const g=groups[h[0].t];m.addLayer(g);if(g.zoomToShowLayer)g.zoomToShowLayer(h[1],()=>h[1].openPopup());else{m.setView(h[1].getLatLng(),4);h[1].openPopup();}}});
- window.PW_map={m,all};}
+
+ window.PW_map={m,all,groups,T};}
 function bug(){const art=document.querySelector('article.md-content__inner');if(!art||document.querySelector('.bug-link'))return;
  let p=location.pathname.replace(/^\/palwiki\//,'').replace(/\/$/,'')||'home';p=decodeURIComponent(p);let h=0;for(const c of p)h=(h*31+c.charCodeAt(0))>>>0;
  let sl=p.replace(/[^A-Za-z0-9]+/g,'_').replace(/^_|_$/g,'');if(/[^\x00-\x7f]/.test(p))sl=(sl+'_'+h.toString(36));sl=('bug_'+sl).slice(0,64);

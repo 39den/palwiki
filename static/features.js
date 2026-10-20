@@ -76,10 +76,43 @@ function showInstall(){if(document.querySelector('.inst')||matchMedia('(display-
  d.querySelector('.x').onclick=()=>{LS.set('pw_noinst',true);d.remove();};const bt=d.querySelector('[data-i]');if(bt)bt.onclick=async()=>{deferred.prompt();await deferred.userChoice;d.remove();};}
 window.PW_showInstall=()=>{LS.set('pw_noinst',false);const ios=true;deferred=deferred||null;const d=document.querySelector('.inst');if(d)d.remove();if(!deferred){const x=document.createElement('div');x.className='inst';x.innerHTML='<span>📲 Установи энциклопедию как приложение — работает и без интернета.</span><small>Chrome: меню ⋮ → «Установить приложение». Safari: «Поделиться» → «На экран Домой».</small><button class="x">×</button>';document.body.appendChild(x);x.querySelector('.x').onclick=()=>x.remove();}else showInstall();};
 /* ---------- map pal filter ---------- */
-function mapPal(D){const M=window.PW_map;const s=document.getElementById('mapq');if(!M||!s||document.getElementById('mappal'))return;
- const pals=[...new Set(D.map.filter(p=>p.t=='alpha'||p.t=='sealed').map(p=>p.t=='alpha'?p.name:(p.info.split('· ')[1]||'')))].filter(Boolean).sort((a,b)=>a.localeCompare(b,'ru'));
- s.insertAdjacentHTML('afterend',`<select id="mappal"><option value="">Все палы на карте</option>${pals.map(n=>`<option>${esc(n)}</option>`).join('')}</select>`);
- document.getElementById('mappal').onchange=e=>{const v=e.target.value;M.all.forEach(([p,mk])=>{const ok=!v||p.name==v||(p.info||'').includes(v);mk.setOpacity(ok?1:.15);});const h=v&&M.all.find(([p])=>p.name==v||(p.info||'').includes(v));if(h){M.m.setView(h[1].getLatLng(),4);h[1].openPopup();}};}
+function mapPal(D){const M=window.PW_map;const s=document.getElementById('mapq');if(!M||!s||s.dataset.on)return;s.dataset.on=1;const C=window.PW_core,N=C.norm;
+ const box=s.parentElement,dd=box.querySelector('.msd'),cnt=box.querySelector('.mcnt'),x=box.querySelector('.msx');
+ const byRu=Object.fromEntries(D.pals.map(p=>[p.ru,p]));const TL={alpha:'альфа',travel:'телепорт',tower:'башня',sealed:'запеч. земли'};
+ const EL={'огн':'Огонь','вод':'Вода','трав':'Трава','молн':'Молния','элект':'Молния','лед':'Лёд','лёд':'Лёд','земл':'Земля','тьм':'Тьма','темн':'Тьма','драк':'Дракон','нейтр':'Нейтральный'};
+ const pal=p=>p.t=='alpha'?p.name:p.t=='sealed'?(p.info.split('· ')[1]||''):'';
+ const twBoss=p=>D.bosses.find(b=>b.place&&N(b.place)==N(p.name));
+ const d2=(a,b)=>(a.x-b.x)**2+(a.y-b.y)**2;
+ const fixq=q=>{let n=N(q);const f=C.fixLayout?C.fixLayout(n):null;return [n,f&&f!=n?f:null];};
+ function search(q){let [n,alt]=fixq(q);n=n.replace(/^(где|как)\s+(найти|найт|искать|поймать|взять)\s+/,'').replace(/^(где|найти)\s+/,'').trim();const R=[];
+  const near=n.match(/^(телепорт|статуя|статую|тп)\s+(рядом с|возле|у|около)\s+(.+)$/);
+  if(near){const t=search(near[3]).filter(r=>r.pts.length)[0];if(t){const c=t.pts[0];const tr=M.all.filter(([p])=>p.t=='travel').sort((a,b)=>d2(a[0],c)-d2(b[0],c)).slice(0,3);return [{lbl:'Телепорты рядом с '+t.lbl,ic:'🗿',ty:'ближайшие',pts:tr.map(z=>z[0])}];}}
+  if(/^(башн|босс)/.test(n)){const e=Object.keys(EL).find(k=>n.includes(k));const tw=M.all.filter(([p])=>p.t=='tower').map(z=>z[0]).filter(p=>{if(!e)return true;const b=twBoss(p);return b&&(b.el||[]).includes(EL[e]);});
+   if(tw.length)R.push({lbl:e?'Босс-башни: '+EL[e]:'Все башни',ic:'🏯',ty:'башни',pts:tw});}
+  if(/^(телепорт|статуи|статуя|тп)$/.test(n))R.push({lbl:'Все телепорты',ic:'🗿',ty:'телепорты',pts:M.all.filter(([p])=>p.t=='travel').map(z=>z[0])});
+  if(/^альф/.test(n))R.push({lbl:'Все альфы',ic:'👑',ty:'альфы',pts:M.all.filter(([p])=>p.t=='alpha').map(z=>z[0])});
+  const terms=[n,alt].filter(Boolean);const hit=f=>terms.some(t=>t.length>1&&N(f).includes(t));
+  const pm=C.find(n,['pal']);const pn=pm?D.pals[pm.ref].ru:null;const groups=new Map();
+  M.all.forEach(([p])=>{const pp=pal(p);const b=p.t=='tower'?twBoss(p):null;if(hit(p.name)||hit(pp)||(pn&&pp==pn)||(b&&(hit(b.name)||hit(b.pal||'')))){const k=pp||p.name;const g=groups.get(k)||{lbl:k,ic:byRu[pp]?'':'📍',img:byRu[pp]?B+byRu[pp].thumb:'',ty:new Set(),pts:[]};g.ty.add(TL[p.t]);g.pts.push(p);groups.set(k,g);}});
+  groups.forEach(g=>R.push({...g,ty:[...g.ty].join(' · ')}));
+  if(pn&&!groups.has(pn))R.push({lbl:pn,img:B+byRu[pn].thumb,ty:'на карте нет точек — смотри страницу пала',pts:[],url:byRu[pn].url});
+  return R.slice(0,10);}
+ const show=pts=>{const set=new Set(pts);M.all.forEach(([p,mk])=>{mk.setOpacity(!pts||set.has(p)?1:.18);mk.setZIndexOffset(pts&&set.has(p)?1000:0);});
+  if(pts){Object.values(M.groups).forEach(g=>M.m.addLayer(g));cnt.hidden=false;cnt.textContent='найдено '+pts.length;x.hidden=false;
+   const mks=M.all.filter(([p])=>set.has(p)).map(z=>z[1]);if(mks.length==1){const g=Object.values(M.groups).find(g=>g.hasLayer&&g.hasLayer(mks[0]));if(g&&g.zoomToShowLayer)g.zoomToShowLayer(mks[0],()=>mks[0].openPopup());else{M.m.flyTo(mks[0].getLatLng(),4);mks[0].openPopup();}}
+   else if(mks.length)M.m.flyToBounds(L.latLngBounds(mks.map(k=>k.getLatLng())).pad(.3),{maxZoom:4});}
+  else{cnt.hidden=true;x.hidden=true;}};
+ let cur=[];const pick=r=>{dd.hidden=true;s.value=r.lbl;if(r.url&&!r.pts.length){location.href=B+r.url;return;}show(r.pts);};
+ s.addEventListener('input',()=>{const v=s.value.trim();x.hidden=!v;if(v.length<2){dd.hidden=true;if(!v)show(null);return;}cur=search(v);
+  dd.innerHTML=cur.map((r,i)=>`<button type="button" data-i="${i}">${r.img?`<img src="${r.img}" width="28" height="28" alt="">`:`<span class="ic">${r.ic}</span>`}<span class="t">${esc(r.lbl)}<small>${esc(r.ty)}${r.pts.length?' · '+r.pts.length:''}</small></span></button>`).join('')||'<div class="none">Ничего не нашлось</div>';dd.hidden=false;});
+ dd.addEventListener('click',e=>{const b=e.target.closest('button');if(b)pick(cur[+b.dataset.i]);});
+ s.addEventListener('keydown',e=>{if(e.key=='Enter'&&cur[0]){e.preventDefault();pick(cur[0]);s.blur();}if(e.key=='Escape')dd.hidden=true;});
+ x.onclick=()=>{s.value='';dd.hidden=true;show(null);s.focus();};document.addEventListener('click',e=>{if(!box.contains(e.target))dd.hidden=true;});
+ const u=new URLSearchParams(location.search).get('q');if(u){s.value=u;s.dispatchEvent(new Event('input'));if(cur[0])pick(cur[0]);}
+ // world switch
+ const sw=document.querySelector('.mapsw'),wt=document.getElementById('wtree'),pm=document.getElementById('pwmap');if(sw)sw.querySelectorAll('button').forEach(b=>b.onclick=()=>{sw.querySelectorAll('button').forEach(z=>z.classList.toggle('on',z===b));const t=b.dataset.w=='t';wt.hidden=!t;pm.hidden=t;box.hidden=t;if(!t)M.m.invalidateSize();
+  if(t&&!wt.innerHTML)wt.innerHTML=`<div class="wt"><h2>🌳 Мировое древо</h2><p>Отдельный регион с собственной картой (уровни 70–80). <b>Интерактивной карты пока нет:</b> у нас нет свободно доступной картинки карты и проверенных координат точек, а выдумывать их мы не будем. Как только данные появятся, карта откроется здесь.</p><h3>Места региона</h3><div class="tags">${['Abandoned Laboratory','Alluvion Lakefront','Boreal Summit','Corroded Hollow','Dusty Ravine','Forbidden Laboratory','Gilded City Ruins','Lacrymal Shoal','Remnant Riverside','Rotmist Root','Shinespore Root','Spore Cloister','The Verdant Rootpath','Whimsical Wisteria Grove','Within the Seal'].map(n=>`<span class="tag">${n}</span>`).join('')}</div><p>Две башни-обзорки: Dusty Ravine и Gilded City Ruins; много статуй Великого орла для телепорта.</p><p class="approx">Список мест: palworld.wiki.gg (CC BY-SA)</p></div>`;});
+ if(location.hash=='#tree'&&sw)sw.querySelector('[data-w=t]').click();}
 /* ---------- popular ---------- */
 function popular(D){const el=document.getElementById('potd');if(!el||!D.popular||!D.popular.length||document.getElementById('pop'))return;const by=Object.fromEntries(D.pals.map(p=>[p.id,p]));
  el.parentElement.insertAdjacentHTML('beforeend',`<h2>🔥 Чаще всего спрашивают у бота</h2><div id="pop" class="mini-row">${D.popular.map(([i])=>by[i]).filter(p=>p&&p.url).map(p=>`<a class="mc card-link" href="${B+p.url}"><img src="${B+p.thumb}" width="56" height="56" alt=""><span>${esc(p.ru)}</span></a>`).join('')}</div>`);}

@@ -1,4 +1,11 @@
-import json,os,re,shutil,glob,datetime,random
+import json
+_jl=json.load
+def _unhide(d):
+  if isinstance(d,list):return [_unhide(x) for x in d if not (isinstance(x,dict) and x.get('hide'))]
+  if isinstance(d,dict):return {k:_unhide(v) for k,v in d.items()}
+  return d
+import os,re,shutil,glob,datetime,random
+json.load=lambda f,*a,**k:_unhide(_jl(f,*a,**k))
 from PIL import Image
 import pymdownx.slugs as S
 SL=S.slugify(case='lower')
@@ -49,6 +56,7 @@ for p in pals:
   ps=p.get('partner_skill') or {};acts=ps.get('activations') or []
   desc=(p.get('partner') or {}).get('desc','')
   mount='fly' if re.search('по воздуху|летат|полёт|полет',desc) else ('ride' if 'оседлать' in desc else '')
+  if 'rideable' in p:mount=(mount or 'ride') if p['rideable'] else ''
   url=f'4_spravochniki/paly/{md}/' if md else ''
   if md:
     path=f"{D}/4_spravochniki/paly/{md}.md";L=open(path).read().split('\n',1)
@@ -69,7 +77,7 @@ for p in pals:
     open(path,'w').write('# '+p['ru']+'\n\n'+head+'\n'+rest);n+=1
   SP.append({'i':len(SP),'no':p['no'],'id':p['id'],'ru':p['ru'],'en':p['en'],'el':p['elements'],'weak':p['weak_to'],'work':[[w['work'],w['level']] for w in p['work']],
     'act':acts,'mount':mount,'sprint':int(re.sub(r'\D','',str(p['stats'].get('mount_sprint') or 0)) or 0),'hp':p['stats']['hp'],'atk':p['stats']['attack'],'def':p['stats']['defense'],
-    'rarity':int(p['rarity'] or 0),'url':url,'img':img,'thumb':icon,'art':thumb,'bp':p.get('best_passives',{}),'rank':int(p['breeding'].get('combi_rank') or 0),
+    'rarity':int(p['rarity'] or 0),'url':url,'img':img,'thumb':icon,'art':thumb,'bp':{k:v for k,v in (p.get('best_passives') or {}).items() if k!='ездовой' or p.get('rideable',True)},'rank':int(p['breeding'].get('combi_rank') or 0),
     'up':p['breeding'].get('unique_parents'),'collab':bool(p.get('collab')),'psk':ps.get('name',''),'egg':(p.get('habitat') or {}).get('egg','')})
 print('pal headers',n)
 
@@ -358,7 +366,7 @@ hide: [toc]
 <div id="gallery" class="gallery" markdown="0"><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div><div class="skel pcs"></div></div>
 ''')
 open(D+'/compare.md','w').write('---\nhide: [toc]\n---\n# ⚔️ Сравнение двух палов\n<div id="cmp" markdown="0"></div>\n')
-open(D+'/map.md','w').write('---\nhide: [toc]\nleaflet: true\n---\n# 📍 Карта Палпагоса\n<div class="gal-filters" markdown="0"><input id="mapq" type="search" placeholder="Найти: Анубис, башня, телепорт…"></div>\n<div id="pwmap" markdown="0"></div>\n<p class="map-note">Статуэтки Лифмунка и входы в подземелья меняют место, поэтому их нет на карте. Мировое Древо — отдельная карта.</p>\n')
+open(D+'/map.md','w').write('---\nhide: [toc]\nleaflet: true\n---\n# 📍 Карта\n<div class="mapsw seg" markdown="0"><button class="on" data-w="p">Палпагос</button><button data-w="t">Мировое древо</button></div>\n<div class="msq" markdown="0"><input id="mapq" type="search" placeholder="Анубис, босс огня, телепорт рядом с…" autocomplete="off" enterkeyhint="search"><button class="msx" aria-label="Очистить" hidden>×</button><span class="mcnt" hidden></span><div class="msd" hidden></div></div>\n<div id="wtree" hidden markdown="0"></div>\n<div id="pwmap" markdown="0"></div>\n<p class="map-note">Статуэтки Лифмунка и входы в подземелья меняют место, поэтому их нет на карте. Мировое Древо — отдельная карта.</p>\n')
 open(D+'/breed.md','w').write('---\nhide: [toc]\n---\n# 🧬 Калькулятор разведения\n<div id="breed" markdown="0"></div>\n')
 open(D+'/my.md','w').write('---\nhide: [toc]\n---\n# ⭐ Мои списки\nСписки хранятся только в этом браузере.\n\n<div id="mylists" markdown="0"></div>\n')
 open(D+'/bot.md','w').write('''---
@@ -398,7 +406,7 @@ for f in glob.glob(D+'/**/*.md',recursive=True):
 import yaml
 y=yaml.safe_dump({'nav':nav},allow_unicode=True,sort_keys=False)
 import glob as _g
-_HR=re.compile(r'\s*\((?:по внутренн[^)]*|\d+(?:\.\d+)*|v?\d[\d.]*\+?|[A-Za-z][A-Za-z0-9 \x27\u2019:&/.,-]*)\)')
+_HR=re.compile(r'\s*\((?:по внутренн[^)]*|\d+(?:\.\d+)*|v?\d[\d.]*\+?|(?=[^)А-Яа-яЁё]*[A-Za-z])[^)А-Яа-яЁё]+)\)')
 for _f in _g.glob(D+'/**/*.md',recursive=True):
   _t0=open(_f).read();_t1=re.sub(r'(?m)^(#{1,6} )(.+)$',lambda m:m.group(1)+_HR.sub('',m.group(2)).rstrip(),_t0)
   if _t1!=_t0:open(_f,'w').write(_t1)

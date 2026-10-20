@@ -2,7 +2,9 @@
 hide: [toc]
 leaflet: true
 ---
-# 📍 Карта Палпагоса
-<div class="gal-filters" markdown="0"><input id="mapq" type="search" placeholder="Найти: Анубис, башня, телепорт…"></div>
+# 📍 Карта
+<div class="mapsw seg" markdown="0"><button class="on" data-w="p">Палпагос</button><button data-w="t">Мировое древо</button></div>
+<div class="msq" markdown="0"><input id="mapq" type="search" placeholder="Анубис, босс огня, телепорт рядом с…" autocomplete="off" enterkeyhint="search"><button class="msx" aria-label="Очистить" hidden>×</button><span class="mcnt" hidden></span><div class="msd" hidden></div></div>
+<div id="wtree" hidden markdown="0"></div>
 <div id="pwmap" markdown="0"></div>
 <p class="map-note">Статуэтки Лифмунка и входы в подземелья меняют место, поэтому их нет на карте. Мировое Древо — отдельная карта.</p>
