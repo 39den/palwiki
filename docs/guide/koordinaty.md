@@ -77,7 +77,7 @@
 - **Нептилиус** (Neptilius), ур. 60: 139, 651 — рядом телепорт Isle of the Glacial Core (139, 637) — в «Sealed Realm of the Glacial Core»
 - **Фросталлион Нокт** (Frostallion Noct), ур. 65: 689, 648 — рядом телепорт Deep Sand Dunes (528, 526)
 
-## Запечатанные земли (Sealed Realms)<span class="unv" title="Ещё перепроверяется">ⓘ</span>
+## Запечатанные земли<span class="unv" title="Ещё перепроверяется">ⓘ</span>
 
 - Sealed Realm of the Frozen Wings: Пенкинг, ур. 15 — 113, -353
 - Sealed Realm of the Swordmaster: Арсокс, ур. 15 — -117, -490

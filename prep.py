@@ -115,6 +115,10 @@ def clean(t,html=True):
   t=re.sub(r'(?<![/\w])\w+\.(json|py)\b','',t)
   t=re.sub(r'\(\s*[,;·]?\s*\)','',t);t=re.sub(r'(,\s*){2,}',', ',t);t=re.sub(r'[ \t]*·[ \t]*(?=·)','',t)
   t=re.sub(r'(?m) +$','',t)
+  def _hc(m):
+    h=re.sub(r'\s*\((?:по внутренн[^)]*|\d+(?:\.\d+)*|v?\d[\d.]*\+?|[A-Za-z][A-Za-z0-9 \x27\u2019:&/.,-]*)\)','',m.group(2))
+    return m.group(1)+h.rstrip()
+  t=re.sub(r'(?m)^(#{1,6} )(.+)$',_hc,t)
   return t
 def secrets(t):
   def card(m):
