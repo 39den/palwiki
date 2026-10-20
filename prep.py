@@ -382,4 +382,4 @@ for f in glob.glob(D+'/**/*.md',recursive=True):
   if f not in keep: os.remove(f)
 import yaml
 y=yaml.safe_dump({'nav':nav},allow_unicode=True,sort_keys=False)
-open('/workspace/palsite/mkdocs.yml','w').write(open('/workspace/palsite/mkdocs.base.yml').read()+y)
+import time as _t;_v=str(int(_t.time()));open('/workspace/palsite/mkdocs.yml','w').write(re.sub(r'assets/(\w+)\.(js|css)',lambda m:"'"+m.group(0)+'?v='+_v+"'",open('/workspace/palsite/mkdocs.base.yml').read())+y)
