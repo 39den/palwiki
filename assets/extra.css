@@ -743,3 +743,35 @@ a.ich:hover{box-shadow:inset 0 0 0 1px var(--acc)}
 .iso>.ii,.iso>img{grid-row:1/3;width:32px;height:32px;display:grid;place-items:center;font-size:1.1rem;border-radius:50%;object-fit:contain}
 .iso .isl{font-weight:700;line-height:1.25}.iso .isn{grid-column:2;font-size:.68rem;color:var(--muted)}.iso .isp{grid-row:1/3;grid-column:3;font-size:.85rem}
 @media (max-width:700px){.msheet .mrow .msq input{font-size:16px!important;padding-left:12px!important}.msheet .mrow .mapsw button{padding:0 10px!important;font-size:13px!important}}
+/* food cards v2: one tile = сытость + время, second tile = ingredients; one kitchen chip; equal heights */
+.fgrid{align-items:stretch}
+.fcard.f2{display:flex;flex-direction:column;gap:8px;height:100%}
+.fcard.f2 .fh{display:flex;align-items:center;gap:12px}
+.fcard.f2 .fimg{width:72px;height:72px;flex:none;object-fit:contain;filter:drop-shadow(0 6px 8px rgba(0,0,0,.25))}
+.fcard.f2 .fh b{font-size:.92rem;line-height:1.2}
+.fcard.f2 .ftl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:8px}
+.ft1,.ft2{border-radius:14px;background:var(--surf2);padding:8px 10px;min-width:0}
+.ft1{display:flex;flex-direction:column;gap:6px;justify-content:center}
+.ft1>div{display:grid;grid-template-columns:18px 1fr;grid-template-rows:auto auto;column-gap:6px;align-items:center}
+.ft1 .ii{grid-row:1/3;font-size:.95rem}.ft1 .il,.ft2 .il{font-size:.62rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.04em}.ft1 b{font-size:.9rem;line-height:1.1}
+.ft2{display:flex;flex-direction:column;gap:6px}
+.fgs{display:flex;flex-wrap:wrap;gap:4px}
+.md-typeset .fg,.fg{display:inline-flex;align-items:center;gap:2px;padding:2px 6px 2px 2px;border-radius:99px;background:var(--surf);color:var(--txt);text-decoration:none;font-size:.7rem;min-height:34px;box-shadow:inset 0 0 0 1px var(--line)}
+.fg img{width:30px;height:30px;object-fit:contain}.fg .fgi{width:30px;text-align:center}.fg b{font-weight:800}
+.fg[data-more]{display:none}.fg.more{padding:0 8px;font-weight:800;color:var(--muted)}
+.fcard.f2 .fks{margin-top:auto}
+.fk1{display:inline-flex;align-items:center;gap:6px;padding:4px 12px 4px 6px;border-radius:99px;background:var(--surf2);font-size:.74rem;font-weight:700;color:var(--txt);box-shadow:inset 0 0 0 1px var(--line)}
+.fk1 img{width:24px;height:24px;object-fit:contain}.fk1 .fki{width:24px;text-align:center}
+.fnone{font-size:.72rem;color:var(--muted)}
+
+/* smart answer (live): calm card, design tokens, no red */
+.ux-aicard{padding:14px 16px;border-radius:20px;margin:0 0 10px;background:var(--surf2,rgba(127,127,127,.08));border:1px solid color-mix(in srgb,#3b82f6 45%,transparent);border-left:4px solid #ffd400;font-size:.78rem;line-height:1.5;color:var(--txt,inherit)}
+.ux-aih{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:.78rem}
+.ux-aiav{width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,212,0,.22);flex:none}
+.ux-aib p{margin:.3em 0}.ux-aib ul{margin:.3em 0;padding-left:1.1em}.ux-aib li{margin:.15em 0}
+.ux-skel i{display:block;height:10px;border-radius:5px;margin:8px 0;background:linear-gradient(90deg,var(--line,#8883),rgba(59,130,246,.25),var(--line,#8883));background-size:200% 100%;animation:uxsk 1.2s linear infinite}
+@keyframes uxsk{to{background-position:-200% 0}}
+.ux-aibtn{margin-top:6px}
+@media (prefers-reduced-motion:reduce){.ux-skel i{animation:none}}
+.sx-card.ai{background:var(--surf2,rgba(127,127,127,.08))!important;border:1px solid color-mix(in srgb,#3b82f6 40%,transparent);padding:.2rem .4rem .6rem}
+.sx-card.ai .sa-k,.sx-card .sa-k{color:#3b82f6}
