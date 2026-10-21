@@ -1,6 +1,6 @@
 /* MAPICONS 21.10: game-style map icons (palworld.wiki.gg Compass icons, CC BY-SA) + collision declutter instead of red clusters */
 (function(){const B=()=>window.PW_BASE||'/palwiki/';
- const I={travel:['travel.webp','#2ec4b6',3],tower:['tower.webp','#b07cff',3],alpha:['alpha.webp','#ff6b5a',2],sealed:['sealed.svg','#4aa3ff',2],dungeon:['dungeon.webp','#e0b04a',2],watch:['watch.webp','#8fb3c9',1],npc:['npc.webp','#36bb91',1],merchant:['merchant.webp','#36bb91',1],chest:['chest.svg','#f0c45a',0],fruit:['fruit.svg','#7bd389',0],spring:['spring.svg','#5fb4ff',0],fish:['fish.webp','#5fb4ff',0],ore:['ore.webp','#c9c9c9',0],effigy:['effigy.svg','#9fe870',0],hab:['hab.webp','#ffd34d',1]};
+ const I={travel:['travel.webp','#2ec4b6',3],tower:['tower.webp','#b07cff',3],alpha:['alpha.webp','#ff6b5a',2],sealed:['sealed.svg','#4aa3ff',2],dungeon:['dungeon.webp','#e0b04a',2],watch:['watch.webp','#8fb3c9',1],npc:['npc.webp','#36bb91',1],merchant:['merchant.webp','#36bb91',1],chest:['chest.webp','#f0c45a',0],fruit:['fruit.svg','#7bd389',0],spring:['spring.svg','#5fb4ff',0],fish:['fish.webp','#5fb4ff',0],ore:['ore.webp','#c9c9c9',0],effigy:['effigy.webp','#9fe870',0],hab:['hab.webp','#ffd34d',1]};
  const v=t=>I[t]||I.hab;
  const face=n=>{const P=(window.PW_D||{}).pals||[];const q=P.find(p=>p.ru==n)||P.find(p=>p.en==n);return q&&q.thumb?B()+q.thumb:''};
  const icon=(t,sz,nm)=>{sz=sz||28;const f=t=='alpha'&&nm?face(nm):'';if(f)sz=Math.max(sz,34);return L.divIcon({className:'gmk gmk-'+t+(f?' gmk-face':''),html:`<i style="--c:${v(t)[1]};width:${sz}px;height:${sz}px"><img src="${f||B()+'assets/mapicons/'+v(t)[0]}" alt="" draggable="false"></i>`,iconSize:[sz,sz],iconAnchor:[sz/2,sz/2],popupAnchor:[0,-sz/2]})};
@@ -32,12 +32,12 @@
    on:(t,b)=>{b?off.delete(t):off.add(t);q()},isOn:t=>!off.has(t),pin:mk=>{pin=mk;run()},boost:s=>{boost=s;q()},run,
    group(t){const g=L.layerGroup();g.hasLayer=mk=>items.some(it=>it.mk===mk&&it.t===t);g.zoomToShowLayer=(mk,cb)=>{m.setView(mk.getLatLng(),Math.max(m.getZoom(),4),{animate:false});api.pin(mk);setTimeout(cb,60)};return g}};
   return api}
- window.PW_MI={I,icon,leg,POP,DC,fit};})();
+ window.PW_MI={I,icon,leg,POP,DC,fit,col:t=>v(t)[1],file:t=>v(t)[0]};})();
 
 /* map popups: one tappable card linking to the entity page (pal / boss / guide section) */
 window.PW_pop=function(o){const B=window.PW_BASE||'/palwiki/';const D=window.PW_D||{};const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
  const EM={'Огонь':'🔥','Вода':'💧','Трава':'🌿','Молния':'⚡','Лёд':'❄️','Земля':'🪨','Тьма':'🌑','Дракон':'🐉','Нейтральный':'⚪'};
- const T={alpha:'👑 Альфа',sealed:'🔒 Запечатанные земли',tower:'🏯 Башня',travel:'🗿 Телепорт',watch:'🗼 Смотровая вышка',npc:'🧑 Персонаж',chest:'🎁 Сундук',fruit:'🌳 Плодовое дерево',spring:'💧 Источник',fish:'🎣 Место рыбалки',hab:'📍 Обитание'};
+ const T={alpha:'👑 Альфа',sealed:'🔒 Запечатанные земли',tower:'🏯 Башня',travel:'🗿 Телепорт',watch:'🗼 Смотровая вышка',npc:'🧑 Персонаж',chest:'🎁 Сундук',fruit:'🌳 Плодовое дерево',spring:'💧 Источник',effigy:'🗿 Статуя Лифманка',ore:'⛏ Руда',dungeon:'🕳 Подземелье',fish:'🎣 Место рыбалки',hab:'📍 Обитание'};
  const G={travel:['guide/11_mir/#быстрое-перемещение','Как работают телепорты'],fish:['guide/11_mir/#рыбалка','Как рыбачить'],chest:['guide/sekrety/','Секреты и сундуки'],npc:['guide/11_mir/#особые-npc','Персонажи мира'],watch:['guide/11_mir/','Гид по миру'],fruit:['guide/11_mir/','Гид по миру'],spring:['guide/11_mir/','Гид по миру'],tower:['4_spravochniki/bossy/','Все боссы башен']};
  const pals=D.pals||[];const byRu=n=>pals.find(p=>p.ru==n)||pals.find(p=>p.en==n);
  let pal=null,boss=null,url=o.url||'',label='';
@@ -52,7 +52,7 @@ window.PW_pop=function(o){const B=window.PW_BASE||'/palwiki/';const D=window.PW_
  const chips=el.length?`<div class="mpe">${el.map(e=>`<span>${EM[e]||''} ${esc(e)}</span>`).join('')}</div>`:'';
  const w=wk.length?`<div class="mpw">Слабость: ${wk.map(e=>(EM[e]||'')+' '+esc(e)).join(', ')}</div>`:'';
  const body=`${th?`<img class="mpt" src="${B+th}" alt="" width="56" height="56" loading="lazy">`:''}<div class="mpb"><div class="mk">${esc(o.kind||T[o.t]||'')}</div><b>${esc(o.name||T[o.t]||'')}</b>${o.lvl?`<div class="mpl">Уровень ${esc(o.lvl)}</div>`:''}${o.sub?`<div class="mpl">${esc(o.sub)}</div>`:''}${chips}${w}</div>`;
- const go=label||(pal?'Страница пала':boss?'Страница босса':'Подробнее');
+ const go=o.go||label||(pal?'Страница пала':boss?'Страница босса':'Подробнее');
  return url?`<a class="mpop mpcard" href="${B+url.replace(/^\//,'')}">${body}<span class="mpgo">${esc(go)} →</span></a>`:`<div class="mpop mpcard">${body}</div>`};
 (function(){const B=window.PW_BASE,chip=window.PW_chip;const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const ACT={party:'🎒 из команды',summoned:'🐾 выпущен',mounted:'🐎 верхом',active:'🔘 кнопкой',base:'🏠 на базе'};
@@ -118,6 +118,24 @@ function map(D){const el=document.getElementById('pwmap');if(!el||!window.L)retu
   L.DomEvent.disableClickPropagation(d);d.querySelector('.mleg-t').onclick=()=>{const b=d.querySelector('.mleg-b');b.hidden=!b.hidden;};
   d.querySelectorAll('input').forEach(i=>i.onchange=()=>dc.on(i.dataset.k,i.checked));return d;};Lg.addTo(m);
  dc.run();
+ /* MAPX 21.10: Lifmunk effigies, chests, ore, dungeon entrances (paldb.cc, game data 1.0.5) as clustered layers, built lazily */
+ const EX=[['effigy','Статуи Лифманка',1],['dungeon','Подземелья',1],['chest','Сундуки',0],['ore','Руда',0]],XL={};
+ fetch(B+'assets/map_extra.json').then(r=>r.ok?r.json():null).catch(()=>null).then(J=>{if(!J)return;const box=Lg.getContainer().querySelector('.mleg-b');
+  const xy=(x,y)=>'X '+x+' · Y '+y;
+  const pop={effigy:p=>({t:'effigy',kind:'🗿 Статуя Лифманка',name:'Статуя Лифманка',sub:'Сдай на Монументе силы: +сила поимки · '+xy(p[0],p[1]),url:'2_mehaniki/monument_sily/',go:'Что дают статуи'}),
+   dungeon:p=>({t:'dungeon',kind:'🕳 Вход в подземелье',name:p[2]||'Подземелье',lvl:p[3]?String(p[3]):'',sub:'Вход открывается на время · '+xy(p[0],p[1]),url:'guide/koordinaty/#подземелья',go:'Как работают подземелья'}),
+   chest:p=>({t:'chest',kind:'🎁 Сундук',name:p[2]?'Стихийный сундук':'Сундук',sub:'Снова появляется через 5 ч · '+xy(p[0],p[1])}),
+   ore:p=>{const n=J.oreN[p[2]]||['Руда',''];return {t:'ore',kind:'⛏ Руда',name:n[0]+(p[3]?' · крупная залежь':''),sub:xy(p[0],p[1]),url:n[1],go:'О ресурсе'}}};
+  const mk=k=>{if(XL[k])return XL[k];const c=MI.icon(k,24);const cg=L.markerClusterGroup?L.markerClusterGroup({chunkedLoading:true,showCoverageOnHover:false,spiderfyOnMaxZoom:false,disableClusteringAtZoom:6,maxClusterRadius:k=='ore'||k=='chest'?60:44,
+    iconCreateFunction:cl=>{const n=cl.getChildCount();return L.divIcon({className:'gmk gmk-cl gmk-'+k,html:`<i style="--c:${MI.col(k)};width:34px;height:34px"><img src="${B}assets/mapicons/${MI.file(k)}" alt="" draggable="false"><b>${n>999?Math.round(n/100)/10+'k':n}</b></i>`,iconSize:[34,34],iconAnchor:[17,17]})}}):L.layerGroup();
+   const ms=(J[k]||[]).map(p=>{const o=pop[k](p);return L.marker(ll(p[0],p[1]),{icon:c,title:o.name,riseOnHover:true}).bindPopup(()=>window.PW_pop(o),MI.POP)});
+   cg.addLayers?cg.addLayers(ms):ms.forEach(x=>cg.addLayer(x));return XL[k]=cg};
+  const set=(k,on)=>{if(on)mk(k).addTo(m);else if(XL[k])m.removeLayer(XL[k])};
+  if(box)box.insertAdjacentHTML('beforeend',EX.filter(e=>(J[e[0]]||[]).length).map(([k,l,on])=>`<label><input type="checkbox" ${on?'checked':''} data-x="${k}"> ${MI.leg(k)} ${l} <small>${J[k].length}</small></label>`).join(''));
+  if(box)box.querySelectorAll('input[data-x]').forEach(i=>i.onchange=()=>set(i.dataset.x,i.checked));
+  EX.forEach(([k,,on])=>on&&set(k,true));
+  window.PW_map.x={J,XL,set};
+  if(box)box.insertAdjacentHTML('beforeend',`<div class="mleg-src">Статуи, сундуки, руда, подземелья: <a href="https://paldb.cc/ru/Map" target="_blank" rel="noopener">paldb.cc</a>, данные игры 1.0.5</div>`);});
  window.PW_map={m,all,groups,T,dc};}
 function bug(){const art=document.querySelector('article.md-content__inner');if(!art||document.querySelector('.bug-link'))return;
  let p=location.pathname.replace(/^\/palwiki\//,'').replace(/\/$/,'')||'home';p=decodeURIComponent(p);let h=0;for(const c of p)h=(h*31+c.charCodeAt(0))>>>0;

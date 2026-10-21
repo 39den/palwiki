@@ -25,8 +25,8 @@ theme:
 plugins:
   - search:
       lang: [ru, en]
-extra_css: ['assets/extra.css?v=1792617503']
-extra_javascript: ['assets/smart.js?v=1792617503', 'assets/site.js?v=1792617503', 'assets/features.js?v=1792617503', 'assets/ui2.js?v=1792617503', 'assets/ui3.js?v=1792617503', 'assets/ai.js?v=1792617503']
+extra_css: ['assets/extra.css?v=1792622740']
+extra_javascript: ['assets/smart.js?v=1792622740', 'assets/site.js?v=1792622740', 'assets/features.js?v=1792622740', 'assets/ui2.js?v=1792622740', 'assets/ui3.js?v=1792622740', 'assets/ai.js?v=1792622740']
 markdown_extensions:
   - tables
   - attr_list
@@ -93,6 +93,8 @@ nav:
   - Все активные навыки: 2_mehaniki/aktivki.md
   - Лучшие наборы пассивок: 2_mehaniki/passivki.md
   - Где взять пассивку и как её перенести: 2_mehaniki/passivki_gde_vzyat.md
+  - Доверие пала: 2_mehaniki/doverie.md
+  - Монумент силы: 2_mehaniki/monument_sily.md
   #WORKCALC off - Работа палов: 2_mehaniki/rabota.md
   - Технологии по уровням: 2_mehaniki/tehnologii.md
   - Обратный поиск: 5_lut_i_farm/gde_vzyat.md
