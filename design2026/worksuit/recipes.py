@@ -1,0 +1,2 @@
+# frozen recipe list: workload from palwiki/raw/wikigg/pages.json (|workload=), names from palwiki/data/items.json
+R=[('handiwork',x) for x in ['Pal Sphere','Mega Sphere','Giga Sphere','Hyper Sphere','Ultra Sphere','Arrow','Nail','Metal Pickaxe','Polymer','Carbon Fiber','Circuit Board','Cement','Musket','Refined Metal Pickaxe','Assault Rifle','Gold Coin']]+[('medicine',x) for x in ['Low Grade Medical Supplies','Medical Supplies','High Grade Medical Supplies']]

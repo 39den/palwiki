@@ -22,11 +22,23 @@ acc_html=(acc(cond,True,f'<p>★1–★3: +1 к трём лучшим работ
  +acc(farm,False,'<p>«Ребёнок фермы» +1, «Хозяин фермы» +2. Только для фермы.</p>')
  +acc(dict(emoji='🔝',title='Выше 10 нельзя',plus='10'),False,'<p>Лишний +1 на 10-м уровне пропадает. Дальше разгоняй скорость — смотри ниже.</p>'))
 B={b['id']:b for b in D['bonuses']}
+import recipes as _R
+_PG=json.load(open('/workspace/palwiki/raw/wikigg/pages.json'));_IT={x['en']:x['ru'] for x in json.load(open('/workspace/palwiki/data/items.json'))}
+REC=[]
+for k,en in _R.R:
+    m=re.search(r'\|\s*workload\s*=\s*([\d.]+)',_PG[en]['content'],re.I);REC.append(dict(n=_IT[en],w=k,a=int(float(m.group(1)))))
+_WN={'handiwork':'Ручная работа','medicine':'Фармацевтика'}
+ropts=''.join(f'<optgroup label="{_WN[k]}">'+''.join(f'<option value="{i}">{e(r["n"])}</option>' for i,r in enumerate(REC) if r['w']==k)+'</optgroup>' for k in _WN)+'<option value="c">Своё число</option>'
+PALS=[]
+for p in json.load(open('/workspace/palwiki/data/pals.json')):
+    wk={x['work']:x['level'] for x in p.get('work',[])}
+    if wk.get('Ручная работа') or wk.get('Фармацевтика'):PALS.append(dict(n=p['ru'],handiwork=wk.get('Ручная работа',0),medicine=wk.get('Фармацевтика',0)))
+popts=''.join(f'<option value="{e(p["n"])}"></option>' for p in PALS)
 tiles=[('passives','🧬','+245%','Пассивки','4 лучших вместе'),('food','🍔','+50%','Еда','Гамбургер с Моззариной'),('souls','👻','+60%','Души','20 шагов по +3%'),
        ('buildings','🏛️','+20%','Постройки','все ускорители базы'),('station','⚙️','×1,5–4','Станок','электропечь ×3')]
 boost=''.join(f'<div class="bt"><span class="em">{em}</span><b>{v}</b><h3>{t}</h3><p>{p}</p></div>' for _,em,v,t,p in tiles)
 data=json.dumps(dict(w=[dict(id=w['id'],ru=w['ru'],short=w['short'],em=w['emoji'],L=w['levels'],what=w['what'],note=w.get('note'),unit=w.get('unit'),kind=w['kind'],
-     aura=w['aura']['pal'],book=w['book'],extra=w.get('extra'),hide=bool(w.get('values_status'))) for w in D['work_types']]),ensure_ascii=False)
+     aura=w['aura']['pal'],book=w['book'],extra=w.get('extra'),hide=bool(w.get('values_status'))) for w in D['work_types']],rec=REC,pals=PALS),ensure_ascii=False)
 page=f'''<!doctype html><html lang="ru" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light dark"><title>Работа палов — Палпедия</title>
 <link rel="preload" href="{F}fonts/Unbounded-600-cyrillic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="{F}fonts/Manrope-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{F}fonts.css"><link rel="stylesheet" href="{F}style.css"><link rel="stylesheet" href="ws.css"></head><body>{hdr}
@@ -38,22 +50,26 @@ page=f'''<!doctype html><html lang="ru" data-theme="light"><head><meta charset="
 <div class="wchips" role="toolbar" aria-label="Вид работы">{chips}</div>
 <div class="lvls" id="lvls"></div><p class="wnote" id="wnote"></p></section>
 
-<section class="blk rv"><div class="hrow"><h2>Калькулятор</h2>{qm('t2','Герой работает руками только за станком, поэтому сравниваем ручную работу. Время = нагрузка ÷ (скорость ÷ 100).')}</div>
+<section class="blk rv" id="calc"><div class="hrow"><h2>Сколько времени займёт</h2>{qm('t2','Выбери, что делаешь, и сравни: сколько это займёт у тебя руками и у пала на базе. Ускорение от станка не учтено — оно одинаково для тебя и для пала.')}</div>
 <div class="calc">
-<div class="side"><div class="eb">🧑 Ты</div>
-<div class="two"><label class="fld"><span>Скорость работы</span><div class="inp"><input id="ps" inputmode="numeric" type="number" min="0" placeholder="1000" aria-label="Твоя скорость работы"></div></label>
-<label class="fld"><span>Нагрузка</span><div class="inp"><input id="wl" inputmode="numeric" type="number" min="0" placeholder="3000" aria-label="Нагрузка рецепта"></div></label></div>
+<div class="side"><div class="eb">📦 Что делаем</div>
+<label class="fld"><span>Предмет</span><div class="inp sel"><select id="rc" aria-label="Предмет">{ropts}</select></div></label>
+<div class="two"><label class="fld"><span>Сколько штук</span><div class="inp"><input id="qty" inputmode="numeric" type="number" min="1" placeholder="1" aria-label="Сколько штук"><u>шт.</u></div></label>
+<label class="fld" id="wlf" hidden><span>Объём работы</span><div class="inp"><input id="wl" inputmode="numeric" type="number" min="1" placeholder="50" aria-label="Объём работы на 1 штуку"></div></label></div>
+<p class="hint" id="wlh"></p>
+<div class="eb" style="margin-top:20px">🧑 Ты</div>
+<label class="fld"><span>Очки в «Скорость работы»</span><div class="inp"><input id="pts" inputmode="numeric" type="number" min="0" max="50" placeholder="0" aria-label="Очки в скорость работы"><u>очков</u></div></label>
 <div class="tog"><button class="tc" type="button" data-p="20" aria-pressed="false">📿 Амулет +20%</button><button class="tc" type="button" data-p="25" aria-pressed="false">📣 Мотиватор +25%</button></div>
-<div class="eb" style="margin-top:20px">🐾 Пал <span style="margin-left:auto">{qm('t3','Бонусы пала: пассивки, еда, души и постройки. Перемножаются.')}</span></div>
-<label class="fld"><span>Уровень работы</span></label><div class="rng"><input id="pl" type="range" min="1" max="10" value="7" aria-label="Уровень работы пала"><b id="plv">7</b></div>
-<label class="fld"><span>Пассивки</span></label><div class="rng"><input id="pp" type="range" min="0" max="245" step="5" value="50" aria-label="Пассивки пала, проценты"><b id="ppv">+50%</b></div>
-<label class="fld"><span>Души</span></label><div class="rng"><input id="pso" type="range" min="0" max="20" value="0" aria-label="Шаги душ"><b id="psov">+0%</b></div>
-<label class="fld"><span>Еда</span></label><div class="seg2" data-g="food"><button type="button" data-v="0" aria-pressed="false">нет</button><button type="button" data-v="30" aria-pressed="false">+30%</button><button type="button" data-v="40" aria-pressed="false">+40%</button><button type="button" data-v="50" aria-pressed="true">+50%</button></div>
-<div class="tog"><button class="tc" type="button" id="bld" aria-pressed="true">🏛️ Постройки +20%</button></div>
+<div class="eb" style="margin-top:20px">🐾 Пал</div>
+<label class="fld"><span>Какой пал</span><div class="inp"><input id="pn" list="pnl" type="text" autocomplete="off" placeholder="Анубис" aria-label="Имя пала"></div></label><datalist id="pnl">{popts}</datalist>
+<label class="fld"><span>Уровень работы</span></label><div class="rng"><input id="pl" type="range" min="1" max="10" value="4" aria-label="Уровень работы пала"><b id="plv">4</b></div>
+<label class="fld"><span>Пассивки на скорость</span></label><div class="seg2" data-g="pp"><button type="button" data-v="0" aria-pressed="true">нет</button><button type="button" data-v="30" aria-pressed="false">+30%</button><button type="button" data-v="75" aria-pressed="false">+75%</button><button type="button" data-v="245" aria-pressed="false">+245%</button></div>
+<label class="fld"><span>Еда</span></label><div class="seg2" data-g="food"><button type="button" data-v="0" aria-pressed="true">нет</button><button type="button" data-v="30" aria-pressed="false">+30%</button><button type="button" data-v="50" aria-pressed="false">+50%</button></div>
+<div class="tog"><button class="tc" type="button" id="bld" aria-pressed="false">🏛️ Постройки +20%</button></div>
 </div>
 <div class="res" aria-live="polite"><div class="eb">Результат · <span id="rw"></span></div>
 <div class="big" id="r1"></div><p class="sub" id="r2"></p>
-<div class="rgrid"><div><small>🧑 Ты сделаешь за</small><b id="r3"></b></div><div><small>🐾 Пал сделает за</small><b id="r4"></b></div>
+<div class="rgrid"><div><small>🧑 Ты руками</small><b id="r3"></b></div><div><small>🐾 Пал на базе</small><b id="r4"></b></div>
 <div class="wide"><small id="r5l">Пал быстрее тебя</small><b id="r5"></b></div></div><div class="mult" id="r6"></div></div>
 </div></section>
 

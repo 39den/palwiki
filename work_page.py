@@ -41,6 +41,7 @@ TOK='''.ws{--s1:8px;--s2:16px;--s3:24px;--s4:32px;--s8:64px;--r:24px;--rs:16px;-
 .ws h1,.ws h2{color:var(--ink)}.ws h2{margin:0}
 .ws .inp input{font:500 20px/1.2 Manrope,system-ui,sans-serif!important}
 .ws .wsh{margin-top:0}
+.md-typeset>h1:first-child{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);margin:0;padding:0}
 '''
 open(D+'/assets/ws.css','w').write(TOK+scope(css))
 js=open(M+'/ws.js').read()
@@ -52,11 +53,13 @@ search:
   boost: 3
 ---
 
+# Работа палов
+
 <link rel="stylesheet" href="../../assets/ws.css">
 <div class="ws" markdown="0">'''+main+'''</div>
 <script src="../../assets/ws.js"></script>
 
-<div class="ws-kw" hidden>скорость работы, ручная работа, уровень работы, как апнуть работу, пригодность к работе, work suitability</div>
+<div class="ws-kw" hidden>скорость работы, ручная работа, уровень работы, как апнуть работу, пригодность к работе, калькулятор работы, время крафта</div>
 '''
 open(D+'/2_mehaniki/rabota.md','w').write(md)
 print('work page: ok',len(main)//1024,'KB')
