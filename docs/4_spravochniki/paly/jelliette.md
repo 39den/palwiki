@@ -1,7 +1,7 @@
 # Джелиэтта
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/JellyfishFairy-512.webp" srcset="../../../pp/art/JellyfishFairy-384.webp 384w, ../../../pp/art/JellyfishFairy-512.webp 512w, ../../../pp/art/JellyfishFairy-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Джелиэтта" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/45_JellyfishFairy.webp" srcset="../../../img/45_JellyfishFairy.webp 520w, ../../../img/45_JellyfishFairy@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Джелиэтта" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="JellyfishFairy"><div class="pal-no"><span class="nochip">№ 45</span></div>
 <div class="chips"><span class="el el-water">Вода</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>

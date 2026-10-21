@@ -1,7 +1,7 @@
 # Нидолл Нокт
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/CactusDoll_Dark-512.webp" srcset="../../../pp/art/CactusDoll_Dark-384.webp 384w, ../../../pp/art/CactusDoll_Dark-512.webp 512w, ../../../pp/art/CactusDoll_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Нидолл Нокт" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/100B_CactusDoll_Dark.webp" srcset="../../../img/100B_CactusDoll_Dark.webp 520w, ../../../img/100B_CactusDoll_Dark@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Нидолл Нокт" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="CactusDoll_Dark"><div class="pal-no"><span class="nochip">№ 100B</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>

@@ -1,7 +1,7 @@
 # Зеногард
 
 <div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/WhiteAlienDragon-512.webp" srcset="../../../pp/art/WhiteAlienDragon-384.webp 384w, ../../../pp/art/WhiteAlienDragon-512.webp 512w, ../../../pp/art/WhiteAlienDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Зеногард" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/146_WhiteAlienDragon.webp" srcset="../../../img/146_WhiteAlienDragon.webp 520w, ../../../img/146_WhiteAlienDragon@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Зеногард" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="WhiteAlienDragon"><div class="pal-no"><span class="nochip">№ 146</span></div>
 <div class="chips"><span class="el el-dragon">Дракон</span></div>
 <div class="weak">Слабость: <span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>

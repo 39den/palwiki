@@ -1,7 +1,7 @@
 # Ваэлет
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/VioletFairy-512.webp" srcset="../../../pp/art/VioletFairy-384.webp 384w, ../../../pp/art/VioletFairy-512.webp 512w, ../../../pp/art/VioletFairy-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Ваэлет" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/66_VioletFairy.webp" srcset="../../../img/66_VioletFairy.webp 520w, ../../../img/66_VioletFairy@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Ваэлет" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="VioletFairy"><div class="pal-no"><span class="nochip">№ 66</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>

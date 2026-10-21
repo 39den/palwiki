@@ -1,7 +1,7 @@
 # Астралим
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/WorldTreeDragon-512.webp" srcset="../../../pp/art/WorldTreeDragon-384.webp 384w, ../../../pp/art/WorldTreeDragon-512.webp 512w, ../../../pp/art/WorldTreeDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Астралим" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/204_WorldTreeDragon.webp" srcset="../../../img/204_WorldTreeDragon.webp 520w, ../../../img/204_WorldTreeDragon@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Астралим" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="WorldTreeDragon"><div class="pal-no"><span class="nochip">№ 204</span></div>
 <div class="chips"></div>
 

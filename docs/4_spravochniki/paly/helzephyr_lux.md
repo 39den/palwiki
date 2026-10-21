@@ -1,7 +1,7 @@
 # Хэлзефир Лакс
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/HadesBird_Electric-512.webp" srcset="../../../pp/art/HadesBird_Electric-384.webp 384w, ../../../pp/art/HadesBird_Electric-512.webp 512w, ../../../pp/art/HadesBird_Electric-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Хэлзефир Лакс" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/80B_HadesBird_Electric.webp" srcset="../../../img/80B_HadesBird_Electric.webp 520w, ../../../img/80B_HadesBird_Electric@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Хэлзефир Лакс" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="HadesBird_Electric"><div class="pal-no"><span class="nochip">№ 80B</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-electric">Молния</span></div>
 <div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Земля: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>

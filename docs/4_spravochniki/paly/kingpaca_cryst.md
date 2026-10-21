@@ -1,7 +1,7 @@
 # Кингпака Крист
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/KingAlpaca_Ice-512.webp" srcset="../../../pp/art/KingAlpaca_Ice-384.webp 384w, ../../../pp/art/KingAlpaca_Ice-512.webp 512w, ../../../pp/art/KingAlpaca_Ice-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Кингпака Крист" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/21B_KingAlpaca_Ice.webp" srcset="../../../img/21B_KingAlpaca_Ice.webp 520w, ../../../img/21B_KingAlpaca_Ice@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Кингпака Крист" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="KingAlpaca_Ice"><div class="pal-no"><span class="nochip">№ 21B</span></div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>

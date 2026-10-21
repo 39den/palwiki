@@ -1,7 +1,7 @@
 # Кроадзиро Нокт
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/KendoFrog_Dark-512.webp" srcset="../../../pp/art/KendoFrog_Dark-384.webp 384w, ../../../pp/art/KendoFrog_Dark-512.webp 512w, ../../../pp/art/KendoFrog_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Кроадзиро Нокт" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/9B_KendoFrog_Dark.webp" srcset="../../../img/9B_KendoFrog_Dark.webp 520w, ../../../img/9B_KendoFrog_Dark@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Кроадзиро Нокт" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="KendoFrog_Dark"><div class="pal-no"><span class="nochip">№ 9B</span></div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Молния: 1,5 × 1 = ×1,5; Дракон: 1 × 1,5 = ×1,5.">?</button></div>

@@ -1,7 +1,7 @@
 # Прунелия
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/BlueberryFairy-512.webp" srcset="../../../pp/art/BlueberryFairy-384.webp 384w, ../../../pp/art/BlueberryFairy-512.webp 512w, ../../../pp/art/BlueberryFairy-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Прунелия" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/147_BlueberryFairy.webp" srcset="../../../img/147_BlueberryFairy.webp 520w, ../../../img/147_BlueberryFairy@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Прунелия" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="BlueberryFairy"><div class="pal-no"><span class="nochip">№ 147</span></div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1,5 × 1 = ×1,5; Дракон: 1 × 1,5 = ×1,5.">?</button></div>

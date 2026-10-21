@@ -1,7 +1,7 @@
 # Палумба
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/TropicalOstrich-512.webp" srcset="../../../pp/art/TropicalOstrich-384.webp 384w, ../../../pp/art/TropicalOstrich-512.webp 512w, ../../../pp/art/TropicalOstrich-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Палумба" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/106_TropicalOstrich.webp" srcset="../../../img/106_TropicalOstrich.webp 520w, ../../../img/106_TropicalOstrich@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Палумба" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="TropicalOstrich"><div class="pal-no"><span class="nochip">№ 106</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>

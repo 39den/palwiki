@@ -1,7 +1,7 @@
 # Блазамут
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/KingBahamut-512.webp" srcset="../../../pp/art/KingBahamut-384.webp 384w, ../../../pp/art/KingBahamut-512.webp 512w, ../../../pp/art/KingBahamut-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Блазамут" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/137_KingBahamut.webp" srcset="../../../img/137_KingBahamut.webp 520w, ../../../img/137_KingBahamut@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Блазамут" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="KingBahamut"><div class="pal-no"><span class="nochip">№ 137</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>

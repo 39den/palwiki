@@ -201,3 +201,9 @@ document.addEventListener('DOMContentLoaded',()=>{const q=document.getElementByI
 /* all search inputs: no contact autofill / autocorrect on iOS */
 document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('input[type=search],input[type=text],#mapq,#hsq,.sk-q,#bq2,#gq,.pfq,.psvq,.ffq,#askq,#home-q').forEach(i=>{if(i.type=='range'||i.type=='number')return;
  i.setAttribute('autocomplete','off');i.setAttribute('autocorrect','off');i.setAttribute('autocapitalize','off');i.setAttribute('spellcheck','false');i.setAttribute('enterkeyhint','search');if(i.type=='text')i.type='search';if(!i.name)i.name='pp-q-'+(i.id||i.className.split(' ')[0]||'f')})});
+/* card <-> 3D render flip on pal pages */
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('.pflip');if(!b)return;const w=b.closest('.pcardwrap');const c=w.querySelector('.tcard26'),r=w.querySelector('.pal-art2');if(!c||!r)return;const on=b.getAttribute('aria-pressed')!='true';c.hidden=on;r.hidden=!on;b.setAttribute('aria-pressed',on);b.textContent=on?'🃏 Карточка':'🔄 3D-модель';});
+/* keyboard open: hide bottom nav; on the map, header search hides the map sheet so the map stays visible */
+(()=>{const H=document.documentElement;const isT=e=>e&&e.matches&&e.matches('input:not([type=range]):not([type=checkbox]):not([type=radio]):not([type=button]),textarea,select');
+document.addEventListener('focusin',e=>{if(isT(e.target)){H.classList.add('kbopen');H.classList.toggle('hsqf',e.target.id=='hsq')}});
+document.addEventListener('focusout',()=>setTimeout(()=>{const a=document.activeElement;if(!isT(a)){H.classList.remove('kbopen','hsqf')}else H.classList.toggle('hsqf',a.id=='hsq')},60));})();

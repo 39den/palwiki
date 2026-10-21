@@ -8,7 +8,21 @@ def clean(s):
   return s.replace(' .','.').replace(' ,',',')
 _orig=M.short_partner;M.short_partner=lambda s:clean(_orig(s))
 _art=M.art
+AFD='/workspace/palsite/design2026/art_final'
+import inspect
+_src=inspect.getsource(M.card)
+for a,b in (("full = os.path.exists(os.path.join(B, 'art', p['id'] + '.png'))","full = True"),
+            ("s = min(420/a.width, 420/a.height); a = a.resize((int(a.width*s), int(a.height*s)), Image.LANCZOS)","pass"),
+            ("sc = min(mw/a.width, mh/a.height)","sc = min(mw/a.width, mh/a.height, 1.0)")):
+  assert a in _src,a;_src=_src.replace(a,b)
+exec(_src,M.__dict__)
 def art(p):
+  # 21.10: new sharp full-body render (art_final, kind render, background removed) inside the unchanged card frame; never upscaled
+  r=f"{AFD}/pal/{p['id']}-768.webp"
+  if os.path.exists(r):
+    im=Image.open(r).convert('RGBA');bb=im.getbbox();return im.crop(bb) if bb else im
+  return _old_art(p)
+def _old_art(p):
   fx=f"/workspace/palsite/art_fix/{p['id']}.png"
   if os.path.exists(fx):return Image.open(fx).convert('RGBA')
   if os.path.exists(f"/workspace/palcards/art/{p['id']}.png"):return _art(p)

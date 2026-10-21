@@ -1,7 +1,7 @@
 # Чиллет
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/WeaselDragon-512.webp" srcset="../../../pp/art/WeaselDragon-384.webp 384w, ../../../pp/art/WeaselDragon-512.webp 512w, ../../../pp/art/WeaselDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Чиллет" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/103_WeaselDragon.webp" srcset="../../../img/103_WeaselDragon.webp 520w, ../../../img/103_WeaselDragon@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Чиллет" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="WeaselDragon"><div class="pal-no"><span class="nochip">№ 103</span></div>
 <div class="chips"><span class="el el-ice">Лёд</span><span class="el el-dragon">Дракон</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1,5 × 1 = ×1,5; Лёд: 1 × 1,5 = ×1,5.">?</button></div>

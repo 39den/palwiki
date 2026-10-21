@@ -1,7 +1,7 @@
 # Фросталлион Нокт
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/IceHorse_Dark-512.webp" srcset="../../../pp/art/IceHorse_Dark-384.webp 384w, ../../../pp/art/IceHorse_Dark-512.webp 512w, ../../../pp/art/IceHorse_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фросталлион Нокт" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/200B_IceHorse_Dark.webp" srcset="../../../img/200B_IceHorse_Dark.webp 520w, ../../../img/200B_IceHorse_Dark@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Фросталлион Нокт" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="IceHorse_Dark"><div class="pal-no"><span class="nochip">№ 200B</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>

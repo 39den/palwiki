@@ -1,7 +1,7 @@
 # Джелрой
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/JellyfishGhost-512.webp" srcset="../../../pp/art/JellyfishGhost-384.webp 384w, ../../../pp/art/JellyfishGhost-512.webp 512w, ../../../pp/art/JellyfishGhost-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Джелрой" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/46_JellyfishGhost.webp" srcset="../../../img/46_JellyfishGhost.webp 520w, ../../../img/46_JellyfishGhost@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Джелрой" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="JellyfishGhost"><div class="pal-no"><span class="nochip">№ 46</span></div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Молния: 1,5 × 1 = ×1,5; Дракон: 1 × 1,5 = ×1,5.">?</button></div>

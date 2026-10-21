@@ -37,7 +37,7 @@ print('tree: filled tiles',filled,'sea',SEA)
 z2=Image.new('RGB',(2048,2048),(11,16,22))
 for x in range(4):
   for y in range(4):
-    f=f'{W}/z2x{x}y{y}.webp'
+    f=f'{O}/tiles/z2x{x}y{y}.webp'  # filled set (no holes)
     if os.path.exists(f):z2.paste(Image.open(f).convert('RGB'),(x*512,y*512))
 z2.resize((1024,1024),Image.LANCZOS).save(O+'/mini_tree.webp','WEBP',quality=78)
 # palpagos mini from our wiki.gg tiles z2 (256px tiles)

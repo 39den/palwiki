@@ -1,7 +1,7 @@
 # Глуппи Примо
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/OctopusGirl_Neutral-512.webp" srcset="../../../pp/art/OctopusGirl_Neutral-384.webp 384w, ../../../pp/art/OctopusGirl_Neutral-512.webp 512w, ../../../pp/art/OctopusGirl_Neutral-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Глуппи Примо" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/48B_OctopusGirl_Neutral.webp" srcset="../../../img/48B_OctopusGirl_Neutral.webp 520w, ../../../img/48B_OctopusGirl_Neutral@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Глуппи Примо" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="OctopusGirl_Neutral"><div class="pal-no"><span class="nochip">№ 48B</span></div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Молния: 1,5 × 1 = ×1,5; Тьма: 1 × 1,5 = ×1,5.">?</button></div>

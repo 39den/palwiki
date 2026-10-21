@@ -1,7 +1,7 @@
 # Маджекс
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/DarkFlameFox-512.webp" srcset="../../../pp/art/DarkFlameFox-384.webp 384w, ../../../pp/art/DarkFlameFox-512.webp 512w, ../../../pp/art/DarkFlameFox-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Маджекс" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/115_DarkFlameFox.webp" srcset="../../../img/115_DarkFlameFox.webp 520w, ../../../img/115_DarkFlameFox@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Маджекс" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="DarkFlameFox"><div class="pal-no"><span class="nochip">№ 115</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-fire">Огонь</span></div>
 <div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Вода: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>

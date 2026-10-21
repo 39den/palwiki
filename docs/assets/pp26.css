@@ -38,7 +38,7 @@ html.pp26 .md-header__button.md-logo img,html.pp26 .md-header__button.md-logo sv
 html.pp26 .md-header__button.md-logo{position:relative;width:28px;height:28px;margin:0 4px 0 8px;padding:0;border-radius:50%;background:linear-gradient(var(--red) 0 44%,var(--ink) 44% 56%,#fff 56%);box-shadow:inset 0 -3px 6px rgba(0,0,0,.2),0 2px 6px rgba(212,43,34,.35)}
 html.pp26 .md-header__button.md-logo:after{content:"";position:absolute;inset:8px;border-radius:50%;background:#fff;border:2.5px solid var(--ink)}
 html.pp26 .hsx{height:44px;border-radius:99px;background:var(--card);border:1px solid var(--pline);box-shadow:var(--psh1);color:var(--mu);padding:0 6px 0 14px}
-html.pp26 .hsx:focus-within{border-color:var(--red);box-shadow:0 0 0 3px color-mix(in srgb,var(--red) 22%,transparent)}
+html.pp26 .hsx:focus-within{border-color:#2f6fde;box-shadow:0 0 0 3px rgba(47,111,222,.22)}
 html.pp26 .hsx input{color:var(--ink);font-weight:600}
 html.pp26 .hsx input::placeholder{color:var(--mu)}
 html.pp26 .md-tabs{background:transparent;color:var(--ink);border-bottom:1px solid var(--pline)}
@@ -145,10 +145,10 @@ html.pp26 .pp-brand{font:800 17px/1 Unbounded,Manrope,sans-serif;letter-spacing:
 @media (max-width:599px){html.pp26 .pp-brand{display:none}}
 html.pp26 .md-header__title{display:none!important}
 /* stage-1 pages: no side columns, centred 1280 grid */
-@media (min-width:1220px){html.pp26 body:is(.pp-pal,.pp-boss,.pp-home,.pp-gal,.pp-map,.pp-items) .md-sidebar{display:none}
- html.pp26 body:is(.pp-pal,.pp-boss,.pp-home,.pp-gal,.pp-map,.pp-items) .md-content{max-width:1280px;margin:0 auto}
- html.pp26 body:is(.pp-pal,.pp-boss,.pp-home,.pp-gal,.pp-map,.pp-items) .md-main__inner{max-width:1280px}}
-@media (min-width:960px) and (max-width:1219px){html.pp26 body:is(.pp-pal,.pp-boss,.pp-home,.pp-gal) .md-sidebar--secondary{display:none}}
+@media (min-width:1220px){html.pp26 body:is(.pp-pal,.pp-boss,.pp-home,.pp-gal,.pp-map,.pp-items) .md-sidebar,html.pp26 body:has(.pal-hero,.boss-hero,.hero .smart-box,#gallery,#pwmap,.igrid,.icard) .md-sidebar{display:none}
+ html.pp26 body:has(.pal-hero,.boss-hero,.hero .smart-box,#gallery,#pwmap,.igrid,.icard) .md-content,html.pp26 body:is(.pp-pal,.pp-boss,.pp-home,.pp-gal,.pp-map,.pp-items) .md-content{max-width:1280px;margin:0 auto}
+ html.pp26 body:has(.pal-hero,.boss-hero,.hero .smart-box,#gallery,#pwmap,.igrid,.icard) .md-main__inner,html.pp26 body:is(.pp-pal,.pp-boss,.pp-home,.pp-gal,.pp-map,.pp-items) .md-main__inner{max-width:1280px}}
+@media (min-width:960px) and (max-width:1219px){html.pp26 body:has(.pal-hero,.boss-hero,.hero .smart-box,#gallery) .md-sidebar--secondary,html.pp26 body:is(.pp-pal,.pp-boss,.pp-home,.pp-gal) .md-sidebar--secondary{display:none}}
 /* home hero: sky scene + cast */
 html.pp26 .hero{background:linear-gradient(180deg,#5db7ec 0%,#9fd6f3 38%,#ffe2a8 64%,#f6b37a 100%)!important;min-height:560px;isolation:isolate;align-items:flex-end}
 html.pp26 .hero:before,html.pp26 .hero:after{display:none!important}
@@ -215,3 +215,18 @@ html.pp26 .sx-card .sa-k,html.pp26 .ux-aicard .sa-k{color:var(--blue,#2f6fde)}
 /* gallery CLS: don't paint the grid/skeleton until filters exist; reserve header option slot */
 html.pp26 .gal-filters:empty{min-height:188px;visibility:hidden}
 html.pp26 #gallery:empty,html.pp26 .gal-filters:empty~#gallery{visibility:hidden}
+/* pp26: install hint never covers the hero/bottom nav (install stays available from the browser menu) */
+html.pp26 .inst{display:none!important}
+html.pp26 .md-typeset details.itm{border:1px solid var(--pline)}
+
+/* CLS: fixed tab/header metrics so the web-font swap can't move the page; content stays unpainted until pp26.js has rearranged it */
+html.pp26 .md-tabs__link{height:35px;line-height:19px;box-sizing:border-box;display:inline-flex;align-items:center}
+html.pp26 .md-tabs{height:48px;overflow:hidden}
+html.pp26:not(.pp-ready) .md-main{visibility:hidden}
+/* mobile pal hero: name visible on first screen */
+@media (max-width:600px){html.pp26 .pal-hero .pal-art{max-height:230px;width:auto;max-width:70%;margin:0 auto;display:block;object-fit:contain}}
+/* deep-linked item card not hidden under the sticky search box */
+html.pp26 details.itm,details.itm{scroll-margin-top:calc(var(--hdr,64px) + 150px)}
+/* pal page: the trading card stays exactly as-is (only its art is upgraded) — framed, rounded, shadowed */
+html.pp26 .pal-hero .pal-card.tcard{width:min(400px,100%)!important;max-width:400px;height:auto;max-height:none;aspect-ratio:520/728;border-radius:18px!important;box-shadow:var(--psh2)!important;object-fit:contain}
+@media (max-width:700px){html.pp26 .pal-hero{grid-template-columns:1fr;padding:20px;min-height:0}html.pp26 .pal-hero .pal-card.tcard{width:min(330px,84vw)!important;order:-2}}

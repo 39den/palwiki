@@ -1,7 +1,7 @@
 # Роуджей
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/ThiefBird-512.webp" srcset="../../../pp/art/ThiefBird-384.webp 384w, ../../../pp/art/ThiefBird-512.webp 512w, ../../../pp/art/ThiefBird-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Роуджей" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/177_ThiefBird.webp" srcset="../../../img/177_ThiefBird.webp 520w, ../../../img/177_ThiefBird@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Роуджей" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="ThiefBird"><div class="pal-no"><span class="nochip">№ 177</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
 <div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>

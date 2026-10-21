@@ -1,7 +1,7 @@
 # Иктирдир
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Deer-512.webp" srcset="../../../pp/art/Deer-384.webp 384w, ../../../pp/art/Deer-512.webp 512w, ../../../pp/art/Deer-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Иктирдир" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/32_Deer.webp" srcset="../../../img/32_Deer.webp 520w, ../../../img/32_Deer@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Иктирдир" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="Deer"><div class="pal-no"><span class="nochip">№ 32</span></div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>

@@ -1,7 +1,7 @@
 # Ворсект
 
 <div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/HerculesBeetle-512.webp" srcset="../../../pp/art/HerculesBeetle-384.webp 384w, ../../../pp/art/HerculesBeetle-512.webp 512w, ../../../pp/art/HerculesBeetle-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Ворсект" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/113_HerculesBeetle.webp" srcset="../../../img/113_HerculesBeetle.webp 520w, ../../../img/113_HerculesBeetle@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Ворсект" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="HerculesBeetle"><div class="pal-no"><span class="nochip">№ 113</span></div>
 <div class="chips"><span class="el el-ground">Земля</span><span class="el el-grass">Трава</span></div>
 <div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1 × 1,5 = ×1,5; Трава: 1,5 × 1 = ×1,5.">?</button></div>

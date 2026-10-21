@@ -14,5 +14,6 @@
   if(document.getElementById('pwmap'))document.body.classList.add('pp-map');
   if(document.querySelector('.igrid,.icard'))document.body.classList.add('pp-items');
  };
- if(document.readyState=='loading')document.addEventListener('DOMContentLoaded',run);else run();
+ const done=()=>{try{run()}finally{document.documentElement.classList.add('pp-ready')}};
+ if(document.readyState=='loading')document.addEventListener('DOMContentLoaded',done);else done();setTimeout(()=>document.documentElement.classList.add('pp-ready'),2500);
 })();

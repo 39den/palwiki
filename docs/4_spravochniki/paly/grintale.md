@@ -1,7 +1,7 @@
 # Гринтэйл
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/NaughtyCat-512.webp" srcset="../../../pp/art/NaughtyCat-384.webp 384w, ../../../pp/art/NaughtyCat-512.webp 512w, ../../../pp/art/NaughtyCat-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Гринтэйл" width="512" height="512" fetchpriority="high" decoding="async">
+<img class="pal-card tcard26" src="../../../img/70_NaughtyCat.webp" srcset="../../../img/70_NaughtyCat.webp 520w, ../../../img/70_NaughtyCat@750.webp 750w" sizes="(max-width:700px) 88vw, 340px" alt="Карточка: Гринтэйл" width="520" height="728" fetchpriority="high" decoding="async">
 <div class="pal-info" data-pal="NaughtyCat"><div class="pal-no"><span class="nochip">№ 70</span></div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
 <div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>

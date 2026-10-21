@@ -83,6 +83,20 @@ def hab_block(p,R):
     top='<div class="nowild"><b>В дикой природе не встречается</b><span>Точек появления на открытой карте в данных игры нет'+(' — ищи в подземельях, яйцах или выводи разведением.' if (dg or eg) else ' — выводи разведением.')+'</span></div>'
   return f'<div class="hab" markdown="0">{top}{"<div class=rgcs>"+chips_r+"</div>" if chips_r else ""}{"<div class=dgcs>"+dg+eg+mer+"</div>" if (dg or eg or mer) else ""}</div>'
 
+def _hero_img(p,img,thumb,_set,_k):
+  # trading card first (restored 21.10 by user request); the 3D render is a second face behind a flip button
+  ren=(f'<img class="pal-art2 pal-art{" portrait" if _k else ""}" src="../../../{thumb}" srcset="{_set("../../../")}" sizes="(max-width:700px) 60vw, 420px" alt="{p["ru"]}" width="512" height="512" loading="lazy" decoding="async" hidden>') if _set else ''
+  if img:
+    b=img[4:-5];big=f'{C}/card/{b}@750.webp'
+    src=[f for f in glob.glob('/workspace/palsite/.cards/*.png') if os.path.basename(f)[:-4]==b]
+    if src and (not os.path.exists(big) or os.path.getmtime(big)<os.path.getmtime(src[0])):webp(src[0],big,750)
+    ss=''
+    if os.path.exists(big):shutil.copy(big,D+'/img/'+b+'@750.webp');ss=f' srcset="../../../{img} 520w, ../../../img/{b}@750.webp 750w" sizes="(max-width:700px) 88vw, 340px"'
+    card=f'<img class="pal-card tcard26" src="../../../{img}"{ss} alt="Карточка: {p["ru"]}" width="520" height="728" fetchpriority="high" decoding="async">'
+    return card
+  if _set:return ren.replace(' loading="lazy"',' fetchpriority="high"').replace(' hidden','').replace('pal-art2 ','pal-card ')
+  return ''
+
 for p in pals:
   md=None
   for c in (slug(p['en']),slug(p['en']).replace('_','')):
@@ -118,7 +132,7 @@ for p in pals:
     path=f"{D}/4_spravochniki/paly/{md}.md";L=open(path).read().split('\n',1)
     works=''.join(f'<span class="work" title="{w["work"]} {w["level"]}">{WI.get(w["work"],"•")} {w["work"]} <b>{w["level"]}</b></span>' for w in p['work'])
     head=f'''<div class="pal-hero" markdown="0" data-el="{EL.get((p['elements'] or ['Нейтральный'])[0],'neutral')}" style="--pc:var(--{EL.get((p['elements'] or ['Нейтральный'])[0],'neutral')})"><canvas id="fx"></canvas>
-{(f'<img class="pal-card pal-art{" portrait" if _k else ""}" src="../../../{thumb}" srcset="{_set("../../../")}" sizes="(max-width:700px) 60vw, 420px" alt="{p['ru']}" width="512" height="512" fetchpriority="high" decoding="async">') if _set else f'<img class="pal-card" src="../../../{img}" alt="{p["ru"]}" loading="lazy" width="360">'}
+{_hero_img(p,img,thumb,_set,_k)}
 <div class="pal-info"><div class="pal-no"><span class="nochip">№ {p["no"]}</span></div>
 <div class="chips">{''.join(chip(e) for e in p['elements'])}</div>
 {'' if not p['elements'] else '<div class="weak">Слабость: '+(''.join(chip(e).replace('</span>',' <b class="mx">'+_fm(v)+'</b></span>') for e,v in p['_wm']) or 'нет')+' <button class="hlp" data-tip="'+_WTIP(p)+'">?</button></div>'}
@@ -404,7 +418,10 @@ for _k,_arr,_key in (('pals',SP,'id'),('passives',SPS,'name')):
   _ix={v:i for i,v in enumerate(_F[_k])}
   for _x in _arr:_x['i']=_ix[_x[_key]]
 json.dump(_F,open(_fz,'w'),ensure_ascii=False,indent=0)
-json.dump({'popular':POPL,'map':MP,'pals':SP,'items':SI,'bosses':SB,'passives':SPS,'faq':faq,'syn':syn,'built':datetime.date.today().isoformat()},open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
+for _fq in faq:
+  for _k in ('q','a'):
+    if isinstance(_fq.get(_k),str):_fq[_k]=re.sub(r'\s*\((?:SAN|San|san)\)','',_fq[_k]).replace('SAN','рассудок')
+json.dump({'popular':POPL,'map':MP,'pals':SP,'items':SI,'bosses':SB,'passives':SPS,'faq':faq,'syn':syn,'gl':[{'t':g['term'],'a':g.get('aliases',[]),'d':g['definition']} for g in json.load(open(W+'/data/glossary.json'))],'built':datetime.date.today().isoformat()},open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
 shutil.move(A+'/manifest.webmanifest',D+'/manifest.webmanifest');open(D+'/sw.js','w').write(open(A+'/sw.js').read().replace('__BUILD__',datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d%H%M')));os.remove(A+'/sw.js')
 print('map points',len(MP));print('search_data KB',os.path.getsize(A+'/search_data.json')//1024)
 TABMAP=[('Обзор',('Работа','Партнёрск','Чем хорош')),('Атаки',('Атаки',)),('Где живёт',('Где водится',)),('Дроп',('Дроп',)),('Разведение',('Разведение',)),('Пассивки',('Лучшие пассивки','Пассивк'))]

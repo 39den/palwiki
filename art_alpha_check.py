@@ -16,8 +16,9 @@ for f in files:
 json.dump(bad,open('/workspace/palsite/art_alpha.json','w'),indent=0)
 print('art-alpha: checked',len(files),'bad',len(bad),[b[0] for b in bad[:20]])
 if bad:sys.exit(1)
-# P01: pal pages must show transparent art_final in the hero, never the baked PNG card (its dark box can't be seen by corner checks)
+# 21.10 (Денис): pal pages show the trading card again (art inside = art_final render). Every pal page must have it.
 import re as _re
-_bad=[f for f in glob.glob(D+'/4_spravochniki/paly/*.md') if _re.search(r'class="pal-card(?![^"]*pal-art)[^"]*" src="[^"]*img/',open(f).read())]
-print('card-in-hero:',len(_bad),_bad[:5])
+_pp=[f for f in glob.glob(D+'/4_spravochniki/paly/*.md') if 'class="pal-hero' in open(f).read()]
+_bad=[f for f in _pp if 'class="pal-card tcard26"' not in open(f).read()]
+print('pal pages w/o trading card:',len(_bad),'of',len(_pp),_bad[:5])
 if _bad:sys.exit(1)
