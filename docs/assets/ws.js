@@ -8,7 +8,7 @@ function equiv(S,L){if(S<L[0])return[0,0];if(S>=L[9])return[10,0];for(let i=0;i<
 function tiles(){const L=W.L,mx=Math.log(L[9]/L[0])||1;const S=pSpeed();const [lv]=CMP.includes(W.id)?equiv(S,L):[0];
  $('#lvls').innerHTML=L.map((v,i)=>{const ex=W.extra?`<em>${(W.extra.fmt||'×{}').replace('{}',fmt(W.extra.values[i]))}</em>`:(W.unit&&W.unit!=='сила'?`<em>шт.</em>`:'');
   const fill=W.hide?(i+1)/10:(Math.log(v/L[0])/mx*0.92+0.08);
-  return `<div class="lv${i===9?' max':''}${lv===i+1?' hit':''}"><small>${lv===i+1?'ТЫ ≈':W.hide?'УРОВЕНЬ':'УР '+(i+1)}</small><b>${W.hide?i+1:String(v)}</b>${ex}<i><s style="transform:scaleX(${fill.toFixed(3)})"></s></i></div>`}).join('');
+  return `<div class="lv${i===9?' max':''}${lv===i+1?' hit':''}"><small>${lv===i+1?'КАК ТЫ':W.hide?'УРОВЕНЬ':'УР '+(i+1)}</small><b>${W.hide?i+1:String(v)}</b>${ex}<i><s style="transform:scaleX(${fill.toFixed(3)})"></s></i></div>`}).join('');
  $('#wnote').textContent=(W.note||W.what)+' · напарник +1: '+W.aura;
  $('#books').innerHTML=`<span class="pill">📘 ${W.book}</span>`}
 const dur=s=>{s=Math.ceil(s);if(s<60)return s+' с';if(s<3600){const m=Math.floor(s/60),r=s%60;return m+' мин'+(r?' '+r+' с':'')}const h=Math.floor(s/3600),m=Math.round(s%3600/60);return h+' ч'+(m?' '+m+' мин':'')};

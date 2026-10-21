@@ -114,7 +114,7 @@ function mapPal(D){const M=window.PW_map;const s=document.getElementById('mapq')
   const st=r=>terms.some(t=>N(r.lbl).startsWith(t))?0:1;R.sort((a,b)=>st(a)-st(b));
   return R.slice(0,12);}
  const show=pts=>{const set=new Set(pts);M.all.forEach(([p,mk])=>{mk.setOpacity(!pts||set.has(p)?1:.18);mk.setZIndexOffset(pts&&set.has(p)?1000:0);});
-  if(pts){Object.values(M.groups).forEach(g=>M.m.addLayer(g));cnt.hidden=false;cnt.textContent='найдено '+pts.length;x.hidden=false;
+  if(M.dc)M.dc.boost(pts?new Set(M.all.filter(([p])=>set.has(p)).map(z=>z[1])):null);if(pts){Object.values(M.groups).forEach(g=>M.m.addLayer(g));cnt.hidden=false;cnt.textContent='найдено '+pts.length;x.hidden=false;
    const mks=M.all.filter(([p])=>set.has(p)).map(z=>z[1]);if(mks.length==1){const g=Object.values(M.groups).find(g=>g.hasLayer&&g.hasLayer(mks[0]));if(g&&g.zoomToShowLayer)g.zoomToShowLayer(mks[0],()=>mks[0].openPopup());else{M.m.flyTo(mks[0].getLatLng(),4);mks[0].openPopup();}}
    else if(mks.length)M.m.flyToBounds(L.latLngBounds(mks.map(k=>k.getLatLng())).pad(.3),{maxZoom:4});}
   else{cnt.hidden=true;x.hidden=true;}};
