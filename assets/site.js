@@ -1,3 +1,24 @@
+
+/* map popups: one tappable card linking to the entity page (pal / boss / guide section) */
+window.PW_pop=function(o){const B=window.PW_BASE||'/palwiki/';const D=window.PW_D||{};const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const EM={'Огонь':'🔥','Вода':'💧','Трава':'🌿','Молния':'⚡','Лёд':'❄️','Земля':'🪨','Тьма':'🌑','Дракон':'🐉','Нейтральный':'⚪'};
+ const T={alpha:'👑 Альфа',sealed:'🔒 Запечатанные земли',tower:'🏯 Башня',travel:'🗿 Телепорт',watch:'🗼 Смотровая вышка',npc:'🧑 Персонаж',chest:'🎁 Сундук',fruit:'🌳 Плодовое дерево',spring:'💧 Источник',fish:'🎣 Место рыбалки',hab:'📍 Обитание'};
+ const G={travel:['guide/11_mir/#быстрое-перемещение','Как работают телепорты'],fish:['guide/11_mir/#рыбалка','Как рыбачить'],chest:['guide/sekrety/','Секреты и сундуки'],npc:['guide/11_mir/#особые-npc','Персонажи мира'],watch:['guide/11_mir/','Гид по миру'],fruit:['guide/11_mir/','Гид по миру'],spring:['guide/11_mir/','Гид по миру'],tower:['4_spravochniki/bossy/','Все боссы башен']};
+ const pals=D.pals||[];const byRu=n=>pals.find(p=>p.ru==n)||pals.find(p=>p.en==n);
+ let pal=null,boss=null,url=o.url||'',label='';
+ if(o.t=='alpha'||o.t=='hab')pal=byRu(o.name);
+ if(o.t=='sealed')pal=byRu((o.info||'').split('· ')[1]||'')||byRu(o.name);
+ if(o.t=='tower'){boss=(D.bosses||[]).find(b=>b.place==o.name)||(D.bosses||[]).find(b=>b.pal&&o.name.indexOf(b.pal)>=0)||(D.bosses||[]).find(b=>b.name&&b.name.indexOf(o.name)>=0);
+  if(!boss){const bc=(D.bcards||[]).find(b=>b.n==o.name||b.pal==o.name||(b.n||'').indexOf(o.name)>=0);if(bc)boss={url:bc.u,el:bc.el,weak:bc.w,pal:bc.pal,t:bc.t}}}
+ if(pal&&!url)url=pal.url;if(boss)url=boss.url||url;
+ if(!url&&G[o.t]){url=G[o.t][0];label=G[o.t][1]}
+ const el=(pal&&pal.el)||(boss&&boss.el)||[],wk=(pal&&pal.weak)||(boss&&boss.weak)||[];
+ const bp=boss&&!pal?byRu(boss.pal):null;const th=(pal&&pal.thumb)||(boss&&boss.t)||(bp&&bp.thumb)||'';
+ const chips=el.length?`<div class="mpe">${el.map(e=>`<span>${EM[e]||''} ${esc(e)}</span>`).join('')}</div>`:'';
+ const w=wk.length?`<div class="mpw">Слабость: ${wk.map(e=>(EM[e]||'')+' '+esc(e)).join(', ')}</div>`:'';
+ const body=`${th?`<img class="mpt" src="${B+th}" alt="" width="56" height="56" loading="lazy">`:''}<div class="mpb"><div class="mk">${esc(o.kind||T[o.t]||'')}</div><b>${esc(o.name||T[o.t]||'')}</b>${o.lvl?`<div class="mpl">Уровень ${esc(o.lvl)}</div>`:''}${o.sub?`<div class="mpl">${esc(o.sub)}</div>`:''}${chips}${w}</div>`;
+ const go=label||(pal?'Страница пала':boss?'Страница босса':'Подробнее');
+ return url?`<a class="mpop mpcard" href="${B+url.replace(/^\//,'')}">${body}<span class="mpgo">${esc(go)} →</span></a>`:`<div class="mpop mpcard">${body}</div>`};
 (function(){const B=window.PW_BASE,chip=window.PW_chip;const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const ACT={party:'🎒 из команды',summoned:'🐾 выпущен',mounted:'🐎 верхом',active:'🔘 кнопкой',base:'🏠 на базе'};
 const WORKS=['Добыча','Рубка деревьев','Разжигание огня','Полив','Посев семян','Генерация энергии','Ручная работа','Сбор','Фармацевтика','Охлаждение','Транспортировка','Фермерство'];
@@ -46,6 +67,7 @@ function compare(D){const box=document.getElementById('cmp');const u=new URLSear
   const s=box.querySelector('.cx-swap');if(s)s.onclick=()=>{[c1.value,c2.value]=[c2.value,c1.value];setU();run();};};
  run();}
 function map(D){const el=document.getElementById('pwmap');if(!el||!window.L)return;
+ if(D&&!window.PW_D)window.PW_D=D;
  const T={alpha:['👑','Альфы','#ff7a59'],travel:['🗿','Телепорты','#14b8a6'],tower:['🏯','Башни','#9b5de5'],sealed:['🔒','Запечатанные земли','#2f8fe8']};
  const X0=-1923.225927,Y0=1032.79857101,X1=1234.833276624702,Y1=-2125.2606328,S=8192,Z=5;
  const m=L.map(el,{crs:L.CRS.Simple,minZoom:1,maxZoom:6,zoomSnap:.5,attributionControl:true});
@@ -55,7 +77,7 @@ function map(D){const el=document.getElementById('pwmap');if(!el||!window.L)retu
  m.setMaxBounds(bounds.pad(.2));m.fitBounds(bounds);
  const icon=t=>L.divIcon({className:'pmk pmk-'+t,html:'<span>'+T[t][0]+'</span>',iconSize:[30,30],iconAnchor:[15,15]});
  const groups={};const all=[];Object.keys(T).forEach(k=>groups[k]=(L.markerClusterGroup?L.markerClusterGroup({maxClusterRadius:38,showCoverageOnHover:false,disableClusteringAtZoom:4}):L.layerGroup()).addTo(m));
- D.map.forEach(p=>{const mk=L.marker(ll(p.x,p.y),{icon:icon(p.t),title:p.name}).bindPopup(`<div class="mpop"><div class="mk">${T[p.t][0]} ${esc(p.info||T[p.t][1])}</div><b>${esc(p.name)}</b>${p.lvl?`<div>Уровень ${esc(p.lvl)}</div>`:''}<div class="xy">X ${Math.round(p.x)} · Y ${Math.round(p.y)}</div>${p.url?`<a href="${B+p.url}">Открыть страницу →</a>`:''}</div>`);mk.addTo(groups[p.t]);all.push([p,mk]);});
+ D.map.forEach(p=>{const mk=L.marker(ll(p.x,p.y),{icon:icon(p.t),title:p.name}).bindPopup(()=>window.PW_pop({t:p.t,name:p.name,lvl:p.lvl,info:p.info,url:p.url,kind:T[p.t][0]+' '+(p.info||T[p.t][1]),sub:'X '+Math.round(p.x)+' · Y '+Math.round(p.y)}),{maxWidth:280,minWidth:220});mk.addTo(groups[p.t]);all.push([p,mk]);});
  const Lg=L.control({position:'topright'});Lg.onAdd=()=>{const d=L.DomUtil.create('div','mleg');const small=window.innerWidth<700;
   d.innerHTML=`<button class="mleg-t">🗺 Слои</button><div class="mleg-b" ${small?'hidden':''}>`+Object.entries(T).map(([k,v])=>`<label><input type="checkbox" checked data-k="${k}"> ${v[0]} ${v[1]} <small>${D.map.filter(p=>p.t==k).length}</small></label>`).join('')+'</div>';
   L.DomEvent.disableClickPropagation(d);d.querySelector('.mleg-t').onclick=()=>{const b=d.querySelector('.mleg-b');b.hidden=!b.hidden;};
