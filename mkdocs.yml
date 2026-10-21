@@ -25,8 +25,8 @@ theme:
 plugins:
   - search:
       lang: [ru, en]
-extra_css: ['assets/extra.css?v=1792600594']
-extra_javascript: ['assets/smart.js?v=1792600594', 'assets/site.js?v=1792600594', 'assets/features.js?v=1792600594', 'assets/ui2.js?v=1792600594', 'assets/ui3.js?v=1792600594', 'assets/ai.js?v=1792600594']
+extra_css: ['assets/extra.css?v=1792603107']
+extra_javascript: ['assets/smart.js?v=1792603107', 'assets/site.js?v=1792603107', 'assets/features.js?v=1792603107', 'assets/ui2.js?v=1792603107', 'assets/ui3.js?v=1792603107', 'assets/ai.js?v=1792603107']
 markdown_extensions:
   - tables
   - attr_list
