@@ -815,4 +815,17 @@ html .leaflet-container .leaflet-control-attribution{font-size:11px!important}
 [data-md-color-scheme=default] div.dch .r3 span{color:#1c5fc4}
 [data-md-color-scheme=default] .r-4 .rkb{color:#7a5800}
 [data-md-color-scheme=default] .r-neg .rkb{color:#a8232a}
+/* MAPICONS 21.10: game-style markers (no clusters), popup fit, no text selection */
+.gmk,.gmk.leaflet-interactive{background:none!important;border:0!important;pointer-events:none!important}
+.gmk>i{pointer-events:auto!important;cursor:pointer}
+.gmk>i{display:flex;align-items:center;justify-content:center;box-sizing:border-box;border-radius:50%;background:radial-gradient(circle at 50% 35%,#2a3a48,#121b24);border:2px solid var(--c);box-shadow:0 0 0 1px rgba(0,0,0,.6),0 2px 6px rgba(0,0,0,.55)}
+.gmk>i img{width:68%;height:68%;object-fit:contain;pointer-events:none;filter:drop-shadow(0 1px 1px rgba(0,0,0,.6))}
+.gmk-tower>i,.gmk-travel>i{border-width:2.5px}
+.gmk:hover>i{filter:brightness(1.2)}
+.gmk-l{display:inline-flex;vertical-align:middle;width:22px;height:22px;border-radius:50%;align-items:center;justify-content:center;background:#16212b;border:2px solid var(--c);box-sizing:border-box;margin-right:4px}
+.gmk-l img{width:70%;height:70%;object-fit:contain}
+.marker-cluster{display:none!important}
+#pwmap,#wtmap,.habmap,#pwmap .leaflet-popup,#wtmap .leaflet-popup,.mleg{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.leaflet-popup .mpl{-webkit-user-select:text;user-select:text}
+.leaflet-popup.pop-dn .leaflet-popup-tip-container{transform:rotate(180deg);top:-20px}
 [data-md-color-scheme=default] .ef.up{color:#146a33}

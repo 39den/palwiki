@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded',()=>{const F=document.querySelector
  const X0=-1923.225927,Y0=1032.79857101,X1=1234.833276624702,Y1=-2125.2606328,S=8192,Z=5;
  const TT={alpha:['👑','Альфы и полевые боссы'],tower:['🏯','Башни'],travel:['🗿','Телепорты'],watch:['🗼','Смотровые вышки'],npc:['🧑','Персонажи'],chest:['🎁','Сундуки'],fruit:['🌳','Плодовые деревья'],spring:['💧','Источники'],fish:['🎣','Рыбалка']};
  const RU=n=>{const D=window.PW_D;if(!D)return n;const p=D.pals.find(p=>p.en==n);return p?p.ru:n};
- let TM=null;
+ let TM=null,TM_dc=null;
  window.PW_tree=function(){const wt=document.getElementById('wtree');if(!wt||TM)return TM;wt.innerHTML='<div id="wtmap"></div>';const el=wt.firstChild;
   const m=L.map(el,{crs:L.CRS.Simple,minZoom:0,maxZoom:5,zoomSnap:.5,attributionControl:true});const ll=(x,y)=>m.unproject([x*4096,y*4096],3);
   const bounds=L.latLngBounds(ll(0,1),ll(1,0));
@@ -134,29 +134,36 @@ document.addEventListener('DOMContentLoaded',()=>{const F=document.querySelector
   m.setMaxBounds(bounds.pad(.05));m.options.maxBoundsViscosity=1;m.fitBounds(bounds);el.style.background='#0d151c';
   const groups={};const lay=L.control({position:'topright'});
   fetch(B+'assets/wtree/markers.json').then(r=>r.json()).then(J=>{const cnt={};
-   J.pts.forEach(p=>{const t=TT[p.t];if(!t)return;cnt[p.t]=(cnt[p.t]||0)+1;const g=groups[p.t]||(groups[p.t]=(L.markerClusterGroup?(()=>{const cg=L.markerClusterGroup({maxClusterRadius:38,showCoverageOnHover:false,disableClusteringAtZoom:3,zoomToBoundsOnClick:false,spiderfyOnMaxZoom:false});cg.on('clusterclick',e=>{const c=e.layer,bb=c.getBounds();const z=Math.max(3,Math.min(m.getMaxZoom(),m.getBoundsZoom(bb.pad(.3))));if(bb.getNorthEast().equals(bb.getSouthWest()))c.spiderfy();else m.setView(bb.getCenter(),z)});return cg})():L.layerGroup()));
-    const nm=p.n;
-    L.marker(ll(p.x,p.y),{icon:L.divIcon({className:'pmk pmk-'+({alpha:'alpha',tower:'tower',travel:'travel'}[p.t]||'misc'),html:'<span>'+t[0]+'</span>',iconSize:[30,30],iconAnchor:[15,15]}),title:nm})
-     .bindPopup(()=>window.PW_pop({t:p.t,name:nm,lvl:p.lv,kind:t[0]+' '+t[1]}),{maxWidth:280,minWidth:220}).addTo(g)});
-   ['alpha','tower','travel','watch','npc'].forEach(k=>groups[k]&&groups[k].addTo(m));
-   lay.onAdd=()=>{const d=L.DomUtil.create('div','mleg');const small=innerWidth<700;d.innerHTML=`<button class="mleg-t">🗺 Слои</button><div class="mleg-b" ${small?'hidden':''}>`+Object.keys(TT).filter(k=>cnt[k]).map(k=>`<label><input type="checkbox" ${m.hasLayer(groups[k])?'checked':''} data-k="${k}"> ${TT[k][0]} ${TT[k][1]} <small>${cnt[k]}</small></label>`).join('')+'</div>';
-    L.DomEvent.disableClickPropagation(d);d.querySelector('.mleg-t').onclick=()=>{const b=d.querySelector('.mleg-b');b.hidden=!b.hidden};d.querySelectorAll('input').forEach(i=>i.onchange=()=>i.checked?m.addLayer(groups[i.dataset.k]):m.removeLayer(groups[i.dataset.k]));return d};lay.addTo(m);
+   const MI=window.PW_MI,dc=MI.DC(m);MI.fit(m);TM_dc=dc;const on0=['alpha','tower','travel','watch','npc'];Object.keys(TT).forEach(k=>{if(!on0.includes(k))dc.on(k,false)});
+   J.pts.forEach(p=>{const t=TT[p.t];if(!t)return;cnt[p.t]=(cnt[p.t]||0)+1;groups[p.t]=groups[p.t]||dc.group(p.t);const nm=p.n;
+    dc.add(L.marker(ll(p.x,p.y),{icon:MI.icon(p.t),title:nm,riseOnHover:true}).bindPopup(()=>window.PW_pop({t:p.t,name:nm,lvl:p.lv,kind:t[0]+' '+t[1]}),MI.POP),p.t)});
+   lay.onAdd=()=>{const d=L.DomUtil.create('div','mleg');const small=innerWidth<700;d.innerHTML=`<button class="mleg-t">🗺 Слои</button><div class="mleg-b" ${small?'hidden':''}>`+Object.keys(TT).filter(k=>cnt[k]).map(k=>`<label><input type="checkbox" ${dc.isOn(k)?'checked':''} data-k="${k}"> ${MI.leg(k)} ${TT[k][1]} <small>${cnt[k]}</small></label>`).join('')+'</div>';
+    L.DomEvent.disableClickPropagation(d);d.querySelector('.mleg-t').onclick=()=>{const b=d.querySelector('.mleg-b');b.hidden=!b.hidden};d.querySelectorAll('input').forEach(i=>i.onchange=()=>dc.on(i.dataset.k,i.checked));return d};lay.addTo(m);
+   dc.run();
    habitat();});
-  TM={m,ll};setTimeout(()=>m.invalidateSize(),60);return TM};
+  TM={m,ll};window.PW_tmap={m,get dc(){return TM_dc}};setTimeout(()=>m.invalidateSize(),60);return TM};
  let HL=null;
- function habitat(){const q=new URLSearchParams(location.search),id=q.get('pal');if(!id)return;const tod=q.get('t')=='n'?'n':'d';
-  fetch(B+'hab/'+id+'.json').then(r=>r.json()).then(H=>{const D=window.PW_D;const pal=D&&D.pals.find(p=>p.id==id);const nm=pal?pal.ru:id;
-   const add=(M,ll,pts,al)=>{if(!M)return null;const g=L.layerGroup();pts.forEach(p=>L.circleMarker(ll(p[0],p[1]),{radius:5,color:'#1b1300',weight:1,fillColor:'#ffd34d',fillOpacity:.9}).bindPopup(()=>window.PW_pop({t:'hab',name:nm,sub:(tod=='n'?'Ночью':'Днём')+(p[2]?' · ур. '+p[2]:'')}),{maxWidth:280,minWidth:220}).addTo(g));
-     (al||[]).forEach(p=>L.circleMarker(ll(p[0],p[1]),{radius:8,color:'#fff',weight:2,fillColor:'#ff5a6a',fillOpacity:1}).bindPopup(()=>window.PW_pop({t:'alpha',name:nm,kind:'👑 Альфа'}),{maxWidth:280,minWidth:220}).addTo(g));g.addTo(M.m);
-     const b=pts.concat(al||[]);if(b.length)M.m.fitBounds(L.latLngBounds(b.map(p=>ll(p[0],p[1]))).pad(.3),{maxZoom:4});return g};
+ let HT=0,HC=0;
+ function habitat(){const q=new URLSearchParams(location.search),id=q.get('pal');if(!id)return;let tod=q.get('t')=='n'?'n':'d';
+  fetch(B+'hab/'+id+'.json').then(r=>r.ok?r.json():{}).catch(()=>({})).then(H=>{const D=window.PW_D||{};const pal=(D.pals||[]).find(p=>p.id==id);const nm=pal?pal.ru:id;H=H||{};
+   const fx=(D.map||[]).filter(p=>pal&&p.url&&p.url==pal.url&&(p.t=='alpha'||p.t=='tower'||p.t=='sealed'));
+   const L0=(w,t)=>((H[w]||{})[t]||[]).length,A=w=>((H[w]||{}).a||[]).length+(w=='p'?fx.length:0),N=(w,t)=>L0(w,t)+A(w);
+   const ot=tod=='n'?'d':'n';let sw0='';if(!L0('p',tod)&&!L0('t',tod)&&(L0('p',ot)||L0('t',ot))){tod=ot;sw0=tod=='n'?'днём не появляется, показываю ночь':'ночью не появляется, показываю день'}
+   let w=q.get('w')=='tree'?'t':q.get('w')=='pal'?'p':(N('p',tod)>=N('t',tod)?'p':'t');if(!N(w,tod)&&N(w=='p'?'t':'p',tod))w=w=='p'?'t':'p';
+   const MI=window.PW_MI;
+   const add=(M,ll,pts,al,dc)=>{const g=[];pts.forEach(p=>g.push(dc.add(L.marker(ll(p[0],p[1]),{icon:MI.icon('hab',22),title:nm,riseOnHover:true}).bindPopup(()=>window.PW_pop({t:'hab',name:nm,sub:(tod=='n'?'Ночью':'Днём')+(p[2]?' · ур. '+p[2]:'')}),MI.POP),'hab',22,4)));
+     (al||[]).forEach(p=>g.push(dc.add(L.marker(ll(p[0],p[1]),{icon:MI.icon('alpha',32),title:nm,riseOnHover:true}).bindPopup(()=>window.PW_pop({t:'alpha',name:nm,kind:'👑 Альфа'}),MI.POP),'alpha',32,6)));
+     const b=pts.concat(al||[]);if(b.length)M.m.fitBounds(L.latLngBounds(b.map(p=>ll(p[0],p[1]))).pad(.3),{maxZoom:4,animate:false});M.m.closePopup();dc.run();return g};
    const P=window.PW_map,pm=P&&{m:P.m,ll:(x,y)=>P.m.unproject([(x-X0)/(X1-X0)*S,(Y0-y)/(Y0-Y1)*S],Z)};
-   const wantTree=q.get('w')=='tree'||!(H.p&&((H.p[tod]||[]).length||(H.p.a||[]).length));
-   if(wantTree&&H.t){const sw=document.querySelector('.mapsw [data-w=t]');if(sw&&!TM){sw.click();return}if(TM&&!HL)HL=add(TM,TM.ll,H.t[tod]||[],H.t.a)}
-   else if(H.p&&pm&&!HL)HL=add(pm,pm.ll,H.p[tod]||[],H.p.a);
-   const n=((wantTree?H.t:H.p)||{})[tod]||[];
-   if(!document.querySelector('.habchip')){const c=document.createElement('div');c.className='habchip';c.innerHTML=`<span>📍 Обитание: <b>${esc(nm)}</b> · ${tod=='n'?'ночь':'день'} · ${n.length} точек</span><a href="?pal=${encodeURIComponent(id)}&t=${tod=='n'?'d':'n'}${wantTree?'&w=tree':''}">${tod=='n'?'☀️ День':'🌙 Ночь'}</a><a href="${location.pathname}" aria-label="Убрать">✕</a>`;
+   if(w=='t'){if(!TM||!TM_dc){const sb=document.querySelector('.mapsw [data-w=t]');if(HT)return;if(sb&&sb.onclick){HT=1;sb.click()}else if(++HC<80)setTimeout(habitat,150);return}
+     if(!HL)HL=add(TM,TM.ll,(H.t||{})[tod]||[],(H.t||{}).a,TM_dc)}
+   else if(pm&&P.dc&&!HL){if(P.m.closePopup)P.m.closePopup();HL=add(pm,pm.ll,(H.p||{})[tod]||[],((H.p||{}).a||[]).concat(fx.map(p=>[p.x,p.y])),P.dc)}
+   const n=N(w,tod),wo=w=='p'?'t':'p',no=N(wo,tod)+N(wo,ot);
+   const txt=n?`${n} ${n%10==1&&n%100!=11?'точка':(n%10>=2&&n%10<=4&&(n%100<10||n%100>=20)?'точки':'точек')}${w=='t'?' на Мировом древе':''}`:(()=>{const en=(pal&&pal.en)||'';if(/Slime|Bat$|Demon Eye|Enchanted Sword/.test(en))return 'на карте точек нет: встречается только в подземельях';if(/Bellanoir|Xenolord|Blazamut Ryu/.test(en))return 'на карте точек нет: это босс рейда, его призывают на базе';return 'на карте точек нет: в дикой природе не живёт, встречается в рейдах и событиях или выводится скрещиванием'+(pal&&pal.egg?' (яйцо «'+esc(pal.egg)+'»)':'')})();
+   const other=no?`<a href="?pal=${encodeURIComponent(id)}${tod=='n'?'&t=n':''}${wo=='t'?'&w=tree':'&w=pal'}">${wo=='t'?'🌳 Ещё на Древе':'🗺 Ещё на Палпагосе'}</a>`:'';
+   if(!document.querySelector('.habchip')){const c=document.createElement('div');c.className='habchip';c.innerHTML=`<span>📍 Обитание: <b>${esc(nm)}</b> · ${tod=='n'?'ночь':'день'} · ${txt}${sw0?' <small>('+sw0+')</small>':''}</span>`+((L0(w,ot)||L0(wo,ot))?`<a href="?pal=${encodeURIComponent(id)}&t=${ot}${w=='t'?'&w=tree':''}">${ot=='n'?'🌙 Ночь':'☀️ День'}</a>`:'')+other+`<a href="${location.pathname}" aria-label="Убрать">✕</a>`;
     const anchor=document.querySelector('.msheet .mrow')||document.querySelector('.msq');anchor?anchor.after(c):document.getElementById('pwmap').before(c)}
-  }).catch(()=>{})}
+  })}
  document.addEventListener('DOMContentLoaded',()=>{if(!document.getElementById('pwmap'))return;const w=setInterval(()=>{if(!window.PW_map)return;clearInterval(w);
    if(!window.PW_D&&window.PW_data)window.PW_data().then(D=>{window.PW_D=D;habitat()});else habitat();
    if(new URLSearchParams(location.search).get('w')=='tree'||location.hash=='#tree'){let n=0;const t=setInterval(()=>{const b=document.querySelector('.mapsw [data-w=t]');if(b&&b.onclick)b.click();if(document.getElementById('wtmap')||++n>40)clearInterval(t)},150)}},150)});

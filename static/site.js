@@ -1,3 +1,33 @@
+/* MAPICONS 21.10: game-style map icons (palworld.wiki.gg Compass icons, CC BY-SA) + collision declutter instead of red clusters */
+(function(){const B=()=>window.PW_BASE||'/palwiki/';
+ const I={travel:['travel.webp','#2ec4b6',3],tower:['tower.webp','#b07cff',3],alpha:['alpha.webp','#ff6b5a',2],sealed:['sealed.svg','#4aa3ff',2],dungeon:['dungeon.webp','#e0b04a',2],watch:['watch.webp','#8fb3c9',1],npc:['npc.webp','#36bb91',1],merchant:['merchant.webp','#36bb91',1],chest:['chest.svg','#f0c45a',0],fruit:['fruit.svg','#7bd389',0],spring:['spring.svg','#5fb4ff',0],fish:['fish.webp','#5fb4ff',0],ore:['ore.webp','#c9c9c9',0],effigy:['effigy.svg','#9fe870',0],hab:['hab.webp','#ffd34d',1]};
+ const v=t=>I[t]||I.hab;
+ const icon=(t,sz)=>{sz=sz||28;return L.divIcon({className:'gmk gmk-'+t,html:`<i style="--c:${v(t)[1]};width:${sz}px;height:${sz}px"><img src="${B()}assets/mapicons/${v(t)[0]}" alt="" draggable="false"></i>`,iconSize:[sz,sz],iconAnchor:[sz/2,sz/2],popupAnchor:[0,-sz/2]})};
+ const leg=t=>`<i class="gmk-l" style="--c:${v(t)[1]}"><img src="${B()}assets/mapicons/${v(t)[0]}" alt=""></i>`;
+ const POP={maxWidth:280,minWidth:220,autoPan:true,autoPanPaddingTopLeft:[12,72],autoPanPaddingBottomRight:[12,24]};
+ function fit(m){m.on('popupopen',e=>{const pp=e.popup;requestAnimationFrame(()=>{const el=pp.getElement();if(!el)return;const r=el.getBoundingClientRect(),mr=m.getContainer().getBoundingClientRect();
+   if(r.top<mr.top+4&&!pp._dn){pp._dn=1;pp.options.offset=L.point(0,r.height+34);el.classList.add('pop-dn');pp.update()}
+   const r2=el.getBoundingClientRect();let dx=0;if(r2.left<mr.left+6)dx=r2.left-mr.left-6;else if(r2.right>mr.right-6)dx=r2.right-mr.right+6;if(dx)m.panBy([dx,0],{animate:false})})});
+  m.on('popupclose',e=>{const pp=e.popup;if(pp._dn){pp._dn=0;pp.options.offset=L.point(0,7);const el=pp.getElement();el&&el.classList.remove('pop-dn')}})}
+ function DC(m){const items=[],off=new Set();let pin=null,boost=null,raf=0;
+  const run=()=>{raf=0;const max=m.getZoom()>=m.getMaxZoom()-.01,sz=m.getSize(),placed=[];
+   const pr=it=>(it.mk===pin?9:0)+(boost&&boost.has(it.mk)?5:0)+it.prio+(it.mk.isPopupOpen&&it.mk.isPopupOpen()?20:0);
+   const order=items.slice().sort((a,b)=>pr(b)-pr(a));
+   const hit=(x,y,s)=>placed.some(q=>Math.abs(q[0]-x)<(q[2]+s)/2+3&&Math.abs(q[1]-y)<(q[2]+s)/2+3);
+   for(const it of order){const mk=it.mk;const keep=mk.isPopupOpen&&mk.isPopupOpen();
+    if(off.has(it.t)&&mk!==pin&&!keep){mk._map&&m.removeLayer(mk);continue}
+    const p=m.latLngToContainerPoint(mk.getLatLng());
+    if(p.x<-80||p.y<-80||p.x>sz.x+80||p.y>sz.y+80){if(mk._map&&!keep)m.removeLayer(mk);continue}
+    let dx=0,dy=0,ok=!hit(p.x,p.y,it.s);const force=max||(it.prio>=3&&m.getZoom()>=m.getMinZoom()+2)||mk===pin||keep||(boost&&boost.has(mk));if(it.prio<1&&!force&&m.getZoom()<m.getMinZoom()+2){if(mk._map)m.removeLayer(mk);continue}
+    if(!ok&&force)for(let k=1;k<=40&&!ok;k++){const a=k*2.4,r=it.s*(.9+k*.18);dx=Math.round(Math.cos(a)*r);dy=Math.round(Math.sin(a)*r);ok=!hit(p.x+dx,p.y+dy,it.s)}
+    if(ok||keep){placed.push([p.x+dx,p.y+dy,it.s]);if(!mk._map)mk.addTo(m);const e=mk.getElement&&mk.getElement();const i=e&&e.firstChild;if(i)i.style.transform=dx||dy?`translate(${dx}px,${dy}px)`:'';if(e)e.classList.toggle('gmk-sh',!!(dx||dy))}
+    else if(mk._map)m.removeLayer(mk)}};
+  const q=()=>{if(!raf)raf=requestAnimationFrame(run)};m.on('zoomend moveend resize',q);
+  const api={items,add(mk,t,s,prio){items.push({mk,t,s:s||28,prio:prio==null?v(t)[2]:prio});mk.on('popupclose',q);q();return mk},
+   on:(t,b)=>{b?off.delete(t):off.add(t);q()},isOn:t=>!off.has(t),pin:mk=>{pin=mk;run()},boost:s=>{boost=s;q()},run,
+   group(t){const g=L.layerGroup();g.hasLayer=mk=>items.some(it=>it.mk===mk&&it.t===t);g.zoomToShowLayer=(mk,cb)=>{m.setView(mk.getLatLng(),Math.max(m.getZoom(),4),{animate:false});api.pin(mk);setTimeout(cb,60)};return g}};
+  return api}
+ window.PW_MI={I,icon,leg,POP,DC,fit};})();
 
 /* map popups: one tappable card linking to the entity page (pal / boss / guide section) */
 window.PW_pop=function(o){const B=window.PW_BASE||'/palwiki/';const D=window.PW_D||{};const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -75,15 +105,15 @@ function map(D){const el=document.getElementById('pwmap');if(!el||!window.L)retu
  const bounds=L.latLngBounds(m.unproject([0,S],Z),m.unproject([S,0],Z));
  L.tileLayer(B+'assets/tiles/{z}/{x}/{y}.webp',{minZoom:1,maxZoom:6,maxNativeZoom:5,noWrap:true,bounds,tileSize:256,attribution:'Карта: <a href="https://palworld.wiki.gg/wiki/File:World_Map.webp">palworld.wiki.gg</a> (CC BY-SA) · © Pocketpair'}).addTo(m);
  m.setMaxBounds(bounds.pad(.05));m.fitBounds(bounds);el.style.background='#0c161e'; /* 21.10 hotfix: sea colour around the map, no big empty frame */
- const icon=t=>L.divIcon({className:'pmk pmk-'+t,html:'<span>'+T[t][0]+'</span>',iconSize:[30,30],iconAnchor:[15,15]});
- const groups={};const all=[];Object.keys(T).forEach(k=>groups[k]=(L.markerClusterGroup?L.markerClusterGroup({maxClusterRadius:38,showCoverageOnHover:false,disableClusteringAtZoom:4}):L.layerGroup()).addTo(m));
- D.map.forEach(p=>{const mk=L.marker(ll(p.x,p.y),{icon:icon(p.t),title:p.name}).bindPopup(()=>window.PW_pop({t:p.t,name:p.name,lvl:p.lvl,info:p.info,url:p.url,kind:T[p.t][0]+' '+(p.info||T[p.t][1]),sub:'X '+Math.round(p.x)+' · Y '+Math.round(p.y)}),{maxWidth:280,minWidth:220});mk.addTo(groups[p.t]);all.push([p,mk]);});
+ const MI=window.PW_MI,dc=MI.DC(m);MI.fit(m);
+ const groups={};const all=[];Object.keys(T).forEach(k=>groups[k]=dc.group(k));
+ D.map.forEach(p=>{const mk=L.marker(ll(p.x,p.y),{icon:MI.icon(p.t),title:p.name,riseOnHover:true}).bindPopup(()=>window.PW_pop({t:p.t,name:p.name,lvl:p.lvl,info:p.info,url:p.url,kind:T[p.t][0]+' '+(p.info||T[p.t][1]),sub:'X '+Math.round(p.x)+' · Y '+Math.round(p.y)}),MI.POP);dc.add(mk,p.t);all.push([p,mk]);});
  const Lg=L.control({position:'topright'});Lg.onAdd=()=>{const d=L.DomUtil.create('div','mleg');const small=window.innerWidth<700;
-  d.innerHTML=`<button class="mleg-t">🗺 Слои</button><div class="mleg-b" ${small?'hidden':''}>`+Object.entries(T).map(([k,v])=>`<label><input type="checkbox" checked data-k="${k}"> ${v[0]} ${v[1]} <small>${D.map.filter(p=>p.t==k).length}</small></label>`).join('')+'</div>';
+  d.innerHTML=`<button class="mleg-t">🗺 Слои</button><div class="mleg-b" ${small?'hidden':''}>`+Object.entries(T).map(([k,v])=>`<label><input type="checkbox" checked data-k="${k}"> ${MI.leg(k)} ${v[1]} <small>${D.map.filter(p=>p.t==k).length}</small></label>`).join('')+'</div>';
   L.DomEvent.disableClickPropagation(d);d.querySelector('.mleg-t').onclick=()=>{const b=d.querySelector('.mleg-b');b.hidden=!b.hidden;};
-  d.querySelectorAll('input').forEach(i=>i.onchange=()=>{i.checked?m.addLayer(groups[i.dataset.k]):m.removeLayer(groups[i.dataset.k]);});return d;};Lg.addTo(m);
-
- window.PW_map={m,all,groups,T};}
+  d.querySelectorAll('input').forEach(i=>i.onchange=()=>dc.on(i.dataset.k,i.checked));return d;};Lg.addTo(m);
+ dc.run();
+ window.PW_map={m,all,groups,T,dc};}
 function bug(){const art=document.querySelector('article.md-content__inner');if(!art||document.querySelector('.bug-link'))return;
  let p=location.pathname.replace(/^\/palwiki\//,'').replace(/\/$/,'')||'home';p=decodeURIComponent(p);let h=0;for(const c of p)h=(h*31+c.charCodeAt(0))>>>0;
  let sl=p.replace(/[^A-Za-z0-9]+/g,'_').replace(/^_|_$/g,'');if(/[^\x00-\x7f]/.test(p))sl=(sl+'_'+h.toString(36));sl=('bug_'+sl).slice(0,64);
