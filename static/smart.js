@@ -72,6 +72,7 @@ function Core(D){
   if(has(/где|обита|живет|живут|водит|спавн|spawn|лов[ия]т|поймат|встрет|локац|ареал|habitat|where/)&&!has(/взять яйц|пассив/)&&ent&&ent.kind=='pal')return {...res,type:'where',pal:D.pals[ent.ref]};
   if(has(/вывест|скрест|развед|размнож|breed|получ|завест|яйц/)&&ent&&ent.kind=='pal')return {...res,type:'breed',pal:D.pals[ent.ref],b:breed(D.pals[ent.ref])};
   if(has(/где|взять|найти|добыть|достать|фарм|получ|скрафт|крафт|купить/)&&ent&&ent.kind=='item')return {...res,type:'item',item:D.items[ent.ref]};
+  if(has(/(ягод|огород|грядк|плантац|урожа|пшениц|томат|салат|посев|посад)/)&&!has(/ранч|яйц|шерст|молок/))return {...res,type:'plant',works:['Посев семян','Полив','Сбор'].map(w=>[w,topWork(w)])};
   const w=(WORKS.find(([r])=>n.split(' ').some(x=>r.test(x)))||[])[1];
   if(w&&(has(/лучш|топ|кто|сильн|best|какой|какие|самый/)||!ent))return {...res,type:'work',work:w,top:topWork(w)};
   if(has(/(лучш|быстр|самый|топ).*(ездов|маунт|летающ|скакун|верхов)|(ездов|маунт|летающ).*(лучш|быстр)/)){const fly=has(/лета/);return {...res,type:'mount',fly,top:D.pals.filter(p=>fly?p.mount=='fly':p.mount).sort((a,b)=>b.sprint-a.sprint).slice(0,6)};}
@@ -112,6 +113,7 @@ function render(a){if(!a)return '';let h='';const C=core.D;
  case 'boss':{const e=a.e;h=`<div class="sa-k">Босс · ${esc(e.kind)}</div><h3>${lk(e.url,e.name)}</h3><div>${esc(e.place)}</div><div>Уровень ${e.level||'?'} · HP ${e.hp||'?'} · ${e.el.map(chip).join('')} слабость ${e.weak.map(chip).join('')}</div><div>Отряд: ${e.team.map(esc).join(', ')}</div><div>${esc(e.tactics)}</div>`;break;}
  case 'item':case 'itemq':{const e=a.item||a.e;h=`<div class="sa-k">Где взять · ${esc(e.type)}</div><h3>${lk(e.url,e.ru)} <small>${esc(e.en)}</small></h3><ul>${e.src.slice(0,8).map(s=>`<li>${esc(s)}</li>`).join('')||'<li>нет данных об источниках</li>'}</ul>`;break;}
  case 'breed':{const p=a.pal,b=a.b;h=`<div class="sa-k">Как вывести · ${esc(p.ru)}</div>${mini(p)}`+(b.unique?`<div>Особая пара: <b>${b.unique.map(esc).join(' + ')}</b></div>`:`<ul>${(b.pairs||[]).map(x=>`<li>${pl(x[0])} + ${pl(x[1])}</li>`).join('')}</ul><div class="dym">Примеры пар по рангу разведения (${p.rank}). Ещё можно поймать${p.egg?' или вылупить из яйца «'+esc(p.egg)+'»':''}.</div>`);break;}
+ case 'plant':h=`<div class="sa-k">Огород и ягоды</div><h3>Посев, Полив, Сбор</h3><p>Плантацию обслуживают три работы. «Фермерство» — это ранчо, к ягодам оно не относится.</p>`+a.works.map(([w,t])=>`<h4>${esc(w)}</h4><ol>${t.slice(0,5).map(([p,l])=>`<li>${pl(p)} — ур. ${l} ${p.el.map(chip).join('')}</li>`).join('')}</ol>`).join('');break;
  case 'work':h=`<div class="sa-k">Лучшие в работе</div><h3>${esc(a.work)}</h3><ol>${a.top.map(([p,l])=>`<li>${pl(p)} — ур. ${l} ${p.el.map(chip).join('')}</li>`).join('')}</ol>`;break;
  case 'mount':h=`<div class="sa-k">Самые быстрые ${a.fly?'летающие':'ездовые'}</div><ol>${a.top.map(p=>`<li>${pl(p)} — рывок ${p.sprint}</li>`).join('')}</ol>`;break;
  case 'passive':h=`<div class="sa-k">Пассивка · ранг ${esc(a.e.rank)}</div><h3>${lk(a.e.url,a.e.name)} <small>${esc(a.e.en)}</small></h3><div>${esc(a.e.desc)}</div>`;break;

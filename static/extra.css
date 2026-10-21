@@ -763,3 +763,15 @@ a.ich:hover{box-shadow:inset 0 0 0 1px var(--acc)}
 .fk1{display:inline-flex;align-items:center;gap:6px;padding:4px 12px 4px 6px;border-radius:99px;background:var(--surf2);font-size:.74rem;font-weight:700;color:var(--txt);box-shadow:inset 0 0 0 1px var(--line)}
 .fk1 img{width:24px;height:24px;object-fit:contain}.fk1 .fki{width:24px;text-align:center}
 .fnone{font-size:.72rem;color:var(--muted)}
+
+/* smart answer (live): calm card, design tokens, no red */
+.ux-aicard{padding:14px 16px;border-radius:20px;margin:0 0 10px;background:var(--surf2,rgba(127,127,127,.08));border:1px solid color-mix(in srgb,#3b82f6 45%,transparent);border-left:4px solid #ffd400;font-size:.78rem;line-height:1.5;color:var(--txt,inherit)}
+.ux-aih{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:.78rem}
+.ux-aiav{width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,212,0,.22);flex:none}
+.ux-aib p{margin:.3em 0}.ux-aib ul{margin:.3em 0;padding-left:1.1em}.ux-aib li{margin:.15em 0}
+.ux-skel i{display:block;height:10px;border-radius:5px;margin:8px 0;background:linear-gradient(90deg,var(--line,#8883),rgba(59,130,246,.25),var(--line,#8883));background-size:200% 100%;animation:uxsk 1.2s linear infinite}
+@keyframes uxsk{to{background-position:-200% 0}}
+.ux-aibtn{margin-top:6px}
+@media (prefers-reduced-motion:reduce){.ux-skel i{animation:none}}
+.sx-card.ai{background:var(--surf2,rgba(127,127,127,.08))!important;border:1px solid color-mix(in srgb,#3b82f6 40%,transparent);padding:.2rem .4rem .6rem}
+.sx-card.ai .sa-k,.sx-card .sa-k{color:#3b82f6}

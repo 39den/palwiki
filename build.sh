@@ -15,7 +15,7 @@ python3 credits_lint.py || { echo "CREDITS LINT FAILED"; exit 1; }
 python3 link_check.py || { echo "LINK CHECK FAILED"; exit 1; }
 python3 hab_test.py || { echo "HABITAT TEST FAILED"; exit 1; }
 # compat: transpile our JS to es2018/safari15, autoprefix CSS
-for f in smart site features ui2 ui3; do tools/node_modules/.bin/esbuild site/assets/$f.js --target=es2018,safari15,firefox100,chrome90 --outfile=site/assets/$f.js --allow-overwrite --log-level=error || exit 1; done
+for f in smart site features ui2 ui3 ai; do tools/node_modules/.bin/esbuild site/assets/$f.js --target=es2018,safari15,firefox100,chrome90 --outfile=site/assets/$f.js --allow-overwrite --log-level=error || exit 1; done
 (cd tools && npx postcss ../site/assets/extra.css --use autoprefixer --no-map -o ../site/assets/extra.css) || exit 1
 python3 colormix_fallback.py site/assets/extra.css
 # browser matrix on local copy

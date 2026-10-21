@@ -1,3 +1,4 @@
+import os
 import sys,json
 from playwright.sync_api import sync_playwright
 U=sys.argv[1] if len(sys.argv)>1 else 'http://localhost:8899/';S='/workspace/palsite/shots/mx_'
@@ -7,6 +8,7 @@ res={}
 with sync_playwright() as p:
   M=[('chromium','desktop',{'viewport':{'width':1366,'height':800}}),('chromium','Pixel 7',p.devices['Pixel 7']),('chromium','Galaxy S9+',{**p.devices['Galaxy S9+'],'viewport':{'width':360,'height':740}}),
      ('webkit','desktop',{'viewport':{'width':1366,'height':800}}),('webkit','iPhone 13',p.devices['iPhone 13']),('firefox','desktop',{'viewport':{'width':1366,'height':800}}),('firefox','mobile 390',{'viewport':{'width':390,'height':844},'has_touch':True})]
+  if os.environ.get("MX_ONLY"):M=[m for m in M if m[1]==os.environ["MX_ONLY"]]
   for br,name,opt in M:
     k=f'{br} / {name}';r=res[k]={}
     try:b=getattr(p,br).launch()

@@ -26,7 +26,7 @@ plugins:
   - search:
       lang: [ru, en]
 extra_css: [assets/extra.css]
-extra_javascript: [assets/smart.js, assets/site.js, assets/features.js, assets/ui2.js, assets/ui3.js]
+extra_javascript: [assets/smart.js, assets/site.js, assets/features.js, assets/ui2.js, assets/ui3.js, assets/ai.js]
 markdown_extensions:
   - tables
   - attr_list

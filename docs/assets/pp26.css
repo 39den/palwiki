@@ -193,3 +193,25 @@ html.pp26 .hero .hero-in,html.pp26 .hero .hero-in p,html.pp26 .hero .hero-in h1{
 html.pp26 .hero .hero-in{background:linear-gradient(180deg,transparent,rgba(255,226,168,.55) 35%,rgba(246,179,122,.75))}
 @media (min-width:900px){html.pp26 .hero .hero-in{background:none}}
 html.pp26 [data-md-color-scheme=slate] .hero .hero-in,html.pp26 [data-md-color-scheme=slate] .hero .hero-in p,html.pp26 [data-md-color-scheme=slate] .hero .hero-in h1{color:#13202a!important}
+/* food (stage 1) */
+html.pp26 .fcard{--f-surf:var(--card);--f-line:var(--pline);--f-r:var(--r);box-shadow:var(--psh1)}
+html.pp26 .fcard .fh b{font:800 16px/1.15 Unbounded,sans-serif;letter-spacing:-.01em}
+html.pp26 .ft1,html.pp26 .ft2,html.pp26 .fk1{background:var(--pbg2)}
+html.pp26 .ft1 b{font-family:"JetBrains Mono",monospace}
+html.pp26 .fg{background:var(--card)}
+html.pp26 .ffc .fc{border-radius:99px;background:var(--card);border:1px solid var(--pline);color:var(--ink);font-weight:700}
+html.pp26 .ffc .fc.on{background:var(--ink);color:var(--pbg);border-color:transparent}
+
+/* header: one ⚙️ menu (Простой режим / Крупный текст / Тема live inside it) */
+html.pp26 .ux-qb[data-a="simple"],html.pp26 .ux-qb[data-a="fs"],html.pp26 .md-header__option:has(.md-header__button[for^="__palette"]),html.pp26 form[data-md-component="palette"]{display:none!important}
+/* bottom nav never covers content */
+@media (max-width:76.234375em){html.pp26 .md-container{padding-bottom:calc(104px + env(safe-area-inset-bottom))}html.pp26 .md-footer{margin-bottom:0}}
+html.pp26 .tile .ti{font-size:22px;line-height:1;width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;border-radius:12px;background:var(--pbg2);margin-bottom:6px}
+html.pp26 .tile{overflow:hidden}
+/* search answers: calm tokens, no red */
+html.pp26 .ux-aicard{background:var(--card);border:1px solid var(--pline2);border-left:4px solid var(--sun,#ffd400);box-shadow:var(--psh1)}
+html.pp26 .sx-card.ai{background:var(--card)!important;border:1px solid var(--pline2);border-radius:20px;overflow:visible}
+html.pp26 .sx-card .sa-k,html.pp26 .ux-aicard .sa-k{color:var(--blue,#2f6fde)}
+/* gallery CLS: don't paint the grid/skeleton until filters exist; reserve header option slot */
+html.pp26 .gal-filters:empty{min-height:188px;visibility:hidden}
+html.pp26 #gallery:empty,html.pp26 .gal-filters:empty~#gallery{visibility:hidden}

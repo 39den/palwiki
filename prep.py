@@ -16,6 +16,8 @@ for d in os.listdir(W):
   p=os.path.join(W,d)
   if os.path.isdir(p) and d not in SKIP: shutil.copytree(p,os.path.join(D,d),ignore=shutil.ignore_patterns('*.py','__pycache__'))
 shutil.copytree('/workspace/palsite/static',A)
+import os as _o2
+if _o2.path.exists('/workspace/ux50/out/assets/ux50_data.json'):shutil.copy('/workspace/ux50/out/assets/ux50_data.json',A+'/ux50_data.json')
 shutil.copy(W+'/data/breeding.json',A+'/breeding.json')
 shutil.rmtree(D+'/4_spravochniki/syrye_dannye',ignore_errors=True)
 # ---------- images -> webp (cached)
