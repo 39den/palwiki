@@ -499,6 +499,7 @@
         mk.setOpacity(!pts || set.has(p) ? 1 : 0.18);
         mk.setZIndexOffset(pts && set.has(p) ? 1e3 : 0);
       });
+      if (M.dc) M.dc.boost(pts ? new Set(M.all.filter(([p]) => set.has(p)).map((z) => z[1])) : null);
       if (pts) {
         Object.values(M.groups).forEach((g) => M.m.addLayer(g));
         cnt.hidden = false;

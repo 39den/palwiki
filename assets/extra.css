@@ -810,3 +810,56 @@ body:has(#pwmap) #sxp{max-height:42vh;overflow:auto}}
 .inst.inl{position:static!important;left:auto;right:auto;bottom:auto;max-width:none;margin:1.2rem 0 .4rem;z-index:auto}
 /* 21.10 mapfix: sea-coloured 2px rim around the mini-map box, so its rounded/sub-pixel edge never shows a light page strip next to the dark sea (read as a straight empty edge on iPhone) */
 .hm-box{box-shadow:0 0 0 2px #0c161e;background:#0c161e}
+/* fontaudit 21.10: шрифты/контраст (/workspace/fontaudit) */
+html .leaflet-container,html .leaflet-container button,html .leaflet-container input{font-family:inherit}
+html .leaflet-container .leaflet-control-attribution{font-size:11px!important}
+.md-copyright__highlight{color:inherit}
+.psv .pe{font-size:max(.62em,12px)}
+[data-md-color-scheme=default] div.dch .r5 span{color:#806400}
+[data-md-color-scheme=default] div.dch .r4 span{color:#6a3bd1}
+[data-md-color-scheme=default] div.dch .r3 span{color:#1c5fc4}
+[data-md-color-scheme=default] .r-4 .rkb{color:#7a5800}
+[data-md-color-scheme=default] .r-neg .rkb{color:#a8232a}
+/* MAPICONS 21.10: game-style markers (no clusters), popup fit, no text selection */
+.gmk,.gmk.leaflet-interactive{background:none!important;border:0!important;pointer-events:none!important}
+.gmk>i{pointer-events:auto!important;cursor:pointer}
+.gmk>i{display:flex;align-items:center;justify-content:center;box-sizing:border-box;border-radius:50%;background:radial-gradient(circle at 50% 35%,#2a3a48,#121b24);border:2px solid var(--c);box-shadow:0 0 0 1px rgba(0,0,0,.6),0 2px 6px rgba(0,0,0,.55)}
+.gmk>i img{width:68%;height:68%;-o-object-fit:contain;object-fit:contain;pointer-events:none;filter:drop-shadow(0 1px 1px rgba(0,0,0,.6))}
+.gmk-tower>i,.gmk-travel>i{border-width:2.5px}
+.gmk:hover>i{filter:brightness(1.2)}
+.gmk-l{display:inline-flex;vertical-align:middle;width:22px;height:22px;border-radius:50%;align-items:center;justify-content:center;background:#16212b;border:2px solid var(--c);box-sizing:border-box;margin-right:4px}
+.gmk-l img{width:70%;height:70%;-o-object-fit:contain;object-fit:contain}
+.marker-cluster{display:none!important}
+#pwmap,#wtmap,.habmap,#pwmap .leaflet-popup,#wtmap .leaflet-popup,.mleg{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-touch-callout:none}
+.leaflet-popup .mpl{-webkit-user-select:text;-moz-user-select:text;user-select:text}
+.leaflet-popup.pop-dn .leaflet-popup-tip-container{transform:rotate(180deg);top:-20px}
+[data-md-color-scheme=default] .ef.up{color:#146a33}
+/* PROPORTIONS 21.10: one type/spacing scale (4/8/12/16/24/32), no giant objects. CSS only. */
+html body .md-typeset h1{font-size:30px!important;line-height:1.2!important;margin:8px 0 16px!important;letter-spacing:-.01em}
+html body .md-typeset h2{font-size:22px!important;line-height:1.25!important;margin:32px 0 12px!important}
+html body .md-typeset h3{font-size:18px!important;line-height:1.3!important;margin:24px 0 8px!important}
+html body .md-typeset h4{font-size:16px!important;margin:16px 0 8px!important}
+html body .md-typeset h1 img.emoji,html body .md-typeset h1 .twemoji,html body .md-typeset h2 img.emoji,html body .md-typeset h2 .twemoji{width:1em!important;height:1em!important;font-size:inherit!important}
+html body .md-typeset :is(h1,h2,h3) :is(.emo,.h-emo,.ico){font-size:1em!important}
+html body :is(.seg button,.fc,.ux-chip,.chip,.mapsw button,.gal-filters button,.md-path__link,.mleg-t){min-height:32px!important;max-height:36px;font-size:13.5px!important;padding-top:4px!important;padding-bottom:4px!important;box-sizing:border-box}
+html body :is(.md-search__input,.msq input,.gal-filters input,.pfq,.sk-q,#bgq){height:42px!important;min-height:40px;font-size:16px!important;box-sizing:border-box}
+html body .habchip{padding:6px 12px!important;font-size:13.5px!important;line-height:1.35!important;gap:8px!important;margin:8px 0!important;min-height:0!important}
+html body .habchip a{min-height:32px;display:inline-flex;align-items:center}
+html body .md-content__inner{padding-top:8px!important;margin-bottom:24px!important}
+html body .md-content__inner>:first-child{margin-top:0!important}
+html body .md-typeset :is(p,ul,ol,.admonition,details,table){margin-top:0!important;margin-bottom:12px!important}
+html.mappage .md-content__inner>h1{margin-bottom:8px!important}
+html.mappage:not(.mapfull) :is(#pwmap,#wtmap){height:calc(100vh - 230px)!important;min-height:420px}
+@media (max-width:700px){html body .md-typeset h1{font-size:25px!important;margin:4px 0 12px!important}html body .md-typeset h2{font-size:20px!important;margin:24px 0 8px!important}html body .md-typeset h3{font-size:17px!important}}
+html.mappage:not(.mapfull) article.md-content__inner{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+html.mappage:not(.mapfull) article.md-content__inner>*{margin-top:0!important;margin-bottom:0!important}
+html.mappage:not(.mapfull) article.md-content__inner>:is(.ux-crumbs,div:has(>#pwmap),div:has(>#wtree),#wtree,div:has(>.leaflet-container),.leaflet-container,p,nav,.bug-link,table,details,h2,h3,ul,ol){flex:1 0 100%}
+html.mappage:not(.mapfull) article.md-content__inner>h1{flex:0 0 auto;font-size:26px!important}
+html.mappage:not(.mapfull) :is(#pwmap,#wtmap){height:calc(100vh - 250px)!important}
+html body .hero{min-height:0!important;padding-top:24px!important;padding-bottom:24px!important}
+html.mappage:not(.mapfull) article.md-content__inner>.ux-crumbs{display:none}
+html.mappage:not(.mapfull) .md-content__inner{padding-top:4px!important}
+html.mappage:not(.mapfull) article.md-content__inner>.ux-layers{flex:1 1 300px;width:auto!important}
+html.mappage:not(.mapfull) article.md-content__inner>.msq{flex:0 1 380px;width:auto!important}
+html.mappage:not(.mapfull) article.md-content__inner>.habchip{flex:1 1 300px}
+html.mappage:not(.mapfull) article.md-content__inner>.ux-layers{flex:1 1 560px;flex-wrap:wrap;overflow:visible!important;row-gap:6px}

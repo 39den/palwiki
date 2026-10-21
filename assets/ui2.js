@@ -771,15 +771,14 @@
     const b = document.body;
     if (!b) return;
     b.setAttribute("data-md-color-scheme", v == "light" ? "default" : "slate");
+    document.documentElement.setAttribute("data-md-color-scheme", v == "light" ? "default" : "slate");
+    document.documentElement.style.colorScheme = v == "light" ? "light" : "dark";
     try {
-      const k = Object.keys(localStorage).find((k2) => k2.endsWith("/__palette"));
-      if (k) {
-        const o = JSON.parse(localStorage[k]);
-        o.index = v == "light" ? 1 : 0;
-        o.color = o.color || {};
-        o.color.scheme = v == "light" ? "default" : "slate";
-        localStorage[k] = JSON.stringify(o);
-      }
+      const k = (typeof __md_scope != "undefined" ? __md_scope.pathname : new URL((window.PW_BASE || "/") + "/", location).pathname).replace(/\/+$/, "/") + ".__palette";
+      const sc = v == "light" ? "default" : "slate";
+      localStorage.setItem(k, JSON.stringify({ index: v == "light" ? 1 : 0, color: { media: "", scheme: sc, primary: "custom", accent: "custom" } }));
+      const i = document.getElementById("__palette_" + (v == "light" ? 1 : 0));
+      if (i) i.checked = true;
     } catch (e) {
     }
   }
