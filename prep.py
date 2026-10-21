@@ -962,7 +962,7 @@ def _hf_clean(t):
   t=re.sub(r',\s*ru_Text\b','',t);t=re.sub(r'\bru_Text,\s*','',t);t=re.sub(r' ?\bru_text\b','',t)
   t=re.sub(r'<span class="ichip src">👤 Test\w+ <small>[^<]*</small></span>','',t)
   for _a,_b in _HF_RU:t=t.replace(_a,_b)
-  t=re.sub(r',\s*(?:CopperOre|PalSphere|DevTest\w*)\b','',t);t=re.sub(r'\s*\(`[A-Za-z]+=[^`]*`\??\)','',t)
+  t=re.sub(r'(?<=[;:,] )(?:CopperOre|PalSphere|DevTest\w*)\b(?:, )?','',t);t=re.sub(r',\s*(?:CopperOre|PalSphere|DevTest\w*)\b','',t);t=t.replace(' (настройка сервера BaseCampWorkerMaxNum)',' (настройка сервера)');t=re.sub(r'\s*\(`[A-Za-z]+=[^`]*`\??\)','',t)
   return t
 _hfn=0
 for f in glob.glob(D+'/**/*.md',recursive=True):
@@ -970,6 +970,7 @@ for f in glob.glob(D+'/**/*.md',recursive=True):
   if s1!=s0:open(f,'w').write(s1);_hfn+=1
 _sdp=A+'/search_data.json';_s0=open(_sdp).read();_s1=re.sub(r',\s*ru_Text\b','',_s0).replace('"ru_Text"','""')
 for _a,_b in _HF_RU:_s1=_s1.replace(_a,_b)
+_s1=re.sub(r'(?<=[;:,] )(?:CopperOre|PalSphere|DevTest\w*)\b(?:, )?','',_s1).replace(' (настройка сервера BaseCampWorkerMaxNum)',' (настройка сервера)')
 if _s1!=_s0:open(_sdp,'w').write(_s1)
 print('hotfix sanitize: files',_hfn)
 # ---- 21.10 LIVE HOTFIX: link pal names in plain list lines on pal pages (deep audit entity_nolink) ----
