@@ -65,7 +65,7 @@ def build(items,pals_th,out_dir,docs,AF_items,stations_link,R='../../../',AF_str
     for i in sorted(lst,key=lambda z:z['ru']):
       r=min(int(i.get('rarity') or 0),4);sid=SLUG(i['ru'],'-')
       desc=fx.fix((i.get('desc') or '').replace('\n',' '));lint+= [(i['ru'],h) for h in ru_text.lint_text(fx,desc)]
-      st=[('💎','Редкость',f'<span class="rch r{r}">{RAR[r]}</span>',True),('⚖️','Вес',ru_text.num(i.get('weight')),i.get('weight') not in (None,'','0')),('💰','Цена',esc(i.get('price')),i.get('price') not in (None,'','0')),('📘','Технология',f"ур. {esc(i.get('tech_level'))}",bool(i.get('tech_level')))]
+      st=[('💎','Редкость',f'<span class="rch r{r}">{RAR[r]}</span>',True),('⚖️','Вес',ru_text.num(i.get('weight')),i.get('weight') not in (None,'','0')),('💰','Стоимость',esc((f"{ru_text.num(i.get('price'))} · продажа {ru_text.num(str(int(float(i['price']))//10))}" if str(i.get('price') or '0').replace('.','',1).isdigit() and float(i.get('price') or 0)>=10 else i.get('price'))),i.get('price') not in (None,'','0')),('📘','Технология',f"ур. {esc(i.get('tech_level'))}",bool(i.get('tech_level')))]
       tl=''.join(f'<div class="ist"><span class="ii" aria-hidden="true">{a}</span><span class="il">{b}</span><b>{c}</b></div>' for a,b,c,ok in st if ok)
       rec=''
       for x in (i.get('recipe') or []):

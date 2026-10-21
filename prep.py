@@ -16,6 +16,9 @@ for d in os.listdir(W):
   p=os.path.join(W,d)
   if os.path.isdir(p) and d not in SKIP: shutil.copytree(p,os.path.join(D,d),ignore=shutil.ignore_patterns('*.py','__pycache__'))
 shutil.copytree('/workspace/palsite/static',A)
+# content-gaps: проверенные страницы и исправления поверх palwiki (content/pages/<раздел>/*.md)
+for _cp in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)),'content','pages','*','*.md')):
+  _dd=os.path.join(D,os.path.basename(os.path.dirname(_cp)));os.makedirs(_dd,exist_ok=True);shutil.copy(_cp,_dd)
 import os as _o2
 if _o2.path.exists('/workspace/ux50/out/assets/ux50_data.json'):shutil.copy('/workspace/ux50/out/assets/ux50_data.json',A+'/ux50_data.json')
 shutil.copy(W+'/data/breeding.json',A+'/breeding.json')
@@ -671,7 +674,7 @@ if os.environ.get('ITEMS26')!='1':
     if not os.path.exists(_fn):continue
     out=[f'---\nhide: [toc]\n---\n# {_ty}\n\n<div class="pfl ifl" markdown="0"><input type="search" class="pfq" placeholder="Найти в разделе «{esc_h(_ty)}»…" autocomplete="off"><span class="gcount pfn"></span></div>\n']
     for i in sorted(_lst,key=lambda z:z['ru']):
-      r=int(i.get('rarity') or 0);tiles=[('💎','Редкость',_RAR[min(r,4)]),('⚖️','Вес',_ru_num(i.get('weight'))),('💰','Цена',i.get('price'))]
+      r=int(i.get('rarity') or 0);tiles=[('💎','Редкость',_RAR[min(r,4)]),('⚖️','Вес',_ru_num(i.get('weight'))),('💰','Стоимость',(f"{_ru_num(i.get('price'))} · продажа {_ru_num(str(int(float(i['price']))//10))}" if str(i.get('price') or '0').replace('.','',1).isdigit() and float(i.get('price') or 0)>=10 else i.get('price')))]
       if i.get('tech_level'):tiles.append(('📘','Технология',f"ур. {i['tech_level']}"))
       tl=''.join(f'<div class="it"><span class="ii">{a}</span><span class="il">{b}</span><b>{esc_h(c)}</b></div>' for a,b,c in tiles if c not in (None,'','0'))
       rec=''.join(f'<span class="ichip">{esc_h(x["item"])} <b>×{esc_h(x["qty"])}</b></span>' for x in (i.get('recipe') or []))
