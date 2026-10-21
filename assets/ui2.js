@@ -802,10 +802,15 @@
     const cur = document.body.getAttribute("data-md-color-scheme") == "default" ? "light" : "dark";
     const seg = (k, opts, v) => `<div class="seg" data-k="${k}">${opts.map(([a, t]) => `<button type="button" data-v="${a}" class="${a == v ? "on" : ""}">${t}</button>`).join("")}</div>`;
     p.innerHTML = `<h3>\u2699\uFE0F \u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438</h3><div class="row"><span>\u0422\u0435\u043C\u0430</span>${seg("th", [["dark", "\u{1F319} \u0422\u0451\u043C\u043D\u0430\u044F"], ["light", "\u2600\uFE0F \u0421\u0432\u0435\u0442\u043B\u0430\u044F"]], cur)}</div><div class="row"><span>\u041A\u0440\u0443\u043F\u043D\u044B\u0439 \u0442\u0435\u043A\u0441\u0442</span>${seg("fs", [["m", "\u0410"], ["l", "\u0410+"], ["xl", "\u0410++"]], S.fs)}</div><div class="row"><span>\u041F\u0440\u043E\u0441\u0442\u043E\u0439 \u0440\u0435\u0436\u0438\u043C</span>${seg("mode", [["full", "\u0412\u044B\u043A\u043B"], ["simple", "\u0412\u043A\u043B"]], S.mode)}</div><div class="row"><span>\u0420\u0435\u0436\u0438\u043C \xAB\u0412 \u0438\u0433\u0440\u0435\xBB</span><button type="button" class="md-button" data-ig>${document.documentElement.classList.contains("ingame") ? "\u0412\u044B\u043A\u043B\u044E\u0447\u0438\u0442\u044C" : "\u{1F3AE} \u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u2014 \u044D\u043A\u0440\u0430\u043D \u043D\u0435 \u0433\u0430\u0441\u043D\u0435\u0442"}</button></div><button type="button" class="md-button" data-tour>\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435</button><button type="button" class="md-button md-button--primary" data-x>\u0413\u043E\u0442\u043E\u0432\u043E</button>`;
+    const esc2 = (e) => {
+      if (e.key == "Escape") close();
+    };
     const close = () => {
       p.remove();
       bg.remove();
+      document.removeEventListener("keydown", esc2);
     };
+    document.addEventListener("keydown", esc2);
     bg.onclick = close;
     document.body.append(bg, p);
     p.addEventListener("click", (e) => {

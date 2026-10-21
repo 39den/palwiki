@@ -1138,7 +1138,7 @@
       });
     }
     document.addEventListener("keydown", (e) => {
-      if (e.target.closest("input,select,textarea,[contenteditable]") || e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.target.closest && e.target.closest("input,select,textarea,[contenteditable]") || e.metaKey || e.ctrlKey || e.altKey) return;
       const s = document.getElementById("__search");
       if (s && s.checked || document.querySelector(".sx")) return;
       if (e.key == "ArrowLeft") go(prev, -1);
