@@ -1,13 +1,13 @@
 # Фалерис
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Horus-512.webp" srcset="../../../pp/art/Horus-384.webp 384w, ../../../pp/art/Horus-512.webp 512w, ../../../pp/art/Horus-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фалерис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/188_Horus.webp">
-<div class="pal-info" data-pal="Horus"><div class="pal-no">№ 188 · Faleris</div>
+<img class="pal-card pal-art" src="../../../pp/art/Horus-512.webp" srcset="../../../pp/art/Horus-384.webp 384w, ../../../pp/art/Horus-512.webp 512w, ../../../pp/art/Horus-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фалерис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Horus"><div class="pal-no"><span class="nochip">№ 188</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 6">🔥 Разжигание огня <b>6</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
-<div class="partner"><b>Хищник пламени</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Хищник пламени</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 105 · ⚔️ 110 · 🛡 115</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 6
-    - Транспортировка — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=6"><span>🔥 Разжигание огня</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=3"><span>📦 Транспортировка</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Хищник пламени
@@ -29,7 +29,7 @@
     - ✅ Огонь, разжигание 6; хорошая атака (110); отличный рабочий (пригодность 6); можно оседлать; летает (ездовой)
     - ❌ Слаб к воде; много ест (600); разводится только особой парой
 
-    > Завидев стаю добычи, выжигает всё вокруг раскалённым вихрем. В местах, где обитает Фалерис , пахнет аппетитно.
+    > Завидев стаю добычи, выжигает всё вокруг раскалённым вихрем. В местах, где обитает Фалерис, пахнет аппетитно.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 500
+    - Ранг разведения: 500
     - **Особая пара:** [Фалерис](../../4_spravochniki/paly/faleris.md) + [Фалерис](../../4_spravochniki/paly/faleris.md)
     - Участвует в особых парах: Фалерис → Фалерис; Фалерис → Фалерис; Йормунтайд → Фалерис Аква
 

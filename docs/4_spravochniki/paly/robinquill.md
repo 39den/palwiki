@@ -1,13 +1,13 @@
 # Робинквилл
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/RobinHood-512.webp" srcset="../../../pp/art/RobinHood-384.webp 384w, ../../../pp/art/RobinHood-512.webp 512w, ../../../pp/art/RobinHood-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Робинквилл" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/76_RobinHood.webp">
-<div class="pal-info" data-pal="RobinHood"><div class="pal-no">№ 76 · Robinquill</div>
+<img class="pal-card pal-art" src="../../../pp/art/RobinHood-512.webp" srcset="../../../pp/art/RobinHood-384.webp 384w, ../../../pp/art/RobinHood-512.webp 512w, ../../../pp/art/RobinHood-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Робинквилл" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="RobinHood"><div class="pal-no"><span class="nochip">№ 76</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 2">🌱 Посев семян <b>2</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span><span class="work" title="Фармацевтика 1">💊 Фармацевтика <b>1</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Мастер стрельбы из лука</b> 🎒 из команды</div>
+<div class="partner"><b>Мастер стрельбы из лука</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 90 · ⚔️ 105 · 🛡 80</div></div></div>
 
 
@@ -17,12 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 2
-    - Ручная работа — ур. 3
-    - Сбор — ур. 3
-    - Рубка деревьев — ур. 2
-    - Фармацевтика — ур. 1
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=2"><span>🌱 Посев семян</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=3"><span>✋ Ручная работа</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=3"><span>🧺 Сбор</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=2"><span>🪓 Рубка деревьев</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=1"><span>💊 Фармацевтика</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Мастер стрельбы из лука
@@ -75,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2260
+    - Ранг разведения: 2260
     - Участвует в особых парах: Фуддлер → Робинквилл Терра
 
 

@@ -2,7 +2,7 @@
 
 ## Регионы
 
-<div class="tcards dense" markdown="0"><div class="tcard"><div class="tc-t">Grass</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Стартовые холмы/равнины</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">1–15</span></div></div></div><div class="tcard"><div class="tc-t">Forest</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Лес</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">15–25</span></div></div></div><div class="tcard"><div class="tc-t">Volcano</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Вулкан (Обсидиановая гора, Mount Obsidian)</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">25–40</span></div></div></div><div class="tcard"><div class="tc-t">Desert</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Пустыня (Сумеречные дюны)</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">30–45</span></div></div></div><div class="tcard"><div class="tc-t">Snow</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Снежные горы (Священная гора)</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">35–50</span></div></div></div><div class="tcard"><div class="tc-t">Sakurajima</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Остров Сакурадзима</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">45–55</span></div></div></div><div class="tcard"><div class="tc-t">DarkIsland</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Тёмный остров (Feybreak)</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">55–65</span></div></div></div><div class="tcard"><div class="tc-t">SkyIsland</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Солнечный предел (Sunreach)</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">60–75</span></div></div></div><div class="tcard"><div class="tc-t">WorldTree</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Мировое Древо (World Tree)</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">70–80</span></div></div></div></div>
+<div class="tcards dense" markdown="0"><div class="tcard"><div class="tc-t">Grass</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Стартовые холмы/равнины</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">1–15</span></div></div></div><div class="tcard"><div class="tc-t">Forest</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Лес</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">15–25</span></div></div></div><div class="tcard"><div class="tc-t">Volcano</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Вулкан (Обсидиановая гора, Mount Obsidian)</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">25–40</span></div></div></div><div class="tcard"><div class="tc-t">Desert</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Пустыня (Сумеречные дюны)</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">30–45</span></div></div></div><div class="tcard"><div class="tc-t">Snow</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Снежные горы (Священная гора)</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">35–50</span></div></div></div><div class="tcard"><div class="tc-t">Sakurajima</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Остров Сакурадзима</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">45–55</span></div></div></div><div class="tcard"><div class="tc-t">DarkIsland</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Тёмный остров</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">55–65</span></div></div></div><div class="tcard"><div class="tc-t">SkyIsland</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Солнечный предел</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">60–75</span></div></div></div><div class="tcard"><div class="tc-t">WorldTree</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Регион</span><span class="kv-v">Мировое Древо</span></div><div class="tc-i"><span class="kv-l">Примерный уровень врагов</span><span class="kv-v">70–80</span></div></div></div></div>
 
 Уровни — по уровням экспедиций и налётов. RU-названия районов — по меню карты в игре.
 
@@ -26,13 +26,13 @@
 - Пассивка <a class="psv r-3" data-psv="Благородный" href="../../passivki/noble/">Благородный</a> на пале в отряде: продажа +5%.
 
 ## Особые NPC
-- **Заносчивый критик палов** — просит показать конкретного пала, даёт награды (сферы и т.д.). В 1.0.4: на Сакурадзиме теперь просит Ванфу (Dogen), в Солнечном пределе — Фалерис Аква.
+- **Заносчивый критик палов** — просит показать конкретного пала, даёт награды (сферы и т.д.). В 1.0.4: на Сакурадзиме теперь просит Ванфу, в Солнечном пределе — Фалерис Аква.
 - **Надменный гурман** — просит определённую еду.
 - Миссии (квесты) — «Справочник → Миссии».
 
 ## Рыбалка
 - Нужна удочка и наживка. Мини-игра: держи рыбу в зоне.
-- Места рыбалки (Fishing Spot) — 115 точек. Улов зависит от региона.
+- Места рыбалки — 115 точек. Улов зависит от региона.
 - Пал **Джелиэтта** в отряде: +55–95% к улову.
 - Рыбный пруд на базе (и Большой рыболовный пруд, ур. 69) — палы ловят сами.
 - В 1.0.4 изменили сложность рыбалки в Солнечном пределе/Мировом Древе и количество улова за наживку.
@@ -41,7 +41,7 @@
 ## Экспедиции
 - Постройка «Станция экспедиций». Отправляешь палов в регион — через время они приносят лут.
 - Направления: Grass, Forest, Volcano, Desert, Snow, Sakurajima, DarkIsland, SkyIsland, WorldTree + сложные (_Hard) версии.
-- Пример (Snow): Ветхий пергамент 15–17, Ультрасфера 5–10, Легендарная сфера 4–8, Чистый кварц 20–40, Металлическая руда 40–60, Большая душа 5–7, обломки плит Бэллануар Либеро/Блазамут Рю, Детали и Ядро древней цивилизации.
+- Пример: Ветхий пергамент 15–17, Ультрасфера 5–10, Легендарная сфера 4–8, Чистый кварц 20–40, Металлическая руда 40–60, Большая душа 5–7, обломки плит Бэллануар Либеро/Блазамут Рю, Детали и Ядро древней цивилизации.
 - Полный лут всех направлений — «Справочник → Экспедиции».
 
 ## Нефтевышки
@@ -50,7 +50,7 @@
 - В 1.0 сложность вышек подогнали под кап 80.
 
 ## Ящики снабжения и мусор
-- **Ящики снабжения** падают с неба (Supply). Значок на карте. Сервер: `SupplyDropSpan` — как часто.
+- **Ящики снабжения** падают с неба. Значок на карте. Сервер: `SupplyDropSpan` — как часто.
 - **Подъём со дна** (Salvage) — сокровища под водой (магнит/ныряние).
 
 ## Секреты

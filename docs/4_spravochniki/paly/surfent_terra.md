@@ -1,13 +1,13 @@
 # Серфент Терра
 
 <div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Serpent_Ground-512.webp" srcset="../../../pp/art/Serpent_Ground-384.webp 384w, ../../../pp/art/Serpent_Ground-512.webp 512w, ../../../pp/art/Serpent_Ground-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Серфент Терра" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/75B_Serpent_Ground.webp">
-<div class="pal-info" data-pal="Serpent_Ground"><div class="pal-no">№ 75B · Surfent Terra</div>
+<img class="pal-card pal-art" src="../../../pp/art/Serpent_Ground-512.webp" srcset="../../../pp/art/Serpent_Ground-384.webp 384w, ../../../pp/art/Serpent_Ground-512.webp 512w, ../../../pp/art/Serpent_Ground-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Серфент Терра" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Serpent_Ground"><div class="pal-no"><span class="nochip">№ 75B</span></div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span></div>
-<div class="partner"><b>Пловец песков</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Пловец песков</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 90 · ⚔️ 90 · 🛡 100</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=3"><span>🧺 Сбор</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Пловец песков
@@ -71,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1840
+    - Ранг разведения: 1840
     - **Особая пара:** [Серфент](../../4_spravochniki/paly/surfent.md) + [Думад](../../4_spravochniki/paly/dumud.md)
     - Участвует в особых парах: Полапап → Полапап Терра
 

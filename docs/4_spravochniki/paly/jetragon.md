@@ -1,13 +1,13 @@
 # Джетрагон
 
 <div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/JetDragon-512.webp" srcset="../../../pp/art/JetDragon-384.webp 384w, ../../../pp/art/JetDragon-512.webp 512w, ../../../pp/art/JetDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Джетрагон" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/202_JetDragon.webp">
-<div class="pal-info" data-pal="JetDragon"><div class="pal-no">№ 202 · Jetragon</div>
+<img class="pal-card pal-art" src="../../../pp/art/JetDragon-512.webp" srcset="../../../pp/art/JetDragon-384.webp 384w, ../../../pp/art/JetDragon-512.webp 512w, ../../../pp/art/JetDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Джетрагон" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="JetDragon"><div class="pal-no"><span class="nochip">№ 202</span></div>
 <div class="chips"><span class="el el-dragon">Дракон</span></div>
-<div class="weak">Слабость: <span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 8">🌾 Сбор <b>8</b></span></div>
-<div class="partner"><b>Воздушные ракеты</b> 🐎 верхом</div>
+<div class="partner"><b>Воздушные ракеты</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 115 · ⚔️ 140 · 🛡 120</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 8
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=8"><span>🧺 Сбор</span><i style="--v:80%"></i><b>8</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Воздушные ракеты
@@ -74,7 +75,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 70
+    - Ранг разведения: 70
     - **Особая пара:** [Джетрагон](../../4_spravochniki/paly/jetragon.md) + [Джетрагон](../../4_spravochniki/paly/jetragon.md)
     - Участвует в особых парах: Джетрагон → Джетрагон; Джетрагон → Джетрагон
 

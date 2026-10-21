@@ -1,13 +1,13 @@
 # Хербил
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/LeafMomonga-p-512.webp" srcset="../../../pp/art/LeafMomonga-p-384.webp 384w, ../../../pp/art/LeafMomonga-p-512.webp 512w, ../../../pp/art/LeafMomonga-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Хербил" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/10_LeafMomonga.webp">
-<div class="pal-info" data-pal="LeafMomonga"><div class="pal-no">№ 10 · Herbil</div>
+<img class="pal-card pal-art" src="../../../pp/art/LeafMomonga-512.webp" srcset="../../../pp/art/LeafMomonga-384.webp 384w, ../../../pp/art/LeafMomonga-512.webp 512w, ../../../pp/art/LeafMomonga-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Хербил" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="LeafMomonga"><div class="pal-no"><span class="nochip">№ 10</span></div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1,5 × 1 = ×1,5; Тьма: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 1">🌱 Посев семян <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
-<div class="partner"><b>Импульс Хербила</b> 🎒 из команды</div>
+<div class="partner"><b>Импульс Хербила</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 80 · ⚔️ 75 · 🛡 75</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 1
-    - Сбор — ур. 1
-    - Транспортировка — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=1"><span>🌱 Посев семян</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=1"><span>🧺 Сбор</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=1"><span>📦 Транспортировка</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Импульс Хербила
@@ -27,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ много здоровья (80)
     - ❌ слабая атака (75)
 
     > Он считает, что любую поломку можно исправить простым ударом. Сила Хербил идеально рассчитана для человека — одного удара достаточно, чтобы снова запустить остановившееся сердце.
@@ -72,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2630
+    - Ранг разведения: 2630
 
 
 

@@ -1,13 +1,13 @@
 # Джелиэтта
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/JellyfishFairy-p-512.webp" srcset="../../../pp/art/JellyfishFairy-p-384.webp 384w, ../../../pp/art/JellyfishFairy-p-512.webp 512w, ../../../pp/art/JellyfishFairy-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Джелиэтта" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/45_JellyfishFairy.webp">
-<div class="pal-info" data-pal="JellyfishFairy"><div class="pal-no">№ 45 · Jelliette</div>
+<img class="pal-card pal-art" src="../../../pp/art/JellyfishFairy-512.webp" srcset="../../../pp/art/JellyfishFairy-384.webp 384w, ../../../pp/art/JellyfishFairy-512.webp 512w, ../../../pp/art/JellyfishFairy-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Джелиэтта" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="JellyfishFairy"><div class="pal-no"><span class="nochip">№ 45</span></div>
 <div class="chips"><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
-<div class="partner"><b>Дроп Джелиэтты</b> 🎒 из команды 🏠 на базе</div>
+<div class="partner"><b>Дроп Джелиэтты</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 75 · ⚔️ 90 · 🛡 70</div></div></div>
 
 
@@ -17,20 +17,19 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 2
-    - Ручная работа — ур. 1
-    - Транспортировка — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=2"><span>💧 Полив</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=1"><span>✋ Ручная работа</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=1"><span>📦 Транспортировка</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Дроп Джелиэтты
-    Пока находится в команде, количество получаемых при рыбалке предметов увеличивается на 55–95%. (Эффект не суммируется) Также, если Джелиэтта и Джелрой находятся на базе, скорость полива у Джелиэтта увеличивается на 50–120%. (Эффект не суммируется). По звёздам: 0★ 55 · 54★ 50 · 1★ 65 · 64★ 60 · 2★ 75 · 74★ 70 · 3★ 85 · 84★ 90 · 4★ 95 · 94★ 120
+    Пока находится в команде, количество получаемых при рыбалке предметов увеличивается на 55–95%. (Эффект не суммируется) Также, если Джелиэтта и Джелрой находятся на базе, скорость полива у пала «Джелиэтта» увеличивается на 50–120%. (Эффект не суммируется). По звёздам: 0★ 55 · 54★ 50 · 1★ 65 · 64★ 60 · 2★ 75 · 74★ 70 · 3★ 85 · 84★ 90 · 4★ 95 · 94★ 120
 
 
     #### Чем хорош / чем плох
     - ✅ +55–95% улова на рыбалке
     - ❌ явных минусов нет
 
-    > Пал, внешне очень похожий на Джелрой . Он ведёт активную социальную жизнь, и когда планы пересекаются, просит своего близкого друга Джелрой сходить вместо него. Плата за это — одно свидание.
+    > Пал, внешне очень похожий на пала «Джелрой». Он ведёт активную социальную жизнь, и когда планы пересекаются, просит своего близкого друга Джелрой сходить вместо него. Плата за это — одно свидание.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -72,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2650
+    - Ранг разведения: 2650
 
 
 

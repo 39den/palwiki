@@ -1,6 +1,6 @@
 # Объёмы лесозаготовки ур.4
 
-<div class="psv-hero" markdown="0"><span class="psv r-3 big">Объёмы лесозаготовки ур.4</span> <span class="rk">Ранг 3 · редкая</span><div class="en">Logging Yield Up Lv. 4</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-3 big">Объёмы лесозаготовки ур.4</span> <span class="rk">Ранг 3 · редкая <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Количество выпадаемой древесины существенно увеличивается
 

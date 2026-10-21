@@ -1,13 +1,13 @@
 # Офидия
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/LotusDragon-p-512.webp" srcset="../../../pp/art/LotusDragon-p-384.webp 384w, ../../../pp/art/LotusDragon-p-512.webp 512w, ../../../pp/art/LotusDragon-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Офидия" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/175_LotusDragon.webp">
-<div class="pal-info" data-pal="LotusDragon"><div class="pal-no">№ 175 · Ophydia</div>
+<img class="pal-card pal-art" src="../../../pp/art/LotusDragon-512.webp" srcset="../../../pp/art/LotusDragon-384.webp 384w, ../../../pp/art/LotusDragon-512.webp 512w, ../../../pp/art/LotusDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Офидия" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="LotusDragon"><div class="pal-no"><span class="nochip">№ 175</span></div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Молния: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 5">💧 Полив <b>5</b></span><span class="work" title="Посев семян 7">🌱 Посев семян <b>7</b></span></div>
-<div class="partner"><b>Величественный туман</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Величественный туман</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 130 · ⚔️ 115 · 🛡 120</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 5
-    - Посев семян — ур. 7
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=5"><span>💧 Полив</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=7"><span>🌱 Посев семян</span><i style="--v:70%"></i><b>7</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Величественный туман
@@ -29,7 +29,7 @@
     - ✅ хорошая атака (115); много здоровья (130); крепкая защита (120); отличный рабочий (пригодность 7); можно оседлать
     - ❌ много ест (620)
 
-    > В водоёмах, где обитает Офидия , растёт множество цветов, внешне очень похожих на него. Не раз предпринимались попытки размножить только этот цветок, но стоит вмешаться человеку — и он неизбежно вянет.
+    > В водоёмах, где обитает Офидия, растёт множество цветов, внешне очень похожих на него. Не раз предпринимались попытки размножить только этот цветок, но стоит вмешаться человеку — и он неизбежно вянет.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 230
+    - Ранг разведения: 230
 
 
 

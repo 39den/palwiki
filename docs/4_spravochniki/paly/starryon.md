@@ -1,13 +1,13 @@
 # Старрион
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/NightBlueHorse-p-512.webp" srcset="../../../pp/art/NightBlueHorse-p-384.webp 384w, ../../../pp/art/NightBlueHorse-p-512.webp 512w, ../../../pp/art/NightBlueHorse-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Старрион" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/130_NightBlueHorse.webp">
-<div class="pal-info" data-pal="NightBlueHorse"><div class="pal-no">№ 130 · Starryon</div>
+<img class="pal-card pal-art" src="../../../pp/art/NightBlueHorse-512.webp" srcset="../../../pp/art/NightBlueHorse-384.webp 384w, ../../../pp/art/NightBlueHorse-512.webp 512w, ../../../pp/art/NightBlueHorse-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Старрион" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="NightBlueHorse"><div class="pal-no"><span class="nochip">№ 130</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span></div>
-<div class="partner"><b>Ночной танцор</b> 🐾 выпущен 🐎 верхом</div>
+<div class="partner"><b>Ночной танцор</b> <span class="actc">🐾 Когда пал выпущен</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 110 · ⚔️ 100 · 🛡 100</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 5
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=5"><span>🧺 Сбор</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Ночной танцор
@@ -28,7 +29,7 @@
     - ✅ хорошая атака (100); отличный рабочий (пригодность 5); можно оседлать
     - ❌ явных минусов нет
 
-    > Безмерно гордится своей красивой, струящейся гривой. Стоит заметить секущийся волос — от стыда не может сосредоточиться на беге. От статического электричества шерсть портится, поэтому к Азурмейн лучше не приближаться.
+    > Безмерно гордится своей красивой, струящейся гривой. Стоит заметить секущийся волос — от стыда не может сосредоточиться на беге. От статического электричества шерсть портится, поэтому к палу «Азурмейн» лучше не приближаться.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -71,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1150
+    - Ранг разведения: 1150
     - Участвует в особых парах: Селесдир → Старрион Примо
 
 

@@ -1,13 +1,13 @@
 # Лизпанк Игнис
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/LizardMan_Fire-512.webp" srcset="../../../pp/art/LizardMan_Fire-384.webp 384w, ../../../pp/art/LizardMan_Fire-512.webp 512w, ../../../pp/art/LizardMan_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Лизпанк Игнис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/73B_LizardMan_Fire.webp">
-<div class="pal-info" data-pal="LizardMan_Fire"><div class="pal-no">№ 73B · Leezpunk Ignis</div>
+<img class="pal-card pal-art" src="../../../pp/art/LizardMan_Fire-512.webp" srcset="../../../pp/art/LizardMan_Fire-384.webp 384w, ../../../pp/art/LizardMan_Fire-512.webp 512w, ../../../pp/art/LizardMan_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Лизпанк Игнис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="LizardMan_Fire"><div class="pal-no"><span class="nochip">№ 73B</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 2">🔥 Разжигание огня <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
-<div class="partner"><b>Невидимость</b> 🔘 кнопкой</div>
+<div class="partner"><b>Невидимость</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 80 · ⚔️ 80 · 🛡 50</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 2
-    - Ручная работа — ур. 2
-    - Сбор — ур. 1
-    - Транспортировка — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=2"><span>🔥 Разжигание огня</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=2"><span>✋ Ручная работа</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=1"><span>🧺 Сбор</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=1"><span>📦 Транспортировка</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Невидимость
@@ -28,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорошая атака (80)
     - ❌ разводится только особой парой
 
     > Этот Пал зациклен на том, как он стоит. Он бесконечно оттачивает горячую позу, и весь день устраивает перед хозяином пафосное шоу.
@@ -75,7 +73,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2640
+    - Ранг разведения: 2640
     - **Особая пара:** [Лизпанк](../../4_spravochniki/paly/leezpunk.md) + [Фламбелль](../../4_spravochniki/paly/flambelle.md)
 
 

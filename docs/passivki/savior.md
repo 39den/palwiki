@@ -1,6 +1,6 @@
 # Спаситель
 
-<div class="psv-hero" markdown="0"><span class="psv r-4 big">Спаситель</span> <span class="rk">Ранг 4 · очень редкая</span><div class="en">Savior</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-4 big">Спаситель</span> <span class="rk">Ранг 4 · очень редкая <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Увеличение нейтрального урона на 30%; Увеличение травяного урона на 30%
 

@@ -1,6 +1,6 @@
 # Кровь - это топливо
 
-<div class="psv-hero" markdown="0"><span class="psv r-4 big">Кровь - это топливо</span> <span class="rk">Ранг 4 · очень редкая</span><div class="en">Blood Is Fuel</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-4 big">Кровь - это топливо</span> <span class="rk">Ранг 4 · очень редкая <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Поглощает 0% от нанесённого урона и восстанавливает HP. Активен даже в ночное время.
 

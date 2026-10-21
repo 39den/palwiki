@@ -1,13 +1,13 @@
 # Селена
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/MoonQueen-512.webp" srcset="../../../pp/art/MoonQueen-384.webp 384w, ../../../pp/art/MoonQueen-512.webp 512w, ../../../pp/art/MoonQueen-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Селена" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/190_MoonQueen.webp">
-<div class="pal-info" data-pal="MoonQueen"><div class="pal-no">№ 190 · Selyne</div>
+<img class="pal-card pal-art" src="../../../pp/art/MoonQueen-512.webp" srcset="../../../pp/art/MoonQueen-384.webp 384w, ../../../pp/art/MoonQueen-512.webp 512w, ../../../pp/art/MoonQueen-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Селена" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="MoonQueen"><div class="pal-no"><span class="nochip">№ 190</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Тьма: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 7">🖐️ Ручная работа <b>7</b></span><span class="work" title="Фармацевтика 6">💊 Фармацевтика <b>6</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
-<div class="partner"><b>Звёздная тьма</b> 🐎 верхом</div>
+<div class="partner"><b>Звёздная тьма</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 130 · ⚔️ 115 · 🛡 110</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Ручная работа — ур. 7
-    - Фармацевтика — ур. 6
-    - Транспортировка — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=7"><span>✋ Ручная работа</span><i style="--v:70%"></i><b>7</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=6"><span>💊 Фармацевтика</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=3"><span>📦 Транспортировка</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Звёздная тьма
@@ -73,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 360
+    - Ранг разведения: 360
     - **Особая пара:** [Селена](../../4_spravochniki/paly/selyne.md) + [Селена](../../4_spravochniki/paly/selyne.md)
     - Участвует в особых парах: Селена → Селена; Селена → Селена
 

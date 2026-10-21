@@ -1,13 +1,13 @@
 # Криолинкс Терра
 
 <div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/WhiteTiger_Ground-p-512.webp" srcset="../../../pp/art/WhiteTiger_Ground-p-384.webp 384w, ../../../pp/art/WhiteTiger_Ground-p-512.webp 512w, ../../../pp/art/WhiteTiger_Ground-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Криолинкс Терра" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/132B_WhiteTiger_Ground.webp">
-<div class="pal-info" data-pal="WhiteTiger_Ground"><div class="pal-no">№ 132B · Cryolinx Terra</div>
+<img class="pal-card pal-art" src="../../../pp/art/WhiteTiger_Ground-512.webp" srcset="../../../pp/art/WhiteTiger_Ground-384.webp 384w, ../../../pp/art/WhiteTiger_Ground-512.webp 512w, ../../../pp/art/WhiteTiger_Ground-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Криолинкс Терра" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="WhiteTiger_Ground"><div class="pal-no"><span class="nochip">№ 132B</span></div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Рубка деревьев 6">🪓 Рубка деревьев <b>6</b></span><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>
-<div class="partner"><b>Могучая рука разрушения</b> 🎒 из команды</div>
+<div class="partner"><b>Могучая рука разрушения</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 100 · ⚔️ 105 · 🛡 110</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Ручная работа — ур. 2
-    - Рубка деревьев — ур. 6
-    - Добыча — ур. 5
-    - Транспортировка — ур. 4
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=2"><span>✋ Ручная работа</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=6"><span>🪓 Рубка деревьев</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=5"><span>⛏️ Добыча</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=4"><span>📦 Транспортировка</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Могучая рука разрушения
@@ -73,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 470
+    - Ранг разведения: 470
     - **Особая пара:** [Криолинкс](../../4_spravochniki/paly/cryolinx.md) + [Дазему](../../4_spravochniki/paly/dazemu.md)
 
 

@@ -1,13 +1,13 @@
 # Найтмери Ботан
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/GhostRabbit_Grass-p-512.webp" srcset="../../../pp/art/GhostRabbit_Grass-p-384.webp 384w, ../../../pp/art/GhostRabbit_Grass-p-512.webp 512w, ../../../pp/art/GhostRabbit_Grass-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Найтмери Ботан" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/148B_GhostRabbit_Grass.webp">
-<div class="pal-info" data-pal="GhostRabbit_Grass"><div class="pal-no">№ 148B · Nitemary Botan</div>
+<img class="pal-card pal-art" src="../../../pp/art/GhostRabbit_Grass-512.webp" srcset="../../../pp/art/GhostRabbit_Grass-384.webp 384w, ../../../pp/art/GhostRabbit_Grass-512.webp 512w, ../../../pp/art/GhostRabbit_Grass-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Найтмери Ботан" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="GhostRabbit_Grass"><div class="pal-no"><span class="nochip">№ 148B</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Призрачный кролик-пленитель душ</b> 🎒 из команды</div>
+<div class="partner"><b>Призрачный кролик-пленитель душ</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 110 · ⚔️ 95 · 🛡 105</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 3
-    - Ручная работа — ур. 4
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=3"><span>🌱 Посев семян</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=4"><span>✋ Ручная работа</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Призрачный кролик-пленитель душ
@@ -27,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорош в работе: Ручная работа (ур. 4)
     - ❌ много ест (510); разводится только особой парой
 
     > Держит в руках свою душу. Влюбившись, швыряет её в чужую, смешивает со своей и стремится стать единым целым.
@@ -71,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1320
+    - Ранг разведения: 1320
     - **Особая пара:** [Найтмери](../../4_spravochniki/paly/nitemary.md) + [Петаллия](../../4_spravochniki/paly/petallia.md)
 
 

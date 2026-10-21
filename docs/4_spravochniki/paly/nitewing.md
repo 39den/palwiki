@@ -1,13 +1,13 @@
 # Найтвинг
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/HawkBird-512.webp" srcset="../../../pp/art/HawkBird-384.webp 384w, ../../../pp/art/HawkBird-512.webp 512w, ../../../pp/art/HawkBird-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Найтвинг" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/51_HawkBird.webp">
-<div class="pal-info" data-pal="HawkBird"><div class="pal-no">№ 51 · Nitewing</div>
+<img class="pal-card pal-art" src="../../../pp/art/HawkBird-512.webp" srcset="../../../pp/art/HawkBird-384.webp 384w, ../../../pp/art/HawkBird-512.webp 512w, ../../../pp/art/HawkBird-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Найтвинг" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="HawkBird"><div class="pal-no"><span class="nochip">№ 51</span></div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span></div>
-<div class="partner"><b>Спутник в путешествии</b> 🐎 верхом</div>
+<div class="partner"><b>Спутник в путешествии</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 100 · ⚔️ 95 · 🛡 80</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=2"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Спутник в путешествии
@@ -69,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2560
+    - Ранг разведения: 2560
 
 
 

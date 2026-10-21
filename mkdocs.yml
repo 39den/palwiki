@@ -2,7 +2,7 @@ site_name: Энциклопедия Palworld
 site_url: https://39den.github.io/palwiki/
 site_description: Энциклопедия Palworld на русском — палы, боссы, предметы, пассивки, разведение
 docs_dir: docs
-copyright: "Данные: версия игры 1.0.5 · фан-энциклопедия, не официальный продукт"
+copyright: 'Данные: версия игры 1.0.5 · фан-энциклопедия, не официальный продукт · <a href="/palwiki/about/">Об источниках</a>'
 theme:
   name: material
   custom_dir: overrides
@@ -25,8 +25,8 @@ theme:
 plugins:
   - search:
       lang: [ru, en]
-extra_css: ['assets/extra.css?v=1792577783']
-extra_javascript: ['assets/smart.js?v=1792577783', 'assets/site.js?v=1792577783', 'assets/features.js?v=1792577783', 'assets/ui2.js?v=1792577783', 'assets/ui3.js?v=1792577783']
+extra_css: ['assets/extra.css?v=1792584682']
+extra_javascript: ['assets/smart.js?v=1792584682', 'assets/site.js?v=1792584682', 'assets/features.js?v=1792584682', 'assets/ui2.js?v=1792584682', 'assets/ui3.js?v=1792584682']
 markdown_extensions:
   - tables
   - attr_list
@@ -89,6 +89,7 @@ nav:
     - Сферы: 4_spravochniki/predmety/сферы.md
     - Чертёж: 4_spravochniki/predmety/чертёж.md
   - Особые комбинации разведения: 4_spravochniki/osobye_kombinacii.md
+  - rabota: 2_mehaniki/rabota.md
   - Все активные навыки: 2_mehaniki/aktivki.md
   - Лучшие наборы пассивок: 2_mehaniki/passivki.md
   - Где взять пассивку и как её перенести: 2_mehaniki/passivki_gde_vzyat.md

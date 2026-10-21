@@ -1,13 +1,13 @@
 # Гостлайт
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/CandleGhost-512.webp" srcset="../../../pp/art/CandleGhost-384.webp 384w, ../../../pp/art/CandleGhost-512.webp 512w, ../../../pp/art/CandleGhost-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Гостлайт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/135_CandleGhost.webp">
-<div class="pal-info" data-pal="CandleGhost"><div class="pal-no">№ 135 · Sootseer</div>
+<img class="pal-card pal-art" src="../../../pp/art/CandleGhost-512.webp" srcset="../../../pp/art/CandleGhost-384.webp 384w, ../../../pp/art/CandleGhost-512.webp 512w, ../../../pp/art/CandleGhost-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Гостлайт" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="CandleGhost"><div class="pal-no"><span class="nochip">№ 135</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Вода: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Фермерство 2">🐑 Фермерство <b>2</b></span></div>
-<div class="partner"><b>Расхититель могил</b> 🎒 из команды 🏠 на базе</div>
+<div class="partner"><b>Расхититель могил</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 105 · ⚔️ 125 · 🛡 90</div></div></div>
 
 
@@ -17,11 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 3
-    - Ручная работа — ур. 3
-    - Сбор — ур. 2
-    - Добыча — ур. 3
-    - Фермерство — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=3"><span>🔥 Разжигание огня</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=3"><span>✋ Ручная работа</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=2"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=3"><span>⛏️ Добыча</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=farming&lv=2"><span>🐄 Фермерство</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Расхититель могил
@@ -32,7 +29,7 @@
     - ✅ очень высокая атака (125)
     - ❌ явных минусов нет
 
-    > Раньше верили, что по мере приближения конца света пламя слабеет. Каждый раз, когда оно заметно угасало, сторонники апокалипсиса поднимали панику. Но в конце концов оказалось, что это всего лишь выходки Гостлайт . По крайней мере, пока что.
+    > Раньше верили, что по мере приближения конца света пламя слабеет. Каждый раз, когда оно заметно угасало, сторонники апокалипсиса поднимали панику. Но в конце концов оказалось, что это всего лишь выходки Гостлайт. По крайней мере, пока что.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -75,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 980
+    - Ранг разведения: 980
     - Участвует в особых парах: Буси → Буси Нокт; Ганглер → Ганглер Игнис; Дуалит → Дуалит Нокт
 
 

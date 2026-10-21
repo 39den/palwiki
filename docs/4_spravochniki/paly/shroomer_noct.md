@@ -1,13 +1,13 @@
 # Шрумер Нокт
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/MushroomDragon_Dark-512.webp" srcset="../../../pp/art/MushroomDragon_Dark-384.webp 384w, ../../../pp/art/MushroomDragon_Dark-512.webp 512w, ../../../pp/art/MushroomDragon_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Шрумер Нокт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/118B_MushroomDragon_Dark.webp">
-<div class="pal-info" data-pal="MushroomDragon_Dark"><div class="pal-no">№ 118B · Shroomer Noct</div>
+<img class="pal-card pal-art" src="../../../pp/art/MushroomDragon_Dark-512.webp" srcset="../../../pp/art/MushroomDragon_Dark-384.webp 384w, ../../../pp/art/MushroomDragon_Dark-512.webp 512w, ../../../pp/art/MushroomDragon_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Шрумер Нокт" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="MushroomDragon_Dark"><div class="pal-no"><span class="nochip">№ 118B</span></div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1,5 × 1 = ×1,5; Дракон: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span></div>
-<div class="partner"><b>Дымящиеся споры</b> 🐎 верхом 🏠 на базе</div>
+<div class="partner"><b>Дымящиеся споры</b> <span class="actc">🐎 Верхом</span><span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 110 · ⚔️ 85 · 🛡 90</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 3
-    - Ручная работа — ур. 3
-    - Сбор — ур. 3
-    - Рубка деревьев — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=3"><span>🌱 Посев семян</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=3"><span>✋ Ручная работа</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=3"><span>🧺 Сбор</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=2"><span>🪓 Рубка деревьев</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Дымящиеся споры
@@ -73,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1450
+    - Ранг разведения: 1450
 
 
 

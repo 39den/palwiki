@@ -1,13 +1,13 @@
 # Хэлзефир Лакс
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/HadesBird_Electric-512.webp" srcset="../../../pp/art/HadesBird_Electric-384.webp 384w, ../../../pp/art/HadesBird_Electric-512.webp 512w, ../../../pp/art/HadesBird_Electric-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Хэлзефир Лакс" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/80B_HadesBird_Electric.webp">
-<div class="pal-info" data-pal="HadesBird_Electric"><div class="pal-no">№ 80B · Helzephyr Lux</div>
+<img class="pal-card pal-art" src="../../../pp/art/HadesBird_Electric-512.webp" srcset="../../../pp/art/HadesBird_Electric-384.webp 384w, ../../../pp/art/HadesBird_Electric-512.webp 512w, ../../../pp/art/HadesBird_Electric-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Хэлзефир Лакс" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="HadesBird_Electric"><div class="pal-no"><span class="nochip">№ 80B</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-electric">Молния</span></div>
-<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Земля: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-water">Вода <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Генерация энергии 4">⚡ Генерация энергии <b>4</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>
-<div class="partner"><b>Громовые крылья</b> 🐎 верхом</div>
+<div class="partner"><b>Громовые крылья</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 105 · ⚔️ 125 · 🛡 100</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Генерация энергии — ур. 4
-    - Транспортировка — ур. 5
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=electricity&lv=4"><span>⚡ Генерация энергии</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=5"><span>📦 Транспортировка</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Громовые крылья
@@ -29,7 +29,7 @@
     - ✅ очень высокая атака (125); отличный рабочий (пригодность 5); можно оседлать; летает (ездовой)
     - ❌ разводится только особой парой
 
-    > Призывает молнии из преисподней. Считается подвидом Хэлзефир , но есть версия, что Хэлзефир Лакс , получив удар молнии из преисподней, превратился в Хэлзефир .
+    > Призывает молнии из преисподней. Считается подвидом Хэлзефир, но есть версия, что Хэлзефир Лакс, получив удар молнии из преисподней, превратился в пала «Хэлзефир».
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 960
+    - Ранг разведения: 960
     - **Особая пара:** [Хэлзефир](../../4_spravochniki/paly/helzephyr.md) + [Райберд](../../4_spravochniki/paly/beakon.md)
     - Участвует в особых парах: Скорпио → Скорпио Лакс
 

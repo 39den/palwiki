@@ -1,13 +1,13 @@
 # Нидолл Нокт
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/CactusDoll_Dark-p-512.webp" srcset="../../../pp/art/CactusDoll_Dark-p-384.webp 384w, ../../../pp/art/CactusDoll_Dark-p-512.webp 512w, ../../../pp/art/CactusDoll_Dark-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Нидолл Нокт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/100B_CactusDoll_Dark.webp">
-<div class="pal-info" data-pal="CactusDoll_Dark"><div class="pal-no">№ 100B · Needoll Noct</div>
+<img class="pal-card pal-art" src="../../../pp/art/CactusDoll_Dark-512.webp" srcset="../../../pp/art/CactusDoll_Dark-384.webp 384w, ../../../pp/art/CactusDoll_Dark-512.webp 512w, ../../../pp/art/CactusDoll_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Нидолл Нокт" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="CactusDoll_Dark"><div class="pal-no"><span class="nochip">№ 100B</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
-<div class="partner"><b>Обнимаю тебя крепко</b> 🎒 из команды</div>
+<div class="partner"><b>Обнимаю тебя крепко</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 75 · ⚔️ 90 · 🛡 70</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 3
-    - Сбор — ур. 3
-    - Транспортировка — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=3"><span>🌱 Посев семян</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=3"><span>🧺 Сбор</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=1"><span>📦 Транспортировка</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Обнимаю тебя крепко
@@ -27,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорош в работе: Посев семян (ур. 3)
     - ❌ разводится только особой парой
 
     > При усилении эмоций шипы выдвигаются и втягиваются. Выращенный с любовью Нидолл Нокт склонен прижиматься к хозяину, однако принятие этой любви неизбежно сопряжено с болью.
@@ -72,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1580
+    - Ранг разведения: 1580
     - **Особая пара:** [Нидолл](../../4_spravochniki/paly/needoll.md) + [Прунелия](../../4_spravochniki/paly/prunelia.md)
 
 

@@ -1,13 +1,13 @@
 # Пенкинг
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/CaptainPenguin-512.webp" srcset="../../../pp/art/CaptainPenguin-384.webp 384w, ../../../pp/art/CaptainPenguin-512.webp 512w, ../../../pp/art/CaptainPenguin-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Пенкинг" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/18_CaptainPenguin.webp">
-<div class="pal-info" data-pal="CaptainPenguin"><div class="pal-no">№ 18 · Penking</div>
+<img class="pal-card pal-art" src="../../../pp/art/CaptainPenguin-512.webp" srcset="../../../pp/art/CaptainPenguin-384.webp 384w, ../../../pp/art/CaptainPenguin-512.webp 512w, ../../../pp/art/CaptainPenguin-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Пенкинг" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="CaptainPenguin"><div class="pal-no"><span class="nochip">№ 18</span></div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-ice">Лёд</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Молния: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Охлаждение 2">❄️ Охлаждение <b>2</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
-<div class="partner"><b>Отважный воин морей</b> 🎒 из команды</div>
+<div class="partner"><b>Отважный воин морей</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 95 · ⚔️ 95 · 🛡 95</div></div></div>
 
 
@@ -17,11 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 2
-    - Ручная работа — ур. 2
-    - Добыча — ур. 3
-    - Охлаждение — ур. 2
-    - Транспортировка — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=2"><span>💧 Полив</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=2"><span>✋ Ручная работа</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=3"><span>⛏️ Добыча</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=cooling&lv=2"><span>❄️ Охлаждение</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=3"><span>📦 Транспортировка</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Отважный воин морей
@@ -32,7 +29,7 @@
     - ✅ Полив + добыча, лёд/вода
     - ❌ явных минусов нет
 
-    > На самом деле, у него почти нет ничего общего с Пенгуллет . Но раз уж его обожают просто так — он пока что изо всех сил старается выглядеть важным.
+    > На самом деле, у него почти нет ничего общего с палом «Пенгуллет». Но раз уж его обожают просто так — он пока что изо всех сил старается выглядеть важным.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -74,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2070
+    - Ранг разведения: 2070
     - Участвует в особых парах: Райхаунд → Пенкинг Лакс
 
 

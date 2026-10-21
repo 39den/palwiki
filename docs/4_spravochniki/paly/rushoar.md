@@ -1,13 +1,13 @@
 # Рашоа
 
 <div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Boar-512.webp" srcset="../../../pp/art/Boar-384.webp 384w, ../../../pp/art/Boar-512.webp 512w, ../../../pp/art/Boar-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Рашоа" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/28_Boar.webp">
-<div class="pal-info" data-pal="Boar"><div class="pal-no">№ 28 · Rushoar</div>
+<img class="pal-card pal-art" src="../../../pp/art/Boar-512.webp" srcset="../../../pp/art/Boar-384.webp 384w, ../../../pp/art/Boar-512.webp 512w, ../../../pp/art/Boar-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Рашоа" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Boar"><div class="pal-no"><span class="nochip">№ 28</span></div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Добыча 1">⛏️ Добыча <b>1</b></span></div>
-<div class="partner"><b>Твердоголовый</b> 🐎 верхом</div>
+<div class="partner"><b>Твердоголовый</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 80 · ⚔️ 70 · 🛡 70</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Добыча — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=1"><span>⛏️ Добыча</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Твердоголовый
@@ -71,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2880
+    - Ранг разведения: 2880
 
 
 

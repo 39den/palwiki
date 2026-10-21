@@ -1,13 +1,13 @@
 # Каприти
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/BerryGoat-512.webp" srcset="../../../pp/art/BerryGoat-384.webp 384w, ../../../pp/art/BerryGoat-512.webp 512w, ../../../pp/art/BerryGoat-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Каприти" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/34_BerryGoat.webp">
-<div class="pal-info" data-pal="BerryGoat"><div class="pal-no">№ 34 · Caprity</div>
+<img class="pal-card pal-art" src="../../../pp/art/BerryGoat-512.webp" srcset="../../../pp/art/BerryGoat-384.webp 384w, ../../../pp/art/BerryGoat-512.webp 512w, ../../../pp/art/BerryGoat-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Каприти" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="BerryGoat"><div class="pal-no"><span class="nochip">№ 34</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 2">🌱 Посев семян <b>2</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
-<div class="partner"><b>Сбор ягод</b> 🎒 из команды</div>
+<div class="partner"><b>Сбор ягод</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 100 · ⚔️ 70 · 🛡 90</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 2
-    - Фермерство — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=2"><span>🌱 Посев семян</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=farming&lv=1"><span>🐄 Фермерство</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Сбор ягод
@@ -26,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ много здоровья (100)
     - ❌ слабая атака (70)
 
     > Если Пал не голодает, в зарослях на его спине созревают ягоды. Он угощает ими понравившегося Пала, и если угощение придётся по вкусу — образуется пара.
@@ -72,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2610
+    - Ранг разведения: 2610
     - Участвует в особых парах: Тарантрисс → Каприти Нокт
 
 

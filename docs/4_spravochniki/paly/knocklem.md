@@ -1,13 +1,13 @@
 # Теранайт
 
 <div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/WingGolem-512.webp" srcset="../../../pp/art/WingGolem-384.webp 384w, ../../../pp/art/WingGolem-512.webp 512w, ../../../pp/art/WingGolem-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Теранайт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/159_WingGolem.webp">
-<div class="pal-info" data-pal="WingGolem"><div class="pal-no">№ 159 · Knocklem</div>
+<img class="pal-card pal-art" src="../../../pp/art/WingGolem-512.webp" srcset="../../../pp/art/WingGolem-384.webp 384w, ../../../pp/art/WingGolem-512.webp 512w, ../../../pp/art/WingGolem-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Теранайт" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="WingGolem"><div class="pal-no"><span class="nochip">№ 159</span></div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Добыча 7">⛏️ Добыча <b>7</b></span><span class="work" title="Транспортировка 7">📦 Транспортировка <b>7</b></span></div>
-<div class="partner"><b>Режим стального стража</b> 🔘 кнопкой</div>
+<div class="partner"><b>Режим стального стража</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 105 · ⚔️ 110 · 🛡 135</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 4
-    - Добыча — ур. 7
-    - Транспортировка — ур. 7
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=4"><span>🧺 Сбор</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=7"><span>⛏️ Добыча</span><i style="--v:70%"></i><b>7</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=7"><span>📦 Транспортировка</span><i style="--v:70%"></i><b>7</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Режим стального стража
@@ -71,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 260
+    - Ранг разведения: 260
     - Участвует в особых парах: Менастинг → Менастинг Терра; Рагнахавк → Теранайт Игнис
 
 

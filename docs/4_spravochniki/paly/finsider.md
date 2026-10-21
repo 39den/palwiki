@@ -1,13 +1,13 @@
 # Финсайдер
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/StuffedShark-p-512.webp" srcset="../../../pp/art/StuffedShark-p-384.webp 384w, ../../../pp/art/StuffedShark-p-512.webp 512w, ../../../pp/art/StuffedShark-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Финсайдер" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/88_StuffedShark.webp">
-<div class="pal-info" data-pal="StuffedShark"><div class="pal-no">№ 88 · Finsider</div>
+<img class="pal-card pal-art" src="../../../pp/art/StuffedShark-512.webp" srcset="../../../pp/art/StuffedShark-384.webp 384w, ../../../pp/art/StuffedShark-512.webp 512w, ../../../pp/art/StuffedShark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Финсайдер" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="StuffedShark"><div class="pal-no"><span class="nochip">№ 88</span></div>
 <div class="chips"><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
-<div class="partner"><b>Водяной триггер</b> 🔘 кнопкой</div>
+<div class="partner"><b>Водяной триггер</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 75 · ⚔️ 85 · 🛡 80</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 2
-    - Транспортировка — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=2"><span>💧 Полив</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=1"><span>📦 Транспортировка</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Водяной триггер
@@ -26,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорошая атака (85)
     - ❌ явных минусов нет
 
     > Выглядит так, будто из кигуруми кто-то выглядывает. Но если сунуть руку внутрь — там пусто. Причём руку можно засовывать бесконечно глубоко. Иногда кажется, что внутри — целая вселенная.
@@ -72,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2450
+    - Ранг разведения: 2450
     - Участвует в особых парах: Гобфин Игнис → Финсайдер Игнис
 
 

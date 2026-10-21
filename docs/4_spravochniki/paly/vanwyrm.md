@@ -1,13 +1,13 @@
 # Ванвирм
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/BirdDragon-512.webp" srcset="../../../pp/art/BirdDragon-384.webp 384w, ../../../pp/art/BirdDragon-512.webp 512w, ../../../pp/art/BirdDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Ванвирм" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/64_BirdDragon.webp">
-<div class="pal-info" data-pal="BirdDragon"><div class="pal-no">№ 64 · Vanwyrm</div>
+<img class="pal-card pal-art" src="../../../pp/art/BirdDragon-512.webp" srcset="../../../pp/art/BirdDragon-384.webp 384w, ../../../pp/art/BirdDragon-512.webp 512w, ../../../pp/art/BirdDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Ванвирм" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="BirdDragon"><div class="pal-no"><span class="nochip">№ 64</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Вода: 1,5 × 1 = ×1,5; Дракон: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 2">🔥 Разжигание огня <b>2</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
-<div class="partner"><b>Воздушный налётчик</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Воздушный налётчик</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 90 · ⚔️ 115 · 🛡 90</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 2
-    - Транспортировка — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=2"><span>🔥 Разжигание огня</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=3"><span>📦 Транспортировка</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Воздушный налётчик
@@ -29,7 +29,7 @@
     - ✅ хорошая атака (115); можно оседлать; летает (ездовой)
     - ❌ явных минусов нет
 
-    > Говорят, что звук флейты, сделанной из экзоскелета Ванвирм , слышен за пределами тысячи гор. В древности она использовалась как сигнал к началу атаки во время сражений.
+    > Говорят, что звук флейты, сделанной из экзоскелета Ванвирм, слышен за пределами тысячи гор. В древности она использовалась как сигнал к началу атаки во время сражений.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -73,7 +73,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1650
+    - Ранг разведения: 1650
     - Участвует в особых парах: Фоксайкл → Ванвирм Крист
 
 

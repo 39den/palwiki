@@ -1,6 +1,6 @@
 # Неизвестные биоклетки
 
-<div class="psv-hero" markdown="0"><span class="psv r-1 big">Неизвестные биоклетки</span> <span class="rk">Ранг 1 · обычная</span><div class="en">Otherworldly Cells</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-1 big">Неизвестные биоклетки</span> <span class="rk">Ранг 1 · обычная <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Атака +10%; Снижение огненного урона на 15%; Снижение урона молнии на 15%
 

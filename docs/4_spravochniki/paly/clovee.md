@@ -1,13 +1,13 @@
 # Клови
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/CloverFairy-p-512.webp" srcset="../../../pp/art/CloverFairy-p-384.webp 384w, ../../../pp/art/CloverFairy-p-512.webp 512w, ../../../pp/art/CloverFairy-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Клови" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/14_CloverFairy.webp">
-<div class="pal-info" data-pal="CloverFairy"><div class="pal-no">№ 14 · Clovee</div>
+<img class="pal-card pal-art" src="../../../pp/art/CloverFairy-512.webp" srcset="../../../pp/art/CloverFairy-384.webp 384w, ../../../pp/art/CloverFairy-512.webp 512w, ../../../pp/art/CloverFairy-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Клови" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="CloverFairy"><div class="pal-no"><span class="nochip">№ 14</span></div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1,5 × 1 = ×1,5; Тьма: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 1">🌱 Посев семян <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span></div>
-<div class="partner"><b>Счастливый клевер</b> 🏠 на базе</div>
+<div class="partner"><b>Счастливый клевер</b> <span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 80 · ⚔️ 65 · 🛡 65</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 1
-    - Сбор — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=1"><span>🌱 Посев семян</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=1"><span>🧺 Сбор</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Счастливый клевер
@@ -26,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ много здоровья (80)
     - ❌ слабая атака (65)
 
     > Раньше встречались особи с тремя и более листьями на лбу. Так как считалось, что это приносит удачу, особей с множеством листьев бесконтрольно отлавливали. В результате вид эволюционирует в сторону меньшего числа листьев.
@@ -70,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2970
+    - Ранг разведения: 2970
 
 
 

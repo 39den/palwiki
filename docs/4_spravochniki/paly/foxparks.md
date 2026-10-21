@@ -1,13 +1,13 @@
 # Фокспаркс
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Kitsunebi-512.webp" srcset="../../../pp/art/Kitsunebi-384.webp 384w, ../../../pp/art/Kitsunebi-512.webp 512w, ../../../pp/art/Kitsunebi-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фокспаркс" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/29_Kitsunebi.webp">
-<div class="pal-info" data-pal="Kitsunebi"><div class="pal-no">№ 29 · Foxparks</div>
+<img class="pal-card pal-art" src="../../../pp/art/Kitsunebi-512.webp" srcset="../../../pp/art/Kitsunebi-384.webp 384w, ../../../pp/art/Kitsunebi-512.webp 512w, ../../../pp/art/Kitsunebi-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фокспаркс" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Kitsunebi"><div class="pal-no"><span class="nochip">№ 29</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 1">🔥 Разжигание огня <b>1</b></span></div>
-<div class="partner"><b>Пламенные объятия</b> 🔘 кнопкой</div>
+<div class="partner"><b>Пламенные объятия</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 65 · ⚔️ 75 · 🛡 70</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=1"><span>🔥 Разжигание огня</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Пламенные объятия
@@ -25,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорошая атака (75)
     - ❌ слабая атака (75); мало здоровья (65)
 
     > Недавно родившиеся Палы ещё не умеют обращаться с огнём. Они извергают пламя по малейшему поводу и начинают закашливаться. Их чихание нередко становится причиной лесных пожаров.
@@ -70,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2990
+    - Ранг разведения: 2990
     - Участвует в особых парах: Фоксайкл → Фокспаркс Крист
 
 

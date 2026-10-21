@@ -1,13 +1,13 @@
 # Брончерри Аква
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/SakuraSaurus_Water-512.webp" srcset="../../../pp/art/SakuraSaurus_Water-384.webp 384w, ../../../pp/art/SakuraSaurus_Water-512.webp 512w, ../../../pp/art/SakuraSaurus_Water-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Брончерри Аква" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/108B_SakuraSaurus_Water.webp">
-<div class="pal-info" data-pal="SakuraSaurus_Water"><div class="pal-no">№ 108B · Broncherry Aqua</div>
+<img class="pal-card pal-art" src="../../../pp/art/SakuraSaurus_Water-512.webp" srcset="../../../pp/art/SakuraSaurus_Water-384.webp 384w, ../../../pp/art/SakuraSaurus_Water-512.webp 512w, ../../../pp/art/SakuraSaurus_Water-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Брончерри Аква" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="SakuraSaurus_Water"><div class="pal-no"><span class="nochip">№ 108B</span></div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Молния: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 5">💧 Полив <b>5</b></span></div>
-<div class="partner"><b>Цветущий дракон чистоты</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Цветущий дракон чистоты</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 120 · ⚔️ 95 · 🛡 100</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 5
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=5"><span>💧 Полив</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Цветущий дракон чистоты
@@ -71,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1080
+    - Ранг разведения: 1080
     - **Особая пара:** [Брончерри](../../4_spravochniki/paly/broncherry.md) + [Камоноске](../../4_spravochniki/paly/fuack.md)
 
 

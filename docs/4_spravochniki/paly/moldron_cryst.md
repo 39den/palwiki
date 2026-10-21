@@ -1,13 +1,13 @@
 # Молдрон Крист
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/VolcanoDragon_Ice-p-512.webp" srcset="../../../pp/art/VolcanoDragon_Ice-p-384.webp 384w, ../../../pp/art/VolcanoDragon_Ice-p-512.webp 512w, ../../../pp/art/VolcanoDragon_Ice-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Молдрон Крист" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/105B_VolcanoDragon_Ice.webp">
-<div class="pal-info" data-pal="VolcanoDragon_Ice"><div class="pal-no">№ 105B · Moldron Cryst</div>
+<img class="pal-card pal-art" src="../../../pp/art/VolcanoDragon_Ice-512.webp" srcset="../../../pp/art/VolcanoDragon_Ice-384.webp 384w, ../../../pp/art/VolcanoDragon_Ice-512.webp 512w, ../../../pp/art/VolcanoDragon_Ice-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Молдрон Крист" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="VolcanoDragon_Ice"><div class="pal-no"><span class="nochip">№ 105B</span></div>
 <div class="chips"><span class="el el-ice">Лёд</span><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1,5 × 1 = ×1,5; Трава: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span><span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span><span class="work" title="Охлаждение 5">❄️ Охлаждение <b>5</b></span></div>
-<div class="partner"><b>Владыка льда</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Владыка льда</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 110 · ⚔️ 125 · 🛡 120</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Добыча — ур. 5
-    - Охлаждение — ур. 5
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=5"><span>⛏️ Добыча</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=cooling&lv=5"><span>❄️ Охлаждение</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Владыка льда
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 380
+    - Ранг разведения: 380
     - **Особая пара:** [Молдрон](../../4_spravochniki/paly/moldron.md) + [Рептиро Крист](../../4_spravochniki/paly/reptyro_cryst.md)
 
 

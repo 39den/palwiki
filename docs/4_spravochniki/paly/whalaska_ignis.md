@@ -1,13 +1,13 @@
 # Валаска Игнис
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/IceNarwhal_Fire-p-512.webp" srcset="../../../pp/art/IceNarwhal_Fire-p-384.webp 384w, ../../../pp/art/IceNarwhal_Fire-p-512.webp 512w, ../../../pp/art/IceNarwhal_Fire-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Валаска Игнис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/151B_IceNarwhal_Fire.webp">
-<div class="pal-info" data-pal="IceNarwhal_Fire"><div class="pal-no">№ 151B · Whalaska Ignis</div>
+<img class="pal-card pal-art" src="../../../pp/art/IceNarwhal_Fire-512.webp" srcset="../../../pp/art/IceNarwhal_Fire-384.webp 384w, ../../../pp/art/IceNarwhal_Fire-512.webp 512w, ../../../pp/art/IceNarwhal_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Валаска Игнис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="IceNarwhal_Fire"><div class="pal-no"><span class="nochip">№ 151B</span></div>
 <div class="chips"><span class="el el-ice">Лёд</span><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1,5 × 1 = ×1,5; Вода: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span><span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span><span class="work" title="Охлаждение 6">❄️ Охлаждение <b>6</b></span></div>
-<div class="partner"><b>Тёплый китоход</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Тёплый китоход</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 105 · ⚔️ 120 · 🛡 110</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 5
-    - Охлаждение — ур. 6
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=5"><span>🔥 Разжигание огня</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=cooling&lv=6"><span>❄️ Охлаждение</span><i style="--v:60%"></i><b>6</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Тёплый китоход
@@ -73,7 +73,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 370
+    - Ранг разведения: 370
     - **Особая пара:** [Валаска](../../4_spravochniki/paly/whalaska.md) + [Чиллет Игнис](../../4_spravochniki/paly/chillet_ignis.md)
 
 

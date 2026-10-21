@@ -1,13 +1,13 @@
 # Блейзхаул
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Manticore-512.webp" srcset="../../../pp/art/Manticore-384.webp 384w, ../../../pp/art/Manticore-512.webp 512w, ../../../pp/art/Manticore-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Блейзхаул" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/112_Manticore.webp">
-<div class="pal-info" data-pal="Manticore"><div class="pal-no">№ 112 · Blazehowl</div>
+<img class="pal-card pal-art" src="../../../pp/art/Manticore-512.webp" srcset="../../../pp/art/Manticore-384.webp 384w, ../../../pp/art/Manticore-512.webp 512w, ../../../pp/art/Manticore-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Блейзхаул" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Manticore"><div class="pal-no"><span class="nochip">№ 112</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>
-<div class="partner"><b>Лев Преисподней</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Лев Преисподней</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 105 · ⚔️ 110 · 🛡 80</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 5
-    - Рубка деревьев — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=5"><span>🔥 Разжигание огня</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=3"><span>🪓 Рубка деревьев</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Лев Преисподней
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1360
+    - Ранг разведения: 1360
     - Участвует в особых парах: Фелбэт → Блейзхаул Нокт; Йормунтайд → Йормунтайд Игнис
 
 

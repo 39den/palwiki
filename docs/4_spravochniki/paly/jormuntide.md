@@ -1,13 +1,13 @@
 # Йормунтайд
 
 <div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Umihebi-512.webp" srcset="../../../pp/art/Umihebi-384.webp 384w, ../../../pp/art/Umihebi-512.webp 512w, ../../../pp/art/Umihebi-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Йормунтайд" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/121_Umihebi.webp">
-<div class="pal-info" data-pal="Umihebi"><div class="pal-no">№ 121 · Jormuntide</div>
+<img class="pal-card pal-art" src="../../../pp/art/Umihebi-512.webp" srcset="../../../pp/art/Umihebi-384.webp 384w, ../../../pp/art/Umihebi-512.webp 512w, ../../../pp/art/Umihebi-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Йормунтайд" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Umihebi"><div class="pal-no"><span class="nochip">№ 121</span></div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Молния: 1 × 1,5 = ×1,5; Лёд: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span><span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 7">💧 Полив <b>7</b></span></div>
-<div class="partner"><b>Морской дракон, зовущий бурю</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Морской дракон, зовущий бурю</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 130 · ⚔️ 120 · 🛡 100</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 7
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=7"><span>💧 Полив</span><i style="--v:70%"></i><b>7</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Морской дракон, зовущий бурю
@@ -28,7 +29,7 @@
     - ✅ Сильный водный урон; полив 7; очень высокая атака (120); много здоровья (130); отличный рабочий (пригодность 7); можно оседлать
     - ❌ Медленный на суше; много ест (550)
 
-    > Ходит легенда о мудреце, несправедливо сброшенном в водоворот. Возродившись в облике Йормунтайд , он обрушил гибель на целую страну.
+    > Ходит легенда о мудреце, несправедливо сброшенном в водоворот. Возродившись в облике Йормунтайд, он обрушил гибель на целую страну.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -70,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 590
+    - Ранг разведения: 590
     - Участвует в особых парах: Блейзхаул → Йормунтайд Игнис; Судзаку → Судзаку Аква; Фалерис → Фалерис Аква
 
 

@@ -1,13 +1,13 @@
 # Тетроис
 
 <div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/CubeTurtle-p-512.webp" srcset="../../../pp/art/CubeTurtle-p-384.webp 384w, ../../../pp/art/CubeTurtle-p-512.webp 512w, ../../../pp/art/CubeTurtle-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Тетроис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/142_CubeTurtle.webp">
-<div class="pal-info" data-pal="CubeTurtle"><div class="pal-no">№ 142 · Tetroise</div>
+<img class="pal-card pal-art" src="../../../pp/art/CubeTurtle-512.webp" srcset="../../../pp/art/CubeTurtle-384.webp 384w, ../../../pp/art/CubeTurtle-512.webp 512w, ../../../pp/art/CubeTurtle-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Тетроис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="CubeTurtle"><div class="pal-no"><span class="nochip">№ 142</span></div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span></div>
-<div class="partner"><b>Камнепад - Древняя черепаха</b> 🐎 верхом 🏠 на базе</div>
+<div class="partner"><b>Камнепад - Древняя черепаха</b> <span class="actc">🐎 Верхом</span><span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 95 · ⚔️ 100 · 🛡 135</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Добыча — ур. 4
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=4"><span>⛏️ Добыча</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Камнепад - Древняя черепаха
@@ -70,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 790
+    - Ранг разведения: 790
     - Участвует в особых парах: Селесдир → Тетроис Примо
 
 

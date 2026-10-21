@@ -1,13 +1,13 @@
 # Лупмун Крист
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/Werewolf_Ice-p-512.webp" srcset="../../../pp/art/Werewolf_Ice-p-384.webp 384w, ../../../pp/art/Werewolf_Ice-p-512.webp 512w, ../../../pp/art/Werewolf_Ice-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Лупмун Крист" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/56B_Werewolf_Ice.webp">
-<div class="pal-info" data-pal="Werewolf_Ice"><div class="pal-no">№ 56B · Loupmoon Cryst</div>
+<img class="pal-card pal-art" src="../../../pp/art/Werewolf_Ice-512.webp" srcset="../../../pp/art/Werewolf_Ice-384.webp 384w, ../../../pp/art/Werewolf_Ice-512.webp 512w, ../../../pp/art/Werewolf_Ice-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Лупмун Крист" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Werewolf_Ice"><div class="pal-no"><span class="nochip">№ 56B</span></div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Охлаждение 4">❄️ Охлаждение <b>4</b></span></div>
-<div class="partner"><b>Острые когти льда</b> 🎒 из команды 🐾 выпущен 🔘 кнопкой</div>
+<div class="partner"><b>Острые когти льда</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐾 Когда пал выпущен</span><span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 80 · ⚔️ 105 · 🛡 80</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Ручная работа — ур. 4
-    - Охлаждение — ур. 4
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=4"><span>✋ Ручная работа</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=cooling&lv=4"><span>❄️ Охлаждение</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Острые когти льда
@@ -29,7 +29,7 @@
     - ✅ хорошая атака (105)
     - ❌ разводится только особой парой
 
-    > Ледяные рога на его голове никогда не тают. Говорят, что колотый лёд из отколовшихся рогов — настоящий деликатес, но потом болит голова и у того, кто его съел, и у самого Лупмун Крист .
+    > Ледяные рога на его голове никогда не тают. Говорят, что колотый лёд из отколовшихся рогов — настоящий деликатес, но потом болит голова и у того, кто его съел, и у самого Лупмун Крист.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -70,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1290
+    - Ранг разведения: 1290
     - **Особая пара:** [Лупмун](../../4_spravochniki/paly/loupmoon.md) + [Свипа](../../4_spravochniki/paly/sweepa.md)
 
 

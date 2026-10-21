@@ -1,6 +1,6 @@
 # Рывок в воздухе +1
 
-<div class="psv-hero" markdown="0"><span class="psv r-1 big">Рывок в воздухе +1</span> <span class="rk">Ранг 1 · обычная</span><div class="en">Aerial Dash +1</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-1 big">Рывок в воздухе +1</span> <span class="rk">Ранг 1 · обычная <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Рывок в воздухе +1
 

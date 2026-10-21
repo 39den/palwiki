@@ -1,13 +1,13 @@
 # Мелпака
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Alpaca-512.webp" srcset="../../../pp/art/Alpaca-384.webp 384w, ../../../pp/art/Alpaca-512.webp 512w, ../../../pp/art/Alpaca-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Мелпака" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/20_Alpaca.webp">
-<div class="pal-info" data-pal="Alpaca"><div class="pal-no">№ 20 · Melpaca</div>
+<img class="pal-card pal-art" src="../../../pp/art/Alpaca-512.webp" srcset="../../../pp/art/Alpaca-384.webp 384w, ../../../pp/art/Alpaca-512.webp 512w, ../../../pp/art/Alpaca-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Мелпака" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Alpaca"><div class="pal-no"><span class="nochip">№ 20</span></div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 
 <div class="works"><span class="work" title="Фермерство 2">🐑 Фермерство <b>2</b></span></div>
-<div class="partner"><b>Шерсть пака-пака</b> 🎒 из команды 🐎 верхом 🏠 на базе</div>
+<div class="partner"><b>Шерсть пака-пака</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span><span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 90 · ⚔️ 75 · 🛡 90</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Фермерство — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=farming&lv=2"><span>🐄 Фермерство</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Шерсть пака-пака
@@ -70,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2720
+    - Ранг разведения: 2720
 
 
 

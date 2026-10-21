@@ -1,13 +1,13 @@
 # Бастигор
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/SnowTigerBeastman-p-512.webp" srcset="../../../pp/art/SnowTigerBeastman-p-384.webp 384w, ../../../pp/art/SnowTigerBeastman-p-512.webp 512w, ../../../pp/art/SnowTigerBeastman-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Бастигор" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/191_SnowTigerBeastman.webp">
-<div class="pal-info" data-pal="SnowTigerBeastman"><div class="pal-no">№ 191 · Bastigor</div>
+<img class="pal-card pal-art" src="../../../pp/art/SnowTigerBeastman-512.webp" srcset="../../../pp/art/SnowTigerBeastman-384.webp 384w, ../../../pp/art/SnowTigerBeastman-512.webp 512w, ../../../pp/art/SnowTigerBeastman-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Бастигор" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="SnowTigerBeastman"><div class="pal-no"><span class="nochip">№ 191</span></div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Рубка деревьев 6">🪓 Рубка деревьев <b>6</b></span><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span><span class="work" title="Охлаждение 8">❄️ Охлаждение <b>8</b></span></div>
-<div class="partner"><b>Сокрушительная буря</b> 🐎 верхом</div>
+<div class="partner"><b>Сокрушительная буря</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 140 · ⚔️ 130 · 🛡 120</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Рубка деревьев — ур. 6
-    - Добыча — ур. 5
-    - Охлаждение — ур. 8
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=6"><span>🪓 Рубка деревьев</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=5"><span>⛏️ Добыча</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=cooling&lv=8"><span>❄️ Охлаждение</span><i style="--v:80%"></i><b>8</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Сокрушительная буря
@@ -73,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 50
+    - Ранг разведения: 50
     - **Особая пара:** [Бастигор](../../4_spravochniki/paly/bastigor.md) + [Бастигор](../../4_spravochniki/paly/bastigor.md)
     - Участвует в особых парах: Бастигор → Бастигор; Бастигор → Бастигор
 

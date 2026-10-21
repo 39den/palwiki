@@ -1,13 +1,13 @@
 # Харталис
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/LegendDeer-p-512.webp" srcset="../../../pp/art/LegendDeer-p-384.webp 384w, ../../../pp/art/LegendDeer-p-512.webp 512w, ../../../pp/art/LegendDeer-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Харталис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/197_LegendDeer.webp">
-<div class="pal-info" data-pal="LegendDeer"><div class="pal-no">№ 197 · Hartalis</div>
+<img class="pal-card pal-art" src="../../../pp/art/LegendDeer-512.webp" srcset="../../../pp/art/LegendDeer-384.webp 384w, ../../../pp/art/LegendDeer-512.webp 512w, ../../../pp/art/LegendDeer-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Харталис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="LegendDeer"><div class="pal-no"><span class="nochip">№ 197</span></div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 
 <div class="works"><span class="work" title="Сбор 7">🌾 Сбор <b>7</b></span><span class="work" title="Рубка деревьев 7">🪓 Рубка деревьев <b>7</b></span></div>
-<div class="partner"><b>Священный барьер</b> 🐎 верхом</div>
+<div class="partner"><b>Священный барьер</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 135 · ⚔️ 130 · 🛡 110</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 7
-    - Рубка деревьев — ур. 7
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=7"><span>🧺 Сбор</span><i style="--v:70%"></i><b>7</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=7"><span>🪓 Рубка деревьев</span><i style="--v:70%"></i><b>7</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Священный барьер
@@ -73,7 +73,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 90
+    - Ранг разведения: 90
     - **Особая пара:** [Харталис](../../4_spravochniki/paly/hartalis.md) + [Харталис](../../4_spravochniki/paly/hartalis.md)
     - Участвует в особых парах: Харталис → Харталис; Харталис → Харталис
 

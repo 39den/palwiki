@@ -1,13 +1,13 @@
 # Айдролон
 
 <div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/GhostDragon-p-512.webp" srcset="../../../pp/art/GhostDragon-p-384.webp 384w, ../../../pp/art/GhostDragon-p-512.webp 512w, ../../../pp/art/GhostDragon-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Айдролон" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/171_GhostDragon.webp">
-<div class="pal-info" data-pal="GhostDragon"><div class="pal-no">№ 171 · Eidrolon</div>
+<img class="pal-card pal-art" src="../../../pp/art/GhostDragon-512.webp" srcset="../../../pp/art/GhostDragon-384.webp 384w, ../../../pp/art/GhostDragon-512.webp 512w, ../../../pp/art/GhostDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Айдролон" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="GhostDragon"><div class="pal-no"><span class="nochip">№ 171</span></div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-ice">Лёд <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-ice">Лёд <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Лёд: 1,5 × 1 = ×1,5; Дракон: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Транспортировка 6">📦 Транспортировка <b>6</b></span></div>
-<div class="partner"><b>Свободный крылатый дракон</b> 🐎 верхом</div>
+<div class="partner"><b>Свободный крылатый дракон</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 115 · ⚔️ 125 · 🛡 120</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Транспортировка — ур. 6
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=6"><span>📦 Транспортировка</span><i style="--v:60%"></i><b>6</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Свободный крылатый дракон
@@ -70,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 300
+    - Ранг разведения: 300
     - Участвует в особых парах: Судзаку → Айдролон Игнис
 
 

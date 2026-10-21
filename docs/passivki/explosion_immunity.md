@@ -1,6 +1,6 @@
 # Иммунитет к урону от взрывов
 
-<div class="psv-hero" markdown="0"><span class="psv r-1 big">Иммунитет к урону от взрывов</span> <span class="rk">Ранг 1 · обычная</span><div class="en">Explosion Immunity</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-1 big">Иммунитет к урону от взрывов</span> <span class="rk">Ранг 1 · обычная <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Обезвреживает взрывные споры +1%; Обезвреживает взрывные споры +1%; Защита от взрывов +100%; Защита от взрывов +100%
 

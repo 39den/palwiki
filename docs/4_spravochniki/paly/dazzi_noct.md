@@ -1,13 +1,13 @@
 # Даззи Нокт
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/RaijinDaughter_Water-p-512.webp" srcset="../../../pp/art/RaijinDaughter_Water-p-384.webp 384w, ../../../pp/art/RaijinDaughter_Water-p-512.webp 512w, ../../../pp/art/RaijinDaughter_Water-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Даззи Нокт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/92B_RaijinDaughter_Water.webp">
-<div class="pal-info" data-pal="RaijinDaughter_Water"><div class="pal-no">№ 92B · Dazzi Noct</div>
+<img class="pal-card pal-art" src="../../../pp/art/RaijinDaughter_Water-512.webp" srcset="../../../pp/art/RaijinDaughter_Water-384.webp 384w, ../../../pp/art/RaijinDaughter_Water-512.webp 512w, ../../../pp/art/RaijinDaughter_Water-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Даззи Нокт" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="RaijinDaughter_Water"><div class="pal-no"><span class="nochip">№ 92B</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-electric">Молния</span></div>
-<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Земля: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-water">Вода <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Генерация энергии 1">⚡ Генерация энергии <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Фармацевтика 1">💊 Фармацевтика <b>1</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Дочь тёмного грома</b> 🎒 из команды</div>
+<div class="partner"><b>Дочь тёмного грома</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 70 · ⚔️ 80 · 🛡 75</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Генерация энергии — ур. 1
-    - Ручная работа — ур. 1
-    - Фармацевтика — ур. 1
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=electricity&lv=1"><span>⚡ Генерация энергии</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=1"><span>✋ Ручная работа</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=1"><span>💊 Фармацевтика</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Дочь тёмного грома
@@ -28,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорошая атака (80)
     - ❌ разводится только особой парой
 
     > Проявляет доброту к одиноким Палам, выжидая удобный момент, чтобы ударить молнией. Таков был замысел. Но подходящий случай всё не представлялся — и в итоге они просто становились друзьями.
@@ -74,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1910
+    - Ранг разведения: 1910
     - **Особая пара:** [Даззи](../../4_spravochniki/paly/dazzi.md) + [Омаскул](../../4_spravochniki/paly/omascul.md)
 
 

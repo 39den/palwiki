@@ -1,13 +1,13 @@
 # Чиллет
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/WeaselDragon-512.webp" srcset="../../../pp/art/WeaselDragon-384.webp 384w, ../../../pp/art/WeaselDragon-512.webp 512w, ../../../pp/art/WeaselDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Чиллет" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/103_WeaselDragon.webp">
-<div class="pal-info" data-pal="WeaselDragon"><div class="pal-no">№ 103 · Chillet</div>
+<img class="pal-card pal-art" src="../../../pp/art/WeaselDragon-512.webp" srcset="../../../pp/art/WeaselDragon-384.webp 384w, ../../../pp/art/WeaselDragon-512.webp 512w, ../../../pp/art/WeaselDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Чиллет" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="WeaselDragon"><div class="pal-no"><span class="nochip">№ 103</span></div>
 <div class="chips"><span class="el el-ice">Лёд</span><span class="el el-dragon">Дракон</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1,5 × 1 = ×1,5; Лёд: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-dark">Тьма <b class="mx">×0,65</b></span><span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Охлаждение 2">❄️ Охлаждение <b>2</b></span></div>
-<div class="partner"><b>Верткая ласка</b> 🐎 верхом</div>
+<div class="partner"><b>Верткая ласка</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 90 · ⚔️ 80 · 🛡 80</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 1
-    - Охлаждение — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=1"><span>🧺 Сбор</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=cooling&lv=2"><span>❄️ Охлаждение</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Верткая ласка
@@ -29,7 +29,7 @@
     - ✅ можно оседлать
     - ❌ явных минусов нет
 
-    > Сворачивается в клубок и мчится с бешеной скоростью. В древности люди приручали Чиллет , привязывали к нему мешок с молоком и отпускали пастись. Пока тот катался, внутри сбивалось масло.
+    > Сворачивается в клубок и мчится с бешеной скоростью. В древности люди приручали Чиллет, привязывали к нему мешок с молоком и отпускали пастись. Пока тот катался, внутри сбивалось масло.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -73,7 +73,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2330
+    - Ранг разведения: 2330
     - Участвует в особых парах: Арсокс → Чиллет Игнис
 
 

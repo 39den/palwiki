@@ -1,0 +1,740 @@
+{
+ "FlyingManta_Thunder": [
+  "Celaray_Lux.png",
+  491,
+  279,
+  "https://static.wikia.nocookie.net/palworld/images/9/96/Celaray_Lux.png/revision/latest?cb=20250626105029"
+ ],
+ "KendoFrog_Dark": [
+  "Croajiro_Noct.png",
+  260,
+  225,
+  "https://static.wikia.nocookie.net/palworld/images/f/fb/Croajiro_Noct.png/revision/latest?cb=20250626220124"
+ ],
+ "LeafMomonga": [
+  "Herbil.png",
+  339,
+  360,
+  "https://static.wikia.nocookie.net/palworld/images/9/9d/Herbil.png/revision/latest?cb=20260405151937"
+ ],
+ "SamuraiDog": [
+  "Pupperai.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/3/38/Pupperai.png/revision/latest?cb=20260718020255"
+ ],
+ "CloverFairy": [
+  "Clovee.png",
+  246,
+  213,
+  "https://static.wikia.nocookie.net/palworld/images/a/a4/Clovee.png/revision/latest?cb=20260717053726"
+ ],
+ "Penguin_Electric": [
+  "Pengullet_Lux.png",
+  190,
+  239,
+  "https://static.wikia.nocookie.net/palworld/images/b/b4/Pengullet_Lux.png/revision/latest?cb=20250626191737"
+ ],
+ "CaptainPenguin_Black": [
+  "Penking_Lux.png",
+  386,
+  444,
+  "https://static.wikia.nocookie.net/palworld/images/3/32/Penking_Lux.png/revision/latest?cb=20250626215853"
+ ],
+ "Monkey_Fire": [
+  "Tanzee_Ignis.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/d/dc/Tanzee_Ignis.png/revision/latest?cb=20260718020511"
+ ],
+ "Kitsunebi_Ice": [
+  "Foxparks_Cryst.png",
+  186,
+  270,
+  "https://static.wikia.nocookie.net/palworld/images/1/14/Foxparks_Cryst.png/revision/latest?cb=20241223151236"
+ ],
+ "NegativeOctopus_Neutral": [
+  "Killamari_Primo.png",
+  231,
+  281,
+  "https://static.wikia.nocookie.net/palworld/images/4/40/Killamari_Primo.png/revision/latest?cb=20250626192639"
+ ],
+ "BerryGoat_Dark": [
+  "Caprity_Noct.png",
+  515,
+  501,
+  "https://static.wikia.nocookie.net/palworld/images/d/d3/Caprity_Noct.png/revision/latest?cb=20241224125458"
+ ],
+ "TentacleTurtle": [
+  "Turtacle.png",
+  334,
+  360,
+  "https://static.wikia.nocookie.net/palworld/images/c/c2/Turtacle.png/revision/latest?cb=20260405153715"
+ ],
+ "TentacleTurtle_Ground": [
+  "Turtacle_Terra.png",
+  329,
+  336,
+  "https://static.wikia.nocookie.net/palworld/images/b/bf/Turtacle_Terra.png/revision/latest?cb=20250625215805"
+ ],
+ "SweetsSheep_Ground": [
+  "Woolipop_Terra.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/7/71/Woolipop_Terra.png/revision/latest?cb=20260718020612"
+ ],
+ "BlueDragon_Ice": [
+  "Azurobe_Cryst.png",
+  569,
+  475,
+  "https://static.wikia.nocookie.net/palworld/images/3/30/Azurobe_Cryst.png/revision/latest?cb=20250628162856"
+ ],
+ "PinkRabbit_Grass": [
+  "Ribbuny_Botan.png",
+  249,
+  309,
+  "https://static.wikia.nocookie.net/palworld/images/8/85/Ribbuny_Botan.png/revision/latest?cb=20241224130232"
+ ],
+ "JellyfishFairy": [
+  "Jelliette.png",
+  304,
+  360,
+  "https://static.wikia.nocookie.net/palworld/images/7/75/Jelliette.png/revision/latest?cb=20260405154932"
+ ],
+ "JellyfishGhost": [
+  "Jellroy.png",
+  247,
+  282,
+  "https://static.wikia.nocookie.net/palworld/images/2/28/Jellroy.png/revision/latest?cb=20260405154455"
+ ],
+ "ClioneTwins": [
+  "Amione.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/3/38/Amione.png/revision/latest?cb=20260718015831"
+ ],
+ "OctopusGirl": [
+  "Gloopie.png",
+  270,
+  322,
+  "https://static.wikia.nocookie.net/palworld/images/3/37/Gloopie.png/revision/latest?cb=20260405160109"
+ ],
+ "OctopusGirl_Neutral": [
+  "Gloopie_Primo.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/c/c9/Gloopie_Primo.png/revision/latest?cb=20260718020028"
+ ],
+ "GhostBlackCat": [
+  "Wispaw.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/a/ad/Wispaw.png/revision/latest?cb=20260718020557"
+ ],
+ "Kirin_Ice": [
+  "Univolt_Cryst.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/d/dc/Univolt_Cryst.png/revision/latest?cb=20260718020537"
+ ],
+ "Werewolf_Ice": [
+  "Loupmoon_Cryst.png",
+  287,
+  446,
+  "https://static.wikia.nocookie.net/palworld/images/b/b7/Loupmoon_Cryst.png/revision/latest?cb=20241224130747"
+ ],
+ "FluffyBird": [
+  "Muffly.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/a/a3/Muffly.png/revision/latest?cb=20260718020141"
+ ],
+ "ElecPomeranian": [
+  "Puffolt.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/9/9a/Puffolt.png/revision/latest?cb=20260718020248"
+ ],
+ "PurpleSpider": [
+  "Tarantriss.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/b/b8/Tarantriss.png/revision/latest?cb=20250120152155"
+ ],
+ "IceSeal": [
+  "Polapup.png",
+  386,
+  325,
+  "https://static.wikia.nocookie.net/palworld/images/f/ff/Polapup.png/revision/latest?cb=20260405153203"
+ ],
+ "IceSeal_Ground": [
+  "Polapup_Terra.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/b/bc/Polapup_Terra.png/revision/latest?cb=20260718020235"
+ ],
+ "GrassMinotaur": [
+  "Elgrove.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/e/e3/Elgrove.png/revision/latest?cb=20260718020007"
+ ],
+ "GrassMinotaur_Ice": [
+  "Elgrove_Cryst.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/0/0d/Elgrove_Cryst.png/revision/latest?cb=20260718020000"
+ ],
+ "FengyunDeeper_Electric": [
+  "Fenglope_Lux.png",
+  287,
+  567,
+  "https://static.wikia.nocookie.net/palworld/images/d/df/Fenglope_Lux.png/revision/latest?cb=20250120162104"
+ ],
+ "IceCrocodile": [
+  "Munchill.png",
+  300,
+  306,
+  "https://static.wikia.nocookie.net/palworld/images/0/0b/Munchill.png/revision/latest?cb=20260731163154"
+ ],
+ "StuffedShark": [
+  "Finsider.png",
+  339,
+  360,
+  "https://static.wikia.nocookie.net/palworld/images/4/41/Finsider.png/revision/latest?cb=20260405161615"
+ ],
+ "StuffedShark_Fire": [
+  "Finsider_Ignis.png",
+  254,
+  250,
+  "https://static.wikia.nocookie.net/palworld/images/3/39/Finsider_Ignis.png/revision/latest?cb=20250629111115"
+ ],
+ "FlowerDoll_Fire": [
+  "Petallia_Ignis.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/1/12/Petallia_Ignis.png/revision/latest?cb=20260718020215"
+ ],
+ "PandaGirl": [
+  "Leafan.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/c/c0/Leafan.png/revision/latest?cb=20260718020105"
+ ],
+ "RaijinDaughter_Water": [
+  "Dazzi_Noct.png",
+  184,
+  321,
+  "https://static.wikia.nocookie.net/palworld/images/5/5f/Dazzi_Noct.png/revision/latest?cb=20241224132452"
+ ],
+ "ThunderBird_Ice": [
+  "Beakon_Cryst.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/2/25/Beakon_Cryst.png/revision/latest?cb=20260718015842"
+ ],
+ "GhostAnglerfish": [
+  "Ghangler.png",
+  464,
+  358,
+  "https://static.wikia.nocookie.net/palworld/images/e/e5/Ghangler.png/revision/latest?cb=20260405161813"
+ ],
+ "GhostAnglerfish_Fire": [
+  "Ghangler_Ignis.png",
+  417,
+  336,
+  "https://static.wikia.nocookie.net/palworld/images/2/2c/Ghangler_Ignis.png/revision/latest?cb=20250630115249"
+ ],
+ "ThunderDog_Ice": [
+  "Rayhound_Cryst.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/a/a2/Rayhound_Cryst.png/revision/latest?cb=20260718020302"
+ ],
+ "CactusDoll": [
+  "Needoll.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/7/7a/Needoll.png/revision/latest?cb=20260718020202"
+ ],
+ "CactusDoll_Dark": [
+  "Needoll_Noct.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/f/f6/Needoll_Noct.png/revision/latest?cb=20260718020155"
+ ],
+ "VolcanoDragon": [
+  "Moldron.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/9/98/Moldron.png/revision/latest?cb=20260718020134"
+ ],
+ "VolcanoDragon_Ice": [
+  "Moldron_Cryst.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/4/42/Moldron_Cryst.png/revision/latest?cb=20260718020128"
+ ],
+ "TropicalOstrich": [
+  "Palumba.png",
+  616,
+  626,
+  "https://static.wikia.nocookie.net/palworld/images/f/f4/Palumba.png/revision/latest?cb=20260405155738"
+ ],
+ "LazyCatfish_Gold": [
+  "Dumud_Gild.png",
+  366,
+  369,
+  "https://static.wikia.nocookie.net/palworld/images/b/b1/Dumud_Gild.png/revision/latest?cb=20250626005752"
+ ],
+ "Plesiosaur": [
+  "Braloha.png",
+  440,
+  630,
+  "https://static.wikia.nocookie.net/palworld/images/8/89/Braloha.png/revision/latest?cb=20260405151811"
+ ],
+ "AmaterasuWolf_Dark": [
+  "Kitsun_Noct.png",
+  562,
+  485,
+  "https://static.wikia.nocookie.net/palworld/images/f/f0/Kitsun_Noct.png/revision/latest?cb=20241224131350"
+ ],
+ "SnowPeafowl": [
+  "Frostplume.png",
+  455,
+  506,
+  "https://static.wikia.nocookie.net/palworld/images/e/e4/Frostplume.png/revision/latest?cb=20260405161129"
+ ],
+ "DarkFlameFox": [
+  "Majex.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/4/40/Majex.png/revision/latest?cb=20260718020120"
+ ],
+ "WhiteMoth_Neutral": [
+  "Sibelyx_Primo.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/7/73/Sibelyx_Primo.png/revision/latest?cb=20260718020335"
+ ],
+ "IceWitch": [
+  "Icelyn.png",
+  360,
+  478,
+  "https://static.wikia.nocookie.net/palworld/images/c/c0/Icelyn.png/revision/latest?cb=20260405160651"
+ ],
+ "MummyPal": [
+  "Gildra.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/a/ae/Gildra.png/revision/latest?cb=20260718020021"
+ ],
+ "SwordCutlassfish": [
+  "Skutlass.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/d/d4/Skutlass.png/revision/latest?cb=20260718020354"
+ ],
+ "SwordCutlassfish_Fire": [
+  "Skutlass_Ignis.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/e/e4/Skutlass_Ignis.png/revision/latest?cb=20260718020349"
+ ],
+ "NightBlueHorse": [
+  "Starryon.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/6/6b/Starryon.png/revision/latest?cb=20250120152914"
+ ],
+ "NightBlueHorse_Neutral": [
+  "Starryon_Primo.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/c/ce/Starryon_Primo.png/revision/latest?cb=20260718020503"
+ ],
+ "RockBeast": [
+  "Pierdon.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/f/f1/Pierdon.png/revision/latest?cb=20260718020228"
+ ],
+ "RockBeast_Ice": [
+  "Pierdon_Cryst.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/1/1b/Pierdon_Cryst.png/revision/latest?cb=20260718020221"
+ ],
+ "WhiteTiger_Ground": [
+  "Cryolinx_Terra.png",
+  636,
+  501,
+  "https://static.wikia.nocookie.net/palworld/images/0/0e/Cryolinx_Terra.png/revision/latest?cb=20250106141436"
+ ],
+ "SmallYeti": [
+  "Snugloo.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/b/b7/Snugloo.png/revision/latest?cb=20260718020428"
+ ],
+ "VenusFlytrap": [
+  "Carnibora.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/f/f3/Carnibora.png/revision/latest?cb=20260718015856"
+ ],
+ "GrassGolem": [
+  "Dualith.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/a/a1/Dualith.png/revision/latest?cb=20260718015924"
+ ],
+ "GrassGolem_Dark": [
+  "Dualith_Noct.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/f/fc/Dualith_Noct.png/revision/latest?cb=20260718015917"
+ ],
+ "Sekhmet": [
+  "Sekhmet.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/9/9a/Sekhmet.png/revision/latest?cb=20260718020321"
+ ],
+ "ScorpionMan_Electric": [
+  "Prixter_Lux.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/6/60/Prixter_Lux.png/revision/latest?cb=20260718020241"
+ ],
+ "CubeTurtle": [
+  "Tetroise.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/8/88/Tetroise.png/revision/latest?cb=20260718020523"
+ ],
+ "CubeTurtle_Neutral": [
+  "Tetroise_Primo.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/4/4a/Tetroise_Primo.png/revision/latest?cb=20260718020517"
+ ],
+ "BadCatgirl": [
+  "Nyafia.png",
+  254,
+  452,
+  "https://static.wikia.nocookie.net/palworld/images/d/d9/Nyafia.png/revision/latest?cb=20250622055612"
+ ],
+ "BlueberryFairy": [
+  "Prunelia.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/7/72/Prunelia.png/revision/latest?cb=20250120152110"
+ ],
+ "GhostRabbit": [
+  "Nitemary.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/5/55/Nitemary.png/revision/latest?cb=20250622055255"
+ ],
+ "GhostRabbit_Grass": [
+  "Nitemary_Botan.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/e/e7/Nitemary_Botan.png/revision/latest?cb=20260718020208"
+ ],
+ "BlackPuppy": [
+  "Smokie.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/1/1f/Smokie.png/revision/latest?cb=20250120160740"
+ ],
+ "BlackPuppy_Ice": [
+  "Smokie_Cryst.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/e/e6/Smokie_Cryst.png/revision/latest?cb=20260718020409"
+ ],
+ "MysteryMask": [
+  "Omascul.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/9/9f/Omascul.png/revision/latest?cb=20250120152558"
+ ],
+ "IceNarwhal": [
+  "Whalaska.png",
+  588,
+  497,
+  "https://static.wikia.nocookie.net/palworld/images/c/c1/Whalaska.png/revision/latest?cb=20260405152313"
+ ],
+ "IceNarwhal_Fire": [
+  "Whalaska_Ignis.png",
+  618,
+  500,
+  "https://static.wikia.nocookie.net/palworld/images/b/b9/Whalaska_Ignis.png/revision/latest?cb=20250627234236"
+ ],
+ "GrimGirl": [
+  "Splatterina.png",
+  768,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/c/c9/Splatterina.png/revision/latest?cb=20250120152351"
+ ],
+ "GoldenHorse": [
+  "Gildane.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/4/42/Gildane.png/revision/latest?cb=20250120152015"
+ ],
+ "SumoDog": [
+  "Bulldosu.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/3/3b/Bulldosu.png/revision/latest?cb=20260718015849"
+ ],
+ "WhiteDeer": [
+  "Celesdir.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/b/bc/Celesdir.png/revision/latest?cb=20250120152742"
+ ],
+ "WhiteDeer_Dark": [
+  "Celesdir_Noct.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/8/84/Celesdir_Noct.png/revision/latest?cb=20260718015903"
+ ],
+ "WingGolem_Fire": [
+  "Knocklem_Ignis.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/1/1a/Knocklem_Ignis.png/revision/latest?cb=20260718020041"
+ ],
+ "WhiteShieldDragon": [
+  "Silvegis.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/0/00/Silvegis.png/revision/latest?cb=20250120160959"
+ ],
+ "BlueThunderHorse": [
+  "Azurmane.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/6/68/Azurmane.png/revision/latest?cb=20250120152652"
+ ],
+ "LongCat": [
+  "Valentail.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/f/f5/Valentail.png/revision/latest?cb=20260718020543"
+ ],
+ "ElecSnail": [
+  "Snock.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/8/8a/Snock.png/revision/latest?cb=20260718020422"
+ ],
+ "ElecSnail_Ground": [
+  "Snock_Terra.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/3/35/Snock_Terra.png/revision/latest?cb=20260718020415"
+ ],
+ "DandelionGirl": [
+  "Souffline.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/9/93/Souffline.png/revision/latest?cb=20260718020456"
+ ],
+ "BrownRabbit": [
+  "Lapiron.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/c/ce/Lapiron.png/revision/latest?cb=20260718020052"
+ ],
+ "HoodGhost": [
+  "Hoodle.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/f/f6/Hoodle.png/revision/latest?cb=20260718020035"
+ ],
+ "ElecLizard": [
+  "Slowatt.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/c/ce/Slowatt.png/revision/latest?cb=20260718020402"
+ ],
+ "OniGhostGirl": [
+  "Bakemi.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/6/69/Bakemi.png/revision/latest?cb=20260718015835"
+ ],
+ "KingSunfish": [
+  "Solmora.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/e/e3/Solmora.png/revision/latest?cb=20260718020449"
+ ],
+ "KingSunfish_Thunder": [
+  "Solmora_Lux.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/b/bc/Solmora_Lux.png/revision/latest?cb=20260718020442"
+ ],
+ "SleeveRabbit": [
+  "Lapure.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/8/87/Lapure.png/revision/latest?cb=20260718020058"
+ ],
+ "GhostDragon": [
+  "Eidrolon.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/f/f0/Eidrolon.png/revision/latest?cb=20260718015952"
+ ],
+ "GhostDragon_Fire": [
+  "Eidrolon_Ignis.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/f/f9/Eidrolon_Ignis.png/revision/latest?cb=20260718015946"
+ ],
+ "ThunderFluffyBird": [
+  "Dynamoff.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/b/ba/Dynamoff.png/revision/latest?cb=20260718015939"
+ ],
+ "RedFlowerBird": [
+  "Tropicaw.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/c/c6/Tropicaw.png/revision/latest?cb=20260718020530"
+ ],
+ "FoxExorcist": [
+  "Flaracle.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/1/11/Flaracle.png/revision/latest?cb=20260718020014"
+ ],
+ "LotusDragon": [
+  "Ophydia.png",
+  526,
+  370,
+  "https://static.wikia.nocookie.net/palworld/images/1/15/Ophydia.png/revision/latest?cb=20260715120316"
+ ],
+ "ClownRabbit": [
+  "Dupin.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/7/79/Dupin.png/revision/latest?cb=20260718015932"
+ ],
+ "ThiefBird": [
+  "Roujay.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/7/72/Roujay.png/revision/latest?cb=20260718020315"
+ ],
+ "SnakeGirl": [
+  "Venusa.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/7/7b/Venusa.png/revision/latest?cb=20260718020550"
+ ],
+ "MushroomLady": [
+  "Mycora.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/9/9e/Mycora.png/revision/latest?cb=20260718020148"
+ ],
+ "LanternButler": [
+  "Loomen.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/9/9e/Loomen.png/revision/latest?cb=20260718020112"
+ ],
+ "MoonChild": [
+  "Wistella.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/b/bd/Wistella.png/revision/latest?cb=20260718020605"
+ ],
+ "MonochromeQueen": [
+  "Solenne.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/d/d2/Solenne.png/revision/latest?cb=20260718020435"
+ ],
+ "KabukiMan": [
+  "Renjishi.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/5/57/Renjishi.png/revision/latest?cb=20260718020307"
+ ],
+ "DomeArmorDragon": [
+  "Aegidron.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/b/b3/Aegidron.png/revision/latest?cb=20260718015822"
+ ],
+ "Horus_Water": [
+  "Faleris_Aqua.png",
+  624,
+  483,
+  "https://static.wikia.nocookie.net/palworld/images/2/22/Faleris_Aqua.png/revision/latest?cb=20241223151512"
+ ],
+ "SnowTigerBeastman": [
+  "Bastigor.png",
+  720,
+  1030,
+  "https://static.wikia.nocookie.net/palworld/images/4/4f/Bastigor.png/revision/latest?cb=20250120160858"
+ ],
+ "BlueSkyDragon": [
+  "Shaolong.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/6/68/Shaolong.png/revision/latest?cb=20260718020330"
+ ],
+ "Mothman": [
+  "Silvance.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/a/ac/Silvance.png/revision/latest?cb=20260718020342"
+ ],
+ "FlowerPrince": [
+  "Dandilord.png",
+  512,
+  512,
+  "https://static.wikia.nocookie.net/palworld/images/b/b1/Dandilord.png/revision/latest?cb=20260718015910"
+ ],
+ "DarkMechaDragon": [
+  "Xenolord.png",
+  505,
+  494,
+  "https://static.wikia.nocookie.net/palworld/images/9/90/Xenolord.png/revision/latest?cb=20241230184716"
+ ],
+ "LegendDeer": [
+  "Hartalis.png",
+  426,
+  592,
+  "https://static.wikia.nocookie.net/palworld/images/7/74/Hartalis.png/revision/latest?cb=20260405152515"
+ ],
+ "PoseidonOrca": [
+  "Neptilius.png",
+  350,
+  360,
+  "https://static.wikia.nocookie.net/palworld/images/f/fb/Neptilius.png/revision/latest?cb=20260405152548"
+ ],
+ "KingWhale": [
+  "Panthalus.png",
+  528,
+  403,
+  "https://static.wikia.nocookie.net/palworld/images/8/81/Panthalus.png/revision/latest?cb=20260712195605"
+ ],
+ "WorldTreeDragon": [
+  "Astralym.png",
+  539,
+  413,
+  "https://static.wikia.nocookie.net/palworld/images/7/78/Astralym.png/revision/latest?cb=20260713142241"
+ ]
+}

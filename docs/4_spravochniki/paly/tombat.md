@@ -1,13 +1,13 @@
 # Томбат
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/CatBat-512.webp" srcset="../../../pp/art/CatBat-384.webp 384w, ../../../pp/art/CatBat-512.webp 512w, ../../../pp/art/CatBat-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Томбат" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/52_CatBat.webp">
-<div class="pal-info" data-pal="CatBat"><div class="pal-no">№ 52 · Tombat</div>
+<img class="pal-card pal-art" src="../../../pp/art/CatBat-512.webp" srcset="../../../pp/art/CatBat-384.webp 384w, ../../../pp/art/CatBat-512.webp 512w, ../../../pp/art/CatBat-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Томбат" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="CatBat"><div class="pal-no"><span class="nochip">№ 52</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Чутьё Бакэнэко</b> 🔘 кнопкой</div>
+<div class="partner"><b>Чутьё Бакэнэко</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 95 · ⚔️ 95 · 🛡 80</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 2
-    - Добыча — ур. 3
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=2"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=3"><span>⛏️ Добыча</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Чутьё Бакэнэко
@@ -27,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорош в работе: Добыча (ур. 3)
     - ❌ явных минусов нет
 
     > Любит внезапно появиться перед другими Палами и красоваться, самодовольно распахнув свои крылья. Считается, что это один из способов устрашения, но при этом в выражении его лица сквозит восторг.
@@ -72,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2340
+    - Ранг разведения: 2340
 
 
 

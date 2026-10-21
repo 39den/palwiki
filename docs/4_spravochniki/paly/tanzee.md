@@ -1,13 +1,13 @@
 # Танзи
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Monkey-512.webp" srcset="../../../pp/art/Monkey-384.webp 384w, ../../../pp/art/Monkey-512.webp 512w, ../../../pp/art/Monkey-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Танзи" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/23_Monkey.webp">
-<div class="pal-info" data-pal="Monkey"><div class="pal-no">№ 23 · Tanzee</div>
+<img class="pal-card pal-art" src="../../../pp/art/Monkey-512.webp" srcset="../../../pp/art/Monkey-384.webp 384w, ../../../pp/art/Monkey-512.webp 512w, ../../../pp/art/Monkey-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Танзи" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Monkey"><div class="pal-no"><span class="nochip">№ 23</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 1">🌱 Посев семян <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Рубка деревьев 1">🪓 Рубка деревьев <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
-<div class="partner"><b>Веселая стрельба</b> 🔘 кнопкой</div>
+<div class="partner"><b>Веселая стрельба</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 80 · ⚔️ 70 · 🛡 70</div></div></div>
 
 
@@ -17,11 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 1
-    - Ручная работа — ур. 1
-    - Сбор — ур. 1
-    - Рубка деревьев — ур. 1
-    - Транспортировка — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=1"><span>🌱 Посев семян</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=1"><span>✋ Ручная работа</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=1"><span>🧺 Сбор</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=1"><span>🪓 Рубка деревьев</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=1"><span>📦 Транспортировка</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Веселая стрельба
@@ -29,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ много здоровья (80)
     - ❌ слабая атака (70)
 
     > Некогда этот Пал использовал в бою продолговатые предметы — вроде веток деревьев. Но, начав общаться с людьми, он нашёл нечто поэффективнее — огнестрельное оружие.
@@ -73,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2900
+    - Ранг разведения: 2900
     - Участвует в особых парах: Фламбелль → Танзи Игнис
 
 

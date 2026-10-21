@@ -1,13 +1,13 @@
 # Катресс Игнис
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/CatMage_Fire-512.webp" srcset="../../../pp/art/CatMage_Fire-384.webp 384w, ../../../pp/art/CatMage_Fire-512.webp 512w, ../../../pp/art/CatMage_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Катресс Игнис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/79B_CatMage_Fire.webp">
-<div class="pal-info" data-pal="CatMage_Fire"><div class="pal-no">№ 79B · Katress Ignis</div>
+<img class="pal-card pal-art" src="../../../pp/art/CatMage_Fire-512.webp" srcset="../../../pp/art/CatMage_Fire-384.webp 384w, ../../../pp/art/CatMage_Fire-512.webp 512w, ../../../pp/art/CatMage_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Катресс Игнис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="CatMage_Fire"><div class="pal-no"><span class="nochip">№ 79B</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Вода: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Фармацевтика 3">💊 Фармацевтика <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Пылкое тёмное искусство</b> 🏠 на базе</div>
+<div class="partner"><b>Пылкое тёмное искусство</b> <span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 95 · ⚔️ 105 · 🛡 90</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 3
-    - Ручная работа — ур. 3
-    - Фармацевтика — ур. 3
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=3"><span>🔥 Разжигание огня</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=3"><span>✋ Ручная работа</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=3"><span>💊 Фармацевтика</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Пылкое тёмное искусство
@@ -31,7 +29,7 @@
     - ✅ хорошая атака (105)
     - ❌ разводится только особой парой
 
-    > Благодаря воспитанию родителей он перестал обращать внимание на такие мелочи, как сырая еда или нет. Предпочитает острую пищу. Плохо ладит с Виксен Нокт .
+    > Благодаря воспитанию родителей он перестал обращать внимание на такие мелочи, как сырая еда или нет. Предпочитает острую пищу. Плохо ладит с палом «Виксен Нокт».
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -75,7 +73,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1800
+    - Ранг разведения: 1800
     - **Особая пара:** [Катресс](../../4_spravochniki/paly/katress.md) + [Виксен](../../4_spravochniki/paly/wixen.md)
 
 

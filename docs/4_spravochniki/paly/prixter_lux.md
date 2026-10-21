@@ -1,13 +1,13 @@
 # Скорпио Лакс
 
 <div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/ScorpionMan_Electric-p-512.webp" srcset="../../../pp/art/ScorpionMan_Electric-p-384.webp 384w, ../../../pp/art/ScorpionMan_Electric-p-512.webp 512w, ../../../pp/art/ScorpionMan_Electric-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Скорпио Лакс" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/141B_ScorpionMan_Electric.webp">
-<div class="pal-info" data-pal="ScorpionMan_Electric"><div class="pal-no">№ 141B · Prixter Lux</div>
+<img class="pal-card pal-art" src="../../../pp/art/ScorpionMan_Electric-512.webp" srcset="../../../pp/art/ScorpionMan_Electric-384.webp 384w, ../../../pp/art/ScorpionMan_Electric-512.webp 512w, ../../../pp/art/ScorpionMan_Electric-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Скорпио Лакс" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="ScorpionMan_Electric"><div class="pal-no"><span class="nochip">№ 141B</span></div>
 <div class="chips"><span class="el el-electric">Молния</span><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span><span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span><span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Трава: 1 × 1,5 = ×1,5; Земля: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-water">Вода <b class="mx">×0,65</b></span><span class="el el-electric">Молния <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Генерация энергии 3">⚡ Генерация энергии <b>3</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span><span class="work" title="Фармацевтика 2">💊 Фармацевтика <b>2</b></span></div>
-<div class="partner"><b>Низкочастотный скорпион</b> 🔘 кнопкой</div>
+<div class="partner"><b>Низкочастотный скорпион</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 90 · ⚔️ 115 · 🛡 90</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Генерация энергии — ур. 3
-    - Сбор — ур. 2
-    - Рубка деревьев — ур. 4
-    - Фармацевтика — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=electricity&lv=3"><span>⚡ Генерация энергии</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=2"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=4"><span>🪓 Рубка деревьев</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=2"><span>💊 Фармацевтика</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Низкочастотный скорпион
@@ -72,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 850
+    - Ранг разведения: 850
     - **Особая пара:** [Скорпио](../../4_spravochniki/paly/prixter.md) + [Хэлзефир Лакс](../../4_spravochniki/paly/helzephyr_lux.md)
 
 

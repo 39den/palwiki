@@ -1,13 +1,13 @@
 # Фэски
 
 <div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/SkyDragon-512.webp" srcset="../../../pp/art/SkyDragon-384.webp 384w, ../../../pp/art/SkyDragon-512.webp 512w, ../../../pp/art/SkyDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фэски" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/124_SkyDragon.webp">
-<div class="pal-info" data-pal="SkyDragon"><div class="pal-no">№ 124 · Quivern</div>
+<img class="pal-card pal-art" src="../../../pp/art/SkyDragon-512.webp" srcset="../../../pp/art/SkyDragon-384.webp 384w, ../../../pp/art/SkyDragon-512.webp 512w, ../../../pp/art/SkyDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фэски" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="SkyDragon"><div class="pal-no"><span class="nochip">№ 124</span></div>
 <div class="chips"><span class="el el-dragon">Дракон</span></div>
-<div class="weak">Слабость: <span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>
-<div class="partner"><b>Милосердие небесного дракона</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Милосердие небесного дракона</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 105 · ⚔️ 100 · 🛡 100</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Ручная работа — ур. 2
-    - Сбор — ур. 3
-    - Добыча — ур. 4
-    - Транспортировка — ур. 5
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=2"><span>✋ Ручная работа</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=3"><span>🧺 Сбор</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=4"><span>⛏️ Добыча</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=5"><span>📦 Транспортировка</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Милосердие небесного дракона
@@ -31,7 +29,7 @@
     - ✅ Летающий маунт, бафф драконов; хорошая атака (100); отличный рабочий (пригодность 5); можно оседлать; летает (ездовой)
     - ❌ Средний урон
 
-    > Засыпать в обнимку с Фэски — райское наслаждение. Но если он ворочается во сне, то может вас раздавить, и вы отправитесь в рай в прямом смысле.
+    > Засыпать в обнимку с палом «Фэски» — райское наслаждение. Но если он ворочается во сне, то может вас раздавить, и вы отправитесь в рай в прямом смысле.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -72,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1210
+    - Ранг разведения: 1210
     - Участвует в особых парах: Нежноцвет → Фэски Ботан
 
 

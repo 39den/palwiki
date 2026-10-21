@@ -1,13 +1,13 @@
 # Сибеликс
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/WhiteMoth-512.webp" srcset="../../../pp/art/WhiteMoth-384.webp 384w, ../../../pp/art/WhiteMoth-512.webp 512w, ../../../pp/art/WhiteMoth-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Сибеликс" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/116_WhiteMoth.webp">
-<div class="pal-info" data-pal="WhiteMoth"><div class="pal-no">№ 116 · Sibelyx</div>
+<img class="pal-card pal-art" src="../../../pp/art/WhiteMoth-512.webp" srcset="../../../pp/art/WhiteMoth-384.webp 384w, ../../../pp/art/WhiteMoth-512.webp 512w, ../../../pp/art/WhiteMoth-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Сибеликс" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="WhiteMoth"><div class="pal-no"><span class="nochip">№ 116</span></div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Фармацевтика 3">💊 Фармацевтика <b>3</b></span><span class="work" title="Охлаждение 3">❄️ Охлаждение <b>3</b></span><span class="work" title="Фермерство 3">🐑 Фермерство <b>3</b></span></div>
-<div class="partner"><b>Мистический шёлковый покров</b> 🐾 выпущен 🔘 кнопкой 🏠 на базе</div>
+<div class="partner"><b>Мистический шёлковый покров</b> <span class="actc">🐾 Когда пал выпущен</span><span class="actc">🔘 Включается кнопкой</span><span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 110 · ⚔️ 90 · 🛡 100</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Фармацевтика — ур. 3
-    - Охлаждение — ур. 3
-    - Фермерство — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=3"><span>💊 Фармацевтика</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=cooling&lv=3"><span>❄️ Охлаждение</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=farming&lv=3"><span>🐄 Фермерство</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Мистический шёлковый покров
@@ -27,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорош в работе: Фармацевтика (ур. 3)
     - ❌ явных минусов нет
 
     > Любит дождь и часто просто стоит, не шевелясь, пока он не прекращается. Фокспаркс часто прибегает к нему, чтобы укрыться от дождя.
@@ -72,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1810
+    - Ранг разведения: 1810
     - Участвует в особых парах: Немофи → Сибеликс Примо
 
 

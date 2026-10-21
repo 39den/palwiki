@@ -1,13 +1,13 @@
 # Молдрон
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/VolcanoDragon-p-512.webp" srcset="../../../pp/art/VolcanoDragon-p-384.webp 384w, ../../../pp/art/VolcanoDragon-p-512.webp 512w, ../../../pp/art/VolcanoDragon-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Молдрон" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/105_VolcanoDragon.webp">
-<div class="pal-info" data-pal="VolcanoDragon"><div class="pal-no">№ 105 · Moldron</div>
+<img class="pal-card pal-art" src="../../../pp/art/VolcanoDragon-512.webp" srcset="../../../pp/art/VolcanoDragon-384.webp 384w, ../../../pp/art/VolcanoDragon-512.webp 512w, ../../../pp/art/VolcanoDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Молдрон" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="VolcanoDragon"><div class="pal-no"><span class="nochip">№ 105</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Вода: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span><span class="work" title="Добыча 5">⛏️ Добыча <b>5</b></span></div>
-<div class="partner"><b>Владыка магмы</b> 🐾 выпущен 🐎 верхом</div>
+<div class="partner"><b>Владыка магмы</b> <span class="actc">🐾 Когда пал выпущен</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 110 · ⚔️ 125 · 🛡 115</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 5
-    - Добыча — ур. 5
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=5"><span>🔥 Разжигание огня</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=5"><span>⛏️ Добыча</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Владыка магмы
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 750
+    - Ранг разведения: 750
     - Участвует в особых парах: Рептиро Крист → Молдрон Крист
 
 

@@ -1,13 +1,13 @@
 # Лилин
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/LilyQueen-512.webp" srcset="../../../pp/art/LilyQueen-384.webp 384w, ../../../pp/art/LilyQueen-512.webp 512w, ../../../pp/art/LilyQueen-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Лилин" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/186_LilyQueen.webp">
-<div class="pal-info" data-pal="LilyQueen"><div class="pal-no">№ 186 · Lyleen</div>
+<img class="pal-card pal-art" src="../../../pp/art/LilyQueen-512.webp" srcset="../../../pp/art/LilyQueen-384.webp 384w, ../../../pp/art/LilyQueen-512.webp 512w, ../../../pp/art/LilyQueen-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Лилин" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="LilyQueen"><div class="pal-no"><span class="nochip">№ 186</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 7">🌱 Посев семян <b>7</b></span><span class="work" title="Ручная работа 5">🖐️ Ручная работа <b>5</b></span><span class="work" title="Сбор 6">🌾 Сбор <b>6</b></span><span class="work" title="Фармацевтика 5">💊 Фармацевтика <b>5</b></span></div>
-<div class="partner"><b>Богиня урожая</b> 🔘 кнопкой</div>
+<div class="partner"><b>Богиня урожая</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 120 · ⚔️ 120 · 🛡 110</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 7
-    - Ручная работа — ур. 5
-    - Сбор — ур. 6
-    - Фармацевтика — ур. 5
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=7"><span>🌱 Посев семян</span><i style="--v:70%"></i><b>7</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=5"><span>✋ Ручная работа</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=6"><span>🧺 Сбор</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=5"><span>💊 Фармацевтика</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Богиня урожая
@@ -75,7 +73,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 240
+    - Ранг разведения: 240
     - **Особая пара:** [Лилин](../../4_spravochniki/paly/lyleen.md) + [Лилин](../../4_spravochniki/paly/lyleen.md)
     - Участвует в особых парах: Лилин → Лилин; Лилин → Лилин; Менастинг → Лилин Нокт
 

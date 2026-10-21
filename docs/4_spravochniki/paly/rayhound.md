@@ -1,13 +1,13 @@
 # Райхаунд
 
 <div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/ThunderDog-512.webp" srcset="../../../pp/art/ThunderDog-384.webp 384w, ../../../pp/art/ThunderDog-512.webp 512w, ../../../pp/art/ThunderDog-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Райхаунд" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/98_ThunderDog.webp">
-<div class="pal-info" data-pal="ThunderDog"><div class="pal-no">№ 98 · Rayhound</div>
+<img class="pal-card pal-art" src="../../../pp/art/ThunderDog-512.webp" srcset="../../../pp/art/ThunderDog-384.webp 384w, ../../../pp/art/ThunderDog-512.webp 512w, ../../../pp/art/ThunderDog-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Райхаунд" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="ThunderDog"><div class="pal-no"><span class="nochip">№ 98</span></div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
-<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-water">Вода <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Генерация энергии 4">⚡ Генерация энергии <b>4</b></span></div>
-<div class="partner"><b>Грозовой пёс</b> 🐾 выпущен 🐎 верхом</div>
+<div class="partner"><b>Грозовой пёс</b> <span class="actc">🐾 Когда пал выпущен</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 90 · ⚔️ 100 · 🛡 80</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Генерация энергии — ур. 4
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=electricity&lv=4"><span>⚡ Генерация энергии</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Грозовой пёс
@@ -72,7 +73,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1920
+    - Ранг разведения: 1920
     - Участвует в особых парах: Пенкинг → Пенкинг Лакс; Диноссум → Диноссум Лакс; Фоксайкл → Райхаунд Крист
 
 

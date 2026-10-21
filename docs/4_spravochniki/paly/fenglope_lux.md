@@ -1,13 +1,13 @@
 # Фенглоп Лакс
 
 <div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/FengyunDeeper_Electric-p-512.webp" srcset="../../../pp/art/FengyunDeeper_Electric-p-384.webp 384w, ../../../pp/art/FengyunDeeper_Electric-p-512.webp 512w, ../../../pp/art/FengyunDeeper_Electric-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фенглоп Лакс" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/83B_FengyunDeeper_Electric.webp">
-<div class="pal-info" data-pal="FengyunDeeper_Electric"><div class="pal-no">№ 83B · Fenglope Lux</div>
+<img class="pal-card pal-art" src="../../../pp/art/FengyunDeeper_Electric-512.webp" srcset="../../../pp/art/FengyunDeeper_Electric-384.webp 384w, ../../../pp/art/FengyunDeeper_Electric-512.webp 512w, ../../../pp/art/FengyunDeeper_Electric-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фенглоп Лакс" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="FengyunDeeper_Electric"><div class="pal-no"><span class="nochip">№ 83B</span></div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
-<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-water">Вода <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Генерация энергии 5">⚡ Генерация энергии <b>5</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span></div>
-<div class="partner"><b>Грозовое облако</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Грозовое облако</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 110 · ⚔️ 115 · 🛡 90</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Генерация энергии — ур. 5
-    - Рубка деревьев — ур. 4
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=electricity&lv=5"><span>⚡ Генерация энергии</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=4"><span>🪓 Рубка деревьев</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Грозовое облако
@@ -72,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 900
+    - Ранг разведения: 900
     - **Особая пара:** [Фенглоп](../../4_spravochniki/paly/fenglope.md) + [Азурмейн](../../4_spravochniki/paly/azurmane.md)
 
 

@@ -1,13 +1,13 @@
 # Шэдоубик
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/BlackGriffon-512.webp" srcset="../../../pp/art/BlackGriffon-384.webp 384w, ../../../pp/art/BlackGriffon-512.webp 512w, ../../../pp/art/BlackGriffon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Шэдоубик" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/189_BlackGriffon.webp">
-<div class="pal-info" data-pal="BlackGriffon"><div class="pal-no">№ 189 · Shadowbeak</div>
+<img class="pal-card pal-art" src="../../../pp/art/BlackGriffon-512.webp" srcset="../../../pp/art/BlackGriffon-384.webp 384w, ../../../pp/art/BlackGriffon-512.webp 512w, ../../../pp/art/BlackGriffon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Шэдоубик" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="BlackGriffon"><div class="pal-no"><span class="nochip">№ 189</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span></div>
-<div class="partner"><b>Модифицированные гены</b> 🐎 верхом</div>
+<div class="partner"><b>Модифицированные гены</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 120 · ⚔️ 120 · 🛡 140</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=2"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Модифицированные гены
@@ -73,7 +74,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 550
+    - Ранг разведения: 550
     - **Особая пара:** [Шэдоубик](../../4_spravochniki/paly/shadowbeak.md) + [Шэдоубик](../../4_spravochniki/paly/shadowbeak.md)
     - Участвует в особых парах: Шэдоубик → Шэдоубик; Шэдоубик → Шэдоубик
 

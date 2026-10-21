@@ -1,13 +1,13 @@
 # Вумпо Ботан
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Yeti_Grass-512.webp" srcset="../../../pp/art/Yeti_Grass-384.webp 384w, ../../../pp/art/Yeti_Grass-512.webp 512w, ../../../pp/art/Yeti_Grass-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Вумпо Ботан" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/134B_Yeti_Grass.webp">
-<div class="pal-info" data-pal="Yeti_Grass"><div class="pal-no">№ 134B · Wumpo Botan</div>
+<img class="pal-card pal-art" src="../../../pp/art/Yeti_Grass-512.webp" srcset="../../../pp/art/Yeti_Grass-384.webp 384w, ../../../pp/art/Yeti_Grass-512.webp 512w, ../../../pp/art/Yeti_Grass-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Вумпо Ботан" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Yeti_Grass"><div class="pal-no"><span class="nochip">№ 134B</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Рубка деревьев 5">🪓 Рубка деревьев <b>5</b></span><span class="work" title="Транспортировка 6">📦 Транспортировка <b>6</b></span></div>
-<div class="partner"><b>Южный гигант</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Южный гигант</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 140 · ⚔️ 80 · 🛡 110</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 3
-    - Ручная работа — ур. 3
-    - Рубка деревьев — ур. 5
-    - Транспортировка — ур. 6
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=3"><span>🌱 Посев семян</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=3"><span>✋ Ручная работа</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=5"><span>🪓 Рубка деревьев</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=6"><span>📦 Транспортировка</span><i style="--v:60%"></i><b>6</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Южный гигант
@@ -75,7 +73,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 610
+    - Ранг разведения: 610
 
 
 

@@ -1,6 +1,6 @@
 # Аномальный
 
-<div class="psv-hero" markdown="0"><span class="psv r-1 big">Аномальный</span> <span class="rk">Ранг 1 · обычная</span><div class="en">Abnormal</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-1 big">Аномальный</span> <span class="rk">Ранг 1 · обычная <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Снижение нейтрального урона на 10%
 

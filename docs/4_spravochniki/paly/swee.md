@@ -1,13 +1,13 @@
 # Сви
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/MopBaby-512.webp" srcset="../../../pp/art/MopBaby-384.webp 384w, ../../../pp/art/MopBaby-512.webp 512w, ../../../pp/art/MopBaby-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Сви" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/35_MopBaby.webp">
-<div class="pal-info" data-pal="MopBaby"><div class="pal-no">№ 35 · Swee</div>
+<img class="pal-card pal-art" src="../../../pp/art/MopBaby-512.webp" srcset="../../../pp/art/MopBaby-384.webp 384w, ../../../pp/art/MopBaby-512.webp 512w, ../../../pp/art/MopBaby-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Сви" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="MopBaby"><div class="pal-no"><span class="nochip">№ 35</span></div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Охлаждение 1">❄️ Охлаждение <b>1</b></span></div>
-<div class="partner"><b>Мофу-мофу-мофу</b> 🎒 из команды</div>
+<div class="partner"><b>Мофу-мофу-мофу</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 60 · ⚔️ 60 · 🛡 60</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 1
-    - Охлаждение — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=1"><span>🧺 Сбор</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=cooling&lv=1"><span>❄️ Охлаждение</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Мофу-мофу-мофу
@@ -26,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорошая атака (60)
     - ❌ слабая атака (60); мало здоровья (60)
 
     > Ползает по земле, поедая мельчайшие органические остатки. Всё неперевариваемое со временем выводится наружу. Если использовать его как швабру — выгодно всем.
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2840
+    - Ранг разведения: 2840
     - Участвует в особых парах: Хангю → Хангю Крист
 
 

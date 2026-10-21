@@ -31,7 +31,7 @@ cc/ru/Breed или Pal Calc.
 
 ## Торты
 
-<div class="kvs" markdown="0"><div class="kv"><span class="kv-l">Торт (Cake)</span><span class="kv-v">Обычное яйцо</span></div><div class="kv"><span class="kv-l">Овощной торт</span><span class="kv-v">Два яйца сразу (по описанию в игре)</span></div><div class="kv"><span class="kv-l">Роскошный овощной торт</span><span class="kv-v">Выше шанс мутации и лучше статы</span></div><div class="kv"><span class="kv-l">Специальный торт (ур. 74)</span><span class="kv-v">Выше шанс унаследовать много пассивок, до 6 передаётся</span></div></div>
+<div class="kvs" markdown="0"><div class="kv"><span class="kv-l">Торт</span><span class="kv-v">Обычное яйцо</span></div><div class="kv"><span class="kv-l">Овощной торт</span><span class="kv-v">Два яйца сразу (по описанию в игре)</span></div><div class="kv"><span class="kv-l">Роскошный овощной торт</span><span class="kv-v">Выше шанс мутации и лучше статы</span></div><div class="kv"><span class="kv-l">Специальный торт (ур. 74)</span><span class="kv-v">Выше шанс унаследовать много пассивок, до 6 передаётся</span></div></div>
 
 Рецепты — «Предметы → Ингредиент/Расходник».
 

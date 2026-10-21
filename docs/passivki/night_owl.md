@@ -1,6 +1,6 @@
 # Полуночник
 
-<div class="psv-hero" markdown="0"><span class="psv r-neg big">Полуночник</span> <span class="rk">Ранг -1 · плохая</span><div class="en">Night Owl</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-neg big">Полуночник</span> <span class="rk">Ранг -1 · плохая <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Из-за того, что поздно ложится спать, часто дремлет днём.
 

@@ -1,13 +1,13 @@
 # Глаз Ктулху
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Eye_of_Cthulhu-512.webp" srcset="../../../pp/art/Eye_of_Cthulhu-384.webp 384w, ../../../pp/art/Eye_of_Cthulhu-512.webp 512w, ../../../pp/art/Eye_of_Cthulhu-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Глаз Ктулху" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/T5_Eye_of_Cthulhu.webp">
-<div class="pal-info" data-pal="Eye_of_Cthulhu"><div class="pal-no">№ T5 · Eye of Cthulhu</div>
+<img class="pal-card pal-art" src="../../../pp/art/Eye_of_Cthulhu-512.webp" srcset="../../../pp/art/Eye_of_Cthulhu-384.webp 384w, ../../../pp/art/Eye_of_Cthulhu-512.webp 512w, ../../../pp/art/Eye_of_Cthulhu-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Глаз Ктулху" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Eye_of_Cthulhu"><div class="pal-no"><span class="nochip">№ T5</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>
-<div class="partner"><b>Рывок глаза Ктулху</b> 🔘 кнопкой</div>
+<div class="partner"><b>Рывок глаза Ктулху</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 110 · ⚔️ 105 · 🛡 95</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Транспортировка — ур. 4
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=4"><span>📦 Транспортировка</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Рывок глаза Ктулху
@@ -59,7 +60,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 3100
+    - Ранг разведения: 3100
 
 
 

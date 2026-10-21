@@ -1,13 +1,13 @@
 # Мараит
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/GhostBeast-512.webp" srcset="../../../pp/art/GhostBeast-384.webp 384w, ../../../pp/art/GhostBeast-512.webp 512w, ../../../pp/art/GhostBeast-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Мараит" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/117_GhostBeast.webp">
-<div class="pal-info" data-pal="GhostBeast"><div class="pal-no">№ 117 · Maraith</div>
+<img class="pal-card pal-art" src="../../../pp/art/GhostBeast-512.webp" srcset="../../../pp/art/GhostBeast-384.webp 384w, ../../../pp/art/GhostBeast-512.webp 512w, ../../../pp/art/GhostBeast-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Мараит" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="GhostBeast"><div class="pal-no"><span class="nochip">№ 117</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span></div>
-<div class="partner"><b>Посланник загробного мира</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Посланник загробного мира</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 75 · ⚔️ 105 · 🛡 80</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 4
-    - Добыча — ур. 4
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=4"><span>🧺 Сбор</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=4"><span>⛏️ Добыча</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Посланник загробного мира
@@ -73,7 +73,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1710
+    - Ранг разведения: 1710
     - Участвует в особых парах: Инсинерам → Инсинерам Нокт
 
 

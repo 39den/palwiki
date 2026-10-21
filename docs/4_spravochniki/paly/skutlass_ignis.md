@@ -1,13 +1,13 @@
 # Скатласс Игнис
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/SwordCutlassfish_Fire-p-512.webp" srcset="../../../pp/art/SwordCutlassfish_Fire-p-384.webp 384w, ../../../pp/art/SwordCutlassfish_Fire-p-512.webp 512w, ../../../pp/art/SwordCutlassfish_Fire-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Скатласс Игнис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/128B_SwordCutlassfish_Fire.webp">
-<div class="pal-info" data-pal="SwordCutlassfish_Fire"><div class="pal-no">№ 128B · Skutlass Ignis</div>
+<img class="pal-card pal-art" src="../../../pp/art/SwordCutlassfish_Fire-512.webp" srcset="../../../pp/art/SwordCutlassfish_Fire-384.webp 384w, ../../../pp/art/SwordCutlassfish_Fire-512.webp 512w, ../../../pp/art/SwordCutlassfish_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Скатласс Игнис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="SwordCutlassfish_Fire"><div class="pal-no"><span class="nochip">№ 128B</span></div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Вода: 1 × 1,5 = ×1,5; Молния: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span><span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>
-<div class="partner"><b>Жечь плоть, разрубать кости</b> 🔘 кнопкой</div>
+<div class="partner"><b>Жечь плоть, разрубать кости</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 70 · ⚔️ 105 · 🛡 80</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 3
-    - Полив — ур. 2
-    - Сбор — ур. 2
-    - Рубка деревьев — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=3"><span>🔥 Разжигание огня</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=2"><span>💧 Полив</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=2"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=3"><span>🪓 Рубка деревьев</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Жечь плоть, разрубать кости
@@ -73,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1590
+    - Ранг разведения: 1590
     - **Особая пара:** [Скатласс](../../4_spravochniki/paly/skutlass.md) + [Гобфин Игнис](../../4_spravochniki/paly/gobfin_ignis.md)
 
 

@@ -1,13 +1,13 @@
 # Амиона
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/ClioneTwins-p-512.webp" srcset="../../../pp/art/ClioneTwins-p-384.webp 384w, ../../../pp/art/ClioneTwins-p-512.webp 512w, ../../../pp/art/ClioneTwins-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Амиона" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/47_ClioneTwins.webp">
-<div class="pal-info" data-pal="ClioneTwins"><div class="pal-no">№ 47 · Amione</div>
+<img class="pal-card pal-art" src="../../../pp/art/ClioneTwins-512.webp" srcset="../../../pp/art/ClioneTwins-384.webp 384w, ../../../pp/art/ClioneTwins-512.webp 512w, ../../../pp/art/ClioneTwins-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Амиона" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="ClioneTwins"><div class="pal-no"><span class="nochip">№ 47</span></div>
 <div class="chips"><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
-<div class="partner"><b>Магическая двойная сила</b> 🏠 на базе</div>
+<div class="partner"><b>Магическая двойная сила</b> <span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 65 · ⚔️ 70 · 🛡 65</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 1
-    - Ручная работа — ур. 2
-    - Транспортировка — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=1"><span>💧 Полив</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=2"><span>✋ Ручная работа</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=1"><span>📦 Транспортировка</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Магическая двойная сила
@@ -27,10 +26,10 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорошая атака (70)
     - ❌ слабая атака (70); мало здоровья (65)
 
-    > Если одна половина исчезает, откуда ни возьмись появляется замена. И снова живут дружно, словно ничего не случилось. Для Амиона главное — жить в согласии.
+    > Если одна половина исчезает, откуда ни возьмись появляется замена. И снова живут дружно, словно ничего не случилось. Для пала «Амиона» главное — жить в согласии.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -71,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2520
+    - Ранг разведения: 2520
 
 
 

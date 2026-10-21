@@ -1,13 +1,13 @@
 # Солмора Лакс
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/KingSunfish_Thunder-p-512.webp" srcset="../../../pp/art/KingSunfish_Thunder-p-384.webp 384w, ../../../pp/art/KingSunfish_Thunder-p-512.webp 512w, ../../../pp/art/KingSunfish_Thunder-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Солмора Лакс" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/169B_KingSunfish_Thunder.webp">
-<div class="pal-info" data-pal="KingSunfish_Thunder"><div class="pal-no">№ 169B · Solmora Lux</div>
+<img class="pal-card pal-art" src="../../../pp/art/KingSunfish_Thunder-512.webp" srcset="../../../pp/art/KingSunfish_Thunder-384.webp 384w, ../../../pp/art/KingSunfish_Thunder-512.webp 512w, ../../../pp/art/KingSunfish_Thunder-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Солмора Лакс" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="KingSunfish_Thunder"><div class="pal-no"><span class="nochip">№ 169B</span></div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-electric">Молния</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Молния: 1,5 × 1 = ×1,5; Земля: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span><span class="el el-water">Вода <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 4">💧 Полив <b>4</b></span><span class="work" title="Генерация энергии 6">⚡ Генерация энергии <b>6</b></span></div>
-<div class="partner"><b>Плазменная рыбка</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Плазменная рыбка</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 90 · ⚔️ 95 · 🛡 85</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 4
-    - Генерация энергии — ур. 6
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=4"><span>💧 Полив</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=electricity&lv=6"><span>⚡ Генерация энергии</span><i style="--v:60%"></i><b>6</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Плазменная рыбка
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1000
+    - Ранг разведения: 1000
     - **Особая пара:** [Солмора](../../4_spravochniki/paly/solmora.md) + [Слоуватт](../../4_spravochniki/paly/slowatt.md)
 
 

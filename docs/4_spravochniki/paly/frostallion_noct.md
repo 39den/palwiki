@@ -1,13 +1,13 @@
 # Фросталлион Нокт
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/IceHorse_Dark-512.webp" srcset="../../../pp/art/IceHorse_Dark-384.webp 384w, ../../../pp/art/IceHorse_Dark-512.webp 512w, ../../../pp/art/IceHorse_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фросталлион Нокт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/200B_IceHorse_Dark.webp">
-<div class="pal-info" data-pal="IceHorse_Dark"><div class="pal-no">№ 200B · Frostallion Noct</div>
+<img class="pal-card pal-art" src="../../../pp/art/IceHorse_Dark-512.webp" srcset="../../../pp/art/IceHorse_Dark-384.webp 384w, ../../../pp/art/IceHorse_Dark-512.webp 512w, ../../../pp/art/IceHorse_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фросталлион Нокт" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="IceHorse_Dark"><div class="pal-no"><span class="nochip">№ 200B</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 7">🌾 Сбор <b>7</b></span></div>
-<div class="partner"><b>Тёмный Пегас</b> 🐎 верхом</div>
+<div class="partner"><b>Тёмный Пегас</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 140 · ⚔️ 140 · 🛡 135</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 7
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=7"><span>🧺 Сбор</span><i style="--v:70%"></i><b>7</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Тёмный Пегас
@@ -73,7 +74,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 110
+    - Ранг разведения: 110
     - **Особая пара:** [Фросталлион](../../4_spravochniki/paly/frostallion.md) + [Хэлзефир](../../4_spravochniki/paly/helzephyr.md)
 
 

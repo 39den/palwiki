@@ -1,6 +1,6 @@
 # Увеличение добычи и вырубки
 
-<div class="psv-hero" markdown="0"><span class="psv r-3 big">Увеличение добычи и вырубки</span> <span class="rk">Ранг 3 · редкая</span><div class="en">Logging/Mining Yield Up</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-3 big">Увеличение добычи и вырубки</span> <span class="rk">Ранг 3 · редкая <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Значительно увеличивает добычу древесины, камня и руды
 

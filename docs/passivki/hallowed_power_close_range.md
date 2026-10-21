@@ -1,6 +1,6 @@
 # Священная сила: ближний бой
 
-<div class="psv-hero" markdown="0"><span class="psv r-neg big">Священная сила: ближний бой</span> <span class="rk">Ранг -1 · плохая</span><div class="en">Hallowed Power: Close Range</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-neg big">Священная сила: ближний бой</span> <span class="rk">Ранг -1 · плохая <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Урон с оружием ближнего боя Якусимы +20%
 

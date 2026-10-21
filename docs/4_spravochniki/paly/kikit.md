@@ -1,13 +1,13 @@
 # Бронебол
 
 <div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/SmallArmadillo-512.webp" srcset="../../../pp/art/SmallArmadillo-384.webp 384w, ../../../pp/art/SmallArmadillo-512.webp 512w, ../../../pp/art/SmallArmadillo-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Бронебол" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/126_SmallArmadillo.webp">
-<div class="pal-info" data-pal="SmallArmadillo"><div class="pal-no">№ 126 · Kikit</div>
+<img class="pal-card pal-art" src="../../../pp/art/SmallArmadillo-512.webp" srcset="../../../pp/art/SmallArmadillo-384.webp 384w, ../../../pp/art/SmallArmadillo-512.webp 512w, ../../../pp/art/SmallArmadillo-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Бронебол" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="SmallArmadillo"><div class="pal-no"><span class="nochip">№ 126</span></div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Добыча 1">⛏️ Добыча <b>1</b></span></div>
-<div class="partner"><b>Пляжный катящийся мяч</b> 🎒 из команды</div>
+<div class="partner"><b>Пляжный катящийся мяч</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 75 · ⚔️ 70 · 🛡 90</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Добыча — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=1"><span>⛏️ Добыча</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Пляжный катящийся мяч
@@ -25,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ крепкая защита (90)
     - ❌ слабая атака (70)
 
     > Когда-то был популярен футбол, где Бронебол выступал в роли мяча. Эта мода быстро сошла на нет благодаря усилиям Организации по защите Палов, но сами Палы были отнюдь не против — ведь так они легко избавлялись от ороговевшей кожи.
@@ -71,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2310
+    - Ранг разведения: 2310
     - Участвует в особых парах: Вулипоп → Вулипоп Терра; Горират → Горират Терра
 
 

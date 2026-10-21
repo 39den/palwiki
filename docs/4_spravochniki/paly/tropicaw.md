@@ -1,13 +1,13 @@
 # Тропикау
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/RedFlowerBird-p-512.webp" srcset="../../../pp/art/RedFlowerBird-p-384.webp 384w, ../../../pp/art/RedFlowerBird-p-512.webp 512w, ../../../pp/art/RedFlowerBird-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Тропикау" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/173_RedFlowerBird.webp">
-<div class="pal-info" data-pal="RedFlowerBird"><div class="pal-no">№ 173 · Tropicaw</div>
+<img class="pal-card pal-art" src="../../../pp/art/RedFlowerBird-512.webp" srcset="../../../pp/art/RedFlowerBird-384.webp 384w, ../../../pp/art/RedFlowerBird-512.webp 512w, ../../../pp/art/RedFlowerBird-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Тропикау" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="RedFlowerBird"><div class="pal-no"><span class="nochip">№ 173</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 5">🌱 Посев семян <b>5</b></span><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span></div>
-<div class="partner"><b>Танец цветов</b> 🎒 из команды</div>
+<div class="partner"><b>Танец цветов</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 85 · ⚔️ 85 · 🛡 90</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 5
-    - Сбор — ур. 5
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=5"><span>🌱 Посев семян</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=5"><span>🧺 Сбор</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Танец цветов
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1350
+    - Ранг разведения: 1350
 
 
 

@@ -1,0 +1,1107 @@
+[
+ {
+  "en": "Refined Metal Axe",
+  "ru": "Топор из рафинированного металла",
+  "type": "Оружие"
+ },
+ {
+  "en": "Metal Pickaxe",
+  "ru": "Металлическая кирка",
+  "type": "Оружие"
+ },
+ {
+  "en": "Refined Metal Pickaxe",
+  "ru": "Кирка из рафинированного металла",
+  "type": "Оружие"
+ },
+ {
+  "en": "Pump-Action Shotgun",
+  "ru": "Помповый дробовик",
+  "type": "Оружие"
+ },
+ {
+  "en": "Direhowls Saddled Harness",
+  "ru": "Шлейка с седлом для Дайэхаула",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Jormuntide Ignis Saddle",
+  "ru": "Седло Йормунтайда Игнис",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Eikthyrdeer Terra Saddle",
+  "ru": "Седло Иктирдира Тэрра",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Jolthog Crysts Gloves",
+  "ru": "Перчатки Джолтхог Криста",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Dinossom Lux Saddle",
+  "ru": "Седло Диноссум Лакса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Mammorest Cryst Saddle",
+  "ru": "Седло Мамморест Криста",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Relaxaurus Luxs Missile Launcher",
+  "ru": "Ракетная установка Релаксаурус Лакса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Pyrin Noct Saddle",
+  "ru": "Седло Пирин Нокта",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Broncherry Aqua Saddle",
+  "ru": "Седло Брончерри Аква",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Elphidran Aqua Saddle",
+  "ru": "Седло Элфидран Аква",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Blazehowl Noct Saddle",
+  "ru": "Седло Блейзхаул Нокта",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Suzaku Aqua Saddle",
+  "ru": "Седло Судзаку Аква",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Surfent Terra Saddle",
+  "ru": "Седло Серфент Терра",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Reptyro Cryst Saddle",
+  "ru": "Седло Рептиро Крист",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Frostallion Noct Saddle",
+  "ru": "Седло Фросталлион Нокта",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Mossanda Luxs Grenade Launcher",
+  "ru": "Гранатомёт Моссанда Лакса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Wumpo Botan Saddle",
+  "ru": "Седло Вумпо Ботана",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Kingpaca Cryst Saddle",
+  "ru": "Седло Кингпака Крист",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Vanwyrm Cryst Saddle",
+  "ru": "Седло Ванвирм Криста",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Hangyu Crysts Glove",
+  "ru": "Перчатки Хангю Криста",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Jormuntide Saddle",
+  "ru": "Седло Йормунтайда",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Eikthyrdeer Saddle",
+  "ru": "Седло Иктирдира",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Jolthogs Gloves",
+  "ru": "Перчатки Джолтхога",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Foxparks Harness",
+  "ru": "Шлейка Фокспаркса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Rushoar Saddle",
+  "ru": "Седло Рашоа",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Tanzees Assault Rifle",
+  "ru": "Штурмовая винтовка Танзи",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Pengullet Rocket Launcher",
+  "ru": "Ракетомёт Пенгуллета",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Melpaca Saddle",
+  "ru": "Седло Мелпаки",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Dinossom Saddle",
+  "ru": "Седло Диноссума",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Mammorest Saddle",
+  "ru": "Седло Маммореста",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Univolt Saddle",
+  "ru": "Седло Юнивольта",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Relaxaurus Missile Launcher",
+  "ru": "Ракетная установка Релаксауруса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Pyrin Saddle",
+  "ru": "Седло Пирин",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Broncherry Saddle",
+  "ru": "Седло Брончерри",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Azurobe Saddle",
+  "ru": "Седло Азуроба",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Elphidran Saddle",
+  "ru": "Седло Элфидрана",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Fenglope Saddle",
+  "ru": "Седло Фенглопа",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Tocotocos Gloves",
+  "ru": "Перчатки Токотоко",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Galeclaws Gloves",
+  "ru": "Перчатки Эрмурга",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Killamaris Gloves",
+  "ru": "Перчатки Килламари",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Celarays Gloves",
+  "ru": "Перчатки Селарай",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Maraith Saddle",
+  "ru": "Седло Мараита",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Flopies Necklace",
+  "ru": "Ошейник Флопи",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Blazehowl Saddle",
+  "ru": "Седло Блейзхаула",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Suzaku Saddle",
+  "ru": "Седло Судзаку",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Surfent Saddle",
+  "ru": "Седло Серфента",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Dazzis Necklace",
+  "ru": "Ошейник Даззи",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Reptyro Saddle",
+  "ru": "Седло Рептиро",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Kitsun Saddle",
+  "ru": "Седло Кицун",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Frostallion Saddle",
+  "ru": "Седло Фросталлиона",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Faleris Saddle",
+  "ru": "Седло Фалериса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Blazamut Saddle",
+  "ru": "Седло Блазамута",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Reindrix Saddle",
+  "ru": "Седло Рейндрикса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Shadowbeak Saddle",
+  "ru": "Седло Шэдоубика",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Yakumo Saddle",
+  "ru": "Седло Якумо",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Quivern Saddle",
+  "ru": "Седло Фэски",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Rayhound Saddle",
+  "ru": "Седло Райхаунда",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Mossandas Grenade Launcher",
+  "ru": "Гранатомёт Моссанда",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Wumpo Saddle",
+  "ru": "Седло Вумпо",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Nitewing Saddle",
+  "ru": "Седло Найтвинга",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Jetragons Missile Launcher",
+  "ru": "Ракетная установка Джетрагона",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Helzephyr Saddle",
+  "ru": "Седло Хэлзефира",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Kingpaca Saddle",
+  "ru": "Седло Кингпака",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Paladius Saddle",
+  "ru": "Седло Паладиуса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Beakon Saddle",
+  "ru": "Седло Райберда",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Ragnahawk Saddle",
+  "ru": "Седло Рагнахавка",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Necromus Saddle",
+  "ru": "Седло Некромуса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Sweepa Saddle",
+  "ru": "Седло Свипы",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Gildane Saddle",
+  "ru": "Седло Гилдейна",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Nyafias Shotgun",
+  "ru": "Дробовик Няфия",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Grintale Saddle",
+  "ru": "Седло Гринтэйла",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Dazemu Saddle",
+  "ru": "Седло Дазему",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Vanwyrm Saddle",
+  "ru": "Седло Ванвирма",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Chillet Saddle",
+  "ru": "Седло Чиллета",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Hangyus Gloves",
+  "ru": "Перчатки Хангю",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Electric Skill Fruit: Lightning Bolt",
+  "ru": "Плод мастерства молнии: Удар молнии",
+  "type": "Расходник"
+ },
+ {
+  "en": "Electric Skill Fruit: Lightning Streak",
+  "ru": "Плод мастерства молнии: Грозовая линия",
+  "type": "Расходник"
+ },
+ {
+  "en": "Electric Skill Fruit: Tri-Lightning",
+  "ru": "Плод мастерства молнии: Тройная молния",
+  "type": "Расходник"
+ },
+ {
+  "en": "Electric Skill Fruit: Lightning Strike",
+  "ru": "Плод мастерства молнии: Грозовой удар",
+  "type": "Расходник"
+ },
+ {
+  "en": "Ice Skill Fruit: Icicle Cutter",
+  "ru": "Плод мастерства льда: Ледяной резак",
+  "type": "Расходник"
+ },
+ {
+  "en": "Stone Spear",
+  "ru": "Каменное копьё",
+  "type": "Оружие"
+ },
+ {
+  "en": "Metal Spear",
+  "ru": "Металлическое копьё",
+  "type": "Оружие"
+ },
+ {
+  "en": "Refined Metal Spear",
+  "ru": "Копьё из рафинированного металла",
+  "type": "Оружие"
+ },
+ {
+  "en": "Exploration Cap Schematic 1",
+  "ru": "Чертёж шляпы исследователя 1",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Pump-Action Shotgun Schematic 1",
+  "ru": "Чертёж помпового дробовика 1",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Pump-Action Shotgun Schematic 2",
+  "ru": "Чертёж помпового дробовика 2",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Pump-Action Shotgun Schematic 3",
+  "ru": "Чертёж помпового дробовика 3",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Pump-Action Shotgun Schematic 4",
+  "ru": "Чертёж помпового дробовика 4",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Chikipi Saut%C3%A9",
+  "ru": "Соте из мяса Чикипи",
+  "type": "Ингредиент"
+ },
+ {
+  "en": "Flamethrower",
+  "ru": "Огнемёт",
+  "type": "Оружие"
+ },
+ {
+  "en": "Starfruit %E2%98%861",
+  "ru": "Ранговый фрукт ☆1",
+  "type": "Расходник"
+ },
+ {
+  "en": "Starfruit %E2%98%862",
+  "ru": "Ранговый фрукт ☆2",
+  "type": "Расходник"
+ },
+ {
+  "en": "Starfruit %E2%98%863",
+  "ru": "Ранговый фрукт ☆3",
+  "type": "Расходник"
+ },
+ {
+  "en": "Starfruit %E2%98%864",
+  "ru": "Ранговый фрукт ☆4",
+  "type": "Расходник"
+ },
+ {
+  "en": "Witchs Crown",
+  "ru": "Корона ведьмы",
+  "type": "Снаряжение"
+ },
+ {
+  "en": "Blazamut Ryu Saddle",
+  "ru": "Седло Блазамут Рю",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Helzephyr Lux Saddle",
+  "ru": "Седло Хэлзефир Лакса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Quivern Botan Saddle",
+  "ru": "Седло Фэски Ботана",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Chillet Ignis Saddle",
+  "ru": "Седло Чиллет Игниса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Flamethrower Schematic 1",
+  "ru": "Чертёж огнемёта 1",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Flamethrower Schematic 2",
+  "ru": "Чертёж огнемёта 2",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Flamethrower Schematic 3",
+  "ru": "Чертёж огнемёта 3",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Flamethrower Schematic 4",
+  "ru": "Чертёж огнемёта 4",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Shroomer Saddle",
+  "ru": "Седло Шрумера",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Shroomer Noct Saddle",
+  "ru": "Седло Шрумер Нокта",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Selyne Saddle",
+  "ru": "Седло Селены",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Xenogard Saddle",
+  "ru": "Седло Зеногарда",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Applied Kindling Handbook I",
+  "ru": "Практическое разжигание огня I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Applied Watering Handbook I",
+  "ru": "Практический полив I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Applied Planting Handbook I",
+  "ru": "Практический посев семян I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Applied Generating Electricity Handbook I",
+  "ru": "Практическая энергетика I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Applied Handiwork Handbook I",
+  "ru": "Практическое ремесло I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Applied Gathering Handbook I",
+  "ru": "Практический сбор I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Applied Lumbering Handbook I",
+  "ru": "Практическая лесозаготовка I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Applied Mining Handbook I",
+  "ru": "Практическая добыча руды I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Applied Medicine Production Handbook I",
+  "ru": "Практическая фармацевтика I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Applied Cooling Handbook I",
+  "ru": "Практическое охлаждение I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Applied Transporting Handbook I",
+  "ru": "Практическая транспортировка I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Applied Ranching Handbook I",
+  "ru": "Практическое фермерство I",
+  "type": "Расходник"
+ },
+ {
+  "en": "Xenolord Saddle",
+  "ru": "Седло Зенолорда",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Starryon Saddle",
+  "ru": "Седло Старриона",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Silvegis Saddle",
+  "ru": "Седло Силвегиса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Celesdir Saddle",
+  "ru": "Седло Селесдира",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Tarantriss Saddle",
+  "ru": "Седло Тарантрисса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Azurmane Saddle",
+  "ru": "Седло Азурмейна",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Kitsun Noct Saddle",
+  "ru": "Седло Кицун Нокта",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Fenglope Lux Saddle",
+  "ru": "Седло Фенглоп Лакса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Faleris Aqua Saddle",
+  "ru": "Седло Фалерис Аква",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Smokies Harness",
+  "ru": "Шлейка Смоки",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Foxparks Crysts Harness",
+  "ru": "Шлейка Фокспаркс Криста",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Dazzi Nocts Necklace",
+  "ru": "Ошейник Даззи Нокта",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Rayne Syndicate Flag Schematic",
+  "ru": "Чертёж флага Браконьеров",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Water Skill Fruit: Torrential Blast",
+  "ru": "Плод мастерства воды: Гидроатака под давлением",
+  "type": "Расходник"
+ },
+ {
+  "en": "Implant: Burly Body",
+  "ru": "Имплант: Крепкое тело",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Implant: Artisan",
+  "ru": "Имплант: Мастеровитый",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Implant: Musclehead",
+  "ru": "Имплант: Мистер мускул",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Enhanced Hip Lantern",
+  "ru": "Улучшенный поясной фонарь",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Lyleen Statue Schematic",
+  "ru": "Чертёж статуи Лилин",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Free Pal Alliance Flag Schematic",
+  "ru": "Чертёж флага Организации по Защите Палов",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Free Pal Alliance Banner Schematic",
+  "ru": "Чертёж баннера Организации по Защите Палов",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Wire Fence Schematic",
+  "ru": "Чертёж забора из колючей проволоки",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Wooden Barricade Schematic",
+  "ru": "Чертёж деревянного заграждения",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Majestic Wall Torch Schematic",
+  "ru": "Чертёж величественного настенного факела",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Ceremonial Candlestick Schematic",
+  "ru": "Чертёж ритуального подсвечника",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Majestic Candlestick Schematic",
+  "ru": "Чертёж величественного подсвечника",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Paper Lantern Schematic",
+  "ru": "Чертёж бумажного фонарика",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Red Wooden Lantern Schematic",
+  "ru": "Чертёж Японского садового фонаря",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Yakumo Statue Schematic",
+  "ru": "Чертёж статуи Якумо",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Thunder Skill Fruit: All Range Thunder",
+  "ru": "Плод мастерства молнии: Вездесущая гроза",
+  "type": "Расходник"
+ },
+ {
+  "en": "Whalaska Saddle",
+  "ru": "Седло Валаска",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Ghangler Saddle",
+  "ru": "Седло Ганглер",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Herbils Harness",
+  "ru": "Шлейка Хербил",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Polapup Saddle",
+  "ru": "Седло Полапап",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Braloha Saddle",
+  "ru": "Седло Бралоха",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Palumba Saddle",
+  "ru": "Седло Палумба",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Neptilius Saddle",
+  "ru": "Седло Нептилус",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Killamari Primos Gloves",
+  "ru": "Перчатки Килламари Примо",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Pengullet Luxs Rocket Launcher",
+  "ru": "Ракетомёт Пенгуллет Лакс",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Celaray Luxs Gloves",
+  "ru": "Перчатки Селарай Лакс",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Azurobe Cryst Saddle",
+  "ru": "Седло Азуроб Крист",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Ghangler Ignis Saddle",
+  "ru": "Седло Ганглер Игнис",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Whalaska Ignis Saddle",
+  "ru": "Седло Валаска Игнис",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Laboratory Desk Schematic",
+  "ru": "Чертёж лабораторного стола",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Laboratory Chair Schematic",
+  "ru": "Чертёж лабораторного стула",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Kinship Peach",
+  "ru": "Драгоценный персик дружбы",
+  "type": "Расходник"
+ },
+ {
+  "en": "Dualith Saddle",
+  "ru": "Седло Дуалита",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Dualith Noct Saddle",
+  "ru": "Седло Дуалит Нокта",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Solmora Saddle",
+  "ru": "Седло Солмора",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Solmora Lux Saddle",
+  "ru": "Седло Солмора Лакса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Celestial Sigil %5BMaster%5D",
+  "ru": "Небесная печать [Мастер]",
+  "type": "Расходник"
+ },
+ {
+  "en": "Moon Lord Statue Schematic",
+  "ru": "Чертёж статуи Лунного лорда",
+  "type": "Чертёж"
+ },
+ {
+  "en": "Implant: Vanguard",
+  "ru": "Имплант: Командир штурма",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Implant: Stronghold Strategist",
+  "ru": "Имплант: Мастер обороны",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Implant: Motivational Leader",
+  "ru": "Имплант: Мотиватор",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Little Kinship Peach",
+  "ru": "Маленький персик дружбы",
+  "type": "Расходник"
+ },
+ {
+  "en": "Tanzee Igniss Assault Rifle",
+  "ru": "Штурмовая винтовка Танзи Игнис",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Hartalis Saddle",
+  "ru": "Седло Харталис",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Starryon Primo Saddle",
+  "ru": "Седло Старрион Примо",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Disposable Implant: Twin-Edged Holy Blade",
+  "ru": "Расходуемый имплант: Обоюдоострый святой меч",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Sanctified Meat Shield",
+  "ru": "Расходуемый имплант: Живая стена святилища",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Demon%E2%80%99s Hand",
+  "ru": "Расходуемый имплант: Дьявольские руки",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: World Trees Bounty",
+  "ru": "Расходуемый имплант: Рассада божественного древа",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Hermit Sage",
+  "ru": "Расходуемый имплант: Небожитель",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Dimensional Leap",
+  "ru": "Расходуемый имплант: Прыжок между измерениями",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: God of Destruction",
+  "ru": "Расходуемый имплант: Бог разрушения",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Remarkable Craftsmanship",
+  "ru": "Расходуемый имплант: Виртуоз",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Diamond Body",
+  "ru": "Расходуемый имплант: Алмазное тело",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Demon God",
+  "ru": "Расходуемый имплант: Демон-бог",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Mastery of Fasting",
+  "ru": "Расходуемый имплант: Аскет",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Heart of the Immovable King",
+  "ru": "Расходуемый имплант: Непреклонный дух",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Swift",
+  "ru": "Расходуемый имплант: Божественная скорость",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Eternal Engine",
+  "ru": "Расходуемый имплант: Вечный двигатель",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Vampiric",
+  "ru": "Расходуемый имплант: Вампир",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: King of the Waves",
+  "ru": "Расходуемый имплант: Повелитель волн",
+  "type": "Расходник"
+ },
+ {
+  "en": "Eidrolon Saddle",
+  "ru": "Седло Айдролон",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Eidrolon Ignis Saddle",
+  "ru": "Седло Айдролон Игниса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Dynamoff Saddle",
+  "ru": "Седло Динамоффа",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Beakon Cryst Saddle",
+  "ru": "Седло Райберд Криста",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Celesdir Noct Saddle",
+  "ru": "Седло Селесдир Нокта",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Tetroise Saddle",
+  "ru": "Седло Тетроиса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Tetroise Primo Saddle",
+  "ru": "Седло Тетроиса Примо",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Moldron Saddle",
+  "ru": "Седло Молдрона",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Moldron Cryst Saddle",
+  "ru": "Седло Молдрон Криста",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Univolt Cryst Saddle",
+  "ru": "Седло Юнивольт Криста",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Rayhound Cryst Saddle",
+  "ru": "Седло Райхаунд Криста",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Bulldosu Saddle",
+  "ru": "Седло Буллдоса",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Polapup Terra Saddle",
+  "ru": "Седло Полапап Терра",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Roujay Saddle",
+  "ru": "Седло Роуджей",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Shaolong Saddle",
+  "ru": "Седло Шаолонга",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Ophydia Saddle",
+  "ru": "Седло Офидии",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Foxcicle Bounty Token",
+  "ru": "Медаль за победу над Фоксайклом",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Implant: Wellness Watcher",
+  "ru": "Имплант: Снижение усталости",
+  "type": "Ключевые предметы"
+ },
+ {
+  "en": "Disposable Implant: Babysitter",
+  "ru": "Расходуемый имплант: Нянька",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Idiosyncratic",
+  "ru": "Расходуемый имплант: Особая конституция",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Immortality",
+  "ru": "Расходуемый имплант: Бессмертие",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Heavily Armored",
+  "ru": "Расходуемый имплант: Тяжёлая броня",
+  "type": "Расходник"
+ },
+ {
+  "en": "Disposable Implant: Sky Strider",
+  "ru": "Расходуемый имплант: Небесное скольжение",
+  "type": "Расходник"
+ }
+]

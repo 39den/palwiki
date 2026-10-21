@@ -1,13 +1,13 @@
 # Медуна
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/SnakeGirl-p-512.webp" srcset="../../../pp/art/SnakeGirl-p-384.webp 384w, ../../../pp/art/SnakeGirl-p-512.webp 512w, ../../../pp/art/SnakeGirl-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Медуна" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/178_SnakeGirl.webp">
-<div class="pal-info" data-pal="SnakeGirl"><div class="pal-no">№ 178 · Venusa</div>
+<img class="pal-card pal-art" src="../../../pp/art/SnakeGirl-512.webp" srcset="../../../pp/art/SnakeGirl-384.webp 384w, ../../../pp/art/SnakeGirl-512.webp 512w, ../../../pp/art/SnakeGirl-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Медуна" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="SnakeGirl"><div class="pal-no"><span class="nochip">№ 178</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Сбор 6">🌾 Сбор <b>6</b></span><span class="work" title="Фармацевтика 5">💊 Фармацевтика <b>5</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Змеиная мудрость</b> 🎒 из команды</div>
+<div class="partner"><b>Змеиная мудрость</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 80 · ⚔️ 85 · 🛡 90</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Ручная работа — ур. 6
-    - Сбор — ур. 6
-    - Фармацевтика — ур. 5
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=6"><span>✋ Ручная работа</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=6"><span>🧺 Сбор</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=5"><span>💊 Фармацевтика</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Змеиная мудрость
@@ -73,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 970
+    - Ранг разведения: 970
 
 
 

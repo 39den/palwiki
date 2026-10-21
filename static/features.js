@@ -107,14 +107,17 @@ function mapPal(D){const M=window.PW_map;const s=document.getElementById('mapq')
   const pm=C.find(n,['pal'])||(alt?C.find(alt,['pal']):null);const pn=pm?D.pals[pm.ref].ru:null;const groups=new Map();
   M.all.forEach(([p])=>{const pp=pal(p);const b=p.t=='tower'?twBoss(p):null;if(hit(p.name)||hit(pp)||(pn&&pp==pn)||(b&&(hit(b.name)||hit(b.pal||'')))){const k=pp||p.name;const g=groups.get(k)||{lbl:k,ic:byRu[pp]?'':'📍',img:byRu[pp]?B+byRu[pp].thumb:'',ty:new Set(),pts:[]};g.ty.add(TL[p.t]);g.pts.push(p);groups.set(k,g);}});
   groups.forEach(g=>R.push({...g,ty:[...g.ty].join(' · ')}));
-  if(pn&&!groups.has(pn))R.push({lbl:pn,img:B+byRu[pn].thumb,ty:'на карте нет точек — смотри страницу пала',pts:[],url:byRu[pn].url});
-  return R.slice(0,10);}
+  const seen=new Set(R.map(r=>r.lbl));const hv=p=>p.hab&&(p.hab.d||p.hab.n||p.hab.t||p.hab.a);
+  D.pals.filter(p=>p.url&&!seen.has(p.ru)&&terms.some(t=>N(p.ru).startsWith(t)||N(p.en||'').startsWith(t)||(t.length>2&&N(p.ru).includes(t)))).sort((a,b)=>(hv(b)?1:0)-(hv(a)?1:0)||a.ru.localeCompare(b.ru,'ru')).slice(0,8).forEach(p=>{seen.add(p.ru);R.push({lbl:p.ru,img:B+p.thumb,ty:hv(p)?'где живёт · '+((p.hab.d||0)+(p.hab.t||0))+' точек':'в дикой природе нет — страница пала',pts:[],url:p.url})});
+  if(pn&&!seen.has(pn))R.push({lbl:pn,img:B+byRu[pn].thumb,ty:'на карте нет точек — смотри страницу пала',pts:[],url:byRu[pn].url});
+  const st=r=>terms.some(t=>N(r.lbl).startsWith(t))?0:1;R.sort((a,b)=>st(a)-st(b));
+  return R.slice(0,12);}
  const show=pts=>{const set=new Set(pts);M.all.forEach(([p,mk])=>{mk.setOpacity(!pts||set.has(p)?1:.18);mk.setZIndexOffset(pts&&set.has(p)?1000:0);});
   if(pts){Object.values(M.groups).forEach(g=>M.m.addLayer(g));cnt.hidden=false;cnt.textContent='найдено '+pts.length;x.hidden=false;
    const mks=M.all.filter(([p])=>set.has(p)).map(z=>z[1]);if(mks.length==1){const g=Object.values(M.groups).find(g=>g.hasLayer&&g.hasLayer(mks[0]));if(g&&g.zoomToShowLayer)g.zoomToShowLayer(mks[0],()=>mks[0].openPopup());else{M.m.flyTo(mks[0].getLatLng(),4);mks[0].openPopup();}}
    else if(mks.length)M.m.flyToBounds(L.latLngBounds(mks.map(k=>k.getLatLng())).pad(.3),{maxZoom:4});}
   else{cnt.hidden=true;x.hidden=true;}};
- let cur=[];const pick=r=>{dd.hidden=true;s.value=r.lbl;if(r.url&&!r.pts.length){location.href=B+r.url;return;}show(r.pts);};
+ let cur=[];const pick=r=>{dd.hidden=true;s.value=r.lbl;s.blur();if(!r.pts.length){const pp=(typeof byRu!='undefined')&&byRu[r.lbl];const h=pp&&pp.hab;if(h&&(h.d||h.n||h.t||h.a)&&new URLSearchParams(location.search).get('pal')!=pp.id){location.search='?pal='+encodeURIComponent(pp.id);return;}}if(r.url&&!r.pts.length){location.href=B+r.url;return;}show(r.pts);};
  s.addEventListener('input',()=>{const v=s.value.trim();x.hidden=!v;if(v.length<2){dd.hidden=true;if(!v)show(null);return;}cur=search(v);
   dd.innerHTML=cur.map((r,i)=>`<button type="button" data-i="${i}">${r.img?`<img src="${r.img}" width="28" height="28" alt="">`:`<span class="ic">${r.ic}</span>`}<span class="t">${esc(r.lbl)}<small>${esc(r.ty)}${r.pts.length?' · '+r.pts.length:''}</small></span></button>`).join('')||'<div class="none">Ничего не нашлось</div>';dd.hidden=false;});
  dd.addEventListener('click',e=>{const b=e.target.closest('button');if(b)pick(cur[+b.dataset.i]);});
@@ -147,9 +150,9 @@ function builder(D){const info=document.querySelector('.pal-info[data-pal]');if(
   
   const other=ps.map(j=>P[j]).filter(q=>{const e=effects(q);return !(e.atk||e.def||e.ws||e.hp)||/[A-Za-zА-Яа-я]/.test((q.de||'').replace(/(Attack|Defense|Work Speed|Max Health)\s*[+-]\s*\d+\s*%|\(ToSelf\)/gi,'').replace(/[\d%+.,\s-]/g,''));});
   box.innerHTML=`<h2>🛠 Сборка</h2>
-  <div class="bld-row"><span class="lbl">Звёзды конденсации</span><div class="stars">${[0,1,2,3,4].map(k=>`<button data-st="${k}" class="${k<=st&&k>0?'on':''} ${k==0?'zero':''}" aria-label="${k} звёзд">${k==0?'0':'★'}</button>`).join('')}</div><small>+${st*5}% к HP, атаке, защите и скорости работы</small></div>
+  <div class="bld-row"><span class="lbl">Звёзды</span><div class="stars">${[0,1,2,3,4].map(k=>`<button data-st="${k}" class="${k<=st&&k>0?'on':''} ${k==0?'zero':''}" aria-label="${k} звёзд">${k==0?'0':'★'}</button>`).join('')}</div><small>+${st*5}% к HP, атаке, защите и скорости работы</small></div>
   <div class="bld-row"><span class="lbl">Уровень <b class="v" data-for="blv">${lv}</b></span><div class="rng"><button type="button" class="stp" data-s="blv" data-d="-1" aria-label="Меньше">−</button><input type="range" min="1" max="80" step="1" value="${lv}" id="blv" aria-label="Уровень"><button type="button" class="stp" data-s="blv" data-d="1" aria-label="Больше">+</button></div></div>
-  <div class="bld-row"><span class="lbl">Таланты (IV) <b class="v" data-for="biv">+${iv}%</b></span><div class="rng"><button type="button" class="stp" data-s="biv" data-d="-3" aria-label="Меньше">−</button><input type="range" min="0" max="30" step="3" value="${iv}" id="biv" aria-label="Таланты (IV)"><button type="button" class="stp" data-s="biv" data-d="3" aria-label="Больше">+</button></div></div>
+  <div class="bld-row"><span class="lbl">Таланты <b class="v" data-for="biv">+${iv}%</b></span><div class="rng"><button type="button" class="stp" data-s="biv" data-d="-3" aria-label="Меньше">−</button><input type="range" min="0" max="30" step="3" value="${iv}" id="biv" aria-label="Таланты"><button type="button" class="stp" data-s="biv" data-d="3" aria-label="Больше">+</button></div></div>
   <div class="bld-row"><span class="lbl">Статуя силы <b class="v" data-for="bstt">+${stt}%</b></span><div class="rng"><button type="button" class="stp" data-s="bstt" data-d="-3" aria-label="Меньше">−</button><input type="range" min="0" max="60" step="3" value="${stt}" id="bstt" aria-label="Статуя силы"><button type="button" class="stp" data-s="bstt" data-d="3" aria-label="Больше">+</button></div></div>
   ${statsH(s,b0)}
   <div class="bld-row"><span class="lbl">Пассивки (${ps.length}/4)</span><div class="tags">${ps.map((j,k)=>`<span class="psv ${rc(P[j].rank)}">${esc(P[j].name)} <button class="rmp" data-k="${k}" aria-label="Убрать">×</button></span>`).join('')}${ps.length<4?'<button type="button" id="bq" class="addp">+ добавить пассивку</button>':''}</div></div>
@@ -205,28 +208,29 @@ document.addEventListener('DOMContentLoaded',()=>{psvFilter();setTimeout(showIns
 (function(){const H={boss:'Тип босса: башня, рейд, альфа или босс Мирового древа.',counter:'Палы, чья стихия бьёт по слабости босса: их атаки наносят больше урона.',vsboss:'Сравнение стихий пала и босса. Зелёные — пал бьёт по слабости, красные — босс бьёт по слабости пала, жёлтые — и то и другое.'};
 let pop=null;const close=()=>{if(pop){pop.remove();pop=null;}};
 const open=b=>{close();const t=b.dataset.tip||H[b.dataset.h]||b.title;if(!t)return;pop=document.createElement('div');pop.className='hlp-pop';pop.setAttribute('role','tooltip');pop.textContent=t;document.body.appendChild(pop);const r=b.getBoundingClientRect();pop.style.left=Math.max(8,Math.min(r.left-20,innerWidth-pop.offsetWidth-8))+'px';pop.style.top=(r.bottom+8+pop.offsetHeight>innerHeight?r.top-pop.offsetHeight-8:r.bottom+8)+'px';};
-document.addEventListener('click',e=>{const b=e.target.closest('.hlp');if(b){e.preventDefault();e.stopPropagation();pop&&pop._b===b?close():(open(b),pop&&(pop._b=b));return;}close();},true);
-document.addEventListener('mouseover',e=>{const b=e.target.closest&&e.target.closest('.hlp');if(b&&matchMedia('(hover:hover)').matches){open(b);pop&&(pop._b=b);}});
-document.addEventListener('mouseout',e=>{if(e.target.closest&&e.target.closest('.hlp')&&matchMedia('(hover:hover)').matches)close();});addEventListener('scroll',close,{passive:true});})();
+document.addEventListener('click',e=>{const b=e.target.closest('.hlp,.gl');if(b){e.preventDefault();e.stopPropagation();if(pop&&pop._b===b&&pop._pin)close();else{if(!(pop&&pop._b===b))open(b);if(pop){pop._b=b;pop._pin=true;}}return;}if(pop&&e.target.closest&&pop.contains&&pop.contains(e.target))return;close();},true);
+document.addEventListener('keydown',e=>{if(e.key=='Escape')close();});
+document.addEventListener('mouseover',e=>{const b=e.target.closest&&e.target.closest('.hlp,.gl');if(b&&matchMedia('(hover:hover)').matches&&!(pop&&pop._pin)){open(b);pop&&(pop._b=b,pop._pin=false);}});
+document.addEventListener('mouseout',e=>{if(e.target.closest&&e.target.closest('.hlp,.gl')&&matchMedia('(hover:hover)').matches&&!(pop&&pop._pin))close();});addEventListener('scroll',close,{passive:true});})();
 (function(){document.addEventListener('DOMContentLoaded',()=>{const pn=document.querySelector('.pn');if(!pn)return;const as=[...pn.querySelectorAll('a')];const prev=as.find(a=>a.textContent.trim().startsWith('←')),next=as.find(a=>a.textContent.trim().endsWith('→'));
  const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
  // prefetch + speculation rules + decode neighbour card image
  const urls=[prev,next].filter(Boolean).map(a=>a.href.split('#')[0]);
  if(HTMLScriptElement.supports&&HTMLScriptElement.supports('speculationrules')){const sr=document.createElement('script');sr.type='speculationrules';sr.textContent=JSON.stringify({prerender:[{source:'list',urls}]});document.head.appendChild(sr);}
  else urls.forEach(u=>{const l=document.createElement('link');l.rel='prefetch';l.href=u;document.head.appendChild(l);});
- const idle=window.requestIdleCallback||(f=>setTimeout(f,1200));idle(()=>urls.forEach(u=>fetch(u,{credentials:'same-origin'}).then(r=>r.text()).then(t=>{const m=t.match(/class="pal-card" src="([^"]+)"/);if(m){const im=new Image();im.src=new URL(m[1],u).href;im.decode&&im.decode().catch(()=>{});}}).catch(()=>{})));
+ const idle=window.requestIdleCallback||(f=>setTimeout(f,1200));idle(()=>urls.forEach(u=>fetch(u,{credentials:'same-origin'}).then(r=>r.text()).then(t=>{const m=t.match(/class="pal-card[^"]*" src="([^"]+)"/);if(m){const im=new Image();im.src=new URL(m[1],u).href;im.decode&&im.decode().catch(()=>{});}}).catch(()=>{})));
  const hero=document.querySelector('.pal-hero,.boss-hero,.psv-hero');const card=hero&&hero.querySelector('.pal-card,.bimg')||hero;
  const go=(a,dir)=>{if(!a)return;const u=a.href.split('#')[0];if(RM||!card){location.href=u;return;}card.style.transition='transform .18s ease-out,opacity .18s';card.style.transform=`translate3d(${dir*-110}%,0,0)`;card.style.opacity='0';setTimeout(()=>location.href=u,170);};
  if(hero){if(getComputedStyle(hero).position=='static')hero.style.position='relative';const eg=document.createElement('nav');eg.className='edges';eg.setAttribute('aria-label','Соседние страницы');[[prev,'l','‹'],[next,'r','›']].forEach(([a,c,t])=>{const b=document.createElement('a');if(!a){b.className='edge e'+c+' none';b.setAttribute('aria-hidden','true');eg.appendChild(b);return;}const nm=a.textContent.replace(/[←→]/g,'').trim();b.className='edge e'+c;b.href=a.href.split('#')[0];b.title=nm;b.innerHTML=c=='l'?`<span>${t}</span><small>${nm}</small>`:`<small>${nm}</small><span>${t}</span>`;b.onclick=e=>{e.preventDefault();go(a,c=='l'?-1:1);};eg.appendChild(b);});hero.after(eg);}
- const skip=e=>e.target.closest('#bld,.bld,.askmini,input,select,textarea,button,.leaflet-container,.md-typeset__table,.tabbed-labels,.mini-row,.bchips,#gtable,[data-noswipe],.pk,.sheet,.lbx');
- if(hero&&card){let x0=null,y0=0,t0=0,dx=0,dir=0,raf=0,W=1;card.style.willChange='auto';
+ const skip=e=>e.target.closest('#bld,.bld,.askmini,input,select,textarea,button,.leaflet-container,.md-typeset__table,.tabbed-labels,.mini-row,.bchips,#gtable,[data-noswipe],.pk,.sheet,.lbx,.habmap,.fcs,.wchips,.skf,.ctrs,.kvs,pre,code,.leaflet-container');
+ if(hero&&card){const Z=document.querySelector('article.md-content__inner')||hero;let x0=null,y0=0,t0=0,dx=0,dir=0,raf=0,W=1;card.style.willChange='auto';
   const paint=()=>{raf=0;card.style.transform=`translate3d(${dx}px,0,0)`;};
-  hero.addEventListener('touchstart',e=>{if(e.touches.length!=1||skip(e)){x0=null;return;}x0=e.touches[0].clientX;y0=e.touches[0].clientY;t0=performance.now();dx=0;dir=0;W=innerWidth;},{passive:true});
-  hero.addEventListener('touchmove',e=>{if(x0==null)return;const t=e.touches[0],mx=t.clientX-x0,my=t.clientY-y0;if(!dir){if(Math.abs(mx)<8&&Math.abs(my)<8)return;dir=Math.abs(mx)>Math.abs(my)*1.5?1:-1;if(dir==1&&!RM){card.style.transition='none';card.style.willChange='transform';}}
+  Z.addEventListener('touchstart',e=>{if(e.touches.length!=1||skip(e)){x0=null;return;}x0=e.touches[0].clientX;y0=e.touches[0].clientY;t0=performance.now();dx=0;dir=0;W=innerWidth;},{passive:true});
+  Z.addEventListener('touchmove',e=>{if(x0==null)return;const t=e.touches[0],mx=t.clientX-x0,my=t.clientY-y0;if(!dir){if(Math.abs(mx)<8&&Math.abs(my)<8)return;dir=Math.abs(mx)>Math.abs(my)*1.5?1:-1;if(dir==1&&!RM){card.style.transition='none';card.style.willChange='transform';}}
    if(dir!=1||RM)return;dx=((mx<0&&!next)||(mx>0&&!prev))?mx*.25:mx;if(!raf)raf=requestAnimationFrame(paint);},{passive:true});
   const end=()=>{if(x0==null)return;x0=null;if(dir!=1)return;const v=Math.abs(dx)/(performance.now()-t0);const ok=Math.abs(dx)>60||v>.5;
    if(ok&&dx<0&&next){go(next,1);return;}if(ok&&dx>0&&prev){go(prev,-1);return;}
    if(!RM){card.style.transition='transform .2s ease-out';card.style.transform='translate3d(0,0,0)';setTimeout(()=>{card.style.willChange='auto';card.style.transition='';},220);}};
-  hero.addEventListener('touchend',end,{passive:true});hero.addEventListener('touchcancel',end,{passive:true});
+  Z.addEventListener('touchend',end,{passive:true});Z.addEventListener('touchcancel',end,{passive:true});
   window.PW_swipeSim=(dist)=>new Promise(res=>{const fr=[];let last=performance.now(),k=0;card.style.transition='none';card.style.willChange='transform';const step=()=>{const n=performance.now();fr.push(n-last);last=n;dx=-dist*(++k/30);card.style.transform=`translate3d(${dx}px,0,0)`;if(k<30)requestAnimationFrame(step);else{card.style.transform='';card.style.willChange='auto';res(fr.slice(1));}};requestAnimationFrame(step);});}
  document.addEventListener('keydown',e=>{if(e.target.closest('input,select,textarea,[contenteditable]')||e.metaKey||e.ctrlKey||e.altKey)return;const s=document.getElementById('__search');if((s&&s.checked)||document.querySelector('.sx'))return;if(e.key=='ArrowLeft')go(prev,-1);if(e.key=='ArrowRight')go(next,1);});});})();

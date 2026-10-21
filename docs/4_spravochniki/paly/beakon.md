@@ -1,13 +1,13 @@
 # Райберд
 
 <div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/ThunderBird-512.webp" srcset="../../../pp/art/ThunderBird-384.webp 384w, ../../../pp/art/ThunderBird-512.webp 512w, ../../../pp/art/ThunderBird-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Райберд" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/96_ThunderBird.webp">
-<div class="pal-info" data-pal="ThunderBird"><div class="pal-no">№ 96 · Beakon</div>
+<img class="pal-card pal-art" src="../../../pp/art/ThunderBird-512.webp" srcset="../../../pp/art/ThunderBird-384.webp 384w, ../../../pp/art/ThunderBird-512.webp 512w, ../../../pp/art/ThunderBird-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Райберд" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="ThunderBird"><div class="pal-no"><span class="nochip">№ 96</span></div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
-<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-water">Вода <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Генерация энергии 4">⚡ Генерация энергии <b>4</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>
-<div class="partner"><b>Гром с неба</b> 🐾 выпущен 🐎 верхом</div>
+<div class="partner"><b>Гром с неба</b> <span class="actc">🐾 Когда пал выпущен</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 105 · ⚔️ 115 · 🛡 80</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Генерация энергии — ур. 4
-    - Сбор — ур. 2
-    - Транспортировка — ур. 5
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=electricity&lv=4"><span>⚡ Генерация энергии</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=2"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=5"><span>📦 Транспортировка</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Гром с неба
@@ -30,7 +29,7 @@
     - ✅ Быстрый летающий маунт средней игры; хорошая атака (115); отличный рабочий (пригодность 5); можно оседлать; летает (ездовой)
     - ❌ Слабоват в бою на эндгейме
 
-    > Можно подумать, что он — близкий сородич Рагнахавк , но на самом деле между ними нет никакой связи. Он стремительно пикирует вниз и пронзает врага острым клювом — словно удар молнии.
+    > Можно подумать, что он — близкий сородич Рагнахавк, но на самом деле между ними нет никакой связи. Он стремительно пикирует вниз и пронзает врага острым клювом — словно удар молнии.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -72,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1690
+    - Ранг разведения: 1690
     - Участвует в особых парах: Хэлзефир → Хэлзефир Лакс; Фростплюм → Райберд Крист
 
 

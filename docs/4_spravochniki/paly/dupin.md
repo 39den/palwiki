@@ -1,13 +1,13 @@
 # Дупин
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/ClownRabbit-p-512.webp" srcset="../../../pp/art/ClownRabbit-p-384.webp 384w, ../../../pp/art/ClownRabbit-p-512.webp 512w, ../../../pp/art/ClownRabbit-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Дупин" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/176_ClownRabbit.webp">
-<div class="pal-info" data-pal="ClownRabbit"><div class="pal-no">№ 176 · Dupin</div>
+<img class="pal-card pal-art" src="../../../pp/art/ClownRabbit-512.webp" srcset="../../../pp/art/ClownRabbit-384.webp 384w, ../../../pp/art/ClownRabbit-512.webp 512w, ../../../pp/art/ClownRabbit-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Дупин" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="ClownRabbit"><div class="pal-no"><span class="nochip">№ 176</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 7">🔥 Разжигание огня <b>7</b></span><span class="work" title="Ручная работа 5">🖐️ Ручная работа <b>5</b></span><span class="work" title="Фармацевтика 4">💊 Фармацевтика <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Трик-шоу Рапи-Рапи</b> 🎒 из команды</div>
+<div class="partner"><b>Трик-шоу Рапи-Рапи</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 100 · ⚔️ 110 · 🛡 100</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 7
-    - Ручная работа — ур. 5
-    - Фармацевтика — ур. 4
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=7"><span>🔥 Разжигание огня</span><i style="--v:70%"></i><b>7</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=5"><span>✋ Ручная работа</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=4"><span>💊 Фармацевтика</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Трик-шоу Рапи-Рапи
@@ -31,7 +29,7 @@
     - ✅ хорошая атака (110); отличный рабочий (пригодность 7)
     - ❌ много ест (600)
 
-    > Иногда вызванный двойник одерживает верх и занимает место оригинала. Тот ли Дупин сегодня, что и вчера, не вполне ясно даже самому Дупин .
+    > Иногда вызванный двойник одерживает верх и занимает место оригинала. Тот ли Дупин сегодня, что и вчера, не вполне ясно даже самому Дупин.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -73,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 520
+    - Ранг разведения: 520
 
 
 

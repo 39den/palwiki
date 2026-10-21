@@ -1,13 +1,13 @@
 # Ганглер
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/GhostAnglerfish-p-512.webp" srcset="../../../pp/art/GhostAnglerfish-p-384.webp 384w, ../../../pp/art/GhostAnglerfish-p-512.webp 512w, ../../../pp/art/GhostAnglerfish-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Ганглер" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/97_GhostAnglerfish.webp">
-<div class="pal-info" data-pal="GhostAnglerfish"><div class="pal-no">№ 97 · Ghangler</div>
+<img class="pal-card pal-art" src="../../../pp/art/GhostAnglerfish-512.webp" srcset="../../../pp/art/GhostAnglerfish-384.webp 384w, ../../../pp/art/GhostAnglerfish-512.webp 512w, ../../../pp/art/GhostAnglerfish-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Ганглер" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="GhostAnglerfish"><div class="pal-no"><span class="nochip">№ 97</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Молния: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-fire">Огонь <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 5">💧 Полив <b>5</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Проводник ночной тьмы</b> 🐎 верхом 🐾 выпущен</div>
+<div class="partner"><b>Проводник ночной тьмы</b> <span class="actc">🐎 Верхом</span><span class="actc">🐾 Когда пал выпущен</span></div>
 <div class="stats">❤️ 90 · ⚔️ 125 · 🛡 105</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 5
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=5"><span>💧 Полив</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Проводник ночной тьмы
@@ -29,7 +29,7 @@
     - ✅ очень высокая атака (125); отличный рабочий (пригодность 5); можно оседлать
     - ❌ явных минусов нет
 
-    > Сияющей приманкой он озаряет темноту. Заблудшие Палы, привлечённые светом, если попадутся Ганглер , уже не смогут сбежать. Он будет преследовать их, пока не убедится, что они благополучно добрались домой.
+    > Сияющей приманкой он озаряет темноту. Заблудшие Палы, привлечённые светом, если попадутся Ганглер, уже не смогут сбежать. Он будет преследовать их, пока не убедится, что они благополучно добрались домой.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 880
+    - Ранг разведения: 880
     - Участвует в особых парах: Гостлайт → Ганглер Игнис
 
 

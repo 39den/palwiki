@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block extrahead %}
+<script>(function(){var l=location,on=/\/palwiki-preview\//.test(l.pathname);try{if(/^(localhost|127\.0\.0\.1)$/.test(l.hostname)){if(/[?&]pp26=1/.test(l.search))localStorage.setItem('pp26','1');if(/[?&]pp26=0/.test(l.search))localStorage.removeItem('pp26');on=on||localStorage.getItem('pp26')=='1'}}catch(e){}if(on){document.documentElement.classList.add('pp26');try{var k=new URL('{{ base_url }}/',l).pathname.replace(/\/+$/,'/')+'.__palette';if(!localStorage.getItem('pp26th')){localStorage.setItem('pp26th','1');localStorage.setItem(k,JSON.stringify({index:1,color:{media:'',scheme:'default',primary:'custom',accent:'custom'}}))}}catch(e){}document.write('<link rel="stylesheet" href="{{ base_url }}/assets/pp26.css"><script defer src="{{ base_url }}/assets/pp26.js"><\/script><link rel="preload" as="font" type="font/woff2" crossorigin href="{{ base_url }}/assets/fonts26/Unbounded-600-cyrillic.woff2">')}})()</script>
 <link rel="manifest" href="{{ base_url }}/manifest.webmanifest">
 <meta name="theme-color" content="#1596c9">
 <link rel="apple-touch-icon" href="{{ base_url }}/assets/icon-192.png">

@@ -2,7 +2,7 @@ site_name: Энциклопедия Palworld
 site_url: https://39den.github.io/palwiki/
 site_description: Энциклопедия Palworld на русском — палы, боссы, предметы, пассивки, разведение
 docs_dir: docs
-copyright: "Данные: версия игры 1.0.5 · фан-энциклопедия, не официальный продукт"
+copyright: 'Данные: версия игры 1.0.5 · фан-энциклопедия, не официальный продукт · <a href="/palwiki/about/">Об источниках</a>'
 theme:
   name: material
   custom_dir: overrides

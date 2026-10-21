@@ -1,13 +1,13 @@
 # Зенолорд
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/DarkMechaDragon-p-512.webp" srcset="../../../pp/art/DarkMechaDragon-p-384.webp 384w, ../../../pp/art/DarkMechaDragon-p-512.webp 512w, ../../../pp/art/DarkMechaDragon-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Зенолорд" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/196_DarkMechaDragon.webp">
-<div class="pal-info" data-pal="DarkMechaDragon"><div class="pal-no">№ 196 · Xenolord</div>
+<img class="pal-card pal-art" src="../../../pp/art/DarkMechaDragon-512.webp" srcset="../../../pp/art/DarkMechaDragon-384.webp 384w, ../../../pp/art/DarkMechaDragon-512.webp 512w, ../../../pp/art/DarkMechaDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Зенолорд" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="DarkMechaDragon"><div class="pal-no"><span class="nochip">№ 196</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-dragon">Дракон</span></div>
-<div class="weak">Слабость: <span class="el el-ice">Лёд <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-ice">Лёд <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Лёд: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span></div>
-<div class="partner"><b>Метеоритные крылья</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Метеоритные крылья</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 130 · ⚔️ 120 · 🛡 120</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=2"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Метеоритные крылья
@@ -69,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 400
+    - Ранг разведения: 400
     - **Особая пара:** [Зенолорд](../../4_spravochniki/paly/xenolord.md) + [Зенолорд](../../4_spravochniki/paly/xenolord.md)
     - Участвует в особых парах: Зенолорд → Зенолорд; Зенолорд → Зенолорд
 

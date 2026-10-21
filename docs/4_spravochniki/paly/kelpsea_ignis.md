@@ -1,13 +1,13 @@
 # Келпси Игнис
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Kelpie_Fire-512.webp" srcset="../../../pp/art/Kelpie_Fire-384.webp 384w, ../../../pp/art/Kelpie_Fire-512.webp 512w, ../../../pp/art/Kelpie_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Келпси Игнис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/43B_Kelpie_Fire.webp">
-<div class="pal-info" data-pal="Kelpie_Fire"><div class="pal-no">№ 43B · Kelpsea Ignis</div>
+<img class="pal-card pal-art" src="../../../pp/art/Kelpie_Fire-512.webp" srcset="../../../pp/art/Kelpie_Fire-384.webp 384w, ../../../pp/art/Kelpie_Fire-512.webp 512w, ../../../pp/art/Kelpie_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Келпси Игнис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Kelpie_Fire"><div class="pal-no"><span class="nochip">№ 43B</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 1">🔥 Разжигание огня <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
-<div class="partner"><b>Обливание лавой</b> 🎒 из команды 🏠 на базе</div>
+<div class="partner"><b>Обливание лавой</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 70 · ⚔️ 70 · 🛡 70</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 1
-    - Фермерство — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=1"><span>🔥 Разжигание огня</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=farming&lv=1"><span>🐄 Фермерство</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Обливание лавой
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2470
+    - Ранг разведения: 2470
 
 
 

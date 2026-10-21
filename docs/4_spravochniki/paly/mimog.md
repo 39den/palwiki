@@ -1,13 +1,13 @@
 # Мимидог
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/MimicDog-512.webp" srcset="../../../pp/art/MimicDog-384.webp 384w, ../../../pp/art/MimicDog-512.webp 512w, ../../../pp/art/MimicDog-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Мимидог" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/144_MimicDog.webp">
-<div class="pal-info" data-pal="MimicDog"><div class="pal-no">№ 144 · Mimog</div>
+<img class="pal-card pal-art" src="../../../pp/art/MimicDog-512.webp" srcset="../../../pp/art/MimicDog-384.webp 384w, ../../../pp/art/MimicDog-512.webp 512w, ../../../pp/art/MimicDog-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Мимидог" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="MimicDog"><div class="pal-no"><span class="nochip">№ 144</span></div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 
 <div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Взлом замков</b> 🐾 выпущен</div>
+<div class="partner"><b>Взлом замков</b> <span class="actc">🐾 Когда пал выпущен</span></div>
 <div class="stats">❤️ 60 · ⚔️ 60 · 🛡 130</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 1
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=1"><span>🧺 Сбор</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Взлом замков
@@ -29,7 +29,7 @@
     - ✅ крепкая защита (130)
     - ❌ слабая атака (60); мало здоровья (60); разводится только особой парой
 
-    > Когда-то на этом острове существовало королевство, где ежегодно вручали награду за самую глупую смерть. Первым её получил тот, кто |открыл сундук, не заметив Мимидог , — и был загрызен|.
+    > Когда-то на этом острове существовало королевство, где ежегодно вручали награду за самую глупую смерть. Первым её получил тот, кто |открыл сундук, не заметив Мимидог, — и был загрызен|.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -74,7 +74,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1740
+    - Ранг разведения: 1740
     - **Особая пара:** [Мимидог](../../4_spravochniki/paly/mimog.md) + [Мимидог](../../4_spravochniki/paly/mimog.md)
     - Участвует в особых парах: Мимидог → Мимидог; Мимидог → Мимидог
 

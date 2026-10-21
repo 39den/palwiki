@@ -1,8 +1,8 @@
 # Гуру диет
 
-<div class="psv-hero" markdown="0"><span class="psv r-3 big">Гуру диет</span> <span class="rk">Ранг 3 · редкая</span><div class="en">Diet Lover</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-3 big">Гуру диет</span> <span class="rk">Ранг 3 · редкая <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
-**Что даёт:** Уровень сытости снижается медленнее +15.0%
+**Что даёт:** Уровень сытости снижается медленнее +15%
 
 Полезная пассивка. Одинаковые пассивки на одном пале не складываются.
 

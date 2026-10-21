@@ -1,13 +1,13 @@
 # Бэллануар
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/NightLady-512.webp" srcset="../../../pp/art/NightLady-384.webp 384w, ../../../pp/art/NightLady-512.webp 512w, ../../../pp/art/NightLady-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Бэллануар" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/195_NightLady.webp">
-<div class="pal-info" data-pal="NightLady"><div class="pal-no">№ 195 · Bellanoir</div>
+<img class="pal-card pal-art" src="../../../pp/art/NightLady-512.webp" srcset="../../../pp/art/NightLady-384.webp 384w, ../../../pp/art/NightLady-512.webp 512w, ../../../pp/art/NightLady-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Бэллануар" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="NightLady"><div class="pal-no"><span class="nochip">№ 195</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 5">🖐️ Ручная работа <b>5</b></span><span class="work" title="Фармацевтика 5">💊 Фармацевтика <b>5</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>
-<div class="partner"><b>Око кошмара</b> 🔘 кнопкой</div>
+<div class="partner"><b>Око кошмара</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 120 · ⚔️ 150 · 🛡 100</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Ручная работа — ур. 5
-    - Фармацевтика — ур. 5
-    - Транспортировка — ур. 4
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=5"><span>✋ Ручная работа</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=5"><span>💊 Фармацевтика</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=4"><span>📦 Транспортировка</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Око кошмара
@@ -71,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 620
+    - Ранг разведения: 620
     - **Особая пара:** [Бэллануар](../../4_spravochniki/paly/bellanoir.md) + [Бэллануар Либеро](../../4_spravochniki/paly/bellanoir_libero.md)
     - Участвует в особых парах: Бэллануар Либеро → Бэллануар
 

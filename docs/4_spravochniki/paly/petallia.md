@@ -1,13 +1,13 @@
 # Петаллия
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/FlowerDoll-512.webp" srcset="../../../pp/art/FlowerDoll-384.webp 384w, ../../../pp/art/FlowerDoll-512.webp 512w, ../../../pp/art/FlowerDoll-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Петаллия" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/89_FlowerDoll.webp">
-<div class="pal-info" data-pal="FlowerDoll"><div class="pal-no">№ 89 · Petallia</div>
+<img class="pal-card pal-art" src="../../../pp/art/FlowerDoll-512.webp" srcset="../../../pp/art/FlowerDoll-384.webp 384w, ../../../pp/art/FlowerDoll-512.webp 512w, ../../../pp/art/FlowerDoll-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Петаллия" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="FlowerDoll"><div class="pal-no"><span class="nochip">№ 89</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 4">🌱 Посев семян <b>4</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Фармацевтика 4">💊 Фармацевтика <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Благословение духа цветов</b> 🔘 кнопкой 🏠 на базе</div>
+<div class="partner"><b>Благословение духа цветов</b> <span class="actc">🔘 Включается кнопкой</span><span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 100 · ⚔️ 95 · 🛡 100</div></div></div>
 
 
@@ -17,11 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 4
-    - Ручная работа — ур. 3
-    - Сбор — ур. 3
-    - Фармацевтика — ур. 4
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=4"><span>🌱 Посев семян</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=3"><span>✋ Ручная работа</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=3"><span>🧺 Сбор</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=4"><span>💊 Фармацевтика</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Благословение духа цветов
@@ -32,7 +29,7 @@
     - ✅ Лечит игрока
     - ❌ Хрупкая
 
-    > Когда срок жизни подходит к концу, превращается в огромное растение. Раз в десять лет распускается прекрасный цветок, из которого появляется новый Петаллия .
+    > Когда срок жизни подходит к концу, превращается в огромное растение. Раз в десять лет распускается прекрасный цветок, из которого появляется новый Петаллия.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -74,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1720
+    - Ранг разведения: 1720
     - Участвует в особых парах: Буси → Петаллия Игнис; Найтмери → Найтмери Ботан
 
 

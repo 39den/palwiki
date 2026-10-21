@@ -1,6 +1,6 @@
 # Мастеровитый
 
-<div class="psv-hero" markdown="0"><span class="psv r-3 big">Мастеровитый</span> <span class="rk">Ранг 3 · редкая</span><div class="en">Artisan</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-3 big">Мастеровитый</span> <span class="rk">Ранг 3 · редкая <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Скорость работы +50%
 

@@ -3,10 +3,16 @@ import re,glob,html,markdown,sys
 D='/workspace/palsite/docs'
 WHITE=set()  # pages allowed to keep a raw table (none for now)
 MD=markdown.Markdown(extensions=['attr_list'])
+IDX=[False]
+def _href(m):
+  u=m.group(1)
+  if re.match(r'^(https?:|#|/)',u):return m.group(0)
+  u=re.sub(r'(?:/README|/index)?\.md(#|$)',r'/\1',u)
+  return 'href="'+(u if IDX[0] else '../'+u)+'"'
 def inl(t):
   t=t.strip()
   if not t or t in ('—','-'):return ''
-  h=MD.reset().convert(t);return re.sub(r'^<p>|</p>$','',h.strip())
+  h=MD.reset().convert(t);h=re.sub(r'href="([^"]+)"',_href,h);return re.sub(r'^<p>|</p>$','',h.strip())
 def cells(l):
   l=l.strip()
   if l.startswith('|'):l=l[1:]
@@ -25,7 +31,8 @@ def render(rows,ind):
     t=inl(r[0]);items=''.join(f'<div class="tc-i"><span class="kv-l">{inl(hd[i])}</span><span class="kv-v">{v}</span></div>' for i in range(1,n) for v in [inl(r[i])] if v)
     cs.append(f'<div class="tcard"><div class="tc-t">{t}</div><div class="tc-b">{items}</div></div>')
   return ind+f'<div class="tcards{" dense" if n<=3 else ""}" markdown="0">{"".join(cs)}</div>\n'
-def convert(s):
+def convert(s,index=False):
+  IDX[0]=index
   L=s.split('\n');out=[];i=0;k=0
   while i<len(L):
     m=re.match(r'^(\s*)\|',L[i])

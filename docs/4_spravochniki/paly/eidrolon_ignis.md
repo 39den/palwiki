@@ -1,13 +1,13 @@
 # Айдролон Игнис
 
 <div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/GhostDragon_Fire-p-512.webp" srcset="../../../pp/art/GhostDragon_Fire-p-384.webp 384w, ../../../pp/art/GhostDragon_Fire-p-512.webp 512w, ../../../pp/art/GhostDragon_Fire-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Айдролон Игнис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/171B_GhostDragon_Fire.webp">
-<div class="pal-info" data-pal="GhostDragon_Fire"><div class="pal-no">№ 171B · Eidrolon Ignis</div>
+<img class="pal-card pal-art" src="../../../pp/art/GhostDragon_Fire-512.webp" srcset="../../../pp/art/GhostDragon_Fire-384.webp 384w, ../../../pp/art/GhostDragon_Fire-512.webp 512w, ../../../pp/art/GhostDragon_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Айдролон Игнис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="GhostDragon_Fire"><div class="pal-no"><span class="nochip">№ 171B</span></div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Вода: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 6">🔥 Разжигание огня <b>6</b></span><span class="work" title="Транспортировка 6">📦 Транспортировка <b>6</b></span></div>
-<div class="partner"><b>Гневный крылатый дракон</b> 🐾 выпущен 🐎 верхом</div>
+<div class="partner"><b>Гневный крылатый дракон</b> <span class="actc">🐾 Когда пал выпущен</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 115 · ⚔️ 130 · 🛡 120</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 6
-    - Транспортировка — ур. 6
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=6"><span>🔥 Разжигание огня</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=6"><span>📦 Транспортировка</span><i style="--v:60%"></i><b>6</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Гневный крылатый дракон
@@ -72,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 140
+    - Ранг разведения: 140
     - **Особая пара:** [Айдролон](../../4_spravochniki/paly/eidrolon.md) + [Судзаку](../../4_spravochniki/paly/suzaku.md)
 
 

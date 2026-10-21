@@ -1,13 +1,13 @@
 # Мау Крист
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Bastet_Ice-512.webp" srcset="../../../pp/art/Bastet_Ice-384.webp 384w, ../../../pp/art/Bastet_Ice-512.webp 512w, ../../../pp/art/Bastet_Ice-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Мау Крист" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/27B_Bastet_Ice.webp">
-<div class="pal-info" data-pal="Bastet_Ice"><div class="pal-no">№ 27B · Mau Cryst</div>
+<img class="pal-card pal-art" src="../../../pp/art/Bastet_Ice-512.webp" srcset="../../../pp/art/Bastet_Ice-384.webp 384w, ../../../pp/art/Bastet_Ice-512.webp 512w, ../../../pp/art/Bastet_Ice-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Мау Крист" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Bastet_Ice"><div class="pal-no"><span class="nochip">№ 27B</span></div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Охлаждение 1">❄️ Охлаждение <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
-<div class="partner"><b>Ледяной сюрприз</b> 🏠 на базе 🐾 выпущен</div>
+<div class="partner"><b>Ледяной сюрприз</b> <span class="actc">🏠 На базе</span><span class="actc">🐾 Когда пал выпущен</span></div>
 <div class="stats">❤️ 70 · ⚔️ 65 · 🛡 70</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Охлаждение — ур. 1
-    - Фермерство — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=cooling&lv=1"><span>❄️ Охлаждение</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=farming&lv=1"><span>🐄 Фермерство</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Ледяной сюрприз
@@ -26,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ крепкая защита (70)
     - ❌ слабая атака (65); разводится только особой парой
 
     > Кристальный хвост этого Пала необычайно красив, но с его смертью рассыпается в прах. Из-за суеверия, будто несколько таких Палов приносят удачу, Мау Крист держали с особой заботой.
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2750
+    - Ранг разведения: 2750
     - **Особая пара:** [Мау](../../4_spravochniki/paly/mau.md) + [Пенгуллет](../../4_spravochniki/paly/pengullet.md)
 
 

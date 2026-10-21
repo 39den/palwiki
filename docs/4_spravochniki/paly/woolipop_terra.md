@@ -1,13 +1,13 @@
 # Вулипоп Терра
 
 <div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/SweetsSheep_Ground-p-512.webp" srcset="../../../pp/art/SweetsSheep_Ground-p-384.webp 384w, ../../../pp/art/SweetsSheep_Ground-p-512.webp 512w, ../../../pp/art/SweetsSheep_Ground-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Вулипоп Терра" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/39B_SweetsSheep_Ground.webp">
-<div class="pal-info" data-pal="SweetsSheep_Ground"><div class="pal-no">№ 39B · Woolipop Terra</div>
+<img class="pal-card pal-art" src="../../../pp/art/SweetsSheep_Ground-512.webp" srcset="../../../pp/art/SweetsSheep_Ground-384.webp 384w, ../../../pp/art/SweetsSheep_Ground-512.webp 512w, ../../../pp/art/SweetsSheep_Ground-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Вулипоп Терра" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="SweetsSheep_Ground"><div class="pal-no"><span class="nochip">№ 39B</span></div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
-<div class="partner"><b>Горький Поп</b> 🏠 на базе</div>
+<div class="partner"><b>Горький Поп</b> <span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 70 · ⚔️ 70 · 🛡 95</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Фермерство — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=farming&lv=1"><span>🐄 Фермерство</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Горький Поп
@@ -25,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ крепкая защита (95)
     - ❌ слабая атака (70); разводится только особой парой
 
     > Шерсть источает приторно-сладкий аромат, но мясо отвратительно горькое. Плотоядные Палы, привлечённые запахом, от горечи закатывают глаза и падают без сознания.
@@ -70,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2030
+    - Ранг разведения: 2030
     - **Особая пара:** [Вулипоп](../../4_spravochniki/paly/woolipop.md) + [Бронебол](../../4_spravochniki/paly/kikit.md)
 
 

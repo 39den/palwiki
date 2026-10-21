@@ -1,13 +1,13 @@
 # Некромус
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/BlackCentaur-512.webp" srcset="../../../pp/art/BlackCentaur-384.webp 384w, ../../../pp/art/BlackCentaur-512.webp 512w, ../../../pp/art/BlackCentaur-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Некромус" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/199_BlackCentaur.webp">
-<div class="pal-info" data-pal="BlackCentaur"><div class="pal-no">№ 199 · Necromus</div>
+<img class="pal-card pal-art" src="../../../pp/art/BlackCentaur-512.webp" srcset="../../../pp/art/BlackCentaur-384.webp 384w, ../../../pp/art/BlackCentaur-512.webp 512w, ../../../pp/art/BlackCentaur-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Некромус" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="BlackCentaur"><div class="pal-no"><span class="nochip">№ 199</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Рубка деревьев 6">🪓 Рубка деревьев <b>6</b></span><span class="work" title="Добыча 6">⛏️ Добыча <b>6</b></span></div>
-<div class="partner"><b>Тёмный рыцарь бездны</b> 🐎 верхом</div>
+<div class="partner"><b>Тёмный рыцарь бездны</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 130 · ⚔️ 145 · 🛡 120</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Рубка деревьев — ур. 6
-    - Добыча — ур. 6
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=6"><span>🪓 Рубка деревьев</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=6"><span>⛏️ Добыча</span><i style="--v:60%"></i><b>6</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Тёмный рыцарь бездны
@@ -74,7 +74,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 190
+    - Ранг разведения: 190
     - **Особая пара:** [Некромус](../../4_spravochniki/paly/necromus.md) + [Некромус](../../4_spravochniki/paly/necromus.md)
     - Участвует в особых парах: Некромус → Некромус; Некромус → Некромус
 

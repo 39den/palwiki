@@ -1,13 +1,13 @@
 # Гобфин
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/SharkKid-512.webp" srcset="../../../pp/art/SharkKid-384.webp 384w, ../../../pp/art/SharkKid-512.webp 512w, ../../../pp/art/SharkKid-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Гобфин" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/55_SharkKid.webp">
-<div class="pal-info" data-pal="SharkKid"><div class="pal-no">№ 55 · Gobfin</div>
+<img class="pal-card pal-art" src="../../../pp/art/SharkKid-512.webp" srcset="../../../pp/art/SharkKid-384.webp 384w, ../../../pp/art/SharkKid-512.webp 512w, ../../../pp/art/SharkKid-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Гобфин" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="SharkKid"><div class="pal-no"><span class="nochip">№ 55</span></div>
 <div class="chips"><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
-<div class="partner"><b>Акулка-злюка</b> 🎒 из команды 🐾 выпущен 🔘 кнопкой</div>
+<div class="partner"><b>Акулка-злюка</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐾 Когда пал выпущен</span><span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 90 · ⚔️ 90 · 🛡 75</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 2
-    - Ручная работа — ур. 2
-    - Транспортировка — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=2"><span>💧 Полив</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=2"><span>✋ Ручная работа</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=1"><span>📦 Транспортировка</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Акулка-злюка
@@ -27,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорошая атака (90)
     - ❌ явных минусов нет
 
     > В древности он был огромным и сильным водным Палом, но из-за нехватки пищи переселился на сушу. Передвижение по земле оказалось слишком энергозатратным, и со временем он уменьшился до нынешнего, жалкого состояния.
@@ -71,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2550
+    - Ранг разведения: 2550
     - Участвует в особых парах: Руби → Гобфин Игнис
 
 

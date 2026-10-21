@@ -1,13 +1,13 @@
 # Арсокс
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/FlameBuffalo-512.webp" srcset="../../../pp/art/FlameBuffalo-384.webp 384w, ../../../pp/art/FlameBuffalo-512.webp 512w, ../../../pp/art/FlameBuffalo-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Арсокс" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/58_FlameBuffalo.webp">
-<div class="pal-info" data-pal="FlameBuffalo"><div class="pal-no">№ 58 · Arsox</div>
+<img class="pal-card pal-art" src="../../../pp/art/FlameBuffalo-512.webp" srcset="../../../pp/art/FlameBuffalo-384.webp 384w, ../../../pp/art/FlameBuffalo-512.webp 512w, ../../../pp/art/FlameBuffalo-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Арсокс" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="FlameBuffalo"><div class="pal-no"><span class="nochip">№ 58</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span></div>
-<div class="partner"><b>Согревающее тело</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Согревающее тело</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 85 · ⚔️ 95 · 🛡 95</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 3
-    - Рубка деревьев — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=3"><span>🔥 Разжигание огня</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=2"><span>🪓 Рубка деревьев</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Согревающее тело
@@ -29,7 +29,7 @@
     - ✅ можно оседлать
     - ❌ явных минусов нет
 
-    > В древние времена его постоянно преследовали плотоядные Палы. Гнев Арсокс , вопивших от несправедливости, превратился в палящее пламя и из поколения в поколение передавался дальше.
+    > В древние времена его постоянно преследовали плотоядные Палы. Гнев Арсокс, вопивших от несправедливости, превратился в палящее пламя и из поколения в поколение передавался дальше.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2320
+    - Ранг разведения: 2320
     - Участвует в особых парах: Чиллет → Чиллет Игнис
 
 

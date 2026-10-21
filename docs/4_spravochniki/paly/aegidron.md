@@ -1,13 +1,13 @@
 # Аэгидрон
 
 <div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/DomeArmorDragon-p-512.webp" srcset="../../../pp/art/DomeArmorDragon-p-384.webp 384w, ../../../pp/art/DomeArmorDragon-p-512.webp 512w, ../../../pp/art/DomeArmorDragon-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Аэгидрон" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/184_DomeArmorDragon.webp">
-<div class="pal-info" data-pal="DomeArmorDragon"><div class="pal-no">№ 184 · Aegidron</div>
+<img class="pal-card pal-art" src="../../../pp/art/DomeArmorDragon-512.webp" srcset="../../../pp/art/DomeArmorDragon-384.webp 384w, ../../../pp/art/DomeArmorDragon-512.webp 512w, ../../../pp/art/DomeArmorDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Аэгидрон" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="DomeArmorDragon"><div class="pal-no"><span class="nochip">№ 184</span></div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Трава: 1 × 1,5 = ×1,5; Лёд: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span><span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Добыча 8">⛏️ Добыча <b>8</b></span></div>
-<div class="partner"><b>Несокрушимый крепостной дракон</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Несокрушимый крепостной дракон</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 105 · ⚔️ 125 · 🛡 140</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Добыча — ур. 8
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=8"><span>⛏️ Добыча</span><i style="--v:80%"></i><b>8</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Несокрушимый крепостной дракон
@@ -28,7 +29,7 @@
     - ✅ Добыча 8 — лучший добытчик; очень высокая атака (125); крепкая защита (140); отличный рабочий (пригодность 8); можно оседлать
     - ❌ Поздний; много ест (600)
 
-    > Давным-давно, когда средств связи было мало, иногда отправляли простые сигналы, мигая светом на внутренней стороне крыльев Аэгидрон .
+    > Давным-давно, когда средств связи было мало, иногда отправляли простые сигналы, мигая светом на внутренней стороне крыльев Аэгидрон.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -70,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 30
+    - Ранг разведения: 30
 
 
 

@@ -1,13 +1,13 @@
 # Панталус
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/KingWhale-p-512.webp" srcset="../../../pp/art/KingWhale-p-384.webp 384w, ../../../pp/art/KingWhale-p-512.webp 512w, ../../../pp/art/KingWhale-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Панталус" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/203_KingWhale.webp">
-<div class="pal-info" data-pal="KingWhale"><div class="pal-no">№ 203 · Panthalus</div>
+<img class="pal-card pal-art" src="../../../pp/art/KingWhale-512.webp" srcset="../../../pp/art/KingWhale-384.webp 384w, ../../../pp/art/KingWhale-512.webp 512w, ../../../pp/art/KingWhale-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Панталус" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="KingWhale"><div class="pal-no"><span class="nochip">№ 203</span></div>
 <div class="chips"><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span></div>
 <div class="works"></div>
-<div class="partner"><b>Хранитель эха</b> 🐎 верхом 🏠 на базе</div>
+<div class="partner"><b>Хранитель эха</b> <span class="actc">🐎 Верхом</span><span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 180 · ⚔️ 120 · 🛡 200</div></div></div>
 
 
@@ -17,7 +17,9 @@
 === "Обзор"
 
     #### Работа на базе
+
     - не работает
+
 
 
     #### Партнёрский навык: Хранитель эха
@@ -70,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 20
+    - Ранг разведения: 20
     - **Особая пара:** [Панталус](../../4_spravochniki/paly/panthalus.md) + [Панталус](../../4_spravochniki/paly/panthalus.md)
     - Участвует в особых парах: Панталус → Панталус; Панталус → Панталус
 

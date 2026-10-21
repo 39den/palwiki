@@ -1,13 +1,13 @@
 # Гринтэйл
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/NaughtyCat-512.webp" srcset="../../../pp/art/NaughtyCat-384.webp 384w, ../../../pp/art/NaughtyCat-512.webp 512w, ../../../pp/art/NaughtyCat-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Гринтэйл" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/70_NaughtyCat.webp">
-<div class="pal-info" data-pal="NaughtyCat"><div class="pal-no">№ 70 · Grintale</div>
+<img class="pal-card pal-art" src="../../../pp/art/NaughtyCat-512.webp" srcset="../../../pp/art/NaughtyCat-384.webp 384w, ../../../pp/art/NaughtyCat-512.webp 512w, ../../../pp/art/NaughtyCat-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Гринтэйл" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="NaughtyCat"><div class="pal-no"><span class="nochip">№ 70</span></div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 
 <div class="works"><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span></div>
-<div class="partner"><b>Сияющий кошачий глаз</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Сияющий кошачий глаз</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 110 · ⚔️ 80 · 🛡 80</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=3"><span>🧺 Сбор</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Сияющий кошачий глаз
@@ -28,7 +29,7 @@
     - ✅ можно оседлать
     - ❌ явных минусов нет
 
-    > Стоит только войти на территорию Гринтэйл , как за вами сразу начинают следить сверкающие глаза. И это не преувеличение — они действительно светятся.
+    > Стоит только войти на территорию Гринтэйл, как за вами сразу начинают следить сверкающие глаза. И это не преувеличение — они действительно светятся.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -69,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2120
+    - Ранг разведения: 2120
 
 
 

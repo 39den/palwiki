@@ -1,13 +1,13 @@
 # Камоноске Игнис
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/BluePlatypus_Fire-512.webp" srcset="../../../pp/art/BluePlatypus_Fire-384.webp 384w, ../../../pp/art/BluePlatypus_Fire-512.webp 512w, ../../../pp/art/BluePlatypus_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Камоноске Игнис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/5B_BluePlatypus_Fire.webp">
-<div class="pal-info" data-pal="BluePlatypus_Fire"><div class="pal-no">№ 5B · Fuack Ignis</div>
+<img class="pal-card pal-art" src="../../../pp/art/BluePlatypus_Fire-512.webp" srcset="../../../pp/art/BluePlatypus_Fire-384.webp 384w, ../../../pp/art/BluePlatypus_Fire-512.webp 512w, ../../../pp/art/BluePlatypus_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Камоноске Игнис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="BluePlatypus_Fire"><div class="pal-no"><span class="nochip">№ 5B</span></div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Вода: 1 × 1,5 = ×1,5; Молния: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span><span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 2">🔥 Разжигание огня <b>2</b></span><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
-<div class="partner"><b>Пламенный натиск</b> 🔘 кнопкой</div>
+<div class="partner"><b>Пламенный натиск</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 60 · ⚔️ 85 · 🛡 60</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 2
-    - Полив — ур. 2
-    - Ручная работа — ур. 1
-    - Транспортировка — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=2"><span>🔥 Разжигание огня</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=2"><span>💧 Полив</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=1"><span>✋ Ручная работа</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=1"><span>📦 Транспортировка</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Пламенный натиск
@@ -28,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорошая атака (85)
     - ❌ мало здоровья (60); разводится только особой парой
 
     > Его живот обладает высоким трением, и при боди-сёрфинге он воспламеняется. Часто превращается в огненный факел, если разгонится слишком сильно.
@@ -74,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2300
+    - Ранг разведения: 2300
     - **Особая пара:** [Камоноске](../../4_spravochniki/paly/fuack.md) + [Фламбелль](../../4_spravochniki/paly/flambelle.md)
 
 

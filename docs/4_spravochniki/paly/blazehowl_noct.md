@@ -1,13 +1,13 @@
 # Блейзхаул Нокт
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Manticore_Dark-512.webp" srcset="../../../pp/art/Manticore_Dark-384.webp 384w, ../../../pp/art/Manticore_Dark-512.webp 512w, ../../../pp/art/Manticore_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Блейзхаул Нокт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/112B_Manticore_Dark.webp">
-<div class="pal-info" data-pal="Manticore_Dark"><div class="pal-no">№ 112B · Blazehowl Noct</div>
+<img class="pal-card pal-art" src="../../../pp/art/Manticore_Dark-512.webp" srcset="../../../pp/art/Manticore_Dark-384.webp 384w, ../../../pp/art/Manticore_Dark-512.webp 512w, ../../../pp/art/Manticore_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Блейзхаул Нокт" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Manticore_Dark"><div class="pal-no"><span class="nochip">№ 112B</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Вода: 1,5 × 1 = ×1,5; Дракон: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>
-<div class="partner"><b>Лев Чёрного пламени</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Лев Чёрного пламени</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 105 · ⚔️ 115 · 🛡 80</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 5
-    - Рубка деревьев — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=5"><span>🔥 Разжигание огня</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=3"><span>🪓 Рубка деревьев</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Лев Чёрного пламени
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1270
+    - Ранг разведения: 1270
     - **Особая пара:** [Блейзхаул](../../4_spravochniki/paly/blazehowl.md) + [Фелбэт](../../4_spravochniki/paly/felbat.md)
 
 

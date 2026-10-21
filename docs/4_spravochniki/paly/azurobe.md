@@ -1,13 +1,13 @@
 # Азуроб
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/BlueDragon-512.webp" srcset="../../../pp/art/BlueDragon-384.webp 384w, ../../../pp/art/BlueDragon-512.webp 512w, ../../../pp/art/BlueDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Азуроб" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/41_BlueDragon.webp">
-<div class="pal-info" data-pal="BlueDragon"><div class="pal-no">№ 41 · Azurobe</div>
+<img class="pal-card pal-art" src="../../../pp/art/BlueDragon-512.webp" srcset="../../../pp/art/BlueDragon-384.webp 384w, ../../../pp/art/BlueDragon-512.webp 512w, ../../../pp/art/BlueDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Азуроб" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="BlueDragon"><div class="pal-no"><span class="nochip">№ 41</span></div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-dragon">Дракон</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Молния: 1,5 × 1 = ×1,5; Лёд: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span><span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 4">💧 Полив <b>4</b></span></div>
-<div class="partner"><b>Танец парящей воды</b> 🐎 верхом</div>
+<div class="partner"><b>Танец парящей воды</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 110 · ⚔️ 100 · 🛡 100</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 4
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=4"><span>💧 Полив</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Танец парящей воды
@@ -70,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1830
+    - Ранг разведения: 1830
     - Участвует в особых парах: Фростплюм → Азуроб Крист
 
 

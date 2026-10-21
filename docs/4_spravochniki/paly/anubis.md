@@ -1,13 +1,13 @@
 # Анубис
 
 <div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Anubis-512.webp" srcset="../../../pp/art/Anubis-384.webp 384w, ../../../pp/art/Anubis-512.webp 512w, ../../../pp/art/Anubis-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Анубис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/139_Anubis.webp">
-<div class="pal-info" data-pal="Anubis"><div class="pal-no">№ 139 · Anubis</div>
+<img class="pal-card pal-art" src="../../../pp/art/Anubis-512.webp" srcset="../../../pp/art/Anubis-384.webp 384w, ../../../pp/art/Anubis-512.webp 512w, ../../../pp/art/Anubis-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Анубис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Anubis"><div class="pal-no"><span class="nochip">№ 139</span></div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Добыча 6">⛏️ Добыча <b>6</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>
-<div class="partner"><b>Хранитель пустыни</b> 🔘 кнопкой</div>
+<div class="partner"><b>Хранитель пустыни</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 120 · ⚔️ 130 · 🛡 100</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Ручная работа — ур. 6
-    - Добыча — ур. 6
-    - Транспортировка — ур. 4
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=6"><span>✋ Ручная работа</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=6"><span>⛏️ Добыча</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=4"><span>📦 Транспортировка</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Хранитель пустыни
@@ -74,7 +73,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 480
+    - Ранг разведения: 480
 
 
 

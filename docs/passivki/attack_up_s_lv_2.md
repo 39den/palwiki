@@ -1,6 +1,6 @@
 # Малое увеличение атаки ур.2
 
-<div class="psv-hero" markdown="0"><span class="psv r-2 big">Малое увеличение атаки ур.2</span> <span class="rk">Ранг 2 · хорошая</span><div class="en">Attack Up (S) Lv. 2</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-2 big">Малое увеличение атаки ур.2</span> <span class="rk">Ранг 2 · хорошая <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Атака +6%
 

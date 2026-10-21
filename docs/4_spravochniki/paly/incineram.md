@@ -1,13 +1,13 @@
 # Инсинерам
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Baphomet-512.webp" srcset="../../../pp/art/Baphomet-384.webp 384w, ../../../pp/art/Baphomet-512.webp 512w, ../../../pp/art/Baphomet-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Инсинерам" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/91_Baphomet.webp">
-<div class="pal-info" data-pal="Baphomet"><div class="pal-no">№ 91 · Incineram</div>
+<img class="pal-card pal-art" src="../../../pp/art/Baphomet-512.webp" srcset="../../../pp/art/Baphomet-384.webp 384w, ../../../pp/art/Baphomet-512.webp 512w, ../../../pp/art/Baphomet-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Инсинерам" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Baphomet"><div class="pal-no"><span class="nochip">№ 91</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Вода: 1,5 × 1 = ×1,5; Дракон: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Когтистый охотник пламени</b> 🔘 кнопкой</div>
+<div class="partner"><b>Когтистый охотник пламени</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 95 · ⚔️ 100 · 🛡 85</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 3
-    - Ручная работа — ур. 2
-    - Добыча — ур. 3
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=3"><span>🔥 Разжигание огня</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=2"><span>✋ Ручная работа</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=3"><span>⛏️ Добыча</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Когтистый охотник пламени
@@ -73,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1470
+    - Ранг разведения: 1470
     - Участвует в особых парах: Мараит → Инсинерам Нокт
 
 

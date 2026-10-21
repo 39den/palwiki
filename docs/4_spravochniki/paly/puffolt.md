@@ -1,13 +1,13 @@
 # Пуффольт
 
 <div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/ElecPomeranian-p-512.webp" srcset="../../../pp/art/ElecPomeranian-p-384.webp 384w, ../../../pp/art/ElecPomeranian-p-512.webp 512w, ../../../pp/art/ElecPomeranian-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Пуффольт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/62_ElecPomeranian.webp">
-<div class="pal-info" data-pal="ElecPomeranian"><div class="pal-no">№ 62 · Puffolt</div>
+<img class="pal-card pal-art" src="../../../pp/art/ElecPomeranian-512.webp" srcset="../../../pp/art/ElecPomeranian-384.webp 384w, ../../../pp/art/ElecPomeranian-512.webp 512w, ../../../pp/art/ElecPomeranian-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Пуффольт" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="ElecPomeranian"><div class="pal-no"><span class="nochip">№ 62</span></div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
-<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-water">Вода <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Генерация энергии 2">⚡ Генерация энергии <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
-<div class="partner"><b>Искрящийся усилитель</b> 🏠 на базе</div>
+<div class="partner"><b>Искрящийся усилитель</b> <span class="actc">🏠 На базе</span></div>
 <div class="stats">❤️ 75 · ⚔️ 80 · 🛡 70</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Генерация энергии — ур. 2
-    - Транспортировка — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=electricity&lv=2"><span>⚡ Генерация энергии</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=1"><span>📦 Транспортировка</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Искрящийся усилитель
@@ -26,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорошая атака (80)
     - ❌ явных минусов нет
 
     > При намокании пушистый мех впитывает большое количество воды. При её стряхивании происходит мощнейший электрический разряд, и купание вместе с ним становится вопросом жизни и смерти.
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 2360
+    - Ранг разведения: 2360
 
 
 

@@ -1,13 +1,13 @@
 # Менастинг Терра
 
 <div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/DarkScorpion_Ground-512.webp" srcset="../../../pp/art/DarkScorpion_Ground-384.webp 384w, ../../../pp/art/DarkScorpion_Ground-512.webp 512w, ../../../pp/art/DarkScorpion_Ground-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Менастинг Терра" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/99B_DarkScorpion_Ground.webp">
-<div class="pal-info" data-pal="DarkScorpion_Ground"><div class="pal-no">№ 99B · Menasting Terra</div>
+<img class="pal-card pal-art" src="../../../pp/art/DarkScorpion_Ground-512.webp" srcset="../../../pp/art/DarkScorpion_Ground-384.webp 384w, ../../../pp/art/DarkScorpion_Ground-512.webp 512w, ../../../pp/art/DarkScorpion_Ground-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Менастинг Терра" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="DarkScorpion_Ground"><div class="pal-no"><span class="nochip">№ 99B</span></div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Добыча 6">⛏️ Добыча <b>6</b></span></div>
-<div class="partner"><b>Золотой скорпион</b> 🎒 из команды</div>
+<div class="partner"><b>Золотой скорпион</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 100 · ⚔️ 105 · 🛡 130</div></div></div>
 
 
@@ -17,8 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Рубка деревьев — ур. 3
-    - Добыча — ур. 6
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=3"><span>🪓 Рубка деревьев</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=6"><span>⛏️ Добыча</span><i style="--v:60%"></i><b>6</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Золотой скорпион
@@ -71,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 640
+    - Ранг разведения: 640
     - **Особая пара:** [Менастинг](../../4_spravochniki/paly/menasting.md) + [Теранайт](../../4_spravochniki/paly/knocklem.md)
 
 

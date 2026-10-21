@@ -1,13 +1,13 @@
 # Йормунтайд Игнис
 
 <div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Umihebi_Fire-512.webp" srcset="../../../pp/art/Umihebi_Fire-384.webp 384w, ../../../pp/art/Umihebi_Fire-512.webp 512w, ../../../pp/art/Umihebi_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Йормунтайд Игнис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/121B_Umihebi_Fire.webp">
-<div class="pal-info" data-pal="Umihebi_Fire"><div class="pal-no">№ 121B · Jormuntide Ignis</div>
+<img class="pal-card pal-art" src="../../../pp/art/Umihebi_Fire-512.webp" srcset="../../../pp/art/Umihebi_Fire-384.webp 384w, ../../../pp/art/Umihebi_Fire-512.webp 512w, ../../../pp/art/Umihebi_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Йормунтайд Игнис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Umihebi_Fire"><div class="pal-no"><span class="nochip">№ 121B</span></div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Вода: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 7">🔥 Разжигание огня <b>7</b></span></div>
-<div class="partner"><b>Лавовый дракон, зовущий бурю</b> 🎒 из команды 🐎 верхом</div>
+<div class="partner"><b>Лавовый дракон, зовущий бурю</b> <span class="actc">🎒 Работает из команды</span><span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 130 · ⚔️ 130 · 🛡 100</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 7
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=7"><span>🔥 Разжигание огня</span><i style="--v:70%"></i><b>7</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Лавовый дракон, зовущий бурю
@@ -28,7 +29,7 @@
     - ✅ Разжигание огня 7; очень высокая атака (130); много здоровья (130); отличный рабочий (пригодность 7); можно оседлать
     - ❌ Медленный; много ест (550); разводится только особой парой
 
-    > Ходит легенда о воине, несправедливо сброшенном в жерло вулкана. Возродившись в облике Йормунтайд Игнис , он сжёг страну дотла.
+    > Ходит легенда о воине, несправедливо сброшенном в жерло вулкана. Возродившись в облике Йормунтайд Игнис, он сжёг страну дотла.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -71,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 170
+    - Ранг разведения: 170
     - **Особая пара:** [Йормунтайд](../../4_spravochniki/paly/jormuntide.md) + [Блейзхаул](../../4_spravochniki/paly/blazehowl.md)
 
 

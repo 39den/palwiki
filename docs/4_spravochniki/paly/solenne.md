@@ -1,13 +1,13 @@
 # Соленна
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/MonochromeQueen-p-512.webp" srcset="../../../pp/art/MonochromeQueen-p-384.webp 384w, ../../../pp/art/MonochromeQueen-p-512.webp 512w, ../../../pp/art/MonochromeQueen-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Соленна" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/182_MonochromeQueen.webp">
-<div class="pal-info" data-pal="MonochromeQueen"><div class="pal-no">№ 182 · Solenne</div>
+<img class="pal-card pal-art" src="../../../pp/art/MonochromeQueen-512.webp" srcset="../../../pp/art/MonochromeQueen-384.webp 384w, ../../../pp/art/MonochromeQueen-512.webp 512w, ../../../pp/art/MonochromeQueen-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Соленна" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="MonochromeQueen"><div class="pal-no"><span class="nochip">№ 182</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Тьма: 1 × 1,5 = ×1,5; Дракон: 1,5 × 1 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 8">🖐️ Ручная работа <b>8</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Незапятнанная леди-одиночка</b> 🎒 из команды</div>
+<div class="partner"><b>Незапятнанная леди-одиночка</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 110 · ⚔️ 115 · 🛡 115</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Ручная работа — ур. 8
-    - Сбор — ур. 4
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=8"><span>✋ Ручная работа</span><i style="--v:80%"></i><b>8</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=4"><span>🧺 Сбор</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Незапятнанная леди-одиночка
@@ -30,7 +29,7 @@
     - ✅ Ручная работа 8 — лучший крафтер; хорошая атака (115); отличный рабочий (пригодность 8)
     - ❌; много ест (680)
 
-    > После хорошего опыта Соленна не успокоится, пока не получит столь же плохой. Если берёшь на себя заботу о Соленна , нужна соответствующая решимость.
+    > После хорошего опыта Соленна не успокоится, пока не получит столь же плохой. Если берёшь на себя заботу о Соленна, нужна соответствующая решимость.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -72,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 280
+    - Ранг разведения: 280
 
 
 

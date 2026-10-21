@@ -1,6 +1,6 @@
 # Халтурщик
 
-<div class="psv-hero" markdown="0"><span class="psv r-neg big">Халтурщик</span> <span class="rk">Ранг -3 · очень плохая</span><div class="en">Slacker</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-neg big">Халтурщик</span> <span class="rk">Ранг -3 · очень плохая <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Скорость работы -30%
 

@@ -1,13 +1,13 @@
 # Мамморест
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/GrassMammoth-512.webp" srcset="../../../pp/art/GrassMammoth-384.webp 384w, ../../../pp/art/GrassMammoth-512.webp 512w, ../../../pp/art/GrassMammoth-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Мамморест" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/87_GrassMammoth.webp">
-<div class="pal-info" data-pal="GrassMammoth"><div class="pal-no">№ 87 · Mammorest</div>
+<img class="pal-card pal-art" src="../../../pp/art/GrassMammoth-512.webp" srcset="../../../pp/art/GrassMammoth-384.webp 384w, ../../../pp/art/GrassMammoth-512.webp 512w, ../../../pp/art/GrassMammoth-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Мамморест" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="GrassMammoth"><div class="pal-no"><span class="nochip">№ 87</span></div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Огонь: 1,5 × 1 = ×1,5; Трава: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span><span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 4">🌱 Посев семян <b>4</b></span><span class="work" title="Рубка деревьев 4">🪓 Рубка деревьев <b>4</b></span><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span></div>
-<div class="partner"><b>Геокрушитель</b> 🐎 верхом</div>
+<div class="partner"><b>Геокрушитель</b> <span class="actc">🐎 Верхом</span></div>
 <div class="stats">❤️ 150 · ⚔️ 85 · 🛡 90</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 4
-    - Рубка деревьев — ур. 4
-    - Добыча — ур. 4
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=4"><span>🌱 Посев семян</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=4"><span>🪓 Рубка деревьев</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=4"><span>⛏️ Добыча</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Геокрушитель
@@ -30,7 +29,7 @@
     - ✅ Добыча, тяжёлый маунт; много здоровья (150); можно оседлать
     - ❌ Медленный
 
-    > Растительность на спинах у каждого — своя, уникальная. Когда-то она была популярным украшением, и даже были настоящие профи, которые занимались стрижкой Мамморест .
+    > Растительность на спинах у каждого — своя, уникальная. Когда-то она была популярным украшением, и даже были настоящие профи, которые занимались стрижкой Мамморест.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -73,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1340
+    - Ранг разведения: 1340
     - Участвует в особых парах: Вумпо → Мамморест Крист
 
 

@@ -1,13 +1,13 @@
 # Лифманк
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Carbunclo-512.webp" srcset="../../../pp/art/Carbunclo-384.webp 384w, ../../../pp/art/Carbunclo-512.webp 512w, ../../../pp/art/Carbunclo-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Лифманк" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/4_Carbunclo.webp">
-<div class="pal-info" data-pal="Carbunclo"><div class="pal-no">№ 4 · Lifmunk</div>
+<img class="pal-card pal-art" src="../../../pp/art/Carbunclo-512.webp" srcset="../../../pp/art/Carbunclo-384.webp 384w, ../../../pp/art/Carbunclo-512.webp 512w, ../../../pp/art/Carbunclo-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Лифманк" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Carbunclo"><div class="pal-no"><span class="nochip">№ 4</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 1">🌱 Посев семян <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Рубка деревьев 1">🪓 Рубка деревьев <b>1</b></span><span class="work" title="Фармацевтика 1">💊 Фармацевтика <b>1</b></span></div>
-<div class="partner"><b>Лифманк Рекойл</b> 🔘 кнопкой</div>
+<div class="partner"><b>Лифманк Рекойл</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 75 · ⚔️ 70 · 🛡 70</div></div></div>
 
 
@@ -17,11 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 1
-    - Ручная работа — ур. 1
-    - Сбор — ур. 1
-    - Рубка деревьев — ур. 1
-    - Фармацевтика — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=1"><span>🌱 Посев семян</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=1"><span>✋ Ручная работа</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=1"><span>🧺 Сбор</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=1"><span>🪓 Рубка деревьев</span><i style="--v:10%"></i><b>1</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=1"><span>💊 Фармацевтика</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Лифманк Рекойл
@@ -29,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ много здоровья (75)
     - ❌ слабая атака (70)
 
     > Его интеллект соответствует уровню 5-7 лет. Подходит для роли партнера, но были зафиксированы случаи, когда особи, обученные обращаться с оружием, убивали своих хозяев.
@@ -74,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 3020
+    - Ранг разведения: 3020
 
 
 

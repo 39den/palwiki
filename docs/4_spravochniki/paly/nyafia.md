@@ -1,13 +1,13 @@
 # Няфия
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/BadCatgirl-p-512.webp" srcset="../../../pp/art/BadCatgirl-p-384.webp 384w, ../../../pp/art/BadCatgirl-p-512.webp 512w, ../../../pp/art/BadCatgirl-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Няфия" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/143_BadCatgirl.webp">
-<div class="pal-info" data-pal="BadCatgirl"><div class="pal-no">№ 143 · Nyafia</div>
+<img class="pal-card pal-art" src="../../../pp/art/BadCatgirl-512.webp" srcset="../../../pp/art/BadCatgirl-384.webp 384w, ../../../pp/art/BadCatgirl-512.webp 512w, ../../../pp/art/BadCatgirl-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Няфия" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="BadCatgirl"><div class="pal-no"><span class="nochip">№ 143</span></div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
-<div class="partner"><b>Кошачий обстрел</b> 🔘 кнопкой 🎒 из команды</div>
+<div class="partner"><b>Кошачий обстрел</b> <span class="actc">🔘 Включается кнопкой</span><span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 110 · ⚔️ 100 · 🛡 100</div></div></div>
 
 
@@ -17,10 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Ручная работа — ур. 4
-    - Сбор — ур. 4
-    - Рубка деревьев — ур. 2
-    - Транспортировка — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=4"><span>✋ Ручная работа</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=4"><span>🧺 Сбор</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=2"><span>🪓 Рубка деревьев</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=3"><span>📦 Транспортировка</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Кошачий обстрел
@@ -72,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1250
+    - Ранг разведения: 1250
     - Участвует в особых парах: Кицун → Кицун Нокт
 
 

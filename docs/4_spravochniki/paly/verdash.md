@@ -1,13 +1,13 @@
 # Вердаш
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/GrassRabbitMan-512.webp" srcset="../../../pp/art/GrassRabbitMan-384.webp 384w, ../../../pp/art/GrassRabbitMan-512.webp 512w, ../../../pp/art/GrassRabbitMan-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Вердаш" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/152_GrassRabbitMan.webp">
-<div class="pal-info" data-pal="GrassRabbitMan"><div class="pal-no">№ 152 · Verdash</div>
+<img class="pal-card pal-art" src="../../../pp/art/GrassRabbitMan-512.webp" srcset="../../../pp/art/GrassRabbitMan-384.webp 384w, ../../../pp/art/GrassRabbitMan-512.webp 512w, ../../../pp/art/GrassRabbitMan-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Вердаш" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="GrassRabbitMan"><div class="pal-no"><span class="nochip">№ 152</span></div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 4">🌱 Посев семян <b>4</b></span><span class="work" title="Ручная работа 5">🖐️ Ручная работа <b>5</b></span><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
-<div class="partner"><b>Звёздный акробат равнин</b> 🎒 из команды</div>
+<div class="partner"><b>Звёздный акробат равнин</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 90 · ⚔️ 115 · 🛡 90</div></div></div>
 
 
@@ -17,11 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Посев семян — ур. 4
-    - Ручная работа — ур. 5
-    - Сбор — ур. 5
-    - Рубка деревьев — ур. 3
-    - Транспортировка — ур. 3
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=4"><span>🌱 Посев семян</span><i style="--v:40%"></i><b>4</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=5"><span>✋ Ручная работа</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=5"><span>🧺 Сбор</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=3"><span>🪓 Рубка деревьев</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=3"><span>📦 Транспортировка</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Звёздный акробат равнин
@@ -32,7 +29,7 @@
     - ✅ хорошая атака (115); отличный рабочий (пригодность 5)
     - ❌ явных минусов нет
 
-    > Почва, по которой пробегает Вердаш , становится очень плодородной, и там буйно разрастается зелень. Если обработать землю гербицидом — он туда больше не сунется.
+    > Почва, по которой пробегает Вердаш, становится очень плодородной, и там буйно разрастается зелень. Если обработать землю гербицидом — он туда больше не сунется.
 
     См. также: [Стихии](../../guide/06_stihii.md) · [Разведение](../../guide/07_razvedenie.md) · [Все палы](README.md)
 
@@ -75,7 +72,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1160
+    - Ранг разведения: 1160
 
 
 

@@ -1,13 +1,13 @@
 # Светящаяся летучая мышь
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Illuminant_Bat-512.webp" srcset="../../../pp/art/Illuminant_Bat-384.webp 384w, ../../../pp/art/Illuminant_Bat-512.webp 512w, ../../../pp/art/Illuminant_Bat-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Светящаяся летучая мышь" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/T7_Illuminant_Bat.webp">
-<div class="pal-info" data-pal="Illuminant_Bat"><div class="pal-no">№ T7 · Illuminant Bat</div>
+<img class="pal-card pal-art" src="../../../pp/art/Illuminant_Bat-512.webp" srcset="../../../pp/art/Illuminant_Bat-384.webp 384w, ../../../pp/art/Illuminant_Bat-512.webp 512w, ../../../pp/art/Illuminant_Bat-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Светящаяся летучая мышь" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Illuminant_Bat"><div class="pal-no"><span class="nochip">№ T7</span></div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 
 <div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span></div>
-<div class="partner"><b>Поддержка летучих мышей</b> 🎒 из команды</div>
+<div class="partner"><b>Поддержка летучих мышей</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 80 · ⚔️ 80 · 🛡 95</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Сбор — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=1"><span>🧺 Сбор</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Поддержка летучих мышей
@@ -25,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ крепкая защита (95)
     - ❌ явных минусов нет
 
     > [Коллаборация с Terraria] Монстр из другого мира. Похоже, здесь его можно приручить.
@@ -58,7 +59,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 3100
+    - Ранг разведения: 3100
 
 
 

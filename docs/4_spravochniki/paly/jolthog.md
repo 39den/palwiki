@@ -1,13 +1,13 @@
 # Джолтхог
 
 <div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Hedgehog-512.webp" srcset="../../../pp/art/Hedgehog-384.webp 384w, ../../../pp/art/Hedgehog-512.webp 512w, ../../../pp/art/Hedgehog-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Джолтхог" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/15_Hedgehog.webp">
-<div class="pal-info" data-pal="Hedgehog"><div class="pal-no">№ 15 · Jolthog</div>
+<img class="pal-card pal-art" src="../../../pp/art/Hedgehog-512.webp" srcset="../../../pp/art/Hedgehog-384.webp 384w, ../../../pp/art/Hedgehog-512.webp 512w, ../../../pp/art/Hedgehog-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Джолтхог" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Hedgehog"><div class="pal-no"><span class="nochip">№ 15</span></div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
-<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-water">Вода <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Генерация энергии 1">⚡ Генерация энергии <b>1</b></span></div>
-<div class="partner"><b>Электрошоковая бомба</b> 🔘 кнопкой</div>
+<div class="partner"><b>Электрошоковая бомба</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 70 · ⚔️ 75 · 🛡 70</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Генерация энергии — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=electricity&lv=1"><span>⚡ Генерация энергии</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Электрошоковая бомба
@@ -25,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорошая атака (75)
     - ❌ слабая атака (75)
 
     > При сильном ударе он выпускает накопленное электричество. Его напряжение превышает 10 миллионов вольт. Если бросить его — это куда опаснее, чем плохо обращённое тяжёлое оружие.
@@ -69,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 3030
+    - Ранг разведения: 3030
     - Участвует в особых парах: Пенгуллет → Джолтхог Крист
 
 

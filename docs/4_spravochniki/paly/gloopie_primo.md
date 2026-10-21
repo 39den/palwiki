@@ -1,13 +1,13 @@
 # Глуппи Примо
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/OctopusGirl_Neutral-p-512.webp" srcset="../../../pp/art/OctopusGirl_Neutral-p-384.webp 384w, ../../../pp/art/OctopusGirl_Neutral-p-512.webp 512w, ../../../pp/art/OctopusGirl_Neutral-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Глуппи Примо" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/48B_OctopusGirl_Neutral.webp">
-<div class="pal-info" data-pal="OctopusGirl_Neutral"><div class="pal-no">№ 48B · Gloopie Primo</div>
+<img class="pal-card pal-art" src="../../../pp/art/OctopusGirl_Neutral-512.webp" srcset="../../../pp/art/OctopusGirl_Neutral-384.webp 384w, ../../../pp/art/OctopusGirl_Neutral-512.webp 512w, ../../../pp/art/OctopusGirl_Neutral-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Глуппи Примо" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="OctopusGirl_Neutral"><div class="pal-no"><span class="nochip">№ 48B</span></div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит. Молния: 1,5 × 1 = ×1,5; Тьма: 1 × 1,5 = ×1,5.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
-<div class="partner"><b>Чавкающая принцесса</b> 🎒 из команды</div>
+<div class="partner"><b>Чавкающая принцесса</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 75 · ⚔️ 85 · 🛡 70</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 2
-    - Ручная работа — ур. 2
-    - Транспортировка — ур. 2
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=2"><span>💧 Полив</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=2"><span>✋ Ручная работа</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=2"><span>📦 Транспортировка</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Чавкающая принцесса
@@ -27,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ хорошая атака (85)
     - ❌ разводится только особой парой
 
     > Если берёте его с собой в постель, лучше заранее проверить расписание на завтра. Следы от его присосок похожи на поцелуи, так что если он случайно присосётся во сне — это может вызвать ненужную тревогу у окружающих.
@@ -72,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 1630
+    - Ранг разведения: 1630
     - **Особая пара:** [Глуппи](../../4_spravochniki/paly/gloopie.md) + [Валентейл](../../4_spravochniki/paly/valentail.md)
 
 

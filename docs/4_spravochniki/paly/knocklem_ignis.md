@@ -1,13 +1,13 @@
 # Теранайт Игнис
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art portrait" src="../../../pp/art/WingGolem_Fire-p-512.webp" srcset="../../../pp/art/WingGolem_Fire-p-384.webp 384w, ../../../pp/art/WingGolem_Fire-p-512.webp 512w, ../../../pp/art/WingGolem_Fire-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Теранайт Игнис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/159B_WingGolem_Fire.webp">
-<div class="pal-info" data-pal="WingGolem_Fire"><div class="pal-no">№ 159B · Knocklem Ignis</div>
+<img class="pal-card pal-art" src="../../../pp/art/WingGolem_Fire-512.webp" srcset="../../../pp/art/WingGolem_Fire-384.webp 384w, ../../../pp/art/WingGolem_Fire-512.webp 512w, ../../../pp/art/WingGolem_Fire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Теранайт Игнис" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="WingGolem_Fire"><div class="pal-no"><span class="nochip">№ 159B</span></div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span><span class="work" title="Добыча 7">⛏️ Добыча <b>7</b></span><span class="work" title="Транспортировка 7">📦 Транспортировка <b>7</b></span></div>
-<div class="partner"><b>Режим железного стража</b> 🔘 кнопкой</div>
+<div class="partner"><b>Режим железного стража</b> <span class="actc">🔘 Включается кнопкой</span></div>
 <div class="stats">❤️ 105 · ⚔️ 115 · 🛡 135</div></div></div>
 
 
@@ -17,9 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Разжигание огня — ур. 5
-    - Добыча — ур. 7
-    - Транспортировка — ур. 7
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=5"><span>🔥 Разжигание огня</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=7"><span>⛏️ Добыча</span><i style="--v:70%"></i><b>7</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=7"><span>📦 Транспортировка</span><i style="--v:70%"></i><b>7</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Режим железного стража
@@ -72,7 +71,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 210
+    - Ранг разведения: 210
     - **Особая пара:** [Теранайт](../../4_spravochniki/paly/knocklem.md) + [Рагнахавк](../../4_spravochniki/paly/ragnahawk.md)
 
 

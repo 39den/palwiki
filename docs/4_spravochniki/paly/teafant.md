@@ -1,13 +1,13 @@
 # Тифант
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card pal-art" src="../../../pp/art/Ganesha-512.webp" srcset="../../../pp/art/Ganesha-384.webp 384w, ../../../pp/art/Ganesha-512.webp 512w, ../../../pp/art/Ganesha-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Тифант" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/11_Ganesha.webp">
-<div class="pal-info" data-pal="Ganesha"><div class="pal-no">№ 11 · Teafant</div>
+<img class="pal-card pal-art" src="../../../pp/art/Ganesha-512.webp" srcset="../../../pp/art/Ganesha-384.webp 384w, ../../../pp/art/Ganesha-512.webp 512w, ../../../pp/art/Ganesha-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Тифант" width="512" height="512" fetchpriority="high" decoding="async">
+<div class="pal-info" data-pal="Ganesha"><div class="pal-no"><span class="nochip">№ 11</span></div>
 <div class="chips"><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям: ×1,5 за стихию, которую атака бьёт, ×0,65 за ту, что её держит.">?</button></div>
 <div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span></div>
-<div class="partner"><b>Исцеляющий душ</b> 🎒 из команды</div>
+<div class="partner"><b>Исцеляющий душ</b> <span class="actc">🎒 Работает из команды</span></div>
 <div class="stats">❤️ 70 · ⚔️ 60 · 🛡 70</div></div></div>
 
 
@@ -17,7 +17,8 @@
 === "Обзор"
 
     #### Работа на базе
-    - Полив — ур. 1
+
+    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=1"><span>💧 Полив</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
 
 
     #### Партнёрский навык: Исцеляющий душ
@@ -25,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅
+    - ✅ крепкая защита (70)
     - ❌ слабая атака (60)
 
     > Из органа, который предположительно является носом, вытекают огромные объёмы воды. Есть мнение, что это всего лишь сопли. В кругах учёных по этому поводу разгорелись жаркие споры.
@@ -69,7 +70,7 @@
 === "Разведение"
 
     #### Разведение
-    - Ранг разведения (CombiRank): 3070
+    - Ранг разведения: 3070
 
 
 

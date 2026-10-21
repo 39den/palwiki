@@ -1,6 +1,6 @@
 # Ботанический барьер
 
-<div class="psv-hero" markdown="0"><span class="psv r-1 big">Ботанический барьер</span> <span class="rk">Ранг 1 · обычная</span><div class="en">Botanical Barrier</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-1 big">Ботанический барьер</span> <span class="rk">Ранг 1 · обычная <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Снижение травяного урона 10%
 

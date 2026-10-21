@@ -1,6 +1,6 @@
 # Увеличение макс. переносимого веса ур.3
 
-<div class="psv-hero" markdown="0"><span class="psv r-neg big">Увеличение макс. переносимого веса ур.3</span> <span class="rk">Ранг -1 · плохая</span><div class="en">Max Carrying Capacity Lv. 3</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-neg big">Увеличение макс. переносимого веса ур.3</span> <span class="rk">Ранг -1 · плохая <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
 **Что даёт:** Переносимый вес +200
 

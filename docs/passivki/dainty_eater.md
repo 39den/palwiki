@@ -1,8 +1,8 @@
 # Малоежка
 
-<div class="psv-hero" markdown="0"><span class="psv r-1 big">Малоежка</span> <span class="rk">Ранг 1 · обычная</span><div class="en">Dainty Eater</div></div>
+<div class="psv-hero" markdown="0"><span class="psv r-1 big">Малоежка</span> <span class="rk">Ранг 1 · обычная <button class="hlp" data-tip="Ранг — насколько сильна пассивка: от −3 (вредная) до 4 (легендарная). Чем выше, тем реже встречается.">?</button></span></div>
 
-**Что даёт:** Уровень сытости снижается медленнее +10.0%
+**Что даёт:** Уровень сытости снижается медленнее +10%
 
 Полезная пассивка. Одинаковые пассивки на одном пале не складываются.
 

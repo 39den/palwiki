@@ -1,0 +1,1232 @@
+{
+ "Accumulator": {
+  "file": "Accumulator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/8/82/Accumulator.png/revision/latest?cb=20241223154733",
+  "w": 256,
+  "h": 256
+ },
+ "Advanced Chest": {
+  "file": "Advanced_Chest.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/b0/Advanced_Chest.png/revision/latest?cb=20241223152636",
+  "w": 256,
+  "h": 256
+ },
+ "Advanced Medicine Workbench": {
+  "file": "Advanced_Medicine_Workbench.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/06/Advanced_Medicine_Workbench.png/revision/latest?cb=20241226174712",
+  "w": 256,
+  "h": 256
+ },
+ "Advanced Sphere Assembly Line": {
+  "file": "Advanced_Sphere_Assembly_Line.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d4/Advanced_Sphere_Assembly_Line.png/revision/latest?cb=20241223152053",
+  "w": 256,
+  "h": 256
+ },
+ "Advanced Weapon Assembly Line": {
+  "file": "Advanced_Weapon_Assembly_Line.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/ba/Advanced_Weapon_Assembly_Line.png/revision/latest?cb=20260814041657",
+  "w": 256,
+  "h": 256
+ },
+ "Advanced Workshop": {
+  "file": "Advanced_Workshop.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/6/6d/Advanced_Workshop.png/revision/latest?cb=20260814041700",
+  "w": 256,
+  "h": 256
+ },
+ "Alarm Bell": {
+  "file": "Alarm_Bell.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/5/5e/Alarm_Bell.png/revision/latest?cb=20240124011354",
+  "w": 512,
+  "h": 512
+ },
+ "Alpha Wave Generator": {
+  "file": "Alpha_Wave_Generator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/6/6b/Alpha_Wave_Generator.png/revision/latest?cb=20241223154527",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Clinic": {
+  "file": "Ancient_Clinic.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/02/Ancient_Clinic.png/revision/latest?cb=20260814041703",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Farm": {
+  "file": "Ancient_Farm.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/a0/Ancient_Farm.png/revision/latest?cb=20260814041712",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Furnace": {
+  "file": "Ancient_Furnace.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/3/38/Ancient_Furnace.png/revision/latest?cb=20260814041721",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Hatchery": {
+  "file": "Ancient_Hatchery.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/fa/Ancient_Hatchery.png/revision/latest?cb=20260717192930",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Hot Spring": {
+  "file": "Ancient_Hot_Spring.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/03/Ancient_Hot_Spring.png/revision/latest?cb=20260814041724",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Kitchen": {
+  "file": "Ancient_Kitchen.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/b3/Ancient_Kitchen.png/revision/latest?cb=20260814041727",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Material Synthesizer": {
+  "file": "Ancient_Material_Synthesizer.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d7/Ancient_Material_Synthesizer.png/revision/latest?cb=20260814041730",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Monitoring Stand": {
+  "file": "Ancient_Monitoring_Stand.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/4b/Ancient_Monitoring_Stand.png/revision/latest?cb=20260814041733",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Pal Bed": {
+  "file": "Ancient_Pal_Bed.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/28/Ancient_Pal_Bed.png/revision/latest?cb=20260814041736",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Power Generator": {
+  "file": "Ancient_Power_Generator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/fc/Ancient_Power_Generator.png/revision/latest?cb=20260814041746",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Relic Recycler": {
+  "file": "Ancient_Relic_Recycler.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/b1/Ancient_Relic_Recycler.png/revision/latest?cb=20260814041752",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Structure Set": {
+  "file": "Ancient_Structure_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/6/6e/Ancient_Structure_Set.png/revision/latest?cb=20260814041810",
+  "w": 256,
+  "h": 256
+ },
+ "Ancient Workbench": {
+  "file": "Ancient_Workbench.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/0c/Ancient_Workbench.png/revision/latest?cb=20260814041834",
+  "w": 256,
+  "h": 256
+ },
+ "Antique Chest": {
+  "file": "Antique_Chest.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e9/Antique_Chest.png/revision/latest?cb=20240130200424",
+  "w": 500,
+  "h": 500
+ },
+ "Antique Lamp Set": {
+  "file": "Antique_Lamp_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/95/Antique_Lamp_Set.png/revision/latest?cb=20240124033742",
+  "w": 512,
+  "h": 512
+ },
+ "Antique Side Chest": {
+  "file": "Antique_Chest.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e9/Antique_Chest.png/revision/latest?cb=20240130200424",
+  "w": 500,
+  "h": 500
+ },
+ "Azure Covenant Flag Set": {
+  "file": "Azure_Covenant_Flag_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/3/36/Azure_Covenant_Flag_Set.png/revision/latest?cb=20260814042027",
+  "w": 256,
+  "h": 256
+ },
+ "Bear Trap (Large)": {
+  "file": "Bear_Trap_(Large).png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/ae/Bear_Trap_%28Large%29.png/revision/latest?cb=20260725232317",
+  "w": 256,
+  "h": 256
+ },
+ "Bear Trap (Small)": {
+  "file": "Bear_Trap_(Small).png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/48/Bear_Trap_%28Small%29.png/revision/latest?cb=20260814042033",
+  "w": 256,
+  "h": 256
+ },
+ "Berry Plantation": {
+  "file": "Crop_Plantation.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/9b/Crop_Plantation.png/revision/latest?cb=20240123201454",
+  "w": 512,
+  "h": 512
+ },
+ "Beta Wave Generator": {
+  "file": "Beta_Wave_Generator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/1/17/Beta_Wave_Generator.png/revision/latest?cb=20241223154540",
+  "w": 256,
+  "h": 256
+ },
+ "Breeding Farm": {
+  "file": "Breeding_Farm.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/1/14/Breeding_Farm.png/revision/latest?cb=20240124033747",
+  "w": 512,
+  "h": 512
+ },
+ "Brothers of the Eternal Pyre Flag Set": {
+  "file": "Brothers_of_the_Eternal_Pyre_Flag_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/0a/Brothers_of_the_Eternal_Pyre_Flag_Set.png/revision/latest?cb=20250713184855",
+  "w": 256,
+  "h": 256
+ },
+ "Campfire": {
+  "file": "Campfire.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/01/Campfire.png/revision/latest?cb=20240124010816",
+  "w": 512,
+  "h": 512
+ },
+ "Carrot Plantation": {
+  "file": "Carrot_Plantation.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/a1/Carrot_Plantation.png/revision/latest?cb=20241223153951",
+  "w": 256,
+  "h": 256
+ },
+ "Ceiling Lamp": {
+  "file": "Ceiling_Lamp.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/7b/Ceiling_Lamp.png/revision/latest?cb=20240124033743",
+  "w": 512,
+  "h": 512
+ },
+ "Clinic": {
+  "file": "Clinic.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/4f/Clinic.png/revision/latest?cb=20260814042158",
+  "w": 256,
+  "h": 256
+ },
+ "Coal Mine": {
+  "file": "Coal_Mine.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/a0/Coal_Mine.png/revision/latest?cb=20240627072440",
+  "w": 256,
+  "h": 256
+ },
+ "Coal Quarry": {
+  "file": "Coal_Quarry.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e0/Coal_Quarry.png/revision/latest?cb=20260814042201",
+  "w": 256,
+  "h": 256
+ },
+ "Cold Food Box": {
+  "file": "Cold_Food_Box.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/f4/Cold_Food_Box.png/revision/latest?cb=20240627075056",
+  "w": 256,
+  "h": 256
+ },
+ "Cooking Pot": {
+  "file": "Cooking_Pot.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/f9/Cooking_Pot.png/revision/latest?cb=20240124040312",
+  "w": 512,
+  "h": 512
+ },
+ "Cooler": {
+  "file": "Cooler.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/6/62/Cooler.png/revision/latest?cb=20240124033748",
+  "w": 512,
+  "h": 512
+ },
+ "Cooler Box": {
+  "file": "Cooler_Box.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/fd/Cooler_Box.png/revision/latest?cb=20240124033748",
+  "w": 512,
+  "h": 512
+ },
+ "Crude Oil Extractor": {
+  "file": "Crude_Oil_Extractor.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/bd/Crude_Oil_Extractor.png/revision/latest?cb=20240627072512",
+  "w": 256,
+  "h": 256
+ },
+ "Crusher": {
+  "file": "Crusher.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/7a/Crusher.png/revision/latest?cb=20240124033959",
+  "w": 512,
+  "h": 512
+ },
+ "Cryogenic Crusher": {
+  "file": "Cryogenic_Crusher.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/1/14/Cryogenic_Crusher.png/revision/latest?cb=20260814042208",
+  "w": 256,
+  "h": 256
+ },
+ "Curve Module": {
+  "file": "Curve_Module_icon.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/ba/Curve_Module_icon.png/revision/latest?cb=20241223140635",
+  "w": 256,
+  "h": 256
+ },
+ "Dimensional Pal Storage": {
+  "file": "Dimensional_Pal_Storage.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d3/Dimensional_Pal_Storage.png/revision/latest?cb=20250319224342",
+  "w": 256,
+  "h": 256
+ },
+ "Double Street Lamp": {
+  "file": "Double_Street_Lamp.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d4/Double_Street_Lamp.png/revision/latest?cb=20240322143450",
+  "w": 300,
+  "h": 300
+ },
+ "Drafting Table": {
+  "file": "Drafting_Table.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/00/Drafting_Table.png/revision/latest?cb=20250620044412",
+  "w": 256,
+  "h": 256
+ },
+ "Egg Incubator": {
+  "file": "Egg_Incubator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e3/Egg_Incubator.png/revision/latest?cb=20240127041322",
+  "w": 512,
+  "h": 512
+ },
+ "Electric Cooler": {
+  "file": "Electric_Cooler.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/28/Electric_Cooler.png/revision/latest?cb=20240124033748",
+  "w": 512,
+  "h": 512
+ },
+ "Electric Egg Incubator": {
+  "file": "Electric_Egg_Incubator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/6/65/Electric_Egg_Incubator.png/revision/latest?cb=20240404151809",
+  "w": 512,
+  "h": 512
+ },
+ "Electric Furnace": {
+  "file": "Electric_Furnace.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/7a/Electric_Furnace.png/revision/latest?cb=20240124033749",
+  "w": 512,
+  "h": 512
+ },
+ "Electric Heater": {
+  "file": "Electric_Heater.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e3/Electric_Heater.png/revision/latest?cb=20240124033749",
+  "w": 512,
+  "h": 512
+ },
+ "Electric Kitchen": {
+  "file": "Electric_Kitchen.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/8/80/Electric_Kitchen.png/revision/latest?cb=20240124033749",
+  "w": 512,
+  "h": 512
+ },
+ "Electric Medicine Workbench": {
+  "file": "Electric_Medicine_Workbench.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/4c/Electric_Medicine_Workbench.png/revision/latest?cb=20240124033749",
+  "w": 512,
+  "h": 512
+ },
+ "Electric Mine": {
+  "file": "Electric_Mine.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/73/Electric_Mine.png/revision/latest?cb=20240124033744",
+  "w": 512,
+  "h": 512
+ },
+ "Electric Pylon": {
+  "file": "Electric_Pylon.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/75/Electric_Pylon.png/revision/latest?cb=20240124033749",
+  "w": 512,
+  "h": 512
+ },
+ "Faux Bamboo Set": {
+  "file": "Faux_Bamboo_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/96/Faux_Bamboo_Set.png/revision/latest?cb=20260725232452",
+  "w": 256,
+  "h": 256
+ },
+ "Faux Cherry Blossoms Set": {
+  "file": "Faux_Cherry_Blossoms_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/43/Faux_Cherry_Blossoms_Set.png/revision/latest?cb=20260814042244",
+  "w": 256,
+  "h": 256
+ },
+ "Faux Crimson Foliage Set": {
+  "file": "Faux_Crimson_Foliage_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/46/Faux_Crimson_Foliage_Set.png/revision/latest?cb=20260814042257",
+  "w": 256,
+  "h": 256
+ },
+ "Faux Desert Greenery Set": {
+  "file": "Faux_Desert_Greenery_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/78/Faux_Desert_Greenery_Set.png/revision/latest?cb=20260814042309",
+  "w": 256,
+  "h": 256
+ },
+ "Faux Golden Foliage Set": {
+  "file": "Faux_Golden_Foliage_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/3/31/Faux_Golden_Foliage_Set.png/revision/latest?cb=20260814042331",
+  "w": 256,
+  "h": 256
+ },
+ "Faux Greenery Set": {
+  "file": "Faux_Greenery_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/7c/Faux_Greenery_Set.png/revision/latest?cb=20260725231818",
+  "w": 256,
+  "h": 256
+ },
+ "Faux Snowy Greenery Set": {
+  "file": "Faux_Snowy_Greenery_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/03/Faux_Snowy_Greenery_Set.png/revision/latest?cb=20260814042355",
+  "w": 256,
+  "h": 256
+ },
+ "Faux Tropical Greenery Set": {
+  "file": "Faux_Tropical_Greenery_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/b4/Faux_Tropical_Greenery_Set.png/revision/latest?cb=20260814042413",
+  "w": 256,
+  "h": 256
+ },
+ "Feed Box": {
+  "file": "Feed_Box.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/b7/Feed_Box.png/revision/latest?cb=20240123200104",
+  "w": 512,
+  "h": 512
+ },
+ "Feybreak Flag Set": {
+  "file": "Feybreak_Flag_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d5/Feybreak_Flag_Set.png/revision/latest?cb=20260814042423",
+  "w": 256,
+  "h": 256
+ },
+ "Fine Bed": {
+  "file": "Fine_Bed.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/8/87/Fine_Bed.png/revision/latest?cb=20240124033749",
+  "w": 512,
+  "h": 512
+ },
+ "Fishing Pond": {
+  "file": "Fishing_Pond.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d1/Fishing_Pond.png/revision/latest?cb=20250630151932",
+  "w": 256,
+  "h": 256
+ },
+ "Flame Cauldron": {
+  "file": "Flame_Cauldron.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/46/Flame_Cauldron.png/revision/latest?cb=20240124033749",
+  "w": 512,
+  "h": 512
+ },
+ "Flea Market (Items)": {
+  "file": "Flea_Market_(Items).png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/5/52/Flea_Market_%28Items%29.png/revision/latest?cb=20241223155241",
+  "w": 256,
+  "h": 256
+ },
+ "Flea Market (Pals)": {
+  "file": "Flea_Market_(Pals).png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/9b/Flea_Market_%28Pals%29.png/revision/latest?cb=20241223155254",
+  "w": 256,
+  "h": 256
+ },
+ "Flower Bed": {
+  "file": "Flower_Bed.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/2b/Flower_Bed.png/revision/latest?cb=20240124033750",
+  "w": 512,
+  "h": 512
+ },
+ "Fluffy Pal Bed": {
+  "file": "Fluffy_Pal_Bed.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e7/Fluffy_Pal_Bed.png/revision/latest?cb=20240128184223",
+  "w": 512,
+  "h": 512
+ },
+ "Free Pal Alliance Flag Set": {
+  "file": "Free_Pal_Alliance_Flag_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/46/Free_Pal_Alliance_Flag_Set.png/revision/latest?cb=20250713184836",
+  "w": 256,
+  "h": 256
+ },
+ "Frostallion Statue": {
+  "file": "Frostallion_Statue.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/1/17/Frostallion_Statue.png/revision/latest?cb=20260814042441",
+  "w": 256,
+  "h": 256
+ },
+ "Futuristic Structure Set": {
+  "file": "Futuristic_Structure_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d0/Futuristic_Structure_Set.png/revision/latest?cb=20250713184554",
+  "w": 256,
+  "h": 256
+ },
+ "Gigantic Furnace": {
+  "file": "Gigantic_Furnace.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/5/57/Gigantic_Furnace.png/revision/latest?cb=20241226173037",
+  "w": 512,
+  "h": 512
+ },
+ "Glass Structure Set": {
+  "file": "Glass_Foundation.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/3/35/Glass_Foundation.png/revision/latest?cb=20240627080145",
+  "w": 256,
+  "h": 256
+ },
+ "Global Palbox": {
+  "file": "Global_Palbox.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/5/52/Global_Palbox.png/revision/latest?cb=20250319224239",
+  "w": 256,
+  "h": 256
+ },
+ "Hanging Trap": {
+  "file": "Hanging_Trap.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/0a/Hanging_Trap.png/revision/latest?cb=20240124011411",
+  "w": 512,
+  "h": 512
+ },
+ "Heater": {
+  "file": "Heater.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/93/Heater.png/revision/latest?cb=20240124033749",
+  "w": 512,
+  "h": 512
+ },
+ "Heavy Weight Module": {
+  "file": "Heavy_Weight_Module_icon.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/24/Heavy_Weight_Module_icon.png/revision/latest?cb=20241223140618",
+  "w": 256,
+  "h": 256
+ },
+ "Hexolite Quartz Mine": {
+  "file": "Hexolite_Quartz_Mine.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/fb/Hexolite_Quartz_Mine.png/revision/latest?cb=20250710095211",
+  "w": 512,
+  "h": 512
+ },
+ "High-Pressure Crude Oil Extractor": {
+  "file": "High-Pressure_Crude_Oil_Extractor.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/74/High-Pressure_Crude_Oil_Extractor.png/revision/latest?cb=20260814042533",
+  "w": 256,
+  "h": 256
+ },
+ "High Quality Hot Spring": {
+  "file": "High_Quality_Hot_Spring.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/99/High_Quality_Hot_Spring.png/revision/latest?cb=20240124033750",
+  "w": 512,
+  "h": 512
+ },
+ "High Quality Monitoring Stand": {
+  "file": "High_Quality_Monitoring_Stand.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/2e/High_Quality_Monitoring_Stand.png/revision/latest?cb=20260814042530",
+  "w": 256,
+  "h": 256
+ },
+ "High Quality Workbench": {
+  "file": "High_Quality_Workbench.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/f9/High_Quality_Workbench.png/revision/latest?cb=20241225133106",
+  "w": 512,
+  "h": 512
+ },
+ "Hot Spring": {
+  "file": "Hot_Spring.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/8/8e/Hot_Spring.png/revision/latest?cb=20240124033750",
+  "w": 512,
+  "h": 512
+ },
+ "Human-Powered Generator": {
+  "file": "Human-Powered_Generator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/76/Human-Powered_Generator.png/revision/latest?cb=20241223154643",
+  "w": 256,
+  "h": 256
+ },
+ "Ice Mine": {
+  "file": "Ice_Mine.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/24/Ice_Mine.png/revision/latest?cb=20240124033744",
+  "w": 512,
+  "h": 512
+ },
+ "Improved Furnace": {
+  "file": "Improved_Furnace.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/a1/Improved_Furnace.png/revision/latest?cb=20240124033750",
+  "w": 512,
+  "h": 512
+ },
+ "Iron Gate": {
+  "file": "Iron_Gate.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e3/Iron_Gate.png/revision/latest?cb=20240124033750",
+  "w": 512,
+  "h": 512
+ },
+ "Iron Shelf": {
+  "file": "Metal_Shelf_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/49/Metal_Shelf_Set.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Item Retrieval Machine": {
+  "file": "Item_Retrieval_Machine.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d4/Item_Retrieval_Machine.png/revision/latest?cb=20241223152618",
+  "w": 256,
+  "h": 256
+ },
+ "Japanese-Style Furniture Set": {
+  "file": "Japanese-Style_Furniture_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/ad/Japanese-Style_Furniture_Set.png/revision/latest?cb=20241226142411",
+  "w": 256,
+  "h": 256
+ },
+ "Japanese-Style Hot Spring": {
+  "file": "Japanese-Style_Hot_Spring.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/8/82/Japanese-Style_Hot_Spring.png/revision/latest?cb=20250713184742",
+  "w": 512,
+  "h": 512
+ },
+ "Japanese-Style Structure Set": {
+  "file": "Japanese-Style_Structure_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/94/Japanese-Style_Structure_Set.png/revision/latest?cb=20241226140920",
+  "w": 256,
+  "h": 256
+ },
+ "Jetragon Statue": {
+  "file": "Jetragon_Statue.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/4e/Jetragon_Statue.png/revision/latest?cb=20260814042743",
+  "w": 256,
+  "h": 256
+ },
+ "Ladder": {
+  "file": "Ladder.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/6/63/Ladder.png/revision/latest?cb=20241225132037",
+  "w": 256,
+  "h": 256
+ },
+ "Lamp": {
+  "file": "Lamp.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/3/37/Lamp.png/revision/latest?cb=20240124033743",
+  "w": 512,
+  "h": 512
+ },
+ "Large-Scale Electric Egg Incubator": {
+  "file": "Large-Scale_Electric_Egg_Incubator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/8/88/Large-Scale_Electric_Egg_Incubator.png/revision/latest?cb=20241223152110",
+  "w": 256,
+  "h": 256
+ },
+ "Large-Scale Stone Oven": {
+  "file": "Large-Scale_Stone_Oven.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/40/Large-Scale_Stone_Oven.png/revision/latest?cb=20241223154232",
+  "w": 256,
+  "h": 256
+ },
+ "Large Ceiling Lamp": {
+  "file": "Large_Ceiling_Lamp.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/3/3c/Large_Ceiling_Lamp.png/revision/latest?cb=20240124033744",
+  "w": 512,
+  "h": 512
+ },
+ "Large Container": {
+  "file": "Storage_Container_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/a1/Storage_Container_Set.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 512
+ },
+ "Large Fishing Pond": {
+  "file": "Large_Fishing_Pond.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d5/Large_Fishing_Pond.png/revision/latest?cb=20260814042752",
+  "w": 256,
+  "h": 256
+ },
+ "Large Incubator": {
+  "file": "Large_Incubator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/22/Large_Incubator.png/revision/latest?cb=20250711002310",
+  "w": 512,
+  "h": 512
+ },
+ "Large Mounted Lamp": {
+  "file": "Large_Mounted_Lamp.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/7d/Large_Mounted_Lamp.png/revision/latest?cb=20240124033744",
+  "w": 512,
+  "h": 512
+ },
+ "Large Pal Bed": {
+  "file": "Large_Pal_Bed.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/b8/Large_Pal_Bed.png/revision/latest?cb=20240124033750",
+  "w": 512,
+  "h": 512
+ },
+ "Large Power Generator": {
+  "file": "Large_Power_Generator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/72/Large_Power_Generator.png/revision/latest?cb=20240627075319",
+  "w": 256,
+  "h": 256
+ },
+ "Large Toolbox": {
+  "file": "Large_Toolbox.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/a9/Large_Toolbox.png/revision/latest?cb=20240124033750",
+  "w": 512,
+  "h": 512
+ },
+ "Lettuce Plantation": {
+  "file": "Lettuce_Plantation.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/97/Lettuce_Plantation.png/revision/latest?cb=20241223153705",
+  "w": 256,
+  "h": 256
+ },
+ "Locker": {
+  "file": "Locker.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/1/19/Locker.png/revision/latest?cb=20240126233805",
+  "w": 512,
+  "h": 512
+ },
+ "Logging Site": {
+  "file": "Logging_Site.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/c/ca/Logging_Site.png/revision/latest?cb=20240123201417",
+  "w": 512,
+  "h": 512
+ },
+ "Logging Site II": {
+  "file": "Logging_Site_II.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/7e/Logging_Site_II.png/revision/latest?cb=20260814042804",
+  "w": 256,
+  "h": 256
+ },
+ "Long Iron Shelf": {
+  "file": "Long_Iron_Shelf.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d2/Long_Iron_Shelf.png/revision/latest?cb=20240126233805",
+  "w": 512,
+  "h": 512
+ },
+ "Medicine Rack": {
+  "file": "Medicine_Rack.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/b0/Medicine_Rack.png/revision/latest?cb=20241225211628",
+  "w": 256,
+  "h": 256
+ },
+ "Medieval Medicine Workbench": {
+  "file": "Medieval_Medicine_Workbench.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/3/39/Medieval_Medicine_Workbench.png/revision/latest?cb=20240124033750",
+  "w": 512,
+  "h": 512
+ },
+ "Metal Chest": {
+  "file": "Metal_Chest_icon.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/df/Metal_Chest_icon.png/revision/latest?cb=20240127120502",
+  "w": 512,
+  "h": 512
+ },
+ "Metal Defensive Wall": {
+  "file": "Metal_Defensive_Wall.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e9/Metal_Defensive_Wall.png/revision/latest?cb=20240124033750",
+  "w": 512,
+  "h": 512
+ },
+ "Metal Structure Set": {
+  "file": "Metal_Structure_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/94/Metal_Structure_Set.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Mill": {
+  "file": "Mill.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/90/Mill.png/revision/latest?cb=20240124040159",
+  "w": 512,
+  "h": 512
+ },
+ "Mine": {
+  "file": "Mine.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/a0/Mine.png/revision/latest?cb=20240124033746",
+  "w": 512,
+  "h": 512
+ },
+ "Mining Cart": {
+  "file": "Mining_Cart.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/0f/Mining_Cart.png/revision/latest?cb=20260814043254",
+  "w": 256,
+  "h": 256
+ },
+ "Monitoring Stand": {
+  "file": "Monitoring_Stand.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/98/Monitoring_Stand.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Moonflower Flag Set": {
+  "file": "Moonflower_Flag_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/9b/Moonflower_Flag_Set.png/revision/latest?cb=20250713185031",
+  "w": 256,
+  "h": 256
+ },
+ "Mounted Crossbow": {
+  "file": "Mounted_Crossbow.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/f4/Mounted_Crossbow.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Mounted Machine Gun": {
+  "file": "Mounted_Machine_Gun.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/b7/Mounted_Machine_Gun.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Mounted Missile Launcher": {
+  "file": "Mounted_Missile_Launcher.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/f3/Mounted_Missile_Launcher.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Mounted Torch": {
+  "file": "Mounted_Torch.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e8/Mounted_Torch.png/revision/latest?cb=20240501092608",
+  "w": 512,
+  "h": 512
+ },
+ "Onion Plantation": {
+  "file": "Onion_Plantation.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/db/Onion_Plantation.png/revision/latest?cb=20241223154024",
+  "w": 256,
+  "h": 256
+ },
+ "Orange Locker": {
+  "file": "Orange_Locker.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/c/cf/Orange_Locker.png/revision/latest?cb=20240126233805",
+  "w": 512,
+  "h": 512
+ },
+ "Ore Mining Site": {
+  "file": "Ore_Mining_Site.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/bc/Ore_Mining_Site.png/revision/latest?cb=20240404143928",
+  "w": 512,
+  "h": 512
+ },
+ "Ore Mining Site II": {
+  "file": "Ore_Mining_Site_II.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/98/Ore_Mining_Site_II.png/revision/latest?cb=20240404143910",
+  "w": 512,
+  "h": 512
+ },
+ "PAL Genetic Research Unit Flag Set": {
+  "file": "PAL_Genetic_Research_Unit_Flag_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/40/PAL_Genetic_Research_Unit_Flag_Set.png/revision/latest?cb=20250713185014",
+  "w": 256,
+  "h": 256
+ },
+ "Pal Bed": {
+  "file": "Fluffy_Pal_Bed2.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/93/Fluffy_Pal_Bed2.png/revision/latest?cb=20240122184727",
+  "w": 554,
+  "h": 364
+ },
+ "Pal Disassembly Conveyor": {
+  "file": "Pal_Disassembly_Conveyor.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/9a/Pal_Disassembly_Conveyor.png/revision/latest?cb=20240627072706",
+  "w": 256,
+  "h": 256
+ },
+ "Pal Dressing Facility": {
+  "file": "Pal_Dressing_Facility.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/22/Pal_Dressing_Facility.png/revision/latest?cb=20240627072642",
+  "w": 256,
+  "h": 256
+ },
+ "Pal Essence Condenser": {
+  "file": "Pal_Essence_Condenser.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/ef/Pal_Essence_Condenser.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Pal Expedition Station": {
+  "file": "Pal_Expedition_Station.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/8/8a/Pal_Expedition_Station.png/revision/latest?cb=20241225134815",
+  "w": 256,
+  "h": 256
+ },
+ "Pal Gear Workbench": {
+  "file": "Pal_Gear_Workbench.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/1/18/Pal_Gear_Workbench.png/revision/latest?cb=20240124011624",
+  "w": 512,
+  "h": 512
+ },
+ "Pal Labor Research Lab": {
+  "file": "Pal_Labor_Research_Laboratory.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/27/Pal_Labor_Research_Laboratory.png/revision/latest?cb=20241223155855",
+  "w": 256,
+  "h": 256
+ },
+ "Pal Pod": {
+  "file": "Pal_Pod.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/08/Pal_Pod.png/revision/latest?cb=20241223154506",
+  "w": 256,
+  "h": 256
+ },
+ "Pal Surgery Table": {
+  "file": "Pal_Surgery_Table.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/f2/Pal_Surgery_Table.png/revision/latest?cb=20250630142958",
+  "w": 512,
+  "h": 512
+ },
+ "Palbox": {
+  "file": "Palbox.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/da/Palbox.png/revision/latest?cb=20240124010743",
+  "w": 512,
+  "h": 512
+ },
+ "Palbox Control Device": {
+  "file": "Palbox_Control_Device.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e1/Palbox_Control_Device.png/revision/latest?cb=20250711002431",
+  "w": 256,
+  "h": 256
+ },
+ "PIDF Flag Set": {
+  "file": "PIDF_Flag_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/5/59/PIDF_Flag_Set.png/revision/latest?cb=20250713184946",
+  "w": 256,
+  "h": 256
+ },
+ "Pickaxe and Helmet": {
+  "file": "Pickaxe_and_Helmet.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/3/35/Pickaxe_and_Helmet.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Potato Plantation": {
+  "file": "Potato_Plantation.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/8/8d/Potato_Plantation.png/revision/latest?cb=20260814043331",
+  "w": 256,
+  "h": 256
+ },
+ "Power Generator": {
+  "file": "Power_Generator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/2e/Power_Generator.png/revision/latest?cb=20240124033747",
+  "w": 512,
+  "h": 512
+ },
+ "Primitive Furnace": {
+  "file": "Primitive_Furnace.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e7/Primitive_Furnace.png/revision/latest?cb=20240124035024",
+  "w": 512,
+  "h": 512
+ },
+ "Primitive Workbench": {
+  "file": "Primitive_Workbench.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/be/Primitive_Workbench.png/revision/latest?cb=20240124005802",
+  "w": 512,
+  "h": 512
+ },
+ "Production Assembly Line": {
+  "file": "Production_Assembly_Line.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d4/Production_Assembly_Line.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Production Assembly Line II": {
+  "file": "Production_Assembly_Line_II.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/ad/Production_Assembly_Line_II.png/revision/latest?cb=20240124033747",
+  "w": 512,
+  "h": 512
+ },
+ "Pure Quartz Quarry": {
+  "file": "Pure_Quartz_Quarry.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/26/Pure_Quartz_Quarry.png/revision/latest?cb=20260814043338",
+  "w": 256,
+  "h": 256
+ },
+ "Ranch": {
+  "file": "Ranch.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/8/87/Ranch.png/revision/latest?cb=20240124011430",
+  "w": 512,
+  "h": 512
+ },
+ "Rayne Syndicate Flag Set": {
+  "file": "Rayne_Syndicate_Flag_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/a7/Rayne_Syndicate_Flag_Set.png/revision/latest?cb=20250713184819",
+  "w": 256,
+  "h": 256
+ },
+ "Refined Metal Chest": {
+  "file": "Refined_Metal_Chest.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/25/Refined_Metal_Chest.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Refrigerator": {
+  "file": "Refrigerator.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d8/Refrigerator.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Repair Bench": {
+  "file": "Repair_Bench.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/77/Repair_Bench.png/revision/latest?cb=20240124010854",
+  "w": 512,
+  "h": 512
+ },
+ "Retro Street Lamp": {
+  "file": "Retro_Street_Lamp.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/5/50/Retro_Street_Lamp.png/revision/latest?cb=20240322143642",
+  "w": 512,
+  "h": 512
+ },
+ "Sand Bag": {
+  "file": "Sand_Bag.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/9e/Sand_Bag.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 512
+ },
+ "Shoddy Bed": {
+  "file": "Shoddy_Bed.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/bb/Shoddy_Bed.png/revision/latest?cb=20240124011159",
+  "w": 512,
+  "h": 512
+ },
+ "Sign": {
+  "file": "Sign.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/5/5d/Sign.png/revision/latest?cb=20240123201253",
+  "w": 512,
+  "h": 512
+ },
+ "Silo": {
+  "file": "Silo.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/5/5f/Silo.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Simple Street Lamp": {
+  "file": "Street_Lamp_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/71/Street_Lamp_Set.png/revision/latest?cb=20240124033748",
+  "w": 512,
+  "h": 512
+ },
+ "Skillfruit Orchard": {
+  "file": "Skillfruit_Orchard.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/6/6b/Skillfruit_Orchard.png/revision/latest?cb=20241223154139",
+  "w": 256,
+  "h": 256
+ },
+ "Sniper Module": {
+  "file": "Sniper_Module_icon.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/1/1f/Sniper_Module_icon.png/revision/latest?cb=20241223140644",
+  "w": 256,
+  "h": 256
+ },
+ "Snowman": {
+  "file": "Snowman.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/c/c7/Snowman.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Soralite Quarry": {
+  "file": "Soralite_Quarry.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/f4/Soralite_Quarry.png/revision/latest?cb=20260814043411",
+  "w": 256,
+  "h": 256
+ },
+ "Sphere Assembly Line": {
+  "file": "Sphere_Assembly_Line.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/f/fd/Sphere_Assembly_Line.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Sphere Assembly Line II": {
+  "file": "Sphere_Assembly_Line_II.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/e0/Sphere_Assembly_Line_II.png/revision/latest?cb=20240124033748",
+  "w": 512,
+  "h": 512
+ },
+ "Sphere Workbench": {
+  "file": "Sphere_Workbench.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/71/Sphere_Workbench.png/revision/latest?cb=20240124033751",
+  "w": 512,
+  "h": 512
+ },
+ "Statue of Power": {
+  "file": "Statue_of_Power.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/4b/Statue_of_Power.png/revision/latest?cb=20240123202016",
+  "w": 512,
+  "h": 512
+ },
+ "Stone Defensive Wall": {
+  "file": "Stone_Defensive_Wall.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/3/3e/Stone_Defensive_Wall.png/revision/latest?cb=20260725232220",
+  "w": 256,
+  "h": 256
+ },
+ "Stone Gate": {
+  "file": "Stone_Gate.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/7b/Stone_Gate.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 512
+ },
+ "Stone Pit": {
+  "file": "Stone_Pit.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/2b/Stone_Pit.png/revision/latest?cb=20240123201355",
+  "w": 512,
+  "h": 512
+ },
+ "Stone Structure Set": {
+  "file": "Stone_Structure_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/6/6d/Stone_Structure_Set.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 512
+ },
+ "Storage Container Set": {
+  "file": "Storage_Container_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/a1/Storage_Container_Set.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 512
+ },
+ "Straw Pal Bed": {
+  "file": "Straw_Pal_Bed.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/ae/Straw_Pal_Bed.png/revision/latest?cb=20240124011216",
+  "w": 512,
+  "h": 512
+ },
+ "Street Lamp Set": {
+  "file": "Street_Lamp_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/71/Street_Lamp_Set.png/revision/latest?cb=20240124033748",
+  "w": 512,
+  "h": 512
+ },
+ "Stump and Axe": {
+  "file": "Stump_and_Axe.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/9/94/Stump_and_Axe.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 512
+ },
+ "Stylish Street Lamp": {
+  "file": "Stylish_Street_Lamp.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/5/58/Stylish_Street_Lamp.png/revision/latest?cb=20240322143629",
+  "w": 512,
+  "h": 512
+ },
+ "Sulfur Mine": {
+  "file": "Sulfur_Mine.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/e/eb/Sulfur_Mine.png/revision/latest?cb=20240627072502",
+  "w": 256,
+  "h": 256
+ },
+ "Sulfur Quarry": {
+  "file": "Sulfur_Quarry.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/27/Sulfur_Quarry.png/revision/latest?cb=20260814043520",
+  "w": 256,
+  "h": 256
+ },
+ "Summoning Altar": {
+  "file": "Summoning_Altar.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/a/a6/Summoning_Altar.png/revision/latest?cb=20240404152644",
+  "w": 512,
+  "h": 512
+ },
+ "Tidy Table Set": {
+  "file": "Tidy_Table_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/d6/Tidy_Table_Set.png/revision/latest?cb=20260725232040",
+  "w": 256,
+  "h": 256
+ },
+ "Tomato Plantation": {
+  "file": "Tomato_Plantation.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/bd/Tomato_Plantation.png/revision/latest?cb=20241223153814",
+  "w": 256,
+  "h": 256
+ },
+ "Tombstone": {
+  "file": "Tombstone.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/c/c9/Tombstone.png/revision/latest?cb=20241223155137",
+  "w": 256,
+  "h": 256
+ },
+ "Training Dummy": {
+  "file": "Training_Dummy.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/49/Training_Dummy.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 512
+ },
+ "Viewing Cage": {
+  "file": "Viewing_Cage.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/bf/Viewing_Cage.png/revision/latest?cb=20240124033748",
+  "w": 512,
+  "h": 512
+ },
+ "Wall-Mounted Sign": {
+  "file": "Wall-Mounted_Sign.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/78/Wall-Mounted_Sign.png/revision/latest?cb=20240627080806",
+  "w": 256,
+  "h": 256
+ },
+ "Wall Torch": {
+  "file": "Wall_Torch.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/c/c8/Wall_Torch.png/revision/latest?cb=20240123201641",
+  "w": 512,
+  "h": 512
+ },
+ "Water Fountain": {
+  "file": "Water_Fountain.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/d/dd/Water_Fountain.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 512
+ },
+ "Weapon Assembly Line": {
+  "file": "Weapon_Assembly_Line.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/0c/Weapon_Assembly_Line.png/revision/latest?cb=20240716112545",
+  "w": 512,
+  "h": 512
+ },
+ "Weapon Assembly Line II": {
+  "file": "Weapon_Assembly_Line_II.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/4/41/Weapon_Assembly_Line_II.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 512
+ },
+ "Weapon Workbench": {
+  "file": "Weapon_Workbench.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/b8/Weapon_Workbench.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 512
+ },
+ "Wheat Plantation": {
+  "file": "Wheat_Plantation.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/24/Wheat_Plantation.png/revision/latest?cb=20241223153901",
+  "w": 256,
+  "h": 256
+ },
+ "Witch Cauldron": {
+  "file": "Witch_Cauldron.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/0/0e/Witch_Cauldron.png/revision/latest?cb=20240124040740",
+  "w": 512,
+  "h": 512
+ },
+ "Wooden Barrel": {
+  "file": "Wooden_Tavern_Cabinet_Furniture_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/8/8c/Wooden_Tavern_Cabinet_Furniture_Set.png/revision/latest?cb=20240125185912",
+  "w": 512,
+  "h": 512
+ },
+ "Wooden Box": {
+  "file": "Wooden_Box.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/7/70/Wooden_Box.png/revision/latest?cb=20240130200757",
+  "w": 248,
+  "h": 218
+ },
+ "Wooden Chest": {
+  "file": "Wooden_Chest.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/b/b8/Wooden_Chest.png/revision/latest?cb=20240124010838",
+  "w": 512,
+  "h": 512
+ },
+ "Wooden Defensive Wall": {
+  "file": "Wood_Defensive_Wall.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/2/2d/Wood_Defensive_Wall.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 512
+ },
+ "Wooden Gate": {
+  "file": "Wooden_Gate.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/c/ca/Wooden_Gate.png/revision/latest?cb=20240124033752",
+  "w": 512,
+  "h": 510
+ },
+ "Wooden Structure Set": {
+  "file": "Wooden_Structure_Set.png",
+  "url": "https://static.wikia.nocookie.net/palworld/images/c/c2/Wooden_Structure_Set.png/revision/latest?cb=20240124010957",
+  "w": 512,
+  "h": 512
+ }
+}
