@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded',()=>{const F=document.querySelector
   fetch(B+'assets/wtree/markers.json').then(r=>r.json()).then(J=>{const cnt={};
    const MI=window.PW_MI,dc=MI.DC(m);MI.fit(m);TM_dc=dc;const on0=['alpha','tower','travel','watch','npc'];Object.keys(TT).forEach(k=>{if(!on0.includes(k))dc.on(k,false)});
    J.pts.forEach(p=>{const t=TT[p.t];if(!t)return;cnt[p.t]=(cnt[p.t]||0)+1;groups[p.t]=groups[p.t]||dc.group(p.t);const nm=p.n;
-    dc.add(L.marker(ll(p.x,p.y),{icon:MI.icon(p.t),title:nm,riseOnHover:true}).bindPopup(()=>window.PW_pop({t:p.t,name:nm,lvl:p.lv,kind:t[0]+' '+t[1]}),MI.POP),p.t)});
+    dc.add(L.marker(ll(p.x,p.y),{icon:MI.icon(p.t,0,nm),title:nm,riseOnHover:true}).bindPopup(()=>window.PW_pop({t:p.t,name:nm,lvl:p.lv,kind:t[0]+' '+t[1]}),MI.POP),p.t)});
    lay.onAdd=()=>{const d=L.DomUtil.create('div','mleg');const small=innerWidth<700;d.innerHTML=`<button class="mleg-t">🗺 Слои</button><div class="mleg-b" ${small?'hidden':''}>`+Object.keys(TT).filter(k=>cnt[k]).map(k=>`<label><input type="checkbox" ${dc.isOn(k)?'checked':''} data-k="${k}"> ${MI.leg(k)} ${TT[k][1]} <small>${cnt[k]}</small></label>`).join('')+'</div>';
     L.DomEvent.disableClickPropagation(d);d.querySelector('.mleg-t').onclick=()=>{const b=d.querySelector('.mleg-b');b.hidden=!b.hidden};d.querySelectorAll('input').forEach(i=>i.onchange=()=>dc.on(i.dataset.k,i.checked));return d};lay.addTo(m);
    dc.run();
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded',()=>{const F=document.querySelector
    let w=q.get('w')=='tree'?'t':q.get('w')=='pal'?'p':(N('p',tod)>=N('t',tod)?'p':'t');if(!N(w,tod)&&N(w=='p'?'t':'p',tod))w=w=='p'?'t':'p';
    const MI=window.PW_MI;
    const add=(M,ll,pts,al,dc)=>{const g=[];pts.forEach(p=>g.push(dc.add(L.marker(ll(p[0],p[1]),{icon:MI.icon('hab',22),title:nm,riseOnHover:true}).bindPopup(()=>window.PW_pop({t:'hab',name:nm,sub:(tod=='n'?'Ночью':'Днём')+(p[2]?' · ур. '+p[2]:'')}),MI.POP),'hab',22,4)));
-     (al||[]).forEach(p=>g.push(dc.add(L.marker(ll(p[0],p[1]),{icon:MI.icon('alpha',32),title:nm,riseOnHover:true}).bindPopup(()=>window.PW_pop({t:'alpha',name:nm,kind:'👑 Альфа'}),MI.POP),'alpha',32,6)));
+     (al||[]).forEach(p=>g.push(dc.add(L.marker(ll(p[0],p[1]),{icon:MI.icon('alpha',34,nm),title:nm,riseOnHover:true}).bindPopup(()=>window.PW_pop({t:'alpha',name:nm,kind:'👑 Альфа'}),MI.POP),'alpha',32,6)));
      const b=pts.concat(al||[]);if(b.length)M.m.fitBounds(L.latLngBounds(b.map(p=>ll(p[0],p[1]))).pad(.3),{maxZoom:4,animate:false});M.m.closePopup();dc.run();return g};
    const P=window.PW_map,pm=P&&{m:P.m,ll:(x,y)=>P.m.unproject([(x-X0)/(X1-X0)*S,(Y0-y)/(Y0-Y1)*S],Z)};
    if(w=='t'){if(!TM||!TM_dc){const sb=document.querySelector('.mapsw [data-w=t]');if(HT)return;if(sb&&sb.onclick){HT=1;sb.click()}else if(++HC<80)setTimeout(habitat,150);return}

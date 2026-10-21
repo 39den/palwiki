@@ -2,8 +2,9 @@
 (function(){const B=()=>window.PW_BASE||'/palwiki/';
  const I={travel:['travel.webp','#2ec4b6',3],tower:['tower.webp','#b07cff',3],alpha:['alpha.webp','#ff6b5a',2],sealed:['sealed.svg','#4aa3ff',2],dungeon:['dungeon.webp','#e0b04a',2],watch:['watch.webp','#8fb3c9',1],npc:['npc.webp','#36bb91',1],merchant:['merchant.webp','#36bb91',1],chest:['chest.svg','#f0c45a',0],fruit:['fruit.svg','#7bd389',0],spring:['spring.svg','#5fb4ff',0],fish:['fish.webp','#5fb4ff',0],ore:['ore.webp','#c9c9c9',0],effigy:['effigy.svg','#9fe870',0],hab:['hab.webp','#ffd34d',1]};
  const v=t=>I[t]||I.hab;
- const icon=(t,sz)=>{sz=sz||28;return L.divIcon({className:'gmk gmk-'+t,html:`<i style="--c:${v(t)[1]};width:${sz}px;height:${sz}px"><img src="${B()}assets/mapicons/${v(t)[0]}" alt="" draggable="false"></i>`,iconSize:[sz,sz],iconAnchor:[sz/2,sz/2],popupAnchor:[0,-sz/2]})};
- const leg=t=>`<i class="gmk-l" style="--c:${v(t)[1]}"><img src="${B()}assets/mapicons/${v(t)[0]}" alt=""></i>`;
+ const face=n=>{const P=(window.PW_D||{}).pals||[];const q=P.find(p=>p.ru==n)||P.find(p=>p.en==n);return q&&q.thumb?B()+q.thumb:''};
+ const icon=(t,sz,nm)=>{sz=sz||28;const f=t=='alpha'&&nm?face(nm):'';if(f)sz=Math.max(sz,34);return L.divIcon({className:'gmk gmk-'+t+(f?' gmk-face':''),html:`<i style="--c:${v(t)[1]};width:${sz}px;height:${sz}px"><img src="${f||B()+'assets/mapicons/'+v(t)[0]}" alt="" draggable="false"></i>`,iconSize:[sz,sz],iconAnchor:[sz/2,sz/2],popupAnchor:[0,-sz/2]})};
+ const leg=t=>{if(t=='alpha'){const f=face('Чиллет')||face('Chillet');if(f)return `<i class="gmk-l gmk-lf"><img src="${f}" alt=""></i>`}return `<i class="gmk-l" style="--c:${v(t)[1]}"><img src="${B()}assets/mapicons/${v(t)[0]}" alt=""></i>`};
  const POP={maxWidth:280,minWidth:220,autoPan:true,autoPanPaddingTopLeft:[12,72],autoPanPaddingBottomRight:[12,24]};
  function fit(m){m.on('popupopen',e=>{const pp=e.popup;requestAnimationFrame(()=>{const el=pp.getElement();if(!el)return;const r=el.getBoundingClientRect(),mr=m.getContainer().getBoundingClientRect();
    if(r.top<mr.top+4&&!pp._dn){pp._dn=1;pp.options.offset=L.point(0,r.height+34);el.classList.add('pop-dn');pp.update()}
@@ -107,7 +108,7 @@ function map(D){const el=document.getElementById('pwmap');if(!el||!window.L)retu
  m.setMaxBounds(bounds.pad(.05));m.fitBounds(bounds);el.style.background='#0c161e'; /* 21.10 hotfix: sea colour around the map, no big empty frame */
  const MI=window.PW_MI,dc=MI.DC(m);MI.fit(m);
  const groups={};const all=[];Object.keys(T).forEach(k=>groups[k]=dc.group(k));
- D.map.forEach(p=>{const mk=L.marker(ll(p.x,p.y),{icon:MI.icon(p.t),title:p.name,riseOnHover:true}).bindPopup(()=>window.PW_pop({t:p.t,name:p.name,lvl:p.lvl,info:p.info,url:p.url,kind:T[p.t][0]+' '+(p.info||T[p.t][1]),sub:'X '+Math.round(p.x)+' · Y '+Math.round(p.y)}),MI.POP);dc.add(mk,p.t);all.push([p,mk]);});
+ D.map.forEach(p=>{const mk=L.marker(ll(p.x,p.y),{icon:MI.icon(p.t,0,p.name),title:p.name,riseOnHover:true}).bindPopup(()=>window.PW_pop({t:p.t,name:p.name,lvl:p.lvl,info:p.info,url:p.url,kind:T[p.t][0]+' '+(p.info||T[p.t][1]),sub:'X '+Math.round(p.x)+' · Y '+Math.round(p.y)}),MI.POP);dc.add(mk,p.t);all.push([p,mk]);});
  const Lg=L.control({position:'topright'});Lg.onAdd=()=>{const d=L.DomUtil.create('div','mleg');const small=window.innerWidth<700;
   d.innerHTML=`<button class="mleg-t">🗺 Слои</button><div class="mleg-b" ${small?'hidden':''}>`+Object.entries(T).map(([k,v])=>`<label><input type="checkbox" checked data-k="${k}"> ${MI.leg(k)} ${v[1]} <small>${D.map.filter(p=>p.t==k).length}</small></label>`).join('')+'</div>';
   L.DomEvent.disableClickPropagation(d);d.querySelector('.mleg-t').onclick=()=>{const b=d.querySelector('.mleg-b');b.hidden=!b.hidden;};

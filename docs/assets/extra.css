@@ -858,3 +858,14 @@ html.mappage:not(.mapfull) article.md-content__inner>.ux-layers{flex:1 1 300px;w
 html.mappage:not(.mapfull) article.md-content__inner>.msq{flex:0 1 380px;width:auto!important}
 html.mappage:not(.mapfull) article.md-content__inner>.habchip{flex:1 1 300px}
 html.mappage:not(.mapfull) article.md-content__inner>.ux-layers{flex:1 1 560px;flex-wrap:wrap;overflow:visible!important;row-gap:6px}
+
+/* ALPHA FACE 21.10: game-style boss marker = pal head portrait in boss frame */
+.gmk-face>i{background:radial-gradient(circle at 50% 40%,#3a2a2a,#140c0e);border:2.5px solid #e8b04a;box-shadow:0 0 0 2px #8f1d1d,0 0 8px rgba(255,90,60,.55),0 2px 6px rgba(0,0,0,.6);overflow:hidden}
+.gmk-face>i img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;filter:none;border-radius:50%}
+.gmk-lf{border:2px solid #e8b04a;box-shadow:0 0 0 1.5px #8f1d1d;overflow:hidden;background:#140c0e}.gmk-lf img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;border-radius:50%}
+/* SELECT THEME 21.10: readable native dropdowns in both themes */
+:root,[data-md-color-scheme=default]{color-scheme:light}
+[data-md-color-scheme=slate]{color-scheme:dark}
+select,select option,select optgroup{background-color:#fff;color:#1a1f24}
+[data-md-color-scheme=slate] select,[data-md-color-scheme=slate] select option,[data-md-color-scheme=slate] select optgroup{background-color:#141d27;color:#f3efe6}
+select optgroup{font-weight:700}
