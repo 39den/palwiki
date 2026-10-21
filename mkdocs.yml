@@ -25,8 +25,8 @@ theme:
 plugins:
   - search:
       lang: [ru, en]
-extra_css: ['assets/extra.css?v=1792594860']
-extra_javascript: ['assets/smart.js?v=1792594860', 'assets/site.js?v=1792594860', 'assets/features.js?v=1792594860', 'assets/ui2.js?v=1792594860', 'assets/ui3.js?v=1792594860', 'assets/ai.js?v=1792594860']
+extra_css: ['assets/extra.css?v=1792597890']
+extra_javascript: ['assets/smart.js?v=1792597890', 'assets/site.js?v=1792597890', 'assets/features.js?v=1792597890', 'assets/ui2.js?v=1792597890', 'assets/ui3.js?v=1792597890', 'assets/ai.js?v=1792597890']
 markdown_extensions:
   - tables
   - attr_list
@@ -90,10 +90,10 @@ nav:
     - Чертёж: 4_spravochniki/predmety/чертёж.md
     - Постройки: 4_spravochniki/predmety/постройки.md
   - Особые комбинации разведения: 4_spravochniki/osobye_kombinacii.md
-  - rabota: 2_mehaniki/rabota.md
   - Все активные навыки: 2_mehaniki/aktivki.md
   - Лучшие наборы пассивок: 2_mehaniki/passivki.md
   - Где взять пассивку и как её перенести: 2_mehaniki/passivki_gde_vzyat.md
+  - Работа палов: 2_mehaniki/rabota.md
   - Технологии по уровням: 2_mehaniki/tehnologii.md
   - Обратный поиск: 5_lut_i_farm/gde_vzyat.md
   - Таблица дропа всех палов: 5_lut_i_farm/drop_palov.md
