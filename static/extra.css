@@ -877,3 +877,4 @@ html [role=tooltip] *{color:inherit}
 html .leaflet-container a.leaflet-popup-close-button{background:#fff!important;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,.3)}.leaflet-container a.leaflet-popup-close-button,.leaflet-container a.leaflet-popup-close-button span{color:#3a444d}
 [data-md-color-scheme=slate] .leaflet-container a.leaflet-popup-close-button,[data-md-color-scheme=slate] .leaflet-container a.leaflet-popup-close-button span{color:#e6e9ec}html [data-md-color-scheme=slate] .leaflet-container a.leaflet-popup-close-button{background:#1c2733!important}
 @media (max-width:76.234em){html [data-md-toggle=drawer]:checked~.md-container .md-sidebar--primary,html .md-sidebar--primary{background-color:var(--pbg,var(--md-default-bg-color,#fff))!important;backdrop-filter:none!important}}
+.lbx .x{color:#fff!important;background:rgba(255,255,255,.18)!important}
