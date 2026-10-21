@@ -7,6 +7,10 @@ const END=/(ами|ями|ого|его|ому|ему|ой|ей|ом|ем|ах|�
 const stem=w=>w.length>3?w.replace(END,''):w;
 const TR={a:'а',b:'б',v:'в',g:'г',d:'д',e:'е',z:'з',i:'и',y:'и',k:'к',l:'л',m:'м',n:'н',o:'о',p:'п',r:'р',s:'с',t:'т',u:'у',f:'ф',h:'х',c:'к',w:'в',x:'кс',j:'дж',q:'к'};
 const DG=[['sch','щ'],['sh','ш'],['ch','ч'],['zh','ж'],['ts','ц'],['ya','я'],['yu','ю'],['yo','е'],['kh','х'],['ph','ф']];
+const SLW={'депрес':'депрессия','депресс':'депрессия','депрессуха':'депрессия','нуб':'новичок','нубов':'новичков','нубы':'новички','нубам':'новичкам','нубас':'новичок','лвл':'уровень','лвла':'уровня','имба':'лучший','имбовый':'лучший','топовый':'лучший','маунт':'ездовой','маунта':'ездового','скил':'навык','скилл':'навык','перки':'пассивки','абилка':'навык','крафтить':'скрафтить','фармить':'фармить','айви':'iv','иви':'iv','шайни':'удачливый','шайный':'удачливый','лаки':'удачливый','шини':'удачливый'};
+const slang=s=>s.split(' ').map(w=>SLW[w]||w).join(' ');
+// безопасный ввод: обрезка, только буквы/цифры/пробелы; спецсимволы, эмодзи, HTML и SQL не исполняются и не ломают разбор
+const clean=s=>String(s==null?'':s).slice(0,120).replace(/[\u0000-\u001f]/g,' ').replace(/[^0-9A-Za-zА-Яа-яЁё\s'.,?\-\[\];`]/g,' ').replace(/\s+/g,' ').trim();
 function translit(s){for(const[k,v]of DG)s=s.split(k).join(v);return [...s].map(c=>TR[c]||c).join('');}
 function dl(a,b){const m=a.length,n=b.length;if(Math.abs(m-n)>3)return 9;const d=[];for(let i=0;i<=m;i++){d[i]=[i];}for(let j=0;j<=n;j++)d[0][j]=j;
  for(let i=1;i<=m;i++)for(let j=1;j<=n;j++){const c=a[i-1]==b[j-1]?0:1;d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+c);
@@ -25,6 +29,7 @@ function Core(D){
  D.passives.forEach((t,i)=>{add(t.name,'passive',i);});
  const IS={'палладий':'Осколок палдиума','палдиум':'Осколок палдиума','паладий':'Осколок палдиума','древние детали':'Деталь древней цивилизации','древняя деталь':'Деталь древней цивилизации','чипы':'Технический чип'};
  for(const[s,t]of Object.entries(IS)){const i=D.items.findIndex(x=>x.ru==t);if(i>=0)add(s,'item',i);}
+ const PINS=(D.pin||[]).map(([r,q])=>{try{return [new RegExp(r),q]}catch(e){return null}}).filter(Boolean);
  const VOC=new Set();K.forEach(([k])=>k.split(' ').forEach(w=>VOC.add(w)));
  'как где кто что чем лучше лучший лучшие лучшая самый топ взять найти добыть получить вывести скрестить бить слабость пассивки пассивка для боец рабочий ездовой копает рубит босс башня пал палы зои серу сера быстро уровень качаться золото фармить почему грустят база'.split(' ').forEach(w=>VOC.add(w));
  D.faq.forEach(f=>norm(f.q).split(' ').forEach(w=>w.length>2&&VOC.add(w)));
@@ -47,7 +52,7 @@ function Core(D){
     if(s){s+=n*3;if(kind=='bossn')s-=4;if(!best||s>best.s)best={s,kind:kind=='bossn'?'boss':kind,ref,key:k,g};}}
    }
   return best;}
- function suggest(q,k=3){const v=norm(q);const r=[];for(const[key,kind,ref]of K){if(kind=='bossn')continue;const d=dl(key,v);if(d<=Math.max(2,v.length/3))r.push([d,kind,ref,key]);}
+ function suggest(q,k=3){const v=norm(q);const r=[];if(v.length>24||v.split(' ').length>3)return r;for(const[key,kind,ref]of K){if(kind=='bossn')continue;const d=dl(key,v);if(d<=Math.max(1,Math.min(3,Math.floor(v.length/3))))r.push([d,kind,ref,key]);}
   r.sort((a,b)=>a[0]-b[0]);const seen=new Set();return r.filter(x=>{const id=x[1]+x[2];if(seen.has(id))return false;seen.add(id);return true;}).slice(0,k).map(x=>({kind:x[1],ref:x[2],name:label(x[1],x[2])}));}
  const label=(kind,ref)=>kind=='pal'?D.pals[ref].ru:kind=='item'?D.items[ref].ru:kind=='boss'?D.bosses[ref].name:D.passives[ref].name;
  function topWork(w,n=6){return D.pals.map(p=>[p,(p.work.find(x=>x[0]==w)||[0,0])[1]]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]||b[0].atk-a[0].atk).slice(0,n);}
@@ -62,8 +67,13 @@ function Core(D){
    if(!best||s>best.s)best={s,f};}
   return best&&best.s>=.55?best.f:null;}
  function answer(raw){
-  let [q,ch]=fixLayout(raw);const n=norm(q);const res={q,fixed:ch?q:null};
+  const raw0=String(raw==null?'':raw);if(!raw0.trim())return null;
+  const cl=clean(raw0);const letters=(cl.match(/[A-Za-zА-Яа-яЁё0-9]/g)||[]).length;
+  if(letters<2)return {q:raw0.slice(0,120),fixed:null,type:'none',bad:true,dym:[]};
+  let [q,ch]=fixLayout(cl);const n=slang(norm(q));const res={q,fixed:ch?q:null};
   if(n.length<2)return null;
+  for(const[re,fq]of PINS){if(re.test(n)){const f=D.faq.find(x=>x.q==fq);if(f)return {...res,type:'faq',f};}}
+  if(/(.)\1{6,}/.test(n.replace(/\s/g,''))&&new Set(n.replace(/\s/g,'')).size<4)return {...res,type:'none',bad:true,dym:[]};
   const has=r=>r.test(n);
   const ent=find(n);
   const role=(ROLE.find(([r])=>r.test(n))||[])[1];
@@ -118,7 +128,9 @@ function render(a){if(!a)return '';let h='';const C=core.D;
  case 'mount':h=`<div class="sa-k">Самые быстрые ${a.fly?'летающие':'ездовые'}</div><ol>${a.top.map(p=>`<li>${pl(p)} — рывок ${p.sprint}</li>`).join('')}</ol>`;break;
  case 'passive':h=`<div class="sa-k">Пассивка · ранг ${esc(a.e.rank)}</div><h3>${lk(a.e.url,a.e.name)} <small>${esc(a.e.en)}</small></h3><div>${esc(a.e.desc)}</div>`;break;
  case 'faq':h=`<div class="sa-k">Ответ</div><h3>${esc(a.f.q)}</h3><div>${esc(a.f.a)}</div>`;break;
- case 'none':h=a.dym&&a.dym.length?`<div class="dym">Вы имели в виду: ${a.dym.map(d=>`<a data-q="${esc(d.name)}">${esc(d.name)}</a>`).join('')}</div>`:'';if(!h)return '';break;}
+ case 'none':{const ex=['как вывести Анубиса','чем бить Зои','где взять серу','лучший лесоруб'];
+  h=(a.dym&&a.dym.length?`<div class="dym">Возможно, ты имел в виду: ${a.dym.map(d=>`<a data-q="${esc(d.name)}">${esc(d.name)}</a>`).join('')}</div>`:'')+
+  `<div class="sa-none"><b>${a.bad?'Не понял запрос':'Готового ответа нет'}</b><span>${a.bad?'Похоже, тут только символы. Напиши словами, что ищешь.':'Попробуй короче: имя пала, предмета или босса. Можно по-английски или с опечаткой.'}</span><div class="sa-ex">Например: ${ex.map(x=>`<a data-q="${esc(x)}">${esc(x)}</a>`).join('')}</div><div class="sa-ex"><a href="${BASE}9_faq/faq/">Все частые вопросы</a></div></div>`;break;}}
  return `<div class="sa">${fx}${h}</div>`;}
 function bind(input,out){let t;const go=()=>{const v=input.value;if(v.trim().length<2){out.innerHTML='';return;}root.PW_data().then(()=>{out.innerHTML=render(core.answer(v));
   out.querySelectorAll('[data-q]').forEach(a=>a.onclick=()=>{input.value=a.dataset.q;input.dispatchEvent(new Event('input',{bubbles:true}));go();});});};

@@ -881,3 +881,6 @@ html .leaflet-container a.leaflet-popup-close-button{background:#fff!important;b
 @media (max-width:600px){.leaflet-popup-content-wrapper{max-width:calc(100vw - 28px)}}
 @media (max-width:76.234em){html.pp26 [data-md-color-scheme=default] .md-nav--primary .md-nav__link,html.pp26 [data-md-color-scheme=default] .md-nav--primary .md-nav__link .md-ellipsis{color:#13202a}}
 html.pp26 [data-md-color-scheme=default] .md-nav--primary .md-nav__link--active,html.pp26 [data-md-color-scheme=default] .md-nav--primary .md-nav__link--active .md-ellipsis{color:#a81f17}
+
+/* content-gaps: пустой результат умного поиска */
+.sa-none{display:grid;gap:.35rem;margin-top:.4rem}.sa-none b{font-size:1em}.sa-ex a{margin-right:.75rem;cursor:pointer;text-decoration:underline;text-underline-offset:2px}

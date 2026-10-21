@@ -373,6 +373,11 @@ for fn in ['faq_extra.json','faq.json']:
   for q in json.load(open(W+'/data/'+fn)): faq.append({'q':q['q'],'a':q['a']})
 syn=json.load(open(W+'/data/synonyms.json'))
 syn={k:v for k,v in syn.items() if isinstance(v,str)}
+# content-gaps: проверенные правки и новые ответы FAQ + синонимы поиска (content/faq_cg.json, у каждого ответа есть src)
+_CG=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'content','faq_cg.json')))
+faq=[{'q':f['q'],'a':_CG['fix'][f['q']]['a'] if f['q'] in _CG['fix'] else f['a']} for f in faq if f.get('q','').strip() and f.get('a','').strip()]
+_fqs={f['q'] for f in faq};faq+= [{'q':x['q'],'a':x['a']} for x in _CG['add'] if x['q'] not in _fqs]
+syn.update(_CG['syn']);PIN=_CG['pin']
 L=json.load(open(W+'/data/locations.json'));MP=[]
 PU={x['ru']:x['url'] for x in SP if x['url']}
 def wt(x,y):return y>735 and -220<x<130
@@ -424,7 +429,7 @@ json.dump(_F,open(_fz,'w'),ensure_ascii=False,indent=0)
 for _fq in faq:
   for _k in ('q','a'):
     if isinstance(_fq.get(_k),str):_fq[_k]=re.sub(r'\s*\((?:SAN|San|san)\)','',_fq[_k]).replace('SAN','рассудок')
-json.dump({'popular':POPL,'map':MP,'pals':SP,'items':SI,'bosses':SB,'passives':SPS,'faq':faq,'syn':syn,'gl':[{'t':g['term'],'a':g.get('aliases',[]),'d':g['definition']} for g in json.load(open(W+'/data/glossary.json'))],'built':datetime.date.today().isoformat()},open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
+json.dump({'popular':POPL,'map':MP,'pals':SP,'items':SI,'bosses':SB,'passives':SPS,'faq':faq,'syn':syn,'pin':PIN,'gl':[{'t':g['term'],'a':g.get('aliases',[]),'d':g['definition']} for g in json.load(open(W+'/data/glossary.json'))],'built':datetime.date.today().isoformat()},open(A+'/search_data.json','w'),ensure_ascii=False,separators=(',',':'))
 shutil.move(A+'/manifest.webmanifest',D+'/manifest.webmanifest');open(D+'/sw.js','w').write(open(A+'/sw.js').read().replace('__BUILD__',datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d%H%M')));os.remove(A+'/sw.js')
 print('map points',len(MP));print('search_data KB',os.path.getsize(A+'/search_data.json')//1024)
 TABMAP=[('Обзор',('Работа','Партнёрск','Чем хорош')),('Атаки',('Атаки',)),('Где живёт',('Где водится',)),('Дроп',('Дроп',)),('Разведение',('Разведение',)),('Пассивки',('Лучшие пассивки','Пассивк'))]
@@ -867,6 +872,8 @@ if os.path.exists(_fq):
     for k,_,r in _CT:
       if re.search(r,q,re.I):return k
     return 'misc'
+  _Q=[(l,q,_CG['fix'][q]['a'] if q in _CG['fix'] else a) for l,q,a in _Q]
+  _qs={q for _,q,_ in _Q};_Q+=[(x['lv'],x['q'],x['a']) for x in _CG['add'] if x['q'] not in _qs]
   _LVS=[];[_LVS.append(l) for l,_,_ in _Q if l not in _LVS]
   _md=lambda t:re.sub(r'\*\*(.+?)\*\*',r'<b>\1</b>',t)
   acc=''.join(f'<details class="fq" data-lv="{_LVS.index(l)}" data-cat="{_cat(q,a)}"><summary>{esc_h(q)}</summary><div class="fa">{_kb(_md(esc_h(a)).replace(chr(10),"<br>"))}</div></details>' for l,q,a in _Q)
