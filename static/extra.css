@@ -803,3 +803,5 @@ body:has(#pwmap) #sxp{max-height:42vh;overflow:auto}}
 #nl.need{border-color:var(--acc)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--acc) 30%,transparent)!important}
 /* 21.10 live hotfix: inline install banner (home page only), never fixed over content */
 .inst.inl{position:static!important;left:auto;right:auto;bottom:auto;max-width:none;margin:1.2rem 0 .4rem;z-index:auto}
+/* 21.10 mapfix: sea-coloured 2px rim around the mini-map box, so its rounded/sub-pixel edge never shows a light page strip next to the dark sea (read as a straight empty edge on iPhone) */
+.hm-box{box-shadow:0 0 0 2px #0c161e;background:#0c161e}
