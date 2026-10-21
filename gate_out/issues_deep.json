@@ -1,0 +1,1503 @@
+{
+ "meta": {
+  "base": "http://localhost:8931/",
+  "finished": "21.10.2026 16:11",
+  "profiles": [
+   "ios",
+   "desk",
+   "cmob",
+   "ff"
+  ],
+  "pages_total": 756,
+  "static_pages": 52,
+  "click_pages": 52,
+  "clicks": 0,
+  "links_checked": 0,
+  "entities": "(посчитаются в конце)",
+  "seconds": 1371,
+  "status": "идёт этап «карта», готово блоков: 269"
+ },
+ "counts": {
+  "P1": 20,
+  "P2": 8,
+  "P0": 1
+ },
+ "occurrences": {
+  "P1": 253,
+  "P2": 58,
+  "P0": 4
+ },
+ "issues": [
+  {
+   "sev": "P0",
+   "key": "hab_black",
+   "title": "Чёрные квадраты (дыры) на мини-карте обитания",
+   "pages": 3,
+   "occurrences": 4,
+   "profiles": [
+    "desk",
+    "ios",
+    "ios+desk"
+   ],
+   "examples": [
+    {
+     "page": "4_spravochniki/paly/kelpsea_ignis/",
+     "profile": "ios+desk",
+     "detail": "Мировое древо: 2 прямых краёв пустых квадратов",
+     "shot": "shots/ios/4_spravochniki_paly_kelpsea_ignis__hab_p.png"
+    },
+    {
+     "page": "4_spravochniki/paly/elphidran_aqua/",
+     "profile": "ios",
+     "detail": "Мировое древо: 1 прямых краёв пустых квадратов",
+     "shot": "shots/ios/4_spravochniki_paly_elphidran_aqua__hab_p.png"
+    },
+    {
+     "page": "4_spravochniki/paly/leezpunk_ignis/",
+     "profile": "ios+desk",
+     "detail": "Мировое древо: 1 прямых краёв пустых квадратов",
+     "shot": "shots/ios/4_spravochniki_paly_leezpunk_ignis__hab_p.png"
+    },
+    {
+     "page": "4_spravochniki/paly/elphidran_aqua/",
+     "profile": "desk",
+     "detail": "Мировое древо: 2 прямых краёв пустых квадратов",
+     "shot": "shots/desk/4_spravochniki_paly_elphidran_aqua__hab_p.png"
+    }
+   ],
+   "shots": [
+    "shots/ios/4_spravochniki_paly_kelpsea_ignis__hab_p.png",
+    "shots/ios/4_spravochniki_paly_elphidran_aqua__hab_p.png",
+    "shots/ios/4_spravochniki_paly_leezpunk_ignis__hab_p.png",
+    "shots/desk/4_spravochniki_paly_elphidran_aqua__hab_p.png"
+   ],
+   "all_pages": [
+    "4_spravochniki/paly/elphidran_aqua/",
+    "4_spravochniki/paly/kelpsea_ignis/",
+    "4_spravochniki/paly/leezpunk_ignis/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "dead",
+   "title": "Нажатие ничего не делает (мёртвая кнопка)",
+   "pages": 20,
+   "occurrences": 47,
+   "profiles": [
+    "desk",
+    "ios",
+    "ios+desk"
+   ],
+   "examples": [
+    {
+     "page": "my/",
+     "profile": "ios+desk",
+     "detail": "«Избранное 0» SUMMARY.",
+     "shot": "shots/ios/my__dead_1.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/kelpsea_ignis/",
+     "profile": "ios",
+     "detail": "«» BUTTON.tabbed-button",
+     "shot": "shots/ios/4_spravochniki_paly_kelpsea_ignis__dead_2.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/kelpsea_ignis/",
+     "profile": "ios",
+     "detail": "«0» BUTTON. zero",
+     "shot": "shots/ios/4_spravochniki_paly_kelpsea_ignis__dead_3.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/kelpsea_ignis/",
+     "profile": "ios",
+     "detail": "«★» BUTTON. ",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/kelpsea_ignis/",
+     "profile": "ios",
+     "detail": "«50» B.v",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/kelpsea_ignis/",
+     "profile": "ios",
+     "detail": "«−» BUTTON.stp",
+     "shot": null
+    },
+    {
+     "page": "2_mehaniki/rabota/",
+     "profile": "ios+desk",
+     "detail": "«Нагрузка» LABEL.fld",
+     "shot": null
+    },
+    {
+     "page": "9_faq/faq/",
+     "profile": "ios+desk",
+     "detail": "«➤» BUTTON.",
+     "shot": null
+    }
+   ],
+   "shots": [
+    "shots/ios/my__dead_1.jpg",
+    "shots/ios/4_spravochniki_paly_kelpsea_ignis__dead_2.jpg",
+    "shots/ios/4_spravochniki_paly_kelpsea_ignis__dead_3.jpg",
+    "shots/desk/my__dead_2.jpg",
+    "shots/desk/my__dead_3.jpg"
+   ],
+   "all_pages": [
+    "2_mehaniki/rabota/",
+    "4_spravochniki/paly/aegidron/",
+    "4_spravochniki/paly/elphidran_aqua/",
+    "4_spravochniki/paly/kelpsea_ignis/",
+    "4_spravochniki/paly/leezpunk_ignis/",
+    "4_spravochniki/paly/ribbuny/",
+    "4_spravochniki/paly/yakumo/",
+    "9_faq/faq/",
+    "boss/alpha_anubis/",
+    "boss/alpha_jetragon/",
+    "boss/alpha_splatterina/",
+    "boss/astralym/",
+    "boss/grizzbolt/",
+    "boss/panthalus/",
+    "boss/shaolong/",
+    "boss/xenolord/",
+    "my/",
+    "passivki/abnormal/",
+    "passivki/jump_count_increase_1/",
+    "passivki/world_trees_bounty/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "junk_md",
+   "title": "Сырой markdown (** или «- » в начале строки)",
+   "pages": 11,
+   "occurrences": 11,
+   "profiles": [
+    "ios+desk",
+    "ios+desk+ff"
+   ],
+   "examples": [
+    {
+     "page": "4_spravochniki/paly/anubis/",
+     "profile": "ios+desk+ff",
+     "detail": "огий — 1 шт., 5%⏎Дроп альфы:⏎⏎- Деталь древней цивилизации — 5– | й цивилизации — 5–7 шт., 100%⏎- Ценные внутренности — 5–7 шт., ",
+     "shot": "shots/ios/4_spravochniki_paly_anubis__junk_md_1.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/jetragon/",
+     "profile": "ios+desk+ff",
+     "detail": "Пала — 1 шт., 1%⏎Дроп альфы:⏎⏎- Деталь древней цивилизации — 7– | й цивилизации — 7–9 шт., 100%⏎- Ценный драконий самоцвет — 7–9 ",
+     "shot": "shots/ios/4_spravochniki_paly_jetragon__junk_md_2.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/kelpsea_ignis/",
+     "profile": "ios+desk+ff",
+     "detail": "ан — 1 шт., 100%⏎Дроп альфы:⏎⏎- Деталь древней цивилизации — 1– | й цивилизации — 1–2 шт., 100%⏎- Ценные внутренности — 1–2 шт., ",
+     "shot": "shots/ios/4_spravochniki_paly_kelpsea_ignis__junk_md_3.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/aegidron/",
+     "profile": "ios+desk",
+     "detail": "ла — 1 шт., 100%⏎Дроп альфы:⏎⏎- Деталь древней цивилизации — 6– | й цивилизации — 6–8 шт., 100%⏎- Ценный драконий самоцвет — 2–3 ",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/elphidran_aqua/",
+     "profile": "ios+desk",
+     "detail": " — 2–3 шт., 100%⏎Дроп альфы:⏎⏎- Деталь древней цивилизации — 4– | й цивилизации — 4–5 шт., 100%⏎- Ценное перо — 4–5 шт., 100%⏎Раз",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/leezpunk_ignis/",
+     "profile": "ios+desk",
+     "detail": "нка — 1 шт., 50%⏎Дроп альфы:⏎⏎- Деталь древней цивилизации — 1– | й цивилизации — 1–2 шт., 100%⏎- Серебряный ключ — 1 шт., 2%⏎- Ц | - Серебряный ключ — 1 шт., 2%⏎- Ценные внутренности — 1–2 шт., ",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/ribbuny/",
+     "profile": "ios+desk",
+     "detail": "од — 1 шт., 100%⏎Дроп альфы:⏎⏎- Деталь древней цивилизации — 1– | й цивилизации — 1–2 шт., 100%⏎- Ценный мех — 1–2 шт., 100%⏎Разв",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/yakumo/",
+     "profile": "ios+desk",
+     "detail": " — 1–2 шт., 100%⏎Дроп альфы:⏎⏎- Деталь древней цивилизации — 2– | й цивилизации — 2–4 шт., 100%⏎- Ценный мех — 2–4 шт., 100%⏎Разв",
+     "shot": null
+    }
+   ],
+   "shots": [
+    "shots/ios/4_spravochniki_paly_anubis__junk_md_1.jpg",
+    "shots/ios/4_spravochniki_paly_jetragon__junk_md_2.jpg",
+    "shots/ios/4_spravochniki_paly_kelpsea_ignis__junk_md_3.jpg"
+   ],
+   "all_pages": [
+    "4_spravochniki/paly/aegidron/",
+    "4_spravochniki/paly/anubis/",
+    "4_spravochniki/paly/elphidran_aqua/",
+    "4_spravochniki/paly/jetragon/",
+    "4_spravochniki/paly/kelpsea_ignis/",
+    "4_spravochniki/paly/leezpunk_ignis/",
+    "4_spravochniki/paly/ribbuny/",
+    "4_spravochniki/paly/yakumo/",
+    "5_lut_i_farm/gde_vzyat/",
+    "guide/01_chto_eto/",
+    "guide/09_baza/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "junk_eng",
+   "title": "Внутренние английские имена (CamelCase/snake_case) в тексте",
+   "pages": 9,
+   "occurrences": 9,
+   "profiles": [
+    "ios+desk"
+   ],
+   "examples": [
+    {
+     "page": "about/",
+     "profile": "ios+desk",
+     "detail": "ir⏎Шрифты⏎Manrope, Unbounded, JetBrains Mono — SIL Open Font License⏎ | ir⏎Шрифты⏎Manrope, Unbounded, JetBrains Mono — SIL Open Font License⏎",
+     "shot": "shots/ios/about__junk_eng_1.jpg"
+    },
+    {
+     "page": "2_mehaniki/aktivki/",
+     "profile": "ios+desk",
+     "detail": "езарядка, с⏎🔥⏎Возгорание 100%⏎ru_Text⏎Стрелы тьмы⏎Тьма⏎120⏎сила⏎8⏎п | а⏎4⏎перезарядка, с⏎🌿⏎Путы 35%⏎ru_Text⏎Тёмный шар⏎Тьма⏎50⏎сила⏎2⏎пер | резарядка, с⏎💫⏎Оглушение 100%⏎ru_Text⏎Перекрёстная молния⏎Молния⏎ос",
+     "shot": "shots/ios/2_mehaniki_aktivki__junk_eng_2.jpg"
+    },
+    {
+     "page": "2_mehaniki/tehnologii/",
+     "profile": "ios+desk",
+     "detail": "ч.)⏎Гексолит (предмет, 2 оч.)⏎ru_Text (постройка, 5 оч.)⏎Металлоиск |  возрождения (предмет, 3 оч.)⏎ru_Text (постройка, 4 оч.)⏎Седло Пала | ч.)⏎Гексолит (предмет, 2 оч.)⏎ru_Text (постройка, 5 оч.)⏎Металлоиск |  возрождения (предмет, 3 оч.)⏎ru_Text (постройка, 4 оч.)⏎Седло Пала",
+     "shot": "shots/ios/2_mehaniki_tehnologii__junk_eng_3.jpg"
+    },
+    {
+     "page": "5_lut_i_farm/gde_vzyat/",
+     "profile": "ios+desk",
+     "detail": "фт⏎Маленький персик дружбы⏎ — PalCapturedCage, Миссия, Glistening Ancient R |  Терра; люди/боссы; торговец; CopperOre, Экспедиция, Подмастерье кузн |  крафт; люди/боссы; торговец; PalSphere, Экспедиция, Награда Заносчив",
+     "shot": null
+    },
+    {
+     "page": "8_slovar/slovar/",
+     "profile": "ios+desk",
+     "detail": "е мира.⏎Пример: «Сейв лежит в SaveGames».⏎Сервер⏎Ещё говорят: сервер, | е мира.⏎Пример: «Сейв лежит в SaveGames».⏎Сервер⏎Ещё говорят: сервер,",
+     "shot": null
+    },
+    {
+     "page": "9_faq/faq/",
+     "profile": "ios+desk",
+     "detail": "и бойца на базе?⏎Как работает CaptureRateCorrect?⏎Что такое CombiDuplicatePrio | CaptureRateCorrect?⏎Что такое CombiDuplicatePriority?⏎Можно ли вывести легендарног | 15 на базу (настройка сервера BaseCampWorkerMaxNum).⏎Сколько баз можно?⏎Зависит  | линкс Терра; сундуки/награды: CopperOre, Экспедиция, Подмастерье кузн",
+     "shot": null
+    },
+    {
+     "page": "guide/05_lovlya/",
+     "profile": "ios+desk",
+     "detail": "до 100 шагов.⏎Множитель вида (CaptureRateCorrect): у Ламболла ×1.5 (легко), у  | о 100 шагов.⏎Множитель вида⏎ (CaptureRateCorrect): у Ламболла ×1.5 (легко), у ",
+     "shot": null
+    },
+    {
+     "page": "guide/09_baza/",
+     "profile": "ios+desk",
+     "detail": "олчанию: до 15 палов на базе (BaseCampWorkerMaxNum=15), до 3 баз на гильдию (Bas | Num=15), до 3 баз на гильдию (BaseCampMaxNumInGuild=4?).⏎Виды работы (пригодности",
+     "shot": null
+    }
+   ],
+   "shots": [
+    "shots/ios/about__junk_eng_1.jpg",
+    "shots/ios/2_mehaniki_aktivki__junk_eng_2.jpg",
+    "shots/ios/2_mehaniki_tehnologii__junk_eng_3.jpg"
+   ],
+   "all_pages": [
+    "2_mehaniki/aktivki/",
+    "2_mehaniki/tehnologii/",
+    "5_lut_i_farm/gde_vzyat/",
+    "8_slovar/slovar/",
+    "9_faq/faq/",
+    "about/",
+    "guide/05_lovlya/",
+    "guide/09_baza/",
+    "guide/13_farm/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "junk_unv",
+   "title": "Служебная метка ⓘ видна читателю",
+   "pages": 8,
+   "occurrences": 8,
+   "profiles": [
+    "ios+desk",
+    "ios+desk+ff"
+   ],
+   "examples": [
+    {
+     "page": "4_spravochniki/paly/anubis/",
+     "profile": "ios+desk+ff",
+     "detail": "ть⏎🔗 Ссылка⏎🤖 Открыть в боте⏎⏎ⓘ приблизительно⏎⏎← Дуалит Нокт | ить⏎🔗 Ссылка⏎🤖 Открыть в боте⏎ⓘ приблизительно⏎← Дуалит Нокт⏎",
+     "shot": "shots/ios/4_spravochniki_paly_anubis__junk_unv_1.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/jetragon/",
+     "profile": "ios+desk+ff",
+     "detail": "ть⏎🔗 Ссылка⏎🤖 Открыть в боте⏎⏎ⓘ приблизительно⏎⏎← Нептилиус⏎П | ить⏎🔗 Ссылка⏎🤖 Открыть в боте⏎ⓘ приблизительно⏎← Нептилиус⏎Па",
+     "shot": "shots/ios/4_spravochniki_paly_jetragon__junk_unv_2.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/kelpsea_ignis/",
+     "profile": "ios+desk+ff",
+     "detail": "ть⏎🔗 Ссылка⏎🤖 Открыть в боте⏎⏎ⓘ приблизительно⏎⏎← Келпси⏎Рибб | ить⏎🔗 Ссылка⏎🤖 Открыть в боте⏎ⓘ приблизительно⏎← Келпси⏎Рибба",
+     "shot": "shots/ios/4_spravochniki_paly_kelpsea_ignis__junk_unv_3.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/aegidron/",
+     "profile": "ios+desk",
+     "detail": "ть⏎🔗 Ссылка⏎🤖 Открыть в боте⏎⏎ⓘ приблизительно⏎⏎← Рэндзиши⏎Гр | ить⏎🔗 Ссылка⏎🤖 Открыть в боте⏎ⓘ приблизительно⏎← Рэндзиши⏎Гри",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/elphidran_aqua/",
+     "profile": "ios+desk",
+     "detail": "ть⏎🔗 Ссылка⏎🤖 Открыть в боте⏎⏎ⓘ приблизительно⏎⏎← Элфидран⏎Ва | ить⏎🔗 Ссылка⏎🤖 Открыть в боте⏎ⓘ приблизительно⏎← Элфидран⏎Ван",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/leezpunk_ignis/",
+     "profile": "ios+desk",
+     "detail": "ть⏎🔗 Ссылка⏎🤖 Открыть в боте⏎⏎ⓘ приблизительно⏎⏎← Лизпанк⏎Гор | ить⏎🔗 Ссылка⏎🤖 Открыть в боте⏎ⓘ приблизительно⏎← Лизпанк⏎Гори",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/ribbuny/",
+     "profile": "ios+desk",
+     "detail": "ть⏎🔗 Ссылка⏎🤖 Открыть в боте⏎⏎ⓘ приблизительно⏎⏎← Келпси Игни | ить⏎🔗 Ссылка⏎🤖 Открыть в боте⏎ⓘ приблизительно⏎← Келпси Игнис",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/yakumo/",
+     "profile": "ios+desk",
+     "detail": "ть⏎🔗 Ссылка⏎🤖 Открыть в боте⏎⏎ⓘ приблизительно⏎⏎← Бронебол⏎Ск | ить⏎🔗 Ссылка⏎🤖 Открыть в боте⏎ⓘ приблизительно⏎← Бронебол⏎Ска",
+     "shot": null
+    }
+   ],
+   "shots": [
+    "shots/ios/4_spravochniki_paly_anubis__junk_unv_1.jpg",
+    "shots/ios/4_spravochniki_paly_jetragon__junk_unv_2.jpg",
+    "shots/ios/4_spravochniki_paly_kelpsea_ignis__junk_unv_3.jpg"
+   ],
+   "all_pages": [
+    "4_spravochniki/paly/aegidron/",
+    "4_spravochniki/paly/anubis/",
+    "4_spravochniki/paly/elphidran_aqua/",
+    "4_spravochniki/paly/jetragon/",
+    "4_spravochniki/paly/kelpsea_ignis/",
+    "4_spravochniki/paly/leezpunk_ignis/",
+    "4_spravochniki/paly/ribbuny/",
+    "4_spravochniki/paly/yakumo/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "occl",
+   "title": "Элемент налезает на текст (вкладки, стрелки, бейджи)",
+   "pages": 6,
+   "occurrences": 126,
+   "profiles": [
+    "desk",
+    "desk+ff",
+    "ff",
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "compare/",
+     "profile": "ios",
+     "detail": "«Анубис» закрыт button.cx-chg «Сравнить с другим» (top, 83,241)",
+     "shot": "shots/ios/compare__occl_1.jpg"
+    },
+    {
+     "page": "compare/",
+     "profile": "ios",
+     "detail": "«Джетрагон» закрыт button.cx-chg «Сравнить с другим» (top, 283,241)",
+     "shot": "shots/ios/compare__occl_2.jpg"
+    },
+    {
+     "page": "compare/",
+     "profile": "ios",
+     "detail": "«Анубис» закрыт button.cx-chg «Сравнить с другим» (bottom, 83,95)",
+     "shot": "shots/ios/compare__occl_3.jpg"
+    },
+    {
+     "page": "compare/",
+     "profile": "ios",
+     "detail": "«Джетрагон» закрыт button.cx-chg «Сравнить с другим» (bottom, 283,95)",
+     "shot": null
+    },
+    {
+     "page": "compare/",
+     "profile": "ios",
+     "detail": "«Лучшие пассивки для боя» закрыт button.cx-chg «Сравнить с другим» (bottom, 94,111)",
+     "shot": null
+    },
+    {
+     "page": "passivki/",
+     "profile": "ios",
+     "detail": "«🧬 разведение» закрыт div.pfl «🌈 Радужные\n🥇 Золот» (bottom, 67,71)",
+     "shot": null
+    },
+    {
+     "page": "passivki/",
+     "profile": "ios",
+     "detail": "«Очень плохая» закрыт div.pfl «🌈 Радужные\n🥇 Золот» (bottom, 65,161)",
+     "shot": null
+    },
+    {
+     "page": "passivki/",
+     "profile": "ios",
+     "detail": "«Хрупкие кости» закрыт div.pfl «🌈 Радужные\n🥇 Золот» (bottom, 74,189)",
+     "shot": null
+    }
+   ],
+   "shots": [
+    "shots/ios/compare__occl_1.jpg",
+    "shots/ios/compare__occl_2.jpg",
+    "shots/ios/compare__occl_3.jpg",
+    "shots/desk/compare__occl_1.jpg",
+    "shots/desk/compare__occl_2.jpg",
+    "shots/desk/compare__occl_3.jpg"
+   ],
+   "all_pages": [
+    "2_mehaniki/passivki_gde_vzyat/",
+    "4_spravochniki/predmety/%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D1%81%D1%83%D0%B0%D1%80%D1%8B/",
+    "4_spravochniki/predmety/%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C_%D0%B4%D0%BB%D1%8F_%D1%81%D1%84%D0%B5%D1%80%D1%8B/",
+    "4_spravochniki/predmety/%D1%87%D0%B5%D1%80%D1%82%D1%91%D0%B6/",
+    "compare/",
+    "passivki/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "inp_ac",
+   "title": "Нет autocomplete=\"off\" у поля поиска",
+   "pages": 5,
+   "occurrences": 6,
+   "profiles": [
+    "ios+desk",
+    "ios+desk+ff"
+   ],
+   "examples": [
+    {
+     "page": "gallery/",
+     "profile": "ios+desk+ff",
+     "detail": "#gq",
+     "shot": null
+    },
+    {
+     "page": "my/",
+     "profile": "ios+desk+ff",
+     "detail": "#nl",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/",
+     "profile": "ios+desk+ff",
+     "detail": "#gq",
+     "shot": null
+    },
+    {
+     "page": "2_mehaniki/rabota/",
+     "profile": "ios+desk",
+     "detail": "#ps",
+     "shot": null
+    },
+    {
+     "page": "2_mehaniki/rabota/",
+     "profile": "ios+desk",
+     "detail": "#wl",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly_po_stihiyam_i_rabote/",
+     "profile": "ios+desk",
+     "detail": "#bgq",
+     "shot": null
+    }
+   ],
+   "shots": [],
+   "all_pages": [
+    "2_mehaniki/rabota/",
+    "4_spravochniki/paly/",
+    "4_spravochniki/paly_po_stihiyam_i_rabote/",
+    "gallery/",
+    "my/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "hab_nodots",
+   "title": "На мини-карте обитания нет ни одной точки",
+   "pages": 5,
+   "occurrences": 5,
+   "profiles": [
+    "ios+desk"
+   ],
+   "examples": [
+    {
+     "page": "boss/alpha_anubis/",
+     "profile": "ios+desk",
+     "detail": "",
+     "shot": "shots/ios/boss_alpha_anubis__hab_nodots_1.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/kelpsea_ignis/",
+     "profile": "ios+desk",
+     "detail": "",
+     "shot": "shots/ios/4_spravochniki_paly_kelpsea_ignis__hab_nodots_2.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/elphidran_aqua/",
+     "profile": "ios+desk",
+     "detail": "",
+     "shot": "shots/ios/4_spravochniki_paly_elphidran_aqua__hab_nodots_3.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/leezpunk_ignis/",
+     "profile": "ios+desk",
+     "detail": "",
+     "shot": null
+    },
+    {
+     "page": "boss/alpha_splatterina/",
+     "profile": "ios+desk",
+     "detail": "",
+     "shot": null
+    }
+   ],
+   "shots": [
+    "shots/ios/boss_alpha_anubis__hab_nodots_1.jpg",
+    "shots/ios/4_spravochniki_paly_kelpsea_ignis__hab_nodots_2.jpg",
+    "shots/ios/4_spravochniki_paly_elphidran_aqua__hab_nodots_3.jpg"
+   ],
+   "all_pages": [
+    "4_spravochniki/paly/elphidran_aqua/",
+    "4_spravochniki/paly/kelpsea_ignis/",
+    "4_spravochniki/paly/leezpunk_ignis/",
+    "boss/alpha_anubis/",
+    "boss/alpha_splatterina/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "search_layout",
+   "title": "Поиск не понимает неверную раскладку",
+   "pages": 5,
+   "occurrences": 7,
+   "profiles": [
+    "desk",
+    "ios",
+    "ios+desk",
+    "ios+ff"
+   ],
+   "examples": [
+    {
+     "page": "gallery/",
+     "profile": "ios+ff",
+     "detail": "#gq «rfvjyjcrt»",
+     "shot": "shots/ios/gallery__search_layout_1.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/",
+     "profile": "ios",
+     "detail": "#gq «rfvjyjcrt»",
+     "shot": "shots/ios/4_spravochniki_paly__search_layout_2.jpg"
+    },
+    {
+     "page": "boss/",
+     "profile": "ios+desk",
+     "detail": "#bq2 «rfvjyjcrt»",
+     "shot": "shots/ios/boss__search_layout_3.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly_po_stihiyam_i_rabote/",
+     "profile": "ios+desk",
+     "detail": "#bgq «rfvjyjcrt» (появилось: Ничего не найдено.)",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/bossy/",
+     "profile": "ios+desk",
+     "detail": "#bq2 «rfvjyjcrt»",
+     "shot": null
+    },
+    {
+     "page": "gallery/",
+     "profile": "desk",
+     "detail": "#gq «rfvjyjcrt» (появилось: №\tИмя\tСтихия\tHP\tАтака\tЗащита\tРывок\tЛучшая работа)",
+     "shot": "shots/desk/gallery__search_layout_1.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/",
+     "profile": "desk",
+     "detail": "#gq «rfvjyjcrt» (появилось: №\tИмя\tСтихия\tHP\tАтака\tЗащита\tРывок\tЛучшая работа)",
+     "shot": "shots/desk/4_spravochniki_paly__search_layout_2.jpg"
+    }
+   ],
+   "shots": [
+    "shots/ios/gallery__search_layout_1.jpg",
+    "shots/ios/4_spravochniki_paly__search_layout_2.jpg",
+    "shots/ios/boss__search_layout_3.jpg",
+    "shots/desk/gallery__search_layout_1.jpg",
+    "shots/desk/4_spravochniki_paly__search_layout_2.jpg"
+   ],
+   "all_pages": [
+    "4_spravochniki/bossy/",
+    "4_spravochniki/paly/",
+    "4_spravochniki/paly_po_stihiyam_i_rabote/",
+    "boss/",
+    "gallery/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "inp_ph",
+   "title": "Подсказка в поле обрезана",
+   "pages": 4,
+   "occurrences": 4,
+   "profiles": [
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "my/",
+     "profile": "ios",
+     "detail": "#nl «Новый список, например «Рейд»» 309px > 148px",
+     "shot": null
+    },
+    {
+     "page": "2_mehaniki/aktivki/",
+     "profile": "ios",
+     "detail": "[data-dz=\"i5863\"] «Название или эффект» 206px > 152px",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/predmety/%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C_%D0%B4%D0%BB%D1%8F_%D1%81%D1%84%D0%B5%D1%80%D1%8B/",
+     "profile": "ios",
+     "detail": "[data-dz=\"i150\"] «Найти в разделе «Модуль для сферы»…» 372px > 300px",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/predmety/%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D1%81%D1%83%D0%B0%D1%80%D1%8B/",
+     "profile": "ios",
+     "detail": "[data-dz=\"i1733\"] «Найти в разделе «Аксессуары»…» 308px > 300px",
+     "shot": null
+    }
+   ],
+   "shots": [],
+   "all_pages": [
+    "2_mehaniki/aktivki/",
+    "4_spravochniki/predmety/%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D1%81%D1%83%D0%B0%D1%80%D1%8B/",
+    "4_spravochniki/predmety/%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C_%D0%B4%D0%BB%D1%8F_%D1%81%D1%84%D0%B5%D1%80%D1%8B/",
+    "my/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "clip",
+   "title": "Обрезанный текст (… или скрыт за краем)",
+   "pages": 3,
+   "occurrences": 3,
+   "profiles": [
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "compare/",
+     "profile": "ios",
+     "detail": "«Джетрагон» в div.cx-head > div.cx-pal.cx-b > div.cx-nm > b ширина 88>83 высота 18>18",
+     "shot": "shots/ios/compare__clip_1.jpg"
+    },
+    {
+     "page": "passivki/jump_count_increase_1/",
+     "profile": "ios",
+     "detail": "«Дополнительный прыжок +2» в article.md-content__inner.md-typeset > nav.edges > a.edge.er > small ширина 193>121 высота 16>16",
+     "shot": "shots/ios/passivki_jump_count_increase_1__clip_3.jpg"
+    },
+    {
+     "page": "passivki/world_trees_bounty/",
+     "profile": "ios",
+     "detail": "«Прыжок между измерениями» в article.md-content__inner.md-typeset > nav.edges > a.edge.el > small ширина 212>121 высота 16>16",
+     "shot": null
+    }
+   ],
+   "shots": [
+    "shots/ios/compare__clip_1.jpg",
+    "shots/ios/passivki_jump_count_increase_1__clip_3.jpg"
+   ],
+   "all_pages": [
+    "compare/",
+    "passivki/jump_count_increase_1/",
+    "passivki/world_trees_bounty/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "dup_clear",
+   "title": "Два крестика «очистить» у поля",
+   "pages": 3,
+   "occurrences": 4,
+   "profiles": [
+    "desk"
+   ],
+   "examples": [
+    {
+     "page": "",
+     "profile": "desk",
+     "detail": "#hsq: своих × 1 + системный ×",
+     "shot": "shots/desk/home__dup_clear_1.jpg"
+    },
+    {
+     "page": "map/",
+     "profile": "desk",
+     "detail": "#hsq: своих × 1 + системный ×",
+     "shot": "shots/desk/map__dup_clear_2.jpg"
+    },
+    {
+     "page": "map/",
+     "profile": "desk",
+     "detail": "#mapq: своих × 1 + системный ×",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/anubis/",
+     "profile": "desk",
+     "detail": "#hsq: своих × 1 + системный ×",
+     "shot": null
+    }
+   ],
+   "shots": [
+    "shots/desk/home__dup_clear_1.jpg",
+    "shots/desk/map__dup_clear_2.jpg"
+   ],
+   "all_pages": [
+    "",
+    "4_spravochniki/paly/anubis/",
+    "map/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "inp_autofill",
+   "title": "Риск панели «Автозаполнить контакт» на iPhone (эвристика)",
+   "pages": 2,
+   "occurrences": 2,
+   "profiles": [
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "gallery/",
+     "profile": "ios",
+     "detail": "#gq: слово «Имя» в подсказке/имени; нет autocorrect, autocapitalize, spellcheck",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/",
+     "profile": "ios",
+     "detail": "#gq: слово «Имя» в подсказке/имени; нет autocorrect, autocapitalize, spellcheck",
+     "shot": null
+    }
+   ],
+   "shots": [],
+   "all_pages": [
+    "4_spravochniki/paly/",
+    "gallery/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "inp_dbl",
+   "title": "Двойная рамка у поля ввода",
+   "pages": 2,
+   "occurrences": 4,
+   "profiles": [
+    "desk",
+    "ios+desk",
+    "ios+desk+ff"
+   ],
+   "examples": [
+    {
+     "page": "my/",
+     "profile": "ios+desk+ff",
+     "detail": "#nl внутри рамки div.gal-filters",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly_po_stihiyam_i_rabote/",
+     "profile": "desk",
+     "detail": "#bgq внутри рамки div.gal-filters",
+     "shot": null
+    },
+    {
+     "page": "my/",
+     "profile": "ios+desk",
+     "detail": "#nl (в фокусе) внутри рамки div.gal-filters",
+     "shot": "shots/ios/my__inp_dbl_1.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly_po_stihiyam_i_rabote/",
+     "profile": "desk",
+     "detail": "#bgq (в фокусе) внутри рамки div.gal-filters",
+     "shot": "shots/desk/4_spravochniki_paly_po_stihiyam_i_rabote__inp_dbl_2.jpg"
+    }
+   ],
+   "shots": [
+    "shots/ios/my__inp_dbl_1.jpg",
+    "shots/desk/4_spravochniki_paly_po_stihiyam_i_rabote__inp_dbl_2.jpg"
+   ],
+   "all_pages": [
+    "4_spravochniki/paly_po_stihiyam_i_rabote/",
+    "my/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "kb_cover",
+   "title": "С открытой клавиатурой экран занят панелями",
+   "pages": 2,
+   "occurrences": 2,
+   "profiles": [
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "",
+     "profile": "ios",
+     "detail": "панели 66% (поле #hsq)",
+     "shot": "shots/ios/home__kb_cover_1.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/anubis/",
+     "profile": "ios",
+     "detail": "панели 66% (поле #hsq)",
+     "shot": "shots/ios/4_spravochniki_paly_anubis__kb_cover_2.jpg"
+    }
+   ],
+   "shots": [
+    "shots/ios/home__kb_cover_1.jpg",
+    "shots/ios/4_spravochniki_paly_anubis__kb_cover_2.jpg"
+   ],
+   "all_pages": [
+    "",
+    "4_spravochniki/paly/anubis/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "search_empty",
+   "title": "Поиск не показывает результаты под строкой",
+   "pages": 2,
+   "occurrences": 2,
+   "profiles": [
+    "ios+desk"
+   ],
+   "examples": [
+    {
+     "page": "boss/",
+     "profile": "ios+desk",
+     "detail": "#bq2 «Anubis»",
+     "shot": "shots/ios/boss__search_empty_1.jpg"
+    },
+    {
+     "page": "4_spravochniki/bossy/",
+     "profile": "ios+desk",
+     "detail": "#bq2 «Anubis»",
+     "shot": "shots/ios/4_spravochniki_bossy__search_empty_2.jpg"
+    }
+   ],
+   "shots": [
+    "shots/ios/boss__search_empty_1.jpg",
+    "shots/ios/4_spravochniki_bossy__search_empty_2.jpg"
+   ],
+   "all_pages": [
+    "4_spravochniki/bossy/",
+    "boss/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "map_empty",
+   "title": "Большая пустая область внутри границ карты (нет подложки)",
+   "pages": 2,
+   "occurrences": 2,
+   "profiles": [
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "map/",
+     "profile": "ios",
+     "detail": "мир p, шаг 0: подложкой покрыто 72% области карты",
+     "shot": "shots/ios/map_p_z0.png"
+    },
+    {
+     "page": "map/?pal=Anubis",
+     "profile": "ios",
+     "detail": "мир p, шаг 0: подложкой покрыто 72% области карты",
+     "shot": "shots/ios/map_pal_z0.png"
+    }
+   ],
+   "shots": [
+    "shots/ios/map_p_z0.png",
+    "shots/ios/map_pal_z0.png"
+   ],
+   "all_pages": [
+    "map/",
+    "map/?pal=Anubis"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "cluster_dead",
+   "title": "Нажатие на группу значков не раскрывает её",
+   "pages": 2,
+   "occurrences": 6,
+   "profiles": [
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "map/",
+     "profile": "ios",
+     "detail": "мир t, группа «7»",
+     "shot": null
+    },
+    {
+     "page": "map/",
+     "profile": "ios",
+     "detail": "мир t, группа «2»",
+     "shot": null
+    },
+    {
+     "page": "map/",
+     "profile": "ios",
+     "detail": "мир t, группа «3»",
+     "shot": null
+    },
+    {
+     "page": "map/?pal=Anubis",
+     "profile": "ios",
+     "detail": "мир t, группа «7»",
+     "shot": null
+    },
+    {
+     "page": "map/?pal=Anubis",
+     "profile": "ios",
+     "detail": "мир t, группа «2»",
+     "shot": null
+    },
+    {
+     "page": "map/?pal=Anubis",
+     "profile": "ios",
+     "detail": "мир t, группа «3»",
+     "shot": null
+    }
+   ],
+   "shots": [],
+   "all_pages": [
+    "map/",
+    "map/?pal=Anubis"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "dead_help",
+   "title": "Кнопка «?» не открывает подсказку",
+   "pages": 1,
+   "occurrences": 1,
+   "profiles": [
+    "desk"
+   ],
+   "examples": [
+    {
+     "page": "2_mehaniki/rabota/",
+     "profile": "desk",
+     "detail": "«?» BUTTON.qm",
+     "shot": "shots/desk/2_mehaniki_rabota__dead_help_1.jpg"
+    }
+   ],
+   "shots": [
+    "shots/desk/2_mehaniki_rabota__dead_help_1.jpg"
+   ],
+   "all_pages": [
+    "2_mehaniki/rabota/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "kb_map",
+   "title": "С открытой клавиатурой панели закрывают карту",
+   "pages": 1,
+   "occurrences": 1,
+   "profiles": [
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "map/",
+     "profile": "ios",
+     "detail": "видно карты 41% экрана (поле #hsq)",
+     "shot": "shots/ios/map__kb_map_1.jpg"
+    }
+   ],
+   "shots": [
+    "shots/ios/map__kb_map_1.jpg"
+   ],
+   "all_pages": [
+    "map/"
+   ]
+  },
+  {
+   "sev": "P1",
+   "key": "search_wrong",
+   "title": "Поиск не находит ожидаемое",
+   "pages": 1,
+   "occurrences": 3,
+   "profiles": [
+    "ios+desk"
+   ],
+   "examples": [
+    {
+     "page": "my/",
+     "profile": "ios+desk",
+     "detail": "#nl «Анубис» → нет «Анубис» (есть: В бота)",
+     "shot": null
+    },
+    {
+     "page": "my/",
+     "profile": "ios+desk",
+     "detail": "#nl «Anubis» → нет «Анубис» (есть: В бота)",
+     "shot": null
+    },
+    {
+     "page": "my/",
+     "profile": "ios+desk",
+     "detail": "#nl «rfvjyjcrt» → нет «Камоноске» (есть: В бота)",
+     "shot": null
+    }
+   ],
+   "shots": [],
+   "all_pages": [
+    "my/"
+   ]
+  },
+  {
+   "sev": "P2",
+   "key": "overlay",
+   "title": "Нажатие открывает слой на весь экран",
+   "pages": 12,
+   "occurrences": 12,
+   "profiles": [
+    "desk",
+    "ios",
+    "ios+desk"
+   ],
+   "examples": [
+    {
+     "page": "gallery/",
+     "profile": "ios",
+     "detail": "«⚙️ Фильтры» → div.sheet-bg 100%",
+     "shot": "shots/ios/gallery__overlay_1.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/",
+     "profile": "ios",
+     "detail": "«⚙️ Фильтры» → div.sheet-bg 100%",
+     "shot": "shots/ios/4_spravochniki_paly__overlay_2.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/anubis/",
+     "profile": "ios+desk",
+     "detail": "«Открыть карточку» → div.lbx 100%",
+     "shot": "shots/ios/4_spravochniki_paly_anubis__overlay_3.jpg"
+    },
+    {
+     "page": "4_spravochniki/paly/jetragon/",
+     "profile": "ios+desk",
+     "detail": "«Открыть карточку» → div.lbx 100%",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/kelpsea_ignis/",
+     "profile": "ios+desk",
+     "detail": "«Открыть карточку» → div.lbx 100%",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/aegidron/",
+     "profile": "ios+desk",
+     "detail": "«Открыть карточку» → div.lbx 100%",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/elphidran_aqua/",
+     "profile": "ios+desk",
+     "detail": "«Открыть карточку» → div.lbx 100%",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/leezpunk_ignis/",
+     "profile": "ios+desk",
+     "detail": "«Открыть карточку» → div.lbx 100%",
+     "shot": null
+    }
+   ],
+   "shots": [
+    "shots/ios/gallery__overlay_1.jpg",
+    "shots/ios/4_spravochniki_paly__overlay_2.jpg",
+    "shots/ios/4_spravochniki_paly_anubis__overlay_3.jpg",
+    "shots/desk/home__overlay_1.jpg",
+    "shots/desk/compare__overlay_2.jpg"
+   ],
+   "all_pages": [
+    "",
+    "4_spravochniki/paly/",
+    "4_spravochniki/paly/aegidron/",
+    "4_spravochniki/paly/anubis/",
+    "4_spravochniki/paly/elphidran_aqua/",
+    "4_spravochniki/paly/jetragon/",
+    "4_spravochniki/paly/kelpsea_ignis/",
+    "4_spravochniki/paly/leezpunk_ignis/",
+    "4_spravochniki/paly/ribbuny/",
+    "4_spravochniki/paly/yakumo/",
+    "compare/",
+    "gallery/"
+   ]
+  },
+  {
+   "sev": "P2",
+   "key": "hab_dot_dead",
+   "title": "Точка мини-карты не реагирует на нажатие",
+   "pages": 8,
+   "occurrences": 23,
+   "profiles": [
+    "desk",
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "4_spravochniki/paly/anubis/",
+     "profile": "ios",
+     "detail": "canvas, точка 190,412",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/anubis/",
+     "profile": "ios",
+     "detail": "canvas, точка 177,437",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/jetragon/",
+     "profile": "ios",
+     "detail": "canvas, точка 129,396",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/jetragon/",
+     "profile": "ios",
+     "detail": "canvas, точка 154,405",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/kelpsea_ignis/",
+     "profile": "ios",
+     "detail": "canvas, точка 133,492",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/aegidron/",
+     "profile": "ios",
+     "detail": "canvas, точка 129,396",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/aegidron/",
+     "profile": "ios",
+     "detail": "canvas, точка 154,404",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly/elphidran_aqua/",
+     "profile": "ios",
+     "detail": "canvas, точка 133,518",
+     "shot": null
+    }
+   ],
+   "shots": [],
+   "all_pages": [
+    "4_spravochniki/paly/aegidron/",
+    "4_spravochniki/paly/anubis/",
+    "4_spravochniki/paly/elphidran_aqua/",
+    "4_spravochniki/paly/jetragon/",
+    "4_spravochniki/paly/kelpsea_ignis/",
+    "4_spravochniki/paly/leezpunk_ignis/",
+    "4_spravochniki/paly/ribbuny/",
+    "4_spravochniki/paly/yakumo/"
+   ]
+  },
+  {
+   "sev": "P2",
+   "key": "junk_eng_words",
+   "title": "Английские названия вместо русских",
+   "pages": 6,
+   "occurrences": 6,
+   "profiles": [
+    "ios+desk"
+   ],
+   "examples": [
+    {
+     "page": "about/",
+     "profile": "ios+desk",
+     "detail": "bounded, JetBrains Mono — SIL Open Font License⏎⚠️ Сообщить об ошибке⏎К начал | bounded, JetBrains Mono — SIL Open Font License⏎⚠️ Сообщить об ошибке",
+     "shot": "shots/ios/about__junk_eng_words_1.jpg"
+    },
+    {
+     "page": "5_lut_i_farm/gde_vzyat/",
+     "profile": "ios+desk",
+     "detail": " Сундук, Экспедиция, Рыбалка, Glistening Ancient Relic⏎Водяная граната — крафт⏎Возду |  Сундук, Экспедиция, Рыбалка, Glistening Ancient Relic⏎Водяная граната⏎ — крафт⏎Возд |  Сундук, Экспедиция, Рыбалка, Glistening Ancient Relic⏎Грубые патроны⏎ — крафт; люди |  Сундук, Экспедиция, Рыбалка, Glistening Ancient Relic⏎Драконья граната⏎ — крафт⏎Дре",
+     "shot": "shots/ios/5_lut_i_farm_gde_vzyat__junk_eng_words_2.jpg"
+    },
+    {
+     "page": "9_faq/faq/",
+     "profile": "ios+desk",
+     "detail": ": Экспедиция, Нефтяная вышка, Glistening Ancient Relic, Glowing Ancient Relic, Рыбны | ка, Glistening Ancient Relic, Glowing Ancient Relic, Рыбный пруд на базе⏎Где взят",
+     "shot": "shots/ios/9_faq_faq__junk_eng_words_3.jpg"
+    },
+    {
+     "page": "guide/05_lovlya/",
+     "profile": "ios+desk",
+     "detail": "Надень Очки укротителя палов (Pal Tamer's Glasses): твой удар не доби | день ⏎Очки укротителя палов⏎ (Pal Tamer's Glasses): твой удар не доби",
+     "shot": null
+    },
+    {
+     "page": "guide/09_baza/",
+     "profile": "ios+desk",
+     "detail": "дает медленнее.⏎Еда⏎Кормушка (Feed Box) — клади еду, палы едят сами. | ает медленнее.⏎Еда⏎Кормушка⏎ (Feed Box) — клади еду, палы едят сами.",
+     "shot": null
+    },
+    {
+     "page": "guide/sekrety/",
+     "profile": "ios+desk",
+     "detail": "ы Жареный Ламболл называется «Ghengis Khan» — так в Японии называют жаре | ы Жареный Ламболл называется «Ghengis Khan» — так в Японии называют жаре",
+     "shot": null
+    }
+   ],
+   "shots": [
+    "shots/ios/about__junk_eng_words_1.jpg",
+    "shots/ios/5_lut_i_farm_gde_vzyat__junk_eng_words_2.jpg",
+    "shots/ios/9_faq_faq__junk_eng_words_3.jpg"
+   ],
+   "all_pages": [
+    "5_lut_i_farm/gde_vzyat/",
+    "9_faq/faq/",
+    "about/",
+    "guide/05_lovlya/",
+    "guide/09_baza/",
+    "guide/sekrety/"
+   ]
+  },
+  {
+   "sev": "P2",
+   "key": "inp_autofill",
+   "title": "Риск панели «Автозаполнить контакт» на iPhone (эвристика)",
+   "pages": 3,
+   "occurrences": 4,
+   "profiles": [
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "my/",
+     "profile": "ios",
+     "detail": "#nl: нет autocorrect, autocapitalize, spellcheck",
+     "shot": null
+    },
+    {
+     "page": "2_mehaniki/rabota/",
+     "profile": "ios",
+     "detail": "#ps: нет autocorrect, autocapitalize, spellcheck",
+     "shot": null
+    },
+    {
+     "page": "2_mehaniki/rabota/",
+     "profile": "ios",
+     "detail": "#wl: нет autocorrect, autocapitalize, spellcheck",
+     "shot": null
+    },
+    {
+     "page": "4_spravochniki/paly_po_stihiyam_i_rabote/",
+     "profile": "ios",
+     "detail": "#bgq: нет autocorrect, autocapitalize, spellcheck",
+     "shot": null
+    }
+   ],
+   "shots": [],
+   "all_pages": [
+    "2_mehaniki/rabota/",
+    "4_spravochniki/paly_po_stihiyam_i_rabote/",
+    "my/"
+   ]
+  },
+  {
+   "sev": "P2",
+   "key": "map_iconov",
+   "title": "Значки на карте налезают друг на друга на стартовом масштабе",
+   "pages": 2,
+   "occurrences": 2,
+   "profiles": [
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "map/",
+     "profile": "ios",
+     "detail": "мир p: 12 пересечений",
+     "shot": "shots/ios/map__map_iconov_1.jpg"
+    },
+    {
+     "page": "map/?pal=Anubis",
+     "profile": "ios",
+     "detail": "мир p: 12 пересечений",
+     "shot": "shots/ios/map_pal_anubis__map_iconov_2.jpg"
+    }
+   ],
+   "shots": [
+    "shots/ios/map__map_iconov_1.jpg",
+    "shots/ios/map_pal_anubis__map_iconov_2.jpg"
+   ],
+   "all_pages": [
+    "map/",
+    "map/?pal=Anubis"
+   ]
+  },
+  {
+   "sev": "P2",
+   "key": "layer_empty",
+   "title": "Слой карты пустой на стартовом масштабе",
+   "pages": 2,
+   "occurrences": 2,
+   "profiles": [
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "map/",
+     "profile": "ios",
+     "detail": "мир t, слой sealed",
+     "shot": null
+    },
+    {
+     "page": "map/?pal=Anubis",
+     "profile": "ios",
+     "detail": "мир t, слой sealed",
+     "shot": null
+    }
+   ],
+   "shots": [],
+   "all_pages": [
+    "map/",
+    "map/?pal=Anubis"
+   ]
+  },
+  {
+   "sev": "P2",
+   "key": "hab_nodots",
+   "title": "На мини-карте обитания нет ни одной точки",
+   "pages": 1,
+   "occurrences": 1,
+   "profiles": [
+    "ios+desk"
+   ],
+   "examples": [
+    {
+     "page": "boss/alpha_jetragon/",
+     "profile": "ios+desk",
+     "detail": "",
+     "shot": null
+    }
+   ],
+   "shots": [],
+   "all_pages": [
+    "boss/alpha_jetragon/"
+   ]
+  },
+  {
+   "sev": "P2",
+   "key": "search_pos",
+   "title": "Список результатов не под строкой поиска",
+   "pages": 1,
+   "occurrences": 8,
+   "profiles": [
+    "desk",
+    "ios"
+   ],
+   "examples": [
+    {
+     "page": "my/",
+     "profile": "ios",
+     "detail": "#nl «Анубис»: список -672–-623, поле 393–451",
+     "shot": null
+    },
+    {
+     "page": "my/",
+     "profile": "ios",
+     "detail": "#nl «Anubis»: список -672–-623, поле 393–451",
+     "shot": null
+    },
+    {
+     "page": "my/",
+     "profile": "ios",
+     "detail": "#nl «rfvjyjcrt»: список -672–-623, поле 393–451",
+     "shot": null
+    },
+    {
+     "page": "my/",
+     "profile": "ios",
+     "detail": "#nl «Ка»: список -672–-623, поле 393–451",
+     "shot": null
+    },
+    {
+     "page": "my/",
+     "profile": "desk",
+     "detail": "#nl «Анубис»: список -188–-138, поле 556–614",
+     "shot": null
+    },
+    {
+     "page": "my/",
+     "profile": "desk",
+     "detail": "#nl «Anubis»: список -188–-138, поле 556–614",
+     "shot": null
+    },
+    {
+     "page": "my/",
+     "profile": "desk",
+     "detail": "#nl «rfvjyjcrt»: список -188–-138, поле 556–614",
+     "shot": null
+    },
+    {
+     "page": "my/",
+     "profile": "desk",
+     "detail": "#nl «Ка»: список -188–-138, поле 556–614",
+     "shot": null
+    }
+   ],
+   "shots": [],
+   "all_pages": [
+    "my/"
+   ]
+  }
+ ]
+}

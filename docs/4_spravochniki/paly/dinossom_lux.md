@@ -53,7 +53,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="573" data-n="573" data-t="0" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 34–36</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Шрамы войны</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Песчаных Дюн</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо молнии</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="FlowerDinosaur_Electric" data-d="573" data-n="573" data-t="0" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 34–36</span><a class="btn hm-full" href="../../../map/?pal=FlowerDinosaur_Electric">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Шрамы войны</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Песчаных Дюн</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо молнии</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 
@@ -64,6 +64,7 @@
     - Семена моркови — 1–2 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 5–7 шт., 100%
     - Ценный драконий самоцвет — 5–7 шт., 100%
 

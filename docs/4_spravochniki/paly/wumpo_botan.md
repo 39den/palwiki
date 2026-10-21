@@ -53,7 +53,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="83" data-n="83" data-t="42" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 53–80</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Сакурадзима</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо свежей листвы</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Yeti_Grass" data-d="83" data-n="83" data-t="42" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 53–80</span><a class="btn hm-full" href="../../../map/?pal=Yeti_Grass">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Сакурадзима</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо свежей листвы</b></div></div></div>
 
 
 
@@ -65,6 +65,7 @@
     - Семена моркови — 1 шт., 50%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 5–6 шт., 100%
     - Ценный мех — 5–6 шт., 100%
 

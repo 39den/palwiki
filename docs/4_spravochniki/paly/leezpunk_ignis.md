@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="51" data-n="51" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 28–55</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Подножье вулкана</span><span class="rgc">Обсидиановый вулкан</span><span class="rgc">Болотный остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Вулкана</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Раскалённое яйцо</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="LizardMan_Fire" data-d="51" data-n="51" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 28–55</span><a class="btn hm-full" href="../../../map/?pal=LizardMan_Fire">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Подножье вулкана</span><span class="rgc">Обсидиановый вулкан</span><span class="rgc">Болотный остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Вулкана</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Раскалённое яйцо</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 
@@ -64,6 +64,7 @@
     - Гребень Лизпанка — 1 шт., 50%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 1–2 шт., 100%
     - Серебряный ключ — 1 шт., 2%
     - Ценные внутренности — 1–2 шт., 100%

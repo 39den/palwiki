@@ -14,6 +14,8 @@
   if(document.getElementById('pwmap'))document.body.classList.add('pp-map');
   if(document.querySelector('.igrid,.icard'))document.body.classList.add('pp-items');
  };
- const done=()=>{try{run()}finally{document.documentElement.classList.add('pp-ready')}};
+ const ready=()=>document.documentElement.classList.add('pp-ready');const done=()=>{try{run()}finally{/* wait (<=900ms) for the ux50 breadcrumbs so they don't push content after first paint */const ux=document.querySelector('script[src*="assets/ux50.js"]');if(!ux)return ready();let n=0;const t=setInterval(()=>{if(document.querySelector('.ux-crumbs')||++n>18){clearInterval(t);requestAnimationFrame(ready)}},50)}};
  if(document.readyState=='loading')document.addEventListener('DOMContentLoaded',done);else done();setTimeout(()=>document.documentElement.classList.add('pp-ready'),2500);
 })();
+/* items26: sub-category chips filter the tile grid (works together with the text filter) */
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('.isubs button');if(!b)return;const box=b.closest('.items26');box.querySelectorAll('.isubs button').forEach(x=>x.classList.toggle('on',x===b));const s=b.dataset.sub;box.querySelectorAll('.itm').forEach(d=>{d.classList.toggle('subx',!!s&&d.dataset.sub!==s)});const n=box.querySelectorAll('.itm:not(.subx)').length;const c=document.querySelector('.ifl .pfn');if(c)c.textContent='найдено '+n;});

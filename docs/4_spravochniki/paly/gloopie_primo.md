@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="35" data-n="35" data-t="592" data-a="24"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 65–65</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Солнечный предел</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо воды</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="OctopusGirl_Neutral" data-d="35" data-n="35" data-t="592" data-a="24"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 65–65</span><a class="btn hm-full" href="../../../map/?pal=OctopusGirl_Neutral">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Солнечный предел</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо воды</b></div></div></div>
 
 
 
@@ -60,9 +60,10 @@
 
     #### Дроп
     - Жидкость водного Пала — 1–2 шт., 100%
-    - Щупальце Глуппи — 1–2 шт., 100%
+    - Щупальце [Глуппи](gloopie.md) — 1–2 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–3 шт., 100%
     - Ценные внутренности — 2–3 шт., 100%
 

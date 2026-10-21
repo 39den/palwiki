@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="133" data-n="133" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 48–66</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Астральные горы</span><span class="rgc">Разбившийся корабль Тэнраку</span><span class="rgc">Мировое древо</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Священной Горы</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо льда</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="VolcanicMonster_Ice" data-d="133" data-n="133" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 48–66</span><a class="btn hm-full" href="../../../map/?pal=VolcanicMonster_Ice">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Астральные горы</span><span class="rgc">Разбившийся корабль Тэнраку</span><span class="rgc">Мировое древо</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Священной Горы</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо льда</b></div></div></div>
 
 
 
@@ -62,6 +62,7 @@
     - Ледяной орган — 3–4 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 3–5 шт., 100%
     - Ценные внутренности — 3–5 шт., 100%
 
@@ -72,7 +73,7 @@
     #### Разведение
     - Ранг разведения: 600
     - **Особая пара:** [Рептиро](../../4_spravochniki/paly/reptyro.md) + [Фоксайкл](../../4_spravochniki/paly/foxcicle.md)
-    - Участвует в особых парах: Молдрон → Молдрон Крист
+    - Участвует в особых парах: [Молдрон](moldron.md) → [Молдрон Крист](moldron_cryst.md)
 
 
 

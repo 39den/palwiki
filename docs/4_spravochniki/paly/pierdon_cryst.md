@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="50" data-n="50" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 68–68</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Солнечный предел</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо льда</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="RockBeast_Ice" data-d="50" data-n="50" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 68–68</span><a class="btn hm-full" href="../../../map/?pal=RockBeast_Ice">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Солнечный предел</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо льда</b></div></div></div>
 
 
 
@@ -64,6 +64,7 @@
     - Чистый кварц — 4–5 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 4–6 шт., 100%
     - Ценные внутренности — 2–3 шт., 100%
 
@@ -74,7 +75,7 @@
     #### Разведение
     - Ранг разведения: 460
     - **Особая пара:** [Пиродон](../../4_spravochniki/paly/pierdon.md) + [Вумпо](../../4_spravochniki/paly/wumpo.md)
-    - Участвует в особых парах: Элгрув → Элгрув Крист
+    - Участвует в особых парах: [Элгрув](elgrove.md) → [Элгрув Крист](elgrove_cryst.md)
 
 
 

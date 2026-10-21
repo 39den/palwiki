@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="549" data-n="549" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 31–55</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Шрамы войны</span><span class="rgc">Астральные горы</span><span class="rgc">Болотный остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Песчаных Дюн</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо свежей листвы</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="RobinHood_Ground" data-d="549" data-n="549" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 31–55</span><a class="btn hm-full" href="../../../map/?pal=RobinHood_Ground">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Шрамы войны</span><span class="rgc">Астральные горы</span><span class="rgc">Болотный остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Песчаных Дюн</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо свежей листвы</b></div></div></div>
 
 
 
@@ -63,6 +63,7 @@
     - Стрела — 2–4 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–4 шт., 100%
     - Ценные внутренности — 2–4 шт., 100%
 

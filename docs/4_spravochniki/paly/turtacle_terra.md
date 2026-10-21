@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="306" data-n="306" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 40–46</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Сакурадзима</span><span class="rgc">Обсидиановый вулкан</span><span class="rgc">Остров-оазис</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо воды</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="TentacleTurtle_Ground" data-d="306" data-n="306" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 40–46</span><a class="btn hm-full" href="../../../map/?pal=TentacleTurtle_Ground">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Сакурадзима</span><span class="rgc">Обсидиановый вулкан</span><span class="rgc">Остров-оазис</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо воды</b></div></div></div>
 
 
 
@@ -63,6 +63,7 @@
     - Кость — 1 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–3 шт., 100%
     - Ценные внутренности — 2–3 шт., 100%
 
@@ -73,7 +74,7 @@
     #### Разведение
     - Ранг разведения: 1330
     - **Особая пара:** [Туртакл](../../4_spravochniki/paly/turtacle.md) + [Дигтос](../../4_spravochniki/paly/digtoise.md)
-    - Участвует в особых парах: Снок → Снок Терра
+    - Участвует в особых парах: [Снок](snock.md) → [Снок Терра](snock_terra.md)
 
 
 

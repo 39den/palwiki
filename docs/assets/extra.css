@@ -694,7 +694,7 @@ a.mpcard{cursor:pointer}
 
 /* habitat mini map v2: the map owns its gestures */
 .hm-box{touch-action:pan-y;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;cursor:grab}
-.hm-box.zin{touch-action:none}.hm-box.drag{cursor:grabbing}
+.hm-box.zin{touch-action:pan-y}.hm-box.drag{cursor:grabbing}
 .hm-box>.hm-stage{position:absolute;inset:0;transform-origin:0 0;will-change:transform;backface-visibility:hidden}
 .hm-box>.hm-stage>.hm-img{position:absolute;inset:0;width:100%;height:100%;transform:none!important;transition:none!important;pointer-events:none;-webkit-user-drag:none}
 .hm-box>.hm-cv{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
@@ -792,3 +792,14 @@ html.ux-sxon .inst{display:none!important}
 .pflip[aria-pressed=true]{background:var(--surf2)}
 @media (max-width:76.234375em){html.kbopen .tabbar{display:none!important}html.kbopen.hsqf .msheet{display:none!important}
 body:has(#pwmap) #sxp{max-height:42vh;overflow:auto}}
+/* 21.10 live hotfix: no double frame (input inside framed filter bar) */
+.gal-filters.plain{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border:0!important;box-shadow:none!important;background:none!important;padding-left:0;padding-right:0}
+/* 21.10 live hotfix: neighbour names wrap instead of «…» (deep audit clip) */
+.edges .edge{border-radius:16px}
+.edges .edge small{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2;overflow-wrap:anywhere}
+/* compare: names never clipped on phones; sticky head sits below sticky tabs on desktop */
+@media(max-width:600px){.cx-head{height:auto;min-height:56px}.cx-pal{height:auto;min-height:48px}.cx-nm{overflow:visible}.cx-nm b{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;font-size:.74rem;line-height:1.1}}
+@media(min-width:76.25em){.cx-head{top:calc(var(--hdr,3.2rem) + 2.6rem)}}
+#nl.need{border-color:var(--acc)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--acc) 30%,transparent)!important}
+/* 21.10 live hotfix: inline install banner (home page only), never fixed over content */
+.inst.inl{position:static!important;left:auto;right:auto;bottom:auto;max-width:none;margin:1.2rem 0 .4rem;z-index:auto}

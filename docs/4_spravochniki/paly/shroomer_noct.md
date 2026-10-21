@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="219" data-n="219" data-t="2" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 47–75</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Сакурадзима</span><span class="rgc">Разбившийся корабль Тэнраку</span><span class="rgc">Кричащий остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Цветущей Сакуры</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо свежей листвы</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="MushroomDragon_Dark" data-d="219" data-n="219" data-t="2" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 47–75</span><a class="btn hm-full" href="../../../map/?pal=MushroomDragon_Dark">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Сакурадзима</span><span class="rgc">Разбившийся корабль Тэнраку</span><span class="rgc">Кричащий остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Цветущей Сакуры</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо свежей листвы</b></div></div></div>
 
 
 
@@ -63,6 +63,7 @@
     - Загадочный гриб — 1–2 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–3 шт., 100%
     - Ценные внутренности — 2–3 шт., 100%
 

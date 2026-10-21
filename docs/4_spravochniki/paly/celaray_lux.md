@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="197" data-n="197" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 26–26</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Подножие Астральных гор</span><span class="rgc">Остров-оазис</span><span class="rgc">Остров Ветровой эрозии</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо воды</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="FlyingManta_Thunder" data-d="197" data-n="197" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 26–26</span><a class="btn hm-full" href="../../../map/?pal=FlyingManta_Thunder">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Подножие Астральных гор</span><span class="rgc">Остров-оазис</span><span class="rgc">Остров Ветровой эрозии</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо воды</b></div></div></div>
 
 
 
@@ -62,6 +62,7 @@
     - Жидкость водного Пала — 1–2 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–3 шт., 100%
     - Ценное перо — 2–3 шт., 100%
 

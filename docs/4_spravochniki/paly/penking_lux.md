@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="112" data-n="112" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Сакурадзима</span><span class="rgc">Остров Ветровой эрозии</span><span class="rgc">Остров призраков</span><span class="rgc">Кричащий остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо воды</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="CaptainPenguin_Black" data-d="112" data-n="112" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><a class="btn hm-full" href="../../../map/?pal=CaptainPenguin_Black">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Сакурадзима</span><span class="rgc">Остров Ветровой эрозии</span><span class="rgc">Остров призраков</span><span class="rgc">Кричащий остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо воды</b></div></div></div>
 
 
 
@@ -63,6 +63,7 @@
     - Перо Пенкинга — 1 шт., 50%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–3 шт., 100%
     - Ценные внутренности — 2–3 шт., 100%
 

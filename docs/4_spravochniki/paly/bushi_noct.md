@@ -53,7 +53,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="1675" data-n="2045" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 47–65</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Выжженный холм</span><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Сакурадзима</span><span class="rgc">Жёлтоземная равнина</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Цветущей Сакуры</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое раскалённое яйцо</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Ronin_Dark" data-d="1675" data-n="2045" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 47–65</span><a class="btn hm-full" href="../../../map/?pal=Ronin_Dark">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Выжженный холм</span><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Сакурадзима</span><span class="rgc">Жёлтоземная равнина</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Цветущей Сакуры</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое раскалённое яйцо</b></div></div></div>
 
 
 
@@ -65,6 +65,7 @@
     - Средняя душа Пала — 1–2 шт., 40%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–3 шт., 100%
     - Ценные внутренности — 2–3 шт., 100%
 
@@ -75,7 +76,7 @@
     #### Разведение
     - Ранг разведения: 840
     - **Особая пара:** [Буси](../../4_spravochniki/paly/bushi.md) + [Гостлайт](../../4_spravochniki/paly/sootseer.md)
-    - Участвует в особых парах: Кроадзиро → Кроадзиро Нокт
+    - Участвует в особых парах: [Кроадзиро](croajiro.md) → [Кроадзиро Нокт](croajiro_noct.md)
 
 
 

@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="13" data-n="13" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 50–50</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Остров Кольцевых руин</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо свежей листвы</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="GhostRabbit_Grass" data-d="13" data-n="13" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 50–50</span><a class="btn hm-full" href="../../../map/?pal=GhostRabbit_Grass">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Остров Кольцевых руин</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо свежей листвы</b></div></div></div>
 
 
 
@@ -62,6 +62,7 @@
     - Средняя душа Пала — 1 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 6–7 шт., 100%
     - Ценный мех — 2–3 шт., 100%
 

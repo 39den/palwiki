@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="80" data-n="80" data-t="42" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 47–80</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Сакурадзима</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Цветущей Сакуры</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо тьмы</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="HadesBird_Electric" data-d="80" data-n="80" data-t="42" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 47–80</span><a class="btn hm-full" href="../../../map/?pal=HadesBird_Electric">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Сакурадзима</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Цветущей Сакуры</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо тьмы</b></div></div></div>
 
 
 
@@ -63,6 +63,7 @@
     - Средняя душа Пала — 1 шт., 3%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–3 шт., 100%
     - Ценное перо — 2–3 шт., 100%
 
@@ -73,7 +74,7 @@
     #### Разведение
     - Ранг разведения: 960
     - **Особая пара:** [Хэлзефир](../../4_spravochniki/paly/helzephyr.md) + [Райберд](../../4_spravochniki/paly/beakon.md)
-    - Участвует в особых парах: Скорпио → Скорпио Лакс
+    - Участвует в особых парах: [Скорпио](prixter.md) → [Скорпио Лакс](prixter_lux.md)
 
 
 

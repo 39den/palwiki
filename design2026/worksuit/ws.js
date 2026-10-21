@@ -28,8 +28,8 @@ $$('.side .tc').forEach(b=>b.onclick=()=>{b.setAttribute('aria-pressed',b.getAtt
 $$('.seg2 button').forEach(b=>b.onclick=()=>{b.parentElement.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');st.food=+b.dataset.v;calc()});
 ['#ps','#wl','#pl','#pp','#pso'].forEach(s=>$(s).addEventListener('input',calc));
 $$('.qm').forEach(b=>{const t=document.getElementById(b.getAttribute('aria-controls'));const set=o=>{b.setAttribute('aria-expanded',o);t.classList.toggle('on',o)};
- b.addEventListener('click',e=>{e.stopPropagation();const o=b.getAttribute('aria-expanded')!=='true';$$('.qm').forEach(x=>{if(x!==b){x.setAttribute('aria-expanded','false');document.getElementById(x.getAttribute('aria-controls')).classList.remove('on')}});set(o)});
- if(matchMedia('(hover:hover)').matches){b.addEventListener('mouseenter',()=>set(true));b.addEventListener('mouseleave',()=>set(false))}});
+ b.addEventListener('click',e=>{e.stopPropagation();const o=b._hov?true:b.getAttribute('aria-expanded')!=='true';b._hov=false;$$('.qm').forEach(x=>{if(x!==b){x.setAttribute('aria-expanded','false');document.getElementById(x.getAttribute('aria-controls')).classList.remove('on')}});set(o)});
+ if(matchMedia('(hover:hover)').matches){b.addEventListener('mouseenter',()=>{b._hov=true;set(true)});b.addEventListener('mouseleave',()=>{b._hov=false;set(false)})}});
 document.addEventListener('click',()=>$$('.qm').forEach(x=>{x.setAttribute('aria-expanded','false');document.getElementById(x.getAttribute('aria-controls')).classList.remove('on')}));
 const q=new URLSearchParams(location.search);if(q.get('tip'))document.querySelector(`[aria-controls=${q.get('tip')}]`)?.click();if(q.get('w'))document.querySelector(`.wc[data-w=${q.get('w')}]`)?.click();
 calc()})();

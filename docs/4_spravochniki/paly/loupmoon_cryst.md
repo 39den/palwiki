@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="123" data-n="462" data-t="0" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 40–64</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Астральные горы</span><span class="rgc">Подножие Астральных гор</span><span class="rgc">Жёлтоземная равнина</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Тэнраку</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо льда</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Werewolf_Ice" data-d="123" data-n="462" data-t="0" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 40–64</span><a class="btn hm-full" href="../../../map/?pal=Werewolf_Ice">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Астральные горы</span><span class="rgc">Подножие Астральных гор</span><span class="rgc">Жёлтоземная равнина</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Тэнраку</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо льда</b></div></div></div>
 
 
 
@@ -62,6 +62,7 @@
     - Кость — 1 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 7–8 шт., 100%
     - Ценный коготь — 2–3 шт., 100%
 

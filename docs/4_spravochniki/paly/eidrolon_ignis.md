@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="0" data-n="0" data-t="52" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_tree.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 75–75</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо дракона</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="GhostDragon_Fire" data-d="0" data-n="0" data-t="52" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_tree.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 75–75</span><a class="btn hm-full" href="../../../map/?pal=GhostDragon_Fire">Показать на большой карте</a></div></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо дракона</b></div></div></div>
 
 
 
@@ -64,6 +64,7 @@
     - Огненный орган — 4–5 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 7–9 шт., 100%
     - Ценный драконий самоцвет — 2–3 шт., 100%
 

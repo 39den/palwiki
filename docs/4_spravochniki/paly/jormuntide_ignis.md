@@ -53,7 +53,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="33" data-n="33" data-t="42" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 55–80</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Тлеющее лавовое плато</span><span class="rgc">Выжженный холм</span><span class="rgc">Болотный остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо дракона</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Umihebi_Fire" data-d="33" data-n="33" data-t="42" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 55–80</span><a class="btn hm-full" href="../../../map/?pal=Umihebi_Fire">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Тлеющее лавовое плато</span><span class="rgc">Выжженный холм</span><span class="rgc">Болотный остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо дракона</b></div></div></div>
 
 
 
@@ -64,6 +64,7 @@
     - Огненный орган — 2–3 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 5–6 шт., 100%
     - Ценный драконий самоцвет — 5–6 шт., 100%
 

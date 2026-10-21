@@ -758,7 +758,7 @@ if os.path.exists(_ef):
     if _icf.get('ingredients'):
       ing=''
       for n,x in enumerate(_icf['ingredients']):
-        _fn=os.path.basename(x['icon']) if x.get('icon') else ''
+        _fn=os.path.basename(x['icon']) if x.get('icon') and os.path.exists('/workspace/items_content/'+x['icon']) else ''
         if _fn and os.path.exists('/workspace/items_content/'+x['icon']):os.makedirs(D+'/pp/ic',exist_ok=True);shutil.copy('/workspace/items_content/'+x['icon'],D+'/pp/ic/'+_fn)
         im=f'<img src="../../pp/ic/{_fn}" width="30" height="30" alt="" loading="lazy">' if _fn else '<span class="fgi" aria-hidden="true">🥕</span>'
         ing+=f'<a class="fg" href="../../{x["link"]}" title="{esc_h(x["ru"])}" aria-label="{esc_h(x["ru"])} ×{x["qty"]}"{" data-more=1" if n>=4 else ""}>{im}<b>×{x["qty"]}</b></a>' if x.get('link') else f'<span class="fg" title="{esc_h(x["ru"])}">{im}<b>×{x["qty"]}</b></span>'
@@ -832,6 +832,15 @@ def _ren(L):
       k,v=next(iter(x.items()))
       if isinstance(v,list):_ren(v)
       elif v=='2_mehaniki/passivki.md':L[i]={'Лучшие наборы пассивок':v}
+if os.environ.get('ITEMS26')=='1' and os.path.exists(D+'/4_spravochniki/predmety/постройки.md'):  # redesign: buildings section
+  def _addb(L):
+    for x in L:
+      if isinstance(x,dict):
+        v=next(iter(x.values()))
+        if isinstance(v,list):
+          if any(isinstance(y,dict) and next(iter(y.values()))=='4_spravochniki/predmety/прочее.md' for y in v):v.append({'Постройки':'4_spravochniki/predmety/постройки.md'});return True
+          if _addb(v):return True
+  _addb(nav);used.add(D+'/4_spravochniki/predmety/постройки.md')
 _ren(nav)
 keep=used|{D+'/passivki/'+os.path.basename(f) for f in glob.glob(D+'/passivki/*.md')}|{D+'/boss/'+os.path.basename(f) for f in glob.glob(D+'/boss/*.md')}|{D+'/index.md',D+'/gallery.md',D+'/bot.md',D+'/compare.md',D+'/map.md',D+'/breed.md',D+'/my.md'}
 for f in glob.glob(D+'/**/*.md',recursive=True):
@@ -941,18 +950,26 @@ for _f in glob.glob(D+'/**/*.md',recursive=True):
 _lvgrid()  # again, after the final text cleanup
 
 # ---- 21.10 LIVE HOTFIX final sanitize pass (deep audit P1: junk_md, junk_eng) — owned by live-hotfix worker ----
+# exact in-game RU names (items.json ru) for English source codes that leaked into text (deep audit junk_eng)
+_HF_RU=[('Glistening Ancient Relic','Сияющие артефакты древн. цив.'),('Glowing Ancient Relic','Светящиеся артефакты древн. цив.'),('Gorgeous Ancient Relic','Красивые артефакты древн. цив.'),('Dormant Ancient Relic','Спящие артефакты древн. цив.'),('Decayed Ancient Relic','Разрушенные артефакты древн. цив.'),
+ ('Ancient Ruin','Древние руины'),('PalCapturedCage','Клетка с пойманным палом'),(' (Feed Box)',''),('**Кормушка** (Feed Box)','**Кормушка**'),
+ ('Как работает CaptureRateCorrect?','Как работает множитель поимки вида?'),('Что такое CombiDuplicatePriority?','Кто выводится при равном ранге разведения?'),('пал с CombiRank ближе','пал с рангом разведения ближе'),
+ (' (CaptureRateCorrect)',''),('Сервер: `CollectionDropRate`, `EnemyDropItemRate` — множители.','Сервер: множители сбора ресурсов и дропа задаются в настройках мира.'),('«Сейв лежит в SaveGames».','«Сейв лежит в папке сохранений игры».')]
 def _hf_clean(t):
   t=re.sub(r'(?m)^([ \t]*\*\*[^*\n]+:\*\*)[ \t]*\n(?=[ \t]*- )',r'\1\n\n',t)            # «**Дроп альфы:**» + list -> real list
   t=re.sub(r'<div class="sk-d"><p>ru_Text</p></div>','<div class="sk-d"><p>Описания в игре пока нет.</p></div>',t)
   t=re.sub(r'(?m)^[ \t]*- ru_Text\b[^\n]*\n','',t)
   t=re.sub(r',\s*ru_Text\b','',t);t=re.sub(r'\bru_Text,\s*','',t);t=re.sub(r' ?\bru_text\b','',t)
   t=re.sub(r'<span class="ichip src">👤 Test\w+ <small>[^<]*</small></span>','',t)
+  for _a,_b in _HF_RU:t=t.replace(_a,_b)
+  t=re.sub(r',\s*(?:CopperOre|PalSphere|DevTest\w*)\b','',t);t=re.sub(r'\s*\(`[A-Za-z]+=[^`]*`\??\)','',t)
   return t
 _hfn=0
 for f in glob.glob(D+'/**/*.md',recursive=True):
   s0=open(f).read();s1=_hf_clean(s0)
   if s1!=s0:open(f,'w').write(s1);_hfn+=1
 _sdp=A+'/search_data.json';_s0=open(_sdp).read();_s1=re.sub(r',\s*ru_Text\b','',_s0).replace('"ru_Text"','""')
+for _a,_b in _HF_RU:_s1=_s1.replace(_a,_b)
 if _s1!=_s0:open(_sdp,'w').write(_s1)
 print('hotfix sanitize: files',_hfn)
 # ---- 21.10 LIVE HOTFIX: link pal names in plain list lines on pal pages (deep audit entity_nolink) ----

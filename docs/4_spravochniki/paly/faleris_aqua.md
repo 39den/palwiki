@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="150" data-n="150" data-t="136" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 65–80</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Солнечный предел</span><span class="rgc">Разбившийся корабль Тэнраку</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо воды</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Horus_Water" data-d="150" data-n="150" data-t="136" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 65–80</span><a class="btn hm-full" href="../../../map/?pal=Horus_Water">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Солнечный предел</span><span class="rgc">Разбившийся корабль Тэнраку</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо воды</b></div></div></div>
 
 
 
@@ -62,6 +62,7 @@
     - Жидкость водного Пала — 2–4 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 7–8 шт., 100%
     - Ценное перо — 2–3 шт., 100%
 

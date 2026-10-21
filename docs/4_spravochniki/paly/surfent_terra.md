@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="527" data-n="527" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 31–61</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Пустынное пепельное плато</span><span class="rgc">Выжженный холм</span><span class="rgc">Пепельная земля</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Песчаных Дюн</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо земли</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Serpent_Ground" data-d="527" data-n="527" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 31–61</span><a class="btn hm-full" href="../../../map/?pal=Serpent_Ground">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Пустынное пепельное плато</span><span class="rgc">Выжженный холм</span><span class="rgc">Пепельная земля</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Песчаных Дюн</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо земли</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 
@@ -63,6 +63,7 @@
     - Металлическая руда — 2–3 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–3 шт., 100%
     - Металлическая руда — 2–3 шт., 100%
     - Ценные внутренности — 2–3 шт., 100%
@@ -74,7 +75,7 @@
     #### Разведение
     - Ранг разведения: 1840
     - **Особая пара:** [Серфент](../../4_spravochniki/paly/surfent.md) + [Думад](../../4_spravochniki/paly/dumud.md)
-    - Участвует в особых парах: Полапап → Полапап Терра
+    - Участвует в особых парах: [Полапап](polapup.md) → [Полапап Терра](polapup_terra.md)
 
 
 

@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="173" data-n="173" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 18–50</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Берег Полумесяца</span><span class="rgc">Бамбуковые рощи</span><span class="rgc">Глубины бамбуковой рощи</span><span class="rgc">Подножье вулкана</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Тэнраку</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо свежей листвы</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="PinkRabbit_Grass" data-d="173" data-n="173" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 18–50</span><a class="btn hm-full" href="../../../map/?pal=PinkRabbit_Grass">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Берег Полумесяца</span><span class="rgc">Бамбуковые рощи</span><span class="rgc">Глубины бамбуковой рощи</span><span class="rgc">Подножье вулкана</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Тэнраку</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо свежей листвы</b></div></div></div>
 
 
 
@@ -60,11 +60,12 @@
 
     #### Дроп
     - Кожа — 1 шт., 100%
-    - Бант Риббани — 1 шт., 50%
+    - Бант [Риббани](ribbuny.md) — 1 шт., 50%
     - Семена моркови — 1 шт., 100%
     - Морковь — 1 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 4–6 шт., 100%
     - Ценный мех — 2–3 шт., 100%
 

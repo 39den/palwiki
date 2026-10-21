@@ -26,7 +26,7 @@
 
 
     #### Чем хорош / чем плох
-    - ✅ Тёмный урон, летает; хорош против нейтральных (Харталис); очень высокая атака (140); много здоровья (140); крепкая защита (135); отличный рабочий (пригодность 7); можно оседлать; летает (ездовой)
+    - ✅ Тёмный урон, летает; хорош против нейтральных ([Харталис](hartalis.md)); очень высокая атака (140); много здоровья (140); крепкая защита (135); отличный рабочий (пригодность 7); можно оседлать; летает (ездовой)
     - ❌ Слаб к драконам; много ест (620); разводится только особой парой
 
     > Призывающий ночь — хранитель острова Палпагос. В былые времена, когда бедствие охватило эти земли, он взмыл в небеса, вознёс бесконечную ночь и тем самым запечатал зло.
@@ -55,7 +55,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="0" data-n="0" data-t="0" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо тьмы</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="IceHorse_Dark" data-d="0" data-n="0" data-t="0" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><a class="btn hm-full" href="../../../map/?pal=IceHorse_Dark">Показать на большой карте</a></div></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо тьмы</b></div></div></div>
 
 
 
@@ -66,6 +66,7 @@
     - Большая душа Пала — 1–2 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 6–8 шт., 100%
     - Ценные внутренности — 6–8 шт., 100%
 

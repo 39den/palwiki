@@ -74,7 +74,7 @@ function map(D){const el=document.getElementById('pwmap');if(!el||!window.L)retu
  const ll=(x,y)=>m.unproject([(x-X0)/(X1-X0)*S,(Y0-y)/(Y0-Y1)*S],Z);
  const bounds=L.latLngBounds(m.unproject([0,S],Z),m.unproject([S,0],Z));
  L.tileLayer(B+'assets/tiles/{z}/{x}/{y}.webp',{minZoom:1,maxZoom:6,maxNativeZoom:5,noWrap:true,bounds,tileSize:256,attribution:'Карта: <a href="https://palworld.wiki.gg/wiki/File:World_Map.webp">palworld.wiki.gg</a> (CC BY-SA) · © Pocketpair'}).addTo(m);
- m.setMaxBounds(bounds.pad(.2));m.fitBounds(bounds);
+ m.setMaxBounds(bounds.pad(.05));m.fitBounds(bounds);el.style.background='#0c161e'; /* 21.10 hotfix: sea colour around the map, no big empty frame */
  const icon=t=>L.divIcon({className:'pmk pmk-'+t,html:'<span>'+T[t][0]+'</span>',iconSize:[30,30],iconAnchor:[15,15]});
  const groups={};const all=[];Object.keys(T).forEach(k=>groups[k]=(L.markerClusterGroup?L.markerClusterGroup({maxClusterRadius:38,showCoverageOnHover:false,disableClusteringAtZoom:4}):L.layerGroup()).addTo(m));
  D.map.forEach(p=>{const mk=L.marker(ll(p.x,p.y),{icon:icon(p.t),title:p.name}).bindPopup(()=>window.PW_pop({t:p.t,name:p.name,lvl:p.lvl,info:p.info,url:p.url,kind:T[p.t][0]+' '+(p.info||T[p.t][1]),sub:'X '+Math.round(p.x)+' · Y '+Math.round(p.y)}),{maxWidth:280,minWidth:220});mk.addTo(groups[p.t]);all.push([p,mk]);});

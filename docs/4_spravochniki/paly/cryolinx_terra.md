@@ -53,7 +53,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="156" data-n="156" data-t="0" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 62–62</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Пустынное пепельное плато</span><span class="rgc">Выжженный холм</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Тэнраку</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо земли</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="WhiteTiger_Ground" data-d="156" data-n="156" data-t="0" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 62–62</span><a class="btn hm-full" href="../../../map/?pal=WhiteTiger_Ground">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Пустынное пепельное плато</span><span class="rgc">Выжженный холм</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Тэнраку</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо земли</b></div></div></div>
 
 
 
@@ -63,6 +63,7 @@
     - Металлическая руда — 2–3 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 7–8 шт., 100%
     - Ценный коготь — 2–3 шт., 100%
 

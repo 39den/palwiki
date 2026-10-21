@@ -228,5 +228,58 @@ html.pp26:not(.pp-ready) .md-main{visibility:hidden}
 /* deep-linked item card not hidden under the sticky search box */
 html.pp26 details.itm,details.itm{scroll-margin-top:calc(var(--hdr,64px) + 150px)}
 /* pal page: the trading card stays exactly as-is (only its art is upgraded) — framed, rounded, shadowed */
-html.pp26 .pal-hero .pal-card.tcard{width:min(400px,100%)!important;max-width:400px;height:auto;max-height:none;aspect-ratio:520/728;border-radius:18px!important;box-shadow:var(--psh2)!important;object-fit:contain}
-@media (max-width:700px){html.pp26 .pal-hero{grid-template-columns:1fr;padding:20px;min-height:0}html.pp26 .pal-hero .pal-card.tcard{width:min(330px,84vw)!important;order:-2}}
+html.pp26 .pal-hero .pal-card.tcard26{width:min(400px,100%)!important;max-width:400px;height:auto;max-height:none;aspect-ratio:520/728;border-radius:18px!important;box-shadow:var(--psh2)!important;object-fit:contain}
+@media (max-width:700px){html.pp26 .pal-hero{grid-template-columns:1fr;padding:20px;min-height:0}html.pp26 .pal-hero .pal-card.tcard26{width:min(330px,84vw)!important;order:-2}}
+/* no red borders anywhere in the skin: buttons and buff chips use neutral lines; attack stays recognisable by its icon/tint */
+html.pp26 .md-typeset .md-button,html.pp26 .md-typeset .md-button--primary{border-color:var(--pline2)!important}
+html.pp26 .fb{border-color:var(--pline2)!important}
+html.pp26 .fb.fb-атака{background:color-mix(in srgb,#ff8a3d 14%,var(--card));color:var(--ink)}
+/* ---- items26 (content from items_content) ---- */
+html.pp26 .items26 .itm.subx{display:none}
+html.pp26 .isubs{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 12px;scrollbar-width:none}
+html.pp26 .isubs button{flex:none;font:700 13px Manrope,sans-serif;padding:8px 14px;min-height:40px;border-radius:99px;border:1px solid var(--pline2);background:var(--card);color:var(--ink);cursor:pointer}
+html.pp26 .isubs button.on{background:var(--ink);color:var(--pbg);border-color:transparent}
+html.pp26 .items26 .igrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;align-items:start}
+@media (max-width:600px){html.pp26 .items26 .igrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+html.pp26 .items26 .itm{border-radius:20px;background:var(--card);border:1px solid var(--pline);box-shadow:var(--psh1);overflow:hidden}
+html.pp26 .items26 .itm[open]{grid-column:1/-1}
+html.pp26 .items26 summary.itl{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:14px 10px;cursor:pointer;list-style:none;min-height:150px}
+html.pp26 .items26 summary.itl small{font:600 12px "JetBrains Mono",monospace;color:var(--mu)}
+html.pp26 .items26 .iic{width:64px;height:64px;object-fit:contain;border-radius:16px;background:radial-gradient(circle at 50% 60%,color-mix(in srgb,var(--rc) 22%,transparent),transparent 70%);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--rc) 55%,transparent);padding:4px}
+html.pp26 .ibody{padding:0 18px 18px;display:flex;flex-direction:column;gap:14px}
+html.pp26 .ihead{display:flex;gap:16px;align-items:flex-start}
+html.pp26 .ihead h3{font:800 20px/1.15 Unbounded,sans-serif;margin:0 0 6px;color:var(--ink)}
+html.pp26 .ibig{width:96px;height:96px;flex:none;object-fit:contain;border-radius:22px;background:radial-gradient(circle at 50% 60%,color-mix(in srgb,var(--rc) 26%,transparent),transparent 72%);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--rc) 60%,transparent);padding:6px}
+html.pp26 .idesc{margin:8px 0 0;font:500 15px/1.45 Manrope,sans-serif;color:var(--ink)}
+html.pp26 .inote{display:block;color:var(--mu);font-size:12px;margin-top:4px}
+html.pp26 .rch{display:inline-block;font:700 12px Manrope,sans-serif;padding:3px 10px;border-radius:99px;background:color-mix(in srgb,var(--rc,#8a96a0) 18%,var(--card));color:var(--ink);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--rc,#8a96a0) 50%,transparent)}
+html.pp26 .rch.r0{--rc:#8a96a0}html.pp26 .rch.r1{--rc:#3fb950}html.pp26 .rch.r2{--rc:#2f8fff}html.pp26 .rch.r3{--rc:#a46cff}html.pp26 .rch.r4{--rc:#f2b300}
+html.pp26 .istats{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px}
+html.pp26 .ist{display:grid;grid-template-columns:22px 1fr;column-gap:6px;align-items:center;padding:10px 12px;border-radius:14px;background:var(--pbg2)}
+html.pp26 .ist span{grid-row:1/3;font-size:18px}html.pp26 .ist small{font:700 11px Manrope,sans-serif;text-transform:uppercase;letter-spacing:.04em;color:var(--mu)}html.pp26 .ist b{font:700 15px "JetBrains Mono",monospace;color:var(--ink)}
+html.pp26 .isec h4{font:800 14px Manrope,sans-serif;margin:0 0 8px;color:var(--ink)}html.pp26 .isec h4 small{color:var(--mu);font-weight:600}
+html.pp26 .isec h5{font:700 12px Manrope,sans-serif;color:var(--mu);margin:10px 0 6px;text-transform:uppercase;letter-spacing:.04em}
+html.pp26 .ichips{display:flex;flex-wrap:wrap;gap:6px}
+html.pp26 .md-typeset .ich,html.pp26 .ich{display:inline-flex;align-items:center;gap:6px;padding:3px 12px 3px 4px;min-height:38px;border-radius:99px;background:var(--pbg2);color:var(--ink);text-decoration:none;font:600 13px Manrope,sans-serif;box-shadow:inset 0 0 0 1px var(--pline)}
+html.pp26 .ich b{font-family:"JetBrains Mono",monospace;margin-left:2px}html.pp26 .ich .rim{width:28px;height:28px;object-fit:contain}html.pp26 .ich.more{padding:3px 12px;color:var(--mu)}
+html.pp26 .ichips.st .ich{background:var(--card)}
+html.pp26 a.ich:hover{box-shadow:inset 0 0 0 1px var(--pline2),var(--psh1)}
+html.pp26 .ieff{display:inline-flex;align-items:center;padding:6px 12px;border-radius:99px;background:color-mix(in srgb,var(--sun) 22%,var(--card));font:600 13px Manrope,sans-serif;color:var(--ink)}
+html.pp26 .ibr{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+html.pp26 .ibx{flex:none;display:flex;flex-direction:column;gap:4px;padding:10px 12px;border-radius:14px;background:var(--pbg2);font:600 13px Manrope,sans-serif;color:var(--ink)}
+html.pp26 .ibx b{font-family:"JetBrains Mono",monospace}
+html.pp26 .igets{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+html.pp26 .md-typeset .igt,html.pp26 .igt{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;padding:10px 12px;border-radius:14px;background:var(--pbg2);color:var(--ink);text-decoration:none;font:600 13px/1.3 Manrope,sans-serif}
+html.pp26 .igt .gi{font-size:18px}html.pp26 .igt .gl{flex:1 1 60%;min-width:0}html.pp26 .igt small{font:700 12px "JetBrains Mono",monospace;color:var(--mu)}
+html.pp26 .igame summary{cursor:pointer;color:var(--mu);font:700 13px Manrope,sans-serif}html.pp26 .igame p{color:var(--mu);font-size:14px}
+html.pp26 .items26 .itm .itn{-webkit-line-clamp:2}
+html.pp26 .md-typeset details.igame{border:0;box-shadow:none;background:none;padding:0;margin:0;font-size:inherit}
+html.pp26 .md-typeset details.igame>summary{background:none;padding:0;border:0}html.pp26 .md-typeset details.igame>summary::before,html.pp26 .md-typeset details.igame>summary::after{display:none}
+html.pp26 .isecs{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+@media (max-width:600px){html.pp26 .isecs{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+html.pp26 .md-typeset .isec-t,html.pp26 .isec-t{--rc:#2f8fff;display:flex;flex-direction:column;align-items:center;gap:6px;padding:16px 10px;border-radius:20px;background:var(--card);border:1px solid var(--pline);box-shadow:var(--psh1);color:var(--ink);text-decoration:none;text-align:center}
+html.pp26 .isec-t b{font:800 14px/1.2 Unbounded,sans-serif}html.pp26 .isec-t small{font:600 12px "JetBrains Mono",monospace;color:var(--mu)}
+html.pp26 .isec-t .iic{width:64px;height:64px;object-fit:contain;border-radius:16px;background:radial-gradient(circle at 50% 60%,color-mix(in srgb,var(--rc) 20%,transparent),transparent 70%);padding:4px}
+/* icon:null placeholder: category glyph on a soft rarity-tinted tile, same box as real icons */
+html.pp26 .iic.e,html.pp26 .ibig.e,html.pp26 .rim.e{display:inline-grid;place-items:center;line-height:1;border-radius:16px;background:linear-gradient(145deg,color-mix(in srgb,var(--rc,#8a96a0) 16%,var(--pbg2)),var(--pbg2));box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--rc,#8a96a0) 40%,transparent);filter:saturate(.85)}
+html.pp26 .rim.e{border-radius:50%;box-shadow:none}

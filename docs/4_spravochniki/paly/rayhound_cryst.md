@@ -54,7 +54,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="76" data-n="76" data-t="138" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 35–75</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Астральные горы</span><span class="rgc">Подножие Астральных гор</span><span class="rgc">Сакурадзима</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо льда</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="ThunderDog_Ice" data-d="76" data-n="76" data-t="138" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 35–75</span><a class="btn hm-full" href="../../../map/?pal=ThunderDog_Ice">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Астральные горы</span><span class="rgc">Подножие Астральных гор</span><span class="rgc">Сакурадзима</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо льда</b></div></div></div>
 
 
 
@@ -64,6 +64,7 @@
     - Ледяной орган — 1–2 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 4–6 шт., 100%
     - Ценный мех — 2–3 шт., 100%
 

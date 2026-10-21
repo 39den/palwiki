@@ -25,8 +25,8 @@ theme:
 plugins:
   - search:
       lang: [ru, en]
-extra_css: ['assets/extra.css?v=1792590156']
-extra_javascript: ['assets/smart.js?v=1792590156', 'assets/site.js?v=1792590156', 'assets/features.js?v=1792590156', 'assets/ui2.js?v=1792590156', 'assets/ui3.js?v=1792590156', 'assets/ai.js?v=1792590156']
+extra_css: ['assets/extra.css?v=1792593536']
+extra_javascript: ['assets/smart.js?v=1792593536', 'assets/site.js?v=1792593536', 'assets/features.js?v=1792593536', 'assets/ui2.js?v=1792593536', 'assets/ui3.js?v=1792593536', 'assets/ai.js?v=1792593536']
 markdown_extensions:
   - tables
   - attr_list
@@ -88,6 +88,7 @@ nav:
     - Снаряжение: 4_spravochniki/predmety/снаряжение.md
     - Сферы: 4_spravochniki/predmety/сферы.md
     - Чертёж: 4_spravochniki/predmety/чертёж.md
+    - Постройки: 4_spravochniki/predmety/постройки.md
   - Особые комбинации разведения: 4_spravochniki/osobye_kombinacii.md
   - rabota: 2_mehaniki/rabota.md
   - Все активные навыки: 2_mehaniki/aktivki.md

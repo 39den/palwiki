@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="79" data-n="79" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 32–32</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Обсидиановый вулкан</span><span class="rgc">Иссушенное побережье</span><span class="rgc">Двурогий остров</span><span class="rgc">Разрушенный город-крепость</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо воды</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="BluePlatypus_Fire" data-d="79" data-n="79" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 32–32</span><a class="btn hm-full" href="../../../map/?pal=BluePlatypus_Fire">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Обсидиановый вулкан</span><span class="rgc">Иссушенное побережье</span><span class="rgc">Двурогий остров</span><span class="rgc">Разрушенный город-крепость</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо воды</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 
@@ -64,6 +64,7 @@
     - Огненный орган — 1–2 шт., 50%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–3 шт., 100%
     - Ценный мех — 2–3 шт., 100%
 

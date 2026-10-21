@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded',()=>{const F=document.querySelector
   m.setMaxBounds(bounds.pad(.05));m.options.maxBoundsViscosity=1;m.fitBounds(bounds);el.style.background='#0d151c';
   const groups={};const lay=L.control({position:'topright'});
   fetch(B+'assets/wtree/markers.json').then(r=>r.json()).then(J=>{const cnt={};
-   J.pts.forEach(p=>{const t=TT[p.t];if(!t)return;cnt[p.t]=(cnt[p.t]||0)+1;const g=groups[p.t]||(groups[p.t]=(L.markerClusterGroup?L.markerClusterGroup({maxClusterRadius:38,showCoverageOnHover:false,disableClusteringAtZoom:3}):L.layerGroup()));
+   J.pts.forEach(p=>{const t=TT[p.t];if(!t)return;cnt[p.t]=(cnt[p.t]||0)+1;const g=groups[p.t]||(groups[p.t]=(L.markerClusterGroup?(()=>{const cg=L.markerClusterGroup({maxClusterRadius:38,showCoverageOnHover:false,disableClusteringAtZoom:3,zoomToBoundsOnClick:false,spiderfyOnMaxZoom:false});cg.on('clusterclick',e=>{const c=e.layer,bb=c.getBounds();const z=Math.max(3,Math.min(m.getMaxZoom(),m.getBoundsZoom(bb.pad(.3))));if(bb.getNorthEast().equals(bb.getSouthWest()))c.spiderfy();else m.setView(bb.getCenter(),z)});return cg})():L.layerGroup()));
     const nm=p.n;
     L.marker(ll(p.x,p.y),{icon:L.divIcon({className:'pmk pmk-'+({alpha:'alpha',tower:'tower',travel:'travel'}[p.t]||'misc'),html:'<span>'+t[0]+'</span>',iconSize:[30,30],iconAnchor:[15,15]}),title:nm})
      .bindPopup(()=>window.PW_pop({t:p.t,name:nm,lvl:p.lv,kind:t[0]+' '+t[1]}),{maxWidth:280,minWidth:220}).addTo(g)});
@@ -209,3 +209,7 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
 (()=>{const H=document.documentElement;const isT=e=>e&&e.matches&&e.matches('input:not([type=range]):not([type=checkbox]):not([type=radio]):not([type=button]),textarea,select');
 document.addEventListener('focusin',e=>{if(isT(e.target)){H.classList.add('kbopen');H.classList.toggle('hsqf',e.target.id=='hsq')}});
 document.addEventListener('focusout',()=>setTimeout(()=>{const a=document.activeElement;if(!isT(a)){H.classList.remove('kbopen','hsqf')}else H.classList.toggle('hsqf',a.id=='hsq')},60));})();
+/* 21.10 hotfix: keep the focused field on screen when the keyboard opens (viewport shrinks) */
+(function(){const keep=()=>{const a=document.activeElement;if(!a||!/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName))return;for(let e=a;e&&e!==document.body;e=e.parentElement){const ps=getComputedStyle(e).position;if(ps=='fixed'||ps=='sticky')return;}const r=a.getBoundingClientRect(),vv=window.visualViewport,h=vv?vv.height:innerHeight,top=vv?vv.offsetTop:0;
+ if(r.bottom>top+h-8||r.top<top+56)try{a.scrollIntoView({block:'center',behavior:'auto'})}catch(e){a.scrollIntoView()}};
+ let t=null;const deb=()=>{clearTimeout(t);t=setTimeout(keep,120)};addEventListener('resize',deb);window.visualViewport&&visualViewport.addEventListener('resize',deb);})();

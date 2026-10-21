@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="1" data-n="1" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 62–62</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Выжженный холм</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Цветущей Сакуры</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо тьмы</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="CatMage_Fire" data-d="1" data-n="1" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 62–62</span><a class="btn hm-full" href="../../../map/?pal=CatMage_Fire">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Выжженный холм</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Цветущей Сакуры</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо тьмы</b></div></div></div>
 
 
 
@@ -64,6 +64,7 @@
     - Книга высоких технологий — 1 шт., 1%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–3 шт., 100%
     - Книга высоких технологий — 1 шт., 1%
     - Ценный мех — 1–2 шт., 100%

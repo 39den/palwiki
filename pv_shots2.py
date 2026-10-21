@@ -3,6 +3,11 @@ import asyncio,sys,time,os
 from playwright.async_api import async_playwright
 U='https://39den.github.io/palwiki-preview/';O='/workspace/palsite/shots/s1b/';os.makedirs(O,exist_ok=True)
 P=[('home',''),('pal_list','gallery/'),('pal','4_spravochniki/paly/starryon/'),('pal2','4_spravochniki/paly/fuack_ignis/'),('boss','boss/alpha_anubis/'),('map','map/'),('items','4_spravochniki/predmety/боеприпасы/'),('food','guide/eda/')]
+CHK="""(()=>{const sc=document.body.getAttribute('data-md-color-scheme');const ov=document.documentElement.scrollWidth-innerWidth;
+const red=[...document.querySelectorAll('body *')].filter(e=>{const c=getComputedStyle(e);if(parseFloat(c.borderTopWidth)<1)return false;const m=c.borderTopColor.match(/\\d+/g);return m&&+m[0]>180&&+m[1]<80&&+m[2]<80&&e.getBoundingClientRect().width>0}).map(e=>e.className.toString().slice(0,20));
+const card=document.querySelector('.pal-card.tcard');const cr=card&&card.getBoundingClientRect();
+const hb=[...document.querySelectorAll('.ux-qb,.md-header__option')].filter(e=>e.getBoundingClientRect().width>0).length;
+return {sc,ov,red:red.slice(0,4),card:cr?[Math.round(cr.width),Math.round(cr.height),card.naturalWidth]:null,hdrBtns:hb,pp:document.documentElement.classList.contains('pp26')}})()"""
 async def main():
   async with async_playwright() as p:
     for br,dev,tag in (('webkit','iPhone 13','webkit_390'),('chromium',None,'chromium_1440')):
@@ -14,7 +19,7 @@ async def main():
           pg=await c.new_page();errs=[];pg.on('pageerror',lambda e:errs.append(str(e)[:90]))
           await pg.goto(U+path+'?t=%d'%time.time(),wait_until='load');await pg.wait_for_timeout(3000)
           if nm=='food':await pg.evaluate("document.querySelector('.fgrid')&&(document.querySelector('.fgrid').scrollIntoView({block:'start'}),scrollBy(0,-90))");await pg.wait_for_timeout(700)
-          s=await pg.evaluate("document.body.getAttribute('data-md-color-scheme')")
+          s=await pg.evaluate(CHK)
           await pg.screenshot(path=f'{O}{nm}_{tag}_{sch}.png');print(nm,tag,sch,s,errs[:1],flush=True);await pg.close()
         await c.close()
       await b.close()

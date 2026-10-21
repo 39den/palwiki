@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="75" data-n="75" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 34–55</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Обсидиановый вулкан</span><span class="rgc">Разрушенный город-крепость</span><span class="rgc">Болотный остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Вулкана</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Раскалённое яйцо</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="SharkKid_Fire" data-d="75" data-n="75" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 34–55</span><a class="btn hm-full" href="../../../map/?pal=SharkKid_Fire">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Обсидиановый вулкан</span><span class="rgc">Разрушенный город-крепость</span><span class="rgc">Болотный остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Вулкана</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Раскалённое яйцо</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 
@@ -62,6 +62,7 @@
     - Огненный орган — 1 шт., 100%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–4 шт., 100%
     - Ценный коготь — 2–4 шт., 100%
 
@@ -72,7 +73,7 @@
     #### Разведение
     - Ранг разведения: 2430
     - **Особая пара:** [Гобфин](../../4_spravochniki/paly/gobfin.md) + [Руби](../../4_spravochniki/paly/rooby.md)
-    - Участвует в особых парах: Финсайдер → Финсайдер Игнис; Скатласс → Скатласс Игнис
+    - Участвует в особых парах: [Финсайдер](finsider.md) → [Финсайдер Игнис](finsider_ignis.md); [Скатласс](skutlass.md) → [Скатласс Игнис](skutlass_ignis.md)
 
 
 

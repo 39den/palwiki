@@ -53,7 +53,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="264" data-n="300" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 23–65</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Астральные горы</span><span class="rgc">Разбившийся корабль Тэнраку</span><span class="rgc">Ледяная гора</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Священной Горы</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо льда</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="BirdDragon_Ice" data-d="264" data-n="300" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 23–65</span><a class="btn hm-full" href="../../../map/?pal=BirdDragon_Ice">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Астральные горы</span><span class="rgc">Разбившийся корабль Тэнраку</span><span class="rgc">Ледяная гора</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Священной Горы</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо льда</b></div></div></div>
 
 
 
@@ -65,6 +65,7 @@
     - Сапфир — 1 шт., 2%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 5–7 шт., 100%
     - Ценное перо — 5–7 шт., 100%
 

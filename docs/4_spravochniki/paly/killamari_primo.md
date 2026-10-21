@@ -52,7 +52,7 @@
 
     #### Где водится
 
-    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="192" data-n="192" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 24–24</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Обсидиановый вулкан</span><span class="rgc">Иссушенное побережье</span><span class="rgc">Остров призраков</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Обычное яйцо</b></div></div></div>
+    <div class="hab" markdown="0"><div class="habmap" data-pal="NegativeOctopus_Neutral" data-d="192" data-n="192" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 24–24</span><a class="btn hm-full" href="../../../map/?pal=NegativeOctopus_Neutral">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Обсидиановый вулкан</span><span class="rgc">Иссушенное побережье</span><span class="rgc">Остров призраков</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Обычное яйцо</b></div></div></div>
 
 
 
@@ -60,9 +60,10 @@
 
     #### Дроп
     - Жидкость водного Пала — 1–2 шт., 100%
-    - Щупальце Килламари — 1 шт., 50%
+    - Щупальце [Килламари](killamari.md) — 1 шт., 50%
 
     **Дроп альфы:**
+
     - Деталь древней цивилизации — 2–3 шт., 100%
     - Ценный мех — 2–3 шт., 100%
 
