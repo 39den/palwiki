@@ -35,6 +35,9 @@ function context(D,X,q){const n=' '+N(q)+' ';const words=n.split(' ').filter(w=>
   const f=a=>`${a.p.ru} (сила работы ${a.l}${a.wild&&a.lv<99?', ловится с уровня игрока '+a.lv:''})`;
   out.push(`Лучшие палы для работы «${w}»: ${top.map(f).join(', ')}.`);if(easy.length)out.push(`Для работы «${w}» в начале игры легко поймать: ${easy.map(f).join(', ')}.`);});
  if(X&&X.gl)X.gl.filter(g=>hit(g.t)).slice(0,2).forEach(g=>out.push(`${g.t} — ${g.d}`));
+ {const st=words.filter(w=>!/^(почем|котор|какой|какие|какая|можно|нужно|очень|когда|сколь|чтобы|если|лучш|делат|игре|игры)/.test(w));const sh=t=>{const k=N(t);return st.some(w=>k.includes(w.slice(0,5)));};
+ (D.gl||[]).filter(g=>[g.t,...(g.a||[])].some(t=>hit(t))||sh(g.t)).slice(0,4).forEach(g=>out.push(`Термин «${g.t}»: ${g.d}`));
+ const seen=new Set(out);(D.passives||[]).map(p=>[p,st.filter(w=>N(p.desc+' '+p.name).includes(w.slice(0,5))).length]).filter(a=>a[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,6).forEach(([p])=>{const t=`Пассивка «${p.name}»: ${p.desc}`;if(!out.some(o=>o.includes('Пассивка '+p.name+':')))out.push(t);});}
  return out.join('\n').slice(0,6000);}
 const QW=/^(как|где|что|чем|кто|какой|какая|какие|какую|почему|зачем|можно|сколько|когда|стоит|лучше|нужно|надо|если)\b/;
 const isQuestion=v=>{const n=N(v);return n.length>=10&&(n.split(' ').length>=3||/\?/.test(v))&&(QW.test(n)||/\?/.test(v)||n.split(' ').length>=4);};

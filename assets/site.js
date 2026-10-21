@@ -1,155 +1,494 @@
-
-/* map popups: one tappable card linking to the entity page (pal / boss / guide section) */
-window.PW_pop=function(o){const B=window.PW_BASE||'/palwiki/';const D=window.PW_D||{};const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
- const EM={'Огонь':'🔥','Вода':'💧','Трава':'🌿','Молния':'⚡','Лёд':'❄️','Земля':'🪨','Тьма':'🌑','Дракон':'🐉','Нейтральный':'⚪'};
- const T={alpha:'👑 Альфа',sealed:'🔒 Запечатанные земли',tower:'🏯 Башня',travel:'🗿 Телепорт',watch:'🗼 Смотровая вышка',npc:'🧑 Персонаж',chest:'🎁 Сундук',fruit:'🌳 Плодовое дерево',spring:'💧 Источник',fish:'🎣 Место рыбалки',hab:'📍 Обитание'};
- const G={travel:['guide/11_mir/#быстрое-перемещение','Как работают телепорты'],fish:['guide/11_mir/#рыбалка','Как рыбачить'],chest:['guide/sekrety/','Секреты и сундуки'],npc:['guide/11_mir/#особые-npc','Персонажи мира'],watch:['guide/11_mir/','Гид по миру'],fruit:['guide/11_mir/','Гид по миру'],spring:['guide/11_mir/','Гид по миру'],tower:['4_spravochniki/bossy/','Все боссы башен']};
- const pals=D.pals||[];const byRu=n=>pals.find(p=>p.ru==n)||pals.find(p=>p.en==n);
- let pal=null,boss=null,url=o.url||'',label='';
- if(o.t=='alpha'||o.t=='hab')pal=byRu(o.name);
- if(o.t=='sealed')pal=byRu((o.info||'').split('· ')[1]||'')||byRu(o.name);
- if(o.t=='tower'){boss=(D.bosses||[]).find(b=>b.place==o.name)||(D.bosses||[]).find(b=>b.pal&&o.name.indexOf(b.pal)>=0)||(D.bosses||[]).find(b=>b.name&&b.name.indexOf(o.name)>=0);
-  if(!boss){const bc=(D.bcards||[]).find(b=>b.n==o.name||b.pal==o.name||(b.n||'').indexOf(o.name)>=0);if(bc)boss={url:bc.u,el:bc.el,weak:bc.w,pal:bc.pal,t:bc.t}}}
- if(pal&&!url)url=pal.url;if(boss)url=boss.url||url;
- if(!url&&G[o.t]){url=G[o.t][0];label=G[o.t][1]}
- const el=(pal&&pal.el)||(boss&&boss.el)||[],wk=(pal&&pal.weak)||(boss&&boss.weak)||[];
- const bp=boss&&!pal?byRu(boss.pal):null;const th=(pal&&pal.thumb)||(boss&&boss.t)||(bp&&bp.thumb)||'';
- const chips=el.length?`<div class="mpe">${el.map(e=>`<span>${EM[e]||''} ${esc(e)}</span>`).join('')}</div>`:'';
- const w=wk.length?`<div class="mpw">Слабость: ${wk.map(e=>(EM[e]||'')+' '+esc(e)).join(', ')}</div>`:'';
- const body=`${th?`<img class="mpt" src="${B+th}" alt="" width="56" height="56" loading="lazy">`:''}<div class="mpb"><div class="mk">${esc(o.kind||T[o.t]||'')}</div><b>${esc(o.name||T[o.t]||'')}</b>${o.lvl?`<div class="mpl">Уровень ${esc(o.lvl)}</div>`:''}${o.sub?`<div class="mpl">${esc(o.sub)}</div>`:''}${chips}${w}</div>`;
- const go=label||(pal?'Страница пала':boss?'Страница босса':'Подробнее');
- return url?`<a class="mpop mpcard" href="${B+url.replace(/^\//,'')}">${body}<span class="mpgo">${esc(go)} →</span></a>`:`<div class="mpop mpcard">${body}</div>`};
-(function(){const B=window.PW_BASE,chip=window.PW_chip;const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const ACT={party:'🎒 из команды',summoned:'🐾 выпущен',mounted:'🐎 верхом',active:'🔘 кнопкой',base:'🏠 на базе'};
-const WORKS=['Добыча','Рубка деревьев','Разжигание огня','Полив','Посев семян','Генерация энергии','Ручная работа','Сбор','Фармацевтика','Охлаждение','Транспортировка','Фермерство'];
-const ELS=['Нейтральный','Огонь','Вода','Трава','Молния','Лёд','Земля','Тьма','Дракон'];
-const card=p=>`<a class="pc card-link g-${({"Нейтральный":"neutral","Огонь":"fire","Вода":"water","Трава":"grass","Молния":"electric","Лёд":"ice","Земля":"ground","Тьма":"dark","Дракон":"dragon"})[p.el[0]]}" href="${B+p.url}"><img src="${B+p.thumb}" alt="${esc(p.ru)}" loading="lazy" width="110" height="110"><small>#${esc(p.no)}</small><b>${esc(p.ru)}</b><span>${p.el.map(chip).join('')}</span></a>`;
-function gallery(D){const f=document.getElementById('gal-filters'),g=document.getElementById('gallery');
- const sel=(id,label,opts)=>`<select id="${id}"><option value="">${label}</option>${opts.map(o=>`<option value="${esc(o[0])}">${esc(o[1])}</option>`).join('')}</select>`;
- f.innerHTML=`<input id="gq" type="search" placeholder="Имя…">`+sel('ge','Стихия',ELS.map(e=>[e,e]))+sel('gw','Работа',WORKS.map(e=>[e,e]))+sel('gl','Ур. работы ≥',[1,2,3,4,5].map(e=>[e,'≥ '+e]))+sel('gm','Езда',[['ride','🐎 ездовой'],['fly','🦅 летающий']])+sel('ga','Партнёрка',Object.entries(ACT))+sel('gs','Сортировка',[['no','по номеру'],['ru','по имени'],['atk','атака ↓'],['hp','HP ↓'],['work','уровень работы ↓'],['sprint','скорость ↓']])+`<span class="gal-count" id="gc"></span>`;
- const pals=D.pals.filter(p=>p.url);const $=id=>document.getElementById(id).value;
- const run=()=>{const q=window.PW_core.norm($('gq')),e=$('ge'),w=$('gw'),l=+$('gl')||0,m=$('gm'),a=$('ga'),s=$('gs')||'no';
-  const wl=p=>(p.work.find(x=>x[0]==w)||[0,0])[1];
-  let r=pals.filter(p=>(!q||window.PW_core.norm(p.ru+' '+p.en).includes(q))&&(!e||p.el.includes(e))&&(!w||wl(p)>=Math.max(1,l))&&(w||!l||p.work.some(x=>x[1]>=l))&&(!m||(m=='ride'?p.mount:p.mount=='fly'))&&(!a||p.act.includes(a)));
-  const num=p=>parseFloat(p.no)||999;
-  r.sort(s=='ru'?(x,y)=>x.ru.localeCompare(y.ru,'ru'):s=='no'?(x,y)=>num(x)-num(y)||x.no.localeCompare(y.no):s=='work'?(x,y)=>(w?wl(y)-wl(x):Math.max(0,...y.work.map(z=>z[1]))-Math.max(0,...x.work.map(z=>z[1]))):(x,y)=>y[s]-x[s]);
-  g.innerHTML=r.map(card).join('');document.getElementById('gc').textContent='Найдено: '+r.length;};
- f.addEventListener('input',run);f.addEventListener('change',run);run();}
-function potd(D){const ps=D.pals.filter(p=>p.url&&p.thumb);const d=new Date();const p=ps[(d.getFullYear()*372+d.getMonth()*31+d.getDate())%ps.length];
- document.getElementById('potd').innerHTML=`<a class="potd card-link" href="${B+p.url}"><img src="${B+p.thumb}" alt="" loading="lazy"><div><h3>${esc(p.ru)} <small>#${esc(p.no)}</small></h3>${p.el.map(chip).join('')}<div>${p.work.map(w=>esc(w[0])+' '+w[1]).join(' · ')}</div><div>Партнёрка: <b>${esc(p.psk)}</b> ${p.act.map(x=>ACT[x]||'').join(' ')}</div><span class="open">Открыть →</span></div></a>`;}
-function compare(D){const box=document.getElementById('cmp');const u=new URLSearchParams(location.search);
- const WI={'Разжигание огня':'🔥','Полив':'💧','Посев семян':'🌱','Генерация энергии':'⚡','Ручная работа':'🖐️','Сбор':'🌾','Рубка деревьев':'🪓','Добыча':'⛏️','Фармацевтика':'💊','Охлаждение':'❄️','Транспортировка':'📦','Фермерство':'🐑'};
- const PR=Object.fromEntries((D.passives||[]).map(q=>[q.name,q]));
- const rc=r=>r<0?'r-neg':r>=2?'r-'+Math.min(r,5):'';
- const pchip=n=>{const q=PR[n];return q&&q.url?`<a class="psv ${rc(q.rank)}" data-psv="${esc(n)}" href="${B+q.url}">${esc(n)}</a>`:`<span class="psv">${esc(n)}</span>`;};
- box.innerHTML=`<input id="c1" type="hidden" value="${esc(u.get('a')||'Анубис')}"><input id="c2" type="hidden" value="${esc(u.has('b')?u.get('b'):'Джетрагон')}"><div id="cmpo"></div>`;
- const c1=document.getElementById('c1'),c2=document.getElementById('c2');
- const pick=v=>{if(!v)return null;const a=window.PW_core.find(v,['pal']);return a?D.pals[a.ref]:null;};
- const setU=()=>{const q=new URLSearchParams();if(c1.value)q.set('a',c1.value);if(c2.value)q.set('b',c2.value);history.replaceState(null,'','?'+q);};
- const choose=(inp,t)=>window.PW_pickPal(D,t,p=>{inp.value=p.ru;setU();run();});
- const head=(p,i)=>p?`<div class="cx-pal cx-${i?'b':'a'}"><a href="${B+p.url}" class="cx-av"><img src="${B+p.thumb}" width="56" height="56" alt=""></a><div class="cx-nm"><b>${esc(p.ru)}</b><span class="cx-no">#${esc(p.no)}</span><span class="cx-els">${p.el.map(chip).join('')}</span></div><button type="button" class="cx-chg" data-i="${i}">Сравнить с другим</button></div>`:`<button type="button" class="cx-pal cx-empty cx-chg" data-i="${i}"><span class="plus">＋</span><b>Выбрать пала</b></button>`;
- const run=()=>{const a=pick(c1.value),b=pick(c2.value);
-  let h=`<div class="cx-head">${head(a,0)}<button type="button" class="cx-swap" aria-label="Поменять местами" title="Поменять местами">⇄</button>${head(b,1)}</div>`;
-  if(!a||!b){document.getElementById('cmpo').innerHTML=h+'<p class="cx-hint">Выбери второго пала, чтобы сравнить.</p>';return bind();}
-  const st=[['❤️','HP','hp'],['⚔️','Атака','atk'],['🛡','Защита','def'],['🐎','Рывок','sprint']];
-  const bars=st.map(([ic,l,k])=>{const x=+a[k]||0,y=+b[k]||0,m=Math.max(x,y)||1,d=Math.abs(x-y);const wa=x>y?' win':'',wb=y>x?' win':'';
-   return `<div class="cx-st"><div class="cx-sl"><span class="cx-v${wa}">${x||'—'}</span><span class="cx-lb">${ic} ${l}${d?` <small class="cx-d">${x>y?'◀':''} +${d} ${y>x?'▶':''}</small>`:' <small class="cx-d">=</small>'}</span><span class="cx-v${wb}">${y||'—'}</span></div><div class="cx-bars"><div class="cx-bar l"><i class="${wa}" style="width:${x/m*100}%"></i></div><div class="cx-bar r"><i class="${wb}" style="width:${y/m*100}%"></i></div></div></div>`;}).join('');
-  const wk=p=>p.work.length?p.work.map(w=>`<span class="cx-wk" title="${esc(w[0])}"><span>${WI[w[0]]||'🔧'}</span>${esc(w[0])}<b>${w[1]}</b></span>`).join(''):'<span class="cx-none">нет</span>';
-  const ps=p=>`<div class="cx-psk"><b>${esc(p.psk||'—')}</b><small>${(p.act||[]).map(x=>ACT[x]||'').join(' · ')}</small></div>`;
-  const nat=p=>(p.natp||[]).map(x=>x[0]),na=nat(a),nb=nat(b),sh=na.filter(x=>nb.includes(x));
-  const bp=p=>(p.bp&&p.bp['боец'])||[],ba=bp(a),bb=bp(b),bsh=ba.filter(x=>bb.includes(x));
-  const prow=(t,xa,xb,s)=>{const oa=xa.filter(x=>!s.includes(x)),ob=xb.filter(x=>!s.includes(x));if(!xa.length&&!xb.length)return '';
-   return `<div class="cx-sec"><h3>${t}</h3>${s.length?`<div class="cx-common"><span class="cx-cl">Общие</span>${s.map(pchip).join('')}</div>`:''}<div class="cx-two"><div>${oa.map(pchip).join('')||'<span class="cx-none">—</span>'}</div><div>${ob.map(pchip).join('')||'<span class="cx-none">—</span>'}</div></div></div>`;};
-  const two=(t,f)=>`<div class="cx-sec"><h3>${t}</h3><div class="cx-two"><div>${f(a)}</div><div>${f(b)}</div></div></div>`;
-  h+=`<div class="cx-sec"><h3>Характеристики</h3>${bars}</div>`+two('Слабость',p=>p.weak.map(chip).join('')||'<span class="cx-none">—</span>')+two('Работа',wk)+two('Партнёрский навык',ps)+prow('Врождённые пассивки',na,nb,sh)+prow('Лучшие пассивки для боя',ba,bb,bsh);
-  document.getElementById('cmpo').innerHTML=h;bind();};
- const bind=()=>{box.querySelectorAll('.cx-chg').forEach(x=>x.onclick=e=>{e.preventDefault();const i=+x.dataset.i;choose(i?c2:c1,i?'Второй пал…':'Первый пал…');});
-  const s=box.querySelector('.cx-swap');if(s)s.onclick=()=>{[c1.value,c2.value]=[c2.value,c1.value];setU();run();};};
- run();}
-function map(D){const el=document.getElementById('pwmap');if(!el||!window.L)return;
- if(D&&!window.PW_D)window.PW_D=D;
- const T={alpha:['👑','Альфы','#ff7a59'],travel:['🗿','Телепорты','#14b8a6'],tower:['🏯','Башни','#9b5de5'],sealed:['🔒','Запечатанные земли','#2f8fe8']};
- const X0=-1923.225927,Y0=1032.79857101,X1=1234.833276624702,Y1=-2125.2606328,S=8192,Z=5;
- const m=L.map(el,{crs:L.CRS.Simple,minZoom:1,maxZoom:6,zoomSnap:.5,attributionControl:true});
- const ll=(x,y)=>m.unproject([(x-X0)/(X1-X0)*S,(Y0-y)/(Y0-Y1)*S],Z);
- const bounds=L.latLngBounds(m.unproject([0,S],Z),m.unproject([S,0],Z));
- L.tileLayer(B+'assets/tiles/{z}/{x}/{y}.webp',{minZoom:1,maxZoom:6,maxNativeZoom:5,noWrap:true,bounds,tileSize:256,attribution:'Карта: <a href="https://palworld.wiki.gg/wiki/File:World_Map.webp">palworld.wiki.gg</a> (CC BY-SA) · © Pocketpair'}).addTo(m);
- m.setMaxBounds(bounds.pad(.2));m.fitBounds(bounds);
- const icon=t=>L.divIcon({className:'pmk pmk-'+t,html:'<span>'+T[t][0]+'</span>',iconSize:[30,30],iconAnchor:[15,15]});
- const groups={};const all=[];Object.keys(T).forEach(k=>groups[k]=(L.markerClusterGroup?L.markerClusterGroup({maxClusterRadius:38,showCoverageOnHover:false,disableClusteringAtZoom:4}):L.layerGroup()).addTo(m));
- D.map.forEach(p=>{const mk=L.marker(ll(p.x,p.y),{icon:icon(p.t),title:p.name}).bindPopup(()=>window.PW_pop({t:p.t,name:p.name,lvl:p.lvl,info:p.info,url:p.url,kind:T[p.t][0]+' '+(p.info||T[p.t][1]),sub:'X '+Math.round(p.x)+' · Y '+Math.round(p.y)}),{maxWidth:280,minWidth:220});mk.addTo(groups[p.t]);all.push([p,mk]);});
- const Lg=L.control({position:'topright'});Lg.onAdd=()=>{const d=L.DomUtil.create('div','mleg');const small=window.innerWidth<700;
-  d.innerHTML=`<button class="mleg-t">🗺 Слои</button><div class="mleg-b" ${small?'hidden':''}>`+Object.entries(T).map(([k,v])=>`<label><input type="checkbox" checked data-k="${k}"> ${v[0]} ${v[1]} <small>${D.map.filter(p=>p.t==k).length}</small></label>`).join('')+'</div>';
-  L.DomEvent.disableClickPropagation(d);d.querySelector('.mleg-t').onclick=()=>{const b=d.querySelector('.mleg-b');b.hidden=!b.hidden;};
-  d.querySelectorAll('input').forEach(i=>i.onchange=()=>{i.checked?m.addLayer(groups[i.dataset.k]):m.removeLayer(groups[i.dataset.k]);});return d;};Lg.addTo(m);
-
- window.PW_map={m,all,groups,T};}
-function bug(){const art=document.querySelector('article.md-content__inner');if(!art||document.querySelector('.bug-link'))return;
- let p=location.pathname.replace(/^\/palwiki\//,'').replace(/\/$/,'')||'home';p=decodeURIComponent(p);let h=0;for(const c of p)h=(h*31+c.charCodeAt(0))>>>0;
- let sl=p.replace(/[^A-Za-z0-9]+/g,'_').replace(/^_|_$/g,'');if(/[^\x00-\x7f]/.test(p))sl=(sl+'_'+h.toString(36));sl=('bug_'+sl).slice(0,64);
- const a=document.createElement('a');a.className='bug-link';a.href='https://t.me/PalGuideBot?start='+sl;a.target='_blank';a.rel='noopener';a.textContent='⚠️ Сообщить об ошибке';art.appendChild(a);}
-document.addEventListener('DOMContentLoaded',()=>{bug();
- if('serviceWorker' in navigator)navigator.serviceWorker.register(B+'sw.js',{updateViaCache:'none'}).catch(()=>{});
- const need=['gallery','potd','cmp','pwmap'].some(i=>document.getElementById(i));if(!need)return;
- window.PW_data().then(D=>{if(document.getElementById('gallery'))gallery(D);if(document.getElementById('potd'))potd(D);if(document.getElementById('cmp'))compare(D);if(document.getElementById('pwmap'))map(D);});});
+window.PW_pop = function(o) {
+  const B = window.PW_BASE || "/palwiki/";
+  const D = window.PW_D || {};
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const EM = { "\u041E\u0433\u043E\u043D\u044C": "\u{1F525}", "\u0412\u043E\u0434\u0430": "\u{1F4A7}", "\u0422\u0440\u0430\u0432\u0430": "\u{1F33F}", "\u041C\u043E\u043B\u043D\u0438\u044F": "\u26A1", "\u041B\u0451\u0434": "\u2744\uFE0F", "\u0417\u0435\u043C\u043B\u044F": "\u{1FAA8}", "\u0422\u044C\u043C\u0430": "\u{1F311}", "\u0414\u0440\u0430\u043A\u043E\u043D": "\u{1F409}", "\u041D\u0435\u0439\u0442\u0440\u0430\u043B\u044C\u043D\u044B\u0439": "\u26AA" };
+  const T = { alpha: "\u{1F451} \u0410\u043B\u044C\u0444\u0430", sealed: "\u{1F512} \u0417\u0430\u043F\u0435\u0447\u0430\u0442\u0430\u043D\u043D\u044B\u0435 \u0437\u0435\u043C\u043B\u0438", tower: "\u{1F3EF} \u0411\u0430\u0448\u043D\u044F", travel: "\u{1F5FF} \u0422\u0435\u043B\u0435\u043F\u043E\u0440\u0442", watch: "\u{1F5FC} \u0421\u043C\u043E\u0442\u0440\u043E\u0432\u0430\u044F \u0432\u044B\u0448\u043A\u0430", npc: "\u{1F9D1} \u041F\u0435\u0440\u0441\u043E\u043D\u0430\u0436", chest: "\u{1F381} \u0421\u0443\u043D\u0434\u0443\u043A", fruit: "\u{1F333} \u041F\u043B\u043E\u0434\u043E\u0432\u043E\u0435 \u0434\u0435\u0440\u0435\u0432\u043E", spring: "\u{1F4A7} \u0418\u0441\u0442\u043E\u0447\u043D\u0438\u043A", fish: "\u{1F3A3} \u041C\u0435\u0441\u0442\u043E \u0440\u044B\u0431\u0430\u043B\u043A\u0438", hab: "\u{1F4CD} \u041E\u0431\u0438\u0442\u0430\u043D\u0438\u0435" };
+  const G = { travel: ["guide/11_mir/#\u0431\u044B\u0441\u0442\u0440\u043E\u0435-\u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435", "\u041A\u0430\u043A \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442\u044B"], fish: ["guide/11_mir/#\u0440\u044B\u0431\u0430\u043B\u043A\u0430", "\u041A\u0430\u043A \u0440\u044B\u0431\u0430\u0447\u0438\u0442\u044C"], chest: ["guide/sekrety/", "\u0421\u0435\u043A\u0440\u0435\u0442\u044B \u0438 \u0441\u0443\u043D\u0434\u0443\u043A\u0438"], npc: ["guide/11_mir/#\u043E\u0441\u043E\u0431\u044B\u0435-npc", "\u041F\u0435\u0440\u0441\u043E\u043D\u0430\u0436\u0438 \u043C\u0438\u0440\u0430"], watch: ["guide/11_mir/", "\u0413\u0438\u0434 \u043F\u043E \u043C\u0438\u0440\u0443"], fruit: ["guide/11_mir/", "\u0413\u0438\u0434 \u043F\u043E \u043C\u0438\u0440\u0443"], spring: ["guide/11_mir/", "\u0413\u0438\u0434 \u043F\u043E \u043C\u0438\u0440\u0443"], tower: ["4_spravochniki/bossy/", "\u0412\u0441\u0435 \u0431\u043E\u0441\u0441\u044B \u0431\u0430\u0448\u0435\u043D"] };
+  const pals = D.pals || [];
+  const byRu = (n) => pals.find((p) => p.ru == n) || pals.find((p) => p.en == n);
+  let pal = null, boss = null, url = o.url || "", label = "";
+  if (o.t == "alpha" || o.t == "hab") pal = byRu(o.name);
+  if (o.t == "sealed") pal = byRu((o.info || "").split("\xB7 ")[1] || "") || byRu(o.name);
+  if (o.t == "tower") {
+    boss = (D.bosses || []).find((b) => b.place == o.name) || (D.bosses || []).find((b) => b.pal && o.name.indexOf(b.pal) >= 0) || (D.bosses || []).find((b) => b.name && b.name.indexOf(o.name) >= 0);
+    if (!boss) {
+      const bc = (D.bcards || []).find((b) => b.n == o.name || b.pal == o.name || (b.n || "").indexOf(o.name) >= 0);
+      if (bc) boss = { url: bc.u, el: bc.el, weak: bc.w, pal: bc.pal, t: bc.t };
+    }
+  }
+  if (pal && !url) url = pal.url;
+  if (boss) url = boss.url || url;
+  if (!url && G[o.t]) {
+    url = G[o.t][0];
+    label = G[o.t][1];
+  }
+  const el = pal && pal.el || boss && boss.el || [], wk = pal && pal.weak || boss && boss.weak || [];
+  const bp = boss && !pal ? byRu(boss.pal) : null;
+  const th = pal && pal.thumb || boss && boss.t || bp && bp.thumb || "";
+  const chips = el.length ? `<div class="mpe">${el.map((e) => `<span>${EM[e] || ""} ${esc(e)}</span>`).join("")}</div>` : "";
+  const w = wk.length ? `<div class="mpw">\u0421\u043B\u0430\u0431\u043E\u0441\u0442\u044C: ${wk.map((e) => (EM[e] || "") + " " + esc(e)).join(", ")}</div>` : "";
+  const body = `${th ? `<img class="mpt" src="${B + th}" alt="" width="56" height="56" loading="lazy">` : ""}<div class="mpb"><div class="mk">${esc(o.kind || T[o.t] || "")}</div><b>${esc(o.name || T[o.t] || "")}</b>${o.lvl ? `<div class="mpl">\u0423\u0440\u043E\u0432\u0435\u043D\u044C ${esc(o.lvl)}</div>` : ""}${o.sub ? `<div class="mpl">${esc(o.sub)}</div>` : ""}${chips}${w}</div>`;
+  const go = label || (pal ? "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u043F\u0430\u043B\u0430" : boss ? "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u0431\u043E\u0441\u0441\u0430" : "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435");
+  return url ? `<a class="mpop mpcard" href="${B + url.replace(/^\//, "")}">${body}<span class="mpgo">${esc(go)} \u2192</span></a>` : `<div class="mpop mpcard">${body}</div>`;
+};
+(function() {
+  const B = window.PW_BASE, chip = window.PW_chip;
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const ACT = { party: "\u{1F392} \u0438\u0437 \u043A\u043E\u043C\u0430\u043D\u0434\u044B", summoned: "\u{1F43E} \u0432\u044B\u043F\u0443\u0449\u0435\u043D", mounted: "\u{1F40E} \u0432\u0435\u0440\u0445\u043E\u043C", active: "\u{1F518} \u043A\u043D\u043E\u043F\u043A\u043E\u0439", base: "\u{1F3E0} \u043D\u0430 \u0431\u0430\u0437\u0435" };
+  const WORKS = ["\u0414\u043E\u0431\u044B\u0447\u0430", "\u0420\u0443\u0431\u043A\u0430 \u0434\u0435\u0440\u0435\u0432\u044C\u0435\u0432", "\u0420\u0430\u0437\u0436\u0438\u0433\u0430\u043D\u0438\u0435 \u043E\u0433\u043D\u044F", "\u041F\u043E\u043B\u0438\u0432", "\u041F\u043E\u0441\u0435\u0432 \u0441\u0435\u043C\u044F\u043D", "\u0413\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u044F \u044D\u043D\u0435\u0440\u0433\u0438\u0438", "\u0420\u0443\u0447\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430", "\u0421\u0431\u043E\u0440", "\u0424\u0430\u0440\u043C\u0430\u0446\u0435\u0432\u0442\u0438\u043A\u0430", "\u041E\u0445\u043B\u0430\u0436\u0434\u0435\u043D\u0438\u0435", "\u0422\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430", "\u0424\u0435\u0440\u043C\u0435\u0440\u0441\u0442\u0432\u043E"];
+  const ELS = ["\u041D\u0435\u0439\u0442\u0440\u0430\u043B\u044C\u043D\u044B\u0439", "\u041E\u0433\u043E\u043D\u044C", "\u0412\u043E\u0434\u0430", "\u0422\u0440\u0430\u0432\u0430", "\u041C\u043E\u043B\u043D\u0438\u044F", "\u041B\u0451\u0434", "\u0417\u0435\u043C\u043B\u044F", "\u0422\u044C\u043C\u0430", "\u0414\u0440\u0430\u043A\u043E\u043D"];
+  const card = (p) => `<a class="pc card-link g-${{ "\u041D\u0435\u0439\u0442\u0440\u0430\u043B\u044C\u043D\u044B\u0439": "neutral", "\u041E\u0433\u043E\u043D\u044C": "fire", "\u0412\u043E\u0434\u0430": "water", "\u0422\u0440\u0430\u0432\u0430": "grass", "\u041C\u043E\u043B\u043D\u0438\u044F": "electric", "\u041B\u0451\u0434": "ice", "\u0417\u0435\u043C\u043B\u044F": "ground", "\u0422\u044C\u043C\u0430": "dark", "\u0414\u0440\u0430\u043A\u043E\u043D": "dragon" }[p.el[0]]}" href="${B + p.url}"><img src="${B + p.thumb}" alt="${esc(p.ru)}" loading="lazy" width="110" height="110"><small>#${esc(p.no)}</small><b>${esc(p.ru)}</b><span>${p.el.map(chip).join("")}</span></a>`;
+  function gallery(D) {
+    const f = document.getElementById("gal-filters"), g = document.getElementById("gallery");
+    const sel = (id, label, opts) => `<select id="${id}"><option value="">${label}</option>${opts.map((o) => `<option value="${esc(o[0])}">${esc(o[1])}</option>`).join("")}</select>`;
+    f.innerHTML = `<input id="gq" name="pp-q-gq" type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" placeholder="\u041D\u0430\u0439\u0442\u0438 \u043F\u0430\u043B\u0430\u2026">` + sel("ge", "\u0421\u0442\u0438\u0445\u0438\u044F", ELS.map((e) => [e, e])) + sel("gw", "\u0420\u0430\u0431\u043E\u0442\u0430", WORKS.map((e) => [e, e])) + sel("gl", "\u0423\u0440. \u0440\u0430\u0431\u043E\u0442\u044B \u2265", [1, 2, 3, 4, 5].map((e) => [e, "\u2265 " + e])) + sel("gm", "\u0415\u0437\u0434\u0430", [["ride", "\u{1F40E} \u0435\u0437\u0434\u043E\u0432\u043E\u0439"], ["fly", "\u{1F985} \u043B\u0435\u0442\u0430\u044E\u0449\u0438\u0439"]]) + sel("ga", "\u041F\u0430\u0440\u0442\u043D\u0451\u0440\u043A\u0430", Object.entries(ACT)) + sel("gs", "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430", [["no", "\u043F\u043E \u043D\u043E\u043C\u0435\u0440\u0443"], ["ru", "\u043F\u043E \u0438\u043C\u0435\u043D\u0438"], ["atk", "\u0430\u0442\u0430\u043A\u0430 \u2193"], ["hp", "HP \u2193"], ["work", "\u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0440\u0430\u0431\u043E\u0442\u044B \u2193"], ["sprint", "\u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u2193"]]) + `<span class="gal-count" id="gc"></span>`;
+    const pals = D.pals.filter((p) => p.url);
+    const $ = (id) => document.getElementById(id).value;
+    const _qv = (v) => {
+      v = (v || "").trim();
+      const C = window.PW_core;
+      if (!v) return [];
+      if (!C || !C.norm) return [v.toLowerCase().replace(/ё/g, "\u0435")];
+      const n = C.norm(v);
+      let f2 = null;
+      try {
+        f2 = C.fixLayout && C.fixLayout(v.toLowerCase());
+      } catch (e) {
+      }
+      return f2 && f2[1] ? [n, C.norm(f2[0])] : [n];
+    };
+    const run = () => {
+      const qs = _qv($("gq")), e = $("ge"), w = $("gw"), l = +$("gl") || 0, m = $("gm"), a = $("ga"), s = $("gs") || "no";
+      const wl = (p) => (p.work.find((x) => x[0] == w) || [0, 0])[1];
+      let r = pals.filter((p) => (!qs.length || qs.some((q) => window.PW_core.norm(p.ru + " " + p.en).includes(q))) && (!e || p.el.includes(e)) && (!w || wl(p) >= Math.max(1, l)) && (w || !l || p.work.some((x) => x[1] >= l)) && (!m || (m == "ride" ? p.mount : p.mount == "fly")) && (!a || p.act.includes(a)));
+      const num = (p) => parseFloat(p.no) || 999;
+      r.sort(s == "ru" ? (x, y) => x.ru.localeCompare(y.ru, "ru") : s == "no" ? (x, y) => num(x) - num(y) || x.no.localeCompare(y.no) : s == "work" ? (x, y) => w ? wl(y) - wl(x) : Math.max(0, ...y.work.map((z) => z[1])) - Math.max(0, ...x.work.map((z) => z[1])) : (x, y) => y[s] - x[s]);
+      g.innerHTML = r.map(card).join("");
+      document.getElementById("gc").textContent = "\u041D\u0430\u0439\u0434\u0435\u043D\u043E: " + r.length;
+    };
+    f.addEventListener("input", run);
+    f.addEventListener("change", run);
+    run();
+  }
+  function potd(D) {
+    const ps = D.pals.filter((p2) => p2.url && p2.thumb);
+    const d = /* @__PURE__ */ new Date();
+    const p = ps[(d.getFullYear() * 372 + d.getMonth() * 31 + d.getDate()) % ps.length];
+    document.getElementById("potd").innerHTML = `<a class="potd card-link" href="${B + p.url}"><img src="${B + p.thumb}" alt="" loading="lazy"><div><h3>${esc(p.ru)} <small>#${esc(p.no)}</small></h3>${p.el.map(chip).join("")}<div>${p.work.map((w) => esc(w[0]) + " " + w[1]).join(" \xB7 ")}</div><div>\u041F\u0430\u0440\u0442\u043D\u0451\u0440\u043A\u0430: <b>${esc(p.psk)}</b> ${p.act.map((x) => ACT[x] || "").join(" ")}</div><span class="open">\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u2192</span></div></a>`;
+  }
+  function compare(D) {
+    const box = document.getElementById("cmp");
+    const u = new URLSearchParams(location.search);
+    const WI = { "\u0420\u0430\u0437\u0436\u0438\u0433\u0430\u043D\u0438\u0435 \u043E\u0433\u043D\u044F": "\u{1F525}", "\u041F\u043E\u043B\u0438\u0432": "\u{1F4A7}", "\u041F\u043E\u0441\u0435\u0432 \u0441\u0435\u043C\u044F\u043D": "\u{1F331}", "\u0413\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u044F \u044D\u043D\u0435\u0440\u0433\u0438\u0438": "\u26A1", "\u0420\u0443\u0447\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430": "\u{1F590}\uFE0F", "\u0421\u0431\u043E\u0440": "\u{1F33E}", "\u0420\u0443\u0431\u043A\u0430 \u0434\u0435\u0440\u0435\u0432\u044C\u0435\u0432": "\u{1FA93}", "\u0414\u043E\u0431\u044B\u0447\u0430": "\u26CF\uFE0F", "\u0424\u0430\u0440\u043C\u0430\u0446\u0435\u0432\u0442\u0438\u043A\u0430": "\u{1F48A}", "\u041E\u0445\u043B\u0430\u0436\u0434\u0435\u043D\u0438\u0435": "\u2744\uFE0F", "\u0422\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430": "\u{1F4E6}", "\u0424\u0435\u0440\u043C\u0435\u0440\u0441\u0442\u0432\u043E": "\u{1F411}" };
+    const PR = Object.fromEntries((D.passives || []).map((q) => [q.name, q]));
+    const rc = (r) => r < 0 ? "r-neg" : r >= 2 ? "r-" + Math.min(r, 5) : "";
+    const pchip = (n) => {
+      const q = PR[n];
+      return q && q.url ? `<a class="psv ${rc(q.rank)}" data-psv="${esc(n)}" href="${B + q.url}">${esc(n)}</a>` : `<span class="psv">${esc(n)}</span>`;
+    };
+    box.innerHTML = `<input id="c1" type="hidden" value="${esc(u.get("a") || "\u0410\u043D\u0443\u0431\u0438\u0441")}"><input id="c2" type="hidden" value="${esc(u.has("b") ? u.get("b") : "\u0414\u0436\u0435\u0442\u0440\u0430\u0433\u043E\u043D")}"><div id="cmpo"></div>`;
+    const c1 = document.getElementById("c1"), c2 = document.getElementById("c2");
+    const pick = (v) => {
+      if (!v) return null;
+      const a = window.PW_core.find(v, ["pal"]);
+      return a ? D.pals[a.ref] : null;
+    };
+    const setU = () => {
+      const q = new URLSearchParams();
+      if (c1.value) q.set("a", c1.value);
+      if (c2.value) q.set("b", c2.value);
+      history.replaceState(null, "", "?" + q);
+    };
+    const choose = (inp, t) => window.PW_pickPal(D, t, (p) => {
+      inp.value = p.ru;
+      setU();
+      run();
+    });
+    const head = (p, i) => p ? `<div class="cx-pal cx-${i ? "b" : "a"}"><a href="${B + p.url}" class="cx-av"><img src="${B + p.thumb}" width="56" height="56" alt=""></a><div class="cx-nm"><b>${esc(p.ru)}</b><span class="cx-no">#${esc(p.no)}</span><span class="cx-els">${p.el.map(chip).join("")}</span></div><button type="button" class="cx-chg" data-i="${i}">\u0421\u0440\u0430\u0432\u043D\u0438\u0442\u044C \u0441 \u0434\u0440\u0443\u0433\u0438\u043C</button></div>` : `<button type="button" class="cx-pal cx-empty cx-chg" data-i="${i}"><span class="plus">\uFF0B</span><b>\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u043F\u0430\u043B\u0430</b></button>`;
+    const run = () => {
+      const a = pick(c1.value), b = pick(c2.value);
+      let h = `<div class="cx-head">${head(a, 0)}<button type="button" class="cx-swap" aria-label="\u041F\u043E\u043C\u0435\u043D\u044F\u0442\u044C \u043C\u0435\u0441\u0442\u0430\u043C\u0438" title="\u041F\u043E\u043C\u0435\u043D\u044F\u0442\u044C \u043C\u0435\u0441\u0442\u0430\u043C\u0438">\u21C4</button>${head(b, 1)}</div>`;
+      if (!a || !b) {
+        document.getElementById("cmpo").innerHTML = h + '<p class="cx-hint">\u0412\u044B\u0431\u0435\u0440\u0438 \u0432\u0442\u043E\u0440\u043E\u0433\u043E \u043F\u0430\u043B\u0430, \u0447\u0442\u043E\u0431\u044B \u0441\u0440\u0430\u0432\u043D\u0438\u0442\u044C.</p>';
+        return bind();
+      }
+      const st = [["\u2764\uFE0F", "HP", "hp"], ["\u2694\uFE0F", "\u0410\u0442\u0430\u043A\u0430", "atk"], ["\u{1F6E1}", "\u0417\u0430\u0449\u0438\u0442\u0430", "def"], ["\u{1F40E}", "\u0420\u044B\u0432\u043E\u043A", "sprint"]];
+      const bars = st.map(([ic, l, k]) => {
+        const x = +a[k] || 0, y = +b[k] || 0, m = Math.max(x, y) || 1, d = Math.abs(x - y);
+        const wa = x > y ? " win" : "", wb = y > x ? " win" : "";
+        return `<div class="cx-st"><div class="cx-sl"><span class="cx-v${wa}">${x || "\u2014"}</span><span class="cx-lb">${ic} ${l}${d ? ` <small class="cx-d">${x > y ? "\u25C0" : ""} +${d} ${y > x ? "\u25B6" : ""}</small>` : ' <small class="cx-d">=</small>'}</span><span class="cx-v${wb}">${y || "\u2014"}</span></div><div class="cx-bars"><div class="cx-bar l"><i class="${wa}" style="width:${x / m * 100}%"></i></div><div class="cx-bar r"><i class="${wb}" style="width:${y / m * 100}%"></i></div></div></div>`;
+      }).join("");
+      const wk = (p) => p.work.length ? p.work.map((w) => `<span class="cx-wk" title="${esc(w[0])}"><span>${WI[w[0]] || "\u{1F527}"}</span>${esc(w[0])}<b>${w[1]}</b></span>`).join("") : '<span class="cx-none">\u043D\u0435\u0442</span>';
+      const ps = (p) => `<div class="cx-psk"><b>${esc(p.psk || "\u2014")}</b><small>${(p.act || []).map((x) => ACT[x] || "").join(" \xB7 ")}</small></div>`;
+      const nat = (p) => (p.natp || []).map((x) => x[0]), na = nat(a), nb = nat(b), sh = na.filter((x) => nb.includes(x));
+      const bp = (p) => p.bp && p.bp["\u0431\u043E\u0435\u0446"] || [], ba = bp(a), bb = bp(b), bsh = ba.filter((x) => bb.includes(x));
+      const prow = (t, xa, xb, s) => {
+        const oa = xa.filter((x) => !s.includes(x)), ob = xb.filter((x) => !s.includes(x));
+        if (!xa.length && !xb.length) return "";
+        return `<div class="cx-sec"><h3>${t}</h3>${s.length ? `<div class="cx-common"><span class="cx-cl">\u041E\u0431\u0449\u0438\u0435</span>${s.map(pchip).join("")}</div>` : ""}<div class="cx-two"><div>${oa.map(pchip).join("") || '<span class="cx-none">\u2014</span>'}</div><div>${ob.map(pchip).join("") || '<span class="cx-none">\u2014</span>'}</div></div></div>`;
+      };
+      const two = (t, f) => `<div class="cx-sec"><h3>${t}</h3><div class="cx-two"><div>${f(a)}</div><div>${f(b)}</div></div></div>`;
+      h += `<div class="cx-sec"><h3>\u0425\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A\u0438</h3>${bars}</div>` + two("\u0421\u043B\u0430\u0431\u043E\u0441\u0442\u044C", (p) => p.weak.map(chip).join("") || '<span class="cx-none">\u2014</span>') + two("\u0420\u0430\u0431\u043E\u0442\u0430", wk) + two("\u041F\u0430\u0440\u0442\u043D\u0451\u0440\u0441\u043A\u0438\u0439 \u043D\u0430\u0432\u044B\u043A", ps) + prow("\u0412\u0440\u043E\u0436\u0434\u0451\u043D\u043D\u044B\u0435 \u043F\u0430\u0441\u0441\u0438\u0432\u043A\u0438", na, nb, sh) + prow("\u041B\u0443\u0447\u0448\u0438\u0435 \u043F\u0430\u0441\u0441\u0438\u0432\u043A\u0438 \u0434\u043B\u044F \u0431\u043E\u044F", ba, bb, bsh);
+      document.getElementById("cmpo").innerHTML = h;
+      bind();
+    };
+    const bind = () => {
+      box.querySelectorAll(".cx-chg").forEach((x) => x.onclick = (e) => {
+        e.preventDefault();
+        const i = +x.dataset.i;
+        choose(i ? c2 : c1, i ? "\u0412\u0442\u043E\u0440\u043E\u0439 \u043F\u0430\u043B\u2026" : "\u041F\u0435\u0440\u0432\u044B\u0439 \u043F\u0430\u043B\u2026");
+      });
+      const s = box.querySelector(".cx-swap");
+      if (s) s.onclick = () => {
+        [c1.value, c2.value] = [c2.value, c1.value];
+        setU();
+        run();
+      };
+    };
+    run();
+  }
+  function map(D) {
+    const el = document.getElementById("pwmap");
+    if (!el || !window.L) return;
+    if (D && !window.PW_D) window.PW_D = D;
+    const T = { alpha: ["\u{1F451}", "\u0410\u043B\u044C\u0444\u044B", "#ff7a59"], travel: ["\u{1F5FF}", "\u0422\u0435\u043B\u0435\u043F\u043E\u0440\u0442\u044B", "#14b8a6"], tower: ["\u{1F3EF}", "\u0411\u0430\u0448\u043D\u0438", "#9b5de5"], sealed: ["\u{1F512}", "\u0417\u0430\u043F\u0435\u0447\u0430\u0442\u0430\u043D\u043D\u044B\u0435 \u0437\u0435\u043C\u043B\u0438", "#2f8fe8"] };
+    const X0 = -1923.225927, Y0 = 1032.79857101, X1 = 1234.833276624702, Y1 = -2125.2606328, S = 8192, Z = 5;
+    const m = L.map(el, { crs: L.CRS.Simple, minZoom: 1, maxZoom: 6, zoomSnap: 0.5, attributionControl: true });
+    const ll = (x, y) => m.unproject([(x - X0) / (X1 - X0) * S, (Y0 - y) / (Y0 - Y1) * S], Z);
+    const bounds = L.latLngBounds(m.unproject([0, S], Z), m.unproject([S, 0], Z));
+    L.tileLayer(B + "assets/tiles/{z}/{x}/{y}.webp", { minZoom: 1, maxZoom: 6, maxNativeZoom: 5, noWrap: true, bounds, tileSize: 256, attribution: '\u041A\u0430\u0440\u0442\u0430: <a href="https://palworld.wiki.gg/wiki/File:World_Map.webp">palworld.wiki.gg</a> (CC BY-SA) \xB7 \xA9 Pocketpair' }).addTo(m);
+    m.setMaxBounds(bounds.pad(0.05));
+    m.fitBounds(bounds);
+    el.style.background = "#0c161e";
+    const icon = (t) => L.divIcon({ className: "pmk pmk-" + t, html: "<span>" + T[t][0] + "</span>", iconSize: [30, 30], iconAnchor: [15, 15] });
+    const groups = {};
+    const all = [];
+    Object.keys(T).forEach((k) => groups[k] = (L.markerClusterGroup ? L.markerClusterGroup({ maxClusterRadius: 38, showCoverageOnHover: false, disableClusteringAtZoom: 4 }) : L.layerGroup()).addTo(m));
+    D.map.forEach((p) => {
+      const mk = L.marker(ll(p.x, p.y), { icon: icon(p.t), title: p.name }).bindPopup(() => window.PW_pop({ t: p.t, name: p.name, lvl: p.lvl, info: p.info, url: p.url, kind: T[p.t][0] + " " + (p.info || T[p.t][1]), sub: "X " + Math.round(p.x) + " \xB7 Y " + Math.round(p.y) }), { maxWidth: 280, minWidth: 220 });
+      mk.addTo(groups[p.t]);
+      all.push([p, mk]);
+    });
+    const Lg = L.control({ position: "topright" });
+    Lg.onAdd = () => {
+      const d = L.DomUtil.create("div", "mleg");
+      const small = window.innerWidth < 700;
+      d.innerHTML = `<button class="mleg-t">\u{1F5FA} \u0421\u043B\u043E\u0438</button><div class="mleg-b" ${small ? "hidden" : ""}>` + Object.entries(T).map(([k, v]) => `<label><input type="checkbox" checked data-k="${k}"> ${v[0]} ${v[1]} <small>${D.map.filter((p) => p.t == k).length}</small></label>`).join("") + "</div>";
+      L.DomEvent.disableClickPropagation(d);
+      d.querySelector(".mleg-t").onclick = () => {
+        const b = d.querySelector(".mleg-b");
+        b.hidden = !b.hidden;
+      };
+      d.querySelectorAll("input").forEach((i) => i.onchange = () => {
+        i.checked ? m.addLayer(groups[i.dataset.k]) : m.removeLayer(groups[i.dataset.k]);
+      });
+      return d;
+    };
+    Lg.addTo(m);
+    window.PW_map = { m, all, groups, T };
+  }
+  function bug() {
+    const art = document.querySelector("article.md-content__inner");
+    if (!art || document.querySelector(".bug-link")) return;
+    let p = location.pathname.replace(/^\/palwiki\//, "").replace(/\/$/, "") || "home";
+    p = decodeURIComponent(p);
+    let h = 0;
+    for (const c of p) h = h * 31 + c.charCodeAt(0) >>> 0;
+    let sl = p.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_|_$/g, "");
+    if (/[^\x00-\x7f]/.test(p)) sl = sl + "_" + h.toString(36);
+    sl = ("bug_" + sl).slice(0, 64);
+    const a = document.createElement("a");
+    a.className = "bug-link";
+    a.href = "https://t.me/PalGuideBot?start=" + sl;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.textContent = "\u26A0\uFE0F \u0421\u043E\u043E\u0431\u0449\u0438\u0442\u044C \u043E\u0431 \u043E\u0448\u0438\u0431\u043A\u0435";
+    art.appendChild(a);
+  }
+  document.addEventListener("DOMContentLoaded", () => {
+    bug();
+    if ("serviceWorker" in navigator) navigator.serviceWorker.register(B + "sw.js", { updateViaCache: "none" }).catch(() => {
+    });
+    const need = ["gallery", "potd", "cmp", "pwmap"].some((i) => document.getElementById(i));
+    if (!need) return;
+    window.PW_data().then((D) => {
+      if (document.getElementById("gallery")) gallery(D);
+      if (document.getElementById("potd")) potd(D);
+      if (document.getElementById("cmp")) compare(D);
+      if (document.getElementById("pwmap")) map(D);
+    });
+  });
 })();
-(function(){const B=window.PW_BASE,chip=window.PW_chip;const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const EI={'Нейтральный':'⚪','Огонь':'🔥','Вода':'💧','Трава':'🌿','Молния':'⚡','Лёд':'❄️','Земля':'🪨','Тьма':'🌑','Дракон':'🐉'};
-const EC={'Нейтральный':'neutral','Огонь':'fire','Вода':'water','Трава':'grass','Молния':'electric','Лёд':'ice','Земля':'ground','Тьма':'dark','Дракон':'dragon'};
-const WI={'Разжигание огня':'🔥','Полив':'💧','Посев семян':'🌱','Генерация энергии':'⚡','Ручная работа':'🖐️','Сбор':'🌾','Рубка деревьев':'🪓','Добыча':'⛏️','Фармацевтика':'💊','Охлаждение':'❄️','Транспортировка':'📦','Фермерство':'🐑'};
-function run(D){const box=document.getElementById('bygroup');const ps=D.pals.filter(p=>p.url);let mode='el';
- box.innerHTML='<div class="gal-filters"><div class="seg"><button data-m="el" class="on">По стихиям</button><button data-m="work">По работе</button></div><input id="bgq" type="search" placeholder="Найти пала…"></div><div id="bgo"></div>';
- const mini=(p,lv)=>`<a class="mc card-link" href="${B+p.url}"><img src="${B+p.thumb}" alt="" loading="lazy" width="64" height="64"><span>${esc(p.ru)}</span>${lv?`<em class="lv">${lv}</em>`:''}</a>`;
- const draw=()=>{const q=window.PW_core?window.PW_core.norm(document.getElementById('bgq').value):'';const f=p=>!q||window.PW_core.norm(p.ru+' '+p.en).includes(q);let h='';const open=window.innerWidth>700||q;
-  if(mode=='el')for(const e of Object.keys(EI)){const g=ps.filter(p=>p.el.includes(e)&&f(p));if(!g.length)continue;h+=`<details class="grp g-${EC[e]}" ${open?'open':''}><summary>${EI[e]} ${e} <span class="cnt">${g.length}</span></summary><div class="mgrid">${g.map(p=>mini(p)).join('')}</div></details>`;}
-  else for(const w of Object.keys(WI)){const g=ps.map(p=>[p,(p.work.find(x=>x[0]==w)||[0,0])[1]]).filter(x=>x[1]&&f(x[0])).sort((a,b)=>b[1]-a[1]);if(!g.length)continue;h+=`<details class="grp" ${open?'open':''}><summary>${WI[w]} ${w} <span class="cnt">${g.length}</span></summary><div class="mgrid">${g.map(x=>mini(x[0],x[1])).join('')}</div></details>`;}
-  document.getElementById('bgo').innerHTML=h||'<p>Ничего не найдено.</p>';};
- box.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>{mode=b.dataset.m;box.querySelectorAll('.seg button').forEach(x=>x.classList.toggle('on',x===b));draw();});
- document.getElementById('bgq').addEventListener('input',draw);draw();}
-document.addEventListener('DOMContentLoaded',()=>{if(document.getElementById('bygroup'))window.PW_data().then(run);});})();
-(function(){const B=window.PW_BASE;const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const LS={get:k=>{try{return JSON.parse(localStorage.getItem(k)||'[]')}catch(e){return[]}},set:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
-function tabbar(){if(document.querySelector('.tabbar'))return;const here=location.pathname;const t=document.createElement('nav');t.className='tabbar';
- const it=[['🏠','Главная',B],['🐾','Палы',B+'gallery/'],['🔍','Поиск','#search'],['📍','Карта',B+'map/'],['☰','Ещё','#more']];
- t.innerHTML=it.map(([i,l,u])=>`<a href="${u}" class="${u.length>1&&u[0]!='#'&&new URL(u,location.href).pathname==here?'on':''}"><span>${i}</span>${l}</a>`).join('');document.body.appendChild(t);
- t.querySelector('[href="#search"]').onclick=e=>{e.preventDefault();const s=document.getElementById('__search');if(s){s.checked=true;setTimeout(()=>document.querySelector('.md-search__input').focus(),50);}};
- t.querySelector('[href="#more"]').onclick=e=>{e.preventDefault();const d=document.getElementById('__drawer');if(d)d.checked=!d.checked;};}
-function palPage(D){const info=document.querySelector('.pal-info[data-pal]');if(!info)return;const id=info.dataset.pal;
- let r=LS.get('pw_recent').filter(x=>x!=id);r.unshift(id);LS.set('pw_recent',r.slice(0,12));
- const b=document.createElement('button');b.className='fav';const upd=()=>{const f=LS.get('pw_fav');b.textContent=f.includes(id)?'★ В избранном':'☆ В избранное';b.classList.toggle('on',f.includes(id));};
- b.onclick=()=>{let f=LS.get('pw_fav');f=f.includes(id)?f.filter(x=>x!=id):[id,...f];LS.set('pw_fav',f);upd();};upd();info.appendChild(b);}
-function homeLists(D){const by=Object.fromEntries(D.pals.map(p=>[p.id,p]));
- const row=(k,el)=>{const ids=LS.get(k).filter(i=>by[i]&&by[i].url);if(!ids.length||!el)return;el.innerHTML=ids.slice(0,10).map(i=>{const p=by[i];return `<a class="mc card-link" href="${B+p.url}"><img src="${B+p.thumb}" alt="" loading="lazy" width="56" height="56"><span>${esc(p.ru)}</span></a>`}).join('');};
- row('pw_recent',document.getElementById('recent'));row('pw_fav',document.getElementById('favs'));}
-function table(D){const g=document.getElementById('gallery'),f=document.getElementById('gal-filters');if(!g||!f||document.getElementById('gview'))return;
- const sw=document.createElement('div');sw.className='seg';sw.id='gview';sw.innerHTML='<button class="on" data-v="grid">▦ Плитки</button><button data-v="table">☰ Таблица</button>';f.prepend(sw);
- let view='grid',key='no',dir=1;const cols=[['no','№'],['ru','Имя'],['el','Стихия'],['hp','HP'],['atk','Атака'],['def','Защита'],['sprint','Рывок'],['work','Лучшая работа']];
- const best=p=>p.work.slice().sort((a,b)=>b[1]-a[1])[0]||['—',0];
- const draw=()=>{if(view=='grid')return;const cards=[...g.querySelectorAll('a.pc')].map(a=>a.getAttribute('href'));const ps=cards.map(h=>D.pals.find(p=>B+p.url==h)).filter(Boolean);
-  const val=p=>key=='no'?(parseFloat(p.no)||999):key=='el'?p.el[0]:key=='work'?best(p)[1]:p[key];
-  ps.sort((a,b)=>{const x=val(a),y=val(b);return (typeof x=='string'?x.localeCompare(y,'ru'):x-y)*dir;});
-  let t=document.getElementById('gtable');if(!t){t=document.createElement('div');t.id='gtable';g.after(t);}
-  t.innerHTML=`<div class="md-typeset__table"><table class="ptable"><thead><tr>${cols.map(([k,l])=>`<th data-k="${k}" class="${k==key?(dir>0?'asc':'desc'):''}">${l}</th>`).join('')}</tr></thead><tbody>${ps.map(p=>`<tr onclick="location.href='${B+p.url}'"><td>${esc(p.no)}</td><td><img src="${B+p.thumb}" width="32" height="32" loading="lazy" alt=""> <a href="${B+p.url}">${esc(p.ru)}</a></td><td>${p.el.map(window.PW_chip).join('')}</td><td>${p.hp}</td><td>${p.atk}</td><td>${p.def}</td><td>${p.sprint||'—'}</td><td>${esc(best(p)[0])} ${best(p)[1]||''}</td></tr>`).join('')}</tbody></table></div>`;
-  t.querySelectorAll('th').forEach(th=>th.onclick=()=>{const k=th.dataset.k;dir=k==key?-dir:(['ru','no','el'].includes(k)?1:-1);key=k;draw();});};
- sw.querySelectorAll('button').forEach(b=>b.onclick=()=>{view=b.dataset.v;try{localStorage.setItem('pw_gview',view)}catch(e){};sw.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));g.style.display=view=='grid'?'':'none';const t=document.getElementById('gtable');if(t)t.style.display=view=='grid'?'none':'';draw();});
- new MutationObserver(draw).observe(g,{childList:true});const sv=localStorage.getItem('pw_gview');if(sv&&sv!='grid'){const bt=sw.querySelector('[data-v='+sv+']');bt&&setTimeout(()=>bt.click(),0);}}
-document.addEventListener('DOMContentLoaded',()=>{tabbar();window.PW_data().then(D=>{palPage(D);homeLists(D);setTimeout(()=>table(D),0);});});})();
-(function(){const B=window.PW_BASE;const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-function close(){document.querySelectorAll('.sheet,.sheet-bg').forEach(e=>e.remove());}
-document.addEventListener('keydown',e=>{if(e.key=='Escape')close();});
-document.addEventListener('click',e=>{const a=e.target.closest('a.psv[data-psv]');if(!a||e.metaKey||e.ctrlKey)return;e.preventDefault();
- window.PW_data().then(D=>{const q=D.passives.find(x=>x.name==a.dataset.psv);if(!q){location.href=a.href;return;}close();
-  const rk=+q.rank||0;const g=[];if(q.nat&&q.nat.length)g.push('🐣 С рождения: '+q.nat.slice(0,6).map(esc).join(', ')+(q.nat.length>6?'…':''));if(q.breed)g.push('🧬 Передаётся разведением');
-  if(q.how=='gold')g.push('🏥 Операционный стол: '+String(q.gold).replace(/\B(?=(\d{3})+$)/g,' ')+' золота');if(q.how=='disposable')g.push('💉 Имплант из Древних реликвий');
-  const bg=document.createElement('div');bg.className='sheet-bg';bg.onclick=close;const s=document.createElement('div');s.className='sheet';s.setAttribute('role','dialog');
-  s.innerHTML=`<button class="x" aria-label="Закрыть">×</button><span class="psv ${a.className.split(' ').find(c=>c.startsWith('r-'))||''}">${esc(q.name)}</span> <small>ранг ${rk}</small><h3>${rk<0?'Плохая пассивка':rk>=4?'Топовая пассивка':'Что даёт'}</h3><div>${esc(q.desc)}</div><ul>${g.map(x=>'<li>'+x+'</li>').join('')}</ul><a href="${a.href}">Подробнее →</a>`;
-  document.body.append(bg,s);s.querySelector('.x').onclick=close;
-  if(window.innerWidth>700){const r=a.getBoundingClientRect();s.style.left=Math.min(r.left,window.innerWidth-440)+'px';s.style.top=Math.min(r.bottom+8,window.innerHeight-s.offsetHeight-10)+'px';}});});})();
-(function(){const h=document.querySelector('.pal-hero[data-el]');const c=document.getElementById('fx');if(!h||!c||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
- const el=h.dataset.el,ctx=c.getContext('2d');const C={fire:['#ff8a4c','#ffcf6b'],ice:['#ffffff','#bfefff'],water:['#7cc4ff','#d6efff'],grass:['#7ee08f','#c9f2a0'],electric:['#ffe066','#fff6b0'],ground:['#d9a868','#f0d2a0'],dark:['#b28cff','#e0ccff'],dragon:['#ff8fd0','#ffd0ec'],neutral:['#e8e4d8','#ffffff']}[el]||['#fff','#fff'];
- let W,H,P=[];const n=innerWidth<700?14:28;const rs=()=>{W=c.width=h.clientWidth;H=c.height=h.clientHeight;};rs();addEventListener('resize',rs);
- const up=el=='fire'||el=='electric'||el=='dark'||el=='dragon';
- for(let i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,r:1+Math.random()*2.5,v:.2+Math.random()*.6,d:Math.random()*6.28,c:C[i%2]});
- let vis=true;new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(h);
- (function f(){if(vis){ctx.clearRect(0,0,W,H);for(const p of P){p.d+=.02;p.x+=Math.sin(p.d)*.3;p.y+=up?-p.v:p.v;if(p.y<-5)p.y=H+5;if(p.y>H+5)p.y=-5;ctx.globalAlpha=.55;ctx.fillStyle=p.c;ctx.beginPath();
-  if(el=='grass'){ctx.ellipse(p.x,p.y,p.r*1.8,p.r,p.d,0,6.28);}else ctx.arc(p.x,p.y,p.r,0,6.28);ctx.fill();}}requestAnimationFrame(f);})();})();
+(function() {
+  const B = window.PW_BASE, chip = window.PW_chip;
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const EI = { "\u041D\u0435\u0439\u0442\u0440\u0430\u043B\u044C\u043D\u044B\u0439": "\u26AA", "\u041E\u0433\u043E\u043D\u044C": "\u{1F525}", "\u0412\u043E\u0434\u0430": "\u{1F4A7}", "\u0422\u0440\u0430\u0432\u0430": "\u{1F33F}", "\u041C\u043E\u043B\u043D\u0438\u044F": "\u26A1", "\u041B\u0451\u0434": "\u2744\uFE0F", "\u0417\u0435\u043C\u043B\u044F": "\u{1FAA8}", "\u0422\u044C\u043C\u0430": "\u{1F311}", "\u0414\u0440\u0430\u043A\u043E\u043D": "\u{1F409}" };
+  const EC = { "\u041D\u0435\u0439\u0442\u0440\u0430\u043B\u044C\u043D\u044B\u0439": "neutral", "\u041E\u0433\u043E\u043D\u044C": "fire", "\u0412\u043E\u0434\u0430": "water", "\u0422\u0440\u0430\u0432\u0430": "grass", "\u041C\u043E\u043B\u043D\u0438\u044F": "electric", "\u041B\u0451\u0434": "ice", "\u0417\u0435\u043C\u043B\u044F": "ground", "\u0422\u044C\u043C\u0430": "dark", "\u0414\u0440\u0430\u043A\u043E\u043D": "dragon" };
+  const WI = { "\u0420\u0430\u0437\u0436\u0438\u0433\u0430\u043D\u0438\u0435 \u043E\u0433\u043D\u044F": "\u{1F525}", "\u041F\u043E\u043B\u0438\u0432": "\u{1F4A7}", "\u041F\u043E\u0441\u0435\u0432 \u0441\u0435\u043C\u044F\u043D": "\u{1F331}", "\u0413\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u044F \u044D\u043D\u0435\u0440\u0433\u0438\u0438": "\u26A1", "\u0420\u0443\u0447\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430": "\u{1F590}\uFE0F", "\u0421\u0431\u043E\u0440": "\u{1F33E}", "\u0420\u0443\u0431\u043A\u0430 \u0434\u0435\u0440\u0435\u0432\u044C\u0435\u0432": "\u{1FA93}", "\u0414\u043E\u0431\u044B\u0447\u0430": "\u26CF\uFE0F", "\u0424\u0430\u0440\u043C\u0430\u0446\u0435\u0432\u0442\u0438\u043A\u0430": "\u{1F48A}", "\u041E\u0445\u043B\u0430\u0436\u0434\u0435\u043D\u0438\u0435": "\u2744\uFE0F", "\u0422\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430": "\u{1F4E6}", "\u0424\u0435\u0440\u043C\u0435\u0440\u0441\u0442\u0432\u043E": "\u{1F411}" };
+  function run(D) {
+    const box = document.getElementById("bygroup");
+    const ps = D.pals.filter((p) => p.url);
+    let mode = "el";
+    box.innerHTML = '<div class="gal-filters plain"><div class="seg"><button data-m="el" class="on">\u041F\u043E \u0441\u0442\u0438\u0445\u0438\u044F\u043C</button><button data-m="work">\u041F\u043E \u0440\u0430\u0431\u043E\u0442\u0435</button></div><input id="bgq" name="pp-q-bgq" type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" placeholder="\u041D\u0430\u0439\u0442\u0438 \u043F\u0430\u043B\u0430\u2026"></div><div id="bgo"></div>';
+    const mini = (p, lv) => `<a class="mc card-link" href="${B + p.url}"><img src="${B + p.thumb}" alt="" loading="lazy" width="64" height="64"><span>${esc(p.ru)}</span>${lv ? `<em class="lv">${lv}</em>` : ""}</a>`;
+    const _qv = (v) => {
+      v = (v || "").trim();
+      const C = window.PW_core;
+      if (!v) return [];
+      if (!C || !C.norm) return [v.toLowerCase().replace(/ё/g, "\u0435")];
+      const n = C.norm(v);
+      let f = null;
+      try {
+        f = C.fixLayout && C.fixLayout(v.toLowerCase());
+      } catch (e) {
+      }
+      return f && f[1] ? [n, C.norm(f[0])] : [n];
+    };
+    const draw = () => {
+      const qs = _qv(document.getElementById("bgq").value), q = qs.length ? qs[0] : "";
+      const f = (p) => !qs.length || qs.some((x) => window.PW_core.norm(p.ru + " " + p.en).includes(x));
+      let h = "";
+      const open = window.innerWidth > 700 || q;
+      if (mode == "el") for (const e of Object.keys(EI)) {
+        const g = ps.filter((p) => p.el.includes(e) && f(p));
+        if (!g.length) continue;
+        h += `<details class="grp g-${EC[e]}" ${open ? "open" : ""}><summary>${EI[e]} ${e} <span class="cnt">${g.length}</span></summary><div class="mgrid">${g.map((p) => mini(p)).join("")}</div></details>`;
+      }
+      else for (const w of Object.keys(WI)) {
+        const g = ps.map((p) => [p, (p.work.find((x) => x[0] == w) || [0, 0])[1]]).filter((x) => x[1] && f(x[0])).sort((a, b) => b[1] - a[1]);
+        if (!g.length) continue;
+        h += `<details class="grp" ${open ? "open" : ""}><summary>${WI[w]} ${w} <span class="cnt">${g.length}</span></summary><div class="mgrid">${g.map((x) => mini(x[0], x[1])).join("")}</div></details>`;
+      }
+      document.getElementById("bgo").innerHTML = h || "<p>\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E.</p>";
+    };
+    box.querySelectorAll(".seg button").forEach((b) => b.onclick = () => {
+      mode = b.dataset.m;
+      box.querySelectorAll(".seg button").forEach((x) => x.classList.toggle("on", x === b));
+      draw();
+    });
+    document.getElementById("bgq").addEventListener("input", draw);
+    draw();
+  }
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.getElementById("bygroup")) window.PW_data().then(run);
+  });
+})();
+(function() {
+  const B = window.PW_BASE;
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const LS = { get: (k) => {
+    try {
+      return JSON.parse(localStorage.getItem(k) || "[]");
+    } catch (e) {
+      return [];
+    }
+  }, set: (k, v) => {
+    try {
+      localStorage.setItem(k, JSON.stringify(v));
+    } catch (e) {
+    }
+  } };
+  function tabbar() {
+    if (document.querySelector(".tabbar")) return;
+    const here = location.pathname;
+    const t = document.createElement("nav");
+    t.className = "tabbar";
+    const it = [["\u{1F3E0}", "\u0413\u043B\u0430\u0432\u043D\u0430\u044F", B], ["\u{1F43E}", "\u041F\u0430\u043B\u044B", B + "gallery/"], ["\u{1F50D}", "\u041F\u043E\u0438\u0441\u043A", "#search"], ["\u{1F4CD}", "\u041A\u0430\u0440\u0442\u0430", B + "map/"], ["\u2630", "\u0415\u0449\u0451", "#more"]];
+    t.innerHTML = it.map(([i, l, u]) => `<a href="${u}" class="${u.length > 1 && u[0] != "#" && new URL(u, location.href).pathname == here ? "on" : ""}"><span>${i}</span>${l}</a>`).join("");
+    document.body.appendChild(t);
+    t.querySelector('[href="#search"]').onclick = (e) => {
+      e.preventDefault();
+      const s = document.getElementById("__search");
+      if (s) {
+        s.checked = true;
+        setTimeout(() => document.querySelector(".md-search__input").focus(), 50);
+      }
+    };
+    t.querySelector('[href="#more"]').onclick = (e) => {
+      e.preventDefault();
+      const d = document.getElementById("__drawer");
+      if (d) d.checked = !d.checked;
+    };
+  }
+  function palPage(D) {
+    const info = document.querySelector(".pal-info[data-pal]");
+    if (!info) return;
+    const id = info.dataset.pal;
+    let r = LS.get("pw_recent").filter((x) => x != id);
+    r.unshift(id);
+    LS.set("pw_recent", r.slice(0, 12));
+    const b = document.createElement("button");
+    b.className = "fav";
+    const upd = () => {
+      const f = LS.get("pw_fav");
+      b.textContent = f.includes(id) ? "\u2605 \u0412 \u0438\u0437\u0431\u0440\u0430\u043D\u043D\u043E\u043C" : "\u2606 \u0412 \u0438\u0437\u0431\u0440\u0430\u043D\u043D\u043E\u0435";
+      b.classList.toggle("on", f.includes(id));
+    };
+    b.onclick = () => {
+      let f = LS.get("pw_fav");
+      f = f.includes(id) ? f.filter((x) => x != id) : [id, ...f];
+      LS.set("pw_fav", f);
+      upd();
+    };
+    upd();
+    info.appendChild(b);
+  }
+  function homeLists(D) {
+    const by = Object.fromEntries(D.pals.map((p) => [p.id, p]));
+    const row = (k, el) => {
+      const ids = LS.get(k).filter((i) => by[i] && by[i].url);
+      if (!ids.length || !el) return;
+      el.innerHTML = ids.slice(0, 10).map((i) => {
+        const p = by[i];
+        return `<a class="mc card-link" href="${B + p.url}"><img src="${B + p.thumb}" alt="" loading="lazy" width="56" height="56"><span>${esc(p.ru)}</span></a>`;
+      }).join("");
+    };
+    row("pw_recent", document.getElementById("recent"));
+    row("pw_fav", document.getElementById("favs"));
+  }
+  function table(D) {
+    const g = document.getElementById("gallery"), f = document.getElementById("gal-filters");
+    if (!g || !f || document.getElementById("gview")) return;
+    const sw = document.createElement("div");
+    sw.className = "seg";
+    sw.id = "gview";
+    sw.innerHTML = '<button class="on" data-v="grid">\u25A6 \u041F\u043B\u0438\u0442\u043A\u0438</button><button data-v="table">\u2630 \u0422\u0430\u0431\u043B\u0438\u0446\u0430</button>';
+    f.prepend(sw);
+    let view = "grid", key = "no", dir = 1;
+    const cols = [["no", "\u2116"], ["ru", "\u0418\u043C\u044F"], ["el", "\u0421\u0442\u0438\u0445\u0438\u044F"], ["hp", "HP"], ["atk", "\u0410\u0442\u0430\u043A\u0430"], ["def", "\u0417\u0430\u0449\u0438\u0442\u0430"], ["sprint", "\u0420\u044B\u0432\u043E\u043A"], ["work", "\u041B\u0443\u0447\u0448\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430"]];
+    const best = (p) => p.work.slice().sort((a, b) => b[1] - a[1])[0] || ["\u2014", 0];
+    const draw = () => {
+      if (view == "grid") return;
+      const cards = [...g.querySelectorAll("a.pc")].map((a) => a.getAttribute("href"));
+      const ps = cards.map((h) => D.pals.find((p) => B + p.url == h)).filter(Boolean);
+      const val = (p) => key == "no" ? parseFloat(p.no) || 999 : key == "el" ? p.el[0] : key == "work" ? best(p)[1] : p[key];
+      ps.sort((a, b) => {
+        const x = val(a), y = val(b);
+        return (typeof x == "string" ? x.localeCompare(y, "ru") : x - y) * dir;
+      });
+      let t = document.getElementById("gtable");
+      if (!t) {
+        t = document.createElement("div");
+        t.id = "gtable";
+        g.after(t);
+      }
+      t.innerHTML = `<div class="md-typeset__table"><table class="ptable"><thead><tr>${cols.map(([k, l]) => `<th data-k="${k}" class="${k == key ? dir > 0 ? "asc" : "desc" : ""}">${l}</th>`).join("")}</tr></thead><tbody>${ps.map((p) => `<tr onclick="location.href='${B + p.url}'"><td>${esc(p.no)}</td><td><img src="${B + p.thumb}" width="32" height="32" loading="lazy" alt=""> <a href="${B + p.url}">${esc(p.ru)}</a></td><td>${p.el.map(window.PW_chip).join("")}</td><td>${p.hp}</td><td>${p.atk}</td><td>${p.def}</td><td>${p.sprint || "\u2014"}</td><td>${esc(best(p)[0])} ${best(p)[1] || ""}</td></tr>`).join("")}</tbody></table></div>`;
+      t.querySelectorAll("th").forEach((th) => th.onclick = () => {
+        const k = th.dataset.k;
+        dir = k == key ? -dir : ["ru", "no", "el"].includes(k) ? 1 : -1;
+        key = k;
+        draw();
+      });
+    };
+    sw.querySelectorAll("button").forEach((b) => b.onclick = () => {
+      view = b.dataset.v;
+      try {
+        localStorage.setItem("pw_gview", view);
+      } catch (e) {
+      }
+      ;
+      sw.querySelectorAll("button").forEach((x) => x.classList.toggle("on", x === b));
+      g.style.display = view == "grid" ? "" : "none";
+      const t = document.getElementById("gtable");
+      if (t) t.style.display = view == "grid" ? "none" : "";
+      draw();
+    });
+    new MutationObserver(draw).observe(g, { childList: true });
+    const sv = localStorage.getItem("pw_gview");
+    if (sv && sv != "grid") {
+      const bt = sw.querySelector("[data-v=" + sv + "]");
+      bt && setTimeout(() => bt.click(), 0);
+    }
+  }
+  document.addEventListener("DOMContentLoaded", () => {
+    tabbar();
+    window.PW_data().then((D) => {
+      palPage(D);
+      homeLists(D);
+      setTimeout(() => table(D), 0);
+    });
+  });
+})();
+(function() {
+  const B = window.PW_BASE;
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  function close() {
+    document.querySelectorAll(".sheet,.sheet-bg").forEach((e) => e.remove());
+  }
+  document.addEventListener("keydown", (e) => {
+    if (e.key == "Escape") close();
+  });
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("a.psv[data-psv]");
+    if (!a || e.metaKey || e.ctrlKey) return;
+    e.preventDefault();
+    window.PW_data().then((D) => {
+      const q = D.passives.find((x) => x.name == a.dataset.psv);
+      if (!q) {
+        location.href = a.href;
+        return;
+      }
+      close();
+      const rk = +q.rank || 0;
+      const g = [];
+      if (q.nat && q.nat.length) g.push("\u{1F423} \u0421 \u0440\u043E\u0436\u0434\u0435\u043D\u0438\u044F: " + q.nat.slice(0, 6).map(esc).join(", ") + (q.nat.length > 6 ? "\u2026" : ""));
+      if (q.breed) g.push("\u{1F9EC} \u041F\u0435\u0440\u0435\u0434\u0430\u0451\u0442\u0441\u044F \u0440\u0430\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u0435\u043C");
+      if (q.how == "gold") g.push("\u{1F3E5} \u041E\u043F\u0435\u0440\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0439 \u0441\u0442\u043E\u043B: " + String(q.gold).replace(/\B(?=(\d{3})+$)/g, " ") + " \u0437\u043E\u043B\u043E\u0442\u0430");
+      if (q.how == "disposable") g.push("\u{1F489} \u0418\u043C\u043F\u043B\u0430\u043D\u0442 \u0438\u0437 \u0414\u0440\u0435\u0432\u043D\u0438\u0445 \u0440\u0435\u043B\u0438\u043A\u0432\u0438\u0439");
+      const bg = document.createElement("div");
+      bg.className = "sheet-bg";
+      bg.onclick = close;
+      const s = document.createElement("div");
+      s.className = "sheet";
+      s.setAttribute("role", "dialog");
+      s.innerHTML = `<button class="x" aria-label="\u0417\u0430\u043A\u0440\u044B\u0442\u044C">\xD7</button><span class="psv ${a.className.split(" ").find((c) => c.startsWith("r-")) || ""}">${esc(q.name)}</span> <small>\u0440\u0430\u043D\u0433 ${rk}</small><h3>${rk < 0 ? "\u041F\u043B\u043E\u0445\u0430\u044F \u043F\u0430\u0441\u0441\u0438\u0432\u043A\u0430" : rk >= 4 ? "\u0422\u043E\u043F\u043E\u0432\u0430\u044F \u043F\u0430\u0441\u0441\u0438\u0432\u043A\u0430" : "\u0427\u0442\u043E \u0434\u0430\u0451\u0442"}</h3><div>${esc(q.desc)}</div><ul>${g.map((x) => "<li>" + x + "</li>").join("")}</ul><a href="${a.href}">\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435 \u2192</a>`;
+      document.body.append(bg, s);
+      s.querySelector(".x").onclick = close;
+      if (window.innerWidth > 700) {
+        const r = a.getBoundingClientRect();
+        s.style.left = Math.min(r.left, window.innerWidth - 440) + "px";
+        s.style.top = Math.min(r.bottom + 8, window.innerHeight - s.offsetHeight - 10) + "px";
+      }
+    });
+  });
+})();
+(function() {
+  const h = document.querySelector(".pal-hero[data-el]");
+  const c = document.getElementById("fx");
+  if (!h || !c || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const el = h.dataset.el, ctx = c.getContext("2d");
+  const C = { fire: ["#ff8a4c", "#ffcf6b"], ice: ["#ffffff", "#bfefff"], water: ["#7cc4ff", "#d6efff"], grass: ["#7ee08f", "#c9f2a0"], electric: ["#ffe066", "#fff6b0"], ground: ["#d9a868", "#f0d2a0"], dark: ["#b28cff", "#e0ccff"], dragon: ["#ff8fd0", "#ffd0ec"], neutral: ["#e8e4d8", "#ffffff"] }[el] || ["#fff", "#fff"];
+  let W, H, P = [];
+  const n = innerWidth < 700 ? 14 : 28;
+  const rs = () => {
+    W = c.width = h.clientWidth;
+    H = c.height = h.clientHeight;
+  };
+  rs();
+  addEventListener("resize", rs);
+  const up = el == "fire" || el == "electric" || el == "dark" || el == "dragon";
+  for (let i = 0; i < n; i++) P.push({ x: Math.random() * W, y: Math.random() * H, r: 1 + Math.random() * 2.5, v: 0.2 + Math.random() * 0.6, d: Math.random() * 6.28, c: C[i % 2] });
+  let vis = true;
+  new IntersectionObserver((e) => vis = e[0].isIntersecting).observe(h);
+  (function f() {
+    if (vis) {
+      ctx.clearRect(0, 0, W, H);
+      for (const p of P) {
+        p.d += 0.02;
+        p.x += Math.sin(p.d) * 0.3;
+        p.y += up ? -p.v : p.v;
+        if (p.y < -5) p.y = H + 5;
+        if (p.y > H + 5) p.y = -5;
+        ctx.globalAlpha = 0.55;
+        ctx.fillStyle = p.c;
+        ctx.beginPath();
+        if (el == "grass") {
+          ctx.ellipse(p.x, p.y, p.r * 1.8, p.r, p.d, 0, 6.28);
+        } else ctx.arc(p.x, p.y, p.r, 0, 6.28);
+        ctx.fill();
+      }
+    }
+    requestAnimationFrame(f);
+  })();
+})();

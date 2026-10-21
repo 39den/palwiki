@@ -53,7 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/extra.css?v=1792585876">
+      <link rel="stylesheet" href="../../assets/extra.css?v=1792603107">
+    
+      <link rel="stylesheet" href="../../assets/ux50.css?v=1792603153">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -61,7 +63,7 @@
 
     
     
-<script>(function(){var l=location,on=/\/palwiki-preview\//.test(l.pathname);try{if(/^(localhost|127\.0\.0\.1)$/.test(l.hostname)){if(/[?&]pp26=1/.test(l.search))localStorage.setItem('pp26','1');if(/[?&]pp26=0/.test(l.search))localStorage.removeItem('pp26');on=on||localStorage.getItem('pp26')=='1'}}catch(e){}if(on){document.documentElement.classList.add('pp26');try{var k=new URL('../../',l).pathname.replace(/\/+$/,'/')+'.__palette';if(!localStorage.getItem('pp26th')){localStorage.setItem('pp26th','1');localStorage.setItem(k,JSON.stringify({index:1,color:{media:'',scheme:'default',primary:'custom',accent:'custom'}}))}}catch(e){}document.write('<link rel="stylesheet" href="../../assets/pp26.css"><script defer src="../../assets/pp26.js"><\/script><link rel="preload" as="font" type="font/woff2" crossorigin href="../../assets/fonts26/Unbounded-600-cyrillic.woff2">')}})()</script>
+<script>(function(){var l=location,on=true;try{if(/[?&]pp26=0/.test(l.search))localStorage.setItem('pp26off','1');if(/[?&]pp26=1/.test(l.search))localStorage.removeItem('pp26off');on=localStorage.getItem('pp26off')!='1'}catch(e){}if(on){document.documentElement.classList.add('pp26');setTimeout(function(){document.documentElement.classList.add('pp-ready')},3000);try{var k=new URL('../../',l).pathname.replace(/\/+$/,'/')+'.__palette';if(!localStorage.getItem('pp26th')){localStorage.setItem('pp26th','1');localStorage.setItem(k,JSON.stringify({index:1,color:{media:'',scheme:'default',primary:'custom',accent:'custom'}}))}}catch(e){}document.write('<link rel="stylesheet" href="../../assets/pp26.css"><script defer src="../../assets/pp26.js"><\/script><link rel="preload" as="font" type="font/woff2" crossorigin href="../../assets/fonts26/Unbounded-600-cyrillic.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../assets/fonts26/Manrope-400-cyrillic.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../assets/fonts26/Manrope-400-latin.woff2">')}})()</script>
 <link rel="manifest" href="../../manifest.webmanifest">
 <meta name="theme-color" content="#1596c9">
 <link rel="apple-touch-icon" href="../../assets/icon-192.png">
@@ -86,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#предметы-и-ресурсы" class="md-skip">
+        <a href="#-предметы-и-постройки" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -324,6 +326,28 @@
     
     
       <li class="md-tabs__item">
+        <a href="../../ux/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🧰 Помощники
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../../map/" class="md-tabs__link">
           
   
@@ -395,6 +419,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -1353,6 +1379,8 @@
       
         
       
+        
+      
     
     
     
@@ -1797,6 +1825,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Постройки
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1820,34 +1876,6 @@
     
   
     Особые комбинации разведения
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../2_mehaniki/rabota/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    rabota
   
 
     
@@ -1932,6 +1960,34 @@
     
   
     Где взять пассивку и как её перенести
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_mehaniki/rabota/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Работа палов
   
 
     
@@ -2073,6 +2129,18 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -2096,7 +2164,337 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ux/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧰 Помощники
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🧰 Помощники
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux/uroven/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Что делать на моём уровне
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux/stihii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Круг стихий
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux/derevo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Дерево разведения
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux/s-passivkami/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Вывести с пассивками
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux/lovlya/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Шанс поимки
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux/kraft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Из чего сделать
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux/eda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Еда для цели
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux/navyki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Навыки и плоды
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux/patch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Что нового в 1.0.5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -2114,8 +2512,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2296,10 +2694,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -2317,8 +2715,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2426,7 +2824,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -2448,6 +2848,8 @@
             <div class="md-content" data-md-component="content">
               
                 
+
+  
 
 
 
@@ -2516,27 +2918,13 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="предметы-и-ресурсы">Предметы и ресурсы</h1>
-<p>Всего: 1599. В каждой карточке: как получить и где используется.</p>
-<ul>
-<li><a href="%D1%87%D0%B5%D1%80%D1%82%D1%91%D0%B6/">Чертёж</a> — 490</li>
-<li><a href="%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%B2%D1%8B%D0%B5_%D0%BF%D1%80%D0%B5%D0%B4%D0%BC%D0%B5%D1%82%D1%8B/">Ключевые предметы</a> — 297</li>
-<li><a href="%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA/">Расходник</a> — 206</li>
-<li><a href="%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B/">Материалы</a> — 152</li>
-<li><a href="%D0%BE%D1%80%D1%83%D0%B6%D0%B8%D0%B5/">Оружие</a> — 112</li>
-<li><a href="%D1%81%D0%BD%D0%B0%D1%80%D1%8F%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5/">Снаряжение</a> — 106</li>
-<li><a href="%D0%B8%D0%BD%D0%B3%D1%80%D0%B5%D0%B4%D0%B8%D0%B5%D0%BD%D1%82/">Ингредиент</a> — 94</li>
-<li><a href="%D0%B0%D0%BA%D1%81%D0%B5%D1%81%D1%81%D1%83%D0%B0%D1%80%D1%8B/">Аксессуары</a> — 81</li>
-<li><a href="%D0%B1%D0%BE%D0%B5%D0%BF%D1%80%D0%B8%D0%BF%D0%B0%D1%81%D1%8B/">Боеприпасы</a> — 31</li>
-<li><a href="%D1%81%D1%84%D0%B5%D1%80%D1%8B/">Сферы</a> — 10</li>
-<li><a href="%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C_%D0%B4%D0%BB%D1%8F_%D1%81%D1%84%D0%B5%D1%80%D1%8B/">Модуль для сферы</a> — 6</li>
-<li><a href="%D0%B3%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D1%8B/">Глайдеры</a> — 5</li>
-<li><a href="%D0%BE%D0%B1%D0%BB%D0%BE%D0%BC%D0%BA%D0%B8_%D0%BF%D0%BB%D0%B8%D1%82/">Обломки плит</a> — 5</li>
-<li><a href="%D0%BF%D1%80%D0%BE%D1%87%D0%B5%D0%B5/">Прочее</a> — 4</li>
-</ul>
+
+<h1 id="-предметы-и-постройки">📦 Предметы и постройки</h1>
+<div class="isecs" markdown="0"><a class="isec-t" href="чертёж/"><img class="iic" src="../../pp/ic/sword-schematic-4-96.webp" srcset="../../pp/ic/sword-schematic-4-96.webp 1x, ../../pp/ic/sword-schematic-4-192.webp 2x" width="56" height="56" alt="Чертёж меча 4" loading="lazy" decoding="async"><b>Чертёж</b><small>490</small></a><a class="isec-t" href="постройки/"><img class="iic" src="../../pp/ic/japanese-hearth-96.webp" srcset="../../pp/ic/japanese-hearth-96.webp 1x, ../../pp/ic/japanese-hearth-192.webp 2x" width="56" height="56" alt="Очаг" loading="lazy" decoding="async"><b>Постройки</b><small>478</small></a><a class="isec-t" href="ключевые_предметы/"><img class="iic" src="../../pp/ic/echoing-flute-96.webp" srcset="../../pp/ic/echoing-flute-96.webp 1x, ../../pp/ic/echoing-flute-192.webp 2x" width="56" height="56" alt="Флейта Эха" loading="lazy" decoding="async"><b>Ключевые предметы</b><small>297</small></a><a class="isec-t" href="расходник/"><img class="iic" src="../../pp/ic/power-fruit-96.webp" srcset="../../pp/ic/power-fruit-96.webp 1x, ../../pp/ic/power-fruit-192.webp 2x" width="56" height="56" alt="Плод силы" loading="lazy" decoding="async"><b>Расходник</b><small>206</small></a><a class="isec-t" href="материалы/"><img class="iic" src="../../pp/ic/giant-pal-soul-96.webp" srcset="../../pp/ic/giant-pal-soul-96.webp 1x, ../../pp/ic/giant-pal-soul-192.webp 2x" width="56" height="56" alt="Абсолютная душа Пала" loading="lazy" decoding="async"><b>Материалы</b><small>152</small></a><a class="isec-t" href="оружие/"><img class="iic" src="../../pp/ic/meowmere-96.webp" srcset="../../pp/ic/meowmere-96.webp 1x, ../../pp/ic/meowmere-192.webp 2x" width="56" height="56" alt="Мяумур" loading="lazy" decoding="async"><b>Оружие</b><small>112</small></a><a class="isec-t" href="снаряжение/"><img class="iic" src="../../pp/ic/ancient-shield-96.webp" srcset="../../pp/ic/ancient-shield-96.webp 1x, ../../pp/ic/ancient-shield-192.webp 2x" width="56" height="56" alt="Древний щит" loading="lazy" decoding="async"><b>Снаряжение</b><small>106</small></a><a class="isec-t" href="ингредиент/"><img class="iic" src="../../pp/ic/special-cake-96.webp" srcset="../../pp/ic/special-cake-96.webp 1x, ../../pp/ic/special-cake-192.webp 2x" width="56" height="56" alt="Специальный торт" loading="lazy" decoding="async"><b>Ингредиент</b><small>94</small></a><a class="isec-t" href="аксессуары/"><img class="iic" src="../../pp/ic/explosion-resistant-undershirt-96.webp" srcset="../../pp/ic/explosion-resistant-undershirt-96.webp 1x, ../../pp/ic/explosion-resistant-undershirt-192.webp 2x" width="56" height="56" alt="Взрывоустойчивое бельё" loading="lazy" decoding="async"><b>Аксессуары</b><small>81</small></a><a class="isec-t" href="боеприпасы/"><img class="iic" src="../../pp/ic/arrow-96.webp" srcset="../../pp/ic/arrow-96.webp 1x, ../../pp/ic/arrow-192.webp 2x" width="56" height="56" alt="Стрела" loading="lazy" decoding="async"><b>Боеприпасы</b><small>31</small></a><a class="isec-t" href="сферы/"><img class="iic" src="../../pp/ic/ancient-sphere-96.webp" srcset="../../pp/ic/ancient-sphere-96.webp 1x, ../../pp/ic/ancient-sphere-192.webp 2x" width="56" height="56" alt="Древняя сфера" loading="lazy" decoding="async"><b>Сферы</b><small>10</small></a><a class="isec-t" href="модуль_для_сферы/"><img class="iic" src="../../pp/ic/homing-module-96.webp" srcset="../../pp/ic/homing-module-96.webp 1x, ../../pp/ic/homing-module-192.webp 2x" width="56" height="56" alt="Модуль самонаведения" loading="lazy" decoding="async"><b>Модуль для сферы</b><small>6</small></a><a class="isec-t" href="глайдеры/"><img class="iic" src="../../pp/ic/wing-pack-96.webp" srcset="../../pp/ic/wing-pack-96.webp 1x, ../../pp/ic/wing-pack-192.webp 2x" width="56" height="56" alt="Крылатый ранец" loading="lazy" decoding="async"><b>Глайдеры</b><small>5</small></a><a class="isec-t" href="обломки_плит/"><img class="iic" src="../../pp/ic/hartalis-slab-fragment-96.webp" srcset="../../pp/ic/hartalis-slab-fragment-96.webp 1x, ../../pp/ic/hartalis-slab-fragment-192.webp 2x" width="56" height="56" alt="Обломок плиты Харталис" loading="lazy" decoding="async"><b>Обломки плит</b><small>5</small></a><a class="isec-t" href="прочее/"><img class="iic" src="../../pp/ic/huge-frozen-egg-96.webp" srcset="../../pp/ic/huge-frozen-egg-96.webp 1x, ../../pp/ic/huge-frozen-egg-192.webp 2x" width="56" height="56" alt="Огромное яйцо льда" loading="lazy" decoding="async"><b>Прочее</b><small>4</small></a></div>
 
 
 
@@ -2544,8 +2932,13 @@
 
 
 
+  
+  
 
 
+
+
+  
 
 
 
@@ -2611,17 +3004,27 @@
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../../assets/smart.js?v=1792585876"></script>
+        <script src="../../assets/smart.js?v=1792603107"></script>
       
-        <script src="../../assets/site.js?v=1792585876"></script>
+        <script src="../../assets/site.js?v=1792603107"></script>
       
-        <script src="../../assets/features.js?v=1792585876"></script>
+        <script src="../../assets/features.js?v=1792603107"></script>
       
-        <script src="../../assets/ui2.js?v=1792585876"></script>
+        <script src="../../assets/ui2.js?v=1792603107"></script>
       
-        <script src="../../assets/ui3.js?v=1792585876"></script>
+        <script src="../../assets/ui3.js?v=1792603107"></script>
       
-        <script src="../../assets/ai.js?v=1792585876"></script>
+        <script src="../../assets/ai.js?v=1792603107"></script>
+      
+        <script src="../../assets/ux50.js?v=1792603153"></script>
+      
+        <script src="../../assets/ux50ai.js?v=1792603153"></script>
+      
+        <script src="../../assets/ux50m.js?v=1792603153"></script>
+      
+        <script src="../../assets/ux50p.js?v=1792603153"></script>
+      
+        <script src="../../assets/ux50t.js?v=1792603153"></script>
       
     
   </body>

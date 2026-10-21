@@ -53,7 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/extra.css?v=1792585876">
+      <link rel="stylesheet" href="../../../assets/extra.css?v=1792603107">
+    
+      <link rel="stylesheet" href="../../../assets/ux50.css?v=1792603153">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -61,7 +63,7 @@
 
     
     
-<script>(function(){var l=location,on=/\/palwiki-preview\//.test(l.pathname);try{if(/^(localhost|127\.0\.0\.1)$/.test(l.hostname)){if(/[?&]pp26=1/.test(l.search))localStorage.setItem('pp26','1');if(/[?&]pp26=0/.test(l.search))localStorage.removeItem('pp26');on=on||localStorage.getItem('pp26')=='1'}}catch(e){}if(on){document.documentElement.classList.add('pp26');try{var k=new URL('../../../',l).pathname.replace(/\/+$/,'/')+'.__palette';if(!localStorage.getItem('pp26th')){localStorage.setItem('pp26th','1');localStorage.setItem(k,JSON.stringify({index:1,color:{media:'',scheme:'default',primary:'custom',accent:'custom'}}))}}catch(e){}document.write('<link rel="stylesheet" href="../../../assets/pp26.css"><script defer src="../../../assets/pp26.js"><\/script><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../assets/fonts26/Unbounded-600-cyrillic.woff2">')}})()</script>
+<script>(function(){var l=location,on=true;try{if(/[?&]pp26=0/.test(l.search))localStorage.setItem('pp26off','1');if(/[?&]pp26=1/.test(l.search))localStorage.removeItem('pp26off');on=localStorage.getItem('pp26off')!='1'}catch(e){}if(on){document.documentElement.classList.add('pp26');setTimeout(function(){document.documentElement.classList.add('pp-ready')},3000);try{var k=new URL('../../../',l).pathname.replace(/\/+$/,'/')+'.__palette';if(!localStorage.getItem('pp26th')){localStorage.setItem('pp26th','1');localStorage.setItem(k,JSON.stringify({index:1,color:{media:'',scheme:'default',primary:'custom',accent:'custom'}}))}}catch(e){}document.write('<link rel="stylesheet" href="../../../assets/pp26.css"><script defer src="../../../assets/pp26.js"><\/script><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../assets/fonts26/Unbounded-600-cyrillic.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../assets/fonts26/Manrope-400-cyrillic.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../assets/fonts26/Manrope-400-latin.woff2">')}})()</script>
 <link rel="manifest" href="../../../manifest.webmanifest">
 <meta name="theme-color" content="#1596c9">
 <link rel="apple-touch-icon" href="../../../assets/icon-192.png">
@@ -86,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#модуль-для-сферы" class="md-skip">
+        <a href="#-модуль-для-сферы" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -313,6 +315,28 @@
 
       </a>
     </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ux/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🧰 Помощники
+
+        </a>
+      </li>
+    
   
 
       
@@ -1355,6 +1379,8 @@
       
         
       
+        
+      
     
     
     
@@ -1591,24 +1617,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Модуль для сферы
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1625,91 +1633,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Содержание">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#модуль-дуги" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Модуль дуги
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#модуль-самонаведения" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Модуль самонаведения
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#модуль-слайдера" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Модуль слайдера
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#снайперский-модуль" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Снайперский модуль
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#снайперский-модуль-ii" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Снайперский модуль II
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#утяжеляющий-модуль" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Утяжеляющий модуль
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1912,6 +1835,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Постройки
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1935,34 +1886,6 @@
     
   
     Особые комбинации разведения
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../2_mehaniki/rabota/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    rabota
   
 
     
@@ -2047,6 +1970,34 @@
     
   
     Где взять пассивку и как её перенести
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2_mehaniki/rabota/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Работа палов
   
 
     
@@ -2188,6 +2139,18 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -2211,7 +2174,337 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../ux/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧰 Помощники
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🧰 Помощники
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ux/uroven/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Что делать на моём уровне
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ux/stihii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Круг стихий
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ux/derevo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Дерево разведения
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ux/s-passivkami/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Вывести с пассивками
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ux/lovlya/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Шанс поимки
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ux/kraft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Из чего сделать
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ux/eda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Еда для цели
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ux/navyki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Навыки и плоды
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ux/patch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Что нового в 1.0.5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -2229,8 +2522,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2411,10 +2704,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -2432,8 +2725,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2555,80 +2848,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#модуль-дуги" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Модуль дуги
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#модуль-самонаведения" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Модуль самонаведения
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#модуль-слайдера" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Модуль слайдера
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#снайперский-модуль" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Снайперский модуль
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#снайперский-модуль-ii" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Снайперский модуль II
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#утяжеляющий-модуль" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Утяжеляющий модуль
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2714,26 +2933,10 @@
 
 
 
-<h1 id="модуль-для-сферы">Модуль для сферы</h1>
-<div class="pfl ifl" markdown="0"><input type="search" class="pfq" placeholder="Найти в разделе «Модуль для сферы»…" autocomplete="off"><span class="gcount pfn"></span></div>
+<h1 id="-модуль-для-сферы">🧩 Модуль для сферы</h1>
+<div class="pfl ifl" markdown="0"><input type="search" class="pfq" name="pp-items-q" placeholder="Найти: модуль для сферы" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"><span class="gcount pfn">найдено 6</span></div>
 
-<h2 id="модуль-дуги">Модуль дуги</h2>
-<div class="icard r1" data-n="модуль дуги curve module" markdown="0"><p class="idesc">При использовании сфера летит по дуге. Позволяет застать Палов врасплох и увеличивает силу захвата. Искривление траектории сферы +1 Увеличение силы захвата +2</p><div class="itiles"><div class="it"><span class="ii">💎</span><span class="il">Редкость</span><b>Необычный</b></div><div class="it"><span class="ii">⚖️</span><span class="il">Вес</span><b>1</b></div><div class="it"><span class="ii">💰</span><span class="il">Цена</span><b>14280</b></div><div class="it"><span class="ii">📘</span><span class="il">Технология</span><b>ур. 23</b></div></div><div class="isec"><span class="ish">🔨 Крафт</span><div class="ichips"><span class="ichip">Осколок палдиума <b>×30</b></span><span class="ichip">Металлический слиток <b>×30</b></span><span class="ichip">Камень <b>×50</b></span><span class="ichip">Деталь древней цивилизации <b>×2</b></span></div><small class="ist">Сферическая Мастерская Конвейерная фабрика сфер Конвейерная фабрика сфер II Сборочная линия сфер разв. цив. Древний верстак</small></div></div>
-
-<h2 id="модуль-самонаведения">Модуль самонаведения</h2>
-<div class="icard r4" data-n="модуль самонаведения homing module" markdown="0"><p class="idesc">При использовании сферы автоматически наводятся на Палов, а также увеличивается сила захвата. Самонаведение сферы Увеличение силы захвата +3</p><div class="itiles"><div class="it"><span class="ii">💎</span><span class="il">Редкость</span><b>Легендарный</b></div><div class="it"><span class="ii">⚖️</span><span class="il">Вес</span><b>1</b></div><div class="it"><span class="ii">💰</span><span class="il">Цена</span><b>1432580</b></div><div class="it"><span class="ii">📘</span><span class="il">Технология</span><b>ур. 69</b></div></div><div class="isec"><span class="ish">🔨 Крафт</span><div class="ichips"><span class="ichip">Соллайтовый слиток <b>×50</b></span><span class="ichip">Ядро ИИ <b>×3</b></span><span class="ichip">Деталь древней цивилизации <b>×40</b></span><span class="ichip">Осколок тьмы <b>×50</b></span><span class="ichip">Ядро древней цивилизации <b>×5</b></span></div><small class="ist">Древний верстак</small></div></div>
-
-<h2 id="модуль-слайдера">Модуль слайдера</h2>
-<div class="icard r2" data-n="модуль слайдера slider module" markdown="0"><p class="idesc">При использовании сфера приобретает скользящее вращение, сильно изгибается и позволяет застать Палов врасплох, увеличивая силу захвата. Отклонение траектории сферы Увеличение силы захвата +3</p><div class="itiles"><div class="it"><span class="ii">💎</span><span class="il">Редкость</span><b>Редкий</b></div><div class="it"><span class="ii">⚖️</span><span class="il">Вес</span><b>1</b></div><div class="it"><span class="ii">💰</span><span class="il">Цена</span><b>68350</b></div><div class="it"><span class="ii">📘</span><span class="il">Технология</span><b>ур. 39</b></div></div><div class="isec"><span class="ish">🔨 Крафт</span><div class="ichips"><span class="ichip">Осколок палдиума <b>×100</b></span><span class="ichip">Слиток рафинированного металла <b>×30</b></span><span class="ichip">Углеродное волокно <b>×15</b></span><span class="ichip">Едкий растворитель <b>×8</b></span><span class="ichip">Деталь древней цивилизации <b>×10</b></span></div><small class="ist">Сферическая Мастерская Конвейерная фабрика сфер Конвейерная фабрика сфер II Сборочная линия сфер разв. цив. Древний верстак</small></div></div>
-
-<h2 id="снайперский-модуль">Снайперский модуль</h2>
-<div class="icard r2" data-n="снайперский модуль sniper module" markdown="0"><p class="idesc">Увеличивает дальность броска сферы и шанс поимки Пала. Дальность полёта сферы +1 Увеличение силы захвата +2</p><div class="itiles"><div class="it"><span class="ii">💎</span><span class="il">Редкость</span><b>Редкий</b></div><div class="it"><span class="ii">⚖️</span><span class="il">Вес</span><b>1</b></div><div class="it"><span class="ii">💰</span><span class="il">Цена</span><b>31440</b></div><div class="it"><span class="ii">📘</span><span class="il">Технология</span><b>ур. 31</b></div></div><div class="isec"><span class="ish">🔨 Крафт</span><div class="ichips"><span class="ichip">Осколок палдиума <b>×50</b></span><span class="ichip">Металлический слиток <b>×50</b></span><span class="ichip">Цемент <b>×30</b></span><span class="ichip">Деталь древней цивилизации <b>×8</b></span></div><small class="ist">Сферическая Мастерская Конвейерная фабрика сфер Конвейерная фабрика сфер II Сборочная линия сфер разв. цив. Древний верстак</small></div></div>
-
-<h2 id="снайперский-модуль-ii">Снайперский модуль II</h2>
-<div class="icard r3" data-n="снайперский модуль ii sniper module ii" markdown="0"><p class="idesc">При использовании значительно увеличивает дальность полёта сфер, позволяет точнее поражать Палов и увеличивает силу захвата. Дальность полёта сферы +2 Увеличение силы захвата +3</p><div class="itiles"><div class="it"><span class="ii">💎</span><span class="il">Редкость</span><b>Эпический</b></div><div class="it"><span class="ii">⚖️</span><span class="il">Вес</span><b>1</b></div><div class="it"><span class="ii">💰</span><span class="il">Цена</span><b>120840</b></div><div class="it"><span class="ii">📘</span><span class="il">Технология</span><b>ур. 48</b></div></div><div class="isec"><span class="ish">🔨 Крафт</span><div class="ichips"><span class="ichip">Осколок палдиума <b>×200</b></span><span class="ichip">Слиток Пал-Металла <b>×30</b></span><span class="ichip">Углеродное волокно <b>×30</b></span><span class="ichip">Деталь древней цивилизации <b>×20</b></span><span class="ichip">Ядро древней цивилизации <b>×2</b></span></div><small class="ist">Сферическая Мастерская Конвейерная фабрика сфер Конвейерная фабрика сфер II Сборочная линия сфер разв. цив. Древний верстак</small></div></div>
-
-<h2 id="утяжеляющий-модуль">Утяжеляющий модуль</h2>
-<div class="icard r1" data-n="утяжеляющий модуль heavy weight module" markdown="0"><p class="idesc">При использовании утяжеляет сферу, что снижает дальность её полёта, но увеличивает силу захвата. Вес сфер +1 Увеличение силы захвата +1</p><div class="itiles"><div class="it"><span class="ii">💎</span><span class="il">Редкость</span><b>Необычный</b></div><div class="it"><span class="ii">⚖️</span><span class="il">Вес</span><b>1</b></div><div class="it"><span class="ii">💰</span><span class="il">Цена</span><b>4010</b></div><div class="it"><span class="ii">📘</span><span class="il">Технология</span><b>ур. 19</b></div></div><div class="isec"><span class="ish">🔨 Крафт</span><div class="ichips"><span class="ichip">Осколок палдиума <b>×10</b></span><span class="ichip">Металлический слиток <b>×10</b></span><span class="ichip">Камень <b>×20</b></span></div><small class="ist">Сферическая Мастерская Конвейерная фабрика сфер Конвейерная фабрика сфер II Сборочная линия сфер разв. цив. Древний верстак</small></div></div>
+<div class="items26" markdown="0"><div class="igrid"><details class="itm r1" id="модуль-дуги" data-n="модуль дуги" data-sub="Модули"><summary class="itl"><img class="iic" src="../../../pp/ic/curve-module-96.webp" srcset="../../../pp/ic/curve-module-96.webp 1x, ../../../pp/ic/curve-module-192.webp 2x" width="56" height="56" alt="Модуль дуги" loading="lazy" decoding="async"><span class="itn">Модуль дуги</span><small>⚖️ 1</small></summary><div class="ibody"><div class="ihead"><img class="ibig" src="../../../pp/ic/curve-module-96.webp" srcset="../../../pp/ic/curve-module-96.webp 1x, ../../../pp/ic/curve-module-192.webp 2x" width="96" height="96" alt="Модуль дуги" loading="lazy" decoding="async"><div><h3>Модуль дуги</h3><span class="rch r1">Необычный</span><p class="idesc">При использовании сфера летит по дуге.</p></div></div><div class="ichips"><span class="ieff">✨ Искривление траектории сферы +1</span><span class="ieff">✨ Увеличение силы захвата +2</span></div><div class="istats"><div class="ist"><span>⚖️</span><small>Вес</small><b>1</b></div><div class="ist"><span>💰</span><small>Цена</small><b>14280</b></div><div class="ist"><span>📘</span><small>Технология</small><b>ур. 23</b></div></div><div class="isec"><h4>🔨 Крафт</h4><div class="ichips"><a class="ich" href="../../../4_spravochniki/predmety/материалы/#осколок-палдиума"><img class="rim" src="../../../pp/ic/paldium-fragment-96.webp" srcset="../../../pp/ic/paldium-fragment-96.webp 1x, ../../../pp/ic/paldium-fragment-192.webp 2x" width="28" height="28" alt="Осколок палдиума" loading="lazy" decoding="async"><span>Осколок палдиума</span><b>×30</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#металлический-слиток"><img class="rim" src="../../../pp/ic/ingot-96.webp" srcset="../../../pp/ic/ingot-96.webp 1x, ../../../pp/ic/ingot-192.webp 2x" width="28" height="28" alt="Металлический слиток" loading="lazy" decoding="async"><span>Металлический слиток</span><b>×30</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#камень"><img class="rim" src="../../../pp/ic/stone-96.webp" srcset="../../../pp/ic/stone-96.webp 1x, ../../../pp/ic/stone-192.webp 2x" width="28" height="28" alt="Камень" loading="lazy" decoding="async"><span>Камень</span><b>×50</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#деталь-древней-цивилизации"><img class="rim" src="../../../pp/ic/ancient-civilization-parts-96.webp" srcset="../../../pp/ic/ancient-civilization-parts-96.webp 1x, ../../../pp/ic/ancient-civilization-parts-192.webp 2x" width="28" height="28" alt="Деталь древней цивилизации" loading="lazy" decoding="async"><span>Деталь древней цивилизации</span><b>×2</b></a></div><h5>Где сделать</h5><div class="ichips st"><a class="ich" href="../../../4_spravochniki/predmety/постройки/#сферическая-мастерская"><img class="rim" src="../../../pp/ic/sphere-workbench-96.webp" srcset="../../../pp/ic/sphere-workbench-96.webp 1x, ../../../pp/ic/sphere-workbench-192.webp 2x" width="28" height="28" alt="Сферическая Мастерская" loading="lazy" decoding="async"><span>Сферическая Мастерская</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#конвейерная-фабрика-сфер"><img class="rim" src="../../../pp/ic/sphere-assembly-line-96.webp" srcset="../../../pp/ic/sphere-assembly-line-96.webp 1x, ../../../pp/ic/sphere-assembly-line-192.webp 2x" width="28" height="28" alt="Конвейерная фабрика сфер" loading="lazy" decoding="async"><span>Конвейерная фабрика сфер</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#сборочная-линия-сфер-разв-цив"><img class="rim" src="../../../pp/ic/advanced-sphere-assembly-line-96.webp" srcset="../../../pp/ic/advanced-sphere-assembly-line-96.webp 1x, ../../../pp/ic/advanced-sphere-assembly-line-192.webp 2x" width="28" height="28" alt="Сборочная линия сфер разв. цив." loading="lazy" decoding="async"><span>Сборочная линия сфер разв. цив.</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#древний-верстак"><img class="rim" src="../../../pp/ic/ancient-workbench-96.webp" srcset="../../../pp/ic/ancient-workbench-96.webp 1x, ../../../pp/ic/ancient-workbench-192.webp 2x" width="28" height="28" alt="Древний верстак" loading="lazy" decoding="async"><span>Древний верстак</span></a></div></div><details class="igame"><summary>Из игры</summary><p>При использовании сфера летит по дуге. Позволяет застать Палов врасплох и увеличивает силу захвата.</p></details></div></details><details class="itm r1" id="утяжеляющий-модуль" data-n="утяжеляющий модуль" data-sub="Модули"><summary class="itl"><img class="iic" src="../../../pp/ic/heavy-weight-module-96.webp" srcset="../../../pp/ic/heavy-weight-module-96.webp 1x, ../../../pp/ic/heavy-weight-module-192.webp 2x" width="56" height="56" alt="Утяжеляющий модуль" loading="lazy" decoding="async"><span class="itn">Утяжеляющий модуль</span><small>⚖️ 1</small></summary><div class="ibody"><div class="ihead"><img class="ibig" src="../../../pp/ic/heavy-weight-module-96.webp" srcset="../../../pp/ic/heavy-weight-module-96.webp 1x, ../../../pp/ic/heavy-weight-module-192.webp 2x" width="96" height="96" alt="Утяжеляющий модуль" loading="lazy" decoding="async"><div><h3>Утяжеляющий модуль</h3><span class="rch r1">Необычный</span><p class="idesc">При использовании утяжеляет сферу, что снижает дальность её полёта, но увеличивает силу захвата.</p></div></div><div class="istats"><div class="ist"><span>⚖️</span><small>Вес</small><b>1</b></div><div class="ist"><span>💰</span><small>Цена</small><b>4010</b></div><div class="ist"><span>📘</span><small>Технология</small><b>ур. 19</b></div></div><div class="isec"><h4>🔨 Крафт</h4><div class="ichips"><a class="ich" href="../../../4_spravochniki/predmety/материалы/#осколок-палдиума"><img class="rim" src="../../../pp/ic/paldium-fragment-96.webp" srcset="../../../pp/ic/paldium-fragment-96.webp 1x, ../../../pp/ic/paldium-fragment-192.webp 2x" width="28" height="28" alt="Осколок палдиума" loading="lazy" decoding="async"><span>Осколок палдиума</span><b>×10</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#металлический-слиток"><img class="rim" src="../../../pp/ic/ingot-96.webp" srcset="../../../pp/ic/ingot-96.webp 1x, ../../../pp/ic/ingot-192.webp 2x" width="28" height="28" alt="Металлический слиток" loading="lazy" decoding="async"><span>Металлический слиток</span><b>×10</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#камень"><img class="rim" src="../../../pp/ic/stone-96.webp" srcset="../../../pp/ic/stone-96.webp 1x, ../../../pp/ic/stone-192.webp 2x" width="28" height="28" alt="Камень" loading="lazy" decoding="async"><span>Камень</span><b>×20</b></a></div><h5>Где сделать</h5><div class="ichips st"><a class="ich" href="../../../4_spravochniki/predmety/постройки/#сферическая-мастерская"><img class="rim" src="../../../pp/ic/sphere-workbench-96.webp" srcset="../../../pp/ic/sphere-workbench-96.webp 1x, ../../../pp/ic/sphere-workbench-192.webp 2x" width="28" height="28" alt="Сферическая Мастерская" loading="lazy" decoding="async"><span>Сферическая Мастерская</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#конвейерная-фабрика-сфер"><img class="rim" src="../../../pp/ic/sphere-assembly-line-96.webp" srcset="../../../pp/ic/sphere-assembly-line-96.webp 1x, ../../../pp/ic/sphere-assembly-line-192.webp 2x" width="28" height="28" alt="Конвейерная фабрика сфер" loading="lazy" decoding="async"><span>Конвейерная фабрика сфер</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#сборочная-линия-сфер-разв-цив"><img class="rim" src="../../../pp/ic/advanced-sphere-assembly-line-96.webp" srcset="../../../pp/ic/advanced-sphere-assembly-line-96.webp 1x, ../../../pp/ic/advanced-sphere-assembly-line-192.webp 2x" width="28" height="28" alt="Сборочная линия сфер разв. цив." loading="lazy" decoding="async"><span>Сборочная линия сфер разв. цив.</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#древний-верстак"><img class="rim" src="../../../pp/ic/ancient-workbench-96.webp" srcset="../../../pp/ic/ancient-workbench-96.webp 1x, ../../../pp/ic/ancient-workbench-192.webp 2x" width="28" height="28" alt="Древний верстак" loading="lazy" decoding="async"><span>Древний верстак</span></a></div></div><details class="igame"><summary>Из игры</summary><p>При использовании утяжеляет сферу, что снижает дальность её полёта, но увеличивает силу захвата. Вес сфер +1 Увеличение силы захвата +1</p></details></div></details><details class="itm r2" id="модуль-слайдера" data-n="модуль слайдера" data-sub="Модули"><summary class="itl"><img class="iic" src="../../../pp/ic/slider-module-96.webp" srcset="../../../pp/ic/slider-module-96.webp 1x, ../../../pp/ic/slider-module-192.webp 2x" width="56" height="56" alt="Модуль слайдера" loading="lazy" decoding="async"><span class="itn">Модуль слайдера</span><small>⚖️ 1</small></summary><div class="ibody"><div class="ihead"><img class="ibig" src="../../../pp/ic/slider-module-96.webp" srcset="../../../pp/ic/slider-module-96.webp 1x, ../../../pp/ic/slider-module-192.webp 2x" width="96" height="96" alt="Модуль слайдера" loading="lazy" decoding="async"><div><h3>Модуль слайдера</h3><span class="rch r2">Редкий</span><p class="idesc">При использовании сфера приобретает скользящее вращение, сильно изгибается и позволяет застать Палов врасплох, увеличивая силу захвата.</p></div></div><div class="ichips"><span class="ieff">✨ Отклонение траектории сферы</span><span class="ieff">✨ Увеличение силы захвата +3</span></div><div class="istats"><div class="ist"><span>⚖️</span><small>Вес</small><b>1</b></div><div class="ist"><span>💰</span><small>Цена</small><b>68350</b></div><div class="ist"><span>📘</span><small>Технология</small><b>ур. 39</b></div></div><div class="isec"><h4>🔨 Крафт</h4><div class="ichips"><a class="ich" href="../../../4_spravochniki/predmety/материалы/#осколок-палдиума"><img class="rim" src="../../../pp/ic/paldium-fragment-96.webp" srcset="../../../pp/ic/paldium-fragment-96.webp 1x, ../../../pp/ic/paldium-fragment-192.webp 2x" width="28" height="28" alt="Осколок палдиума" loading="lazy" decoding="async"><span>Осколок палдиума</span><b>×100</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#слиток-рафинированного-металла"><img class="rim" src="../../../pp/ic/refined-ingot-96.webp" srcset="../../../pp/ic/refined-ingot-96.webp 1x, ../../../pp/ic/refined-ingot-192.webp 2x" width="28" height="28" alt="Слиток рафинированного металла" loading="lazy" decoding="async"><span>Слиток рафинированного металла</span><b>×30</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#углеродное-волокно"><img class="rim" src="../../../pp/ic/carbon-fiber-96.webp" srcset="../../../pp/ic/carbon-fiber-96.webp 1x, ../../../pp/ic/carbon-fiber-192.webp 2x" width="28" height="28" alt="Углеродное волокно" loading="lazy" decoding="async"><span>Углеродное волокно</span><b>×15</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#едкий-растворитель"><img class="rim" src="../../../pp/ic/corrosive-solvent-96.webp" srcset="../../../pp/ic/corrosive-solvent-96.webp 1x, ../../../pp/ic/corrosive-solvent-192.webp 2x" width="28" height="28" alt="Едкий растворитель" loading="lazy" decoding="async"><span>Едкий растворитель</span><b>×8</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#деталь-древней-цивилизации"><img class="rim" src="../../../pp/ic/ancient-civilization-parts-96.webp" srcset="../../../pp/ic/ancient-civilization-parts-96.webp 1x, ../../../pp/ic/ancient-civilization-parts-192.webp 2x" width="28" height="28" alt="Деталь древней цивилизации" loading="lazy" decoding="async"><span>Деталь древней цивилизации</span><b>×10</b></a></div><h5>Где сделать</h5><div class="ichips st"><a class="ich" href="../../../4_spravochniki/predmety/постройки/#сферическая-мастерская"><img class="rim" src="../../../pp/ic/sphere-workbench-96.webp" srcset="../../../pp/ic/sphere-workbench-96.webp 1x, ../../../pp/ic/sphere-workbench-192.webp 2x" width="28" height="28" alt="Сферическая Мастерская" loading="lazy" decoding="async"><span>Сферическая Мастерская</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#конвейерная-фабрика-сфер"><img class="rim" src="../../../pp/ic/sphere-assembly-line-96.webp" srcset="../../../pp/ic/sphere-assembly-line-96.webp 1x, ../../../pp/ic/sphere-assembly-line-192.webp 2x" width="28" height="28" alt="Конвейерная фабрика сфер" loading="lazy" decoding="async"><span>Конвейерная фабрика сфер</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#сборочная-линия-сфер-разв-цив"><img class="rim" src="../../../pp/ic/advanced-sphere-assembly-line-96.webp" srcset="../../../pp/ic/advanced-sphere-assembly-line-96.webp 1x, ../../../pp/ic/advanced-sphere-assembly-line-192.webp 2x" width="28" height="28" alt="Сборочная линия сфер разв. цив." loading="lazy" decoding="async"><span>Сборочная линия сфер разв. цив.</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#древний-верстак"><img class="rim" src="../../../pp/ic/ancient-workbench-96.webp" srcset="../../../pp/ic/ancient-workbench-96.webp 1x, ../../../pp/ic/ancient-workbench-192.webp 2x" width="28" height="28" alt="Древний верстак" loading="lazy" decoding="async"><span>Древний верстак</span></a></div></div></div></details><details class="itm r2" id="снайперский-модуль" data-n="снайперский модуль" data-sub="Модули"><summary class="itl"><img class="iic" src="../../../pp/ic/sniper-module-96.webp" srcset="../../../pp/ic/sniper-module-96.webp 1x, ../../../pp/ic/sniper-module-192.webp 2x" width="56" height="56" alt="Снайперский модуль" loading="lazy" decoding="async"><span class="itn">Снайперский модуль</span><small>⚖️ 1</small></summary><div class="ibody"><div class="ihead"><img class="ibig" src="../../../pp/ic/sniper-module-96.webp" srcset="../../../pp/ic/sniper-module-96.webp 1x, ../../../pp/ic/sniper-module-192.webp 2x" width="96" height="96" alt="Снайперский модуль" loading="lazy" decoding="async"><div><h3>Снайперский модуль</h3><span class="rch r2">Редкий</span><p class="idesc">Увеличивает дальность броска сферы и шанс поимки Пала.</p></div></div><div class="istats"><div class="ist"><span>⚖️</span><small>Вес</small><b>1</b></div><div class="ist"><span>💰</span><small>Цена</small><b>31440</b></div><div class="ist"><span>📘</span><small>Технология</small><b>ур. 31</b></div></div><div class="isec"><h4>🔨 Крафт</h4><div class="ichips"><a class="ich" href="../../../4_spravochniki/predmety/материалы/#осколок-палдиума"><img class="rim" src="../../../pp/ic/paldium-fragment-96.webp" srcset="../../../pp/ic/paldium-fragment-96.webp 1x, ../../../pp/ic/paldium-fragment-192.webp 2x" width="28" height="28" alt="Осколок палдиума" loading="lazy" decoding="async"><span>Осколок палдиума</span><b>×50</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#металлический-слиток"><img class="rim" src="../../../pp/ic/ingot-96.webp" srcset="../../../pp/ic/ingot-96.webp 1x, ../../../pp/ic/ingot-192.webp 2x" width="28" height="28" alt="Металлический слиток" loading="lazy" decoding="async"><span>Металлический слиток</span><b>×50</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#цемент"><img class="rim" src="../../../pp/ic/cement-96.webp" srcset="../../../pp/ic/cement-96.webp 1x, ../../../pp/ic/cement-192.webp 2x" width="28" height="28" alt="Цемент" loading="lazy" decoding="async"><span>Цемент</span><b>×30</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#деталь-древней-цивилизации"><img class="rim" src="../../../pp/ic/ancient-civilization-parts-96.webp" srcset="../../../pp/ic/ancient-civilization-parts-96.webp 1x, ../../../pp/ic/ancient-civilization-parts-192.webp 2x" width="28" height="28" alt="Деталь древней цивилизации" loading="lazy" decoding="async"><span>Деталь древней цивилизации</span><b>×8</b></a></div><h5>Где сделать</h5><div class="ichips st"><a class="ich" href="../../../4_spravochniki/predmety/постройки/#сферическая-мастерская"><img class="rim" src="../../../pp/ic/sphere-workbench-96.webp" srcset="../../../pp/ic/sphere-workbench-96.webp 1x, ../../../pp/ic/sphere-workbench-192.webp 2x" width="28" height="28" alt="Сферическая Мастерская" loading="lazy" decoding="async"><span>Сферическая Мастерская</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#конвейерная-фабрика-сфер"><img class="rim" src="../../../pp/ic/sphere-assembly-line-96.webp" srcset="../../../pp/ic/sphere-assembly-line-96.webp 1x, ../../../pp/ic/sphere-assembly-line-192.webp 2x" width="28" height="28" alt="Конвейерная фабрика сфер" loading="lazy" decoding="async"><span>Конвейерная фабрика сфер</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#сборочная-линия-сфер-разв-цив"><img class="rim" src="../../../pp/ic/advanced-sphere-assembly-line-96.webp" srcset="../../../pp/ic/advanced-sphere-assembly-line-96.webp 1x, ../../../pp/ic/advanced-sphere-assembly-line-192.webp 2x" width="28" height="28" alt="Сборочная линия сфер разв. цив." loading="lazy" decoding="async"><span>Сборочная линия сфер разв. цив.</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#древний-верстак"><img class="rim" src="../../../pp/ic/ancient-workbench-96.webp" srcset="../../../pp/ic/ancient-workbench-96.webp 1x, ../../../pp/ic/ancient-workbench-192.webp 2x" width="28" height="28" alt="Древний верстак" loading="lazy" decoding="async"><span>Древний верстак</span></a></div></div><details class="igame"><summary>Из игры</summary><p>Увеличивает дальность броска сферы и шанс поимки Пала. Дальность полёта сферы +1 Увеличение силы захвата +2</p></details></div></details><details class="itm r3" id="снайперский-модуль-ii" data-n="снайперский модуль ii" data-sub="Модули"><summary class="itl"><img class="iic" src="../../../pp/ic/sniper-module-ii-96.webp" srcset="../../../pp/ic/sniper-module-ii-96.webp 1x, ../../../pp/ic/sniper-module-ii-192.webp 2x" width="56" height="56" alt="Снайперский модуль II" loading="lazy" decoding="async"><span class="itn">Снайперский модуль II</span><small>⚖️ 1</small></summary><div class="ibody"><div class="ihead"><img class="ibig" src="../../../pp/ic/sniper-module-ii-96.webp" srcset="../../../pp/ic/sniper-module-ii-96.webp 1x, ../../../pp/ic/sniper-module-ii-192.webp 2x" width="96" height="96" alt="Снайперский модуль II" loading="lazy" decoding="async"><div><h3>Снайперский модуль II</h3><span class="rch r3">Эпический</span><p class="idesc">При использовании значительно увеличивает дальность полёта сфер, позволяет точнее поражать Палов и увеличивает силу захвата.</p></div></div><div class="ichips"><span class="ieff">✨ Дальность полёта сферы +2</span><span class="ieff">✨ Увеличение силы захвата +3</span></div><div class="istats"><div class="ist"><span>⚖️</span><small>Вес</small><b>1</b></div><div class="ist"><span>💰</span><small>Цена</small><b>120840</b></div><div class="ist"><span>📘</span><small>Технология</small><b>ур. 48</b></div></div><div class="isec"><h4>🔨 Крафт</h4><div class="ichips"><a class="ich" href="../../../4_spravochniki/predmety/материалы/#осколок-палдиума"><img class="rim" src="../../../pp/ic/paldium-fragment-96.webp" srcset="../../../pp/ic/paldium-fragment-96.webp 1x, ../../../pp/ic/paldium-fragment-192.webp 2x" width="28" height="28" alt="Осколок палдиума" loading="lazy" decoding="async"><span>Осколок палдиума</span><b>×200</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#слиток-пал-металла"><img class="rim" src="../../../pp/ic/pal-metal-ingot-96.webp" srcset="../../../pp/ic/pal-metal-ingot-96.webp 1x, ../../../pp/ic/pal-metal-ingot-192.webp 2x" width="28" height="28" alt="Слиток Пал-Металла" loading="lazy" decoding="async"><span>Слиток Пал-Металла</span><b>×30</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#углеродное-волокно"><img class="rim" src="../../../pp/ic/carbon-fiber-96.webp" srcset="../../../pp/ic/carbon-fiber-96.webp 1x, ../../../pp/ic/carbon-fiber-192.webp 2x" width="28" height="28" alt="Углеродное волокно" loading="lazy" decoding="async"><span>Углеродное волокно</span><b>×30</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#деталь-древней-цивилизации"><img class="rim" src="../../../pp/ic/ancient-civilization-parts-96.webp" srcset="../../../pp/ic/ancient-civilization-parts-96.webp 1x, ../../../pp/ic/ancient-civilization-parts-192.webp 2x" width="28" height="28" alt="Деталь древней цивилизации" loading="lazy" decoding="async"><span>Деталь древней цивилизации</span><b>×20</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#ядро-древней-цивилизации"><img class="rim" src="../../../pp/ic/ancient-civilization-core-96.webp" srcset="../../../pp/ic/ancient-civilization-core-96.webp 1x, ../../../pp/ic/ancient-civilization-core-192.webp 2x" width="28" height="28" alt="Ядро древней цивилизации" loading="lazy" decoding="async"><span>Ядро древней цивилизации</span><b>×2</b></a></div><h5>Где сделать</h5><div class="ichips st"><a class="ich" href="../../../4_spravochniki/predmety/постройки/#сферическая-мастерская"><img class="rim" src="../../../pp/ic/sphere-workbench-96.webp" srcset="../../../pp/ic/sphere-workbench-96.webp 1x, ../../../pp/ic/sphere-workbench-192.webp 2x" width="28" height="28" alt="Сферическая Мастерская" loading="lazy" decoding="async"><span>Сферическая Мастерская</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#конвейерная-фабрика-сфер"><img class="rim" src="../../../pp/ic/sphere-assembly-line-96.webp" srcset="../../../pp/ic/sphere-assembly-line-96.webp 1x, ../../../pp/ic/sphere-assembly-line-192.webp 2x" width="28" height="28" alt="Конвейерная фабрика сфер" loading="lazy" decoding="async"><span>Конвейерная фабрика сфер</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#сборочная-линия-сфер-разв-цив"><img class="rim" src="../../../pp/ic/advanced-sphere-assembly-line-96.webp" srcset="../../../pp/ic/advanced-sphere-assembly-line-96.webp 1x, ../../../pp/ic/advanced-sphere-assembly-line-192.webp 2x" width="28" height="28" alt="Сборочная линия сфер разв. цив." loading="lazy" decoding="async"><span>Сборочная линия сфер разв. цив.</span></a><a class="ich" href="../../../4_spravochniki/predmety/постройки/#древний-верстак"><img class="rim" src="../../../pp/ic/ancient-workbench-96.webp" srcset="../../../pp/ic/ancient-workbench-96.webp 1x, ../../../pp/ic/ancient-workbench-192.webp 2x" width="28" height="28" alt="Древний верстак" loading="lazy" decoding="async"><span>Древний верстак</span></a></div></div></div></details><details class="itm r4" id="модуль-самонаведения" data-n="модуль самонаведения" data-sub="Модули"><summary class="itl"><img class="iic" src="../../../pp/ic/homing-module-96.webp" srcset="../../../pp/ic/homing-module-96.webp 1x, ../../../pp/ic/homing-module-192.webp 2x" width="56" height="56" alt="Модуль самонаведения" loading="lazy" decoding="async"><span class="itn">Модуль самонаведения</span><small>⚖️ 1</small></summary><div class="ibody"><div class="ihead"><img class="ibig" src="../../../pp/ic/homing-module-96.webp" srcset="../../../pp/ic/homing-module-96.webp 1x, ../../../pp/ic/homing-module-192.webp 2x" width="96" height="96" alt="Модуль самонаведения" loading="lazy" decoding="async"><div><h3>Модуль самонаведения</h3><span class="rch r4">Легендарный</span><p class="idesc">При использовании сферы автоматически наводятся на Палов, а также увеличивается сила захвата.</p></div></div><div class="ichips"><span class="ieff">✨ Самонаведение сферы</span><span class="ieff">✨ Увеличение силы захвата +3</span></div><div class="istats"><div class="ist"><span>⚖️</span><small>Вес</small><b>1</b></div><div class="ist"><span>💰</span><small>Цена</small><b>1432580</b></div><div class="ist"><span>📘</span><small>Технология</small><b>ур. 69</b></div></div><div class="isec"><h4>🔨 Крафт</h4><div class="ichips"><a class="ich" href="../../../4_spravochniki/predmety/материалы/#соллайтовый-слиток"><img class="rim" src="../../../pp/ic/soralite-ingot-96.webp" srcset="../../../pp/ic/soralite-ingot-96.webp 1x, ../../../pp/ic/soralite-ingot-192.webp 2x" width="28" height="28" alt="Соллайтовый слиток" loading="lazy" decoding="async"><span>Соллайтовый слиток</span><b>×50</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#ядро-ии"><img class="rim" src="../../../pp/ic/ai-core-96.webp" srcset="../../../pp/ic/ai-core-96.webp 1x, ../../../pp/ic/ai-core-192.webp 2x" width="28" height="28" alt="Ядро ИИ" loading="lazy" decoding="async"><span>Ядро ИИ</span><b>×3</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#деталь-древней-цивилизации"><img class="rim" src="../../../pp/ic/ancient-civilization-parts-96.webp" srcset="../../../pp/ic/ancient-civilization-parts-96.webp 1x, ../../../pp/ic/ancient-civilization-parts-192.webp 2x" width="28" height="28" alt="Деталь древней цивилизации" loading="lazy" decoding="async"><span>Деталь древней цивилизации</span><b>×40</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#осколок-тьмы"><img class="rim" src="../../../pp/ic/dark-fragment-96.webp" srcset="../../../pp/ic/dark-fragment-96.webp 1x, ../../../pp/ic/dark-fragment-192.webp 2x" width="28" height="28" alt="Осколок тьмы" loading="lazy" decoding="async"><span>Осколок тьмы</span><b>×50</b></a><a class="ich" href="../../../4_spravochniki/predmety/материалы/#ядро-древней-цивилизации"><img class="rim" src="../../../pp/ic/ancient-civilization-core-96.webp" srcset="../../../pp/ic/ancient-civilization-core-96.webp 1x, ../../../pp/ic/ancient-civilization-core-192.webp 2x" width="28" height="28" alt="Ядро древней цивилизации" loading="lazy" decoding="async"><span>Ядро древней цивилизации</span><b>×5</b></a></div><h5>Где сделать</h5><div class="ichips st"><a class="ich" href="../../../4_spravochniki/predmety/постройки/#древний-верстак"><img class="rim" src="../../../pp/ic/ancient-workbench-96.webp" srcset="../../../pp/ic/ancient-workbench-96.webp 1x, ../../../pp/ic/ancient-workbench-192.webp 2x" width="28" height="28" alt="Древний верстак" loading="lazy" decoding="async"><span>Древний верстак</span></a></div></div></div></details></div></div>
 
 
 
@@ -2813,17 +3016,27 @@
     
       <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../../../assets/smart.js?v=1792585876"></script>
+        <script src="../../../assets/smart.js?v=1792603107"></script>
       
-        <script src="../../../assets/site.js?v=1792585876"></script>
+        <script src="../../../assets/site.js?v=1792603107"></script>
       
-        <script src="../../../assets/features.js?v=1792585876"></script>
+        <script src="../../../assets/features.js?v=1792603107"></script>
       
-        <script src="../../../assets/ui2.js?v=1792585876"></script>
+        <script src="../../../assets/ui2.js?v=1792603107"></script>
       
-        <script src="../../../assets/ui3.js?v=1792585876"></script>
+        <script src="../../../assets/ui3.js?v=1792603107"></script>
       
-        <script src="../../../assets/ai.js?v=1792585876"></script>
+        <script src="../../../assets/ai.js?v=1792603107"></script>
+      
+        <script src="../../../assets/ux50.js?v=1792603153"></script>
+      
+        <script src="../../../assets/ux50ai.js?v=1792603153"></script>
+      
+        <script src="../../../assets/ux50m.js?v=1792603153"></script>
+      
+        <script src="../../../assets/ux50p.js?v=1792603153"></script>
+      
+        <script src="../../../assets/ux50t.js?v=1792603153"></script>
       
     
   </body>

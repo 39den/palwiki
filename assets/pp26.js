@@ -14,5 +14,26 @@
   if(document.getElementById('pwmap'))document.body.classList.add('pp-map');
   if(document.querySelector('.igrid,.icard'))document.body.classList.add('pp-items');
  };
- if(document.readyState=='loading')document.addEventListener('DOMContentLoaded',run);else run();
+ const ready=()=>document.documentElement.classList.add('pp-ready');const done=()=>{try{run()}finally{/* wait (<=900ms) for the ux50 breadcrumbs so they don't push content after first paint */const ux=document.querySelector('script[src*="assets/ux50.js"]');if(!ux)return ready();let n=0;const t=setInterval(()=>{if(document.querySelector('.ux-crumbs')||++n>18){clearInterval(t);requestAnimationFrame(ready)}},50)}};
+ if(document.readyState=='loading')document.addEventListener('DOMContentLoaded',done);else done();setTimeout(()=>document.documentElement.classList.add('pp-ready'),2500);
+})();
+/* items26: sub-category chips filter the tile grid (works together with the text filter) */
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('.isubs button');if(!b)return;const box=b.closest('.items26');box.querySelectorAll('.isubs button').forEach(x=>x.classList.toggle('on',x===b));const s=b.dataset.sub;box.querySelectorAll('.itm').forEach(d=>{d.classList.toggle('subx',!!s&&d.dataset.sub!==s)});const n=box.querySelectorAll('.itm:not(.subx)').length;const c=document.querySelector('.ifl .pfn');if(c)c.textContent='найдено '+n;});
+;(function(){var w=document.querySelector('.pkw');if(!w)return;var q=w.querySelector('.pk-q'),cs=w.querySelectorAll('.pk'),n=w.querySelector('.pk-n'),e=w.querySelector('.pk-empty'),g='',t={};
+function f(){var s=q.value.trim().toLowerCase(),k=0,tk=Object.keys(t);cs.forEach(function(c){var ok=(!g||c.dataset.g==g)&&(!s||c.dataset.q.indexOf(s)>=0)&&tk.every(function(x){return ('|'+c.dataset.t+'|').indexOf('|'+x+'|')>=0});c.hidden=!ok;if(ok)k++});n.textContent='Найдено: '+k;e.hidden=k>0}
+w.addEventListener('click',function(ev){var b=ev.target.closest('.pk-c');if(!b)return;if(b.hasAttribute('data-g')){g=b.dataset.g;w.querySelectorAll('.pk-c[data-g]').forEach(function(x){x.classList.toggle('on',x==b)})}else{var v=b.dataset.t;if(t[v])delete t[v];else t[v]=1;b.classList.toggle('on',!!t[v])}f()});
+q.addEventListener('input',f);f()})();
+;(function(){/* visible suggestions for datalist inputs (native datalist popups are unreliable on iOS) */
+function box(i){let b=i.__sg;if(!b){b=document.createElement('div');b.className='sg26';b.setAttribute('role','listbox');b.hidden=true;(i.closest('label,.fld,.inp')||i).after(b);i.__sg=b}return b}
+document.addEventListener('input',function(e){const i=e.target;if(!i.matches||!i.matches('input[data-dl],input[list]'))return;
+ if(i.hasAttribute('list')){i.dataset.dl=i.getAttribute('list');i.removeAttribute('list')}
+ const dl=document.getElementById(i.dataset.dl),v=i.value.trim().toLowerCase(),b=box(i);if(!dl)return;
+ const o=v?[...dl.options].map(x=>x.value).filter(x=>x.toLowerCase().includes(v)).sort((a,c)=>a.toLowerCase().indexOf(v)-c.toLowerCase().indexOf(v)).slice(0,6):[];
+ b.innerHTML='';o.forEach(x=>{const k=document.createElement('button');k.type='button';k.setAttribute('role','option');k.textContent=x;k.onclick=()=>{i.value=x;i.__picked=x;b.hidden=true;i.dispatchEvent(new Event('input',{bubbles:true}));i.dispatchEvent(new Event('change',{bubbles:true}));setTimeout(()=>{b.hidden=true},0)};b.appendChild(k)});
+ b.hidden=!o.length||i.__picked===i.value;},true);
+document.addEventListener('click',function(e){document.querySelectorAll('.sg26').forEach(b=>{if(!b.contains(e.target)&&b.previousElementSibling!==e.target)b.hidden=true})});
+/* «Мои списки»: create-list hint under #nl */
+document.addEventListener('input',function(e){const ni=e.target;if(ni.id!='nl')return;const nb=document.getElementById('nlb');if(!nb)return;let h=document.querySelector('.nl-hint');
+ if(!h){h=document.createElement('div');h.className='nl-hint';(ni.closest('.gal-filters')||ni).after(h)}const v=ni.value.trim();h.hidden=!v;h.innerHTML='';
+ if(v){const b=document.createElement('button');b.type='button';b.className='md-button';b.textContent='＋ Создать список «'+v.slice(0,40)+'»';b.onclick=()=>{nb.click();h.hidden=true};h.appendChild(b)}},true);
 })();
