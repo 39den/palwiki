@@ -53,7 +53,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/extra.css?v=1792517904">
+      <link rel="stylesheet" href="../../assets/extra.css?v=1792577783">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -2699,143 +2699,53 @@
 
 
 
-<h1 id="база-всё-о-строительстве-и-работе-палов">База: всё о строительстве и работе палов<a class="headerlink" href="#база-всё-о-строительстве-и-работе-палов" title="Permanent link">&para;</a></h1>
-<h2 id="палбокс--база">Палбокс = база<a class="headerlink" href="#палбокс--база" title="Permanent link">&para;</a></h2>
+<h1 id="база-всё-о-строительстве-и-работе-палов">База: всё о строительстве и работе палов</h1>
+<h2 id="палбокс--база">Палбокс = база</h2>
 <ul>
 <li>Поставь <strong>Палбокс</strong> (Контейнер для Палов). Вокруг появится круг — зона базы.</li>
 <li>Внутри круга палы работают. Снаружи — нет.</li>
-<li><strong>Уровень базы</strong> растёт заданиями базы (мини-миссии в Палбоксе): больше палов-работников и больше баз<span class="unv" title="Ещё перепроверяется">ⓘ</span>.</li>
-<li>Сервер по умолчанию: <strong>до 15 палов на базе</strong> (<code>BaseCampWorkerMaxNum=15</code>), <strong>до 3 баз</strong> на гильдию (<code>BaseCampMaxNumInGuild=4</code>?<span class="unv" title="Ещё перепроверяется">ⓘ</span>).</li>
+<li><strong>Уровень базы</strong> растёт заданиями базы (мини-миссии в Палбоксе): больше палов-работников и больше баз.</li>
+<li>Сервер по умолчанию: <strong>до 15 палов на базе</strong> (<code>BaseCampWorkerMaxNum=15</code>), <strong>до 3 баз</strong> на гильдию (<code>BaseCampMaxNumInGuild=4</code>?).</li>
 </ul>
-<h2 id="виды-работы-пригодности">Виды работы (пригодности)<a class="headerlink" href="#виды-работы-пригодности" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Работа</th>
-<th>Значок</th>
-<th>Кто делает</th>
-<th>Что даёт</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Разжигание огня (Kindling)</td>
-<td>🔥</td>
-<td>огненные</td>
-<td>Печи, кухня</td>
-</tr>
-<tr>
-<td>Полив (Watering)</td>
-<td>💧</td>
-<td>водные</td>
-<td>Грядки</td>
-</tr>
-<tr>
-<td>Посев семян (Planting)</td>
-<td>🌱</td>
-<td>травяные</td>
-<td>Грядки</td>
-</tr>
-<tr>
-<td>Генерация энергии (Generating Electricity)</td>
-<td>⚡</td>
-<td>молния</td>
-<td>Генератор</td>
-</tr>
-<tr>
-<td>Ручная работа (Handiwork)</td>
-<td>✋</td>
-<td>многие</td>
-<td>Крафт на станках, строительство</td>
-</tr>
-<tr>
-<td>Сбор (Gathering)</td>
-<td>🧺</td>
-<td></td>
-<td>Урожай, ягоды</td>
-</tr>
-<tr>
-<td>Рубка деревьев (Lumbering)</td>
-<td>🪓</td>
-<td></td>
-<td>Древесина, Лесопилка</td>
-</tr>
-<tr>
-<td>Добыча (Mining)</td>
-<td>⛏️</td>
-<td></td>
-<td>Камень, руда, карьер</td>
-</tr>
-<tr>
-<td>Фармацевтика (Medicine Production)</td>
-<td>💊</td>
-<td></td>
-<td>Лекарства</td>
-</tr>
-<tr>
-<td>Охлаждение (Cooling)</td>
-<td>❄️</td>
-<td>ледяные</td>
-<td>Холодильник</td>
-</tr>
-<tr>
-<td>Транспортировка (Transporting)</td>
-<td>📦</td>
-<td></td>
-<td>Носит вещи в сундуки</td>
-</tr>
-<tr>
-<td>Фермерство (Farming)</td>
-<td>🐄</td>
-<td></td>
-<td>Пастбище для скота: шерсть, яйца, молоко</td>
-</tr>
-<tr>
-<td>- Уровень пригодности — от 1 до 10. У видов от рождения бывает 1–8 (см. топ ниже). Поднимают: 4 звезды конденсации (+1 ко всем), пассивки <a class="psv r-3" data-psv="Ребёнок фермы" href="../../passivki/farmhand/">Ребёнок фермы</a> (+1)/<a class="psv r-4" data-psv="Хозяин фермы" href="../../passivki/ranch_master/">Хозяин фермы</a> (+2) для фермерства, партнёрские навыки (напр. Риббани +1 к ручной работе другим)<span class="unv" title="Ещё перепроверяется">ⓘ</span>.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>- Списки «кто лучше всех» — «Палы → По работе».</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="рассудок-и-усталость">Рассудок и усталость<a class="headerlink" href="#рассудок-и-усталость" title="Permanent link">&para;</a></h2>
+<h2 id="виды-работы-пригодности">Виды работы (пригодности)</h2>
+<div class="tcards" markdown="0"><div class="tcard"><div class="tc-t">Разжигание огня (Kindling)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">🔥</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">огненные</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Печи, кухня</span></div></div></div><div class="tcard"><div class="tc-t">Полив (Watering)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">💧</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">водные</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Грядки</span></div></div></div><div class="tcard"><div class="tc-t">Посев семян (Planting)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">🌱</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">травяные</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Грядки</span></div></div></div><div class="tcard"><div class="tc-t">Генерация энергии (Generating Electricity)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">⚡</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">молния</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Генератор</span></div></div></div><div class="tcard"><div class="tc-t">Ручная работа (Handiwork)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">✋</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">многие</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Крафт на станках, строительство</span></div></div></div><div class="tcard"><div class="tc-t">Сбор (Gathering)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">🧺</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Урожай, ягоды</span></div></div></div><div class="tcard"><div class="tc-t">Рубка деревьев (Lumbering)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">🪓</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Древесина, Лесопилка</span></div></div></div><div class="tcard"><div class="tc-t">Добыча (Mining)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">⛏️</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Камень, руда, карьер</span></div></div></div><div class="tcard"><div class="tc-t">Фармацевтика (Medicine Production)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">💊</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Лекарства</span></div></div></div><div class="tcard"><div class="tc-t">Охлаждение (Cooling)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">❄️</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">ледяные</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Холодильник</span></div></div></div><div class="tcard"><div class="tc-t">Транспортировка (Transporting)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">📦</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Носит вещи в сундуки</span></div></div></div><div class="tcard"><div class="tc-t">Фермерство (Farming)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">🐄</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Пастбище для скота: шерсть, яйца, молоко</span></div></div></div></div>
+
+<ul>
+<li>Уровень пригодности — от 1 до 10. У видов от рождения бывает 1–8 (см. топ ниже). Поднимают: конденсация (★1–★3 по +1 к трём лучшим работам, ★4 +1 ко всем), книги «Практическое …» (+1), пассивки <a class="psv r-3" data-psv="Ребёнок фермы" href="../../passivki/farmhand/">Ребёнок фермы</a> (+1)/<a class="psv r-4" data-psv="Хозяин фермы" href="../../passivki/ranch_master/">Хозяин фермы</a> (+2) для фермерства, партнёрские навыки (напр. Риббани +1 к ручной работе другим).</li>
+<li>Списки «кто лучше всех» — «Палы → По работе».</li>
+</ul>
+<h2 id="рассудок-и-усталость">Рассудок и усталость</h2>
 <ul>
 <li>У каждого пала шкала рассудка. Падает от работы и голода.</li>
 <li>Низкий рассудок → болезни, депрессия, работают медленнее, «бунтуют».</li>
 <li>Чини: <strong>Горячий источник</strong>, хорошие кровати, еда с бонусом, лекарства.</li>
 <li>Пассивки: Трудоголик, Непреклонный дух, Небожитель — рассудок падает медленнее.</li>
 </ul>
-<h2 id="еда">Еда<a class="headerlink" href="#еда" title="Permanent link">&para;</a></h2>
+<h2 id="еда">Еда</h2>
 <ul>
 <li><strong>Кормушка</strong> (Feed Box) — клади еду, палы едят сами.</li>
 <li>Еда портится! <strong>Холодильник</strong> + ледяной пал замедляют.</li>
 <li>Сколько ест пал — «Сколько ест» в карточке (100–600+).</li>
 </ul>
-<h2 id="постройки-главные">Постройки (главные)<a class="headerlink" href="#постройки-главные" title="Permanent link">&para;</a></h2>
+<h2 id="постройки-главные">Постройки (главные)</h2>
 <p>Полный список — «Справочник → Постройки».
 - Производство: Верстаки, Печи, Дробилка, Мельница, Кухня, Медицинский стол, Сферическая мастерская, Конвейерные фабрики.
-- Ресурсы: Лесопилка, Карьер, Рудник (металл, уголь, сера, кварц), Нефтекачка<span class="unv" title="Ещё перепроверяется">ⓘ</span>, Соллайтовый рудник (ур. 73).
+- Ресурсы: Лесопилка, Карьер, Рудник (металл, уголь, сера, кварц), Нефтекачка, Соллайтовый рудник (ур. 73).
 - Палы: Палбокс, кровати, Пастбище для скота, Пастбище свиданий, Инкубатор, Капсула с эссенцией, Монумент Силы, Операционный стол, Горячий источник.
 - Защита: стены, ворота, башни-турели, Вышка надзирателя.</p>
-<h2 id="налёты-рейды-на-базу">Налёты (рейды на базу)<a class="headerlink" href="#налёты-рейды-на-базу" title="Permanent link">&para;</a></h2>
+<h2 id="налёты-рейды-на-базу">Налёты (рейды на базу)</h2>
 <ul>
 <li>Иногда на базу нападают: браконьеры, Организация по Защите Палов, стаи диких палов, Тэнраку и т.д. Уровень налёта растёт с «грейдом» (1–80).</li>
 <li>Оставь на базе 2–3 сильных боевых пала, поставь стены и турели.</li>
 <li>Сервер: <code>bEnableInvaderEnemy=True</code> — налёты включены (по умолчанию).</li>
 <li>Полный список — «Справочник → Рейды и налёты».</li>
 </ul>
-<h2 id="несколько-баз-и-гильдия">Несколько баз и гильдия<a class="headerlink" href="#несколько-баз-и-гильдия" title="Permanent link">&para;</a></h2>
+<h2 id="несколько-баз-и-гильдия">Несколько баз и гильдия</h2>
 <ul>
 <li>Каждая база — отдельный Палбокс. Ресурсы между базами не делятся сами — носи или используй Глобальный Палбокс для палов.</li>
 <li>Гильдия: все игроки гильдии делят базы. На своём сервере удобно быть всем в одной гильдии.</li>
 </ul>
-<h2 id="лучшие-рабочие-по-каждой-работе-из-данных-игры-топ-8-по-уровню">Лучшие рабочие по каждой работе (из данных игры, топ-8 по уровню)<a class="headerlink" href="#лучшие-рабочие-по-каждой-работе-из-данных-игры-топ-8-по-уровню" title="Permanent link">&para;</a></h2>
+<h2 id="лучшие-рабочие-по-каждой-работе-из-данных-игры-топ-8-по-уровню">Лучшие рабочие по каждой работе (из данных игры, топ-8 по уровню)</h2>
 <ul>
 <li><strong>Ручная работа:</strong> Соленна 8, Селена 7, Вистелла 6, Сплаттерина 6, Немофи 6, Сехмет 6, Медуна 6, Фларакл 6</li>
 <li><strong>Транспортировка:</strong> Теранайт 7, Теранайт Игнис 7, Вумпо 6, Айдролон 6, Вумпо Ботан 6, Дуалит 6, Дуалит Нокт 6, Айдролон Игнис 6</li>
@@ -2925,15 +2835,15 @@
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../../assets/smart.js?v=1792517904"></script>
+        <script src="../../assets/smart.js?v=1792577783"></script>
       
-        <script src="../../assets/site.js?v=1792517904"></script>
+        <script src="../../assets/site.js?v=1792577783"></script>
       
-        <script src="../../assets/features.js?v=1792517904"></script>
+        <script src="../../assets/features.js?v=1792577783"></script>
       
-        <script src="../../assets/ui2.js?v=1792517904"></script>
+        <script src="../../assets/ui2.js?v=1792577783"></script>
       
-        <script src="../../assets/ui3.js?v=1792517904"></script>
+        <script src="../../assets/ui3.js?v=1792577783"></script>
       
     
   </body>

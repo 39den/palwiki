@@ -53,7 +53,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/extra.css?v=1792517904">
+      <link rel="stylesheet" href="../../assets/extra.css?v=1792577783">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -2699,81 +2699,54 @@
 
 
 
-<h1 id="разведение">Разведение<a class="headerlink" href="#разведение" title="Permanent link">&para;</a></h1>
-<h2 id="что-нужно">Что нужно<a class="headerlink" href="#что-нужно" title="Permanent link">&para;</a></h2>
+<h1 id="разведение">Разведение</h1>
+<h2 id="что-нужно">Что нужно</h2>
 <ol>
 <li><strong>Пастбище свиданий</strong> (Breeding Farm, «Племенная ферма для Палов») — постройка на базе.</li>
 <li>Два пала <strong>разного пола</strong> (♂ и ♀). Пол видно в карточке пала.</li>
 <li><strong>Торт</strong> (Cake) в сундуке у пастбища. Без торта яйца не появляются. 1 торт = 1 яйцо.</li>
 <li><strong>Инкубатор</strong> — чтобы вылупить яйцо.</li>
 </ol>
-<h2 id="как-сделать-по-шагам">Как сделать (по шагам)<a class="headerlink" href="#как-сделать-по-шагам" title="Permanent link">&para;</a></h2>
+<h2 id="как-сделать-по-шагам">Как сделать (по шагам)</h2>
 <ol>
 <li>Построй Пастбище свиданий.</li>
 <li>Назначь туда двух палов (возьми пала и брось на пастбище, или через Палбокс).</li>
 <li>Положи торт в ящик пастбища.</li>
 <li>Подожди — появится яйцо. Забери его.</li>
-<li>Положи яйцо в Инкубатор. Жди (время зависит от размера яйца и настроек сервера; в новых мирах 1.0 время вылупления вдвое меньше<span class="unv" title="Ещё перепроверяется">ⓘ</span>).</li>
+<li>Положи яйцо в Инкубатор. Жди (время зависит от размера яйца и настроек сервера; в новых мирах 1.0 время вылупления вдвое меньше).</li>
 <li>Готово: малыш ур. 1.</li>
 </ol>
-<h2 id="кто-получится-формула">Кто получится (формула)<a class="headerlink" href="#кто-получится-формула" title="Permanent link">&para;</a></h2>
+<h2 id="кто-получится-формула">Кто получится (формула)</h2>
 <ul>
 <li>У каждого пала есть скрытое число <strong>ранг разведения</strong> (CombiRank, есть в карточке пала).</li>
 <li>Ребёнок = пал, чей ранг ближе всего к <strong>(ранг папы + ранг мамы + 1) / 2</strong> (округление вниз).</li>
 <li>Исключения:</li>
 <li>Пал + пал того же вида = тот же вид.</li>
 <li><strong>Особые комбинации</strong> (уникальные) — список: «Палы → Особые комбинации». Например, Варианты стихий (Ignis, Cryst, Noct, Lux…) получаются из конкретной пары.</li>
-<li>Некоторых палов развести нельзя совсем (рейд-боссы, Зенара/Астралим и т.п.)<span class="unv" title="Ещё перепроверяется">ⓘ</span>.</li>
+<li>Некоторых палов развести нельзя совсем (рейд-боссы, Зенара/Астралим и т.п.).</li>
 <li>Пол и порядок родителей НЕ важны.
 cc/ru/Breed или Pal Calc.</li>
 </ul>
-<h2 id="что-наследуется">Что наследуется<a class="headerlink" href="#что-наследуется" title="Permanent link">&para;</a></h2>
+<h2 id="что-наследуется">Что наследуется</h2>
 <ul>
 <li><strong>Пассивки</strong>: малыш берёт случайно 0–4 пассивки из пассивок родителей + шанс на случайную новую. Чем меньше «лишних» пассивок у родителей, тем выше шанс получить нужные.</li>
-<li><strong>Скрытые таланты (IV)</strong>: частично от родителей<span class="unv" title="Ещё перепроверяется">ⓘ</span>.</li>
+<li><strong>Скрытые таланты (IV)</strong>: частично от родителей.</li>
 <li><strong>Активные навыки</strong> — нет (малыш учит свои по уровням; книги навыков/Плоды навыков дают остальное).</li>
 </ul>
-<h2 id="торты">Торты<a class="headerlink" href="#торты" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Торт</th>
-<th>Что делает</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Торт (Cake)</td>
-<td>Обычное яйцо</td>
-</tr>
-<tr>
-<td>Овощной торт</td>
-<td>Два яйца сразу (по описанию в игре)</td>
-</tr>
-<tr>
-<td>Роскошный овощной торт</td>
-<td>Выше шанс мутации и лучше статы</td>
-</tr>
-<tr>
-<td>Специальный торт (ур. 74)</td>
-<td>Выше шанс унаследовать много пассивок, до 6 передаётся<span class="unv" title="Ещё перепроверяется">ⓘ</span></td>
-</tr>
-<tr>
-<td>Рецепты — «Предметы → Ингредиент/Расходник».</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="пассивки-ускоряющие-ферму">Пассивки, ускоряющие ферму<a class="headerlink" href="#пассивки-ускоряющие-ферму" title="Permanent link">&para;</a></h2>
+<h2 id="торты">Торты</h2>
+<div class="kvs" markdown="0"><div class="kv"><span class="kv-l">Торт (Cake)</span><span class="kv-v">Обычное яйцо</span></div><div class="kv"><span class="kv-l">Овощной торт</span><span class="kv-v">Два яйца сразу (по описанию в игре)</span></div><div class="kv"><span class="kv-l">Роскошный овощной торт</span><span class="kv-v">Выше шанс мутации и лучше статы</span></div><div class="kv"><span class="kv-l">Специальный торт (ур. 74)</span><span class="kv-v">Выше шанс унаследовать много пассивок, до 6 передаётся</span></div></div>
+
+<p>Рецепты — «Предметы → Ингредиент/Расходник».</p>
+<h2 id="пассивки-ускоряющие-ферму">Пассивки, ускоряющие ферму</h2>
 <ul>
 <li><a class="psv r-3" data-psv="Филантроп" href="../../passivki/philanthropist/">Филантроп</a> — яйца на ферме в 2 раза быстрее (+100%).</li>
 <li><a class="psv r-4" data-psv="Нянька" href="../../passivki/babysitter/">Нянька</a> (мутация) — +30% к скорости яиц и вылупления, пока пал на базе.</li>
 </ul>
-<h2 id="мутации">Мутации<a class="headerlink" href="#мутации" title="Permanent link">&para;</a></h2>
+<h2 id="мутации">Мутации</h2>
 <ul>
 <li>Подробно — глава «Усиление палов → Мутации».</li>
 </ul>
-<h2 id="совет-если-играешь-палами">Совет «Если играешь палами»<a class="headerlink" href="#совет-если-играешь-палами" title="Permanent link">&para;</a></h2>
+<h2 id="совет-если-играешь-палами">Совет «Если играешь палами»</h2>
 <ul>
 <li>Выводи бойцу: Легенда + Демон-бог + Хладнокровный + Бессмертие (или Свирепый/Мистер мускул на бюджете).</li>
 <li>Делай «чистых» родителей: у каждого только нужные пассивки.</li>
@@ -2852,15 +2825,15 @@ cc/ru/Breed или Pal Calc.</li>
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../../assets/smart.js?v=1792517904"></script>
+        <script src="../../assets/smart.js?v=1792577783"></script>
       
-        <script src="../../assets/site.js?v=1792517904"></script>
+        <script src="../../assets/site.js?v=1792577783"></script>
       
-        <script src="../../assets/features.js?v=1792517904"></script>
+        <script src="../../assets/features.js?v=1792577783"></script>
       
-        <script src="../../assets/ui2.js?v=1792517904"></script>
+        <script src="../../assets/ui2.js?v=1792577783"></script>
       
-        <script src="../../assets/ui3.js?v=1792517904"></script>
+        <script src="../../assets/ui3.js?v=1792577783"></script>
       
     
   </body>

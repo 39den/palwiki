@@ -53,7 +53,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/extra.css?v=1792517904">
+      <link rel="stylesheet" href="../../assets/extra.css?v=1792577783">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -2633,8 +2633,8 @@
 
 
 
-<h1 id="свой-сервер-и-игра-с-друзьями">Свой сервер и игра с друзьями<a class="headerlink" href="#свой-сервер-и-игра-с-друзьями" title="Permanent link">&para;</a></h1>
-<h2 id="где-файлы-выделенный-сервер-steam-palworld-dedicated-server">Где файлы (выделенный сервер, Steam «Palworld Dedicated Server»)<a class="headerlink" href="#где-файлы-выделенный-сервер-steam-palworld-dedicated-server" title="Permanent link">&para;</a></h2>
+<h1 id="свой-сервер-и-игра-с-друзьями">Свой сервер и игра с друзьями</h1>
+<h2 id="где-файлы-выделенный-сервер-steam-palworld-dedicated-server">Где файлы (выделенный сервер, Steam «Palworld Dedicated Server»)</h2>
 <ul>
 <li>Настройки: <code>PalServer/Pal/Saved/Config/WindowsServer/PalWorldSettings.ini</code> (на Linux — <code>LinuxServer</code>).</li>
 <li>Если файл пустой — скопируй содержимое <code>PalServer/DefaultPalWorldSettings.ini</code>.</li>
@@ -2642,152 +2642,17 @@
 <li>Авто-бэкапы (если включено <code>bIsUseBackupSaveData=True</code>): там же в папке <code>backup</code>.</li>
 <li><strong>Перед любыми изменениями</strong> (сброс статов, обновление игры, моды) — копируй папку <code>SaveGames</code> целиком.</li>
 </ul>
-<h2 id="порты">Порты<a class="headerlink" href="#порты" title="Permanent link">&para;</a></h2>
+<h2 id="порты">Порты</h2>
 <ul>
 <li>Игра: <strong>UDP 8211</strong> (<code>PublicPort</code>). Открыть на роутере/фаерволе.</li>
 <li>RCON: TCP 25575 (<code>RCONPort</code>, если <code>RCONEnabled=True</code>).</li>
 <li>REST API: 8212 (<code>RESTAPIPort</code>).</li>
 </ul>
-<h2 id="что-значат-главные-настройки-значения-по-умолчанию--10--обычно">Что значат главные настройки (значения «по умолчанию» = 1.0 — обычно)<a class="headerlink" href="#что-значат-главные-настройки-значения-по-умолчанию--10--обычно" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Настройка</th>
-<th>Что делает</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Difficulty</td>
-<td>Сложность (—/Normal/Hard)</td>
-</tr>
-<tr>
-<td>DayTimeSpeedRate / NightTimeSpeedRate</td>
-<td>Скорость дня/ночи</td>
-</tr>
-<tr>
-<td>ExpRate</td>
-<td>Множитель опыта</td>
-</tr>
-<tr>
-<td>PalCaptureRate</td>
-<td>Множитель шанса поимки</td>
-</tr>
-<tr>
-<td>PalSpawnNumRate</td>
-<td>Сколько палов в мире</td>
-</tr>
-<tr>
-<td>PalDamageRateAttack / PalDamageRateDefense</td>
-<td>Урон палов / получаемый палами урон</td>
-</tr>
-<tr>
-<td>PlayerDamageRateAttack / PlayerDamageRateDefense</td>
-<td>То же для игрока</td>
-</tr>
-<tr>
-<td>PlayerStomachDecreaceRate / PalStomachDecreaceRate</td>
-<td>Как быстро голодают</td>
-</tr>
-<tr>
-<td>PlayerStaminaDecreaceRate / PalStaminaDecreaceRate</td>
-<td>Расход выносливости</td>
-</tr>
-<tr>
-<td>PlayerAutoHPRegeneRate / PalAutoHPRegeneRate</td>
-<td>Самолечение</td>
-</tr>
-<tr>
-<td>BuildObjectDamageRate</td>
-<td>Урон по постройкам</td>
-</tr>
-<tr>
-<td>BuildObjectDeteriorationDamageRate</td>
-<td>Износ построек</td>
-</tr>
-<tr>
-<td>CollectionDropRate</td>
-<td>Сколько дают деревья/камни</td>
-</tr>
-<tr>
-<td>CollectionObjectHpRate</td>
-<td>«Прочность» деревьев/камней</td>
-</tr>
-<tr>
-<td>CollectionObjectRespawnSpeedRate</td>
-<td>Как быстро вырастают обратно</td>
-</tr>
-<tr>
-<td>EnemyDropItemRate</td>
-<td>Множитель дропа с врагов</td>
-</tr>
-<tr>
-<td>DeathPenalty</td>
-<td>Что теряешь при смерти: — / Item / ItemAndEquipment / All</td>
-</tr>
-<tr>
-<td>bEnableInvaderEnemy</td>
-<td>Налёты на базу</td>
-</tr>
-<tr>
-<td>bEnableFriendlyFire</td>
-<td>Урон по своим</td>
-</tr>
-<tr>
-<td>PalEggDefaultHatchingTime</td>
-<td>Время вылупления (часы)</td>
-</tr>
-<tr>
-<td>WorkSpeedRate</td>
-<td>Скорость работы</td>
-</tr>
-<tr>
-<td>BaseCampMaxNum / BaseCampMaxNumInGuild</td>
-<td>Лимит баз</td>
-</tr>
-<tr>
-<td>BaseCampWorkerMaxNum</td>
-<td>Палов-работников на базе (по умолчанию 15)</td>
-</tr>
-<tr>
-<td>GuildPlayerMaxNum</td>
-<td>Игроков в гильдии</td>
-</tr>
-<tr>
-<td>DropItemMaxNum</td>
-<td>Сколько предметов лежит на земле</td>
-</tr>
-<tr>
-<td>SupplyDropSpan</td>
-<td>Как часто ящики снабжения</td>
-</tr>
-<tr>
-<td>ServerPlayerMaxNum</td>
-<td>Макс. игроков</td>
-</tr>
-<tr>
-<td>ServerPassword / AdminPassword</td>
-<td>Пароли</td>
-</tr>
-<tr>
-<td>bIsUseBackupSaveData</td>
-<td>Авто-бэкапы</td>
-</tr>
-<tr>
-<td>AutoSaveSpan</td>
-<td>Как часто автосейв (сек)</td>
-</tr>
-<tr>
-<td>Ограничение построек на игрока (новое в 1.0.4)</td>
-<td>Лимит построек [имя ключа — проверить]</td>
-</tr>
-<tr>
-<td>Точные значения по умолчанию — в <code>DefaultPalWorldSettings.ini</code> твоей версии<span class="unv" title="Ещё перепроверяется">ⓘ</span>.</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="админ-команды-в-чате">Админ-команды (в чате)<a class="headerlink" href="#админ-команды-в-чате" title="Permanent link">&para;</a></h2>
+<h2 id="что-значат-главные-настройки-значения-по-умолчанию--10--обычно">Что значат главные настройки (значения «по умолчанию» = 1.0 — обычно)</h2>
+<div class="kvs" markdown="0"><div class="kv"><span class="kv-l">Difficulty</span><span class="kv-v">Сложность (—/Normal/Hard)</span></div><div class="kv"><span class="kv-l">DayTimeSpeedRate / NightTimeSpeedRate</span><span class="kv-v">Скорость дня/ночи</span></div><div class="kv"><span class="kv-l">ExpRate</span><span class="kv-v">Множитель опыта</span></div><div class="kv"><span class="kv-l">PalCaptureRate</span><span class="kv-v">Множитель шанса поимки</span></div><div class="kv"><span class="kv-l">PalSpawnNumRate</span><span class="kv-v">Сколько палов в мире</span></div><div class="kv"><span class="kv-l">PalDamageRateAttack / PalDamageRateDefense</span><span class="kv-v">Урон палов / получаемый палами урон</span></div><div class="kv"><span class="kv-l">PlayerDamageRateAttack / PlayerDamageRateDefense</span><span class="kv-v">То же для игрока</span></div><div class="kv"><span class="kv-l">PlayerStomachDecreaceRate / PalStomachDecreaceRate</span><span class="kv-v">Как быстро голодают</span></div><div class="kv"><span class="kv-l">PlayerStaminaDecreaceRate / PalStaminaDecreaceRate</span><span class="kv-v">Расход выносливости</span></div><div class="kv"><span class="kv-l">PlayerAutoHPRegeneRate / PalAutoHPRegeneRate</span><span class="kv-v">Самолечение</span></div><div class="kv"><span class="kv-l">BuildObjectDamageRate</span><span class="kv-v">Урон по постройкам</span></div><div class="kv"><span class="kv-l">BuildObjectDeteriorationDamageRate</span><span class="kv-v">Износ построек</span></div><div class="kv"><span class="kv-l">CollectionDropRate</span><span class="kv-v">Сколько дают деревья/камни</span></div><div class="kv"><span class="kv-l">CollectionObjectHpRate</span><span class="kv-v">«Прочность» деревьев/камней</span></div><div class="kv"><span class="kv-l">CollectionObjectRespawnSpeedRate</span><span class="kv-v">Как быстро вырастают обратно</span></div><div class="kv"><span class="kv-l">EnemyDropItemRate</span><span class="kv-v">Множитель дропа с врагов</span></div><div class="kv"><span class="kv-l">DeathPenalty</span><span class="kv-v">Что теряешь при смерти: — / Item / ItemAndEquipment / All</span></div><div class="kv"><span class="kv-l">bEnableInvaderEnemy</span><span class="kv-v">Налёты на базу</span></div><div class="kv"><span class="kv-l">bEnableFriendlyFire</span><span class="kv-v">Урон по своим</span></div><div class="kv"><span class="kv-l">PalEggDefaultHatchingTime</span><span class="kv-v">Время вылупления (часы)</span></div><div class="kv"><span class="kv-l">WorkSpeedRate</span><span class="kv-v">Скорость работы</span></div><div class="kv"><span class="kv-l">BaseCampMaxNum / BaseCampMaxNumInGuild</span><span class="kv-v">Лимит баз</span></div><div class="kv"><span class="kv-l">BaseCampWorkerMaxNum</span><span class="kv-v">Палов-работников на базе (по умолчанию 15)</span></div><div class="kv"><span class="kv-l">GuildPlayerMaxNum</span><span class="kv-v">Игроков в гильдии</span></div><div class="kv"><span class="kv-l">DropItemMaxNum</span><span class="kv-v">Сколько предметов лежит на земле</span></div><div class="kv"><span class="kv-l">SupplyDropSpan</span><span class="kv-v">Как часто ящики снабжения</span></div><div class="kv"><span class="kv-l">ServerPlayerMaxNum</span><span class="kv-v">Макс. игроков</span></div><div class="kv"><span class="kv-l">ServerPassword / AdminPassword</span><span class="kv-v">Пароли</span></div><div class="kv"><span class="kv-l">bIsUseBackupSaveData</span><span class="kv-v">Авто-бэкапы</span></div><div class="kv"><span class="kv-l">AutoSaveSpan</span><span class="kv-v">Как часто автосейв (сек)</span></div><div class="kv"><span class="kv-l">Ограничение построек на игрока (новое в 1.0.4)</span><span class="kv-v">Лимит построек [имя ключа — проверить]</span></div></div>
+
+<p>Точные значения по умолчанию — в <code>DefaultPalWorldSettings.ini</code> твоей версии.</p>
+<h2 id="админ-команды-в-чате">Админ-команды (в чате)</h2>
 <ol>
 <li>Сначала: <code>/AdminPassword &lt;пароль&gt;</code>.</li>
 <li><code>/ShowPlayers</code> — кто в игре (ID).</li>
@@ -2798,12 +2663,12 @@
 <li><code>/TeleportToPlayer &lt;ID&gt;</code> · <code>/TeleportToMe &lt;ID&gt;</code>.</li>
 <li><code>/Shutdown &lt;сек&gt; &lt;текст&gt;</code> — выключить с таймером · <code>/DoExit</code> — выключить сразу.</li>
 </ol>
-<h2 id="кооп-как-играть-вчетвером-удобно">Кооп: как играть вчетвером удобно<a class="headerlink" href="#кооп-как-играть-вчетвером-удобно" title="Permanent link">&para;</a></h2>
+<h2 id="кооп-как-играть-вчетвером-удобно">Кооп: как играть вчетвером удобно</h2>
 <ul>
 <li>Все в <strong>одной гильдии</strong> → общие базы и палы на базе.</li>
 <li>Технологии каждый учит <strong>сам</strong> (очки у каждого свои).</li>
 <li>Сундуки базы общие для гильдии.</li>
-<li>Боссы башен: опыт/награда всем, кто рядом<span class="unv" title="Ещё перепроверяется">ⓘ</span>.</li>
+<li>Боссы башен: опыт/награда всем, кто рядом.</li>
 <li>Пропала связь/«version mismatch» — у всех и у сервера должна быть одна версия (в 1.0.4 ошибка показывает версию сервера).</li>
 </ul>
 
@@ -2880,15 +2745,15 @@
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../../assets/smart.js?v=1792517904"></script>
+        <script src="../../assets/smart.js?v=1792577783"></script>
       
-        <script src="../../assets/site.js?v=1792517904"></script>
+        <script src="../../assets/site.js?v=1792577783"></script>
       
-        <script src="../../assets/features.js?v=1792517904"></script>
+        <script src="../../assets/features.js?v=1792577783"></script>
       
-        <script src="../../assets/ui2.js?v=1792517904"></script>
+        <script src="../../assets/ui2.js?v=1792577783"></script>
       
-        <script src="../../assets/ui3.js?v=1792517904"></script>
+        <script src="../../assets/ui3.js?v=1792577783"></script>
       
     
   </body>
