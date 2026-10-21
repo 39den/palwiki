@@ -774,7 +774,7 @@ if os.path.exists(_ef):
       href=f'../../4_spravochniki/predmety/{(it.get("type") or "Прочее").lower().replace(" ","_")}/#{_ipg.SLUG(nm,"-")}' if it else ''
       ing+=(f'<a class="fg" href="{href}" title="{esc_h(nm)}" aria-label="{esc_h(nm)} ×{esc_h(x["qty"])}"{" data-more=1" if n>=4 else ""}>{body}</a>' if href else f'<span class="fg" title="{esc_h(nm)}"{" data-more=1" if n>=4 else ""}>{body}</span>')
     if len(rec)>4:ing+=f'<span class="fg more">+{len(rec)-4}</span>'
-    t1=f'<div class="ft1"><div><span class="ii">🍖</span><span class="il">Сытость</span><b>{d["f"]}</b></div><div><span class="ii">⏱</span><span class="il">Действует</span><b>{esc_h(d["d"] or "—")}</b></div></div>'
+    t1=f'<div class="ft1"><div><span class="ii">🍖</span><span class="il">Сытость</span><b>{d["f"]}</b></div><div><span class="ii">⏱</span><span class="il">Действует</span><b>{esc_h(d["d"] or "—")}</b></div>{f'<div class="fsan"><span class="ii">🧠</span><span class="il">Рассудок</span><b>+{_icf["sanity"]}</b></div>' if (_icf.get("sanity") or 0)>0 else ""}{f'<div class="fhp"><span class="ii">❤️</span><span class="il">Здоровье</span><b>+{_icf["hp"]}</b></div>' if (_icf.get("hp") or 0)>0 else ""}</div>'
     t2=f'<div class="ft2"><span class="il">Из чего</span><div class="fgs">{ing}</div></div>' if ing else '<div class="ft2"><span class="il">Из чего</span><span class="fnone">рецепта нет</span></div>'
     return f'<div class="fcard f2" data-n="{esc_h(d["n"].lower())}" data-e="{efs}" data-s="{st}" data-f="{d["f"]}"><div class="fh">{img}<b>{esc_h(d["n"])}</b></div><div class="fbs">{bc or "<span class=fk>без баффа</span>"}</div><div class="ftl">{t1}{t2}</div><div class="fks">{kc}</div></div>'
   if os.environ.get('ITEMS26')=='1':_card=_card2
