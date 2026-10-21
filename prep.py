@@ -202,7 +202,7 @@ def clean(t,html=True):
   t=re.sub(r'\{[A-Za-z_ ]+\}','',t)
   t=re.sub(r'\b(?:CharacterSpawnItem|EnemyCamp_)\w*','',t)
   t=re.sub(r'DamageUpIfEquipped_Yakushima(Melee|Magic|Ranged|Summon)Weapon',lambda m:'Урон с оружием Якусимы ('+{'Melee':'ближний бой','Magic':'магия','Ranged':'дальний бой','Summon':'призыв'}[m.group(1)]+')',t)
-  t=re.sub(r'(?<![\w/.-])[A-Z][A-Za-z0-9]*_[A-Za-z0-9_]+(?![\w/.-])','',t)
+  t=re.sub(r'(?<![\w/.="-])[A-Z][A-Za-z0-9]*_[A-Za-z0-9_]+(?![\w/.-])','',t)
   t=re.sub(r'(?<![\w-])(None|nan|null)(?![\w-])','—',t)
   t=re.sub(r'(?<![/\w])\w+\.(json|py)\b','',t)
   t=re.sub(r'\(\s*[,;·]?\s*\)','',t);t=re.sub(r'(,\s*){2,}',', ',t);t=re.sub(r'[ \t]*·[ \t]*(?=·)','',t)
@@ -632,13 +632,14 @@ for _i,_b in enumerate(BJS):
 def _lv(x):
   try:return int(str(x).split('–')[0])
   except:return 0
+_BEN={p['ru']:p['en'] for p in pals}
 open(D+'/boss/index.md','w').write('''---
 hide: [toc]
 ---
 # 👑 Боссы
 
 <div class="gal-filters" id="bfl" markdown="0"><input id="bq2" type="text" placeholder="Найти босса…"><select id="bk" hidden><option value="">Все типы</option>'''+''.join(f'<option value="{k}">{v}</option>' for k,v in KT.items())+'''</select><select id="be" hidden><option value="">Стихия</option>'''+''.join(f'<option>{e}</option>' for e in EL)+'''</select><select id="bl" hidden><option value="">Уровень</option><option value="0-30">до 30</option><option value="31-60">31–60</option><option value="61-200">61+</option></select><div class="fcs" data-s="bk"><span class="il">Тип</span><button type="button" class="fc on" data-v="">Все</button>'''+''.join(f'<button type="button" class="fc" data-v="{k}">{v}</button>' for k,v in KT.items())+'''</div><div class="fcs" data-s="be"><span class="il">Стихия</span><button type="button" class="fc on" data-v="">Любая</button>'''+''.join(f'<button type="button" class="fc" data-v="{e}">{chip(e)}</button>' for e in EL)+'''</div><div class="fcs" data-s="bl"><span class="il">Уровень</span><button type="button" class="fc on" data-v="">Любой</button><button type="button" class="fc" data-v="0-30">до 30</button><button type="button" class="fc" data-v="31-60">31–60</button><button type="button" class="fc" data-v="61-200">61+</button></div><span id="bcnt" class="bcnt"></span></div>
-<div class="bgal" markdown="0">'''+''.join(f'<a class="pc bc" href="../{b["u"]}" data-k="{b["k"]}" data-el="{" ".join(b["el"])}" data-lv="{max(_lv(x) for x in b["lv"])}" data-n="{b["n"].lower()} {b["pal"].lower()}">{f'<img src="../{b["t"]}" width="96" height="96" alt="" loading="lazy" decoding="async">' if b["t"] else '<span class="bph" aria-hidden="true">'+KT.get(b["k"],"👑")[:2]+'</span>'}<b>{b["n"]}</b><small>{KT.get(b["k"],"")} · ур. {" / ".join(str(x) for x in b["lv"] if x)}</small><span>{"".join(chip(e) for e in b["el"]) or '<span class="el el-neutral">Без стихии</span>'}</span></a>' for b in BJS)+'</div>\n')
+<div class="bgal" markdown="0">'''+''.join(f'<a class="pc bc" href="../{b["u"]}" data-k="{b["k"]}" data-el="{" ".join(b["el"])}" data-lv="{max(_lv(x) for x in b["lv"])}" data-n="{b["n"].lower()} {b["pal"].lower()} {_BEN.get(b["pal"],"").lower()}">{f'<img src="../{b["t"]}" width="96" height="96" alt="" loading="lazy" decoding="async">' if b["t"] else '<span class="bph" aria-hidden="true">'+KT.get(b["k"],"👑")[:2]+'</span>'}<b>{b["n"]}</b><small>{KT.get(b["k"],"")} · ур. {" / ".join(str(x) for x in b["lv"] if x)}</small><span>{"".join(chip(e) for e in b["el"]) or '<span class="el el-neutral">Без стихии</span>'}</span></a>' for b in BJS)+'</div>\n')
 for x in SB:
   g=BG.get(x['pal'] if x['kind']=='рейд' else _base(x['name']))
   if g:x['url']=g['url']
@@ -683,6 +684,8 @@ if os.environ.get('ITEMS26')!='1':
       out.append(f'## {i["ru"]}\n\n<div class="icard r{min(r,4)}" data-n="{esc_h((i["ru"]+" "+i.get("en","")).lower())}" markdown="0"><p class="idesc">{desc}</p><div class="itiles">{tl}</div>'+(f'<div class="isec"><span class="ish">🔨 Крафт</span><div class="ichips">{rec}</div>'+(f'<small class="ist">{esc_h(i["station"])}</small>' if i.get('station') else '')+'</div>' if rec else '')+(f'<div class="isec"><span class="ish">📍 Где взять</span><div class="ichips">{"".join(src[:24])}</div></div>' if src else '')+'</div>\n')
     open(_fn,'w').write('\n'.join(out))
 print('item pages',sum(_IPAGES.values()),'icons',len(_IICO),'grammar hits',len(_ILINT))
+if os.environ.get('ITEMS26')=='1':
+  import item_pages26 as _ip26;print('items26 (items_content)',_ip26.build(D))  # preview-only layout+content
 json.dump(_ILINT,open('/workspace/palsite/grammar_hits.json','w'),ensure_ascii=False)
 _sd=json.load(open(A+'/search_data.json'))
 for _x in _sd['items']:
@@ -738,6 +741,7 @@ if os.path.exists(_ef):
     for _w in (64,96):
       _sp=f'{AFD}/structure/{_sid}-{_w}.webp'
       if os.path.exists(_sp):os.makedirs(D+'/pp/struct',exist_ok=True);shutil.copy(_sp,f'{D}/pp/struct/{_sid}-{_w}.webp')
+  _IC26={x['ru']:x for x in json.load(open('/workspace/items_content/items.json'))} if os.path.exists('/workspace/items_content/items.json') else {}
   def _card2(d):
     ks=sorted(d['k'],key=lambda k:_KI.get(k,9));kc=''
     if ks:
@@ -750,8 +754,19 @@ if os.path.exists(_ef):
     ic=next((i for e,_,i in _EFX if d['b'] and e==d['b'][0][0]),'🍽')
     fi=_FIMG.get(d['n'])
     img=(f'<img class="fimg" src="../../food/{fi.replace("-96.","-192.")}" srcset="../../food/{fi} 96w, ../../food/{fi.replace("-96.","-192.")} 192w" sizes="72px" width="72" height="72" alt="" loading="lazy" decoding="async">' if fi and fi.endswith('-96.webp') else f'<img class="fimg" src="../../food/{fi}" width="72" height="72" alt="" loading="lazy">' if fi else f'<span class="fic">{ic}</span>')
-    rec=(_IREC.get(d['n']) or {}).get('recipe') or []
-    ing=''
+    _icf=_IC26.get(d['n'],{}).get('food') or {}
+    if _icf.get('ingredients'):
+      ing=''
+      for n,x in enumerate(_icf['ingredients']):
+        _fn=os.path.basename(x['icon']) if x.get('icon') else ''
+        if _fn and os.path.exists('/workspace/items_content/'+x['icon']):os.makedirs(D+'/pp/ic',exist_ok=True);shutil.copy('/workspace/items_content/'+x['icon'],D+'/pp/ic/'+_fn)
+        im=f'<img src="../../pp/ic/{_fn}" width="30" height="30" alt="" loading="lazy">' if _fn else '<span class="fgi" aria-hidden="true">🥕</span>'
+        ing+=f'<a class="fg" href="../../{x["link"]}" title="{esc_h(x["ru"])}" aria-label="{esc_h(x["ru"])} ×{x["qty"]}"{" data-more=1" if n>=4 else ""}>{im}<b>×{x["qty"]}</b></a>' if x.get('link') else f'<span class="fg" title="{esc_h(x["ru"])}">{im}<b>×{x["qty"]}</b></span>'
+      if len(_icf['ingredients'])>4:ing+=f'<span class="fg more">+{len(_icf["ingredients"])-4}</span>'
+      rec=[]
+    else:
+      rec=(_IREC.get(d['n']) or {}).get('recipe') or []
+      ing=''
     for n,x in enumerate(rec):
       nm=x['item'];it=_IREC.get(nm);ico=_IICO.get(nm)
       im=f'<img src="../../pp/items/{ico}-96.webp" width="30" height="30" alt="" loading="lazy">' if ico else '<span class="fgi" aria-hidden="true">🥕</span>'
@@ -924,3 +939,39 @@ for _f in glob.glob(D+'/**/*.md',recursive=True):
   if _t!=_s:open(_f,'w').write(_t)
 
 _lvgrid()  # again, after the final text cleanup
+
+# ---- 21.10 LIVE HOTFIX final sanitize pass (deep audit P1: junk_md, junk_eng) — owned by live-hotfix worker ----
+def _hf_clean(t):
+  t=re.sub(r'(?m)^([ \t]*\*\*[^*\n]+:\*\*)[ \t]*\n(?=[ \t]*- )',r'\1\n\n',t)            # «**Дроп альфы:**» + list -> real list
+  t=re.sub(r'<div class="sk-d"><p>ru_Text</p></div>','<div class="sk-d"><p>Описания в игре пока нет.</p></div>',t)
+  t=re.sub(r'(?m)^[ \t]*- ru_Text\b[^\n]*\n','',t)
+  t=re.sub(r',\s*ru_Text\b','',t);t=re.sub(r'\bru_Text,\s*','',t);t=re.sub(r' ?\bru_text\b','',t)
+  t=re.sub(r'<span class="ichip src">👤 Test\w+ <small>[^<]*</small></span>','',t)
+  return t
+_hfn=0
+for f in glob.glob(D+'/**/*.md',recursive=True):
+  s0=open(f).read();s1=_hf_clean(s0)
+  if s1!=s0:open(f,'w').write(s1);_hfn+=1
+_sdp=A+'/search_data.json';_s0=open(_sdp).read();_s1=re.sub(r',\s*ru_Text\b','',_s0).replace('"ru_Text"','""')
+if _s1!=_s0:open(_sdp,'w').write(_s1)
+print('hotfix sanitize: files',_hfn)
+# ---- 21.10 LIVE HOTFIX: link pal names in plain list lines on pal pages (deep audit entity_nolink) ----
+_PD=D+'/4_spravochniki/paly'
+_RU2MD={}
+for _p in pals:
+  for _c in (slug(_p['en']),slug(_p['en']).replace('_','')):
+    if os.path.exists(f"{_PD}/{_c}.md"):_RU2MD[_p['ru']]=_c;break
+_NRX=re.compile(r'(?<![\w\[])('+'|'.join(re.escape(n) for n in sorted(_RU2MD,key=len,reverse=True))+r')(?![\w\]])')
+_lk=0
+for _f in glob.glob(_PD+'/*.md'):
+  _me=os.path.basename(_f)[:-3];_s0=open(_f).read();_out=[];_html=0
+  for _ln in _s0.split('\n'):
+    _t=_ln.lstrip()
+    if _t.startswith('<') or '](' in _ln or 'markdown="0"' in _ln or not _t.startswith('- '):_out.append(_ln);continue
+    def _rp(m):
+      md=_RU2MD.get(m.group(1))
+      return m.group(1) if (not md or md==_me) else f'[{m.group(1)}]({md}.md)'
+    _out.append(_NRX.sub(_rp,_ln))
+  _s1='\n'.join(_out)
+  if _s1!=_s0:open(_f,'w').write(_s1);_lk+=1
+print('hotfix pal-name links: pages',_lk)

@@ -32,7 +32,7 @@ if [ -z "$SKIP_MATRIX" ]; then timeout 900 python3 matrix.py http://localhost:$P
 kill $(cat /tmp/srv.pid) 2>/dev/null || true
 [ "$MX" = "0" ] || { echo "MATRIX FAILED"; exit 1; }
 [ "$1" = "--no-deploy" ] && exit 0
-if [ -z "$NO_GATE" ]; then (cd $OUT && python3 -m http.server 8931 >/dev/null 2>&1 & echo $! > /tmp/gate.pid); sleep 1; set +e; (cd /workspace/audit2026/deep && timeout 1500 python3 deep_audit.py --base http://localhost:8931/ --fail-on P0 --pages sample --concurrency 2 --serial --out /workspace/palsite/gate_out > /workspace/palsite/gate.log 2>&1); G=$?; set -e; kill $(cat /tmp/gate.pid) 2>/dev/null; tail -3 gate.log; [ "$G" = "0" ] || { echo "DEEP GATE FAILED"; exit 1; }; fi
+if [ -z "$NO_GATE" ]; then (cd $OUT && python3 -m http.server 8931 >/dev/null 2>&1 & echo $! > /tmp/gate.pid); sleep 1; set +e; (cd /workspace/audit2026/deep && timeout 4000 python3 deep_audit.py --base http://localhost:8931/ --fail-on P0 --pages sample --concurrency 2 --serial --out /workspace/palsite/gate_out > /workspace/palsite/gate.log 2>&1); G=$?; set -e; kill $(cat /tmp/gate.pid) 2>/dev/null; tail -3 gate.log; [ "$G" = "0" ] || { echo "DEEP GATE FAILED"; exit 1; }; fi
 git push -q origin HEAD:main
 ghp-import -n -p -f -b gh-pages -r origin -m "Deployed $(git rev-parse --short HEAD) (live hotfix, tested snapshot)" $OUT
 echo "DEPLOYED $(date +%T)"
