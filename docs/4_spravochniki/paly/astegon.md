@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=3"><span>✋ Ручная работа</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=7"><span>⛏️ Добыча</span><i style="--v:70%"></i><b>7</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>✋ Ручная работа</span><i style="--v:30%"></i><b>3</b></span><span class="wbar"><span>⛏️ Добыча</span><i style="--v:70%"></i><b>7</b></span></div>
 
 
     #### Партнёрский навык: Дракон в чёрных доспехах

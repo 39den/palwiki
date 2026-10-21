@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=2"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></span></div>
 
 
     #### Партнёрский навык: Верный пёс Смоки

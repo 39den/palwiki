@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=8"><span>💧 Полив</span><i style="--v:80%"></i><b>8</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=5"><span>🧺 Сбор</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>💧 Полив</span><i style="--v:80%"></i><b>8</b></span><span class="wbar"><span>🧺 Сбор</span><i style="--v:50%"></i><b>5</b></span></div>
 
 
     #### Партнёрский навык: Властелин Лазурного неба

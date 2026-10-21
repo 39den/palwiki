@@ -61,13 +61,16 @@ def _WTIP(p):
   if len(els)<2:return base
   ex=[f'{e}: '+' × '.join(('1,5' if _mxm(e,[x])>1.05 else '0,65' if _mxm(e,[x])<0.95 else '1') for x in els)+f' = ×{_fm(_mxm(e,els))[1:]}' for e,v in p['_wm']]
   return base+(' '+'; '.join(ex)+'.' if ex else '')
+WORKCALC=os.environ.get('WORKCALC','0')=='1'  # 21.10: калькулятор работы выключен (сломан), включить WORKCALC=1
 def work_bars(lines,R):
   out=''
   for nm,lv in re.findall(r'- (.+?) — ур\. (\d+)',lines):
     w=WSI.get(nm.strip());lv=int(lv)
     href=f'{R}2_mehaniki/rabota/?w={w["id"]}&lv={lv}' if w else f'{R}2_mehaniki/rabota/'
+    if not WORKCALC:out+=f'<span class="wbar"><span>{w["emoji"] if w else "🛠"} {nm.strip()}</span><i style="--v:{min(lv,10)*10}%"></i><b>{lv}</b></span>';continue
     out+=f'<a class="wbar" href="{href}"><span>{w["emoji"] if w else "🛠"} {nm.strip()}</span><i style="--v:{min(lv,10)*10}%"></i><b>{lv}</b></a>'
-  return f'<div class="wbars" markdown="0">{out}<a class="wb-more" href="{R}2_mehaniki/rabota/">Что значат уровни работы →</a></div>' if out else lines
+  more=f'<a class="wb-more" href="{R}2_mehaniki/rabota/">Что значат уровни работы →</a>' if WORKCALC else ''
+  return f'<div class="wbars" markdown="0">{out}{more}</div>' if out else lines
 def hab_block(p,R):
   import html as _h;esc_h=lambda x:_h.escape(str(x),quote=True)
   h=HAB.get(p['id']) or {};hb=p.get('habitat') or {}

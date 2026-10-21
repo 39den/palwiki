@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=5"><span>🔥 Разжигание огня</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=5"><span>⛏️ Добыча</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>🔥 Разжигание огня</span><i style="--v:50%"></i><b>5</b></span><span class="wbar"><span>⛏️ Добыча</span><i style="--v:50%"></i><b>5</b></span></div>
 
 
     #### Партнёрский навык: Владыка магмы

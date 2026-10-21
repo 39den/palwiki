@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=5"><span>🌱 Посев семян</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=5"><span>🧺 Сбор</span><i style="--v:50%"></i><b>5</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>🌱 Посев семян</span><i style="--v:50%"></i><b>5</b></span><span class="wbar"><span>🧺 Сбор</span><i style="--v:50%"></i><b>5</b></span></div>
 
 
     #### Партнёрский навык: Танец цветов

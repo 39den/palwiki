@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=6"><span>🪓 Рубка деревьев</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=6"><span>⛏️ Добыча</span><i style="--v:60%"></i><b>6</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>🪓 Рубка деревьев</span><i style="--v:60%"></i><b>6</b></span><span class="wbar"><span>⛏️ Добыча</span><i style="--v:60%"></i><b>6</b></span></div>
 
 
     #### Партнёрский навык: Небесный святой рыцарь

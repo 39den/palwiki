@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=6"><span>✋ Ручная работа</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=medicine&lv=7"><span>💊 Фармацевтика</span><i style="--v:70%"></i><b>7</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=4"><span>📦 Транспортировка</span><i style="--v:40%"></i><b>4</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>✋ Ручная работа</span><i style="--v:60%"></i><b>6</b></span><span class="wbar"><span>💊 Фармацевтика</span><i style="--v:70%"></i><b>7</b></span><span class="wbar"><span>📦 Транспортировка</span><i style="--v:40%"></i><b>4</b></span></div>
 
 
     #### Партнёрский навык: Кошмарный взгляд

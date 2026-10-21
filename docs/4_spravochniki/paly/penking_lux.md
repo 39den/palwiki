@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=watering&lv=2"><span>💧 Полив</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=electricity&lv=3"><span>⚡ Генерация энергии</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=2"><span>✋ Ручная работа</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=3"><span>⛏️ Добыча</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=3"><span>📦 Транспортировка</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>💧 Полив</span><i style="--v:20%"></i><b>2</b></span><span class="wbar"><span>⚡ Генерация энергии</span><i style="--v:30%"></i><b>3</b></span><span class="wbar"><span>✋ Ручная работа</span><i style="--v:20%"></i><b>2</b></span><span class="wbar"><span>⛏️ Добыча</span><i style="--v:30%"></i><b>3</b></span><span class="wbar"><span>📦 Транспортировка</span><i style="--v:30%"></i><b>3</b></span></div>
 
 
     #### Партнёрский навык: Непреклонный водный генерал

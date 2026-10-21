@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=8"><span>⛏️ Добыча</span><i style="--v:80%"></i><b>8</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>⛏️ Добыча</span><i style="--v:80%"></i><b>8</b></span></div>
 
 
     #### Партнёрский навык: Несокрушимый крепостной дракон

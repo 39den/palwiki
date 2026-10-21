@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=3"><span>🌱 Посев семян</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=handiwork&lv=3"><span>✋ Ручная работа</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=5"><span>🪓 Рубка деревьев</span><i style="--v:50%"></i><b>5</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=6"><span>📦 Транспортировка</span><i style="--v:60%"></i><b>6</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>🌱 Посев семян</span><i style="--v:30%"></i><b>3</b></span><span class="wbar"><span>✋ Ручная работа</span><i style="--v:30%"></i><b>3</b></span><span class="wbar"><span>🪓 Рубка деревьев</span><i style="--v:50%"></i><b>5</b></span><span class="wbar"><span>📦 Транспортировка</span><i style="--v:60%"></i><b>6</b></span></div>
 
 
     #### Партнёрский навык: Южный гигант

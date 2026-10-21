@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=1"><span>🪓 Рубка деревьев</span><i style="--v:10%"></i><b>1</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>🪓 Рубка деревьев</span><i style="--v:10%"></i><b>1</b></span></div>
 
 
     #### Партнёрский навык: Зачарование

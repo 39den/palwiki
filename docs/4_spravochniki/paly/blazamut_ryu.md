@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=kindling&lv=6"><span>🔥 Разжигание огня</span><i style="--v:60%"></i><b>6</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=7"><span>⛏️ Добыча</span><i style="--v:70%"></i><b>7</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>🔥 Разжигание огня</span><i style="--v:60%"></i><b>6</b></span><span class="wbar"><span>⛏️ Добыча</span><i style="--v:70%"></i><b>7</b></span></div>
 
 
     #### Партнёрский навык: Кайзер драконов

@@ -18,7 +18,7 @@
 
     #### Работа на базе
 
-    <div class="wbars" markdown="0"><a class="wbar" href="../../../2_mehaniki/rabota/?w=planting&lv=3"><span>🌱 Посев семян</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=gathering&lv=2"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=lumbering&lv=3"><span>🪓 Рубка деревьев</span><i style="--v:30%"></i><b>3</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=mining&lv=2"><span>⛏️ Добыча</span><i style="--v:20%"></i><b>2</b></a><a class="wbar" href="../../../2_mehaniki/rabota/?w=transporting&lv=3"><span>📦 Транспортировка</span><i style="--v:30%"></i><b>3</b></a><a class="wb-more" href="../../../2_mehaniki/rabota/">Что значат уровни работы →</a></div>
+    <div class="wbars" markdown="0"><span class="wbar"><span>🌱 Посев семян</span><i style="--v:30%"></i><b>3</b></span><span class="wbar"><span>🧺 Сбор</span><i style="--v:20%"></i><b>2</b></span><span class="wbar"><span>🪓 Рубка деревьев</span><i style="--v:30%"></i><b>3</b></span><span class="wbar"><span>⛏️ Добыча</span><i style="--v:20%"></i><b>2</b></span><span class="wbar"><span>📦 Транспортировка</span><i style="--v:30%"></i><b>3</b></span></div>
 
 
     #### Партнёрский навык: Природная угроза
