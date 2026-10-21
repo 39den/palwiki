@@ -9,15 +9,19 @@ def clean(s):
 _orig=M.short_partner;M.short_partner=lambda s:clean(_orig(s))
 _art=M.art
 def art(p):
+  fx=f"/workspace/palsite/art_fix/{p['id']}.png"
+  if os.path.exists(fx):return Image.open(fx).convert('RGBA')
   if os.path.exists(f"/workspace/palcards/art/{p['id']}.png"):return _art(p)
   ic=f"/workspace/palcards/art/icons/{p['id']}.png"
   return Image.open(ic).convert('RGBA') if os.path.exists(ic) else _art(p)
 M.art=art
 os.makedirs('/workspace/palsite/.cards',exist_ok=True)
 pals=json.load(open('/workspace/palwiki/data/pals.json'))
+sys.path.insert(0,'/workspace/palsite');from elmx import matchup
+for p in pals:p['weak_to']=[a for a,_ in matchup(p['elements'])['w']]
 src=os.path.getmtime('/workspace/palwiki/data/pals.json')
 for p in pals:
   fn=f"/workspace/palsite/.cards/{p['no']}_{p['id']}.png"
-  if os.path.exists(fn) and os.path.getmtime(fn)>src and os.path.getmtime(fn)>os.path.getmtime(__file__):continue
+  if os.path.exists(fn) and os.path.getmtime(fn)>src and os.path.getmtime(fn)>os.path.getmtime(__file__) and os.path.getmtime(fn)>os.path.getmtime('/workspace/palsite/elmx.py'):continue
   M.card(p).save(fn)
 print('cards ok',len(os.listdir('/workspace/palsite/.cards')))

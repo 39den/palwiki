@@ -1,10 +1,11 @@
 # Спаркит
 
 <div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/42_ElecCat.webp" alt="Спаркит" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/ElecCat-512.webp" srcset="../../../pp/art/ElecCat-384.webp 384w, ../../../pp/art/ElecCat-512.webp 512w, ../../../pp/art/ElecCat-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Спаркит" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/42_ElecCat.webp">
 <div class="pal-info" data-pal="ElecCat"><div class="pal-no">№ 42 · Sparkit</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
-<div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-water">Вода <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Генерация энергии 1">⚡ Генерация энергии <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span><span class="work" title="Фермерство 1">🐑 Фермерство <b>1</b></span></div>
 <div class="partner"><b>Статическое электричество</b> 🎒 из команды 🏠 на базе</div>
 <div class="stats">❤️ 60 · ⚔️ 75 · 🛡 70</div></div></div>
@@ -52,8 +53,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 47, ночью: 47
-    - Яйцо: Яйцо молнии
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="ElecCat" data-d="47" data-n="47" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 10–32</span><a class="btn hm-full" href="../../../map/?pal=ElecCat">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Золотые холмы</span><span class="rgc">Архипелаг Морских Ветров</span><span class="rgc">Остров восходящих ветров</span><span class="rgc">Бамбуковые рощи</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо молнии</b></div></div></div>
 
 
 

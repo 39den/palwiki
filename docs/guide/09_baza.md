@@ -3,25 +3,14 @@
 ## Палбокс = база
 - Поставь **Палбокс** (Контейнер для Палов). Вокруг появится круг — зона базы.
 - Внутри круга палы работают. Снаружи — нет.
-- **Уровень базы** растёт заданиями базы (мини-миссии в Палбоксе): больше палов-работников и больше баз<span class="unv" title="Ещё перепроверяется">ⓘ</span>.
-- Сервер по умолчанию: **до 15 палов на базе** (`BaseCampWorkerMaxNum=15`), **до 3 баз** на гильдию (`BaseCampMaxNumInGuild=4`?<span class="unv" title="Ещё перепроверяется">ⓘ</span>).
+- **Уровень базы** растёт заданиями базы (мини-миссии в Палбоксе): больше палов-работников и больше баз.
+- Сервер по умолчанию: **до 15 палов на базе** (`BaseCampWorkerMaxNum=15`), **до 3 баз** на гильдию (`BaseCampMaxNumInGuild=4`?).
 
 ## Виды работы (пригодности)
-| Работа | Значок | Кто делает | Что даёт |
-|---|---|---|---|
-| Разжигание огня (Kindling) | 🔥 | огненные | Печи, кухня |
-| Полив (Watering) | 💧 | водные | Грядки |
-| Посев семян (Planting) | 🌱 | травяные | Грядки |
-| Генерация энергии (Generating Electricity) | ⚡ | молния | Генератор |
-| Ручная работа (Handiwork) | ✋ | многие | Крафт на станках, строительство |
-| Сбор (Gathering) | 🧺 | | Урожай, ягоды |
-| Рубка деревьев (Lumbering) | 🪓 | | Древесина, Лесопилка |
-| Добыча (Mining) | ⛏️ | | Камень, руда, карьер |
-| Фармацевтика (Medicine Production) | 💊 | | Лекарства |
-| Охлаждение (Cooling) | ❄️ | ледяные | Холодильник |
-| Транспортировка (Transporting) | 📦 | | Носит вещи в сундуки |
-| Фермерство (Farming) | 🐄 | | Пастбище для скота: шерсть, яйца, молоко |
-- Уровень пригодности — от 1 до 10. У видов от рождения бывает 1–8 (см. топ ниже). Поднимают: 4 звезды конденсации (+1 ко всем), пассивки <a class="psv r-3" data-psv="Ребёнок фермы" href="../../passivki/farmhand/">Ребёнок фермы</a> (+1)/<a class="psv r-4" data-psv="Хозяин фермы" href="../../passivki/ranch_master/">Хозяин фермы</a> (+2) для фермерства, партнёрские навыки (напр. Риббани +1 к ручной работе другим)<span class="unv" title="Ещё перепроверяется">ⓘ</span>.
+
+<div class="tcards" markdown="0"><div class="tcard"><div class="tc-t">Разжигание огня (Kindling)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">🔥</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">огненные</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Печи, кухня</span></div></div></div><div class="tcard"><div class="tc-t">Полив (Watering)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">💧</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">водные</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Грядки</span></div></div></div><div class="tcard"><div class="tc-t">Посев семян (Planting)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">🌱</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">травяные</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Грядки</span></div></div></div><div class="tcard"><div class="tc-t">Генерация энергии (Generating Electricity)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">⚡</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">молния</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Генератор</span></div></div></div><div class="tcard"><div class="tc-t">Ручная работа (Handiwork)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">✋</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">многие</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Крафт на станках, строительство</span></div></div></div><div class="tcard"><div class="tc-t">Сбор (Gathering)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">🧺</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Урожай, ягоды</span></div></div></div><div class="tcard"><div class="tc-t">Рубка деревьев (Lumbering)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">🪓</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Древесина, Лесопилка</span></div></div></div><div class="tcard"><div class="tc-t">Добыча (Mining)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">⛏️</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Камень, руда, карьер</span></div></div></div><div class="tcard"><div class="tc-t">Фармацевтика (Medicine Production)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">💊</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Лекарства</span></div></div></div><div class="tcard"><div class="tc-t">Охлаждение (Cooling)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">❄️</span></div><div class="tc-i"><span class="kv-l">Кто делает</span><span class="kv-v">ледяные</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Холодильник</span></div></div></div><div class="tcard"><div class="tc-t">Транспортировка (Transporting)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">📦</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Носит вещи в сундуки</span></div></div></div><div class="tcard"><div class="tc-t">Фермерство (Farming)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Значок</span><span class="kv-v">🐄</span></div><div class="tc-i"><span class="kv-l">Что даёт</span><span class="kv-v">Пастбище для скота: шерсть, яйца, молоко</span></div></div></div></div>
+
+- Уровень пригодности — от 1 до 10. У видов от рождения бывает 1–8 (см. топ ниже). Поднимают: конденсация (★1–★3 по +1 к трём лучшим работам, ★4 +1 ко всем), книги «Практическое …» (+1), пассивки <a class="psv r-3" data-psv="Ребёнок фермы" href="../../passivki/farmhand/">Ребёнок фермы</a> (+1)/<a class="psv r-4" data-psv="Хозяин фермы" href="../../passivki/ranch_master/">Хозяин фермы</a> (+2) для фермерства, партнёрские навыки (напр. Риббани +1 к ручной работе другим).
 - Списки «кто лучше всех» — «Палы → По работе».
 
 ## Рассудок и усталость
@@ -38,7 +27,7 @@
 ## Постройки (главные)
 Полный список — «Справочник → Постройки».
 - Производство: Верстаки, Печи, Дробилка, Мельница, Кухня, Медицинский стол, Сферическая мастерская, Конвейерные фабрики.
-- Ресурсы: Лесопилка, Карьер, Рудник (металл, уголь, сера, кварц), Нефтекачка<span class="unv" title="Ещё перепроверяется">ⓘ</span>, Соллайтовый рудник (ур. 73).
+- Ресурсы: Лесопилка, Карьер, Рудник (металл, уголь, сера, кварц), Нефтекачка, Соллайтовый рудник (ур. 73).
 - Палы: Палбокс, кровати, Пастбище для скота, Пастбище свиданий, Инкубатор, Капсула с эссенцией, Монумент Силы, Операционный стол, Горячий источник.
 - Защита: стены, ворота, башни-турели, Вышка надзирателя.
 

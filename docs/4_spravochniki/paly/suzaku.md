@@ -1,10 +1,11 @@
 # Судзаку
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/122_Suzaku.webp" alt="Судзаку" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/Suzaku-512.webp" srcset="../../../pp/art/Suzaku-384.webp 384w, ../../../pp/art/Suzaku-512.webp 512w, ../../../pp/art/Suzaku-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Судзаку" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/122_Suzaku.webp">
 <div class="pal-info" data-pal="Suzaku"><div class="pal-no">№ 122 · Suzaku</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span></div>
 <div class="partner"><b>Огненные крылья</b> 🐾 выпущен 🐎 верхом</div>
 <div class="stats">❤️ 120 · ⚔️ 105 · 🛡 105</div></div></div>
@@ -49,8 +50,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 14, ночью: 14
-    - Яйцо: Огромное раскалённое яйцо
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Suzaku" data-d="13" data-n="13" data-t="42" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 80–80</span><a class="btn hm-full" href="../../../map/?pal=Suzaku">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное раскалённое яйцо</b></div></div></div>
 
 
 

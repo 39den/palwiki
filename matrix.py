@@ -24,6 +24,30 @@ with sync_playwright() as p:
       pg.keyboard.type('анубис',delay=40);pg.wait_for_timeout(600);r['search']='PASS' if pg.locator('.sx-r').count()>0 else 'FAIL'
       if br in('webkit','firefox') and mob:pg.screenshot(path=S+br+'_search.png')
     except Exception as e:r['search']='FAIL '+str(e)[:50]
+    # inline search: dropdown under header input, page stays visible, Esc closes and keeps text; fonts inherit
+    try:
+      pg.goto(U+'4_spravochniki/paly/anubis/?test=1',wait_until='networkidle');pg.wait_for_timeout(500)
+      pg.locator('#hsq').click();pg.keyboard.type('где найти кремис',delay=20);pg.wait_for_timeout(900)
+      st=pg.evaluate("""(()=>{const p=document.getElementById('sxp'),i=document.getElementById('hsq');if(!p||p.hidden)return 'nopanel';const r=p.getBoundingClientRect(),ir=i.getBoundingClientRect();
+        if(r.top<ir.bottom-2)return 'notbelow';if(r.height>innerHeight*0.62)return 'tall '+r.height;
+        const art=document.querySelector('article h1');const vis=art&&getComputedStyle(art).visibility!='hidden';
+        const bf=getComputedStyle(document.body).fontFamily,fi=getComputedStyle(i).fontFamily,fs=parseFloat(getComputedStyle(i).fontSize);
+        if(fi!=bf)return 'font '+fi;if(fs<16)return 'fs '+fs;return vis?'ok':'content-hidden'})()""")
+      pg.keyboard.press('Escape');pg.wait_for_timeout(200)
+      cl=pg.evaluate("document.getElementById('sxp').hidden && document.getElementById('hsq').value.length>3")
+      r['inline_search']='PASS' if st=='ok' and cl else f'FAIL({st},{cl})'
+      if (br=='webkit' and mob) or (br=='chromium' and not mob):
+        pg.locator('#hsq').click();pg.wait_for_timeout(500);pg.screenshot(path=S+br+('_m' if mob else '_d')+'_inline_search.png');pg.keyboard.press('Escape')
+    except Exception as e:r['inline_search']='FAIL '+str(e)[:50]
+    # boss card: nothing overlaps the art
+    try:
+      pg.goto(U+'boss/shaolong/?test=1',wait_until='networkidle');pg.wait_for_timeout(600)
+      ov=pg.evaluate("""(()=>{const im=document.querySelector('.boss-hero .bimg');if(!im)return 'noimg';const a=im.getBoundingClientRect();let n=[];
+        document.querySelectorAll('.boss-hero *, .edges *').forEach(e=>{if(e===im||e.contains(im)||im.contains(e))return;const r=e.getBoundingClientRect();if(!r.width||!r.height)return;
+          if(r.left<a.right-2&&r.right>a.left+2&&r.top<a.bottom-2&&r.bottom>a.top+2)n.push(e.className||e.tagName)});return n.length?n.slice(0,3).join(','):'ok'})()""")
+      r['boss_overlap']='PASS' if ov=='ok' else f'FAIL({ov})'
+      if (br=='webkit' and mob) or (br=='chromium' and not mob):pg.screenshot(path=S+br+('_m' if mob else '_d')+'_boss.png',full_page=True)
+    except Exception as e:r['boss_overlap']='FAIL '+str(e)[:50]
     # slider + picker
     try:
       pg.goto(U+'4_spravochniki/paly/anubis/',wait_until='networkidle');pg.wait_for_selector('#blv',state='attached',timeout=8000);s=pg.locator('#blv');s.scroll_into_view_if_needed();bb=s.bounding_box();v0=s.input_value()
@@ -78,7 +102,7 @@ with sync_playwright() as p:
         pg.goto(U+'?test=1',wait_until='networkidle');pg.wait_for_timeout(500);pg.keyboard.press('/');pg.wait_for_timeout(400)
         if not pg.locator('.sx').count():pg.locator('.md-header label[for=__search]').first.click();pg.wait_for_timeout(400)
         pg.keyboard.type('сравнить анубис и джетрагон',delay=15);pg.wait_for_timeout(500);ok1=pg.locator('.sx-cmp').count()>0
-        pg.fill('.sx-top input','');pg.keyboard.type('анубс',delay=30);pg.wait_for_timeout(500);ok2=pg.locator('.sx-r').count()>1
+        pg.fill('#hsq','');pg.keyboard.type('анубс',delay=30);pg.wait_for_timeout(500);ok2=pg.locator('.sx-r').count()>1
         r['search_cmp_typo']='PASS' if ok1 and ok2 else f'FAIL(cmp={ok1},typo={ok2})'
       except Exception as e:r['search_cmp_typo']='FAIL '+str(e)[:40]
       try:

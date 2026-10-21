@@ -1,10 +1,11 @@
 # Робинквилл
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/76_RobinHood.webp" alt="Робинквилл" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/RobinHood-512.webp" srcset="../../../pp/art/RobinHood-384.webp 384w, ../../../pp/art/RobinHood-512.webp 512w, ../../../pp/art/RobinHood-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Робинквилл" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/76_RobinHood.webp">
 <div class="pal-info" data-pal="RobinHood"><div class="pal-no">№ 76 · Robinquill</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 2">🌱 Посев семян <b>2</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span><span class="work" title="Фармацевтика 1">💊 Фармацевтика <b>1</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
 <div class="partner"><b>Мастер стрельбы из лука</b> 🎒 из команды</div>
 <div class="stats">❤️ 90 · ⚔️ 105 · 🛡 80</div></div></div>
@@ -54,10 +55,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 52, ночью: 52; уровни в первых точках: 30–34
-    - Подземелья: Пещера Горного Потока
-    - Может продаваться у торговца/рекрутера
-    - Яйцо: Большое яйцо свежей листвы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="RobinHood" data-d="52" data-n="52" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 30–30</span><a class="btn hm-full" href="../../../map/?pal=RobinHood">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Зелёный ручей</span><span class="rgc">Шрамы войны</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Горного Потока</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо свежей листвы</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 

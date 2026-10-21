@@ -1,10 +1,11 @@
 # Фелбэт
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/65_CatVampire.webp" alt="Фелбэт" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/CatVampire-512.webp" srcset="../../../pp/art/CatVampire-384.webp 384w, ../../../pp/art/CatVampire-512.webp 512w, ../../../pp/art/CatVampire-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фелбэт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/65_CatVampire.webp">
 <div class="pal-info" data-pal="CatVampire"><div class="pal-no">№ 65 · Felbat</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Фармацевтика 3">💊 Фармацевтика <b>3</b></span></div>
 <div class="partner"><b>Кража жизни</b> 🐾 выпущен</div>
 <div class="stats">❤️ 100 · ⚔️ 105 · 🛡 110</div></div></div>
@@ -49,9 +50,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 121, ночью: 121; уровни в первых точках: 63–66
-    - Подземелья: Пещера Горного Потока
-    - Яйцо: Большое яйцо тьмы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="CatVampire" data-d="121" data-n="121" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 63–63</span><a class="btn hm-full" href="../../../map/?pal=CatVampire">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Жёлтоземная равнина</span><span class="rgc">Выжженный холм</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Горного Потока</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо тьмы</b></div></div></div>
 
 
 

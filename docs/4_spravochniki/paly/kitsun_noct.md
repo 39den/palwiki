@@ -1,10 +1,11 @@
 # Кицун Нокт
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/111B_AmaterasuWolf_Dark.webp" alt="Кицун Нокт" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/AmaterasuWolf_Dark-p-512.webp" srcset="../../../pp/art/AmaterasuWolf_Dark-p-384.webp 384w, ../../../pp/art/AmaterasuWolf_Dark-p-512.webp 512w, ../../../pp/art/AmaterasuWolf_Dark-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Кицун Нокт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/111B_AmaterasuWolf_Dark.webp">
 <div class="pal-info" data-pal="AmaterasuWolf_Dark"><div class="pal-no">№ 111B · Kitsun Noct</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 4">🔥 Разжигание огня <b>4</b></span></div>
 <div class="partner"><b>Мрачный волк</b> 🎒 из команды 🐎 верхом</div>
 <div class="stats">❤️ 100 · ⚔️ 115 · 🛡 105</div></div></div>
@@ -51,9 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 355, ночью: 355; уровни в первых точках: 61–63
-    - Подземелья: Пещера Тэнраку
-    - Яйцо: Большое яйцо тьмы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="354" data-n="354" data-t="0" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 61–63</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Выжженный холм</span><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Кристаллизованное древнее дерево</span><span class="rgc">Жёлтоземная равнина</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Тэнраку</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо тьмы</b></div></div></div>
 
 
 

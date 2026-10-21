@@ -4,56 +4,36 @@
 - Максимум — **80** (с версии 1.0; раньше было 65).
 - Опыт дают: поимка палов (первая поимка вида — много, бонусы за 5 поимок одного вида — в 1.0 снизили с 12 до 5), убийство врагов, крафт, постройка, боссы, вылупление яиц.
 - За каждый уровень ты получаешь: **1 очко статуса** (status point) и **очки технологий** (tech points).
-- Итого к 80 уровню: **79 очков статуса**<span class="unv" title="Ещё перепроверяется">ⓘ</span>.
+- Итого к 80 уровню: **79 очков статуса**.
 
 ## Куда вкладывать очки статуса
-| Стат | Что даёт за 1 очко | Зачем |
-|---|---|---|
-| Здоровье (HP) | +100 HP<span class="unv" title="Ещё перепроверяется">ⓘ</span> | Не умирать |
-| Выносливость (Stamina) | +10 выносливости<span class="unv" title="Ещё перепроверяется">ⓘ</span> | Бег, лазание, полёт, плавание |
-| Атака (Attack) | +2 к атаке игрока<span class="unv" title="Ещё перепроверяется">ⓘ</span> | Только ТВОЁ оружие. Палам не помогает! |
-| Скорость работы (Work Speed) | +50% к скорости ручной работы<span class="unv" title="Ещё перепроверяется">ⓘ</span> | Крафт руками |
-| Вес (Weight) | +50 к переносимому весу<span class="unv" title="Ещё перепроверяется">ⓘ</span> | Носить больше |
-- Защиту в 1.0 качать очками нельзя/нецелесообразно<span class="unv" title="Ещё перепроверяется">ⓘ</span>. Защиту даёт броня.
+
+<div class="tcards dense" markdown="0"><div class="tcard"><div class="tc-t">Здоровье (HP)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что даёт за 1 очко</span><span class="kv-v">+100 HP</span></div><div class="tc-i"><span class="kv-l">Зачем</span><span class="kv-v">Не умирать</span></div></div></div><div class="tcard"><div class="tc-t">Выносливость (Stamina)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что даёт за 1 очко</span><span class="kv-v">+10 выносливости</span></div><div class="tc-i"><span class="kv-l">Зачем</span><span class="kv-v">Бег, лазание, полёт, плавание</span></div></div></div><div class="tcard"><div class="tc-t">Атака (Attack)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что даёт за 1 очко</span><span class="kv-v">+2 к атаке игрока</span></div><div class="tc-i"><span class="kv-l">Зачем</span><span class="kv-v">Только ТВОЁ оружие. Палам не помогает!</span></div></div></div><div class="tcard"><div class="tc-t">Скорость работы (Work Speed)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что даёт за 1 очко</span><span class="kv-v">+50% к скорости ручной работы</span></div><div class="tc-i"><span class="kv-l">Зачем</span><span class="kv-v">Крафт руками</span></div></div></div><div class="tcard"><div class="tc-t">Вес (Weight)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что даёт за 1 очко</span><span class="kv-v">+50 к переносимому весу</span></div><div class="tc-i"><span class="kv-l">Зачем</span><span class="kv-v">Носить больше</span></div></div></div></div>
+
+- Защиту в 1.0 качать очками нельзя/нецелесообразно. Защиту даёт броня.
 - **Если ты воюешь палами — атаку не качай.**
 - Вес в 1.0 сильно зависит от палов: Лунарис (Lunaris) и другие палы с навыком «Антигравитация» дают +300–600 к весу. См. «Справочник → Палы, увеличивающие вес».
 
 ## Готовые раскладки (79 очков)
-| Роль | HP | Выносл. | Атака | Работа | Вес |
-|---|---|---|---|---|---|
-| Рейды/башни (командир палов) | 45 | 20 | 0 | 0 | 14 |
-| Исследование/ловля альф | 35 | 25 | 0 | 0 | 19 |
-| Фарм ресурсов | 15 | 25 | 0 | 0 | 39 |
-| Крафтер на базе | 10 | 10 | 0 | 40 | 19 |
-| Стрелок (сам стреляет) | 35 | 15 | 29 | 0 | 0 |
+
+<div class="tcards" markdown="0"><div class="tcard"><div class="tc-t">Рейды/башни (командир палов)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">HP</span><span class="kv-v">45</span></div><div class="tc-i"><span class="kv-l">Выносл.</span><span class="kv-v">20</span></div><div class="tc-i"><span class="kv-l">Атака</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Работа</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Вес</span><span class="kv-v">14</span></div></div></div><div class="tcard"><div class="tc-t">Исследование/ловля альф</div><div class="tc-b"><div class="tc-i"><span class="kv-l">HP</span><span class="kv-v">35</span></div><div class="tc-i"><span class="kv-l">Выносл.</span><span class="kv-v">25</span></div><div class="tc-i"><span class="kv-l">Атака</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Работа</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Вес</span><span class="kv-v">19</span></div></div></div><div class="tcard"><div class="tc-t">Фарм ресурсов</div><div class="tc-b"><div class="tc-i"><span class="kv-l">HP</span><span class="kv-v">15</span></div><div class="tc-i"><span class="kv-l">Выносл.</span><span class="kv-v">25</span></div><div class="tc-i"><span class="kv-l">Атака</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Работа</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Вес</span><span class="kv-v">39</span></div></div></div><div class="tcard"><div class="tc-t">Крафтер на базе</div><div class="tc-b"><div class="tc-i"><span class="kv-l">HP</span><span class="kv-v">10</span></div><div class="tc-i"><span class="kv-l">Выносл.</span><span class="kv-v">10</span></div><div class="tc-i"><span class="kv-l">Атака</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Работа</span><span class="kv-v">40</span></div><div class="tc-i"><span class="kv-l">Вес</span><span class="kv-v">19</span></div></div></div><div class="tcard"><div class="tc-t">Стрелок (сам стреляет)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">HP</span><span class="kv-v">35</span></div><div class="tc-i"><span class="kv-l">Выносл.</span><span class="kv-v">15</span></div><div class="tc-i"><span class="kv-l">Атака</span><span class="kv-v">29</span></div><div class="tc-i"><span class="kv-l">Работа</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Вес</span><span class="kv-v">0</span></div></div></div></div>
+
 
 ## Как сбросить статы (респек)
 - Выпей **Снадобье очистки памяти** (Memory Wiping Medicine). Все очки статуса вернутся, вкладывай заново.
-- Делается на станке медицины<span class="unv" title="Ещё перепроверяется">ⓘ</span>.
+- Делается на станке медицины.
 - На технологии и палов не действует.
-- Есть отдельное снадобье для сброса **у пала** (вложенных Душ)<span class="unv" title="Ещё перепроверяется">ⓘ</span>.
+- Есть отдельное снадобье для сброса **у пала** (вложенных Душ).
 
 ## Монумент Силы — усиления игрока (статуи палов)
 Монумент Силы (Statue of Power) с ур. 9. Туда носишь **статуи палов** (Pal Effigy, бывшие «Статуи Лифманка»), собранные по миру:
-| Улучшение | Чья статуя | Бонус за шаг | Сколько шагов |
-|---|---|---|---|
-| Мастерство поимки | Лифманка | +15 к силе сферы | 100 |
-| Сытость | Ламболла | голод медленнее +50% (всего) | 20 |
-| Плавание | Пенгуллета | +100% | 20 |
-| Хранение еды | Манчилла | еда портится медленнее +50% | 20 |
-| Прыжок | Руби | +50% | 20 |
-| Глайдер | Хербила | +30% | 20 |
-| Скалолазание | Танзи | +100% | 20 |
-| Сопротивление статусам | Депрессо | +50% | 20 |
-| Выносливость | Каттивы | бег тратит меньше +50% | 20 |
-| Самонаводящаяся сфера | Лунариса | +100% | 4 |
-| Опыт | Релаксауруса | +50% | 4 |
-| Радужная удача | Якумо | +4% шанс лучших пассивок у диких | 4 |
-| Скорость бега | Мимидога | +50% | 287 |
+
+<div class="tcards" markdown="0"><div class="tcard"><div class="tc-t">Мастерство поимки</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Лифманка</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">+15 к силе сферы</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">100</span></div></div></div><div class="tcard"><div class="tc-t">Сытость</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Ламболла</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">голод медленнее +50% (всего)</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">20</span></div></div></div><div class="tcard"><div class="tc-t">Плавание</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Пенгуллета</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">+100%</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">20</span></div></div></div><div class="tcard"><div class="tc-t">Хранение еды</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Манчилла</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">еда портится медленнее +50%</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">20</span></div></div></div><div class="tcard"><div class="tc-t">Прыжок</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Руби</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">+50%</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">20</span></div></div></div><div class="tcard"><div class="tc-t">Глайдер</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Хербила</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">+30%</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">20</span></div></div></div><div class="tcard"><div class="tc-t">Скалолазание</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Танзи</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">+100%</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">20</span></div></div></div><div class="tcard"><div class="tc-t">Сопротивление статусам</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Депрессо</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">+50%</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">20</span></div></div></div><div class="tcard"><div class="tc-t">Выносливость</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Каттивы</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">бег тратит меньше +50%</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">20</span></div></div></div><div class="tcard"><div class="tc-t">Самонаводящаяся сфера</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Лунариса</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">+100%</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">4</span></div></div></div><div class="tcard"><div class="tc-t">Опыт</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Релаксауруса</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">+50%</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">4</span></div></div></div><div class="tcard"><div class="tc-t">Радужная удача</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Якумо</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">+4% шанс лучших пассивок у диких</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">4</span></div></div></div><div class="tcard"><div class="tc-t">Скорость бега</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Чья статуя</span><span class="kv-v">Мимидога</span></div><div class="tc-i"><span class="kv-l">Бонус за шаг</span><span class="kv-v">+50%</span></div><div class="tc-i"><span class="kv-l">Сколько шагов</span><span class="kv-v">287</span></div></div></div></div>
+
 - Пал **Нокс** (Nox) в отряде показывает статуэтки рядом.
 
 ## Смерть
-- При смерти по умолчанию на сервере ты **роняешь предметы из инвентаря** (не экипировку) — настройка `DeathPenalty=Item`<span class="unv" title="Ещё перепроверяется">ⓘ</span>.
+- При смерти по умолчанию на сервере ты **роняешь предметы из инвентаря** (не экипировку) — настройка `DeathPenalty=Item`.
 - Палы в отряде при смерти игрока возвращаются в сферы. Если пала «вырубили», он отдыхает в Палбоксе/ждёт и потом снова доступен.
 - Вернись к своему трупу (сумка на карте) и забери вещи.
 

@@ -1,10 +1,11 @@
 # Лифан
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/90_PandaGirl.webp" alt="Лифан" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/PandaGirl-p-512.webp" srcset="../../../pp/art/PandaGirl-p-384.webp 384w, ../../../pp/art/PandaGirl-p-512.webp 512w, ../../../pp/art/PandaGirl-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Лифан" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/90_PandaGirl.webp">
 <div class="pal-info" data-pal="PandaGirl"><div class="pal-no">№ 90 · Leafan</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 3">🌾 Сбор <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
 <div class="partner"><b>Полная самоотдача</b> 🐾 выпущен</div>
 <div class="stats">❤️ 100 · ⚔️ 115 · 🛡 95</div></div></div>
@@ -52,8 +53,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 105, ночью: 105
-    - Яйцо: Большое яйцо свежей листвы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="PandaGirl" data-d="106" data-n="106" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 28–67</span><a class="btn hm-full" href="../../../map/?pal=PandaGirl">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Солнечный предел</span><span class="rgc">Зелёный ручей</span><span class="rgc">Шрамы войны</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо свежей листвы</b></div></div></div>
 
 
 

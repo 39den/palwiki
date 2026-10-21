@@ -1,10 +1,11 @@
 # Соленна
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/182_MonochromeQueen.webp" alt="Соленна" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/MonochromeQueen-p-512.webp" srcset="../../../pp/art/MonochromeQueen-p-384.webp 384w, ../../../pp/art/MonochromeQueen-p-512.webp 512w, ../../../pp/art/MonochromeQueen-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Соленна" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/182_MonochromeQueen.webp">
 <div class="pal-info" data-pal="MonochromeQueen"><div class="pal-no">№ 182 · Solenne</div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 8">🖐️ Ручная работа <b>8</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
 <div class="partner"><b>Незапятнанная леди-одиночка</b> 🎒 из команды</div>
 <div class="stats">❤️ 110 · ⚔️ 115 · 🛡 115</div></div></div>
@@ -27,7 +28,7 @@
 
     #### Чем хорош / чем плох
     - ✅ Ручная работа 8 — лучший крафтер; хорошая атака (115); отличный рабочий (пригодность 8)
-    - ❌<span class="unv" title="Ещё перепроверяется">ⓘ</span>; много ест (680)
+    - ❌; много ест (680)
 
     > После хорошего опыта Соленна не успокоится, пока не получит столь же плохой. Если берёшь на себя заботу о Соленна , нужна соответствующая решимость.
 
@@ -51,8 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: нет/особый способ; точек появления днём: 0, ночью: 0
-    - Яйцо: Большое яйцо тьмы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="MonochromeQueen" data-d="0" data-n="0" data-t="94" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_tree.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 76–76</span><a class="btn hm-full" href="../../../map/?pal=MonochromeQueen">Показать на большой карте</a></div></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо тьмы</b></div></div></div>
 
 
 

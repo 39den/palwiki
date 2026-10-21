@@ -1,10 +1,11 @@
 # Лунарис
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/82_Mutant.webp" alt="Лунарис" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/Mutant-512.webp" srcset="../../../pp/art/Mutant-384.webp 384w, ../../../pp/art/Mutant-512.webp 512w, ../../../pp/art/Mutant-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Лунарис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/82_Mutant.webp">
 <div class="pal-info" data-pal="Mutant"><div class="pal-no">№ 82 · Lunaris</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+
 <div class="works"><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
 <div class="partner"><b>Антигравитация</b> 🎒 из команды</div>
 <div class="stats">❤️ 90 · ⚔️ 100 · 🛡 90</div></div></div>
@@ -51,10 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 64, ночью: 64; уровни в первых точках: 25–28
-    - Подземелья: Пещера Священной Горы
-    - Может продаваться у торговца/рекрутера
-    - Яйцо: Большое обычное яйцо
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Mutant" data-d="63" data-n="63" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 25–46</span><a class="btn hm-full" href="../../../map/?pal=Mutant">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Подножие Астральных гор</span><span class="rgc">Архипелаг Морских Ветров</span><span class="rgc">Астральные горы</span><span class="rgc">Обсидиановый вулкан</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Священной Горы</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое обычное яйцо</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 

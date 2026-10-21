@@ -9,37 +9,22 @@
 
 Игра: Palworld из Steam, версия 1.0.5 (вышла 14 сентября 2026). Самый высокий уровень игрока — 80.
 Названия даны как в русской версии игры. В скобках — английское название, чтобы было легко искать.
-Метка «<span class="unv" title="Ещё перепроверяется">ⓘ</span>» значит: мы не нашли точного подтверждения. Посмотри в игре.
+Метка «» значит: мы не нашли точного подтверждения. Посмотри в игре.
 
 ## Словарик: что значат слова
-| Слово | Что это простыми словами |
-|---|---|
-| Пал | Существо, которое ты ловишь. Оно дерётся и работает за тебя. |
-| Отряд | Палы, которых ты носишь с собой (до 5). |
-| Пассивка (пассивный навык) | Особое свойство пала. Работает всегда само. Например, «+20% к атаке». У пала до 4 пассивок. |
-| Партнёрский навык | Умение пала, которое помогает тебе. Многие работают, просто пока пал в отряде. |
-| Стихия | Тип пала: огонь, вода, лёд, молния, трава, земля, тьма, дракон, нейтральный. Огонь бьёт лёд, вода бьёт огонь и так далее. |
-| Рейд | Бой с очень сильным боссом. Его вызывают на Алтаре для призыва. Лучше идти всей компанией. |
-| Конденсация | Ты «сливаешь» одинаковых палов в одного. Он получает звёзды и становится сильнее. |
-| Пробуждение | Новое усиление в версии 1.0. Нужны самоцветы из Мирового Древа. |
-| Мутация | Редкий пал из особого яйца. У него бывают особые пассивки. |
-| Души Пала | Предметы. Их несёшь к Монументу Силы и навсегда улучшаешь палов. |
-| Разведение | Два пала на Пастбище свиданий дают яйцо. Малыш получает пассивки родителей. |
-| Альфа | Большой сильный пал-босс в открытом мире. |
+
+<div class="kvs" markdown="0"><div class="kv"><span class="kv-l">Пал</span><span class="kv-v">Существо, которое ты ловишь. Оно дерётся и работает за тебя.</span></div><div class="kv"><span class="kv-l">Отряд</span><span class="kv-v">Палы, которых ты носишь с собой (до 5).</span></div><div class="kv"><span class="kv-l">Пассивка (пассивный навык)</span><span class="kv-v">Особое свойство пала. Работает всегда само. Например, «+20% к атаке». У пала до 4 пассивок.</span></div><div class="kv"><span class="kv-l">Партнёрский навык</span><span class="kv-v">Умение пала, которое помогает тебе. Многие работают, просто пока пал в отряде.</span></div><div class="kv"><span class="kv-l">Стихия</span><span class="kv-v">Тип пала: огонь, вода, лёд, молния, трава, земля, тьма, дракон, нейтральный. Огонь бьёт лёд, вода бьёт огонь и так далее.</span></div><div class="kv"><span class="kv-l">Рейд</span><span class="kv-v">Бой с очень сильным боссом. Его вызывают на Алтаре для призыва. Лучше идти всей компанией.</span></div><div class="kv"><span class="kv-l">Конденсация</span><span class="kv-v">Ты «сливаешь» одинаковых палов в одного. Он получает звёзды и становится сильнее.</span></div><div class="kv"><span class="kv-l">Пробуждение</span><span class="kv-v">Новое усиление в версии 1.0. Нужны самоцветы из Мирового Древа.</span></div><div class="kv"><span class="kv-l">Мутация</span><span class="kv-v">Редкий пал из особого яйца. У него бывают особые пассивки.</span></div><div class="kv"><span class="kv-l">Души Пала</span><span class="kv-v">Предметы. Их несёшь к Монументу Силы и навсегда улучшаешь палов.</span></div><div class="kv"><span class="kv-l">Разведение</span><span class="kv-v">Два пала на Пастбище свиданий дают яйцо. Малыш получает пассивки родителей.</span></div><div class="kv"><span class="kv-l">Альфа</span><span class="kv-v">Большой сильный пал-босс в открытом мире.</span></div></div>
+
 
 ## Главная идея
 Ты — командир. Ты не бьёшь сам. Ты выживаешь, лечишься, держишь щит и показываешь палу, кого бить. Бьют палы.
 Почему так: в версии 1.0 палы стали бить очень сильно. А твоя атака усиливает только твоё оружие.
 
 ## Куда вкладывать очки
-На 80 уровне у тебя примерно 79 очков<span class="unv" title="Ещё перепроверяется">ⓘ</span>. Атаку не качаем.
+На 80 уровне у тебя примерно 79 очков. Атаку не качаем.
 
-| Для чего | Здоровье | Выносливость | Атака | Защита | Скорость работы | Вес |
-|---|---|---|---|---|---|---|
-| Рейды, башни, боссы | 45 | 20 | 0 | 0 | 0 | 14 |
-| Гулять, ловить альф | 35 | 25 | 0 | 0 | 0 | 19 |
-| Фарм (сбор ресурсов) | 15 | 25 | 0 | 0 | 0 | 39 |
-| Крафт на базе | 10 | 10 | 0 | 0 | 40 | 19 |
+<div class="tcards" markdown="0"><div class="tcard"><div class="tc-t">Рейды, башни, боссы</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Здоровье</span><span class="kv-v">45</span></div><div class="tc-i"><span class="kv-l">Выносливость</span><span class="kv-v">20</span></div><div class="tc-i"><span class="kv-l">Атака</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Защита</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Скорость работы</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Вес</span><span class="kv-v">14</span></div></div></div><div class="tcard"><div class="tc-t">Гулять, ловить альф</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Здоровье</span><span class="kv-v">35</span></div><div class="tc-i"><span class="kv-l">Выносливость</span><span class="kv-v">25</span></div><div class="tc-i"><span class="kv-l">Атака</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Защита</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Скорость работы</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Вес</span><span class="kv-v">19</span></div></div></div><div class="tcard"><div class="tc-t">Фарм (сбор ресурсов)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Здоровье</span><span class="kv-v">15</span></div><div class="tc-i"><span class="kv-l">Выносливость</span><span class="kv-v">25</span></div><div class="tc-i"><span class="kv-l">Атака</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Защита</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Скорость работы</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Вес</span><span class="kv-v">39</span></div></div></div><div class="tcard"><div class="tc-t">Крафт на базе</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Здоровье</span><span class="kv-v">10</span></div><div class="tc-i"><span class="kv-l">Выносливость</span><span class="kv-v">10</span></div><div class="tc-i"><span class="kv-l">Атака</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Защита</span><span class="kv-v">0</span></div><div class="tc-i"><span class="kv-l">Скорость работы</span><span class="kv-v">40</span></div><div class="tc-i"><span class="kv-l">Вес</span><span class="kv-v">19</span></div></div></div></div>
+
 
 Здоровье — чтобы тебя не убили одним ударом. Выносливость — чтобы долго бегать и уворачиваться. Вес — чтобы унести больше.
 Снадобье очистки памяти сбрасывает только очки, которые ты вложил сам. На палов оно не действует.
@@ -60,15 +45,8 @@
 ## Палы-помощники (бафферы)
 Баффер — пал, который делает сильнее тебя или других палов. Два одинаковых баффа не складываются.
 
-| Пал | Что делает (на 0 звёзд) | Когда брать |
-|---|---|---|
-| Силвегис (Silvegis) | Щит восстанавливается на 30% быстрее и получает на 65% меньше урона. На 4 звёздах: 60% и 80%. | Всегда в рейдах и башнях |
-| Орсерк (Orserk) | Каждая твоя пуля даёт палу рядом +1% атаки и защиты на 5 секунд. До 30 раз. | Если ты стреляешь |
-| Зенолорд (Xenolord) | +20% к урону палов с оружием | Если у тебя палы с оружием |
-| Кицун (Kitsun) | −15% ледяного урона, нельзя заморозить | Против ледяных боссов |
-| Риббани (Ribbuny) | +15% атаки нейтральных палов | Нейтральная команда |
-| Петаллия / Лилин | Лечат тебя | Почти всегда |
-| Нокс (Nox) | Показывает статуэтки рядом | Когда гуляешь |
+<div class="tcards dense" markdown="0"><div class="tcard"><div class="tc-t">Силвегис (Silvegis)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что делает (на 0 звёзд)</span><span class="kv-v">Щит восстанавливается на 30% быстрее и получает на 65% меньше урона. На 4 звёздах: 60% и 80%.</span></div><div class="tc-i"><span class="kv-l">Когда брать</span><span class="kv-v">Всегда в рейдах и башнях</span></div></div></div><div class="tcard"><div class="tc-t">Орсерк (Orserk)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что делает (на 0 звёзд)</span><span class="kv-v">Каждая твоя пуля даёт палу рядом +1% атаки и защиты на 5 секунд. До 30 раз.</span></div><div class="tc-i"><span class="kv-l">Когда брать</span><span class="kv-v">Если ты стреляешь</span></div></div></div><div class="tcard"><div class="tc-t">Зенолорд (Xenolord)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что делает (на 0 звёзд)</span><span class="kv-v">+20% к урону палов с оружием</span></div><div class="tc-i"><span class="kv-l">Когда брать</span><span class="kv-v">Если у тебя палы с оружием</span></div></div></div><div class="tcard"><div class="tc-t">Кицун (Kitsun)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что делает (на 0 звёзд)</span><span class="kv-v">−15% ледяного урона, нельзя заморозить</span></div><div class="tc-i"><span class="kv-l">Когда брать</span><span class="kv-v">Против ледяных боссов</span></div></div></div><div class="tcard"><div class="tc-t">Риббани (Ribbuny)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что делает (на 0 звёзд)</span><span class="kv-v">+15% атаки нейтральных палов</span></div><div class="tc-i"><span class="kv-l">Когда брать</span><span class="kv-v">Нейтральная команда</span></div></div></div><div class="tcard"><div class="tc-t">Петаллия / Лилин</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что делает (на 0 звёзд)</span><span class="kv-v">Лечат тебя</span></div><div class="tc-i"><span class="kv-l">Когда брать</span><span class="kv-v">Почти всегда</span></div></div></div><div class="tcard"><div class="tc-t">Нокс (Nox)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Что делает (на 0 звёзд)</span><span class="kv-v">Показывает статуэтки рядом</span></div><div class="tc-i"><span class="kv-l">Когда брать</span><span class="kv-v">Когда гуляешь</span></div></div></div></div>
+
 
 ## Кто лучше всех дерётся
 Это мнение игроков, а не цифры игры.
@@ -76,37 +54,15 @@
 - Тоже отлично: Некромус (тьма), Паладиус (нейтральный), Фросталлион Нокт (тьма), Шэдоубик (тьма), Орсерк (молния и дракон).
 
 ### Кого против кого
-| Враг | Бери | Почему |
-|---|---|---|
-| Огненный (Блазамут Рю) | Водных и ледяных | Вода бьёт огонь |
-| Тёмный (Бэллануар Либеро) | Драконов (Джетрагон) | Дракон бьёт тьму |
-| Дракон | Ледяных (Фросталлион) | Лёд бьёт дракона |
-| Водный | Молнию (Орсерк) | Молния бьёт воду |
-| Ледяной | Огненных | Огонь бьёт лёд |
+
+<div class="tcards dense" markdown="0"><div class="tcard"><div class="tc-t">Огненный (Блазамут Рю)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Бери</span><span class="kv-v">Водных и ледяных</span></div><div class="tc-i"><span class="kv-l">Почему</span><span class="kv-v">Вода бьёт огонь</span></div></div></div><div class="tcard"><div class="tc-t">Тёмный (Бэллануар Либеро)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Бери</span><span class="kv-v">Драконов (Джетрагон)</span></div><div class="tc-i"><span class="kv-l">Почему</span><span class="kv-v">Дракон бьёт тьму</span></div></div></div><div class="tcard"><div class="tc-t">Дракон</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Бери</span><span class="kv-v">Ледяных (Фросталлион)</span></div><div class="tc-i"><span class="kv-l">Почему</span><span class="kv-v">Лёд бьёт дракона</span></div></div></div><div class="tcard"><div class="tc-t">Водный</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Бери</span><span class="kv-v">Молнию (Орсерк)</span></div><div class="tc-i"><span class="kv-l">Почему</span><span class="kv-v">Молния бьёт воду</span></div></div></div><div class="tcard"><div class="tc-t">Ледяной</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Бери</span><span class="kv-v">Огненных</span></div><div class="tc-i"><span class="kv-l">Почему</span><span class="kv-v">Огонь бьёт лёд</span></div></div></div></div>
+
 
 ## Лучшие пассивки
 cc (русская версия).
 
-| Название | Что даёт |
-|---|---|
-| Легенда (Legend) | Атака +20%, защита +20%, скорость +20% |
-| Демон-бог (Demon God) | Атака +30%, защита +5% |
-| Мистер мускул (Musclehead) | Атака +30%, но работает на 50% медленнее |
-| Свирепый (Ferocious) | Атака +20%<span class="unv" title="Ещё перепроверяется">ⓘ</span> |
-| Хладнокровный (Serenity) | Навыки перезаряжаются на 30% быстрее, атака +10% |
-| Бессмертие (Immortality), мутация | Лечится на 5% от своего урона, само лечение +100%, атака +15% |
-| Особая конституция (Idiosyncratic), мутация | Лечение палов и игрока +50%, защита +25%, не боится яда и огня |
-| Алмазное тело (Diamond Body) | Защита +30%, нельзя оглушить и оттолкнуть |
-| Удачливый (Lucky) | Атака +15%, защита +15%, работа +20% |
-| Бог разрушения (Мировое Древо) | Атака +40%, защита +20%, но здоровье −50% |
-| Обоюдоострый святой меч (Мировое Древо) | Атака +50%, защита −30% |
-| Живая стена святилища (Мировое Древо) | Защита +50%, атака −30% |
-| Император льда, Король тьмы и другие | +30% урона своей стихии |
-| Захватчик | +30% тьмы и +30% дракона |
-| Вечное пламя | +30% огня и +30% молнии |
-| Царь-рыба | +20% воды, +20% льда, защита +20% |
-| Командир штурма | Тебе +10% атаки |
-| Мастер обороны | Тебе +10% защиты |
+<div class="kvs" markdown="0"><div class="kv"><span class="kv-l">Легенда (Legend)</span><span class="kv-v">Атака +20%, защита +20%, скорость +20%</span></div><div class="kv"><span class="kv-l">Демон-бог (Demon God)</span><span class="kv-v">Атака +30%, защита +5%</span></div><div class="kv"><span class="kv-l">Мистер мускул (Musclehead)</span><span class="kv-v">Атака +30%, но работает на 50% медленнее</span></div><div class="kv"><span class="kv-l">Свирепый (Ferocious)</span><span class="kv-v">Атака +20%</span></div><div class="kv"><span class="kv-l">Хладнокровный (Serenity)</span><span class="kv-v">Навыки перезаряжаются на 30% быстрее, атака +10%</span></div><div class="kv"><span class="kv-l">Бессмертие (Immortality), мутация</span><span class="kv-v">Лечится на 5% от своего урона, само лечение +100%, атака +15%</span></div><div class="kv"><span class="kv-l">Особая конституция (Idiosyncratic), мутация</span><span class="kv-v">Лечение палов и игрока +50%, защита +25%, не боится яда и огня</span></div><div class="kv"><span class="kv-l">Алмазное тело (Diamond Body)</span><span class="kv-v">Защита +30%, нельзя оглушить и оттолкнуть</span></div><div class="kv"><span class="kv-l">Удачливый (Lucky)</span><span class="kv-v">Атака +15%, защита +15%, работа +20%</span></div><div class="kv"><span class="kv-l">Бог разрушения (Мировое Древо)</span><span class="kv-v">Атака +40%, защита +20%, но здоровье −50%</span></div><div class="kv"><span class="kv-l">Обоюдоострый святой меч (Мировое Древо)</span><span class="kv-v">Атака +50%, защита −30%</span></div><div class="kv"><span class="kv-l">Живая стена святилища (Мировое Древо)</span><span class="kv-v">Защита +50%, атака −30%</span></div><div class="kv"><span class="kv-l">Император льда, Король тьмы и другие</span><span class="kv-v">+30% урона своей стихии</span></div><div class="kv"><span class="kv-l">Захватчик</span><span class="kv-v">+30% тьмы и +30% дракона</span></div><div class="kv"><span class="kv-l">Вечное пламя</span><span class="kv-v">+30% огня и +30% молнии</span></div><div class="kv"><span class="kv-l">Царь-рыба</span><span class="kv-v">+20% воды, +20% льда, защита +20%</span></div><div class="kv"><span class="kv-l">Командир штурма</span><span class="kv-v">Тебе +10% атаки</span></div><div class="kv"><span class="kv-l">Мастер обороны</span><span class="kv-v">Тебе +10% защиты</span></div></div>
+
 
 ### Готовые наборы (4 пассивки)
 1. Для всего: Легенда + Демон-бог + Хладнокровный + Бессмертие.
@@ -118,10 +74,10 @@ cc (русская версия).
 ## Как сделать пала сильнее
 Делай по порядку.
 1. Пассивки. Сначала дай палу хорошие пассивки (смотри наборы выше).
-2. Пробуждение. Найди сияющие самоцветы (Radiant Gems) в глубине Мирового Древа. Отдай их палу. RU-название самоцветов<span class="unv" title="Ещё перепроверяется">ⓘ</span>.
+2. Пробуждение. Найди сияющие самоцветы (Radiant Gems) в глубине Мирового Древа. Отдай их палу. RU-название самоцветов.
 3. Конденсация. Положи пала в Капсулу с эссенцией Пала. Нужно 48 таких же палов: 4, потом 8, потом 12, потом 24. Каждая звезда даёт +5% к здоровью, атаке и защите (максимум +20%) и усиливает партнёрский навык.
 4. Души Пала. Неси их к Монументу Силы. Бойцу — атака и здоровье. Танку — здоровье и защита.
-5. Уровень 80. Палов можно быстро поднять книгами опыта<span class="unv" title="Ещё перепроверяется">ⓘ</span>.
+5. Уровень 80. Палов можно быстро поднять книгами опыта.
 
 ### Разведение (как получить нужные пассивки)
 1. Найди двух палов. У каждого есть нужные тебе пассивки, а лишних нет.
@@ -141,14 +97,8 @@ cc (русская версия).
 - 1 игрок — щит и лечение (Силвегис, Петаллия).
 - 1 игрок — баффы (Орсерк и винтовка).
 
-| Босс | Бойцы | Помощники |
-|---|---|---|
-| Бэллануар Либеро (тьма) | Джетрагон, другие драконы | Силвегис, Петаллия |
-| Блазамут Рю (огонь, дракон) | Ледяные и водные | Силвегис, Петаллия |
-| Зенолорд (тьма, дракон) | Фросталлион (лёд) | Силвегис, Петаллия |
-| Харталис (нейтральный; ур. 70, ультра ур. 80) | Тёмные (Бэллануар Либеро, Некромус, Шэдоубик) — тьма бьёт нейтральных | Силвегис, Петаллия |
-| Лунный лорд (ур. 50; мастер ур. 80) | Стихии нет — самые сильные палы любой стихии, дальние атаки; бей части тела по очереди | Силвегис, Петаллия |
-| Бэллануар (ур. 35) | Драконы | Силвегис |
+<div class="tcards dense" markdown="0"><div class="tcard"><div class="tc-t">Бэллануар Либеро (тьма)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Бойцы</span><span class="kv-v">Джетрагон, другие драконы</span></div><div class="tc-i"><span class="kv-l">Помощники</span><span class="kv-v">Силвегис, Петаллия</span></div></div></div><div class="tcard"><div class="tc-t">Блазамут Рю (огонь, дракон)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Бойцы</span><span class="kv-v">Ледяные и водные</span></div><div class="tc-i"><span class="kv-l">Помощники</span><span class="kv-v">Силвегис, Петаллия</span></div></div></div><div class="tcard"><div class="tc-t">Зенолорд (тьма, дракон)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Бойцы</span><span class="kv-v">Фросталлион (лёд)</span></div><div class="tc-i"><span class="kv-l">Помощники</span><span class="kv-v">Силвегис, Петаллия</span></div></div></div><div class="tcard"><div class="tc-t">Харталис (нейтральный; ур. 70, ультра ур. 80)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Бойцы</span><span class="kv-v">Тёмные (Бэллануар Либеро, Некромус, Шэдоубик) — тьма бьёт нейтральных</span></div><div class="tc-i"><span class="kv-l">Помощники</span><span class="kv-v">Силвегис, Петаллия</span></div></div></div><div class="tcard"><div class="tc-t">Лунный лорд (ур. 50; мастер ур. 80)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Бойцы</span><span class="kv-v">Стихии нет — самые сильные палы любой стихии, дальние атаки; бей части тела по очереди</span></div><div class="tc-i"><span class="kv-l">Помощники</span><span class="kv-v">Силвегис, Петаллия</span></div></div></div><div class="tcard"><div class="tc-t">Бэллануар (ур. 35)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Бойцы</span><span class="kv-v">Драконы</span></div><div class="tc-i"><span class="kv-l">Помощники</span><span class="kv-v">Силвегис</span></div></div></div></div>
+
 
 Что делать в бою:
 1. Стой дальше своего пала.
@@ -171,10 +121,10 @@ cc (русская версия).
 
 ## Фарм (сбор ресурсов)
 1. Вложи очки по строке «Фарм».
-2. Возьми Плазменный мультирезак<span class="unv" title="Ещё перепроверяется">ⓘ</span>.
+2. Возьми Плазменный мультирезак.
 3. В отряд возьми палов с пассивками:
    - Начальник рудника — ты добываешь руду на 25% лучше.
-   - Лидер лесозаготовок — ты рубишь деревья на 25% лучше<span class="unv" title="Ещё перепроверяется">ⓘ</span>.
+   - Лидер лесозаготовок — ты рубишь деревья на 25% лучше.
    - Мотиватор — ты работаешь на 25% быстрее.
 4. Надень Пояс для инструментов жителя острова.
 5. Для перелётов — Джетрагон.
@@ -209,7 +159,7 @@ cc (русская версия).
 - Конденсация: добавлено +5% за звезду, максимум +20%.
 - <a class="psv r-3" data-psv="Тренер по исцелению" href="../../passivki/healing_coach/">Тренер по исцелению</a> заменён на <a class="psv r-3" data-psv="Мастер обороны" href="../../passivki/stronghold_strategist/">Мастер обороны</a> в наборе танка: название не подтверждено.
 - Убраны неподтверждённые вещи: «Небесная печать», «Пояс Ворсект Терры».
-- ИСПРАВЛЕНИЕ (20.10): рейд-боссы **Харталис** (ур. 70, ультра ур. 80) и **Лунный лорд** (ур. 50, мастер ур. 80) существуют — подтверждено данными игры. Пассивка <a class="psv r-4" data-psv="Нянька" href="../../passivki/babysitter/">Нянька</a> тоже существует (мутационная). Специальный торт и Роскошный овощной торт — есть, эффекты<span class="unv" title="Ещё перепроверяется">ⓘ</span>.
+- ИСПРАВЛЕНИЕ (20.10): рейд-боссы **Харталис** (ур. 70, ультра ур. 80) и **Лунный лорд** (ур. 50, мастер ур. 80) существуют — подтверждено данными игры. Пассивка <a class="psv r-4" data-psv="Нянька" href="../../passivki/babysitter/">Нянька</a> тоже существует (мутационная). Специальный торт и Роскошный овощной торт — есть, эффекты.
 - Версия 1.0.5 и уровень 80 подтверждены патчноутами Steam.
 - В 1.0.4 починили пассивки Удачливый и Особая конституция. Теперь они работают как написано.
 

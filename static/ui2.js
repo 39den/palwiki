@@ -35,9 +35,10 @@ window.PW_pickPal=function(D,title,cb){const sh=document.createElement('div');sh
  L.addEventListener('click',e=>{const b=e.target.closest('.pp');if(!b)return;const p=D.pals.find(x=>x.id==b.dataset.id);close();cb(p);});
  inp.addEventListener('keydown',e=>{if(e.key=='Enter'){const b=L.querySelector('.pp');if(b)b.click();}});};
 /* ---------- full-screen search ---------- */
-let SX=null;function openSearch(pre){(window.PW_load||window.PW_data)().then(D=>{if(SX){SX.querySelector('input').focus();return;}
+let SX=null,SXo=null;function hsInput(){let w=document.getElementById('hsx');if(w)return w.querySelector('input');const hd=document.querySelector('.md-header__inner');if(!hd)return null;w=document.createElement('div');w.id='hsx';w.className='hsx';w.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="hsq" placeholder="Пал, босс или вопрос" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-label="Поиск" aria-controls="sxp" aria-expanded="false"><button type="button" class="sx-clr" aria-label="Очистить" hidden>×</button>';const t=hd.querySelector('.md-header__title');(t||hd.lastChild).after(w);return w.querySelector('input');}
+function openSearch(pre){const hi=hsInput();if(hi&&pre==null)hi.focus({preventScroll:true});(window.PW_load||window.PW_data)().then(D=>{if(SX){if(pre!=null){hi.value=pre;}SXo();if(pre!=null)hi.dispatchEvent(new Event('input'));hi.focus({preventScroll:true});return;}
  const s=document.getElementById('__search');if(s)s.checked=false;
- SX=document.createElement('div');SX.className='sx';SX.setAttribute('role','dialog');SX.setAttribute('aria-label','Поиск');bodyLock(true);
+ SX=document.createElement('div');SX.className='sx sx-inline';SX.id='sxp';SX.setAttribute('role','listbox');SX.setAttribute('aria-label','Результаты поиска');SX.hidden=true;
  const recQ=()=>LS.get('pw_recentq',[]);const pushQ=q=>{q=q.trim();if(q.length<2)return;LS.set('pw_recentq',[q,...recQ().filter(x=>x!=q)].slice(0,8));};
  const pop=(D.popular||[]).map(([i])=>D.pals.find(p=>p.id==i)).filter(p=>p&&p.url).slice(0,8);
  const tiles=[['🐾','Палы','gallery/'],['👑','Боссы','boss/'],['✨','Пассивки','passivki/'],['📦','Предметы','4_spravochniki/predmety/'],['🗺️','Карта','map/'],['🧬','Разведение','breed/'],['🛠','Сборка','my/'],['⚖️','Сравнить','compare/']];
@@ -46,9 +47,14 @@ let SX=null;function openSearch(pre){(window.PW_load||window.PW_data)().then(D=>
   ${pop.length?`<div class="sx-h">Популярное</div><div class="sx-chips">${pop.map(p=>`<a class="sx-c sx-p" href="${B+p.url}"><img src="${B+p.thumb}" width="22" height="22" alt="">${esc(p.ru)}</a>`).join('')}</div>`:''}
   <div class="sx-h">Разделы</div><div class="sx-tiles">${tiles.map(([i,l,u])=>`<a href="${B+u}"><span>${i}</span>${l}</a>`).join('')}</div>
   <div class="sx-h">Можно спросить</div><div class="sx-chips">${ex.map(q=>`<button type="button" class="sx-c" data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div>`;
- SX.innerHTML=`<div class="sx-top"><button type="button" class="sx-back" aria-label="Закрыть">←</button><input type="search" placeholder="Пал, босс, предмет или вопрос…" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"><button type="button" class="sx-clr" aria-label="Очистить" hidden>×</button></div><div class="sx-body">${empty()}</div>`;
- document.body.appendChild(SX);requestAnimationFrame(()=>SX.classList.add('on'));const inp=SX.querySelector('input'),body=SX.querySelector('.sx-body'),clr=SX.querySelector('.sx-clr');
- const close=()=>{if(!SX)return;SX.remove();SX=null;bodyLock(false);};SX.querySelector('.sx-back').onclick=close;
+ SX.innerHTML=`<button type="button" class="sx-x" aria-label="Закрыть">×</button><div class="sx-body">${empty()}</div>`;
+ document.body.appendChild(SX);const inp=hi,body=SX.querySelector('.sx-body'),clr=inp.parentNode.querySelector('.sx-clr');
+ const place=()=>{const r=inp.parentNode.getBoundingClientRect(),mob=innerWidth<700;SX.style.top=(r.bottom+6)+'px';if(mob){SX.style.left='8px';SX.style.right='8px';SX.style.width='';}else{const w=Math.max(r.width,520);SX.style.left=Math.min(r.left,innerWidth-w-12)+'px';SX.style.width=w+'px';SX.style.right='';}};
+ SXo=()=>{place();SX.hidden=false;inp.setAttribute('aria-expanded','true');document.documentElement.classList.add('sx-open');};
+ const close=()=>{SX.hidden=true;inp.setAttribute('aria-expanded','false');document.documentElement.classList.remove('sx-open');};SX.querySelector('.sx-x').onclick=()=>{close();inp.blur();};
+ addEventListener('resize',()=>{if(!SX.hidden)place();},{passive:true});addEventListener('scroll',()=>{if(!SX.hidden)place();},{passive:true});
+ document.addEventListener('pointerdown',e=>{if(SX.hidden)return;if(SX.contains(e.target)||inp.parentNode.contains(e.target))return;close();},true);
+ inp.addEventListener('focus',()=>{draw();SXo();});
  const cmp=v=>{const m=window.PW_core.norm(v).match(/^сравн\S*\s+(.+?)\s+(?:и|с|vs|против|или)\s+(.+)$/);if(!m)return null;const a=window.PW_core.find(m[1],['pal']),b=window.PW_core.find(m[2],['pal']);if(!a||!b)return null;const A=D.pals[a.ref],Bp=D.pals[b.ref];
   return `<a class="sx-ans sx-cmp" href="${B}compare/?a=${encodeURIComponent(A.ru)}&b=${encodeURIComponent(Bp.ru)}"><img src="${B+A.thumb}" width="48" height="48" alt=""><b>⚖️ Сравнить ${esc(A.ru)} и ${esc(Bp.ru)}</b><img src="${B+Bp.thumb}" width="48" height="48" alt=""></a>`;};
  const draw=()=>{const v=inp.value;clr.hidden=!v;if(v.trim().length<1){body.innerHTML=empty();return;}
@@ -59,19 +65,19 @@ let SX=null;function openSearch(pre){(window.PW_load||window.PW_data)().then(D=>
   if(res.length){const g={};res.slice(0,30).forEach(o=>(g[o.t]=g[o.t]||[]).push(o));h+=['pal','boss','passive','item','page'].filter(t=>g[t]).map(t=>`<div class="sx-h">${TT[t]}ы</div>`.replace('Палы','Палы').replace('Боссы','Боссы').replace('Пассивкаы','Пассивки').replace('Предметы','Предметы').replace('Разделы','Разделы')+g[t].slice(0,t=='pal'?8:5).map(row).join('')).join('');}
   else if(!ans&&!c){const s=window.PW_core.suggest?window.PW_core.suggest(v,4):[];h+=`<div class="sx-none"><b>Ничего не нашлось</b><p>Проверь написание или попробуй:</p><div class="sx-chips">${s.map(x=>`<button type="button" class="sx-c" data-q="${esc(x.name)}">${esc(x.name)}</button>`).join('')}${['анубис','башня','легенда'].map(q=>`<button type="button" class="sx-c" data-q="${q}">${q}</button>`).join('')}</div></div>`;}
   body.innerHTML=h;};
- let t;inp.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(draw,90);});clr.onclick=()=>{inp.value='';draw();inp.focus();};
- body.addEventListener('click',e=>{const d=e.target.closest('[data-del]');if(d){LS.set('pw_recentq',recQ().filter(x=>x!=d.dataset.del));draw();return;}const q=e.target.closest('[data-q]');if(q){e.preventDefault();inp.value=q.dataset.q;draw();return;}const a=e.target.closest('a');if(a)pushQ(inp.value);});
+ let t;inp.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(draw,90);});clr.onclick=()=>{inp.value='';draw();inp.focus({preventScroll:true});SXo();};inp.addEventListener('input',()=>{if(SX.hidden)SXo();});
+ body.addEventListener('click',e=>{const d=e.target.closest('[data-del]');if(d){LS.set('pw_recentq',recQ().filter(x=>x!=d.dataset.del));draw();return;}const q=e.target.closest('[data-q]');if(q){e.preventDefault();inp.value=q.dataset.q;draw();inp.focus({preventScroll:true});return;}const a=e.target.closest('a');if(a)pushQ(inp.value);});
  let sel=-1;const items=()=>[...body.querySelectorAll('.sx-ans,.sx-r')];const mark=()=>items().forEach((x,i)=>x.classList.toggle('sel',i==sel));inp.addEventListener('input',()=>{sel=-1;});
  inp.addEventListener('keydown',e=>{const it=items();if(e.key=='ArrowDown'){e.preventDefault();sel=Math.min(it.length-1,sel+1);mark();it[sel]&&it[sel].scrollIntoView({block:'nearest'});}else if(e.key=='ArrowUp'){e.preventDefault();sel=Math.max(-1,sel-1);mark();}
-  else if(e.key=='Enter'){pushQ(inp.value);const a=it[sel>=0?sel:0];if(a)location.href=a.href;}if(e.key=='Escape')close();});
- SX.addEventListener('keydown',e=>{if(e.key=='Escape')close();});
- if(pre){inp.value=pre;draw();}inp.focus();});}
+  else if(e.key=='Enter'){pushQ(inp.value);const a=it[sel>=0?sel:0];if(a)location.href=a.href;}if(e.key=='Escape'){e.preventDefault();close();}});
+ SX.addEventListener('keydown',e=>{if(e.key=='Escape'){close();inp.focus({preventScroll:true});}});
+ if(pre!=null)inp.value=pre;draw();SXo();inp.focus({preventScroll:true});});}
 window.PW_search=openSearch;
 // iOS: focus must happen in the user gesture -> create input synchronously when data already cached
 document.addEventListener('click',e=>{const l=e.target.closest('label[for=__search],.md-search__icon,[href="#search"],.md-search__input');if(!l)return;e.preventDefault();e.stopPropagation();const s=document.getElementById('__search');if(s)s.checked=false;openSearch();},true);
 document.addEventListener('keydown',e=>{const tg=e.target;const typing=tg.closest&&tg.closest('input,textarea,select,[contenteditable]');if((e.key=='k'||e.key=='K'||e.key=='л')&&(e.ctrlKey||e.metaKey)){e.preventDefault();e.stopPropagation();openSearch();}else if(e.key=='/'&&!typing){e.preventDefault();e.stopPropagation();openSearch();}},true);
-document.addEventListener('DOMContentLoaded',()=>{const s=document.getElementById('__search');if(s)s.addEventListener('change',()=>{if(s.checked){s.checked=false;openSearch();}});window.PW_data();
- const hq=document.getElementById('home-q');if(hq){hq.addEventListener('focus',e=>{hq.blur();openSearch(hq.value);});}
+document.addEventListener('DOMContentLoaded',()=>{const hi0=hsInput();if(hi0)hi0.addEventListener('focus',()=>{if(!SX)openSearch();},{once:true});const s=document.getElementById('__search');if(s)s.addEventListener('change',()=>{if(s.checked){s.checked=false;openSearch();}});window.PW_data();
+ const hq=document.getElementById('home-q');if(hq){hq.addEventListener('focus',e=>{hq.blur();openSearch(hq.value);});}document.querySelectorAll('[data-open-search]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();openSearch(b.dataset.q||null);}));
  const q=new URLSearchParams(location.search).get('q');if(q&&!document.getElementById('pwmap'))openSearch(q);});
 /* ---------- compare button on pal page + compare picker ---------- */
 document.addEventListener('DOMContentLoaded',()=>window.PW_data().then(D=>{
@@ -127,7 +133,7 @@ document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.pf
   ask.addEventListener('click',e=>{const b=e.target.closest('[data-q]');if(b){inp.value=b.dataset.q;go();}});document.getElementById('asks').onclick=go;inp.addEventListener('keydown',e=>{if(e.key=='Enter')go();});
   const u=new URLSearchParams(location.search).get('ask');if(u){inp.value=u;go();}});
  /* ask box on pal / boss pages */
- const info=document.querySelector('.pal-info[data-pal]'),bh=document.querySelector('.boss-hero');if(info||bh){const name=(document.querySelector('article h1')||{}).textContent||'';const nm=name.trim();
+ const info=document.querySelector('.pal-info[data-pal]'),bh=document.querySelector('.boss-hero');if(info||bh){const name=((document.querySelector('article h1')||{}).textContent||'').replace(/[¶§\u200b-\u200d\u2060\u2063\ufeff]/g,'').trim();const nm=name.trim();
   const qs=info?[['📍 где найти','где найти '+nm],['✨ лучшие пассивки','пассивки '+nm],['🧬 разведение','как вывести '+nm],['🎯 слабость','чем бить '+nm]]:[['🎯 чем бить','чем бить '+nm],['📍 где','где '+nm]];
   const box=document.createElement('div');box.className='askmini';box.innerHTML=`<div class="am-h">🤖 Спроси про ${info?'этого пала':'этого босса'}</div><div class="ask-chips">${qs.map(([l,q])=>`<button type="button" data-q="${esc(q)}">${l}</button>`).join('')}<button type="button" data-ig>🎮 В игре</button></div>`;box.querySelector('[data-ig]').onclick=()=>window.PW_ingame&&window.PW_ingame(true);
   (info?info.closest('.pal-hero'):bh).after(box);box.addEventListener('click',e=>{const b=e.target.closest('[data-q]');if(b&&window.PW_search)window.PW_search(b.dataset.q);});}

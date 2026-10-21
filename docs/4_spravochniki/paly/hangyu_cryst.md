@@ -1,10 +1,11 @@
 # Хангю Крист
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/38B_WindChimes_Ice.webp" alt="Хангю Крист" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/WindChimes_Ice-512.webp" srcset="../../../pp/art/WindChimes_Ice-384.webp 384w, ../../../pp/art/WindChimes_Ice-512.webp 512w, ../../../pp/art/WindChimes_Ice-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Хангю Крист" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/38B_WindChimes_Ice.webp">
 <div class="pal-info" data-pal="WindChimes_Ice"><div class="pal-no">№ 38B · Hangyu Cryst</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Охлаждение 2">❄️ Охлаждение <b>2</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
 <div class="partner"><b>Морозные качели</b> 🎒 из команды</div>
 <div class="stats">❤️ 80 · ⚔️ 80 · 🛡 70</div></div></div>
@@ -52,8 +53,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: нет/особый способ; точек появления днём: 0, ночью: 335; уровни в первых точках: 32–36
-    - Яйцо: Яйцо льда
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="0" data-n="335" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 32–37</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Подножие Астральных гор</span><span class="rgc">Астральные горы</span><span class="rgc">Сакурадзима</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо льда</b></div></div></div>
 
 
 

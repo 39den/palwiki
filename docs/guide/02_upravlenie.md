@@ -2,30 +2,8 @@
 
 Клавиши можно поменять: Esc → Настройки (Options) → Управление (Controls).
 
-| Клавиша | Что делает |
-|---|---|
-| W A S D | Идти вперёд/влево/назад/вправо |
-| Пробел | Прыжок. Нажми ещё раз в воздухе — раскроется глайдер (парашют или летающий пал) |
-| Shift | Бег (тратит выносливость) |
-| Ctrl | Кувырок (уворот). Во время кувырка тебя почти не ранят — лучший способ уклониться от удара босса |
-| C | Присесть / подкат / 3-я атака ездового пала |
-| ЛКМ (левая кнопка мыши) | Атака / выстрел / 1-я атака ездового пала |
-| ПКМ (правая кнопка) | Прицелиться / отменить бросок сферы |
-| Колесо мыши | Сменить оружие |
-| R | Перезарядка. У сундука — «быстро сложить» |
-| Q | Бросить сферу (поймать пала) |
-| 2 | Выбрать другую сферу |
-| E | Выпустить/убрать пала / 2-я атака ездового пала |
-| 1 и 3 | Выбрать предыдущего/следующего пала в отряде |
-| 4 | Колесо команд палу (агрессивно, пассивно, следовать, стоять) |
-| Средняя кнопка мыши | Приказ «бей вот этого» по цели под прицелом |
-| F | Навык партнёра (например, сесть на пала, поднять щит) |
-| V | Взять пала на руки (можно кинуть) |
-| B | Меню строительства |
-| Tab | Инвентарь |
-| M | Карта |
-| Esc | Меню и настройки |
-| Enter | Чат (в мультиплеере) |
+<div class="kvs" markdown="0"><div class="kv"><span class="kv-l">W A S D</span><span class="kv-v">Идти вперёд/влево/назад/вправо</span></div><div class="kv"><span class="kv-l">Пробел</span><span class="kv-v">Прыжок. Нажми ещё раз в воздухе — раскроется глайдер (парашют или летающий пал)</span></div><div class="kv"><span class="kv-l">Shift</span><span class="kv-v">Бег (тратит выносливость)</span></div><div class="kv"><span class="kv-l">Ctrl</span><span class="kv-v">Кувырок (уворот). Во время кувырка тебя почти не ранят — лучший способ уклониться от удара босса</span></div><div class="kv"><span class="kv-l">C</span><span class="kv-v">Присесть / подкат / 3-я атака ездового пала</span></div><div class="kv"><span class="kv-l">ЛКМ (левая кнопка мыши)</span><span class="kv-v">Атака / выстрел / 1-я атака ездового пала</span></div><div class="kv"><span class="kv-l">ПКМ (правая кнопка)</span><span class="kv-v">Прицелиться / отменить бросок сферы</span></div><div class="kv"><span class="kv-l">Колесо мыши</span><span class="kv-v">Сменить оружие</span></div><div class="kv"><span class="kv-l">R</span><span class="kv-v">Перезарядка. У сундука — «быстро сложить»</span></div><div class="kv"><span class="kv-l">Q</span><span class="kv-v">Бросить сферу (поймать пала)</span></div><div class="kv"><span class="kv-l">2</span><span class="kv-v">Выбрать другую сферу</span></div><div class="kv"><span class="kv-l">E</span><span class="kv-v">Выпустить/убрать пала / 2-я атака ездового пала</span></div><div class="kv"><span class="kv-l">1 и 3</span><span class="kv-v">Выбрать предыдущего/следующего пала в отряде</span></div><div class="kv"><span class="kv-l">4</span><span class="kv-v">Колесо команд палу (агрессивно, пассивно, следовать, стоять)</span></div><div class="kv"><span class="kv-l">Средняя кнопка мыши</span><span class="kv-v">Приказ «бей вот этого» по цели под прицелом</span></div><div class="kv"><span class="kv-l">F</span><span class="kv-v">Навык партнёра (например, сесть на пала, поднять щит)</span></div><div class="kv"><span class="kv-l">V</span><span class="kv-v">Взять пала на руки (можно кинуть)</span></div><div class="kv"><span class="kv-l">B</span><span class="kv-v">Меню строительства</span></div><div class="kv"><span class="kv-l">Tab</span><span class="kv-v">Инвентарь</span></div><div class="kv"><span class="kv-l">M</span><span class="kv-v">Карта</span></div><div class="kv"><span class="kv-l">Esc</span><span class="kv-v">Меню и настройки</span></div><div class="kv"><span class="kv-l">Enter</span><span class="kv-v">Чат (в мультиплеере)</span></div></div>
+
 
 ## Полезные хитрости управления
 - **Сесть на пала**: выпусти его (E) и нажми F. Нужно седло (делается на «Верстаке снаряжения для палов») — кроме палов, которые катают без седла.

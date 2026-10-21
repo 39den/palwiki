@@ -1,10 +1,11 @@
 # Ганглер Игнис
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/97B_GhostAnglerfish_Fire.webp" alt="Ганглер Игнис" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/GhostAnglerfish_Fire-p-512.webp" srcset="../../../pp/art/GhostAnglerfish_Fire-p-384.webp 384w, ../../../pp/art/GhostAnglerfish_Fire-p-512.webp 512w, ../../../pp/art/GhostAnglerfish_Fire-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Ганглер Игнис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/97B_GhostAnglerfish_Fire.webp">
 <div class="pal-info" data-pal="GhostAnglerfish_Fire"><div class="pal-no">№ 97B · Ghangler Ignis</div>
 <div class="chips"><span class="el el-fire">Огонь</span><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-electric">Молния</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span><span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span><span class="work" title="Полив 5">💧 Полив <b>5</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
 <div class="partner"><b>Знаменитый шеф морских глубин</b> 🐎 верхом 🐾 выпущен</div>
 <div class="stats">❤️ 90 · ⚔️ 130 · 🛡 105</div></div></div>
@@ -51,8 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 405, ночью: 405
-    - Яйцо: Большое раскалённое яйцо
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="197" data-n="197" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Выжженный холм</span><span class="rgc">Пустынное пепельное плато</span><span class="rgc">Жёлтоземная равнина</span><span class="rgc">Двурогий остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое раскалённое яйцо</b></div></div></div>
 
 
 

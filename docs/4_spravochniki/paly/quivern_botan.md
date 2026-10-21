@@ -1,10 +1,11 @@
 # Фэски Ботан
 
 <div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/124B_SkyDragon_Grass.webp" alt="Фэски Ботан" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/SkyDragon_Grass-512.webp" srcset="../../../pp/art/SkyDragon_Grass-384.webp 384w, ../../../pp/art/SkyDragon_Grass-512.webp 512w, ../../../pp/art/SkyDragon_Grass-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фэски Ботан" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/124B_SkyDragon_Grass.webp">
 <div class="pal-info" data-pal="SkyDragon_Grass"><div class="pal-no">№ 124B · Quivern Botan</div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-ice">Лёд</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span><span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 5">🌱 Посев семян <b>5</b></span><span class="work" title="Ручная работа 2">🖐️ Ручная работа <b>2</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Добыча 3">⛏️ Добыча <b>3</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>
 <div class="partner"><b>Милосердие травяного дракона</b> 🐎 верхом</div>
 <div class="stats">❤️ 105 · ⚔️ 105 · 🛡 100</div></div></div>
@@ -53,9 +54,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 59, ночью: 59; уровни в первых точках: 45–48
-    - Подземелья: Пещера Цветущей Сакуры
-    - Яйцо: Огромное яйцо дракона
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="59" data-n="59" data-t="42" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 45–80</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Сакурадзима</span><span class="rgc">Подножие Астральных гор</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Цветущей Сакуры</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо дракона</b></div></div></div>
 
 
 

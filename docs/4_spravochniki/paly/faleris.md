@@ -1,10 +1,11 @@
 # Фалерис
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/188_Horus.webp" alt="Фалерис" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/Horus-512.webp" srcset="../../../pp/art/Horus-384.webp 384w, ../../../pp/art/Horus-512.webp 512w, ../../../pp/art/Horus-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Фалерис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/188_Horus.webp">
 <div class="pal-info" data-pal="Horus"><div class="pal-no">№ 188 · Faleris</div>
 <div class="chips"><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 6">🔥 Разжигание огня <b>6</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
 <div class="partner"><b>Хищник пламени</b> 🎒 из команды 🐎 верхом</div>
 <div class="stats">❤️ 105 · ⚔️ 110 · 🛡 115</div></div></div>
@@ -51,8 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: нет/особый способ; точек появления днём: 0, ночью: 0
-    - Яйцо: Огромное раскалённое яйцо
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Horus" data-d="0" data-n="0" data-t="136" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_tree.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 76–80</span><a class="btn hm-full" href="../../../map/?pal=Horus">Показать на большой карте</a></div></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное раскалённое яйцо</b></div></div></div>
 
 
 

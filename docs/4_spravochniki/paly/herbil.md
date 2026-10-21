@@ -1,10 +1,11 @@
 # Хербил
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/10_LeafMomonga.webp" alt="Хербил" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/LeafMomonga-p-512.webp" srcset="../../../pp/art/LeafMomonga-p-384.webp 384w, ../../../pp/art/LeafMomonga-p-512.webp 512w, ../../../pp/art/LeafMomonga-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Хербил" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/10_LeafMomonga.webp">
 <div class="pal-info" data-pal="LeafMomonga"><div class="pal-no">№ 10 · Herbil</div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 1">🌱 Посев семян <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
 <div class="partner"><b>Импульс Хербила</b> 🎒 из команды</div>
 <div class="stats">❤️ 80 · ⚔️ 75 · 🛡 75</div></div></div>
@@ -51,10 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 209, ночью: 209; уровни в первых точках: 1–10
-    - Подземелья: Пещера Горного Потока
-    - Может продаваться у торговца/рекрутера
-    - Яйцо: Яйцо свежей листвы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="LeafMomonga" data-d="209" data-n="209" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 1–40</span><a class="btn hm-full" href="../../../map/?pal=LeafMomonga">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Глубины бамбуковой рощи</span><span class="rgc">Остров восходящих ветров</span><span class="rgc">Руины бастиона</span><span class="rgc">Дюны Анубиса</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Горного Потока</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо свежей листвы</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 

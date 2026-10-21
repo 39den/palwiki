@@ -1,10 +1,11 @@
 # Скатласс Игнис
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/128B_SwordCutlassfish_Fire.webp" alt="Скатласс Игнис" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/SwordCutlassfish_Fire-p-512.webp" srcset="../../../pp/art/SwordCutlassfish_Fire-p-384.webp 384w, ../../../pp/art/SwordCutlassfish_Fire-p-512.webp 512w, ../../../pp/art/SwordCutlassfish_Fire-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Скатласс Игнис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/128B_SwordCutlassfish_Fire.webp">
 <div class="pal-info" data-pal="SwordCutlassfish_Fire"><div class="pal-no">№ 128B · Skutlass Ignis</div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-fire">Огонь</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-electric">Молния</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span><span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 3">🔥 Разжигание огня <b>3</b></span><span class="work" title="Полив 2">💧 Полив <b>2</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>
 <div class="partner"><b>Жечь плоть, разрубать кости</b> 🔘 кнопкой</div>
 <div class="stats">❤️ 70 · ⚔️ 105 · 🛡 80</div></div></div>
@@ -52,8 +53,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 16, ночью: 16
-    - Яйцо: Большое яйцо воды
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="45" data-n="45" data-t="86" data-a="24"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 40–40</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Остров Огненных жил</span><span class="rgc">Двурогий остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо воды</b></div></div></div>
 
 
 

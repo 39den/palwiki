@@ -1,0 +1,34 @@
+# custom 24px stroke icons, stroke=currentColor
+I={
+'fire':'<path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.3 1.6 1.2 2.5 2 2.5 0-3-1-5 1-8z"/>',
+'water':'<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9 14a3 3 0 0 0 3 3"/>',
+'grass':'<path d="M5 19C5 10 11 5 19 5c0 8-5 14-14 14z"/><path d="M5 19l8-8"/>',
+'electric':'<path d="M13 2 5 14h6l-1 8 8-12h-6z"/>',
+'ice':'<path d="M12 2v20M3.5 7l17 10M20.5 7l-17 10"/><path d="M9 4l3 2 3-2M9 20l3-2 3 2"/>',
+'ground':'<path d="M2 20 9 8l4 6 3-4 6 10z"/><path d="M7.5 12.5 9 14l1.5-1.5"/>',
+'dark':'<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>',
+'dragon':'<path d="M4 20c3-1 5-4 5-8s2-7 7-8c-1 2-1 3 0 4 2-1 3-1 4 0-2 1-3 3-3 6 0 4-4 6-13 6z"/>',
+'neutral':'<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/>',
+'search':'<circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/>',
+'sphere':'<circle cx="12" cy="12" r="9"/><path d="M3 12h6M15 12h6"/><circle cx="12" cy="12" r="3"/>',
+'egg':'<path d="M12 3c4 0 7 6 7 11a7 7 0 0 1-14 0c0-5 3-11 7-11z"/><path d="M7 13l2.5 2 2.5-2 2.5 2 2.5-2"/>',
+'map':'<path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/>',
+'boss':'<path d="M4 9l3 3 5-7 5 7 3-3-1 10H5z"/><path d="M5 19h14"/>',
+'spark':'<path d="M12 2l2 7 7 3-7 2-2 8-2-8-7-2 7-3z"/>',
+'heart':'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>',
+'compare':'<path d="M8 3v18M16 3v18"/><path d="M3 8h5M16 16h5"/>',
+'star':'<path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/>',
+'arrow':'<path d="M5 12h14M13 6l6 6-6 6"/>',
+'home':'<path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/>',
+'list':'<path d="M8 6h13M8 12h13M8 18h13"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/>',
+'sun':'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/>',
+'work':'<path d="M14 4l6 6-3 3-6-6z"/><path d="M11 7 3 15l3 3 8-8"/>',
+'shield':'<path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z"/>',
+'clock':'<circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/>',
+'pin':'<path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/>',
+'close':'<path d="M6 6l12 12M18 6 6 18"/>',
+'bolt2':'<path d="M4 14h4l2-6 4 12 2-6h4"/>',
+}
+def ic(n,s=20,cls='i'): return f'<svg class="{cls}" width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{I[n]}</svg>'
+I['moon']='<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>'
+I['raid']='<path d="M12 3 4 7v5c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7z"/><path d="M9 12l2 2 4-4"/>'

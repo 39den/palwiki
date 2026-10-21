@@ -1,10 +1,11 @@
 # Блейзхаул Нокт
 
 <div class="pal-hero" markdown="0" data-el="fire" style="--pc:var(--fire)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/112B_Manticore_Dark.webp" alt="Блейзхаул Нокт" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/Manticore_Dark-512.webp" srcset="../../../pp/art/Manticore_Dark-384.webp 384w, ../../../pp/art/Manticore_Dark-512.webp 512w, ../../../pp/art/Manticore_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Блейзхаул Нокт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/112B_Manticore_Dark.webp">
 <div class="pal-info" data-pal="Manticore_Dark"><div class="pal-no">№ 112B · Blazehowl Noct</div>
 <div class="chips"><span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-water">Вода</span><span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-water">Вода <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-grass">Трава <b class="mx">×0,65</b></span><span class="el el-ice">Лёд <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Разжигание огня 5">🔥 Разжигание огня <b>5</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>
 <div class="partner"><b>Лев Чёрного пламени</b> 🎒 из команды 🐎 верхом</div>
 <div class="stats">❤️ 105 · ⚔️ 115 · 🛡 80</div></div></div>
@@ -51,9 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 148, ночью: 550; уровни в первых точках: 35–39
-    - Подземелья: Пещера Вулкана
-    - Яйцо: Огромное раскалённое яйцо
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="148" data-n="548" data-t="42" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 35–80</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Обсидиановый вулкан</span><span class="rgc">Иссушенное побережье</span><span class="rgc">Подножье вулкана</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Вулкана</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное раскалённое яйцо</b></div></div></div>
 
 
 

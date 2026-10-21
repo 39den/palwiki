@@ -1,10 +1,11 @@
 # Якумо
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/127_GuardianDog.webp" alt="Якумо" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/GuardianDog-512.webp" srcset="../../../pp/art/GuardianDog-384.webp 384w, ../../../pp/art/GuardianDog-512.webp 512w, ../../../pp/art/GuardianDog-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Якумо" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/127_GuardianDog.webp">
 <div class="pal-info" data-pal="GuardianDog"><div class="pal-no">№ 127 · Yakumo</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span></div>
 <div class="partner"><b>Рыбак рыбака видит издалека</b> 🐾 выпущен 🐎 верхом</div>
 <div class="stats">❤️ 85 · ⚔️ 85 · 🛡 85</div></div></div>
@@ -51,9 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 53, ночью: 53; уровни в первых точках: 53–56
-    - Подземелья: Пещера Цветущей Сакуры
-    - Яйцо: Обычное яйцо
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="GuardianDog" data-d="53" data-n="53" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 53–64</span><a class="btn hm-full" href="../../../map/?pal=GuardianDog">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Сакурадзима</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Цветущей Сакуры</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Обычное яйцо</b></div></div></div>
 
 
 

@@ -1,10 +1,11 @@
 # Старрион Примо
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/130B_NightBlueHorse_Neutral.webp" alt="Старрион Примо" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/NightBlueHorse_Neutral-p-512.webp" srcset="../../../pp/art/NightBlueHorse_Neutral-p-384.webp 384w, ../../../pp/art/NightBlueHorse_Neutral-p-512.webp 512w, ../../../pp/art/NightBlueHorse_Neutral-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Старрион Примо" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/130B_NightBlueHorse_Neutral.webp">
 <div class="pal-info" data-pal="NightBlueHorse_Neutral"><div class="pal-no">№ 130B · Starryon Primo</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+
 <div class="works"><span class="work" title="Сбор 7">🌾 Сбор <b>7</b></span></div>
 <div class="partner"><b>Танцор света</b> 🐾 выпущен 🐎 верхом</div>
 <div class="stats">❤️ 110 · ⚔️ 105 · 🛡 100</div></div></div>
@@ -49,8 +50,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: нет/особый способ; точек появления днём: 0, ночью: 0
-    - Яйцо: Огромное обычное яйцо
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="0" data-n="0" data-t="126" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_tree.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 74–74</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное обычное яйцо</b></div></div></div>
 
 
 

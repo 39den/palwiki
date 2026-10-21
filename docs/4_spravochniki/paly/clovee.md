@@ -1,10 +1,11 @@
 # Клови
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/14_CloverFairy.webp" alt="Клови" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/CloverFairy-p-512.webp" srcset="../../../pp/art/CloverFairy-p-384.webp 384w, ../../../pp/art/CloverFairy-p-512.webp 512w, ../../../pp/art/CloverFairy-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Клови" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/14_CloverFairy.webp">
 <div class="pal-info" data-pal="CloverFairy"><div class="pal-no">№ 14 · Clovee</div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь</span><span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 1">🌱 Посев семян <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span></div>
 <div class="partner"><b>Счастливый клевер</b> 🏠 на базе</div>
 <div class="stats">❤️ 80 · ⚔️ 65 · 🛡 65</div></div></div>
@@ -50,9 +51,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 60, ночью: 60; уровни в первых точках: 3–5
-    - Подземелья: Пещера Отдалённого Острова, Пещера Холмов
-    - Яйцо: Яйцо свежей листвы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="CloverFairy" data-d="60" data-n="60" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 3–3</span><a class="btn hm-full" href="../../../map/?pal=CloverFairy">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Остров восходящих ветров</span><span class="rgc">Скалы красной листвы</span><span class="rgc">Золотые холмы</span><span class="rgc">Руины бастиона</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Отдалённого Острова</b></div><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Холмов</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо свежей листвы</b></div></div></div>
 
 
 

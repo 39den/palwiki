@@ -25,15 +25,15 @@ theme:
 plugins:
   - search:
       lang: [ru, en]
-extra_css: ['assets/extra.css?v=1792517904']
-extra_javascript: ['assets/smart.js?v=1792517904', 'assets/site.js?v=1792517904', 'assets/features.js?v=1792517904', 'assets/ui2.js?v=1792517904', 'assets/ui3.js?v=1792517904']
+extra_css: ['assets/extra.css?v=1792577783']
+extra_javascript: ['assets/smart.js?v=1792577783', 'assets/site.js?v=1792577783', 'assets/features.js?v=1792577783', 'assets/ui2.js?v=1792577783', 'assets/ui3.js?v=1792577783']
 markdown_extensions:
   - tables
   - attr_list
   - md_in_html
   - admonition
   - toc:
-      permalink: true
+      permalink: false
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
   - pymdownx.superfences
   - pymdownx.tabbed:

@@ -1,10 +1,11 @@
 # Лифманк
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/4_Carbunclo.webp" alt="Лифманк" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/Carbunclo-512.webp" srcset="../../../pp/art/Carbunclo-384.webp 384w, ../../../pp/art/Carbunclo-512.webp 512w, ../../../pp/art/Carbunclo-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Лифманк" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/4_Carbunclo.webp">
 <div class="pal-info" data-pal="Carbunclo"><div class="pal-no">№ 4 · Lifmunk</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 1">🌱 Посев семян <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Рубка деревьев 1">🪓 Рубка деревьев <b>1</b></span><span class="work" title="Фармацевтика 1">💊 Фармацевтика <b>1</b></span></div>
 <div class="partner"><b>Лифманк Рекойл</b> 🔘 кнопкой</div>
 <div class="stats">❤️ 75 · ⚔️ 70 · 🛡 70</div></div></div>
@@ -53,10 +54,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 213, ночью: 213; уровни в первых точках: 1–3
-    - Подземелья: Пещера Отдалённого Острова, Пещера Холмов
-    - Может продаваться у торговца/рекрутера
-    - Яйцо: Яйцо свежей листвы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Carbunclo" data-d="213" data-n="213" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 1–18</span><a class="btn hm-full" href="../../../map/?pal=Carbunclo">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Архипелаг Морских Ветров</span><span class="rgc">Кричащий остров</span><span class="rgc">Руины бастиона</span><span class="rgc">Болотный остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Отдалённого Острова</b></div><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Холмов</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо свежей листвы</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 

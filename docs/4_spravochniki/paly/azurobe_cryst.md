@@ -1,10 +1,11 @@
 # Азуроб Крист
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/41B_BlueDragon_Ice.webp" alt="Азуроб Крист" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/BlueDragon_Ice-p-512.webp" srcset="../../../pp/art/BlueDragon_Ice-p-384.webp 384w, ../../../pp/art/BlueDragon_Ice-p-512.webp 512w, ../../../pp/art/BlueDragon_Ice-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Азуроб Крист" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/41B_BlueDragon_Ice.webp">
 <div class="pal-info" data-pal="BlueDragon_Ice"><div class="pal-no">№ 41B · Azurobe Cryst</div>
 <div class="chips"><span class="el el-ice">Лёд</span><span class="el el-dragon">Дракон</span></div>
-<div class="weak">Слабость: <span class="el el-ice">Лёд</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-dark">Тьма <b class="mx">×0,65</b></span><span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Охлаждение 4">❄️ Охлаждение <b>4</b></span></div>
 <div class="partner"><b>Танец парящего льда</b> 🐎 верхом</div>
 <div class="stats">❤️ 115 · ⚔️ 105 · 🛡 105</div></div></div>
@@ -49,8 +50,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 259, ночью: 259
-    - Яйцо: Огромное яйцо льда
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="138" data-n="138" data-t="42" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 50–80</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Ледяной коралловый холм</span><span class="rgc">Остров Ледяных кольцевых руин</span><span class="rgc">Разбившийся корабль Тэнраку</span><span class="rgc">Ледяной остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо льда</b></div></div></div>
 
 
 

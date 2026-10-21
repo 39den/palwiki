@@ -3,24 +3,11 @@ hide: [toc]
 ---
 # Зенара и Астралим
 
-<div class="boss-hero" data-el="neutral" markdown="0"><img class="bimg" src="../../icon/WorldTreeDragon.webp" alt="" width="260" height="260"><div class="bi"><span class="kind">🏯 Башня <button class="hlp" data-h="boss">?</button></span><h2>Астралим</h2><div></div><div class="wk">Слабость: —</div><div class="pl">📍 ??? (финал)</div><div class="bb"><a class="md-button" href="../../4_spravochniki/paly/astralym/">Страница пала</a></div></div></div>
-
-=== "Обычный"
-
-    <div class="bstats" markdown="0"><div><span>Уровень</span><b>80</b></div><div><span>Здоровье</span><b>420 000</b></div></div>
-
-    **Награда:** Первая победа: опыт, очки древних технологий, продвижение сюжета<span class="unv" title="Ещё перепроверяется">ⓘ</span>; сложный режим — ценные материалы (см. справочник «Башни»)
-
-=== "Сложный"
-
-    <div class="bstats" markdown="0"><div><span>Уровень</span><b>100</b></div><div><span>Здоровье</span><b>6 237 000</b></div></div>
-
-    **Награда:** Первая победа: опыт, очки древних технологий, продвижение сюжета<span class="unv" title="Ещё перепроверяется">ⓘ</span>; сложный режим — ценные материалы (см. справочник «Башни»)
-
+<div class="boss-hero" data-el="neutral" markdown="0"><img class="bimg" src="../../pp/art/WorldTreeDragon-p-512.webp" srcset="../../pp/art/WorldTreeDragon-p-384.webp 384w, ../../pp/art/WorldTreeDragon-p-512.webp 512w, ../../pp/art/WorldTreeDragon-p-768.webp 768w" sizes="(max-width:700px) 70vw, 360px" alt="Астралим" width="512" height="512" decoding="async" fetchpriority="high"><div class="bi"><span class="kind">🏯 Башня <button class="hlp" data-h="boss">?</button></span><h2>Астралим</h2><span class="leader" title="Лидер башни">🎖 Зенара <small>лидер башни</small></span><div class="bel"><span class="il">Стихия</span></div><div class="wk"><span class="il">Слабость</span>—</div><div class="pl">📍 ??? (финал)</div><div class="bmodes n2"><input type="radio" name="bmode" id="bm0" checked><label for="bm0">Обычный</label><input type="radio" name="bmode" id="bm1" ><label for="bm1">Сложный</label><div class="bmp"><div class=itiles><div class="it"><span class="ii">⭐</span><span class="il">Уровень</span><b>80</b></div><div class="it"><span class="ii">❤️</span><span class="il">Здоровье</span><b>420 000</b></div></div><div class="brw"><span class="ish">🎁 Награда</span> Первая победа: опыт, очки древних технологий, продвижение сюжета; сложный режим — ценные материалы (см. справочник «Башни»)</div></div><div class="bmp"><div class=itiles><div class="it"><span class="ii">⭐</span><span class="il">Уровень</span><b>100</b></div><div class="it"><span class="ii">❤️</span><span class="il">Здоровье</span><b>6 237 000</b></div></div><div class="brw"><span class="ish">🎁 Награда</span> Первая победа: опыт, очки древних технологий, продвижение сюжета; сложный режим — ценные материалы (см. справочник «Башни»)</div></div></div><div class="bb"><a class="md-button" href="../../4_spravochniki/paly/astralym/">Страница пала</a></div></div></div>
 
 
 ## 🧠 Тактика
 
-<div class="tips" markdown="0"><div class="tip"><span>💡</span>Держись за палом, кувырок (Ctrl) от больших атак, средняя кнопка мыши — приказ атаковать.</div><div class="tip"><span>💡</span>Ограничение по времени&lt;span class=&quot;unv&quot; title=&quot;Ещё перепроверяется&quot;&gt;ⓘ&lt;/span&gt;</div></div>
+<div class="tips" markdown="0"><div class="tip"><span>💡</span>Держись за палом, уклоняйся кувырком (на ПК <kbd>Ctrl</kbd>) от больших атак, отдавай палу приказ атаковать цель (на ПК <kbd>СКМ</kbd>)</div></div>
 
 <div class="pn" markdown="0"><a class="card-link" href="../../boss/shaolong/">← Аури и Шаолонг</a><a class="card-link" href="../../boss/bellanoir/">Безумная Леди Бэллануар →</a></div>

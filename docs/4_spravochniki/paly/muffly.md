@@ -1,10 +1,11 @@
 # Маффли
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/59_FluffyBird.webp" alt="Маффли" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/FluffyBird-p-512.webp" srcset="../../../pp/art/FluffyBird-p-384.webp 384w, ../../../pp/art/FluffyBird-p-512.webp 512w, ../../../pp/art/FluffyBird-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Маффли" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/59_FluffyBird.webp">
 <div class="pal-info" data-pal="FluffyBird"><div class="pal-no">№ 59 · Muffly</div>
 <div class="chips"><span class="el el-ice">Лёд</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Охлаждение 2">❄️ Охлаждение <b>2</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
 <div class="partner"><b>Пушистик-кругляш</b> 🎒 из команды</div>
 <div class="stats">❤️ 60 · ⚔️ 80 · 🛡 55</div></div></div>
@@ -50,8 +51,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 270, ночью: 270
-    - Яйцо: Яйцо льда
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="FluffyBird" data-d="270" data-n="270" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 15–64</span><a class="btn hm-full" href="../../../map/?pal=FluffyBird">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Берег Полумесяца</span><span class="rgc">Солнечный предел</span><span class="rgc">Остров восходящих ветров</span><span class="rgc">Зелёный ручей</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо льда</b></div></div></div>
 
 
 

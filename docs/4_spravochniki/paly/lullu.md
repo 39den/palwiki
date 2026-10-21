@@ -1,10 +1,11 @@
 # Нежноцвет
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/125_LeafPrincess.webp" alt="Нежноцвет" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/LeafPrincess-512.webp" srcset="../../../pp/art/LeafPrincess-384.webp 384w, ../../../pp/art/LeafPrincess-512.webp 512w, ../../../pp/art/LeafPrincess-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Нежноцвет" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/125_LeafPrincess.webp">
 <div class="pal-info" data-pal="LeafPrincess"><div class="pal-no">№ 125 · Lullu</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 3">🌱 Посев семян <b>3</b></span><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Фармацевтика 3">💊 Фармацевтика <b>3</b></span></div>
 <div class="partner"><b>Цветочное усиление</b> 🏠 на базе</div>
 <div class="stats">❤️ 90 · ⚔️ 90 · 🛡 80</div></div></div>
@@ -52,9 +53,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 20, ночью: 20; уровни в первых точках: 55–57
-    - Подземелья: Пещера Цветущей Сакуры
-    - Яйцо: Яйцо свежей листвы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="LeafPrincess" data-d="20" data-n="20" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 55–55</span><a class="btn hm-full" href="../../../map/?pal=LeafPrincess">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Сакурадзима</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Цветущей Сакуры</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо свежей листвы</b></div></div></div>
 
 
 

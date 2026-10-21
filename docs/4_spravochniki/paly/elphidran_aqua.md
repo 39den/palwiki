@@ -1,10 +1,11 @@
 # Элфидран Аква
 
 <div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/63B_FairyDragon_Water.webp" alt="Элфидран Аква" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/FairyDragon_Water-512.webp" srcset="../../../pp/art/FairyDragon_Water-384.webp 384w, ../../../pp/art/FairyDragon_Water-512.webp 512w, ../../../pp/art/FairyDragon_Water-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Элфидран Аква" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/63B_FairyDragon_Water.webp">
 <div class="pal-info" data-pal="FairyDragon_Water"><div class="pal-no">№ 63B · Elphidran Aqua</div>
 <div class="chips"><span class="el el-dragon">Дракон</span><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-ice">Лёд</span><span class="el el-electric">Молния</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span><span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 4">💧 Полив <b>4</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span></div>
 <div class="partner"><b>Добросердечный водный дракон</b> 🎒 из команды 🐎 верхом</div>
 <div class="stats">❤️ 115 · ⚔️ 80 · 🛡 95</div></div></div>
@@ -50,8 +51,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 55, ночью: 55; уровни в первых точках: 33–37
-    - Яйцо: Огромное яйцо дракона
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="55" data-n="55" data-t="42" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 33–80</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Сакурадзима</span><span class="rgc">Ледяная гора</span><span class="rgc">Зелёный ручей</span><span class="rgc">Иссохшие дюны</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо дракона</b></div></div></div>
 
 
 

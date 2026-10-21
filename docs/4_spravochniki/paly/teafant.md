@@ -1,10 +1,11 @@
 # Тифант
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/11_Ganesha.webp" alt="Тифант" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/Ganesha-512.webp" srcset="../../../pp/art/Ganesha-384.webp 384w, ../../../pp/art/Ganesha-512.webp 512w, ../../../pp/art/Ganesha-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Тифант" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/11_Ganesha.webp">
 <div class="pal-info" data-pal="Ganesha"><div class="pal-no">№ 11 · Teafant</div>
 <div class="chips"><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span></div>
 <div class="partner"><b>Исцеляющий душ</b> 🎒 из команды</div>
 <div class="stats">❤️ 70 · ⚔️ 60 · 🛡 70</div></div></div>
@@ -49,9 +50,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 172, ночью: 172; уровни в первых точках: 2–4
-    - Подземелья: Пещера Отдалённого Острова, Пещера Холмов
-    - Яйцо: Яйцо воды
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Ganesha" data-d="170" data-n="170" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 2–16</span><a class="btn hm-full" href="../../../map/?pal=Ganesha">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Архипелаг Морских Ветров</span><span class="rgc">Остров безмолвия</span><span class="rgc">Болотный остров</span><span class="rgc">Глубины бамбуковой рощи</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Отдалённого Острова</b></div><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Холмов</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо воды</b></div></div></div>
 
 
 

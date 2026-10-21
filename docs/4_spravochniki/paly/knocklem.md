@@ -1,10 +1,11 @@
 # Теранайт
 
 <div class="pal-hero" markdown="0" data-el="ground" style="--pc:var(--ground)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/159_WingGolem.webp" alt="Теранайт" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/WingGolem-512.webp" srcset="../../../pp/art/WingGolem-384.webp 384w, ../../../pp/art/WingGolem-512.webp 512w, ../../../pp/art/WingGolem-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Теранайт" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/159_WingGolem.webp">
 <div class="pal-info" data-pal="WingGolem"><div class="pal-no">№ 159 · Knocklem</div>
 <div class="chips"><span class="el el-ground">Земля</span></div>
-<div class="weak">Слабость: <span class="el el-grass">Трава</span></div>
+<div class="weak">Слабость: <span class="el el-grass">Трава <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-electric">Молния <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Добыча 7">⛏️ Добыча <b>7</b></span><span class="work" title="Транспортировка 7">📦 Транспортировка <b>7</b></span></div>
 <div class="partner"><b>Режим стального стража</b> 🔘 кнопкой</div>
 <div class="stats">❤️ 105 · ⚔️ 110 · 🛡 135</div></div></div>
@@ -51,8 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 13, ночью: 13
-    - Яйцо: Огромное яйцо земли
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="WingGolem" data-d="12" data-n="12" data-t="86" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 55–80</span><a class="btn hm-full" href="../../../map/?pal=WingGolem">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Разбившийся корабль Тэнраку</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо земли</b></div></div></div>
 
 
 

@@ -1,10 +1,11 @@
 # Зенолорд
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/196_DarkMechaDragon.webp" alt="Зенолорд" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/DarkMechaDragon-p-512.webp" srcset="../../../pp/art/DarkMechaDragon-p-384.webp 384w, ../../../pp/art/DarkMechaDragon-p-512.webp 512w, ../../../pp/art/DarkMechaDragon-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Зенолорд" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/196_DarkMechaDragon.webp">
 <div class="pal-info" data-pal="DarkMechaDragon"><div class="pal-no">№ 196 · Xenolord</div>
 <div class="chips"><span class="el el-dark">Тьма</span><span class="el el-dragon">Дракон</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-ice">Лёд <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span></div>
 <div class="partner"><b>Метеоритные крылья</b> 🎒 из команды 🐎 верхом</div>
 <div class="stats">❤️ 130 · ⚔️ 120 · 🛡 120</div></div></div>
@@ -49,8 +50,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: нет/особый способ; точек появления днём: 0, ночью: 0
-    - Яйцо: Огромное яйцо тьмы
+
+    <div class="hab" markdown="0"><div class="nowild"><b>В дикой природе не встречается</b><span>Точек появления на открытой карте в данных игры нет — ищи в подземельях, яйцах или выводи разведением.</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо тьмы</b></div></div></div>
 
 
 

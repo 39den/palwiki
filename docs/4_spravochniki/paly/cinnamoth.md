@@ -1,10 +1,11 @@
 # Синнамос
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/61_CuteButterfly.webp" alt="Синнамос" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/CuteButterfly-512.webp" srcset="../../../pp/art/CuteButterfly-384.webp 384w, ../../../pp/art/CuteButterfly-512.webp 512w, ../../../pp/art/CuteButterfly-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Синнамос" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/61_CuteButterfly.webp">
 <div class="pal-info" data-pal="CuteButterfly"><div class="pal-no">№ 61 · Cinnamoth</div>
 <div class="chips"><span class="el el-grass">Трава</span></div>
-<div class="weak">Слабость: <span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 2">🌱 Посев семян <b>2</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Фармацевтика 2">💊 Фармацевтика <b>2</b></span></div>
 <div class="partner"><b>Загадочные чешуйки</b> 🔘 кнопкой 🏠 на базе</div>
 <div class="stats">❤️ 70 · ⚔️ 80 · 🛡 80</div></div></div>
@@ -51,9 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 261, ночью: 261; уровни в первых точках: 16–18
-    - Подземелья: Пещера Горного Потока
-    - Яйцо: Яйцо свежей листвы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="CuteButterfly" data-d="261" data-n="261" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 16–16</span><a class="btn hm-full" href="../../../map/?pal=CuteButterfly">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Берег Полумесяца</span><span class="rgc">Остров восходящих ветров</span><span class="rgc">Зелёный ручей</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Горного Потока</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо свежей листвы</b></div></div></div>
 
 
 

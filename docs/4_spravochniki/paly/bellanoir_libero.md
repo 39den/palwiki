@@ -1,10 +1,11 @@
 # Бэллануар Либеро
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/195B_NightLady_Dark.webp" alt="Бэллануар Либеро" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/NightLady_Dark-512.webp" srcset="../../../pp/art/NightLady_Dark-384.webp 384w, ../../../pp/art/NightLady_Dark-512.webp 512w, ../../../pp/art/NightLady_Dark-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Бэллануар Либеро" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/195B_NightLady_Dark.webp">
 <div class="pal-info" data-pal="NightLady_Dark"><div class="pal-no">№ 195B · Bellanoir Libero</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Фармацевтика 7">💊 Фармацевтика <b>7</b></span><span class="work" title="Транспортировка 4">📦 Транспортировка <b>4</b></span></div>
 <div class="partner"><b>Кошмарный взгляд</b> 🔘 кнопкой</div>
 <div class="stats">❤️ 120 · ⚔️ 150 · 🛡 100</div></div></div>
@@ -51,8 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: нет/особый способ; точек появления днём: 0, ночью: 0
-    - Яйцо: Огромное яйцо тьмы
+
+    <div class="hab" markdown="0"><div class="nowild"><b>В дикой природе не встречается</b><span>Точек появления на открытой карте в данных игры нет — ищи в подземельях, яйцах или выводи разведением.</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо тьмы</b></div></div></div>
 
 
 

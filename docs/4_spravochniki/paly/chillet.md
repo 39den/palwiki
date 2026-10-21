@@ -1,10 +1,11 @@
 # Чиллет
 
 <div class="pal-hero" markdown="0" data-el="ice" style="--pc:var(--ice)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/103_WeaselDragon.webp" alt="Чиллет" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/WeaselDragon-512.webp" srcset="../../../pp/art/WeaselDragon-384.webp 384w, ../../../pp/art/WeaselDragon-512.webp 512w, ../../../pp/art/WeaselDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Чиллет" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/103_WeaselDragon.webp">
 <div class="pal-info" data-pal="WeaselDragon"><div class="pal-no">№ 103 · Chillet</div>
 <div class="chips"><span class="el el-ice">Лёд</span><span class="el el-dragon">Дракон</span></div>
-<div class="weak">Слабость: <span class="el el-ice">Лёд</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-dark">Тьма <b class="mx">×0,65</b></span><span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Охлаждение 2">❄️ Охлаждение <b>2</b></span></div>
 <div class="partner"><b>Верткая ласка</b> 🐎 верхом</div>
 <div class="stats">❤️ 90 · ⚔️ 80 · 🛡 80</div></div></div>
@@ -51,9 +52,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 118, ночью: 118; уровни в первых точках: 32–36
-    - Подземелья: Пещера Священной Горы
-    - Яйцо: Яйцо льда
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="WeaselDragon" data-d="117" data-n="117" data-t="42" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 32–80</span><a class="btn hm-full" href="../../../map/?pal=WeaselDragon">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Подножие Астральных гор</span><span class="rgc">Астральные горы</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Священной Горы</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо льда</b></div></div></div>
 
 
 

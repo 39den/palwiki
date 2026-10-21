@@ -2,35 +2,21 @@
 
 В игре 9 стихий: Нейтральный, Огонь, Вода, Молния, Трава, Земля, Лёд, Дракон, Тьма.
 
-| Атака стихии | Сильна против (×2 урона<span class="unv" title="Ещё перепроверяется">ⓘ</span>) | Слаба против (×0.5) |
-|---|---|---|
-| 🔥 Огонь | 🌿 Трава, ❄️ Лёд | 💧 Вода |
-| 💧 Вода | 🔥 Огонь | ⚡ Молния |
-| ⚡ Молния | 💧 Вода | 🪨 Земля |
-| 🌿 Трава | 🪨 Земля | 🔥 Огонь |
-| 🪨 Земля | ⚡ Молния | 🌿 Трава |
-| ❄️ Лёд | 🐉 Дракон | 🔥 Огонь |
-| 🐉 Дракон | 🌑 Тьма | ❄️ Лёд |
-| 🌑 Тьма | ⚪ Нейтральный | 🐉 Дракон |
-| ⚪ Нейтральный | — | 🌑 Тьма (получает больше от тьмы) |
+<div class="tcards dense" markdown="0"><div class="tcard"><div class="tc-t">🔥 Огонь</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Сильна против (×2 урона)</span><span class="kv-v">🌿 Трава, ❄️ Лёд</span></div><div class="tc-i"><span class="kv-l">Слаба против (×0.5)</span><span class="kv-v">💧 Вода</span></div></div></div><div class="tcard"><div class="tc-t">💧 Вода</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Сильна против (×2 урона)</span><span class="kv-v">🔥 Огонь</span></div><div class="tc-i"><span class="kv-l">Слаба против (×0.5)</span><span class="kv-v">⚡ Молния</span></div></div></div><div class="tcard"><div class="tc-t">⚡ Молния</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Сильна против (×2 урона)</span><span class="kv-v">💧 Вода</span></div><div class="tc-i"><span class="kv-l">Слаба против (×0.5)</span><span class="kv-v">🪨 Земля</span></div></div></div><div class="tcard"><div class="tc-t">🌿 Трава</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Сильна против (×2 урона)</span><span class="kv-v">🪨 Земля</span></div><div class="tc-i"><span class="kv-l">Слаба против (×0.5)</span><span class="kv-v">🔥 Огонь</span></div></div></div><div class="tcard"><div class="tc-t">🪨 Земля</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Сильна против (×2 урона)</span><span class="kv-v">⚡ Молния</span></div><div class="tc-i"><span class="kv-l">Слаба против (×0.5)</span><span class="kv-v">🌿 Трава</span></div></div></div><div class="tcard"><div class="tc-t">❄️ Лёд</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Сильна против (×2 урона)</span><span class="kv-v">🐉 Дракон</span></div><div class="tc-i"><span class="kv-l">Слаба против (×0.5)</span><span class="kv-v">🔥 Огонь</span></div></div></div><div class="tcard"><div class="tc-t">🐉 Дракон</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Сильна против (×2 урона)</span><span class="kv-v">🌑 Тьма</span></div><div class="tc-i"><span class="kv-l">Слаба против (×0.5)</span><span class="kv-v">❄️ Лёд</span></div></div></div><div class="tcard"><div class="tc-t">🌑 Тьма</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Сильна против (×2 урона)</span><span class="kv-v">⚪ Нейтральный</span></div><div class="tc-i"><span class="kv-l">Слаба против (×0.5)</span><span class="kv-v">🐉 Дракон</span></div></div></div><div class="tcard"><div class="tc-t">⚪ Нейтральный</div><div class="tc-b"><div class="tc-i"><span class="kv-l">Слаба против (×0.5)</span><span class="kv-v">🌑 Тьма (получает больше от тьмы)</span></div></div></div></div>
+
 
 ## Как запомнить (цепочка)
 Огонь → Трава → Земля → Молния → Вода → Огонь. Лёд → Дракон → Тьма → Нейтральный. Огонь ещё бьёт Лёд.
 
 ## Палы с двумя стихиями
 - Пал-атакующий бьёт стихией своей **атаки** (у каждого навыка своя стихия!).
-- Пал-защитник с двумя стихиями: множители складываются/перемножаются<span class="unv" title="Ещё перепроверяется">ⓘ</span>. Пример: Блазамут Рю (Огонь+Дракон) — лёд бьёт дракона, но огонь сопротивляется льду → эффект может гаситься. Поэтому против него лучше **вода** (бьёт огонь) или проверяй в игре.
+- Пал-защитник с двумя стихиями: множители складываются/перемножаются. Пример: Блазамут Рю (Огонь+Дракон) — лёд бьёт дракона, но огонь сопротивляется льду → эффект может гаситься. Поэтому против него лучше **вода** (бьёт огонь) или проверяй в игре.
 - Бонус «урон по слабости» усиливают партнёрские навыки (например, +25–40% урона по слабости землёй у некоторых ездовых, см. «Справочник → Палы, увеличивающие вес»).
 
 ## Статус-эффекты стихий
-| Эффект | От чего | Что делает |
-|---|---|---|
-| Возгорание (Burn) | Огонь | Урон со временем |
-| Промокание (Wet) | Вода | Уязвимость к молнии<span class="unv" title="Ещё перепроверяется">ⓘ</span> |
-| Электризация (Shock) | Молния | Оглушение/замедление |
-| Заморозка (Freeze) | Лёд | Не двигается |
-| Отравление (Poison) | Тьма/яд | Урон со временем |
-| Слепота | Тьма | Хуже попадает<span class="unv" title="Ещё перепроверяется">ⓘ</span> |
+
+<div class="tcards dense" markdown="0"><div class="tcard"><div class="tc-t">Возгорание (Burn)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">От чего</span><span class="kv-v">Огонь</span></div><div class="tc-i"><span class="kv-l">Что делает</span><span class="kv-v">Урон со временем</span></div></div></div><div class="tcard"><div class="tc-t">Промокание (Wet)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">От чего</span><span class="kv-v">Вода</span></div><div class="tc-i"><span class="kv-l">Что делает</span><span class="kv-v">Уязвимость к молнии</span></div></div></div><div class="tcard"><div class="tc-t">Электризация (Shock)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">От чего</span><span class="kv-v">Молния</span></div><div class="tc-i"><span class="kv-l">Что делает</span><span class="kv-v">Оглушение/замедление</span></div></div></div><div class="tcard"><div class="tc-t">Заморозка (Freeze)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">От чего</span><span class="kv-v">Лёд</span></div><div class="tc-i"><span class="kv-l">Что делает</span><span class="kv-v">Не двигается</span></div></div></div><div class="tcard"><div class="tc-t">Отравление (Poison)</div><div class="tc-b"><div class="tc-i"><span class="kv-l">От чего</span><span class="kv-v">Тьма/яд</span></div><div class="tc-i"><span class="kv-l">Что делает</span><span class="kv-v">Урон со временем</span></div></div></div><div class="tcard"><div class="tc-t">Слепота</div><div class="tc-b"><div class="tc-i"><span class="kv-l">От чего</span><span class="kv-v">Тьма</span></div><div class="tc-i"><span class="kv-l">Что делает</span><span class="kv-v">Хуже попадает</span></div></div></div></div>
+
 Эффекты накапливаются («Накопленный эффект» у навыка, напр. «Возгорание 100»).
 
 ## Смена стихии

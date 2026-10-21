@@ -3,20 +3,7 @@ hide: [toc]
 ---
 # Лунный лорд
 
-<div class="boss-hero" data-el="neutral" markdown="0"><div class="bi"><span class="kind">⚔️ Рейд <button class="hlp" data-h="boss">?</button></span><h2>Лунный лорд</h2><div><span class="el el-neutral">Нет стихии (подтверждено paldb + wiki.gg)</span></div><div class="wk">Слабость: <span class="el el-neutral">— любая стихия бьёт одинаково</span></div><div class="bb"></div></div></div>
-
-=== "Обычный"
-
-    <div class="bstats" markdown="0"><div><span>Уровень</span><b>50</b></div><div><span>Здоровье</span><b>422 500</b></div></div>
-
-    **Награда:** Ультра-плита этого босса (100%) и ценные материалы
-
-=== "Мастер"
-
-    <div class="bstats" markdown="0"><div><span>Уровень</span><b>80</b></div><div><span>Здоровье</span><b>2 352 000</b></div></div>
-
-    **Награда:** Лучшие материалы и чертежи<span class="unv" title="Ещё перепроверяется">ⓘ</span>
-
+<div class="boss-hero" data-el="neutral" markdown="0"><div class="bi"><span class="kind">⚔️ Рейд <button class="hlp" data-h="boss">?</button></span><h2>Лунный лорд</h2><div class="bel"><span class="il">Стихия</span><span class="el el-neutral">Нет стихии (подтверждено paldb + wiki.gg)</span></div><div class="wk"><span class="il">Слабость</span></div><div class="bmodes n2"><input type="radio" name="bmode" id="bm0" checked><label for="bm0">Обычный</label><input type="radio" name="bmode" id="bm1" ><label for="bm1">Мастер</label><div class="bmp"><div class=itiles><div class="it"><span class="ii">⭐</span><span class="il">Уровень</span><b>50</b></div><div class="it"><span class="ii">❤️</span><span class="il">Здоровье</span><b>422 500</b></div></div><div class="brw"><span class="ish">🎁 Награда</span> Ультра-плита этого босса (100%) и ценные материалы</div></div><div class="bmp"><div class=itiles><div class="it"><span class="ii">⭐</span><span class="il">Уровень</span><b>80</b></div><div class="it"><span class="ii">❤️</span><span class="il">Здоровье</span><b>2 352 000</b></div></div><div class="brw"><span class="ish">🎁 Награда</span> Лучшие материалы и чертежи</div></div></div><div class="bb"></div></div></div>
 
 
 ## 🧠 Тактика

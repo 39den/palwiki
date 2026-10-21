@@ -1,10 +1,11 @@
 # Пенгуллет
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/17_Penguin.webp" alt="Пенгуллет" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/Penguin-512.webp" srcset="../../../pp/art/Penguin-384.webp 384w, ../../../pp/art/Penguin-512.webp 512w, ../../../pp/art/Penguin-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Пенгуллет" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/17_Penguin.webp">
 <div class="pal-info" data-pal="Penguin"><div class="pal-no">№ 17 · Pengullet</div>
 <div class="chips"><span class="el el-water">Вода</span><span class="el el-ice">Лёд</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-dragon">Дракон <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 1">💧 Полив <b>1</b></span><span class="work" title="Ручная работа 1">🖐️ Ручная работа <b>1</b></span><span class="work" title="Охлаждение 1">❄️ Охлаждение <b>1</b></span><span class="work" title="Транспортировка 1">📦 Транспортировка <b>1</b></span></div>
 <div class="partner"><b>Пенгуллетомёт</b> 🔘 кнопкой</div>
 <div class="stats">❤️ 70 · ⚔️ 75 · 🛡 70</div></div></div>
@@ -52,10 +53,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 1129, ночью: 1129; уровни в первых точках: 1–10
-    - Подземелья: Пещера Отдалённого Острова, Пещера Священной Горы, Пещера Холмов
-    - Может продаваться у торговца/рекрутера
-    - Яйцо: Яйцо воды
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Penguin" data-d="633" data-n="633" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 2–35</span><a class="btn hm-full" href="../../../map/?pal=Penguin">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Подножие Астральных гор</span><span class="rgc">Восточный дикий остров</span><span class="rgc">Кричащий остров</span><span class="rgc">Остров восходящих ветров</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Отдалённого Острова</b></div><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Священной Горы</b></div><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Холмов</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо воды</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 

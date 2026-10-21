@@ -1,10 +1,11 @@
 # Брончерри Аква
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/108B_SakuraSaurus_Water.webp" alt="Брончерри Аква" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/SakuraSaurus_Water-512.webp" srcset="../../../pp/art/SakuraSaurus_Water-384.webp 384w, ../../../pp/art/SakuraSaurus_Water-512.webp 512w, ../../../pp/art/SakuraSaurus_Water-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Брончерри Аква" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/108B_SakuraSaurus_Water.webp">
 <div class="pal-info" data-pal="SakuraSaurus_Water"><div class="pal-no">№ 108B · Broncherry Aqua</div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 5">💧 Полив <b>5</b></span></div>
 <div class="partner"><b>Цветущий дракон чистоты</b> 🎒 из команды 🐎 верхом</div>
 <div class="stats">❤️ 120 · ⚔️ 95 · 🛡 100</div></div></div>
@@ -50,8 +51,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 7, ночью: 7; уровни в первых точках: 51–55
-    - Яйцо: Огромное яйцо свежей листвы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="" data-d="7" data-n="7" data-t="42" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 51–80</span><a class="btn hm-full" href="../../../map/?pal=">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Зелёный ручей</span><span class="rgc">Шрамы войны</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо свежей листвы</b></div></div></div>
 
 
 

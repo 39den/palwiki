@@ -1,0 +1,74 @@
+[
+ {
+  "id": "Anubis",
+  "kind": "default",
+  "q": 78,
+  "kb": 331,
+  "frames": 48,
+  "fps": 24,
+  "size": 300
+ },
+ {
+  "id": "JetDragon",
+  "kind": "flyer",
+  "q": 70,
+  "kb": 466,
+  "frames": 48,
+  "fps": 24,
+  "size": 300
+ },
+ {
+  "id": "LilyQueen",
+  "kind": "default",
+  "q": 78,
+  "kb": 426,
+  "frames": 48,
+  "fps": 24,
+  "size": 300
+ },
+ {
+  "id": "SheepBall",
+  "kind": "small",
+  "q": 78,
+  "kb": 365,
+  "frames": 48,
+  "fps": 24,
+  "size": 300
+ },
+ {
+  "id": "PinkCat",
+  "kind": "small",
+  "q": 78,
+  "kb": 293,
+  "frames": 48,
+  "fps": 24,
+  "size": 300
+ },
+ {
+  "id": "ElecPanda",
+  "kind": "big",
+  "q": 78,
+  "kb": 445,
+  "frames": 48,
+  "fps": 24,
+  "size": 300
+ },
+ {
+  "id": "IceHorse",
+  "kind": "big",
+  "q": 78,
+  "kb": 473,
+  "frames": 48,
+  "fps": 24,
+  "size": 300
+ },
+ {
+  "id": "Kitsunebi",
+  "kind": "small",
+  "q": 78,
+  "kb": 382,
+  "frames": 48,
+  "fps": 24,
+  "size": 300
+ }
+]

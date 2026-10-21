@@ -1,10 +1,11 @@
 # Няфия
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/143_BadCatgirl.webp" alt="Няфия" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/BadCatgirl-p-512.webp" srcset="../../../pp/art/BadCatgirl-p-384.webp 384w, ../../../pp/art/BadCatgirl-p-512.webp 512w, ../../../pp/art/BadCatgirl-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Няфия" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/143_BadCatgirl.webp">
 <div class="pal-info" data-pal="BadCatgirl"><div class="pal-no">№ 143 · Nyafia</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 4">🖐️ Ручная работа <b>4</b></span><span class="work" title="Сбор 4">🌾 Сбор <b>4</b></span><span class="work" title="Рубка деревьев 2">🪓 Рубка деревьев <b>2</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
 <div class="partner"><b>Кошачий обстрел</b> 🔘 кнопкой 🎒 из команды</div>
 <div class="stats">❤️ 110 · ⚔️ 100 · 🛡 100</div></div></div>
@@ -52,9 +53,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 270, ночью: 270; уровни в первых точках: 50–52
-    - Подземелья: Пещера Тэнраку
-    - Яйцо: Яйцо тьмы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="BadCatgirl" data-d="264" data-n="264" data-t="0" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 50–56</span><a class="btn hm-full" href="../../../map/?pal=BadCatgirl">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Выжженный холм</span><span class="rgc">Тлеющее лавовое плато</span><span class="rgc">Кристаллизованное древнее дерево</span><span class="rgc">Иссушённое побережье</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Тэнраку</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо тьмы</b></div></div></div>
 
 
 

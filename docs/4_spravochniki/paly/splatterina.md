@@ -1,10 +1,11 @@
 # Сплаттерина
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/153_GrimGirl.webp" alt="Сплаттерина" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/GrimGirl-p-512.webp" srcset="../../../pp/art/GrimGirl-p-384.webp 384w, ../../../pp/art/GrimGirl-p-512.webp 512w, ../../../pp/art/GrimGirl-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Сплаттерина" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/153_GrimGirl.webp">
 <div class="pal-info" data-pal="GrimGirl"><div class="pal-no">№ 153 · Splatterina</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Рубка деревьев 3">🪓 Рубка деревьев <b>3</b></span><span class="work" title="Фармацевтика 5">💊 Фармацевтика <b>5</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
 <div class="partner"><b>Клинок безумной любви</b> 🎒 из команды</div>
 <div class="stats">❤️ 95 · ⚔️ 115 · 🛡 105</div></div></div>
@@ -52,9 +53,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 1, ночью: 793; уровни в первых точках: 56–59
-    - Подземелья: Пещера Тэнраку
-    - Яйцо: Яйцо тьмы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="GrimGirl" data-d="0" data-n="787" data-t="42" data-a="1"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 56–80</span><a class="btn hm-full" href="../../../map/?pal=GrimGirl">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Выжженный холм</span><span class="rgc">Жёлтоземная равнина</span><span class="rgc">Кристаллизованное древнее дерево</span><span class="rgc">Тлеющее лавовое плато</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Тэнраку</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо тьмы</b></div></div></div>
 
 
 

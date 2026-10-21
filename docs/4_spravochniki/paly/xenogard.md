@@ -1,10 +1,11 @@
 # Зеногард
 
 <div class="pal-hero" markdown="0" data-el="dragon" style="--pc:var(--dragon)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/146_WhiteAlienDragon.webp" alt="Зеногард" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/WhiteAlienDragon-512.webp" srcset="../../../pp/art/WhiteAlienDragon-384.webp 384w, ../../../pp/art/WhiteAlienDragon-512.webp 512w, ../../../pp/art/WhiteAlienDragon-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Зеногард" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/146_WhiteAlienDragon.webp">
 <div class="pal-info" data-pal="WhiteAlienDragon"><div class="pal-no">№ 146 · Xenogard</div>
 <div class="chips"><span class="el el-dragon">Дракон</span></div>
-<div class="weak">Слабость: <span class="el el-ice">Лёд</span></div>
+<div class="weak">Слабость: <span class="el el-ice">Лёд <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-dark">Тьма <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Добыча 4">⛏️ Добыча <b>4</b></span></div>
 <div class="partner"><b>Неизвестный нарушитель</b> 🎒 из команды 🐎 верхом</div>
 <div class="stats">❤️ 110 · ⚔️ 120 · 🛡 130</div></div></div>
@@ -49,8 +50,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: нет/особый способ; точек появления днём: 0, ночью: 0
-    - Яйцо: Огромное яйцо дракона
+
+    <div class="hab" markdown="0"><div class="nowild"><b>В дикой природе не встречается</b><span>Точек появления на открытой карте в данных игры нет — ищи в подземельях, яйцах или выводи разведением.</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо дракона</b></div></div></div>
 
 
 

@@ -1,10 +1,11 @@
 # Найтвинг
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/51_HawkBird.webp" alt="Найтвинг" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/HawkBird-512.webp" srcset="../../../pp/art/HawkBird-384.webp 384w, ../../../pp/art/HawkBird-512.webp 512w, ../../../pp/art/HawkBird-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Найтвинг" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/51_HawkBird.webp">
 <div class="pal-info" data-pal="HawkBird"><div class="pal-no">№ 51 · Nitewing</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+
 <div class="works"><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span></div>
 <div class="partner"><b>Спутник в путешествии</b> 🐎 верхом</div>
 <div class="stats">❤️ 100 · ⚔️ 95 · 🛡 80</div></div></div>
@@ -49,10 +50,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 231, ночью: 231; уровни в первых точках: 12–13
-    - Подземелья: Пещера Песчаных Дюн
-    - Может продаваться у торговца/рекрутера
-    - Яйцо: Обычное яйцо
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="HawkBird" data-d="228" data-n="228" data-t="0" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 12–45</span><a class="btn hm-full" href="../../../map/?pal=HawkBird">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Бамбуковые рощи</span><span class="rgc">Болотный остров</span><span class="rgc">Остров восходящих ветров</span><span class="rgc">Скалы красной листвы</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Песчаных Дюн</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Обычное яйцо</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 

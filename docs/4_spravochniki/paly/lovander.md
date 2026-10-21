@@ -1,10 +1,11 @@
 # Ловандер
 
 <div class="pal-hero" markdown="0" data-el="dark" style="--pc:var(--dark)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/69_PinkLizard.webp" alt="Ловандер" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/PinkLizard-512.webp" srcset="../../../pp/art/PinkLizard-384.webp 384w, ../../../pp/art/PinkLizard-512.webp 512w, ../../../pp/art/PinkLizard-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Ловандер" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/69_PinkLizard.webp">
 <div class="pal-info" data-pal="PinkLizard"><div class="pal-no">№ 69 · Lovander</div>
 <div class="chips"><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон</span></div>
+<div class="weak">Слабость: <span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Ручная работа 3">🖐️ Ручная работа <b>3</b></span><span class="work" title="Добыча 2">⛏️ Добыча <b>2</b></span><span class="work" title="Фармацевтика 3">💊 Фармацевтика <b>3</b></span><span class="work" title="Транспортировка 2">📦 Транспортировка <b>2</b></span></div>
 <div class="partner"><b>Иссушение сердца</b> 🐾 выпущен</div>
 <div class="stats">❤️ 120 · ⚔️ 70 · 🛡 70</div></div></div>
@@ -54,10 +55,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: нет/особый способ; точек появления днём: 0, ночью: 768; уровни в первых точках: 30–33
-    - Подземелья: Пещера Песчаных Дюн
-    - Может продаваться у торговца/рекрутера
-    - Яйцо: Большое яйцо тьмы
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="PinkLizard" data-d="0" data-n="768" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 30–38</span><a class="btn hm-full" href="../../../map/?pal=PinkLizard">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Дюны Анубиса</span><span class="rgc">Кричащий остров</span><span class="rgc">Шрамы войны</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Песчаных Дюн</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо тьмы</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 

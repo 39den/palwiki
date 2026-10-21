@@ -1,10 +1,11 @@
 # Дандилорд
 
 <div class="pal-hero" markdown="0" data-el="grass" style="--pc:var(--grass)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/194_FlowerPrince.webp" alt="Дандилорд" loading="lazy" width="360">
+<img class="pal-card pal-art portrait" src="../../../pp/art/FlowerPrince-p-512.webp" srcset="../../../pp/art/FlowerPrince-p-384.webp 384w, ../../../pp/art/FlowerPrince-p-512.webp 512w, ../../../pp/art/FlowerPrince-p-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Дандилорд" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/194_FlowerPrince.webp">
 <div class="pal-info" data-pal="FlowerPrince"><div class="pal-no">№ 194 · Dandilord</div>
 <div class="chips"><span class="el el-grass">Трава</span><span class="el el-dark">Тьма</span></div>
-<div class="weak">Слабость: <span class="el el-dragon">Дракон</span><span class="el el-fire">Огонь</span></div>
+<div class="weak">Слабость: <span class="el el-fire">Огонь <b class="mx">×1,5</b></span><span class="el el-dragon">Дракон <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-neutral">Нейтральный <b class="mx">×0,65</b></span><span class="el el-ground">Земля <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Посев семян 8">🌱 Посев семян <b>8</b></span><span class="work" title="Ручная работа 6">🖐️ Ручная работа <b>6</b></span><span class="work" title="Сбор 5">🌾 Сбор <b>5</b></span><span class="work" title="Фармацевтика 6">💊 Фармацевтика <b>6</b></span><span class="work" title="Транспортировка 3">📦 Транспортировка <b>3</b></span></div>
 <div class="partner"><b>Страж тумана</b> 🎒 из команды 🔘 кнопкой</div>
 <div class="stats">❤️ 125 · ⚔️ 135 · 🛡 110</div></div></div>
@@ -53,8 +54,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: нет/особый способ; точек появления днём: 0, ночью: 0
-    - Яйцо: Огромное яйцо свежей листвы
+
+    <div class="hab" markdown="0"><div class="nowild"><b>В дикой природе не встречается</b><span>Точек появления на открытой карте в данных игры нет — ищи в подземельях, яйцах или выводи разведением.</span></div><div class=dgcs><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Огромное яйцо свежей листвы</b></div></div></div>
 
 
 

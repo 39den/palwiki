@@ -1,0 +1,740 @@
+{
+ "FlyingManta_Thunder": {
+  "file": "Celaray_Lux_icon.png",
+  "url": "https://palworld.wiki.gg/images/Celaray_Lux_icon.png?3f0e02",
+  "w": 128,
+  "h": 128
+ },
+ "KendoFrog_Dark": {
+  "file": "Croajiro_Noct_icon.png",
+  "url": "https://palworld.wiki.gg/images/Croajiro_Noct_icon.png?cefc9f",
+  "w": 128,
+  "h": 128
+ },
+ "LeafMomonga": {
+  "file": "Herbil_icon.png",
+  "url": "https://palworld.wiki.gg/images/Herbil_icon.png?3b6af8",
+  "w": 128,
+  "h": 128
+ },
+ "SamuraiDog": {
+  "file": "Pupperai_icon.png",
+  "url": "https://palworld.wiki.gg/images/Pupperai_icon.png?9e7124",
+  "w": 128,
+  "h": 128
+ },
+ "CloverFairy": {
+  "file": "Clovee_icon.png",
+  "url": "https://palworld.wiki.gg/images/Clovee_icon.png?9528dd",
+  "w": 128,
+  "h": 128
+ },
+ "Penguin_Electric": {
+  "file": "Pengullet_Lux_icon.png",
+  "url": "https://palworld.wiki.gg/images/Pengullet_Lux_icon.png?90740d",
+  "w": 128,
+  "h": 128
+ },
+ "CaptainPenguin_Black": {
+  "file": "Penking_Lux_icon.png",
+  "url": "https://palworld.wiki.gg/images/Penking_Lux_icon.png?efcab8",
+  "w": 128,
+  "h": 128
+ },
+ "Monkey_Fire": {
+  "file": "Tanzee_Ignis_icon.png",
+  "url": "https://palworld.wiki.gg/images/Tanzee_Ignis_icon.png?17b9d3",
+  "w": 128,
+  "h": 128
+ },
+ "Kitsunebi_Ice": {
+  "file": "Foxparks_Cryst_icon.png",
+  "url": "https://palworld.wiki.gg/images/Foxparks_Cryst_icon.png?a3094c",
+  "w": 128,
+  "h": 128
+ },
+ "NegativeOctopus_Neutral": {
+  "file": "Killamari_Primo_icon.png",
+  "url": "https://palworld.wiki.gg/images/Killamari_Primo_icon.png?f427a2",
+  "w": 128,
+  "h": 128
+ },
+ "BerryGoat_Dark": {
+  "file": "Caprity_Noct_icon.png",
+  "url": "https://palworld.wiki.gg/images/Caprity_Noct_icon.png?44b269",
+  "w": 128,
+  "h": 128
+ },
+ "TentacleTurtle": {
+  "file": "Turtacle_icon.png",
+  "url": "https://palworld.wiki.gg/images/Turtacle_icon.png?8bc73c",
+  "w": 128,
+  "h": 128
+ },
+ "TentacleTurtle_Ground": {
+  "file": "Turtacle_Terra_icon.png",
+  "url": "https://palworld.wiki.gg/images/Turtacle_Terra_icon.png?9b32ab",
+  "w": 128,
+  "h": 128
+ },
+ "SweetsSheep_Ground": {
+  "file": "Woolipop_Terra_icon.png",
+  "url": "https://palworld.wiki.gg/images/Woolipop_Terra_icon.png?2dbe75",
+  "w": 128,
+  "h": 128
+ },
+ "BlueDragon_Ice": {
+  "file": "Azurobe_Cryst_icon.png",
+  "url": "https://palworld.wiki.gg/images/Azurobe_Cryst_icon.png?d7913f",
+  "w": 128,
+  "h": 128
+ },
+ "PinkRabbit_Grass": {
+  "file": "Ribbuny_Botan_icon.png",
+  "url": "https://palworld.wiki.gg/images/Ribbuny_Botan_icon.png?46e967",
+  "w": 128,
+  "h": 128
+ },
+ "JellyfishFairy": {
+  "file": "Jelliette_icon.png",
+  "url": "https://palworld.wiki.gg/images/Jelliette_icon.png?c1a667",
+  "w": 128,
+  "h": 128
+ },
+ "JellyfishGhost": {
+  "file": "Jellroy_icon.png",
+  "url": "https://palworld.wiki.gg/images/Jellroy_icon.png?76ad26",
+  "w": 128,
+  "h": 128
+ },
+ "ClioneTwins": {
+  "file": "Amione_icon.png",
+  "url": "https://palworld.wiki.gg/images/Amione_icon.png?730ff3",
+  "w": 128,
+  "h": 128
+ },
+ "OctopusGirl": {
+  "file": "Gloopie_icon.png",
+  "url": "https://palworld.wiki.gg/images/Gloopie_icon.png?46936d",
+  "w": 128,
+  "h": 128
+ },
+ "OctopusGirl_Neutral": {
+  "file": "Gloopie_Primo_icon.png",
+  "url": "https://palworld.wiki.gg/images/Gloopie_Primo_icon.png?43133e",
+  "w": 128,
+  "h": 128
+ },
+ "GhostBlackCat": {
+  "file": "Wispaw_icon.png",
+  "url": "https://palworld.wiki.gg/images/Wispaw_icon.png?842ed7",
+  "w": 128,
+  "h": 128
+ },
+ "Kirin_Ice": {
+  "file": "Univolt_Cryst_icon.png",
+  "url": "https://palworld.wiki.gg/images/Univolt_Cryst_icon.png?f60e10",
+  "w": 128,
+  "h": 128
+ },
+ "Werewolf_Ice": {
+  "file": "Loupmoon_Cryst_icon.png",
+  "url": "https://palworld.wiki.gg/images/Loupmoon_Cryst_icon.png?615607",
+  "w": 128,
+  "h": 128
+ },
+ "FluffyBird": {
+  "file": "Muffly_icon.png",
+  "url": "https://palworld.wiki.gg/images/Muffly_icon.png?1c2da0",
+  "w": 128,
+  "h": 128
+ },
+ "ElecPomeranian": {
+  "file": "Puffolt_icon.png",
+  "url": "https://palworld.wiki.gg/images/Puffolt_icon.png?2fa6d6",
+  "w": 128,
+  "h": 128
+ },
+ "PurpleSpider": {
+  "file": "Tarantriss_icon.png",
+  "url": "https://palworld.wiki.gg/images/Tarantriss_icon.png?33d8cf",
+  "w": 128,
+  "h": 128
+ },
+ "IceSeal": {
+  "file": "Polapup_icon.png",
+  "url": "https://palworld.wiki.gg/images/Polapup_icon.png?a2ac7d",
+  "w": 128,
+  "h": 128
+ },
+ "IceSeal_Ground": {
+  "file": "Polapup_Terra_icon.png",
+  "url": "https://palworld.wiki.gg/images/Polapup_Terra_icon.png?734a0b",
+  "w": 128,
+  "h": 128
+ },
+ "GrassMinotaur": {
+  "file": "Elgrove_icon.png",
+  "url": "https://palworld.wiki.gg/images/Elgrove_icon.png?201892",
+  "w": 128,
+  "h": 128
+ },
+ "GrassMinotaur_Ice": {
+  "file": "Elgrove_Cryst_icon.png",
+  "url": "https://palworld.wiki.gg/images/Elgrove_Cryst_icon.png?81b9c0",
+  "w": 128,
+  "h": 128
+ },
+ "FengyunDeeper_Electric": {
+  "file": "Fenglope_Lux_icon.png",
+  "url": "https://palworld.wiki.gg/images/Fenglope_Lux_icon.png?842b61",
+  "w": 128,
+  "h": 128
+ },
+ "IceCrocodile": {
+  "file": "Munchill_icon.png",
+  "url": "https://palworld.wiki.gg/images/Munchill_icon.png?e2c11c",
+  "w": 128,
+  "h": 128
+ },
+ "StuffedShark": {
+  "file": "Finsider_icon.png",
+  "url": "https://palworld.wiki.gg/images/Finsider_icon.png?a711b3",
+  "w": 128,
+  "h": 128
+ },
+ "StuffedShark_Fire": {
+  "file": "Finsider_Ignis_icon.png",
+  "url": "https://palworld.wiki.gg/images/Finsider_Ignis_icon.png?d59c5c",
+  "w": 128,
+  "h": 128
+ },
+ "FlowerDoll_Fire": {
+  "file": "Petallia_Ignis_icon.png",
+  "url": "https://palworld.wiki.gg/images/Petallia_Ignis_icon.png?75e8d3",
+  "w": 128,
+  "h": 128
+ },
+ "PandaGirl": {
+  "file": "Leafan_icon.png",
+  "url": "https://palworld.wiki.gg/images/Leafan_icon.png?240659",
+  "w": 128,
+  "h": 128
+ },
+ "RaijinDaughter_Water": {
+  "file": "Dazzi_Noct_icon.png",
+  "url": "https://palworld.wiki.gg/images/Dazzi_Noct_icon.png?d6ed02",
+  "w": 128,
+  "h": 128
+ },
+ "ThunderBird_Ice": {
+  "file": "Beakon_Cryst_icon.png",
+  "url": "https://palworld.wiki.gg/images/Beakon_Cryst_icon.png?874ecd",
+  "w": 128,
+  "h": 128
+ },
+ "GhostAnglerfish": {
+  "file": "Ghangler_icon.png",
+  "url": "https://palworld.wiki.gg/images/Ghangler_icon.png?e9600c",
+  "w": 128,
+  "h": 128
+ },
+ "GhostAnglerfish_Fire": {
+  "file": "Ghangler_Ignis_icon.png",
+  "url": "https://palworld.wiki.gg/images/Ghangler_Ignis_icon.png?3a3962",
+  "w": 128,
+  "h": 128
+ },
+ "ThunderDog_Ice": {
+  "file": "Rayhound_Cryst_icon.png",
+  "url": "https://palworld.wiki.gg/images/Rayhound_Cryst_icon.png?e4fb2c",
+  "w": 128,
+  "h": 128
+ },
+ "CactusDoll": {
+  "file": "Needoll_icon.png",
+  "url": "https://palworld.wiki.gg/images/Needoll_icon.png?746cc9",
+  "w": 128,
+  "h": 128
+ },
+ "CactusDoll_Dark": {
+  "file": "Needoll_Noct_icon.png",
+  "url": "https://palworld.wiki.gg/images/Needoll_Noct_icon.png?d0c01a",
+  "w": 128,
+  "h": 128
+ },
+ "VolcanoDragon": {
+  "file": "Moldron_icon.png",
+  "url": "https://palworld.wiki.gg/images/Moldron_icon.png?fc1a75",
+  "w": 128,
+  "h": 128
+ },
+ "VolcanoDragon_Ice": {
+  "file": "Moldron_Cryst_icon.png",
+  "url": "https://palworld.wiki.gg/images/Moldron_Cryst_icon.png?b9b722",
+  "w": 128,
+  "h": 128
+ },
+ "TropicalOstrich": {
+  "file": "Palumba_icon.png",
+  "url": "https://palworld.wiki.gg/images/Palumba_icon.png?4f2350",
+  "w": 128,
+  "h": 128
+ },
+ "LazyCatfish_Gold": {
+  "file": "Dumud_Gild_icon.png",
+  "url": "https://palworld.wiki.gg/images/Dumud_Gild_icon.png?b9203f",
+  "w": 128,
+  "h": 128
+ },
+ "Plesiosaur": {
+  "file": "Braloha_icon.png",
+  "url": "https://palworld.wiki.gg/images/Braloha_icon.png?df38c5",
+  "w": 128,
+  "h": 128
+ },
+ "AmaterasuWolf_Dark": {
+  "file": "Kitsun_Noct_icon.png",
+  "url": "https://palworld.wiki.gg/images/Kitsun_Noct_icon.png?5cc7a0",
+  "w": 128,
+  "h": 128
+ },
+ "SnowPeafowl": {
+  "file": "Frostplume_icon.png",
+  "url": "https://palworld.wiki.gg/images/Frostplume_icon.png?48f217",
+  "w": 128,
+  "h": 128
+ },
+ "DarkFlameFox": {
+  "file": "Majex_icon.png",
+  "url": "https://palworld.wiki.gg/images/Majex_icon.png?8e8514",
+  "w": 128,
+  "h": 128
+ },
+ "WhiteMoth_Neutral": {
+  "file": "Sibelyx_Primo_icon.png",
+  "url": "https://palworld.wiki.gg/images/Sibelyx_Primo_icon.png?135725",
+  "w": 128,
+  "h": 128
+ },
+ "IceWitch": {
+  "file": "Icelyn_icon.png",
+  "url": "https://palworld.wiki.gg/images/Icelyn_icon.png?f551d0",
+  "w": 128,
+  "h": 128
+ },
+ "MummyPal": {
+  "file": "Gildra_icon.png",
+  "url": "https://palworld.wiki.gg/images/Gildra_icon.png?5c2486",
+  "w": 128,
+  "h": 128
+ },
+ "SwordCutlassfish": {
+  "file": "Skutlass_icon.png",
+  "url": "https://palworld.wiki.gg/images/Skutlass_icon.png?61af6e",
+  "w": 128,
+  "h": 128
+ },
+ "SwordCutlassfish_Fire": {
+  "file": "Skutlass_Ignis_icon.png",
+  "url": "https://palworld.wiki.gg/images/Skutlass_Ignis_icon.png?8c8529",
+  "w": 128,
+  "h": 128
+ },
+ "NightBlueHorse": {
+  "file": "Starryon_icon.png",
+  "url": "https://palworld.wiki.gg/images/Starryon_icon.png?e8a762",
+  "w": 128,
+  "h": 128
+ },
+ "NightBlueHorse_Neutral": {
+  "file": "Starryon_Primo_icon.png",
+  "url": "https://palworld.wiki.gg/images/Starryon_Primo_icon.png?b6b885",
+  "w": 128,
+  "h": 128
+ },
+ "RockBeast": {
+  "file": "Pierdon_icon.png",
+  "url": "https://palworld.wiki.gg/images/Pierdon_icon.png?49248e",
+  "w": 128,
+  "h": 128
+ },
+ "RockBeast_Ice": {
+  "file": "Pierdon_Cryst_icon.png",
+  "url": "https://palworld.wiki.gg/images/Pierdon_Cryst_icon.png?8cd9a6",
+  "w": 128,
+  "h": 128
+ },
+ "WhiteTiger_Ground": {
+  "file": "Cryolinx_Terra_icon.png",
+  "url": "https://palworld.wiki.gg/images/Cryolinx_Terra_icon.png?c133e4",
+  "w": 128,
+  "h": 128
+ },
+ "SmallYeti": {
+  "file": "Snugloo_icon.png",
+  "url": "https://palworld.wiki.gg/images/Snugloo_icon.png?368ae5",
+  "w": 128,
+  "h": 128
+ },
+ "VenusFlytrap": {
+  "file": "Carnibora_icon.png",
+  "url": "https://palworld.wiki.gg/images/Carnibora_icon.png?5ec6a8",
+  "w": 128,
+  "h": 128
+ },
+ "GrassGolem": {
+  "file": "Dualith_icon.png",
+  "url": "https://palworld.wiki.gg/images/Dualith_icon.png?eade2e",
+  "w": 128,
+  "h": 128
+ },
+ "GrassGolem_Dark": {
+  "file": "Dualith_Noct_icon.png",
+  "url": "https://palworld.wiki.gg/images/Dualith_Noct_icon.png?e98734",
+  "w": 128,
+  "h": 128
+ },
+ "Sekhmet": {
+  "file": "Sekhmet_icon.png",
+  "url": "https://palworld.wiki.gg/images/Sekhmet_icon.png?5cfd8c",
+  "w": 128,
+  "h": 128
+ },
+ "ScorpionMan_Electric": {
+  "file": "Prixter_Lux_icon.png",
+  "url": "https://palworld.wiki.gg/images/Prixter_Lux_icon.png?475575",
+  "w": 128,
+  "h": 128
+ },
+ "CubeTurtle": {
+  "file": "Tetroise_icon.png",
+  "url": "https://palworld.wiki.gg/images/Tetroise_icon.png?b8d67f",
+  "w": 128,
+  "h": 128
+ },
+ "CubeTurtle_Neutral": {
+  "file": "Tetroise_Primo_icon.png",
+  "url": "https://palworld.wiki.gg/images/Tetroise_Primo_icon.png?8b9780",
+  "w": 128,
+  "h": 128
+ },
+ "BadCatgirl": {
+  "file": "Nyafia_icon.png",
+  "url": "https://palworld.wiki.gg/images/Nyafia_icon.png?c4f053",
+  "w": 128,
+  "h": 128
+ },
+ "BlueberryFairy": {
+  "file": "Prunelia_icon.png",
+  "url": "https://palworld.wiki.gg/images/Prunelia_icon.png?e3ac28",
+  "w": 128,
+  "h": 128
+ },
+ "GhostRabbit": {
+  "file": "Nitemary_icon.png",
+  "url": "https://palworld.wiki.gg/images/Nitemary_icon.png?5e9e49",
+  "w": 128,
+  "h": 128
+ },
+ "GhostRabbit_Grass": {
+  "file": "Nitemary_Botan_icon.png",
+  "url": "https://palworld.wiki.gg/images/Nitemary_Botan_icon.png?863a56",
+  "w": 128,
+  "h": 128
+ },
+ "BlackPuppy": {
+  "file": "Smokie_icon.png",
+  "url": "https://palworld.wiki.gg/images/Smokie_icon.png?876a7a",
+  "w": 128,
+  "h": 128
+ },
+ "BlackPuppy_Ice": {
+  "file": "Smokie_Cryst_icon.png",
+  "url": "https://palworld.wiki.gg/images/Smokie_Cryst_icon.png?45e713",
+  "w": 128,
+  "h": 128
+ },
+ "MysteryMask": {
+  "file": "Omascul_icon.png",
+  "url": "https://palworld.wiki.gg/images/Omascul_icon.png?d09507",
+  "w": 128,
+  "h": 128
+ },
+ "IceNarwhal": {
+  "file": "Whalaska_icon.png",
+  "url": "https://palworld.wiki.gg/images/Whalaska_icon.png?e4c503",
+  "w": 128,
+  "h": 128
+ },
+ "IceNarwhal_Fire": {
+  "file": "Whalaska_Ignis_icon.png",
+  "url": "https://palworld.wiki.gg/images/Whalaska_Ignis_icon.png?79f73f",
+  "w": 128,
+  "h": 128
+ },
+ "GrimGirl": {
+  "file": "Splatterina_icon.png",
+  "url": "https://palworld.wiki.gg/images/Splatterina_icon.png?e694c6",
+  "w": 128,
+  "h": 128
+ },
+ "GoldenHorse": {
+  "file": "Gildane_icon.png",
+  "url": "https://palworld.wiki.gg/images/Gildane_icon.png?274891",
+  "w": 128,
+  "h": 128
+ },
+ "SumoDog": {
+  "file": "Bulldosu_icon.png",
+  "url": "https://palworld.wiki.gg/images/Bulldosu_icon.png?e9bd63",
+  "w": 128,
+  "h": 128
+ },
+ "WhiteDeer": {
+  "file": "Celesdir_icon.png",
+  "url": "https://palworld.wiki.gg/images/Celesdir_icon.png?af9295",
+  "w": 128,
+  "h": 128
+ },
+ "WhiteDeer_Dark": {
+  "file": "Celesdir_Noct_icon.png",
+  "url": "https://palworld.wiki.gg/images/Celesdir_Noct_icon.png?58685d",
+  "w": 128,
+  "h": 128
+ },
+ "WingGolem_Fire": {
+  "file": "Knocklem_Ignis_icon.png",
+  "url": "https://palworld.wiki.gg/images/Knocklem_Ignis_icon.png?d3c2e0",
+  "w": 128,
+  "h": 128
+ },
+ "WhiteShieldDragon": {
+  "file": "Silvegis_icon.png",
+  "url": "https://palworld.wiki.gg/images/Silvegis_icon.png?28ba58",
+  "w": 128,
+  "h": 128
+ },
+ "BlueThunderHorse": {
+  "file": "Azurmane_icon.png",
+  "url": "https://palworld.wiki.gg/images/Azurmane_icon.png?b8acaf",
+  "w": 128,
+  "h": 128
+ },
+ "LongCat": {
+  "file": "Valentail_icon.png",
+  "url": "https://palworld.wiki.gg/images/Valentail_icon.png?6ee1cc",
+  "w": 128,
+  "h": 128
+ },
+ "ElecSnail": {
+  "file": "Snock_icon.png",
+  "url": "https://palworld.wiki.gg/images/Snock_icon.png?264512",
+  "w": 128,
+  "h": 128
+ },
+ "ElecSnail_Ground": {
+  "file": "Snock_Terra_icon.png",
+  "url": "https://palworld.wiki.gg/images/Snock_Terra_icon.png?6ecb68",
+  "w": 128,
+  "h": 128
+ },
+ "DandelionGirl": {
+  "file": "Souffline_icon.png",
+  "url": "https://palworld.wiki.gg/images/Souffline_icon.png?890f1a",
+  "w": 128,
+  "h": 128
+ },
+ "BrownRabbit": {
+  "file": "Lapiron_icon.png",
+  "url": "https://palworld.wiki.gg/images/Lapiron_icon.png?9207ae",
+  "w": 128,
+  "h": 128
+ },
+ "HoodGhost": {
+  "file": "Hoodle_icon.png",
+  "url": "https://palworld.wiki.gg/images/Hoodle_icon.png?23193d",
+  "w": 128,
+  "h": 128
+ },
+ "ElecLizard": {
+  "file": "Slowatt_icon.png",
+  "url": "https://palworld.wiki.gg/images/Slowatt_icon.png?5cd36f",
+  "w": 128,
+  "h": 128
+ },
+ "OniGhostGirl": {
+  "file": "Bakemi_icon.png",
+  "url": "https://palworld.wiki.gg/images/Bakemi_icon.png?41554f",
+  "w": 128,
+  "h": 128
+ },
+ "KingSunfish": {
+  "file": "Solmora_icon.png",
+  "url": "https://palworld.wiki.gg/images/Solmora_icon.png?49fc8b",
+  "w": 128,
+  "h": 128
+ },
+ "KingSunfish_Thunder": {
+  "file": "Solmora_Lux_icon.png",
+  "url": "https://palworld.wiki.gg/images/Solmora_Lux_icon.png?8ec884",
+  "w": 128,
+  "h": 128
+ },
+ "SleeveRabbit": {
+  "file": "Lapure_icon.png",
+  "url": "https://palworld.wiki.gg/images/Lapure_icon.png?8e1cb6",
+  "w": 128,
+  "h": 128
+ },
+ "GhostDragon": {
+  "file": "Eidrolon_icon.png",
+  "url": "https://palworld.wiki.gg/images/Eidrolon_icon.png?dc67b2",
+  "w": 128,
+  "h": 128
+ },
+ "GhostDragon_Fire": {
+  "file": "Eidrolon_Ignis_icon.png",
+  "url": "https://palworld.wiki.gg/images/Eidrolon_Ignis_icon.png?19bb17",
+  "w": 128,
+  "h": 128
+ },
+ "ThunderFluffyBird": {
+  "file": "Dynamoff_icon.png",
+  "url": "https://palworld.wiki.gg/images/Dynamoff_icon.png?515d45",
+  "w": 128,
+  "h": 128
+ },
+ "RedFlowerBird": {
+  "file": "Tropicaw_icon.png",
+  "url": "https://palworld.wiki.gg/images/Tropicaw_icon.png?644fea",
+  "w": 128,
+  "h": 128
+ },
+ "FoxExorcist": {
+  "file": "Flaracle_icon.png",
+  "url": "https://palworld.wiki.gg/images/Flaracle_icon.png?919416",
+  "w": 128,
+  "h": 128
+ },
+ "LotusDragon": {
+  "file": "Ophydia_icon.png",
+  "url": "https://palworld.wiki.gg/images/Ophydia_icon.png?38fd63",
+  "w": 128,
+  "h": 128
+ },
+ "ClownRabbit": {
+  "file": "Dupin_icon.png",
+  "url": "https://palworld.wiki.gg/images/Dupin_icon.png?ca0837",
+  "w": 128,
+  "h": 128
+ },
+ "ThiefBird": {
+  "file": "Roujay_icon.png",
+  "url": "https://palworld.wiki.gg/images/Roujay_icon.png?cf47d6",
+  "w": 128,
+  "h": 128
+ },
+ "SnakeGirl": {
+  "file": "Venusa_icon.png",
+  "url": "https://palworld.wiki.gg/images/Venusa_icon.png?68c15c",
+  "w": 128,
+  "h": 128
+ },
+ "MushroomLady": {
+  "file": "Mycora_icon.png",
+  "url": "https://palworld.wiki.gg/images/Mycora_icon.png?796a98",
+  "w": 128,
+  "h": 128
+ },
+ "LanternButler": {
+  "file": "Loomen_icon.png",
+  "url": "https://palworld.wiki.gg/images/Loomen_icon.png?26566a",
+  "w": 128,
+  "h": 128
+ },
+ "MoonChild": {
+  "file": "Wistella_icon.png",
+  "url": "https://palworld.wiki.gg/images/Wistella_icon.png?9a2505",
+  "w": 128,
+  "h": 128
+ },
+ "MonochromeQueen": {
+  "file": "Solenne_icon.png",
+  "url": "https://palworld.wiki.gg/images/Solenne_icon.png?445faa",
+  "w": 128,
+  "h": 128
+ },
+ "KabukiMan": {
+  "file": "Renjishi_icon.png",
+  "url": "https://palworld.wiki.gg/images/Renjishi_icon.png?63334e",
+  "w": 128,
+  "h": 128
+ },
+ "DomeArmorDragon": {
+  "file": "Aegidron_icon.png",
+  "url": "https://palworld.wiki.gg/images/Aegidron_icon.png?3fdf5b",
+  "w": 128,
+  "h": 128
+ },
+ "Horus_Water": {
+  "file": "Faleris_Aqua_icon.png",
+  "url": "https://palworld.wiki.gg/images/Faleris_Aqua_icon.png?2edcbf",
+  "w": 128,
+  "h": 128
+ },
+ "SnowTigerBeastman": {
+  "file": "Bastigor_icon.png",
+  "url": "https://palworld.wiki.gg/images/Bastigor_icon.png?e9e13d",
+  "w": 512,
+  "h": 512
+ },
+ "BlueSkyDragon": {
+  "file": "Shaolong_icon.png",
+  "url": "https://palworld.wiki.gg/images/Shaolong_icon.png?d9bef5",
+  "w": 128,
+  "h": 128
+ },
+ "Mothman": {
+  "file": "Silvance_icon.png",
+  "url": "https://palworld.wiki.gg/images/Silvance_icon.png?6033dc",
+  "w": 128,
+  "h": 128
+ },
+ "FlowerPrince": {
+  "file": "Dandilord_icon.png",
+  "url": "https://palworld.wiki.gg/images/Dandilord_icon.png?c63b2e",
+  "w": 128,
+  "h": 128
+ },
+ "DarkMechaDragon": {
+  "file": "Xenolord_icon.png",
+  "url": "https://palworld.wiki.gg/images/Xenolord_icon.png?178279",
+  "w": 128,
+  "h": 128
+ },
+ "LegendDeer": {
+  "file": "Hartalis_icon.png",
+  "url": "https://palworld.wiki.gg/images/Hartalis_icon.png?47456d",
+  "w": 128,
+  "h": 128
+ },
+ "PoseidonOrca": {
+  "file": "Neptilius_icon.png",
+  "url": "https://palworld.wiki.gg/images/Neptilius_icon.png?eeadec",
+  "w": 128,
+  "h": 128
+ },
+ "KingWhale": {
+  "file": "Panthalus_icon.png",
+  "url": "https://palworld.wiki.gg/images/Panthalus_icon.png?3699ea",
+  "w": 128,
+  "h": 128
+ },
+ "WorldTreeDragon": {
+  "file": "Astralym_icon.png",
+  "url": "https://palworld.wiki.gg/images/Astralym_icon.png?5ccaf9",
+  "w": 128,
+  "h": 128
+ }
+}

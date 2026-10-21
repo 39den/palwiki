@@ -1,10 +1,11 @@
 # Кремис
 
 <div class="pal-hero" markdown="0" data-el="neutral" style="--pc:var(--neutral)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/8_WoolFox.webp" alt="Кремис" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/WoolFox-512.webp" srcset="../../../pp/art/WoolFox-384.webp 384w, ../../../pp/art/WoolFox-512.webp 512w, ../../../pp/art/WoolFox-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Кремис" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/8_WoolFox.webp">
 <div class="pal-info" data-pal="WoolFox"><div class="pal-no">№ 8 · Cremis</div>
 <div class="chips"><span class="el el-neutral">Нейтральный</span></div>
-<div class="weak">Слабость: <span class="el el-dark">Тьма</span></div>
+<div class="weak">Слабость: <span class="el el-dark">Тьма <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+
 <div class="works"><span class="work" title="Сбор 1">🌾 Сбор <b>1</b></span><span class="work" title="Фермерство 2">🐑 Фермерство <b>2</b></span></div>
 <div class="partner"><b>Мягкая шерсть</b> 🎒 из команды 🏠 на базе</div>
 <div class="stats">❤️ 70 · ⚔️ 70 · 🛡 75</div></div></div>
@@ -50,9 +51,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 201, ночью: 201; уровни в первых точках: 1–3
-    - Подземелья: Пещера Отдалённого Острова, Пещера Холмов
-    - Яйцо: Обычное яйцо
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="WoolFox" data-d="201" data-n="201" data-t="0" data-a="0"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 1–14</span><a class="btn hm-full" href="../../../map/?pal=WoolFox">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Кричащий остров</span><span class="rgc">Остров безмолвия</span><span class="rgc">Архипелаг Морских Ветров</span><span class="rgc">Болотный остров</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Отдалённого Острова</b></div><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Холмов</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Обычное яйцо</b></div></div></div>
 
 
 

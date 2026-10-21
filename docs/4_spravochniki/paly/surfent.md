@@ -1,10 +1,11 @@
 # Серфент
 
 <div class="pal-hero" markdown="0" data-el="water" style="--pc:var(--water)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/75_Serpent.webp" alt="Серфент" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/Serpent-512.webp" srcset="../../../pp/art/Serpent-384.webp 384w, ../../../pp/art/Serpent-512.webp 512w, ../../../pp/art/Serpent-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Серфент" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/75_Serpent.webp">
 <div class="pal-info" data-pal="Serpent"><div class="pal-no">№ 75 · Surfent</div>
 <div class="chips"><span class="el el-water">Вода</span></div>
-<div class="weak">Слабость: <span class="el el-electric">Молния</span></div>
+<div class="weak">Слабость: <span class="el el-electric">Молния <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-fire">Огонь <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Полив 3">💧 Полив <b>3</b></span><span class="work" title="Фермерство 2">🐑 Фермерство <b>2</b></span></div>
 <div class="partner"><b>Пловец морей</b> 🐎 верхом 🏠 на базе</div>
 <div class="stats">❤️ 90 · ⚔️ 90 · 🛡 80</div></div></div>
@@ -50,9 +51,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 273, ночью: 301; уровни в первых точках: 12–16
-    - Подземелья: Пещера Ущелья
-    - Яйцо: Яйцо воды
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="Serpent" data-d="194" data-n="222" data-t="0" data-a="12"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 12–30</span><a class="btn hm-full" href="../../../map/?pal=Serpent">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Зелёный ручей</span><span class="rgc">Шрамы войны</span><span class="rgc">Бамбуковые рощи</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Ущелья</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Яйцо воды</b></div></div></div>
 
 
 

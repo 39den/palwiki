@@ -1,10 +1,11 @@
 # Райберд
 
 <div class="pal-hero" markdown="0" data-el="electric" style="--pc:var(--electric)"><canvas id="fx"></canvas>
-<img class="pal-card" src="../../../img/96_ThunderBird.webp" alt="Райберд" loading="lazy" width="360">
+<img class="pal-card pal-art" src="../../../pp/art/ThunderBird-512.webp" srcset="../../../pp/art/ThunderBird-384.webp 384w, ../../../pp/art/ThunderBird-512.webp 512w, ../../../pp/art/ThunderBird-768.webp 768w" sizes="(max-width:700px) 60vw, 420px" alt="Райберд" width="512" height="512" fetchpriority="high" decoding="async" data-card="../../../img/96_ThunderBird.webp">
 <div class="pal-info" data-pal="ThunderBird"><div class="pal-no">№ 96 · Beakon</div>
 <div class="chips"><span class="el el-electric">Молния</span></div>
-<div class="weak">Слабость: <span class="el el-ground">Земля</span></div>
+<div class="weak">Слабость: <span class="el el-ground">Земля <b class="mx">×1,5</b></span> <button class="hlp" data-tip="Множители перемножаются по обеим стихиям пала: ×1,5 за каждую стихию, которую атака бьёт, ×0,65 за каждую, которая её держит. Если одна стихия слаба, а другая устойчива (×1,5 × 0,65 ≈ ×0,98), слабости нет.">?</button></div>
+<div class="weak res">Устойчив: <span class="el el-water">Вода <b class="mx">×0,65</b></span></div>
 <div class="works"><span class="work" title="Генерация энергии 4">⚡ Генерация энергии <b>4</b></span><span class="work" title="Сбор 2">🌾 Сбор <b>2</b></span><span class="work" title="Транспортировка 5">📦 Транспортировка <b>5</b></span></div>
 <div class="partner"><b>Гром с неба</b> 🐾 выпущен 🐎 верхом</div>
 <div class="stats">❤️ 105 · ⚔️ 115 · 🛡 80</div></div></div>
@@ -52,10 +53,8 @@
 === "Где живёт"
 
     #### Где водится
-    - В дикой природе: да; точек появления днём: 505, ночью: 505; уровни в первых точках: 30–34
-    - Подземелья: Пещера Песчаных Дюн
-    - Может продаваться у торговца/рекрутера
-    - Яйцо: Большое яйцо молнии
+
+    <div class="hab" markdown="0"><div class="habmap" data-pal="ThunderBird" data-d="504" data-n="504" data-t="42" data-a="2"><div class="hm-bar"><div class="seg hm-tod"><button data-k="d" class="on">☀️ День</button><button data-k="n">🌙 Ночь</button></div><div class="seg hm-w"><button data-w=p class=on>Палпагос</button><button data-w=t>Мировое древо</button></div></div><div class="hm-box"><img class="hm-img" alt="Карта обитания" loading="lazy" decoding="async" width="1024" height="1024" src="../../../assets/wtree/mini_palpagos.webp"><div class="hm-dots"></div></div><div class="hm-foot"><span class="hm-c"></span><span class=lvc>ур. 30–80</span><a class="btn hm-full" href="../../../map/?pal=ThunderBird">Показать на большой карте</a></div></div><div class=rgcs><span class="rgc">Иссохшие дюны</span><span class="rgc">Зелёный ручей</span><span class="rgc">Шрамы войны</span><span class="rgc">Ледяная гора</span></div><div class=dgcs><div class="dgc"><span class="ish">🕳 Подземелье</span><b>Пещера Песчаных Дюн</b></div><div class="dgc"><span class="ish">🥚 Яйцо</span><b>Большое яйцо молнии</b></div><div class="dgc"><span class="ish">🛒 Торговец</span><b>Продаётся у торговца палами</b></div></div></div>
 
 
 
