@@ -21,9 +21,65 @@
     return `<i class="gmk-l" style="--c:${v(t)[1]}"><img src="${B()}assets/mapicons/${v(t)[0]}" alt=""></i>`;
   };
   const POP = { maxWidth: 280, minWidth: 220, autoPan: true, autoPanPaddingTopLeft: [12, 72], autoPanPaddingBottomRight: [12, 24] };
+  window.PW_maps = window.PW_maps || [];
+  if (!window.PW_escG) {
+    window.PW_escG = 1;
+    document.addEventListener("keydown", (e) => {
+      if (e.key != "Escape") return;
+      (window.PW_maps || []).forEach((m) => m.closePopup());
+      document.querySelectorAll(".lbx").forEach((x) => x.remove());
+      const d = document.getElementById("__drawer");
+      if (d && d.checked) {
+        d.checked = false;
+        d.dispatchEvent(new Event("change"));
+      }
+    });
+    document.addEventListener("pointerdown", (e) => {
+      (window.PW_maps || []).forEach((m) => {
+        const c = m.getContainer();
+        if (!c.contains(e.target) && !(e.target.closest && e.target.closest(".leaflet-popup"))) m.closePopup();
+      });
+    }, true);
+  }
   function fit(m) {
+    window.PW_maps.push(m);
     m.on("popupopen", (e) => {
       const pp = e.popup;
+      const fx = () => {
+        if (!pp.isOpen()) return;
+        const el = pp.getElement();
+        if (!el) return;
+        const r = el.getBoundingClientRect(), mr = m.getContainer().getBoundingClientRect();
+        const lo = Math.max(mr.left, 0), hi = Math.min(mr.right, innerWidth), tp = Math.max(mr.top, 0), bt = Math.min(mr.bottom, innerHeight);
+        let dx = 0, dy = 0;
+        if (r.left < lo + 6) dx = r.left - lo - 6;
+        else if (r.right > hi - 6) dx = r.right - hi + 6;
+        if (r.bottom > bt - 6) dy = r.bottom - bt + 6;
+        else if (r.top < tp + 6) dy = r.top - tp - 6;
+        if (dx || dy) m.panBy([dx, dy], { animate: false });
+        {
+          const r3 = el.getBoundingClientRect();
+          let ex = 0;
+          if (r3.left < lo + 6) ex = lo + 6 - r3.left;
+          else if (r3.right > hi - 6) ex = hi - 6 - r3.right;
+          if (ex) {
+            const of = L.point(pp.options.offset || [0, 7]);
+            pp.options.offset = L.point(of.x + ex, of.y);
+            pp.update();
+            const t = el.querySelector(".leaflet-popup-tip-container");
+            if (t) t.style.marginLeft = -20 - ex + "px";
+          }
+        }
+      };
+      setTimeout(fx, 60);
+      setTimeout(fx, 200);
+      setTimeout(fx, 450);
+      setTimeout(fx, 900);
+      setTimeout(fx, 1500);
+      setTimeout(() => {
+        const el = pp.getElement();
+        el && el.querySelectorAll("img").forEach((i) => i.complete || i.addEventListener("load", fx, { once: true }));
+      }, 0);
       requestAnimationFrame(() => {
         const el = pp.getElement();
         if (!el) return;
@@ -35,9 +91,10 @@
           pp.update();
         }
         const r2 = el.getBoundingClientRect();
+        const lo = Math.max(mr.left, 0), hi = Math.min(mr.right, innerWidth);
         let dx = 0;
-        if (r2.left < mr.left + 6) dx = r2.left - mr.left - 6;
-        else if (r2.right > mr.right - 6) dx = r2.right - mr.right + 6;
+        if (r2.left < lo + 6) dx = r2.left - lo - 6;
+        else if (r2.right > hi - 6) dx = r2.right - hi + 6;
         if (dx) m.panBy([dx, 0], { animate: false });
       });
     });
