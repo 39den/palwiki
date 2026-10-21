@@ -805,3 +805,14 @@ body:has(#pwmap) #sxp{max-height:42vh;overflow:auto}}
 .inst.inl{position:static!important;left:auto;right:auto;bottom:auto;max-width:none;margin:1.2rem 0 .4rem;z-index:auto}
 /* 21.10 mapfix: sea-coloured 2px rim around the mini-map box, so its rounded/sub-pixel edge never shows a light page strip next to the dark sea (read as a straight empty edge on iPhone) */
 .hm-box{box-shadow:0 0 0 2px #0c161e;background:#0c161e}
+/* fontaudit 21.10: шрифты/контраст (/workspace/fontaudit) */
+html .leaflet-container,html .leaflet-container button,html .leaflet-container input{font-family:inherit}
+html .leaflet-container .leaflet-control-attribution{font-size:11px!important}
+.md-copyright__highlight{color:inherit}
+.psv .pe{font-size:max(.62em,12px)}
+[data-md-color-scheme=default] div.dch .r5 span{color:#806400}
+[data-md-color-scheme=default] div.dch .r4 span{color:#6a3bd1}
+[data-md-color-scheme=default] div.dch .r3 span{color:#1c5fc4}
+[data-md-color-scheme=default] .r-4 .rkb{color:#7a5800}
+[data-md-color-scheme=default] .r-neg .rkb{color:#a8232a}
+[data-md-color-scheme=default] .ef.up{color:#146a33}
