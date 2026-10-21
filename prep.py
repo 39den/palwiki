@@ -948,6 +948,8 @@ for _f in glob.glob(D+'/**/*.md',recursive=True):
   if _t!=_s:open(_f,'w').write(_t)
 
 _lvgrid()  # again, after the final text cleanup
+if ITEMS26:
+  import partner26 as _pk26;_pk26.build(D)  # rich partner-skills page
 
 # ---- 21.10 LIVE HOTFIX final sanitize pass (deep audit P1: junk_md, junk_eng) — owned by live-hotfix worker ----
 # exact in-game RU names (items.json ru) for English source codes that leaked into text (deep audit junk_eng)
