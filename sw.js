@@ -1,4 +1,4 @@
-const V='ux-v1792608932';const CORE=['./','assets/search_data.json','assets/extra.css','assets/smart.js','assets/site.js','assets/features.js','assets/ui2.js','assets/ui3.js','assets/ux50.js','assets/ux50t.js','assets/ux50p.js','assets/ux50m.js','assets/ux50.css','assets/ux50_data.json','ux/','ux/uroven/','ux/stihii/','gallery/'];
+const V='ux-v1792612662';const CORE=['./','assets/search_data.json','assets/extra.css','assets/smart.js','assets/site.js','assets/features.js','assets/ui2.js','assets/ui3.js','assets/ux50.js','assets/ux50t.js','assets/ux50p.js','assets/ux50m.js','assets/ux50.css','assets/ux50_data.json','ux/','ux/uroven/','ux/stihii/','gallery/'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!=V).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!='GET')return;const u=new URL(r.url);

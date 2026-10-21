@@ -2,11 +2,24 @@
   const B = () => window.PW_BASE || "/palwiki/";
   const I = { travel: ["travel.webp", "#2ec4b6", 3], tower: ["tower.webp", "#b07cff", 3], alpha: ["alpha.webp", "#ff6b5a", 2], sealed: ["sealed.svg", "#4aa3ff", 2], dungeon: ["dungeon.webp", "#e0b04a", 2], watch: ["watch.webp", "#8fb3c9", 1], npc: ["npc.webp", "#36bb91", 1], merchant: ["merchant.webp", "#36bb91", 1], chest: ["chest.svg", "#f0c45a", 0], fruit: ["fruit.svg", "#7bd389", 0], spring: ["spring.svg", "#5fb4ff", 0], fish: ["fish.webp", "#5fb4ff", 0], ore: ["ore.webp", "#c9c9c9", 0], effigy: ["effigy.svg", "#9fe870", 0], hab: ["hab.webp", "#ffd34d", 1] };
   const v = (t) => I[t] || I.hab;
-  const icon = (t, sz) => {
-    sz = sz || 28;
-    return L.divIcon({ className: "gmk gmk-" + t, html: `<i style="--c:${v(t)[1]};width:${sz}px;height:${sz}px"><img src="${B()}assets/mapicons/${v(t)[0]}" alt="" draggable="false"></i>`, iconSize: [sz, sz], iconAnchor: [sz / 2, sz / 2], popupAnchor: [0, -sz / 2] });
+  const face = (n) => {
+    const P = (window.PW_D || {}).pals || [];
+    const q = P.find((p) => p.ru == n) || P.find((p) => p.en == n);
+    return q && q.thumb ? B() + q.thumb : "";
   };
-  const leg = (t) => `<i class="gmk-l" style="--c:${v(t)[1]}"><img src="${B()}assets/mapicons/${v(t)[0]}" alt=""></i>`;
+  const icon = (t, sz, nm) => {
+    sz = sz || 28;
+    const f = t == "alpha" && nm ? face(nm) : "";
+    if (f) sz = Math.max(sz, 34);
+    return L.divIcon({ className: "gmk gmk-" + t + (f ? " gmk-face" : ""), html: `<i style="--c:${v(t)[1]};width:${sz}px;height:${sz}px"><img src="${f || B() + "assets/mapicons/" + v(t)[0]}" alt="" draggable="false"></i>`, iconSize: [sz, sz], iconAnchor: [sz / 2, sz / 2], popupAnchor: [0, -sz / 2] });
+  };
+  const leg = (t) => {
+    if (t == "alpha") {
+      const f = face("\u0427\u0438\u043B\u043B\u0435\u0442") || face("Chillet");
+      if (f) return `<i class="gmk-l gmk-lf"><img src="${f}" alt=""></i>`;
+    }
+    return `<i class="gmk-l" style="--c:${v(t)[1]}"><img src="${B()}assets/mapicons/${v(t)[0]}" alt=""></i>`;
+  };
   const POP = { maxWidth: 280, minWidth: 220, autoPan: true, autoPanPaddingTopLeft: [12, 72], autoPanPaddingBottomRight: [12, 24] };
   function fit(m) {
     m.on("popupopen", (e) => {
@@ -291,7 +304,7 @@ window.PW_pop = function(o) {
     const all = [];
     Object.keys(T).forEach((k) => groups[k] = dc.group(k));
     D.map.forEach((p) => {
-      const mk = L.marker(ll(p.x, p.y), { icon: MI.icon(p.t), title: p.name, riseOnHover: true }).bindPopup(() => window.PW_pop({ t: p.t, name: p.name, lvl: p.lvl, info: p.info, url: p.url, kind: T[p.t][0] + " " + (p.info || T[p.t][1]), sub: "X " + Math.round(p.x) + " \xB7 Y " + Math.round(p.y) }), MI.POP);
+      const mk = L.marker(ll(p.x, p.y), { icon: MI.icon(p.t, 0, p.name), title: p.name, riseOnHover: true }).bindPopup(() => window.PW_pop({ t: p.t, name: p.name, lvl: p.lvl, info: p.info, url: p.url, kind: T[p.t][0] + " " + (p.info || T[p.t][1]), sub: "X " + Math.round(p.x) + " \xB7 Y " + Math.round(p.y) }), MI.POP);
       dc.add(mk, p.t);
       all.push([p, mk]);
     });

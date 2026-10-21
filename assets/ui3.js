@@ -601,7 +601,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cnt[p.t] = (cnt[p.t] || 0) + 1;
         groups[p.t] = groups[p.t] || dc.group(p.t);
         const nm = p.n;
-        dc.add(L.marker(ll(p.x, p.y), { icon: MI.icon(p.t), title: nm, riseOnHover: true }).bindPopup(() => window.PW_pop({ t: p.t, name: nm, lvl: p.lv, kind: t[0] + " " + t[1] }), MI.POP), p.t);
+        dc.add(L.marker(ll(p.x, p.y), { icon: MI.icon(p.t, 0, nm), title: nm, riseOnHover: true }).bindPopup(() => window.PW_pop({ t: p.t, name: nm, lvl: p.lv, kind: t[0] + " " + t[1] }), MI.POP), p.t);
       });
       lay.onAdd = () => {
         const d = L.DomUtil.create("div", "mleg");
@@ -651,7 +651,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const add = (M, ll, pts, al, dc) => {
         const g = [];
         pts.forEach((p) => g.push(dc.add(L.marker(ll(p[0], p[1]), { icon: MI.icon("hab", 22), title: nm, riseOnHover: true }).bindPopup(() => window.PW_pop({ t: "hab", name: nm, sub: (tod == "n" ? "\u041D\u043E\u0447\u044C\u044E" : "\u0414\u043D\u0451\u043C") + (p[2] ? " \xB7 \u0443\u0440. " + p[2] : "") }), MI.POP), "hab", 22, 4)));
-        (al || []).forEach((p) => g.push(dc.add(L.marker(ll(p[0], p[1]), { icon: MI.icon("alpha", 32), title: nm, riseOnHover: true }).bindPopup(() => window.PW_pop({ t: "alpha", name: nm, kind: "\u{1F451} \u0410\u043B\u044C\u0444\u0430" }), MI.POP), "alpha", 32, 6)));
+        (al || []).forEach((p) => g.push(dc.add(L.marker(ll(p[0], p[1]), { icon: MI.icon("alpha", 34, nm), title: nm, riseOnHover: true }).bindPopup(() => window.PW_pop({ t: "alpha", name: nm, kind: "\u{1F451} \u0410\u043B\u044C\u0444\u0430" }), MI.POP), "alpha", 32, 6)));
         const b = pts.concat(al || []);
         if (b.length) M.m.fitBounds(L.latLngBounds(b.map((p) => ll(p[0], p[1]))).pad(0.3), { maxZoom: 4, animate: false });
         M.m.closePopup();

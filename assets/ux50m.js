@@ -487,7 +487,7 @@
       my.before(o);
       $("[data-off]", o).onclick = async () => {
         const D = await data();
-        const urls = ["", "gallery/", "map/", "breed/", "boss/", "compare/", "my/", "ux/", "ux/uroven/", "ux/stihii/", "2_mehaniki/rabota/", "ux/lovlya/", "assets/ux50_data.json", "assets/ux50_ref.json", "assets/breeding.json", ...D.pals.filter((p) => p.url).map((p) => p.url), ...(D.bcards || []).map((b) => b.u), ...D.pals.filter((p) => p.thumb).map((p) => p.thumb)];
+        const urls = ["", "gallery/", "map/", "breed/", "boss/", "compare/", "my/", "ux/", "ux/uroven/", "ux/stihii/", "ux/lovlya/", "assets/ux50_data.json", "assets/ux50_ref.json", "assets/breeding.json", ...D.pals.filter((p) => p.url).map((p) => p.url), ...(D.bcards || []).map((b) => b.u), ...D.pals.filter((p) => p.thumb).map((p) => p.thumb)];
         const c = await caches.open("ux-offline");
         let n = 0;
         const st = $("#ux-offst");
