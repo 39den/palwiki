@@ -315,3 +315,7 @@ html.pp26 .rim.e{border-radius:50%;box-shadow:none}
 .md-sidebar--primary .md-nav[data-md-level="1"]>.md-nav__list{padding-top:4px}
 @media (max-width:600px){html.pp26 .sx-card.ai{max-height:42vh;overflow:auto;overscroll-behavior:contain}}
 .nl-hint{margin:.4rem 0 .8rem}.nl-hint .md-button{font-size:.8rem;padding:.4rem .8rem}
+.sg26{display:flex;flex-direction:column;margin:.25rem 0 .6rem;border:1px solid var(--pline2,rgba(127,127,127,.3));border-radius:12px;overflow:hidden;background:var(--md-default-bg-color);max-width:420px}
+.sg26 button{font:inherit;font-size:.85rem;text-align:left;padding:.6rem .8rem;min-height:40px;border:0;border-top:1px solid rgba(127,127,127,.15);background:transparent;color:inherit;cursor:pointer}
+.sg26 button:first-child{border-top:0}.sg26 button:hover,.sg26 button:focus{background:rgba(47,111,222,.1)}
+.sg26[hidden]{display:none}
