@@ -36,7 +36,7 @@
     playing.add(img);
     get(url(img)).then(function(u){
       if(!playing.has(img))return;
-      var box=document.createElement('span');box.className='palanim-live';box.setAttribute('aria-hidden','true');
+      var box=document.createElement('span');box.className='palanim-live pa-'+img._pa.type;box.setAttribute('aria-hidden','true');
       var a=new Image();a.alt='';a.decoding='async';
       a.onload=function(){if(!playing.has(img))return;place(img,box);box.classList.add('on')};
       box.appendChild(a);var par=img.parentNode;
