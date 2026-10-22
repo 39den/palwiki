@@ -154,3 +154,50 @@ html.v27 body.pp-home a.tile[href*="teamcheck/"] .ti{background-image:url(game/F
 @media (max-width:1023.98px){html.v27 body.pp-home .tiles a.tile[href*="t.me"]{grid-column:1/-1}}
 /* v27: скелет «Пала дня» по высоте карточки (без скачка и лишней прокрутки) */
 html.v27 #potd .skel{height:216px!important}@media (min-width:1024px){html.v27 #potd .skel{height:141px!important}}
+
+/* HOTFIX-LAND 22.10 b: light-theme red leaks (accent used as link colour) + narrow item tiles */
+[data-md-color-scheme=default]{--md-typeset-a-color:#0b6f86!important}
+[data-md-color-scheme=default] .md-typeset a:not(.md-button):not(.ux-chip){color:#0b6f86!important}
+[data-md-color-scheme=default] .md-typeset a .pc-name,[data-md-color-scheme=default] .md-typeset a[class*=card] *{color:inherit!important}
+[data-md-color-scheme=default] .md-typeset a[class*=card],[data-md-color-scheme=default] .pgrid a{color:var(--md-default-fg-color)!important}
+html.v27 body .md-typeset .itiles,html.v27 body .md-typeset .fcard .itiles{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))!important}
+html.v27 body .itiles .il{overflow-wrap:anywhere!important}
+[data-md-color-scheme=default] .md-typeset .md-button:not(.md-button--primary){color:#0b6f86!important;border-color:rgba(11,111,134,.5)!important}
+[data-md-color-scheme=default] .md-typeset .bi .kind{color:#8a5a00!important}
+.ux-wb .ux-x,.ux-x{color:var(--md-default-fg-color--light)!important}
+.hsx{min-width:0!important;max-width:100%!important;box-sizing:border-box!important}
+.hsx .hsq{min-width:0!important;max-width:100%!important;box-sizing:border-box!important;flex:1 1 auto!important}
+html.v27 .ux-tabbar,html.v27 .tabbar{transition:transform .25s ease!important}
+html.v27 .ux-tabbar.pw-hide,html.v27 .tabbar.ux-tabbar.pw-hide{transform:translateY(calc(100% + 1rem + env(safe-area-inset-bottom)))!important}
+.ux-tabbar a .pw-ti{width:20px;height:20px;display:block;margin:0 auto}
+@media (orientation:landscape) and (max-height:500px){
+ .gcf,.gcf-drop,.v27panel,.ux-filters,.flt,.md-typeset [class*=filter]{position:static!important;top:auto!important}
+ .md-header{height:2.2rem!important}.md-header__inner{padding-top:0!important;padding-bottom:0!important}
+}
+[data-md-color-scheme=default] .ux-ptag,[data-md-color-scheme=default] .ux-pct,[data-md-color-scheme=default] .md-nav__link--active,[data-md-color-scheme=default] .md-nav__link--active *{color:var(--md-default-fg-color)!important}
+[data-md-color-scheme=slate] .ux-ptag,[data-md-color-scheme=slate] .ux-pct{color:var(--md-default-fg-color)!important}
+@media (orientation:landscape) and (max-height:500px){html.v27 .md-header{position:relative!important;top:auto!important}.tabbed-labels{position:static!important}}
+/* shared from cards2 HOTFIX-LAND (pages without cards2.css) */
+/* HOTFIX-LAND 22.10: телефон боком, переполнение «Пал дня», красные имена */
+html,body{overflow-x:hidden}
+.md-typeset .bento2{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)!important}
+.md-typeset .bento2>*{min-width:0!important}
+@media (max-width:959px){.md-typeset .bento2{grid-template-columns:minmax(0,1fr)!important}}
+.md-typeset .mini-row{display:flex;overflow-x:auto;max-width:100%;min-width:0;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);padding-right:28px}
+#recent *,#favs *{color:var(--md-default-fg-color,#1b1b1b)!important}
+[data-md-color-scheme=slate] #recent *,[data-md-color-scheme=slate] #favs *{color:#e8eaf0!important}
+#potd,#potd>*{min-width:0!important;max-width:100%!important;box-sizing:border-box}
+#potd *{overflow-wrap:anywhere;min-width:0}
+#potd .card-link,#potd>a{display:flex!important;flex-wrap:wrap;gap:12px;align-items:center}
+#potd .card-link>div,#potd>a>div{flex:1 1 180px;min-width:0!important}
+@media (max-width:480px){#potd .card-link,#potd>a{flex-direction:column;align-items:flex-start}#potd img[src*='/pp/art/']{width:120px!important;height:120px!important;align-self:center}}
+/* bottom bar: body padding = bar + safe-area; compact on low screens */
+@media (max-width:959px){body{padding-bottom:calc(84px + env(safe-area-inset-bottom))!important}}
+@media (max-height:500px) and (orientation:landscape){.tabbar{padding:2px!important;bottom:calc(4px + env(safe-area-inset-bottom))!important;left:calc(8px + env(safe-area-inset-left))!important;right:calc(8px + env(safe-area-inset-right))!important}.tabbar a{flex-direction:row!important;gap:6px!important;padding:6px 10px!important;font-size:.62rem!important}.tabbar a svg,.tabbar a span{font-size:1rem!important}body{padding-bottom:calc(52px + env(safe-area-inset-bottom))!important}}
+@media (orientation:landscape){.md-main__inner,.md-header__inner,.md-tabs{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}}
+/* «Ещё»: fade + игровые иконки */
+.md-typeset .gc-more{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);padding-right:28px}
+@media (min-width:1100px){.md-typeset .gc-more{-webkit-mask-image:none;mask-image:none;padding-right:0}}
+.md-typeset .gc-more-a .v27i{width:18px;height:18px}
+html.v27 .md-typeset .ux-hscroll{grid-template-columns:none!important;grid-auto-columns:156px!important}
+@media (orientation:landscape) and (max-height:500px){html.v27 body:has(.leaflet-container) .ux-tabbar{display:none!important}}
