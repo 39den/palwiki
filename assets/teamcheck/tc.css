@@ -186,3 +186,9 @@ span.tc-empty-slot{cursor:default}
 #tc-app .tc-plist li::before,#tc-app .tc-plist li::marker{content:none!important}
 #tc-app .tc-team{margin-left:0!important;padding-left:0!important}#tc-app .tc-team li{margin-left:0!important}#tc-app .tc-team li::marker{content:none}
 #tc-app .tc-nw{white-space:nowrap}
+/* i100: условия базы */
+.tc-cond4{grid-template-columns:repeat(4,minmax(0,1fr))}.tc-cond3{grid-template-columns:repeat(3,minmax(0,1fr))}
+#tc-app h3.tc-gh{margin:12px 0 4px;font-size:15px}
+@media (max-width:600px){.tc-cond4{grid-template-columns:repeat(2,minmax(0,1fr))}.tc-cond3{grid-template-columns:repeat(3,minmax(0,1fr))}.tc-cond3 .tc-pu{font-size:12px;padding:8px 4px}}
+
+#tc-app{min-height:100vh}

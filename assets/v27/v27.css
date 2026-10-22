@@ -254,3 +254,4 @@ html.v27 .pal-info .tc-cta{align-self:flex-start;margin:10px 0 0!important}
 /* deploy 22.10: CTA «Разобрать команду» сразу под заголовком пала; без пустой полосы над крошками на телефоне */
 html.v27 .pal-info>*{order:2}html.v27 .pal-info>.pp-eb,html.v27 .pal-info>h1{order:0}html.v27 .pal-info>.tc-cta{order:1;align-self:flex-start;margin:6px 0 10px!important}
 @media (max-width:700px){html.v27 body .md-main .md-main__inner.md-grid{margin-top:0!important}html.v27 body .md-content article#v27main{padding-top:0!important;margin-top:0!important}html.v27 body article#v27main>.ux-crumbs{margin-top:0!important}}
+html.v27 [data-md-color-scheme=slate] .sa-k,html.v27[data-md-color-scheme=slate] .sa-k{color:#7fb2ff!important}
