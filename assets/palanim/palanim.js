@@ -28,7 +28,7 @@
     if(!img){playing.forEach(function(x){stop(x)});return}
     if(!playing.has(img))return;playing.delete(img);var box=img._pa.box;img._pa.box=null;
     if(box){box.classList.remove('on');setTimeout(function(){if(box.parentNode)box.parentNode.removeChild(box)},220)}}
-  var READY=document.readyState==='complete';if(!READY)addEventListener('load',function(){setTimeout(function(){READY=true;vis.forEach(function(r,img){if(r>=0.5)play(img)})},1200)},{once:true});
+  var READY=document.readyState==='complete';function setReady(){if(READY)return;READY=true;vis.forEach(function(r,img){if(r>0)play(img)})}if(!READY){addEventListener('load',function(){setTimeout(setReady,300)},{once:true});setTimeout(setReady,1500)}
   function play(img){
     if(!READY)return;
     if(RM.matches||playing.has(img)||!img.isConnected)return;
@@ -43,7 +43,7 @@
       par.insertBefore(box,img.nextSibling);img._pa.box=box;place(img,box);a.src=u;
     },function(){playing.delete(img)})}
   function onIO(es){es.forEach(function(x){var img=x.target;vis.set(img,x.intersectionRatio);
-    if(x.isIntersecting&&x.intersectionRatio>=0.5){clearTimeout(img._pa.t);img._pa.t=setTimeout(function(){if((vis.get(img)||0)>=0.5)play(img)},img._pa.type==='card'?150:350)}
+    var th=img._pa.type==='card'?0.01:0.5;if(x.isIntersecting&&x.intersectionRatio>=th){clearTimeout(img._pa.t);img._pa.t=setTimeout(function(){if((vis.get(img)||0)>=th)play(img)},img._pa.type==='card'?150:350)}
     else{clearTimeout(img._pa.t);stop(img)}})}
   function bind(img){
     if(img._pa)return;var id=idOf(img);if(!id)return;
@@ -53,16 +53,18 @@
     if(io)io.observe(img)}
   function init(root){
     root=root||document;
-    if(!io&&'IntersectionObserver'in window)io=new IntersectionObserver(onIO,{threshold:[0,0.5,1]});
+    if(!io&&'IntersectionObserver'in window)io=new IntersectionObserver(onIO,{threshold:[0,0.01,0.5,1]});
     root.querySelectorAll('img[data-palanim],img.pal-card,img[src*="pp/art/"]').forEach(bind)}
   var mo,pend=0;function watch(){if(mo||!window.MutationObserver)return;mo=new MutationObserver(function(){if(pend)return;pend=setTimeout(function(){pend=0;init()},120)});mo.observe(document.body,{childList:true,subtree:true})}
-  document.addEventListener('visibilitychange',function(){if(document.hidden)stop();else init()});
-  setInterval(function(){playing.forEach(function(x){if(x._pa.box)place(x,x._pa.box)})},300);
+  document.addEventListener('visibilitychange',function(){if(document.hidden)stop();else{init();resume()}});
+  (function loop(){if(!document.hidden)playing.forEach(function(x){if(x._pa.box)place(x,x._pa.box)});requestAnimationFrame(loop)})();
   window.addEventListener('scroll',function(){playing.forEach(function(x){if(x._pa.box)place(x,x._pa.box)})},{passive:true});
   window.addEventListener('resize',function(){playing.forEach(function(x){if(x._pa.box)place(x,x._pa.box)})});
   if(RM.addEventListener)RM.addEventListener('change',function(){if(RM.matches)stop()});
+  function resume(){vis.forEach(function(r,img){if(!img.isConnected){vis.delete(img);return}if(r>=(img._pa.type==='card'?0.01:0.5))play(img)})}
+  setInterval(function(){if(!document.hidden)resume()},2000);
   window.PalAnim={init:init,stop:function(){stop()}};
   function go(){init();watch()}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
-  if(window.document$&&window.document$.subscribe)window.document$.subscribe(function(){stop();init()});
+  if(window.document$&&window.document$.subscribe)window.document$.subscribe(function(){stop();init();setTimeout(resume,200)});
 })();
