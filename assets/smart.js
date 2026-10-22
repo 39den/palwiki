@@ -10,6 +10,9 @@
   const stem = (w) => w.length > 3 ? w.replace(END, "") : w;
   const TR = { a: "\u0430", b: "\u0431", v: "\u0432", g: "\u0433", d: "\u0434", e: "\u0435", z: "\u0437", i: "\u0438", y: "\u0438", k: "\u043A", l: "\u043B", m: "\u043C", n: "\u043D", o: "\u043E", p: "\u043F", r: "\u0440", s: "\u0441", t: "\u0442", u: "\u0443", f: "\u0444", h: "\u0445", c: "\u043A", w: "\u0432", x: "\u043A\u0441", j: "\u0434\u0436", q: "\u043A" };
   const DG = [["sch", "\u0449"], ["sh", "\u0448"], ["ch", "\u0447"], ["zh", "\u0436"], ["ts", "\u0446"], ["ya", "\u044F"], ["yu", "\u044E"], ["yo", "\u0435"], ["kh", "\u0445"], ["ph", "\u0444"]];
+  const SLW = { "\u0434\u0435\u043F\u0440\u0435\u0441": "\u0434\u0435\u043F\u0440\u0435\u0441\u0441\u0438\u044F", "\u0434\u0435\u043F\u0440\u0435\u0441\u0441": "\u0434\u0435\u043F\u0440\u0435\u0441\u0441\u0438\u044F", "\u0434\u0435\u043F\u0440\u0435\u0441\u0441\u0443\u0445\u0430": "\u0434\u0435\u043F\u0440\u0435\u0441\u0441\u0438\u044F", "\u043D\u0443\u0431": "\u043D\u043E\u0432\u0438\u0447\u043E\u043A", "\u043D\u0443\u0431\u043E\u0432": "\u043D\u043E\u0432\u0438\u0447\u043A\u043E\u0432", "\u043D\u0443\u0431\u044B": "\u043D\u043E\u0432\u0438\u0447\u043A\u0438", "\u043D\u0443\u0431\u0430\u043C": "\u043D\u043E\u0432\u0438\u0447\u043A\u0430\u043C", "\u043D\u0443\u0431\u0430\u0441": "\u043D\u043E\u0432\u0438\u0447\u043E\u043A", "\u043B\u0432\u043B": "\u0443\u0440\u043E\u0432\u0435\u043D\u044C", "\u043B\u0432\u043B\u0430": "\u0443\u0440\u043E\u0432\u043D\u044F", "\u0438\u043C\u0431\u0430": "\u043B\u0443\u0447\u0448\u0438\u0439", "\u0438\u043C\u0431\u043E\u0432\u044B\u0439": "\u043B\u0443\u0447\u0448\u0438\u0439", "\u0442\u043E\u043F\u043E\u0432\u044B\u0439": "\u043B\u0443\u0447\u0448\u0438\u0439", "\u043C\u0430\u0443\u043D\u0442": "\u0435\u0437\u0434\u043E\u0432\u043E\u0439", "\u043C\u0430\u0443\u043D\u0442\u0430": "\u0435\u0437\u0434\u043E\u0432\u043E\u0433\u043E", "\u0441\u043A\u0438\u043B": "\u043D\u0430\u0432\u044B\u043A", "\u0441\u043A\u0438\u043B\u043B": "\u043D\u0430\u0432\u044B\u043A", "\u043F\u0435\u0440\u043A\u0438": "\u043F\u0430\u0441\u0441\u0438\u0432\u043A\u0438", "\u0430\u0431\u0438\u043B\u043A\u0430": "\u043D\u0430\u0432\u044B\u043A", "\u043A\u0440\u0430\u0444\u0442\u0438\u0442\u044C": "\u0441\u043A\u0440\u0430\u0444\u0442\u0438\u0442\u044C", "\u0444\u0430\u0440\u043C\u0438\u0442\u044C": "\u0444\u0430\u0440\u043C\u0438\u0442\u044C", "\u0430\u0439\u0432\u0438": "iv", "\u0438\u0432\u0438": "iv", "\u0448\u0430\u0439\u043D\u0438": "\u0443\u0434\u0430\u0447\u043B\u0438\u0432\u044B\u0439", "\u0448\u0430\u0439\u043D\u044B\u0439": "\u0443\u0434\u0430\u0447\u043B\u0438\u0432\u044B\u0439", "\u043B\u0430\u043A\u0438": "\u0443\u0434\u0430\u0447\u043B\u0438\u0432\u044B\u0439", "\u0448\u0438\u043D\u0438": "\u0443\u0434\u0430\u0447\u043B\u0438\u0432\u044B\u0439" };
+  const slang = (s) => s.split(" ").map((w) => SLW[w] || w).join(" ");
+  const clean = (s) => String(s == null ? "" : s).slice(0, 120).replace(/[\u0000-\u001f]/g, " ").replace(/[^0-9A-Za-zА-Яа-яЁё\s'.,?\-\[\];`]/g, " ").replace(/\s+/g, " ").trim();
   function translit(s) {
     for (const [k, v] of DG) s = s.split(k).join(v);
     return [...s].map((c) => TR[c] || c).join("");
@@ -75,6 +78,13 @@
       const i = D.items.findIndex((x) => x.ru == t);
       if (i >= 0) add(s, "item", i);
     }
+    const PINS = (D.pin || []).map(([r, q]) => {
+      try {
+        return [new RegExp(r), q];
+      } catch (e) {
+        return null;
+      }
+    }).filter(Boolean);
     const VOC = /* @__PURE__ */ new Set();
     K.forEach(([k]) => k.split(" ").forEach((w) => VOC.add(w)));
     "\u043A\u0430\u043A \u0433\u0434\u0435 \u043A\u0442\u043E \u0447\u0442\u043E \u0447\u0435\u043C \u043B\u0443\u0447\u0448\u0435 \u043B\u0443\u0447\u0448\u0438\u0439 \u043B\u0443\u0447\u0448\u0438\u0435 \u043B\u0443\u0447\u0448\u0430\u044F \u0441\u0430\u043C\u044B\u0439 \u0442\u043E\u043F \u0432\u0437\u044F\u0442\u044C \u043D\u0430\u0439\u0442\u0438 \u0434\u043E\u0431\u044B\u0442\u044C \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0432\u044B\u0432\u0435\u0441\u0442\u0438 \u0441\u043A\u0440\u0435\u0441\u0442\u0438\u0442\u044C \u0431\u0438\u0442\u044C \u0441\u043B\u0430\u0431\u043E\u0441\u0442\u044C \u043F\u0430\u0441\u0441\u0438\u0432\u043A\u0438 \u043F\u0430\u0441\u0441\u0438\u0432\u043A\u0430 \u0434\u043B\u044F \u0431\u043E\u0435\u0446 \u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0435\u0437\u0434\u043E\u0432\u043E\u0439 \u043A\u043E\u043F\u0430\u0435\u0442 \u0440\u0443\u0431\u0438\u0442 \u0431\u043E\u0441\u0441 \u0431\u0430\u0448\u043D\u044F \u043F\u0430\u043B \u043F\u0430\u043B\u044B \u0437\u043E\u0438 \u0441\u0435\u0440\u0443 \u0441\u0435\u0440\u0430 \u0431\u044B\u0441\u0442\u0440\u043E \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043A\u0430\u0447\u0430\u0442\u044C\u0441\u044F \u0437\u043E\u043B\u043E\u0442\u043E \u0444\u0430\u0440\u043C\u0438\u0442\u044C \u043F\u043E\u0447\u0435\u043C\u0443 \u0433\u0440\u0443\u0441\u0442\u044F\u0442 \u0431\u0430\u0437\u0430".split(" ").forEach((w) => VOC.add(w));
@@ -143,10 +153,11 @@
     function suggest(q, k = 3) {
       const v = norm(q);
       const r = [];
+      if (v.length > 24 || v.split(" ").length > 3) return r;
       for (const [key, kind, ref] of K) {
         if (kind == "bossn") continue;
         const d = dl(key, v);
-        if (d <= Math.max(2, v.length / 3)) r.push([d, kind, ref, key]);
+        if (d <= Math.max(1, Math.min(3, Math.floor(v.length / 3)))) r.push([d, kind, ref, key]);
       }
       r.sort((a, b) => a[0] - b[0]);
       const seen = /* @__PURE__ */ new Set();
@@ -196,10 +207,22 @@
       return best && best.s >= 0.55 ? best.f : null;
     }
     function answer(raw) {
-      let [q, ch] = fixLayout(raw);
-      const n = norm(q);
+      const raw0 = String(raw == null ? "" : raw);
+      if (!raw0.trim()) return null;
+      const cl = clean(raw0);
+      const letters = (cl.match(/[A-Za-zА-Яа-яЁё0-9]/g) || []).length;
+      if (letters < 2) return { q: raw0.slice(0, 120), fixed: null, type: "none", bad: true, dym: [] };
+      let [q, ch] = fixLayout(cl);
+      const n = slang(norm(q));
       const res = { q, fixed: ch ? q : null };
       if (n.length < 2) return null;
+      for (const [re, fq] of PINS) {
+        if (re.test(n)) {
+          const f2 = D.faq.find((x) => x.q == fq);
+          if (f2) return { ...res, type: "faq", f: f2 };
+        }
+      }
+      if (/(.)\1{6,}/.test(n.replace(/\s/g, "")) && new Set(n.replace(/\s/g, "")).size < 4) return { ...res, type: "none", bad: true, dym: [] };
       const has = (r) => r.test(n);
       const ent = find(n);
       const role = (ROLE.find(([r]) => r.test(n)) || [])[1];
@@ -261,7 +284,7 @@
     return real();
   };
   root.PW_data = () => {
-    if (loading || typeof document == "undefined" || document.querySelector(NEED)) return real();
+    if (loading || typeof document == "undefined" || document.querySelector(NEED)) return (document.getElementById("potd")&&document.readyState!="complete")?(root._hp||(root._hp=new Promise((r)=>addEventListener("load",()=>setTimeout(()=>r(real()),1500),{once:true})))):real();
     return root._pend || (root._pend = new Promise((r) => {
       root._pwGo = () => r(real());
       ["pointerdown", "keydown", "touchstart"].forEach((ev) => addEventListener(ev, () => setTimeout(root.PW_load, 1500), { once: true, passive: true }));
@@ -330,10 +353,11 @@
       case "faq":
         h = `<div class="sa-k">\u041E\u0442\u0432\u0435\u0442</div><h3>${esc(a.f.q)}</h3><div>${esc(a.f.a)}</div>`;
         break;
-      case "none":
-        h = a.dym && a.dym.length ? `<div class="dym">\u0412\u044B \u0438\u043C\u0435\u043B\u0438 \u0432 \u0432\u0438\u0434\u0443: ${a.dym.map((d) => `<a data-q="${esc(d.name)}">${esc(d.name)}</a>`).join("")}</div>` : "";
-        if (!h) return "";
+      case "none": {
+        const ex = ["\u043A\u0430\u043A \u0432\u044B\u0432\u0435\u0441\u0442\u0438 \u0410\u043D\u0443\u0431\u0438\u0441\u0430", "\u0447\u0435\u043C \u0431\u0438\u0442\u044C \u0417\u043E\u0438", "\u0433\u0434\u0435 \u0432\u0437\u044F\u0442\u044C \u0441\u0435\u0440\u0443", "\u043B\u0443\u0447\u0448\u0438\u0439 \u043B\u0435\u0441\u043E\u0440\u0443\u0431"];
+        h = (a.dym && a.dym.length ? `<div class="dym">\u0412\u043E\u0437\u043C\u043E\u0436\u043D\u043E, \u0442\u044B \u0438\u043C\u0435\u043B \u0432 \u0432\u0438\u0434\u0443: ${a.dym.map((d) => `<a data-q="${esc(d.name)}">${esc(d.name)}</a>`).join("")}</div>` : "") + `<div class="sa-none"><b>${a.bad ? "\u041D\u0435 \u043F\u043E\u043D\u044F\u043B \u0437\u0430\u043F\u0440\u043E\u0441" : "\u0413\u043E\u0442\u043E\u0432\u043E\u0433\u043E \u043E\u0442\u0432\u0435\u0442\u0430 \u043D\u0435\u0442"}</b><span>${a.bad ? "\u041F\u043E\u0445\u043E\u0436\u0435, \u0442\u0443\u0442 \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0438\u043C\u0432\u043E\u043B\u044B. \u041D\u0430\u043F\u0438\u0448\u0438 \u0441\u043B\u043E\u0432\u0430\u043C\u0438, \u0447\u0442\u043E \u0438\u0449\u0435\u0448\u044C." : "\u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439 \u043A\u043E\u0440\u043E\u0447\u0435: \u0438\u043C\u044F \u043F\u0430\u043B\u0430, \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u0430 \u0438\u043B\u0438 \u0431\u043E\u0441\u0441\u0430. \u041C\u043E\u0436\u043D\u043E \u043F\u043E-\u0430\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438 \u0438\u043B\u0438 \u0441 \u043E\u043F\u0435\u0447\u0430\u0442\u043A\u043E\u0439."}</span><div class="sa-ex">\u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440: ${ex.map((x) => `<a data-q="${esc(x)}">${esc(x)}</a>`).join("")}</div><div class="sa-ex"><a href="${BASE}9_faq/faq/">\u0412\u0441\u0435 \u0447\u0430\u0441\u0442\u044B\u0435 \u0432\u043E\u043F\u0440\u043E\u0441\u044B</a></div></div>`;
         break;
+      }
     }
     return `<div class="sa">${fx}${h}</div>`;
   }

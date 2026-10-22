@@ -35,7 +35,7 @@
     }
     function bugSheet() {
       document.addEventListener("click", (e) => {
-        const a = e.target.closest("a.bug-link, .ux-bug");
+        const a = (e.target.closest?e.target:document.body).closest("a.bug-link, .ux-bug");
         if (!a) return;
         e.preventDefault();
         const slug = (rel.replace(/[^a-z0-9]+/gi, "_").replace(/^_|_$/g, "") || "home").slice(0, 40);
@@ -105,7 +105,7 @@
           addEventListener("resize", fit);
         }
         bar.addEventListener("click", (e) => {
-          const b = e.target.closest("button");
+          const b = (e.target.closest?e.target:document.body).closest("button");
           if (!b) return;
           if (b.dataset.k) {
             const on = b.getAttribute("aria-pressed") != "true";
@@ -208,7 +208,7 @@
         if (items.every(([j]) => st[j])) toast("\u0412\u0441\u0451 \u0433\u043E\u0442\u043E\u0432\u043E \u2014 \u0443\u0434\u0430\u0447\u0438 \u0432 \u0431\u043E\u044E! \u{1F4AA}");
       });
       box.addEventListener("click", (e) => {
-        if (!e.target.closest("[data-team]")) return;
+        if (!(e.target.closest?e.target:document.body).closest("[data-team]")) return;
         const L2 = U.lists.lists();
         L2["\u041A\u043E\u043C\u0430\u043D\u0434\u0430"] = team.map((p) => p.id);
         U.lists.saveL(L2);
@@ -258,7 +258,7 @@
   <div class="ux-kid">\u{1F476} \u041F\u0440\u043E\u0449\u0435: \u0447\u0435\u043C \u0431\u043E\u043B\u044C\u0448\u0435 \u0447\u0438\u0441\u043B\u043E \u0443 \u043F\u0430\u043B\u0430, \u0442\u0435\u043C \u0431\u044B\u0441\u0442\u0440\u0435\u0435 \u043E\u043D \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442. \u041F\u0430\u043B ${lvl}-\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F \u0434\u0435\u043B\u0430\u0435\u0442 \u0440\u0430\u0431\u043E\u0442\u0443 ${k >= 1 ? "\u0432 " + fmt(k) + " \u0440\u0430\u0437\u0430 \u0431\u044B\u0441\u0442\u0440\u0435\u0435" : "\u043C\u0435\u0434\u043B\u0435\u043D\u043D\u0435\u0435"} \u0442\u0435\u0431\u044F.</div>`;
       };
       rb.addEventListener("click", (e) => {
-        const b = e.target.closest("button");
+        const b = (e.target.closest?e.target:document.body).closest("button");
         if (!b) return;
         if (b.dataset.w) W = T.find((t) => t.id == b.dataset.w);
         if (b.dataset.pp != null) pp = +b.dataset.pp;
@@ -305,7 +305,7 @@
   <div class="ux-panel"><div class="ux-h">\u{1F3AF} \u0421\u0444\u0435\u0440\u044B \u043F\u043E \u043F\u043E\u0440\u044F\u0434\u043A\u0443</div><div class="ux-chips">${sph.map((s) => `<span class="ux-chip ${s === rec ? "on" : ""}">${esc(s[0])} \xB7 \u0442\u0435\u0445\u043D. ${s[1]}</span>`).join("")}</div></div>`;
       };
       lc.addEventListener("click", (e) => {
-        const b = e.target.closest("button");
+        const b = (e.target.closest?e.target:document.body).closest("button");
         if (!b) return;
         if (b.classList.contains("ux-pick")) return window.PW_pickPal && window.PW_pickPal(D, "\u041A\u043E\u0433\u043E \u043B\u043E\u0432\u0438\u043C?", (q) => {
           p = q;
@@ -371,7 +371,7 @@
         }
       });
       kr.addEventListener("click", (e) => {
-        const b = e.target.closest("[data-i],[data-n]");
+        const b = (e.target.closest?e.target:document.body).closest("[data-i],[data-n]");
         if (!b) return;
         if (b.dataset.i && rec[b.dataset.i]) {
           e.preventDefault();
@@ -400,7 +400,7 @@
         fe.innerHTML = `<div class="ux-panel"><div class="ux-h">\u0427\u0442\u043E \u0445\u043E\u0447\u0443? ${hlp("\u0412\u044B\u0431\u0435\u0440\u0438 \u0446\u0435\u043B\u044C \u2014 \u043F\u043E\u043A\u0430\u0436\u0443 \u0431\u043B\u044E\u0434\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0434\u0430\u044E\u0442 \u044D\u0442\u043E\u0442 \u0431\u043E\u043D\u0443\u0441, \u043B\u0443\u0447\u0448\u0438\u0435 \u043F\u0435\u0440\u0432\u044B\u043C\u0438.")}</div><div class="ux-chips">${stats.map((t) => `<button type="button" class="ux-chip ${t == s ? "on" : ""}" data-s="${esc(t)}">${IC[t] || "\u2728"} ${esc(t)}</button>`).join("")}</div></div><div class="ux-cards">${L2.map(([f, p]) => `<div class="ux-card"><div class="ux-ct">${esc(f.n)}</div><div class="ux-big-n" style="font-size:1.5rem">+${p}%</div><div class="ux-sub">\u23F1 ${f.d ? Math.round(f.d / 60) + " \u043C\u0438\u043D" : "\u2014"} \xB7 \u{1F357} \u0441\u044B\u0442\u043E\u0441\u0442\u044C ${f.nu}</div><div class="ux-sub">${f.r.map((r) => esc(r[0]) + " \xD7" + esc(r[1])).join(", ")}</div><div class="ux-sub">\u{1F373} ${esc((f.st || [])[0] || "")}</div></div>`).join("")}</div>`;
       };
       fe.addEventListener("click", (e) => {
-        const b = e.target.closest("[data-s]");
+        const b = (e.target.closest?e.target:document.body).closest("[data-s]");
         if (b) {
           s = b.dataset.s;
           draw();
@@ -419,7 +419,7 @@
       };
       nv.innerHTML = `<div class="ux-panel"><input class="ux-in" type="search" placeholder="\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u043D\u0430\u0432\u044B\u043A\u0430" data-k="q" aria-label="\u041F\u043E\u0438\u0441\u043A \u043D\u0430\u0432\u044B\u043A\u0430" style="width:100%"><div class="ux-chips" style="margin-top:8px"><button type="button" class="ux-chip on" data-el="">\u0412\u0441\u0435</button>${Object.keys(ELI).map((e) => `<button type="button" class="ux-chip" data-el="${e}">${ELI[e]} ${e}</button>`).join("")}<button type="button" class="ux-chip" data-fr>\u{1F34E} \u0422\u043E\u043B\u044C\u043A\u043E \u0441 \u043F\u043B\u043E\u0434\u043E\u043C</button></div></div><div id="ux-skl"></div>`;
       nv.addEventListener("click", (e) => {
-        const b = e.target.closest("button");
+        const b = (e.target.closest?e.target:document.body).closest("button");
         if (!b) return;
         if (b.dataset.el != null) {
           el = b.dataset.el;
@@ -467,7 +467,7 @@
         if (ps.length > 2 || u.get("m")) history.replaceState(null, "", "?m=" + ids.join(","));
       };
       box.addEventListener("click", (e) => {
-        const b = e.target.closest("button");
+        const b = (e.target.closest?e.target:document.body).closest("button");
         if (!b) return;
         if (b.dataset.rm) {
           ids = ids.filter((x) => x != b.dataset.rm);
@@ -487,7 +487,7 @@
       my.before(o);
       $("[data-off]", o).onclick = async () => {
         const D = await data();
-        const urls = ["", "gallery/", "map/", "breed/", "boss/", "compare/", "my/", "ux/", "ux/uroven/", "ux/stihii/", "ux/lovlya/", "assets/ux50_data.json", "assets/ux50_ref.json", "assets/breeding.json", ...D.pals.filter((p) => p.url).map((p) => p.url), ...(D.bcards || []).map((b) => b.u), ...D.pals.filter((p) => p.thumb).map((p) => p.thumb)];
+        const urls = ["", "gallery/", "map/", "breed/", "boss/", "compare/", "my/", "ux/", "ux/uroven/", "ux/stihii/", "2_mehaniki/rabota/", "ux/lovlya/", "assets/ux50_data.json", "assets/ux50_ref.json", "assets/breeding.json", ...D.pals.filter((p) => p.url).map((p) => p.url), ...(D.bcards || []).map((b) => b.u), ...D.pals.filter((p) => p.thumb).map((p) => p.thumb)];
         const c = await caches.open("ux-offline");
         let n = 0;
         const st = $("#ux-offst");

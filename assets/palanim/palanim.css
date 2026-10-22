@@ -1,0 +1,6 @@
+/* Палпедия · живые палы. The animated layer is placed exactly over the static card art window / thumbnail by palanim.js. */
+.palanim-live{position:absolute;z-index:1;pointer-events:none;opacity:0;transition:opacity .18s ease;margin:0;padding:0}
+.palanim-live>img{display:block;width:100%;height:100%;max-width:none}
+.palanim-live.on{opacity:1}
+img.palanim-ready{cursor:pointer;-webkit-tap-highlight-color:transparent}
+@media (prefers-reduced-motion:reduce){.palanim-live{display:none!important}img.palanim-ready{cursor:auto}}

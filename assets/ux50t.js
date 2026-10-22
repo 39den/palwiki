@@ -7,7 +7,7 @@
     const palCard = (p, sub) => `<a class="ux-pal" href="${B + p.url}"><img src="${B + p.thumb}" alt="" loading="lazy" width="64" height="64"><span>${esc(p.ru)}</span>${sub ? `<small>${sub}</small>` : ""}</a>`;
     const hub = $("#ux-hub");
     if (hub) {
-      const T = [["\u{1F9ED}", "\u0427\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C \u043D\u0430 \u043C\u043E\u0451\u043C \u0443\u0440\u043E\u0432\u043D\u0435", "ux/uroven/", "\u041F\u043E\u0434\u0441\u043A\u0430\u0436\u0443, \u043A\u0443\u0434\u0430 \u0438\u0434\u0442\u0438 \u0438 \u043A\u043E\u0433\u043E \u043B\u043E\u0432\u0438\u0442\u044C"], ["\u{1F525}", "\u041A\u0440\u0443\u0433 \u0441\u0442\u0438\u0445\u0438\u0439", "ux/stihii/", "\u041A\u0442\u043E \u043A\u043E\u0433\u043E \u0431\u044C\u0451\u0442 \u2014 \u043E\u0434\u043D\u043E\u0439 \u043A\u0430\u0440\u0442\u0438\u043D\u043A\u043E\u0439"], ["\u{1F3AF}", "\u0428\u0430\u043D\u0441 \u043F\u043E\u0438\u043C\u043A\u0438", "ux/lovlya/", "\u041A\u0430\u043A\u0430\u044F \u0441\u0444\u0435\u0440\u0430 \u043D\u0443\u0436\u043D\u0430"], ["\u{1F9F1}", "\u0418\u0437 \u0447\u0435\u0433\u043E \u0441\u0434\u0435\u043B\u0430\u0442\u044C", "ux/kraft/", "\u0414\u0435\u0440\u0435\u0432\u043E \u043A\u0440\u0430\u0444\u0442\u0430 \u0438 \u0441\u043F\u0438\u0441\u043E\u043A \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432"], ["\u{1F372}", "\u0415\u0434\u0430 \u0434\u043B\u044F \u0446\u0435\u043B\u0438", "ux/eda/", "\u0427\u0442\u043E \u0441\u044A\u0435\u0441\u0442\u044C \u0434\u043B\u044F \u0440\u0430\u0431\u043E\u0442\u044B \u0438 \u0431\u043E\u044F"], ["\u{1F333}", "\u0414\u0435\u0440\u0435\u0432\u043E \u0440\u0430\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F", "ux/derevo/", "\u0420\u043E\u0434\u0438\u0442\u0435\u043B\u0438 \u0438 \u0434\u0435\u0442\u0438 \u043F\u0430\u043B\u0430"], ["\u2705", "\u0427\u0442\u043E \u043D\u043E\u0432\u043E\u0433\u043E \u0432 1.0.5", "ux/patch/", "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F \u043F\u0430\u0442\u0447\u0435\u0439 \u043A\u043E\u0440\u043E\u0442\u043A\u043E"]];
+      const T = [["\u{1F9ED}", "\u0427\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C \u043D\u0430 \u043C\u043E\u0451\u043C \u0443\u0440\u043E\u0432\u043D\u0435", "ux/uroven/", "\u041F\u043E\u0434\u0441\u043A\u0430\u0436\u0443, \u043A\u0443\u0434\u0430 \u0438\u0434\u0442\u0438 \u0438 \u043A\u043E\u0433\u043E \u043B\u043E\u0432\u0438\u0442\u044C"], ["\u{1F525}", "\u041A\u0440\u0443\u0433 \u0441\u0442\u0438\u0445\u0438\u0439", "ux/stihii/", "\u041A\u0442\u043E \u043A\u043E\u0433\u043E \u0431\u044C\u0451\u0442 \u2014 \u043E\u0434\u043D\u043E\u0439 \u043A\u0430\u0440\u0442\u0438\u043D\u043A\u043E\u0439"], ["\u2692\uFE0F", "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u044B", "2_mehaniki/rabota/", "\u0421\u0440\u0430\u0432\u043D\u0438 \u043F\u0430\u043B\u0430 \u0441\u043E \u0441\u0432\u043E\u0438\u043C \u0433\u0435\u0440\u043E\u0435\u043C"], ["\u{1F3AF}", "\u0428\u0430\u043D\u0441 \u043F\u043E\u0438\u043C\u043A\u0438", "ux/lovlya/", "\u041A\u0430\u043A\u0430\u044F \u0441\u0444\u0435\u0440\u0430 \u043D\u0443\u0436\u043D\u0430"], ["\u{1F9F1}", "\u0418\u0437 \u0447\u0435\u0433\u043E \u0441\u0434\u0435\u043B\u0430\u0442\u044C", "ux/kraft/", "\u0414\u0435\u0440\u0435\u0432\u043E \u043A\u0440\u0430\u0444\u0442\u0430 \u0438 \u0441\u043F\u0438\u0441\u043E\u043A \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432"], ["\u{1F372}", "\u0415\u0434\u0430 \u0434\u043B\u044F \u0446\u0435\u043B\u0438", "ux/eda/", "\u0427\u0442\u043E \u0441\u044A\u0435\u0441\u0442\u044C \u0434\u043B\u044F \u0440\u0430\u0431\u043E\u0442\u044B \u0438 \u0431\u043E\u044F"], ["\u{1F333}", "\u0414\u0435\u0440\u0435\u0432\u043E \u0440\u0430\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F", "ux/derevo/", "\u0420\u043E\u0434\u0438\u0442\u0435\u043B\u0438 \u0438 \u0434\u0435\u0442\u0438 \u043F\u0430\u043B\u0430"], ["\u2705", "\u0427\u0442\u043E \u043D\u043E\u0432\u043E\u0433\u043E \u0432 1.0.5", "ux/patch/", "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F \u043F\u0430\u0442\u0447\u0435\u0439 \u043A\u043E\u0440\u043E\u0442\u043A\u043E"]];
       hub.innerHTML = `<div class="ux-tiles ux-hubt">${T.map(([i, t, u, d]) => `<a class="ux-tile" href="${B + u}"><span>${i}</span><div><b>${esc(t)}</b><br><small>${esc(d)}</small></div></a>`).join("")}</div>`;
     }
     const lvl = $("#ux-level");
@@ -37,7 +37,7 @@
   ${now.length ? `<div class="ux-panel"><div class="ux-h">\u{1F451} \u0411\u043E\u0441\u0441\u044B \u043F\u043E \u0441\u0438\u043B\u0430\u043C</div><div class="ux-tiles">${now.map(bcard).join("")}</div></div>` : ""}`;
       };
       lvl.addEventListener("click", (e) => {
-        const b = e.target.closest("button");
+        const b = (e.target.closest?e.target:document.body).closest("button");
         if (!b) return;
         if (b.dataset.d) N = Math.max(1, Math.min(80, N + +b.dataset.d));
         if (b.dataset.v) N = +b.dataset.v;
@@ -88,14 +88,14 @@
         $$(".ux-kid", wh).forEach((e) => e.hidden = false);
       };
       wh.addEventListener("click", (e) => {
-        const g = e.target.closest("[data-e]");
+        const g = (e.target.closest?e.target:document.body).closest("[data-e]");
         if (g) {
           sel = g.dataset.e;
           draw();
         }
       });
       wh.addEventListener("keydown", (e) => {
-        const g = e.target.closest("[data-e]");
+        const g = (e.target.closest?e.target:document.body).closest("[data-e]");
         if (g && (e.key == "Enter" || e.key == " ")) {
           e.preventDefault();
           sel = g.dataset.e;

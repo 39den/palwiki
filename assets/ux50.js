@@ -43,7 +43,7 @@
   const ELI = { "\u041D\u0435\u0439\u0442\u0440\u0430\u043B\u044C\u043D\u044B\u0439": "\u26AA", "\u041E\u0433\u043E\u043D\u044C": "\u{1F525}", "\u0412\u043E\u0434\u0430": "\u{1F4A7}", "\u0422\u0440\u0430\u0432\u0430": "\u{1F33F}", "\u041C\u043E\u043B\u043D\u0438\u044F": "\u26A1", "\u041B\u0451\u0434": "\u2744\uFE0F", "\u0417\u0435\u043C\u043B\u044F": "\u{1FAA8}", "\u0422\u044C\u043C\u0430": "\u{1F311}", "\u0414\u0440\u0430\u043A\u043E\u043D": "\u{1F409}" };
   const chip = (e) => window.PW_chip ? window.PW_chip(e) : `<span class="el el-${ELC[e] || ""}">${esc(e)}</span>`;
   let _D = null, _X = null, _R = null;
-  const data = () => _D || (_D = (window.PW_load || window.PW_data)());
+  const data = () => _D || (_D = ((document.getElementById('potd')&&window.PW_data)||window.PW_load || window.PW_data)());
   const ux = () => _X || (_X = fetch(B + "assets/ux50_data.json").then((r) => r.json()));
   const ref = () => _R || (_R = fetch(B + "assets/ux50_ref.json").then((r) => r.json()));
   try {
@@ -116,7 +116,7 @@
     new MutationObserver(inject).observe(body, { childList: true });
     inject();
     sx.addEventListener("click", (e) => {
-      const b = e.target.closest("[data-tq]");
+      const b = (e.target.closest?e.target:document.body).closest("[data-tq]");
       if (!b) return;
       e.preventDefault();
       e.stopPropagation();
@@ -201,7 +201,7 @@
     addEventListener("pagehide", save);
     document.addEventListener("visibilitychange", () => document.visibilityState == "hidden" && save());
     document.addEventListener("click", (e) => {
-      const a = e.target.closest("a[href]");
+      const a = (e.target.closest?e.target:document.body).closest("a[href]");
       if (a) save();
     }, true);
     let h = SS.get("ux_hist", []).filter((x) => x.u != u);
@@ -239,7 +239,7 @@
     });
   }
   window.addEventListener("click", (e) => {
-    const b = e.target.closest && e.target.closest(".hlp");
+    const b = e.target.closest && (e.target.closest?e.target:document.body).closest(".hlp");
     if (b && matchMedia("(hover:hover)").matches && document.querySelector(".hlp-pop")) {
       e.preventDefault();
       e.stopPropagation();
@@ -315,7 +315,7 @@
       pop = null;
     };
     document.addEventListener("click", (e) => {
-      const b = e.target.closest(".ux-term");
+      const b = (e.target.closest?e.target:document.body).closest(".ux-term");
       if (!b) {
         close();
         return;
@@ -352,7 +352,7 @@
     };
     draw();
     q.addEventListener("click", (e) => {
-      const b = e.target.closest("button");
+      const b = (e.target.closest?e.target:document.body).closest("button");
       if (!b) return;
       if (b.dataset.a == "set") {
         window.PW_settings && window.PW_settings();
@@ -427,7 +427,7 @@
       p.innerHTML = `<div class="ux-ic">${cards.map(([e, t, d], k) => `<div class="ux-icard ${k == i ? "on" : ""}" aria-hidden="${k != i}"><div class="ux-big">${e}</div><h3>${t}</h3><p>${d}</p></div>`).join("")}</div><div class="ux-dots">${cards.map((_, k) => `<button type="button" class="${k == i ? "on" : ""}" data-k="${k}" aria-label="\u041A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 ${k + 1}"></button>`).join("")}</div><div class="ux-row"><button type="button" class="ux-btn ghost" data-s>\u041F\u0440\u043E\u043F\u0443\u0441\u0442\u0438\u0442\u044C</button><button type="button" class="ux-btn" data-n>${i < 2 ? "\u0414\u0430\u043B\u044C\u0448\u0435 \u2192" : "\u041D\u0430\u0447\u0430\u0442\u044C!"}</button></div>`;
     };
     p.addEventListener("click", (e) => {
-      const b = e.target.closest("button");
+      const b = (e.target.closest?e.target:document.body).closest("button");
       if (!b) return;
       if (b.hasAttribute("data-s")) return close();
       if (b.hasAttribute("data-n")) {
@@ -498,7 +498,7 @@
     };
     draw();
     row.addEventListener("click", (e) => {
-      const b = e.target.closest("button");
+      const b = (e.target.closest?e.target:document.body).closest("button");
       if (!b) return;
       if (b.dataset.l) {
         const on = toggleList(b.dataset.l, id);

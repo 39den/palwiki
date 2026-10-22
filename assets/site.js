@@ -1,6 +1,6 @@
 (function() {
   const B = () => window.PW_BASE || "/palwiki/";
-  const I = { travel: ["travel.webp", "#2ec4b6", 3], tower: ["tower.webp", "#b07cff", 3], alpha: ["alpha.webp", "#ff6b5a", 2], sealed: ["sealed.svg", "#4aa3ff", 2], dungeon: ["dungeon.webp", "#e0b04a", 2], watch: ["watch.webp", "#8fb3c9", 1], npc: ["npc.webp", "#36bb91", 1], merchant: ["merchant.webp", "#36bb91", 1], chest: ["chest.svg", "#f0c45a", 0], fruit: ["fruit.svg", "#7bd389", 0], spring: ["spring.svg", "#5fb4ff", 0], fish: ["fish.webp", "#5fb4ff", 0], ore: ["ore.webp", "#c9c9c9", 0], effigy: ["effigy.svg", "#9fe870", 0], hab: ["hab.webp", "#ffd34d", 1] };
+  const I = { travel: ["travel.webp", "#2ec4b6", 3], tower: ["tower.webp", "#b07cff", 3], alpha: ["alpha.webp", "#ff6b5a", 2], sealed: ["sealed.svg", "#4aa3ff", 2], dungeon: ["dungeon.webp", "#e0b04a", 2], watch: ["watch.webp", "#8fb3c9", 1], npc: ["npc.webp", "#36bb91", 1], merchant: ["merchant.webp", "#36bb91", 1], chest: ["chest.webp", "#f0c45a", 0], fruit: ["fruit.svg", "#7bd389", 0], spring: ["spring.svg", "#5fb4ff", 0], fish: ["fish.webp", "#5fb4ff", 0], ore: ["ore.webp", "#c9c9c9", 0], effigy: ["effigy.webp", "#9fe870", 0], hab: ["hab.webp", "#ffd34d", 1] };
   const v = (t) => I[t] || I.hab;
   const face = (n) => {
     const P = (window.PW_D || {}).pals || [];
@@ -37,7 +37,7 @@
     document.addEventListener("pointerdown", (e) => {
       (window.PW_maps || []).forEach((m) => {
         const c = m.getContainer();
-        if (!c.contains(e.target) && !(e.target.closest && e.target.closest(".leaflet-popup"))) m.closePopup();
+        if (!c.contains(e.target) && !(e.target.closest && (e.target.closest?e.target:document.body).closest(".leaflet-popup"))) m.closePopup();
       });
     }, true);
   }
@@ -190,14 +190,14 @@
     };
     return api;
   }
-  window.PW_MI = { I, icon, leg, POP, DC, fit };
+  window.PW_MI = { I, icon, leg, POP, DC, fit, col: (t) => v(t)[1], file: (t) => v(t)[0] };
 })();
 window.PW_pop = function(o) {
   const B = window.PW_BASE || "/palwiki/";
   const D = window.PW_D || {};
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   const EM = { "\u041E\u0433\u043E\u043D\u044C": "\u{1F525}", "\u0412\u043E\u0434\u0430": "\u{1F4A7}", "\u0422\u0440\u0430\u0432\u0430": "\u{1F33F}", "\u041C\u043E\u043B\u043D\u0438\u044F": "\u26A1", "\u041B\u0451\u0434": "\u2744\uFE0F", "\u0417\u0435\u043C\u043B\u044F": "\u{1FAA8}", "\u0422\u044C\u043C\u0430": "\u{1F311}", "\u0414\u0440\u0430\u043A\u043E\u043D": "\u{1F409}", "\u041D\u0435\u0439\u0442\u0440\u0430\u043B\u044C\u043D\u044B\u0439": "\u26AA" };
-  const T = { alpha: "\u{1F451} \u0410\u043B\u044C\u0444\u0430", sealed: "\u{1F512} \u0417\u0430\u043F\u0435\u0447\u0430\u0442\u0430\u043D\u043D\u044B\u0435 \u0437\u0435\u043C\u043B\u0438", tower: "\u{1F3EF} \u0411\u0430\u0448\u043D\u044F", travel: "\u{1F5FF} \u0422\u0435\u043B\u0435\u043F\u043E\u0440\u0442", watch: "\u{1F5FC} \u0421\u043C\u043E\u0442\u0440\u043E\u0432\u0430\u044F \u0432\u044B\u0448\u043A\u0430", npc: "\u{1F9D1} \u041F\u0435\u0440\u0441\u043E\u043D\u0430\u0436", chest: "\u{1F381} \u0421\u0443\u043D\u0434\u0443\u043A", fruit: "\u{1F333} \u041F\u043B\u043E\u0434\u043E\u0432\u043E\u0435 \u0434\u0435\u0440\u0435\u0432\u043E", spring: "\u{1F4A7} \u0418\u0441\u0442\u043E\u0447\u043D\u0438\u043A", fish: "\u{1F3A3} \u041C\u0435\u0441\u0442\u043E \u0440\u044B\u0431\u0430\u043B\u043A\u0438", hab: "\u{1F4CD} \u041E\u0431\u0438\u0442\u0430\u043D\u0438\u0435" };
+  const T = { alpha: "\u{1F451} \u0410\u043B\u044C\u0444\u0430", sealed: "\u{1F512} \u0417\u0430\u043F\u0435\u0447\u0430\u0442\u0430\u043D\u043D\u044B\u0435 \u0437\u0435\u043C\u043B\u0438", tower: "\u{1F3EF} \u0411\u0430\u0448\u043D\u044F", travel: "\u{1F5FF} \u0422\u0435\u043B\u0435\u043F\u043E\u0440\u0442", watch: "\u{1F5FC} \u0421\u043C\u043E\u0442\u0440\u043E\u0432\u0430\u044F \u0432\u044B\u0448\u043A\u0430", npc: "\u{1F9D1} \u041F\u0435\u0440\u0441\u043E\u043D\u0430\u0436", chest: "\u{1F381} \u0421\u0443\u043D\u0434\u0443\u043A", fruit: "\u{1F333} \u041F\u043B\u043E\u0434\u043E\u0432\u043E\u0435 \u0434\u0435\u0440\u0435\u0432\u043E", spring: "\u{1F4A7} \u0418\u0441\u0442\u043E\u0447\u043D\u0438\u043A", effigy: "\u{1F5FF} \u0421\u0442\u0430\u0442\u0443\u044F \u041B\u0438\u0444\u043C\u0430\u043D\u043A\u0430", ore: "\u26CF \u0420\u0443\u0434\u0430", dungeon: "\u{1F573} \u041F\u043E\u0434\u0437\u0435\u043C\u0435\u043B\u044C\u0435", fish: "\u{1F3A3} \u041C\u0435\u0441\u0442\u043E \u0440\u044B\u0431\u0430\u043B\u043A\u0438", hab: "\u{1F4CD} \u041E\u0431\u0438\u0442\u0430\u043D\u0438\u0435" };
   const G = { travel: ["guide/11_mir/#\u0431\u044B\u0441\u0442\u0440\u043E\u0435-\u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435", "\u041A\u0430\u043A \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442\u044B"], fish: ["guide/11_mir/#\u0440\u044B\u0431\u0430\u043B\u043A\u0430", "\u041A\u0430\u043A \u0440\u044B\u0431\u0430\u0447\u0438\u0442\u044C"], chest: ["guide/sekrety/", "\u0421\u0435\u043A\u0440\u0435\u0442\u044B \u0438 \u0441\u0443\u043D\u0434\u0443\u043A\u0438"], npc: ["guide/11_mir/#\u043E\u0441\u043E\u0431\u044B\u0435-npc", "\u041F\u0435\u0440\u0441\u043E\u043D\u0430\u0436\u0438 \u043C\u0438\u0440\u0430"], watch: ["guide/11_mir/", "\u0413\u0438\u0434 \u043F\u043E \u043C\u0438\u0440\u0443"], fruit: ["guide/11_mir/", "\u0413\u0438\u0434 \u043F\u043E \u043C\u0438\u0440\u0443"], spring: ["guide/11_mir/", "\u0413\u0438\u0434 \u043F\u043E \u043C\u0438\u0440\u0443"], tower: ["4_spravochniki/bossy/", "\u0412\u0441\u0435 \u0431\u043E\u0441\u0441\u044B \u0431\u0430\u0448\u0435\u043D"] };
   const pals = D.pals || [];
   const byRu = (n) => pals.find((p) => p.ru == n) || pals.find((p) => p.en == n);
@@ -223,7 +223,7 @@ window.PW_pop = function(o) {
   const chips = el.length ? `<div class="mpe">${el.map((e) => `<span>${EM[e] || ""} ${esc(e)}</span>`).join("")}</div>` : "";
   const w = wk.length ? `<div class="mpw">\u0421\u043B\u0430\u0431\u043E\u0441\u0442\u044C: ${wk.map((e) => (EM[e] || "") + " " + esc(e)).join(", ")}</div>` : "";
   const body = `${th ? `<img class="mpt" src="${B + th}" alt="" width="56" height="56" loading="lazy">` : ""}<div class="mpb"><div class="mk">${esc(o.kind || T[o.t] || "")}</div><b>${esc(o.name || T[o.t] || "")}</b>${o.lvl ? `<div class="mpl">\u0423\u0440\u043E\u0432\u0435\u043D\u044C ${esc(o.lvl)}</div>` : ""}${o.sub ? `<div class="mpl">${esc(o.sub)}</div>` : ""}${chips}${w}</div>`;
-  const go = label || (pal ? "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u043F\u0430\u043B\u0430" : boss ? "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u0431\u043E\u0441\u0441\u0430" : "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435");
+  const go = o.go || label || (pal ? "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u043F\u0430\u043B\u0430" : boss ? "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u0431\u043E\u0441\u0441\u0430" : "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435");
   return url ? `<a class="mpop mpcard" href="${B + url.replace(/^\//, "")}">${body}<span class="mpgo">${esc(go)} \u2192</span></a>` : `<div class="mpop mpcard">${body}</div>`;
 };
 (function() {
@@ -380,6 +380,51 @@ window.PW_pop = function(o) {
     };
     Lg.addTo(m);
     dc.run();
+    const EX = [["effigy", "\u0421\u0442\u0430\u0442\u0443\u0438 \u041B\u0438\u0444\u043C\u0430\u043D\u043A\u0430", 1], ["dungeon", "\u041F\u043E\u0434\u0437\u0435\u043C\u0435\u043B\u044C\u044F", 1], ["chest", "\u0421\u0443\u043D\u0434\u0443\u043A\u0438", 0], ["ore", "\u0420\u0443\u0434\u0430", 0]], XL = {};
+    fetch(B + "assets/map_extra.json").then((r) => r.ok ? r.json() : null).catch(() => null).then((J) => {
+      if (!J) return;
+      const box = Lg.getContainer().querySelector(".mleg-b");
+      const xy = (x, y) => "X " + x + " \xB7 Y " + y;
+      const pop = {
+        effigy: (p) => ({ t: "effigy", kind: "\u{1F5FF} \u0421\u0442\u0430\u0442\u0443\u044F \u041B\u0438\u0444\u043C\u0430\u043D\u043A\u0430", name: "\u0421\u0442\u0430\u0442\u0443\u044F \u041B\u0438\u0444\u043C\u0430\u043D\u043A\u0430", sub: "\u0421\u0434\u0430\u0439 \u043D\u0430 \u041C\u043E\u043D\u0443\u043C\u0435\u043D\u0442\u0435 \u0441\u0438\u043B\u044B: +\u0441\u0438\u043B\u0430 \u043F\u043E\u0438\u043C\u043A\u0438 \xB7 " + xy(p[0], p[1]), url: "2_mehaniki/monument_sily/", go: "\u0427\u0442\u043E \u0434\u0430\u044E\u0442 \u0441\u0442\u0430\u0442\u0443\u0438" }),
+        dungeon: (p) => ({ t: "dungeon", kind: "\u{1F573} \u0412\u0445\u043E\u0434 \u0432 \u043F\u043E\u0434\u0437\u0435\u043C\u0435\u043B\u044C\u0435", name: p[2] || "\u041F\u043E\u0434\u0437\u0435\u043C\u0435\u043B\u044C\u0435", lvl: p[3] ? String(p[3]) : "", sub: "\u0412\u0445\u043E\u0434 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442\u0441\u044F \u043D\u0430 \u0432\u0440\u0435\u043C\u044F \xB7 " + xy(p[0], p[1]), url: "guide/koordinaty/#\u043F\u043E\u0434\u0437\u0435\u043C\u0435\u043B\u044C\u044F", go: "\u041A\u0430\u043A \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u043F\u043E\u0434\u0437\u0435\u043C\u0435\u043B\u044C\u044F" }),
+        chest: (p) => ({ t: "chest", kind: "\u{1F381} \u0421\u0443\u043D\u0434\u0443\u043A", name: p[2] ? "\u0421\u0442\u0438\u0445\u0438\u0439\u043D\u044B\u0439 \u0441\u0443\u043D\u0434\u0443\u043A" : "\u0421\u0443\u043D\u0434\u0443\u043A", sub: "\u0421\u043D\u043E\u0432\u0430 \u043F\u043E\u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0447\u0435\u0440\u0435\u0437 5 \u0447 \xB7 " + xy(p[0], p[1]) }),
+        ore: (p) => {
+          const n = J.oreN[p[2]] || ["\u0420\u0443\u0434\u0430", ""];
+          return { t: "ore", kind: "\u26CF \u0420\u0443\u0434\u0430", name: n[0] + (p[3] ? " \xB7 \u043A\u0440\u0443\u043F\u043D\u0430\u044F \u0437\u0430\u043B\u0435\u0436\u044C" : ""), sub: xy(p[0], p[1]), url: n[1], go: "\u041E \u0440\u0435\u0441\u0443\u0440\u0441\u0435" };
+        }
+      };
+      const mk = (k) => {
+        if (XL[k]) return XL[k];
+        const c = MI.icon(k, 24);
+        const cg = L.markerClusterGroup ? L.markerClusterGroup({
+          chunkedLoading: true,
+          showCoverageOnHover: false,
+          spiderfyOnMaxZoom: false,
+          disableClusteringAtZoom: 6,
+          maxClusterRadius: k == "ore" || k == "chest" ? 60 : 44,
+          iconCreateFunction: (cl) => {
+            const n = cl.getChildCount();
+            return L.divIcon({ className: "gmk gmk-cl gmk-" + k, html: `<i style="--c:${MI.col(k)};width:34px;height:34px"><img src="${B}assets/mapicons/${MI.file(k)}" alt="" draggable="false"><b>${n > 999 ? Math.round(n / 100) / 10 + "k" : n}</b></i>`, iconSize: [34, 34], iconAnchor: [17, 17] });
+          }
+        }) : L.layerGroup();
+        const ms = (J[k] || []).map((p) => {
+          const o = pop[k](p);
+          return L.marker(ll(p[0], p[1]), { icon: c, title: o.name, riseOnHover: true }).bindPopup(() => window.PW_pop(o), MI.POP);
+        });
+        cg.addLayers ? cg.addLayers(ms) : ms.forEach((x) => cg.addLayer(x));
+        return XL[k] = cg;
+      };
+      const set = (k, on) => {
+        if (on) mk(k).addTo(m);
+        else if (XL[k]) m.removeLayer(XL[k]);
+      };
+      if (box) box.insertAdjacentHTML("beforeend", EX.filter((e) => (J[e[0]] || []).length).map(([k, l, on]) => `<label><input type="checkbox" ${on ? "checked" : ""} data-x="${k}"> ${MI.leg(k)} ${l} <small>${J[k].length}</small></label>`).join(""));
+      if (box) box.querySelectorAll("input[data-x]").forEach((i) => i.onchange = () => set(i.dataset.x, i.checked));
+      EX.forEach(([k, , on]) => on && set(k, true));
+      window.PW_map.x = { J, XL, set };
+      if (box) box.insertAdjacentHTML("beforeend", `<div class="mleg-src">\u0421\u0442\u0430\u0442\u0443\u0438, \u0441\u0443\u043D\u0434\u0443\u043A\u0438, \u0440\u0443\u0434\u0430, \u043F\u043E\u0434\u0437\u0435\u043C\u0435\u043B\u044C\u044F: <a href="https://paldb.cc/ru/Map" target="_blank" rel="noopener">paldb.cc</a>, \u0434\u0430\u043D\u043D\u044B\u0435 \u0438\u0433\u0440\u044B 1.0.5</div>`);
+    });
     window.PW_map = { m, all, groups, T, dc };
   }
   function bug() {
@@ -614,7 +659,7 @@ window.PW_pop = function(o) {
     if (e.key == "Escape") close();
   });
   document.addEventListener("click", (e) => {
-    const a = e.target.closest("a.psv[data-psv]");
+    const a = (e.target.closest?e.target:document.body).closest("a.psv[data-psv]");
     if (!a || e.metaKey || e.ctrlKey) return;
     e.preventDefault();
     window.PW_data().then((D) => {

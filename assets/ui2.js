@@ -130,7 +130,7 @@
       }, 120);
     };
     L.addEventListener("click", (e) => {
-      const b = e.target.closest(".pp");
+      const b = (e.target.closest?e.target:document.body).closest(".pp");
       if (!b) return;
       const p = D.pals.find((x) => x.id == b.dataset.id);
       close();
@@ -309,13 +309,13 @@
         if (SX.hidden) SXo();
       });
       body.addEventListener("click", (e) => {
-        const d = e.target.closest("[data-del]");
+        const d = (e.target.closest?e.target:document.body).closest("[data-del]");
         if (d) {
           LS.set("pw_recentq", recQ().filter((x) => x != d.dataset.del));
           draw();
           return;
         }
-        const q = e.target.closest("[data-q]");
+        const q = (e.target.closest?e.target:document.body).closest("[data-q]");
         if (q) {
           e.preventDefault();
           inp.value = q.dataset.q;
@@ -323,7 +323,7 @@
           inp.focus({ preventScroll: true });
           return;
         }
-        const a = e.target.closest("a");
+        const a = (e.target.closest?e.target:document.body).closest("a");
         if (a) pushQ(inp.value);
       });
       let sel = -1;
@@ -367,7 +367,7 @@
   }
   window.PW_search = openSearch;
   document.addEventListener("click", (e) => {
-    const l = e.target.closest('label[for=__search],.md-search__icon,[href="#search"],.md-search__input');
+    const l = (e.target.closest?e.target:document.body).closest('label[for=__search],.md-search__icon,[href="#search"],.md-search__input');
     if (!l) return;
     e.preventDefault();
     e.stopPropagation();
@@ -575,7 +575,7 @@
         n.textContent = "\u043D\u0430\u0439\u0434\u0435\u043D\u043E " + c;
       };
       f.addEventListener("click", (e) => {
-        const b = e.target.closest("button");
+        const b = (e.target.closest?e.target:document.body).closest("button");
         if (!b) return;
         if (b.dataset.rk != null) {
           rk = rk == b.dataset.rk ? null : b.dataset.rk;
@@ -641,7 +641,7 @@
         out.innerHTML = `<div class="bub me">${esc(raw)}</div>` + (best || ent ? `<div class="bub ai"><span class="ai-av">\u{1F411}</span><div>${best ? `<b>${esc(best.q)}</b><p>${kb(best.a)}</p>` : ""}${ent ? `<div class="sx-card">${ent}</div>` : ""}</div></div>` : `<div class="bub ai"><span class="ai-av">\u{1F411}</span><div><p>\u041F\u043E\u043A\u0430 \u043D\u0435 \u0437\u043D\u0430\u044E \u0442\u043E\u0447\u043D\u043E\u0433\u043E \u043E\u0442\u0432\u0435\u0442\u0430.</p><a class="md-button md-button--primary" href="https://t.me/PalGuideBot?start=ask" target="_blank" rel="noopener">\u0421\u043F\u0440\u043E\u0441\u0438\u0442\u044C \u0432 \u0431\u043E\u0442\u0435</a></div></div>`) + (rel.length ? `<div class="ask-chips rel">${rel.map((r) => `<button type="button" data-q="${esc(r)}">${esc(r)}</button>`).join("")}</div>` : "");
       };
       ask.addEventListener("click", (e) => {
-        const b = e.target.closest("[data-q]");
+        const b = (e.target.closest?e.target:document.body).closest("[data-q]");
         if (b) {
           inp.value = b.dataset.q;
           go();
@@ -677,7 +677,7 @@
       box.querySelector("[data-ig]").onclick = () => window.PW_ingame && window.PW_ingame(true);
       (info ? info.closest(".pal-hero") : bh).after(box);
       box.addEventListener("click", (e) => {
-        const b = e.target.closest("[data-q]");
+        const b = (e.target.closest?e.target:document.body).closest("[data-q]");
         if (b && window.PW_search) window.PW_search(b.dataset.q);
       });
     }
@@ -814,7 +814,7 @@
     bg.onclick = close;
     document.body.append(bg, p);
     p.addEventListener("click", (e) => {
-      const b = e.target.closest("button");
+      const b = (e.target.closest?e.target:document.body).closest("button");
       if (!b) return;
       const sg = b.closest(".seg");
       if (sg) {
@@ -934,7 +934,7 @@
       pv.style.top = (y + 20 + pv.offsetHeight > innerHeight ? y - pv.offsetHeight - 12 : y + 16) + "px";
     });
   }
-  const tgt = (e) => e.target.closest && e.target.closest('article a[href*="/paly/"],article a[href*="/boss/"],article a.psv[data-psv],.sx a[href*="/paly/"]');
+  const tgt = (e) => e.target.closest && (e.target.closest?e.target:document.body).closest('article a[href*="/paly/"],article a[href*="/boss/"],article a.psv[data-psv],.sx a[href*="/paly/"]');
   document.addEventListener("mouseover", (e) => {
     if (!matchMedia("(hover:hover)").matches) return;
     const a = tgt(e);
