@@ -39,3 +39,33 @@ body:has(>.sheet-bg) .gal-filters{backdrop-filter:none!important;-webkit-backdro
 html .md-typeset .gcf button[aria-pressed=true],html body .gcf button[aria-pressed="true"]{background:#0d8a78!important;color:#fff!important;border-color:#0d8a78!important}
 [data-md-color-scheme=slate] .md-typeset .gcf button[aria-pressed=true]{background:#2fb9a2!important;color:#06231e!important}
 @media (max-width:480px){.md-typeset .gcf{display:flex;flex-wrap:wrap;gap:6px}.md-typeset .gcf .gcf-q{flex:1 1 100%}.md-typeset .gcf button[data-rk]{flex:0 0 auto;padding:4px 10px!important}}
+/* v2: компактные карточки без пустот */
+.md-typeset .gcg[data-cat=psv]{align-items:start!important}
+.md-typeset .gcg[data-cat=psv] .gc{height:auto!important}
+.md-typeset .gc .gc-bd{display:flex!important;flex-wrap:wrap;gap:6px;align-items:flex-start;flex-direction:row}
+.md-typeset .gc .gc-note{flex:1 1 100%;display:block;font-size:.7rem;opacity:.75;margin-top:-2px;line-height:1.3}
+.md-typeset .gc-rk.rkn{background:#d0564b!important;color:#fff!important;padding:0 6px;border-radius:6px;font-weight:800;gap:2px;display:inline-flex;align-items:center;white-space:nowrap}
+.gcf button[aria-pressed=true] .rki path{fill:#fff!important}
+input.psvq{display:none!important}
+/* HOME2: яркие иконки плиток, igb в шапке */
+.md-typeset .tiles.gc-main a.tile .ti{opacity:1!important;filter:saturate(1.6) contrast(1.15)}
+.md-typeset .tiles.gc-main a.tile .ti>svg{opacity:1}
+.md-typeset .tiles.gc-main{display:grid!important;grid-template-columns:1fr 1fr;gap:8px;grid-auto-rows:1fr}
+.md-typeset .tiles.gc-main>a.tile{margin:0!important;width:auto!important;height:100%}
+.igb.igb-h{position:static!important;inset:auto!important;transform:none!important;width:34px;height:34px;min-width:34px;padding:0!important;margin:0 4px;border-radius:50%!important;display:inline-flex!important;align-items:center;justify-content:center;background:#f5c518!important;color:#222!important;font-size:0!important;box-shadow:none!important;flex:0 0 auto}
+.igb.igb-h svg{width:20px;height:20px}
+/* PAS4: «Кому ставить» / «Почему убрать» */
+.gc .gc-rec{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;margin-top:8px;padding-top:7px;border-top:1px dashed rgba(127,127,127,.35);font-size:.74rem;line-height:1.3}
+.gc .gc-rl{flex:0 0 100%;font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.65}
+.gc .gc-roles,.gc .gc-pals{display:flex;flex-wrap:wrap;gap:4px;min-width:0}
+.gc .gc-role{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:6px;font-weight:700;white-space:nowrap;border:1px solid currentColor}
+.gc .gc-role svg{flex:0 0 auto}
+.gc .r-boec{color:#c2410c}.gc .r-rab{color:#1d4ed8}.gc .r-ezd{color:#7c3aed}.gc .r-baza{color:#0d8a78}
+[data-md-color-scheme=slate] .gc .r-boec{color:#fb923c}[data-md-color-scheme=slate] .gc .r-rab{color:#60a5fa}[data-md-color-scheme=slate] .gc .r-ezd{color:#c4b5fd}[data-md-color-scheme=slate] .gc .r-baza{color:#2fb9a2}
+.md-typeset .gc a.gc-pal{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px 8px;border-radius:999px;background:rgba(127,127,127,.12);color:inherit;text-decoration:none;font-weight:600}
+.md-typeset .gc a.gc-pal:hover{background:rgba(13,138,120,.18)}
+.gc .gc-why .gc-wt{flex:1 1 100%;color:#b42318}[data-md-color-scheme=slate] .gc .gc-why .gc-wt{color:#ff8a80}
+.gc-rk.rksp{background:#6b7280!important;color:#fff!important;font-size:.66rem;padding:1px 6px}
+/* HOME3: одинаковые подписи плиток во всех состояниях */
+.md-typeset .tiles.gc-main a.tile b,.md-typeset .tiles.gc-main a.tile:hover b,.md-typeset .tiles.gc-main a.tile:focus b,.md-typeset .tiles.gc-main a.tile:visited b,.md-typeset .tiles.gc-main a.tile:first-child b{font-weight:650!important;color:var(--md-typeset-a-color,#0b6f86)!important;font-size:inherit!important;font-family:Manrope,system-ui,sans-serif!important;letter-spacing:normal!important}
+.ux-qb[data-a=set] svg{width:18px;height:18px;display:block;margin:auto}

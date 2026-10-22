@@ -11,5 +11,5 @@ body:has(#gallery a.pc:hover) .pvw{display:none!important}
 #gallery a.pc>span:last-child:has(.el+.el)>.el{font-size:0!important;padding:3px!important;gap:0}
 #gallery a.pc>span:last-child:has(.el+.el)>.el>img{margin:0!important}
 #gallery a.pc .palanim-live{z-index:1}
-.palanim-live.pa-card{clip-path:inset(5.5% 0 0 0)}
+.palanim-live.pa-card{clip-path:inset(0 0 3.4% 0 round 2%)}
 img.pal-card.palanim-ready:has(+ .palanim-live.on),img.pal-card.palanim-ready{opacity:1!important}
