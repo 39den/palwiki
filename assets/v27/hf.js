@@ -1,0 +1,5 @@
+/* HOMEFIX: убирает эмодзи из видимого текста (кроме полей ввода) */
+(function(){var R=/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{200D}]/u,RG=/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{200D}]/gu,SK=/^(SCRIPT|STYLE|TEXTAREA|INPUT|CODE|PRE|svg)$/;
+function clean(e){for(var c=e.firstChild;c;c=c.nextSibling){if(c.nodeType===3){if(R.test(c.nodeValue))c.nodeValue=c.nodeValue.replace(RG,'').replace(/ {2,}/g,' ')}else if(c.nodeType===1&&!SK.test(c.nodeName))clean(c)}}
+var t=0;function go(){clean(document.body);new MutationObserver(function(ms){ms.forEach(function(m){if(m.type==='characterData'){var c=m.target;if(R.test(c.nodeValue))c.nodeValue=c.nodeValue.replace(RG,'')}else m.addedNodes.forEach(function(c){if(c.nodeType===3){if(R.test(c.nodeValue))c.nodeValue=c.nodeValue.replace(RG,'')}else if(c.nodeType===1&&!SK.test(c.nodeName)){clean(c)}})})}).observe(document.body,{childList:true,subtree:true,characterData:true})}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go()})();

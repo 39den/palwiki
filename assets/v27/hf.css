@@ -1,0 +1,26 @@
+/* HOMEFIX 22.10: главная на узком экране, ссылки, анимация «Пал дня» */
+html,body{overflow-x:hidden}
+.md-content img{max-width:100%}
+/* «Ещё»: явная прокрутка с затуханием */
+.gc-more,.gc-more-row,:has(>.gc-more-a){display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;gap:8px;scrollbar-width:none;-webkit-overflow-scrolling:touch;max-width:100%;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent);padding-right:28px}
+:has(>.gc-more-a)::-webkit-scrollbar{display:none}
+.gc-more-a{flex:0 0 auto!important;white-space:nowrap}
+/* Пал дня */
+#potd{max-width:100%;overflow:hidden}
+#potd .palanim-live>img{width:100%!important;height:100%!important;max-width:none!important}
+img.palanim-ready:has(+ .palanim-live.on){opacity:0!important}
+@media (max-width:480px){#potd>a{flex-direction:column!important;align-items:stretch!important}#potd>a>img:first-child{width:128px!important;height:128px!important;align-self:center}}
+/* Недавние: цвет темы, равные плитки */
+#recent a,#recent a *,.mini-row a,.mini-row a *{color:var(--md-default-fg-color,inherit)!important;text-decoration:none}
+.mini-row{align-items:stretch!important}
+.mini-row>a{display:flex!important;flex-direction:column;align-items:center;justify-content:flex-start;height:auto!important;min-height:124px;box-sizing:border-box}
+@media (max-width:360px){.tiles .tile b,.tiles .tile strong{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;font-size:.92em;overflow-wrap:anywhere;hyphens:auto}}
+/* плитки меню: ровная сетка, иконка над подписью, всё по центру */
+.md-typeset .tiles a.tile.card-link{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;gap:6px!important;min-width:0}
+.md-typeset .tiles a.tile.card-link>.ti{margin:0!important;position:static!important;align-self:center!important}
+.md-typeset .tiles a.tile.card-link>*:not(.ti){text-align:center!important;margin:0!important;align-self:center!important}
+/* галерея: шторка фильтров над затемнением (sheet-bg z20 перекрывал панель) */
+body:has(>.sheet-bg) .gal-filters,body.sheet-open .gal-filters{z-index:1002!important;isolation:auto}
+body:has(>.sheet-bg) .gsheet{z-index:1003!important}
+body:has(>.sheet-bg) .gal-filters{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;transform:none!important;filter:none!important}
+@media (max-width:700px){body:has(>.sheet-bg) .gsheet{position:fixed!important;left:0!important;right:0!important;bottom:0!important;top:auto!important;max-height:80vh;max-height:80dvh;overflow:auto;border-radius:20px 20px 0 0}}
