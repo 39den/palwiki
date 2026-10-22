@@ -284,7 +284,7 @@
     return real();
   };
   root.PW_data = () => {
-    if (loading || typeof document == "undefined" || document.querySelector(NEED)) return (document.getElementById("potd")&&document.readyState!="complete")?(root._hp||(root._hp=new Promise((r)=>addEventListener("load",()=>setTimeout(()=>r(real()),1500),{once:true})))):real();
+    if (loading || typeof document == "undefined" || document.querySelector(NEED)) return (document.readyState!="complete"&&!document.querySelector("#pwmap,#gallery,#breed,#cmp,#mylists,#ask"))?(addEventListener("focusin",(e)=>{if(e.target&&e.target.matches&&e.target.matches("input"))root.PW_load()},{once:true}),root._hp||(root._hp=new Promise((r)=>addEventListener("load",()=>setTimeout(()=>(window.requestIdleCallback||setTimeout)(()=>r(real())),3000),{once:true})))):real();
     return root._pend || (root._pend = new Promise((r) => {
       root._pwGo = () => r(real());
       ["pointerdown", "keydown", "touchstart"].forEach((ev) => addEventListener(ev, () => setTimeout(root.PW_load, 1500), { once: true, passive: true }));

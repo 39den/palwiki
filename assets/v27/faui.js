@@ -1,0 +1,13 @@
+/* FIX_AUDIT: линейные иконки вместо эмодзи в блоках пала (Спроси про пала, Избранное/Команда/Фарм/Сравнить) */
+(function(){
+var P={pin:'<path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/>',spark:'<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/>',dna:'<path d="M7 3c0 6 10 6 10 12s-10 6-10 6M17 3c0 6-10 6-10 12"/><path d="M8.5 7h7M8.5 17h7"/>',target:'<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".8"/>',pad:'<rect x="3" y="8" width="18" height="9" rx="4.5"/><path d="M8 11v3M6.5 12.5h3"/><circle cx="15.5" cy="11.5" r=".8"/><circle cx="17.5" cy="13.5" r=".8"/>',star:'<path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>',swords:'<path d="M4 4l9 9M20 4l-9 9M6 15l3 3M18 15l-3 3M4 20l3-3M20 20l-3-3"/>',leaf:'<path d="M5 19c0-8 6-14 14-14 0 8-6 14-14 14z"/><path d="M5 19l8-8"/>',scale:'<path d="M12 4v16M7 20h10M5 8h14"/><path d="M5 8l-2.5 6h5zM19 8l-2.5 6h5z"/>',bot:'<rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01"/>'};
+var M={'📍':'pin','✨':'spark','🧬':'dna','🎯':'target','🎮':'pad','⭐':'star','★':'star','☆':'star','⚔':'swords','🗡':'swords','🌾':'leaf','⚖':'scale','🤖':'bot','💬':'bot'};
+var RE=/^\s*([\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u2B50])\uFE0F?\s*/u;
+function svg(k){return '<svg class="v27i fa-i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+P[k]+'</svg>'}
+function fix(el){if(el._fa)return;var n=el.firstChild;while(n&&n.nodeType==1&&n.tagName=='SPAN'&&RE.test(n.textContent)&&n.textContent.trim().length<=2){var e=n.textContent.trim().replace('\uFE0F','');var k=M[e];var s=document.createElement('span');s.innerHTML=k?svg(k):'';if(k)el.replaceChild(s.firstChild,n);else el.removeChild(n);n=el.firstChild;el._fa=1;return}
+if(n&&n.nodeType==3){var m=n.nodeValue.match(RE);if(m){var k=M[m[1]];n.nodeValue=n.nodeValue.slice(m[0].length);if(k){var s=document.createElement('span');s.innerHTML=svg(k);el.insertBefore(s.firstChild,n)}el._fa=1}}}
+var SEL='.ask-chips button,.ask-chips a,.ask h3,.ask h2,.ask>b,.ux-act,.lbtns button,.lbtns a,.pal-info button,.pal-info .cmp,.ask-h,.sx-h';
+function run(){document.querySelectorAll(SEL).forEach(fix);document.querySelectorAll('.ask,.ask-chips').forEach(function(a){var h=a.previousElementSibling;if(h)fix(h);var t=a.querySelector('*');if(t)fix(t)})}
+if(document.readyState=='loading')document.addEventListener('DOMContentLoaded',run);else run();
+var pend=0;new MutationObserver(function(){if(pend)return;pend=setTimeout(function(){pend=0;run()},150)}).observe(document.documentElement,{childList:true,subtree:true});
+})();
