@@ -111,7 +111,7 @@
             const on = b.getAttribute("aria-pressed") != "true";
             b.setAttribute("aria-pressed", on);
             b.classList.toggle("on", on);
-            on ? m.addLayer(groups[b.dataset.k]) : m.removeLayer(groups[b.dataset.k]);
+            M.dc && M.dc.on ? M.dc.on(b.dataset.k, on) : (on ? m.addLayer(groups[b.dataset.k]) : m.removeLayer(groups[b.dataset.k]));
             const cb = $(`.mleg input[data-k="${b.dataset.k}"]`);
             if (cb) cb.checked = on;
           }
