@@ -49,7 +49,7 @@
   <a class="ux-more" href="${B}2_mehaniki/rabota/">\u0421\u0440\u0430\u0432\u043D\u0438\u0442\u044C \u0441\u043E \u0441\u0432\u043E\u0438\u043C \u0433\u0435\u0440\u043E\u0435\u043C \u2192</a></div>`;
       const an = (X.anim || []).includes(id) ? `<button type="button" class="ux-anim" aria-label="\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u044E"><img src="${B}ux_art/${id}-still.webp" data-anim="${B}ux_art/${id}-anim.webp" data-still="${B}ux_art/${id}-still.webp" alt="${esc(p.ru)}" width="160" height="160" loading="lazy"><span>\u25B6 \u041D\u0430\u0436\u043C\u0438</span></button>` : "";
       const when = x.lv ? `<div class="ux-tilebig ux-wide"><div class="ux-h">\u23F3 \u041A\u043E\u0433\u0434\u0430 \u043B\u043E\u0432\u0438\u0442\u044C ${hlp("\u0428\u043A\u0430\u043B\u0430 \u2014 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0433\u0435\u0440\u043E\u044F \u043E\u0442 1 \u0434\u043E 80. \u041C\u0435\u0442\u043A\u0430 \u2014 \u0441 \u043A\u0430\u043A\u043E\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F \u043F\u0430\u043B \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u0435\u0442\u0441\u044F \u0432 \u0434\u0438\u043A\u043E\u0439 \u043F\u0440\u0438\u0440\u043E\u0434\u0435.")}</div><div class="ux-tl"><div class="ux-tlbar">${X.reg.map((r) => `<span style="left:${(r.lv[0] - 1) / 79 * 100}%;width:${(r.lv[1] - r.lv[0]) / 79 * 100}%" title="${esc(r.n)}"></span>`).join("")}<b style="left:${(x.lv[0] - 1) / 79 * 100}%">\u0443\u0440. ${x.lv[0]}</b></div><div class="ux-tlx"><span>1</span><span>20</span><span>40</span><span>60</span><span>80</span></div></div><p class="ux-sub">${esc((X.reg.find((r) => x.lv[0] >= r.lv[0] && x.lv[0] <= r.lv[1]) || {}).n || "")}${x.cap ? ` \xB7 \u043B\u043E\u0432\u0438\u0442\u0441\u044F ${+x.cap > 1 ? "\u043B\u0435\u0433\u0447\u0435 \u043E\u0431\u044B\u0447\u043D\u043E\u0433\u043E" : +x.cap < 1 ? "\u0442\u0440\u0443\u0434\u043D\u0435\u0435 \u043E\u0431\u044B\u0447\u043D\u043E\u0433\u043E" : "\u043E\u0431\u044B\u0447\u043D\u043E"} ${hlp("\u041C\u043D\u043E\u0436\u0438\u0442\u0435\u043B\u044C \u043F\u043E\u0438\u043C\u043A\u0438 \xD7" + String(x.cap).replace(".", ",") + ". \u0411\u043E\u043B\u044C\u0448\u0435 \u2014 \u043B\u043E\u0432\u0438\u0442\u044C \u043B\u0435\u0433\u0447\u0435.")}` : ""}</p></div>` : "";
-      host.innerHTML = `<div class="ux-tiles2">${hab}${goodH}${an ? `<div class="ux-tilebig ux-animt">${an}</div>` : ""}${work}${when}</div>`;
+      host.innerHTML = `<div class="ux-tiles2">${hab}${goodH}${work}${when}</div>`;
       const hb = $("[data-hab]", host);
       if (hb) hb.onclick = () => {
         habTab.click();
@@ -82,7 +82,7 @@
         if (t.length) a.insertAdjacentHTML("afterend", `<small class="ux-ptag">${t.join(" \xB7 ")}</small>`);
       });
       const ps = $(".psets");
-      if (ps && !$(".ux-pbreed")) ps.insertAdjacentHTML("afterend", `<div class="ux-pbreed">${["\u0431\u043E\u0435\u0446", "\u0440\u0430\u0431\u043E\u0447\u0438\u0439"].filter((r) => (bp[r] || []).length).map((r) => `<a class="ux-btn ghost" href="${B}ux/s-passivkami/?pal=${encodeURIComponent(id)}&p=${encodeURIComponent((bp[r] || []).slice(0, 4).join("|"))}">\u{1F9EC} \u041A\u0430\u043A \u0432\u044B\u0432\u0435\u0441\u0442\u0438 ${r == "\u0431\u043E\u0435\u0446" ? "\u0431\u043E\u0439\u0446\u0430" : "\u0440\u0430\u0431\u043E\u0442\u044F\u0433\u0443"} \u0441 \u044D\u0442\u0438\u043C\u0438 \u043F\u0430\u0441\u0441\u0438\u0432\u043A\u0430\u043C\u0438</a>`).join("")}</div>`);
+      if (ps && !$(".ux-pbreed")) ps.insertAdjacentHTML("afterend", `<div class="ux-pbreed">${["\u0431\u043E\u0435\u0446", "\u0440\u0430\u0431\u043E\u0447\u0438\u0439"].filter((r) => (bp[r] || []).length).map((r) => `<a class="ux-btn ghost" href="${B}ux/s-passivkami/?pal=${encodeURIComponent(id)}&passives=${encodeURIComponent((bp[r] || []).slice(0, 4).join("|"))}">\u{1F9EC} \u041A\u0430\u043A \u0432\u044B\u0432\u0435\u0441\u0442\u0438 ${r == "\u0431\u043E\u0435\u0446" ? "\u0431\u043E\u0439\u0446\u0430" : "\u0440\u0430\u0431\u043E\u0442\u044F\u0433\u0443"} \u0441 \u044D\u0442\u0438\u043C\u0438 \u043F\u0430\u0441\u0441\u0438\u0432\u043A\u0430\u043C\u0438</a>`).join("")}</div>`);
       const nPairs = (X.brc || {})[p.ru] || 0, special = (X.brs || {})[p.ru];
       let badge = "";
       if (special && nPairs <= 1) badge = '<span class="ux-badge gold">\u{1F511} \u0422\u043E\u043B\u044C\u043A\u043E \u043E\u0441\u043E\u0431\u0430\u044F \u043F\u0430\u0440\u0430</span>';
@@ -194,7 +194,7 @@
       const u = new URLSearchParams(location.search);
       let p = D.pals.find((q) => q.id == u.get("pal")) || D.pals.find((q) => q.id == "Anubis");
       const by = (n) => D.pals.find((q) => q.ru == n);
-      const ix = Object.fromEntries(J.pals.map((q, i) => [q.ru, i]));
+      const ix = Object.fromEntries(J.pals.map((q, i) => [q.ru, i]));const TS={pn:8,kn:12,pq:"",kq:"",a:u.get("a")||"",b:u.get("b")||""};
       const draw = () => {
         const me = ix[p.ru];
         const par = [];
@@ -219,21 +219,41 @@
             if (c != p.ru && !kids.has(c)) kids.set(c, J.pals[o].ru);
           }
         }
-        const kk = [...kids.entries()].map(([c, o]) => [by(c), o]).filter((a) => a[0] && a[0].url).sort((a, b) => (b[0].rank || 0) - (a[0].rank || 0)).slice(0, 12);
+        const kk = [...kids.entries()].map(([c, o]) => [by(c), o]).filter((a) => a[0] && a[0].url).sort((a, b) => (b[0].rank || 0) - (a[0].rank || 0));
         const node = (n, cls) => {
           const z = by(n);
-          return z ? `<button type="button" class="ux-tn ${cls || ""}" data-id="${z.id}">${U.artHTML(X, z, 64)}<span>${esc(n)}</span></button>` : `<span class="ux-tn">${esc(n)}</span>`;
+          return z ? `<button type="button" class="ux-tn ${cls || ""}" data-id="${z.id}" title="${esc(n)}">${U.artHTML(X, z, 64)}<span>${esc(n)}</span></button>` : `<span class="ux-tn">${esc(n)}</span>`;
         };
-        const nP = par.length, badge = par.some((x) => x[2]) && nP == 1 ? '<span class="ux-badge gold">\u{1F511} \u0415\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439 \u0441\u043F\u043E\u0441\u043E\u0431</span>' : nP && nP <= 6 ? `<span class="ux-badge">\u{1F48E} \u0420\u0435\u0434\u043A\u0430\u044F \u043F\u0430\u0440\u0430: ${nP}</span>` : "";
-        tr.innerHTML = `<p class="ux-lead">\u041D\u0430\u0436\u043C\u0438 \u043D\u0430 \u043B\u044E\u0431\u043E\u0433\u043E \u043F\u0430\u043B\u0430 \u2014 \u043E\u043D \u0441\u0442\u0430\u043D\u0435\u0442 \u0432 \u0446\u0435\u043D\u0442\u0440. \u0421\u043B\u0435\u0432\u0430 \u2014 \u043E\u0442 \u043A\u043E\u0433\u043E \u043E\u043D \u0440\u043E\u0436\u0434\u0430\u0435\u0442\u0441\u044F, \u0441\u043F\u0440\u0430\u0432\u0430 \u2014 \u043A\u043E\u0433\u043E \u043C\u043E\u0436\u043D\u043E \u0432\u044B\u0432\u0435\u0441\u0442\u0438 \u0441 \u043D\u0438\u043C.</p>
-  <div class="ux-tree"><div class="ux-tcol"><div class="ux-h">\u{1F46A} \u0420\u043E\u0434\u0438\u0442\u0435\u043B\u0438 <small>${nP} \u043F\u0430\u0440</small></div>${par.slice(0, 8).map(([a, b, s]) => `<div class="ux-tpair ${s ? "sp" : ""}">${node(a)}<span class="ux-plus">+</span>${node(b)}${s ? '<small class="ux-badge gold">\u043E\u0441\u043E\u0431\u0430\u044F</small>' : ""}</div>`).join("") || '<span class="ux-sub">\u041D\u0435 \u0432\u044B\u0432\u043E\u0434\u0438\u0442\u0441\u044F \u2014 \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u043E\u0438\u043C\u043A\u0430</span>'}</div>
-  <div class="ux-tcen">${node(p.ru, "big")}${badge}<a class="ux-btn ghost" href="${B + p.url}">\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u043F\u0430\u043B\u0430</a></div>
-  <div class="ux-tcol"><div class="ux-h">\u{1F423} \u0414\u0435\u0442\u0438 <small>\u0441 \u043A\u0435\u043C \u2192 \u043A\u0442\u043E</small></div>${kk.map(([c, o]) => `<div class="ux-tpair"><small>+ ${esc(o)} \u2192</small>${node(c.ru)}</div>`).join("")}</div></div>`;
+        const nP = par.length, badge = par.some((x) => x[2]) && nP == 1 ? '<span class="ux-badge gold">🔑 Единственный способ</span>' : nP && nP <= 6 ? `<span class="ux-badge">💎 Редкая пара: ${nP}</span>` : "";
+        const fq = (s) => (s || "").toLowerCase().replace(/ё/g, "е");
+        const pf = par.filter(([a, b]) => !TS.pq || fq(a + " " + b).includes(fq(TS.pq)));
+        const kf = kk.filter(([c, o]) => !TS.kq || fq(c.ru + " " + o).includes(fq(TS.kq)));
+        const opts = D.pals.filter((z) => z.url).map((z) => `<option value="${esc(z.ru)}">`).join("");
+        let ab = "";
+        if (TS.a && TS.b && ix[TS.a] != null && ix[TS.b] != null) {
+          const i = ix[TS.a], j = ix[TS.b], sp = J.special.find((s) => (s.a == TS.a && s.b == TS.b) || (s.a == TS.b && s.b == TS.a));
+          const r = sp ? sp.child : (J.pairs[i + "," + j] != null ? J.pals[J.pairs[i + "," + j]].ru : J.pairs[j + "," + i] != null ? J.pals[J.pairs[j + "," + i]].ru : null);
+          ab = r ? `<div class="ux-tpair gc-abres">${node(TS.a)}<span class="ux-plus">+</span>${node(TS.b)}<span class="ux-plus">→</span>${node(r, "big")}</div>` : '<p>Пара не найдена в данных.</p>';
+        }
+        tr.innerHTML = `<div class="gcf gc-tpick"><label class="gc-pl">Кого разводим<input type="search" class="gcf-q gc-tq" list="gc-tpl" placeholder="Начни вводить имя пала…" value="${esc(p.ru)}" autocomplete="off"></label>
+  <datalist id="gc-tpl">${opts}</datalist>
+  <details class="gc-abm" ${TS.a || TS.b ? "open" : ""}><summary>Родитель A + Родитель B → кто родится</summary><div class="gc-abrow"><input type="search" class="gcf-q gc-ta" list="gc-tpl" placeholder="Родитель A" value="${esc(TS.a || "")}"><span>+</span><input type="search" class="gcf-q gc-tb" list="gc-tpl" placeholder="Родитель B" value="${esc(TS.b || "")}"></div>${ab}</details></div>
+  <p class="ux-lead">Нажми на любого пала — он станет в центр. Слева — от кого он рождается (сначала пары из легко доступных палов), справа — кого можно вывести с ним.</p>
+  <div class="ux-tree"><div class="ux-tcol"><div class="ux-h">👪 Родители <small>${pf.length} из ${nP} пар</small></div><input type="search" class="gc-tin gc-tpq" placeholder="Найти родителя…" value="${esc(TS.pq || "")}">${pf.slice(0, TS.pn).map(([a, b, s]) => `<div class="ux-tpair ${s ? "sp" : ""}">${node(a)}<span class="ux-plus">+</span>${node(b)}${s ? '<small class="ux-badge gold">особая</small>' : ""}</div>`).join("") || "<p>Нет пар</p>"}${pf.length > TS.pn ? `<button type="button" class="gc-reset gc-more-p">Ещё ${Math.min(12, pf.length - TS.pn)} из ${pf.length - TS.pn}</button>` : ""}</div>
+  <div class="ux-tcen">${node(p.ru, "big")}${badge}<a class="ux-btn ghost" href="${B + p.url}">Страница пала</a></div>
+  <div class="ux-tcol"><div class="ux-h">🐣 Дети <small>${kf.length}</small></div><input type="search" class="gc-tin gc-tkq" placeholder="Найти ребёнка или партнёра…" value="${esc(TS.kq || "")}">${kf.slice(0, TS.kn).map(([c, o]) => `<div class="ux-tpair gc-kid"><span class="gc-kp">+</span>${node(o, "sm")}<span class="ux-plus">→</span>${node(c.ru)}</div>`).join("") || "<p>Нет детей</p>"}${kf.length > TS.kn ? `<button type="button" class="gc-reset gc-more-k">Ещё ${Math.min(12, kf.length - TS.kn)} из ${kf.length - TS.kn}</button>` : ""}</div></div>`;
+        const keep = (cls, k) => { const i = tr.querySelector(cls); if (!i) return; i.oninput = () => { TS[k] = i.value; const pos = i.selectionStart; draw(); const n = tr.querySelector(cls); n.focus(); n.setSelectionRange(pos, pos); }; };
+        keep(".gc-tpq", "pq"); keep(".gc-tkq", "kq");
+        const pick = tr.querySelector(".gc-tq"); pick.onchange = () => { const z = by(pick.value.trim()) || D.pals.find((q) => fq(q.ru) == fq(pick.value.trim())); if (z) { p = z; TS.pn = 8; TS.kn = 12; TS.pq = TS.kq = ""; history.replaceState(null, "", "?pal=" + p.id); draw(); } };
+        const ab2 = () => { TS.a = (by(tr.querySelector(".gc-ta").value.trim()) || {}).ru || tr.querySelector(".gc-ta").value.trim(); TS.b = (by(tr.querySelector(".gc-tb").value.trim()) || {}).ru || tr.querySelector(".gc-tb").value.trim(); draw(); };
+        tr.querySelector(".gc-ta").onchange = ab2; tr.querySelector(".gc-tb").onchange = ab2;
+        const mp = tr.querySelector(".gc-more-p"); mp && (mp.onclick = (e) => { e.stopPropagation(); TS.pn += 12; draw(); });
+        const mk = tr.querySelector(".gc-more-k"); mk && (mk.onclick = (e) => { e.stopPropagation(); TS.kn += 12; draw(); });
       };
       tr.addEventListener("click", (e) => {
         const b = (e.target.closest?e.target:document.body).closest("[data-id]");
         if (!b) return;
-        p = D.pals.find((q) => q.id == b.dataset.id);
+        p = D.pals.find((q) => q.id == b.dataset.id);TS.pn=8;TS.kn=12;TS.pq=TS.kq="";
         history.replaceState(null, "", "?pal=" + p.id);
         draw();
         tr.scrollIntoView({ behavior: "smooth" });

@@ -1693,6 +1693,21 @@ html.v27 .pal-info .tc-cta{align-self:flex-start;margin:10px 0 0!important}
 html.v27 .pal-info>*{order:2}html.v27 .pal-info>.pp-eb,html.v27 .pal-info>h1{order:0}html.v27 .pal-info>.tc-cta{order:1;align-self:flex-start;margin:6px 0 10px!important}
 @media (max-width:700px){html.v27 body .md-main .md-main__inner.md-grid{margin-top:0!important}html.v27 body .md-content article#v27main{padding-top:0!important;margin-top:0!important}html.v27 body article#v27main>.ux-crumbs{margin-top:0!important}}
 html.v27 [data-md-color-scheme=slate] .sa-k,html.v27[data-md-color-scheme=slate] .sa-k{color:#7fb2ff!important}
+/* CARD_FIX 22.10: «Пал дня» без задержки появления */
+html.v27.v27js .potd-wrap.v27rv,html.v27.v27js .bento2>.v27rv:has(.potd){opacity:1!important;transform:none!important;transition:none!important}
+/* CARD_FIX 22.10: инлайн-код в карточках FAQ/проблем — плотный чип, скобки прилегают, перенос по слову */
+html.v27 .md-typeset .kv-v code,html.v27 .md-typeset .kv code,html.v27 .md-typeset li code,html.v27 .md-typeset p code{padding:.05em .22em;margin:0;line-height:1.25;vertical-align:baseline;font-size:.84em;overflow-wrap:break-word;word-break:normal;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+html.v27 .cpar{white-space:nowrap}
+html.v27 .kv-v{min-width:0;padding-right:6px;overflow-wrap:break-word}
+/* VIXY_FIX 22.10: нижний таб-бар непрозрачный, без blur/transition (не дёргается при скролле в iOS Safari), контент не уходит под бар */
+html.v27 .ux-tabbar,html.v27 .tabbar{background:var(--v-surf,#fff)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;transition:none!important;transform:translateZ(0)!important;will-change:auto;contain:layout paint}
+html.v27 .tabbar.hid{transform:translateZ(0)!important}
+@media (max-width:959px){html.v27 .md-container{padding-bottom:calc(69px + 16px + 12px + env(safe-area-inset-bottom))!important}html.v27 .md-main{padding-bottom:0!important}}
+/* VIXY_FIX: крошки на телефоне — текущая страница видна с разделителем, ссылка «↩ назад» убрана (выглядела как чужое имя без разделителя) */
+@media (max-width:600px){html .ux-crumbs .ux-cr-on,html .ux-crumbs .ux-sep:has(+ .ux-cr-on){display:revert!important}html .ux-crumbs .ux-cr-on{display:inline-flex!important;align-items:center;align-self:center;max-width:42vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.4;padding:0;margin:0;transform:none}}
+html .ux-crumbs .ux-back{display:none!important}
+html.v27 [data-md-color-scheme="slate"] .ux-tabbar,html.v27 [data-md-color-scheme="slate"] .tabbar,html.v27[data-md-color-scheme="slate"] .ux-tabbar,html.v27 body[data-md-color-scheme="slate"] .tabbar{background:#0e141c!important}
+@media (prefers-color-scheme:dark){html.v27:not([data-md-color-scheme="default"]) body:not([data-md-color-scheme="default"]) .ux-tabbar{background:#0e141c!important}}
 
 /* assets/palanim/palanim.css */
 /* Палпедия · живые палы. The animated layer is placed exactly over the static card art window / thumbnail by palanim.js. */
@@ -1701,3 +1716,37 @@ html.v27 [data-md-color-scheme=slate] .sa-k,html.v27[data-md-color-scheme=slate]
 .palanim-live.on{opacity:1}
 img.palanim-ready{cursor:pointer;-webkit-tap-highlight-color:transparent}
 @media (prefers-reduced-motion:reduce){.palanim-live{display:none!important}img.palanim-ready{cursor:auto}}
+
+/* HX_HELPERS */
+.md-typeset .hx-fgrid{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))!important;gap:12px!important;align-items:stretch!important;width:100%!important}
+.md-typeset .hx-fc{display:flex!important;flex-direction:column;height:100%;box-sizing:border-box;margin:0!important}
+.md-typeset .hx-fc .fks{margin-top:auto}
+.md-typeset .hx-fc .fh b{min-height:2.5em;display:flex;align-items:center}
+.md-typeset .ux-chip .hx-ic{font-size:1.05em}
+.md-typeset .hx-skg{--gcw:280px}
+.md-typeset .hx-sk .gc-t b{min-height:2.5em;display:flex;align-items:center;flex:1}
+.md-typeset .hx-sk .gc-eli{width:28px;height:28px;flex:0 0 28px}
+.md-typeset .hx-bd{display:flex;flex-wrap:nowrap;gap:6px;overflow:hidden;min-height:24px}
+.md-typeset .hx-bd .gc-b{flex:0 0 auto}.md-typeset .hx-on{background:rgba(46,196,120,.2)!important}
+.md-typeset .hx-en{font-size:.65rem!important;opacity:.8}
+.md-typeset .hx-d{min-height:3.9em;font-size:.82rem}.md-typeset .mute{opacity:.65}
+.md-typeset .hx-fruit{display:flex;align-items:center;gap:8px;min-height:40px;font-size:.78rem;text-decoration:none;color:inherit!important}
+.md-typeset .hx-fruit img{margin:0;width:32px;height:32px}.md-typeset .hx-fruit span{display:flex;flex-direction:column;line-height:1.25}
+.md-typeset .hx-pals{display:flex;gap:6px;align-items:flex-start;min-height:92px}
+.md-typeset .hx-pal{display:flex;flex-direction:column;align-items:center;flex:1 1 0;min-width:0;text-align:center;color:inherit!important;text-decoration:none}
+.md-typeset .hx-pal img{width:48px;height:48px;margin:0;border-radius:10px;background:rgba(127,140,160,.14)}
+.md-typeset .hx-pal span{font-size:.7rem;font-weight:700;line-height:1.15;overflow:hidden;text-overflow:ellipsis;max-width:100%;white-space:nowrap}
+.md-typeset .hx-pal small{font-size:.65rem;opacity:.7}
+.md-typeset .hx-more{align-self:center;font-weight:800;font-size:.8rem;opacity:.8}
+.md-typeset .hx-mo{margin:12px auto;display:flex}
+.md-typeset .ux-chip .gc-eli{width:20px;height:20px;vertical-align:-4px;margin:0}
+.md-typeset .hx-skg{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr))!important;gap:12px!important;align-items:stretch!important;width:100%}
+.md-typeset .hx-sk{display:flex;flex-direction:column;gap:8px;min-width:0;height:100%;box-sizing:border-box;padding:12px 14px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(127,140,160,.35);box-shadow:0 2px 0 rgba(0,0,0,.18)}
+[data-md-color-scheme=default] .md-typeset .hx-sk{background:linear-gradient(180deg,#fff,#f4f7fb);border-color:#d5dce6}
+.md-typeset .hx-sk .gc-t{display:flex;align-items:center;gap:8px;min-width:0}
+.md-typeset .hx-sk .gc-b{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:999px;font-size:.75rem;font-weight:700;white-space:nowrap;background:rgba(127,140,160,.18)}
+.md-typeset .hx-sk .gc-ft{margin-top:auto}
+
+/* HX_SPELL: без волнистых/пунктирных подчёркиваний; подсказка — значок «?» */
+.md-typeset abbr,.md-typeset abbr[title],.md-typeset [data-preview],.gl,.ux-term,.md-typeset .gl,.md-typeset .ux-term{text-decoration:none!important;-webkit-text-decoration:none!important;border-bottom:0!important}
+.gl::after,.ux-term::after,.md-typeset abbr[title]::after{content:"?";display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;margin-left:3px;border-radius:50%;font-size:10px;font-weight:800;line-height:1;vertical-align:2px;background:rgba(127,140,160,.25);color:inherit;opacity:.8}

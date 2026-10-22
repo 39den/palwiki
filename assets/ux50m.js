@@ -388,57 +388,35 @@
       });
       draw();
     });
+    /* HX_HELPERS: еда для цели + навыки и плоды (единый стиль) */
+    const HXGI={fire:"Fire",water:"Water",grass:"Grass",electric:"Electric",ice:"Ice",ground:"Ground",dark:"Dark",dragon:"Dragon",neutral:"Neutral"};
+    const HXEL=(e)=>ELC[e]?`<img class="gc-eli" src="${B}assets/v27/game/${HXGI[ELC[e]]}.webp" width="20" height="20" alt="">`:"";
     const fe = $("#ux-food");
     if (fe) ref().then((R) => {
-      const F = R.food;
-      const stats = [...new Set(F.flatMap((f) => f.b.map((b) => b.stat)))];
-      const IC = { "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u044B": "\u{1F6E0}", "\u0410\u0442\u0430\u043A\u0430": "\u2694\uFE0F", "\u0417\u0430\u0449\u0438\u0442\u0430": "\u{1F6E1}" };
-      let s = LS.get("ux_fgoal", stats.includes("\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u044B") ? "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u044B" : stats[0]);
-      const draw = () => {
-        LS.set("ux_fgoal", s);
-        const L2 = F.filter((f) => f.b.some((b) => b.stat == s)).map((f) => [f, f.b.find((b) => b.stat == s).pct]).sort((a, b) => b[1] - a[1] || b[0].d - a[0].d);
-        fe.innerHTML = `<div class="ux-panel"><div class="ux-h">\u0427\u0442\u043E \u0445\u043E\u0447\u0443? ${hlp("\u0412\u044B\u0431\u0435\u0440\u0438 \u0446\u0435\u043B\u044C \u2014 \u043F\u043E\u043A\u0430\u0436\u0443 \u0431\u043B\u044E\u0434\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0434\u0430\u044E\u0442 \u044D\u0442\u043E\u0442 \u0431\u043E\u043D\u0443\u0441, \u043B\u0443\u0447\u0448\u0438\u0435 \u043F\u0435\u0440\u0432\u044B\u043C\u0438.")}</div><div class="ux-chips">${stats.map((t) => `<button type="button" class="ux-chip ${t == s ? "on" : ""}" data-s="${esc(t)}">${IC[t] || "\u2728"} ${esc(t)}</button>`).join("")}</div></div><div class="ux-cards">${L2.map(([f, p]) => `<div class="ux-card"><div class="ux-ct">${esc(f.n)}</div><div class="ux-big-n" style="font-size:1.5rem">+${p}%</div><div class="ux-sub">\u23F1 ${f.d ? Math.round(f.d / 60) + " \u043C\u0438\u043D" : "\u2014"} \xB7 \u{1F357} \u0441\u044B\u0442\u043E\u0441\u0442\u044C ${f.nu}</div><div class="ux-sub">${f.r.map((r) => esc(r[0]) + " \xD7" + esc(r[1])).join(", ")}</div><div class="ux-sub">\u{1F373} ${esc((f.st || [])[0] || "")}</div></div>`).join("")}</div>`;
-      };
-      fe.addEventListener("click", (e) => {
-        const b = (e.target.closest?e.target:document.body).closest("[data-s]");
-        if (b) {
-          s = b.dataset.s;
-          draw();
-        }
-      });
-      draw();
+      const F=R.food;const IC={"Скорость работы":"🛠","Атака":"⚔️","Защита":"🛡","Защита от взрывов":"💥","Опыт":"✨","Рассудок падает медленнее":"🧠","Медленнее голод":"🍖","Не отбрасывает":"🧱"};
+      const stats=[...new Set(F.flatMap((f)=>f.b.map((b)=>b.stat)))];
+      let s=LS.get("ux_fgoal",stats.includes("Скорость работы")?"Скорость работы":stats[0]);if(!stats.includes(s))s=stats[0];
+      const draw=()=>{LS.set("ux_fgoal",s);const L=F.filter((f)=>f.b.some((b)=>b.stat==s)).map((f)=>[f,f.b.find((b)=>b.stat==s).pct]).sort((a,b)=>b[1]-a[1]||b[0].d-a[0].d);
+        fe.innerHTML=`<div class="ux-panel"><div class="ux-h">Что хочу? ${hlp("Выбери цель — покажу блюда, которые дают этот бонус, лучшие первыми.")}</div><div class="ux-chips">${stats.map((t)=>`<button type="button" class="ux-chip ${t==s?"on":""}" data-s="${esc(t)}" aria-pressed="${t==s}"><span class="hx-ic" aria-hidden="true">${IC[t]||"✨"}</span> ${esc(t)}</button>`).join("")}</div></div><div class="ux-cnt">Блюд: ${L.length}</div><div class="fgrid hx-fgrid">${L.map(([f,p])=>f.h.replace('<div class="fcard','<div data-hxp="+'+p+'%" class="hx-fc fcard')).join("")}</div>`;};
+      fe.addEventListener("click",(e)=>{const b=e.target.closest("[data-s]");if(b){s=b.dataset.s;draw();}});draw();
     });
     const nv = $("#ux-skills");
-    if (nv) Promise.all([data(), ux(), ref()]).then(([D, X, R]) => {
-      const A = R.act;
-      let el = "", q = "", fr = false;
-      const by = Object.fromEntries(D.pals.map((p) => [p.id, p]));
-      const draw = () => {
-        const L2 = A.filter((a) => (!el || a.el == el) && (!fr || a.f) && (!q || a.n.toLowerCase().includes(q))).sort((a, b) => (+b.pw || 0) - (+a.pw || 0));
-        $("#ux-skl").innerHTML = `<div class="ux-cnt">\u041D\u0430\u0439\u0434\u0435\u043D\u043E: ${L2.length}</div><div class="ux-cards">${L2.slice(0, 120).map((a) => `<div class="ux-card ux-sk g-${ELC[a.el] || ""}"><div class="ux-ct">${ELI[a.el] || ""} ${esc(a.n)}</div><div class="ux-chips"><span class="ux-chip">\u{1F4A5} ${esc(a.pw || "0")}</span><span class="ux-chip">\u23F1 ${esc(a.ct)} \u0441</span>${a.f ? '<span class="ux-chip on">\u{1F34E} \u0415\u0441\u0442\u044C \u043F\u043B\u043E\u0434</span>' : ""}${a.u ? '<span class="ux-chip">\u2B50 \u0423\u043D\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u0439</span>' : ""}</div><div class="ux-sub">${esc(a.d)}</div>${a.f && R.fruit[a.n] ? `<div class="ux-sub">\u{1F34E} ${esc(R.fruit[a.n].filter(Boolean).slice(0, 2).join(" \xB7 "))}</div>` : ""}${a.L.length ? `<div class="ux-learn">${a.L.slice(0, 8).map(([id, l]) => by[id] && by[id].url ? `<a href="${B + by[id].url}" title="${esc(by[id].ru)} \u2014 \u0441 \u0443\u0440. ${l}"><img src="${B + by[id].thumb}" width="32" height="32" alt="${esc(by[id].ru)}" loading="lazy"></a>` : "").join("")}${a.L.length > 8 ? `<small>+${a.L.length - 8}</small>` : ""}</div>` : ""}</div>`).join("")}</div>`;
-      };
-      nv.innerHTML = `<div class="ux-panel"><input class="ux-in" type="search" placeholder="\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u043D\u0430\u0432\u044B\u043A\u0430" data-k="q" aria-label="\u041F\u043E\u0438\u0441\u043A \u043D\u0430\u0432\u044B\u043A\u0430" style="width:100%"><div class="ux-chips" style="margin-top:8px"><button type="button" class="ux-chip on" data-el="">\u0412\u0441\u0435</button>${Object.keys(ELI).map((e) => `<button type="button" class="ux-chip" data-el="${e}">${ELI[e]} ${e}</button>`).join("")}<button type="button" class="ux-chip" data-fr>\u{1F34E} \u0422\u043E\u043B\u044C\u043A\u043E \u0441 \u043F\u043B\u043E\u0434\u043E\u043C</button></div></div><div id="ux-skl"></div>`;
-      nv.addEventListener("click", (e) => {
-        const b = (e.target.closest?e.target:document.body).closest("button");
-        if (!b) return;
-        if (b.dataset.el != null) {
-          el = b.dataset.el;
-          $$("[data-el]", nv).forEach((x) => x.classList.toggle("on", x === b));
-        }
-        if (b.hasAttribute("data-fr")) {
-          fr = !fr;
-          b.classList.toggle("on", fr);
-        }
-        draw();
-      });
-      nv.addEventListener("input", (e) => {
-        if (e.target.dataset.k == "q") {
-          q = e.target.value.toLowerCase().trim();
-          draw();
-        }
-      });
-      draw();
+    if (nv) Promise.all([data(), ref()]).then(([D, R]) => {
+      const A=R.act;let el="",q="",fr=false,lim=60;const by=Object.fromEntries(D.pals.map((p)=>[p.id,p]));
+      const pal=([id,l])=>{const p=by[id];if(!p||!p.url)return "";return `<a class="hx-pal" href="${B+p.url}" title="${esc(p.ru)} — с ур. ${l}"><img src="${B+p.thumb}" width="48" height="48" alt="" loading="lazy"><span>${esc(p.ru)}</span><small>ур. ${l}</small></a>`;};
+      const card=(a)=>{const ok=a.L.filter(([id])=>by[id]&&by[id].url);
+        const fruit=a.f?(a.fi?`<a class="hx-fruit" href="${a.fi[0]}" data-item="${a.fi[2]}"><img src="${a.fi[1]}" width="32" height="32" alt="" loading="lazy"><span><b>Плод навыка</b><small>${esc(((R.fruit[a.n]||[]).filter(Boolean)[0])||"Где взять →")}</small></span></a>`:`<span class="hx-fruit"><span class="hx-ic">🍎</span><span><b>Плод навыка</b><small>${esc(((R.fruit[a.n]||[]).filter(Boolean)[0])||"")}</small></span></span>`):`<span class="hx-fruit mute"><span><small>Плода нет — только у палов</small></span></span>`;
+        return `<div class="gc hx-sk"><div class="gc-t">${HXEL(a.el)}<b${a.en?` title="${esc(a.en)}"`:""}>${esc(a.n)}</b></div>
+        <div class="hx-bd"><span class="gc-b">💥 ${esc(a.pw||"0")}</span><span class="gc-b">⏱ ${esc(a.ct)} с</span>${a.u?'<span class="gc-b">⭐ Уникальный</span>':""}${a.f?'<span class="gc-b hx-on">🍎 Плод</span>':""}</div>
+        <div class="gc-sub hx-d">${esc(a.d)}</div>${fruit}
+        <div class="gc-ft hx-pals">${ok.length?ok.slice(0,4).map(pal).join("")+(ok.length>4?`<span class="hx-more" title="${esc(ok.slice(4).map(([id])=>by[id].ru).join(", "))}">+${ok.length-4}</span>`:""):'<small class="mute">Палы не учат</small>'}</div></div>`;};
+      const draw=()=>{const L=A.filter((a)=>(!el||a.el==el)&&(!fr||a.f)&&(!q||a.n.toLowerCase().includes(q))).sort((a,b)=>(+b.pw||0)-(+a.pw||0));
+        $("#ux-skl").innerHTML=`<div class="ux-cnt">Найдено: ${L.length}</div><div class="gcg hx-skg">${L.slice(0,lim).map(card).join("")}</div>${L.length>lim?`<button type="button" class="ux-chip hx-mo" data-more>Показать ещё ${Math.min(60,L.length-lim)} из ${L.length-lim}</button>`:""}`;};
+      nv.innerHTML=`<div class="ux-panel"><input class="ux-in" type="search" spellcheck="false" placeholder="Название навыка" data-k="q" aria-label="Поиск навыка" style="width:100%"><div class="ux-chips" style="margin-top:8px"><button type="button" class="ux-chip on" data-el="">Все</button>${Object.keys(ELI).map((e)=>`<button type="button" class="ux-chip" data-el="${e}">${HXEL(e)} ${e}</button>`).join("")}<button type="button" class="ux-chip" data-fr>🍎 Только с плодом</button></div></div><div id="ux-skl"></div>`;
+      nv.addEventListener("click",(e)=>{const b=e.target.closest("button");if(!b)return;if(b.hasAttribute("data-more")){lim+=60;draw();return;}if(b.dataset.el!=null){el=b.dataset.el;lim=60;$$("[data-el]",nv).forEach((x)=>x.classList.toggle("on",x===b));}if(b.hasAttribute("data-fr")){fr=!fr;lim=60;b.classList.toggle("on",fr);}draw();});
+      nv.addEventListener("input",(e)=>{if(e.target.dataset.k=="q"){q=e.target.value.toLowerCase().trim();lim=60;draw();}});draw();
     });
+
     const cmp = $("#cmp");
     if (cmp) Promise.all([data(), ux()]).then(([D, X]) => {
       const box = mk("section", "ux-panel ux-c4");

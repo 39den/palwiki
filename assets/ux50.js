@@ -175,7 +175,7 @@
     nav.setAttribute("aria-label", "\u0413\u0434\u0435 \u044F");
     const hist = SS.get("ux_hist", []);
     const prev = hist.find((x) => x.u != location.pathname);
-    nav.innerHTML = items.map(([l, u]) => `<a class="ux-cr" href="${u}">${esc(l)}</a><span class="ux-sep" aria-hidden="true">\u203A</span>`).join("") + `<span class="ux-cr ux-cr-on" aria-current="page">${esc(short(title, 22))}</span>` + (prev ? `<a class="ux-cr ux-back" href="${esc(prev.u)}" data-back="1" title="\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u0442\u0443\u0434\u0430 \u0436\u0435, \u0433\u0434\u0435 \u0431\u044B\u043B">\u21A9 ${esc(short(prev.t, 12))}</a>` : "");
+    nav.innerHTML = items.map(([l, u]) => `<a class="ux-cr" href="${u}">${esc(l)}</a><span class="ux-sep" aria-hidden="true">\u203A</span>`).join("") + `<span class="ux-cr ux-cr-on" aria-current="page">${esc(title)}</span>` + (prev ? `<a class="ux-cr ux-back" href="${esc(prev.u)}" data-back="1" title="\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u0442\u0443\u0434\u0430 \u0436\u0435, \u0433\u0434\u0435 \u0431\u044B\u043B" aria-label="\u041D\u0430\u0437\u0430\u0434: ${esc(prev.t)}">\u21A9 \u041D\u0430\u0437\u0430\u0434</a>` : "");
     document.documentElement.classList.add("ux-has-crumbs");
     art.prepend(nav);
     const fade = () => nav.classList.toggle("ux-fade", nav.scrollWidth > nav.clientWidth + 2 && nav.scrollLeft + nav.clientWidth < nav.scrollWidth - 2);
@@ -285,7 +285,7 @@
     const map = Object.fromEntries(keys);
     const walk = document.createTreeWalker(art, NodeFilter.SHOW_TEXT, { acceptNode: (t) => {
       const p = t.parentElement;
-      if (!p || p.closest("a,button,h1,h2,h3,h4,code,pre,input,textarea,select,.ux-term,.ux-crumbs,.ux-next,.ux-qa,.hlp,.tabbed-labels,label,summary,.sx,.pal-hero,svg,script,style,.leaflet-container")) return 2;
+      if (!p || p.closest("#pp-app,a,button,h1,h2,h3,h4,code,pre,input,textarea,select,.ux-term,.ux-crumbs,.ux-next,.ux-qa,.hlp,.tabbed-labels,label,summary,.sx,.pal-hero,svg,script,style,.leaflet-container")) return 2;
       return t.nodeValue.length > 3 ? 1 : 2;
     } });
     const nodes = [];
