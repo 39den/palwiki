@@ -276,7 +276,7 @@
     const G = X.gl.filter((g) => g.t.length >= 3 && !/^(Пал|Палы|Топ|Ап|Вес|Чек|Альт|Моб)$/.test(g.t));
     const keys = [];
     G.forEach((g) => [g.t, ...g.a].forEach((a) => {
-      if (a.length >= 4 && !/[a-z]/i.test(a)) keys.push([a.toLowerCase(), g]);
+      if (a.length >= 4 && !/[a-z]/i.test(a) && !/^(уровень|уровня|опыт|лечение|ресурсы|ресурс|сохранение|скорость|защита|атака|урон|сундук|ящик|обновление|лучший|создание|усиление|проверить|регион|враг|сервер|щит|вес|торт|души|вариант|башня|плита|стихия|слабость|рассудок|сытость|выносливость|подземелье|разведение|статуэтка|чертёж|экспедиция|транспортировка|пригодность|мутация|пробуждение|конденсация)$/i.test(a) && !(g.d||'').toLowerCase().startsWith(a.toLowerCase())) keys.push([a.toLowerCase(), g]);
     }));
     keys.sort((a, b) => b[0].length - a[0].length);
     const used = /* @__PURE__ */ new Set();
@@ -285,7 +285,7 @@
     const map = Object.fromEntries(keys);
     const walk = document.createTreeWalker(art, NodeFilter.SHOW_TEXT, { acceptNode: (t) => {
       const p = t.parentElement;
-      if (!p || p.closest("#pp-app,a,button,h1,h2,h3,h4,code,pre,input,textarea,select,.ux-term,.ux-crumbs,.ux-next,.ux-qa,.hlp,.tabbed-labels,label,summary,.sx,.pal-hero,svg,script,style,.leaflet-container")) return 2;
+      if (!p || p.closest(".gc,.gc-chip,.gc-sp,.gc-t,.ef,.efs,.pcard,.hw,.chip,[class*=chip],[class*=pill],.tile,.fx-root,.gal-filters,.gsheet,th,.md-nav,nav,#pp-app,a,button,h1,h2,h3,h4,h5,code,pre,input,textarea,select,.ux-term,.ux-crumbs,.ux-next,.ux-qa,.hlp,.tabbed-labels,label,summary,.sx,.pal-hero,svg,script,style,.leaflet-container")) return 2;
       return t.nodeValue.length > 3 ? 1 : 2;
     } });
     const nodes = [];
