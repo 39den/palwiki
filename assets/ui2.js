@@ -34,7 +34,7 @@
     D.pals.forEach((p) => p.url && add({ t: "pal", label: p.ru, alt: p.en, sub: "\u2116" + p.no + " \xB7 " + p.el.join(", "), img: p.thumb, url: p.url, w: (pop[p.id] || 0) + 1, ref: p }));
     (D.bcards || []).forEach((b) => add({ t: "boss", label: b.n, alt: b.pal, sub: b.k + " \xB7 \u0443\u0440. " + b.lv.filter(Boolean).join(" / "), img: b.t, url: b.u, w: 2 }));
     D.passives.forEach((q) => add({ t: "passive", label: q.name, alt: q.en, sub: "\u0440\u0430\u043D\u0433 " + q.rank + " \xB7 " + (q.desc || "").slice(0, 60), url: q.url, w: 1, rank: q.rank }));
-    D.items.forEach((i) => i.url && add({ t: "item", label: i.ru, alt: i.en, sub: i.type || "\u043F\u0440\u0435\u0434\u043C\u0435\u0442", url: i.url, w: 0.5 }));
+    D.items.forEach((i) => i.url && add({ t: "item", img: i.icon, label: i.ru, alt: i.en, sub: i.type || "\u043F\u0440\u0435\u0434\u043C\u0435\u0442", url: i.url, w: 0.5 }));
     [
       /*WORKCALC off 21.10*/
       ["\u0420\u0430\u0431\u043E\u0442\u0430 \u043F\u0430\u043B\u043E\u0432", "2_mehaniki/rabota/", "\u{1F6E0}\uFE0F", "\u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u044B \u0440\u0443\u0447\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0440\u0430\u0431\u043E\u0442\u044B \u043A\u0430\u043A \u0430\u043F\u043D\u0443\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u0443 \u043F\u043E\u0434\u043D\u044F\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u0443 \u043F\u0440\u0438\u0433\u043E\u0434\u043D\u043E\u0441\u0442\u044C \u043A \u0440\u0430\u0431\u043E\u0442\u0435 \u043A\u0430\u043B\u044C\u043A\u0443\u043B\u044F\u0442\u043E\u0440 \u0440\u0430\u0431\u043E\u0442\u044B"],

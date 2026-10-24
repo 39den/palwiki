@@ -1,0 +1,21 @@
+/* fix5 24.10.2026 */
+/* 1. Первопричина красного: тема pp26 красит ссылки контента var(--redink) (#ff7a6e в тёмной) и акцент #ff5a4e.
+   В тёмной теме ссылки и акцент — бирюзовые; красный остаётся только у кнопок, активной вкладки и отрицательных пассивок. */
+html.pp26 [data-md-color-scheme=slate],html [data-md-color-scheme=slate]{--md-typeset-a-color:#7fd8e6!important;--md-accent-fg-color:#9fe3ee!important;--acc:#7fd8e6!important}
+html.pp26 .md-typeset a{color:var(--md-typeset-a-color)}
+html.pp26 [data-md-color-scheme=slate] .boss-hero .kind{color:#9fe3ee!important}
+/* 2. кнопка попапа карты: длинный текст переносится внутри */
+.mpcard .mpgo,html.pp26 .mpcard .mpgo{white-space:normal!important;text-align:center;padding:8px 14px!important;box-sizing:border-box;max-width:100%;min-width:0;overflow-wrap:anywhere;line-height:1.25;height:auto!important}
+.leaflet-popup-content .mpcard{flex-wrap:wrap;max-width:100%;box-sizing:border-box}
+/* 3. иконка результата поиска без картинки — не пустой квадрат */
+.sx-r img{border-radius:8px;object-fit:contain;background:rgba(127,127,127,.12)}
+.sx-r .sx-ic:empty::before{content:"\25A0";font-size:14px;opacity:.55}
+/* тёмная тема: неактивные чипы карты и счётчики светлее (было #6b7680, 4.1:1) */
+html [data-md-color-scheme=slate] .ux-chip.sf-pp:not(.on),html.v27 [data-md-color-scheme=slate] .ux-chip.sf-pp[aria-pressed=false]{color:#a9b3bd!important;-webkit-text-fill-color:#a9b3bd!important;border-color:rgba(243,239,230,.22)!important}
+html [data-md-color-scheme=slate] .ux-chip.sf-pp small{color:#a9b3bd!important;-webkit-text-fill-color:#a9b3bd!important}
+/* активная вкладка tabbed (бирюзовый фон): ссылка внутри белая, не бирюзовая */
+html [data-md-color-scheme] .md-typeset .tabbed-set .tabbed-labels>label a,html.pp26 .md-typeset .tabbed-labels>label a{color:inherit!important}
+/* переключатель режима босса: активный (красный фон) — белый текст */
+.bmodes label{-webkit-text-fill-color:currentColor}
+.bmodes input:checked+label,.bmodes label.on{color:#fff!important}
+html [data-md-color-scheme=slate] .bmodes>input:checked+label{color:#06151a!important}
