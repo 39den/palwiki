@@ -83,7 +83,7 @@ function strengths(p){var out=[];var a=pct(IDX.s_atk,p.atk),d=pct(IDX.s_def,p.de
   out.push({k:'el',t:'Стихия: '+p.el.join(' + ')+'. Сильнее против: '+(attackVs(p.el).join(', ')||'никого (нейтральная)')+'. Боится: '+(p.weak.join(', ')||'—')+(Object.keys(p.wm||{}).length?' (×'+DB.elmult.weak+')':''),src:DB.src});
   if(p.work.length)out.push({k:'work',t:'Работы: '+p.work.map(function(w){return w[0]+' '+w[1];}).join(', ')+' (потолок '+DB.wcap+')',src:DB.src});
   out.push({k:'psk',t:'Партнёрский навык «'+p.psk.n+'»: '+p.psk.d,src:DB.src});
-  if(p.mount)out.push({k:'mount',t:(p.mount==='fly'?'Летающий':'Ездовой')+(p.sprint?', скорость рывка '+p.sprint:''),src:DB.src});
+  if(p.mount)out.push({k:'mount',t:(p.mount==='fly'?'Летающий':'Ездовой')+(p.sprint?', скорость бега '+p.sprint:''),src:DB.src});
   return out;}
 function attackVs(els){var o=[];els.forEach(function(e){(DB.chart[e]||[]).forEach(function(x){if(o.indexOf(x)<0)o.push(x);});});return o;}
 function elemMult(atkEl,defPal){if(defPal.wm&&defPal.wm[atkEl])return defPal.wm[atkEl];if(defPal.rm&&defPal.rm[atkEl])return defPal.rm[atkEl];return 1;}
@@ -130,7 +130,7 @@ var ctxUsed={};function replacements(p,goal,stage,boss){var used=(boss&&boss._us
   if(stage==='early')pool=pool.filter(function(x){return x.hab.lv&&x.hab.lv[0]<=40||(!x.hab.wild);});
   var mine=sc(p);var c=pool.map(function(x){return[sc(x),x];}).filter(function(a){return a[0]>mine*1.15;}).sort(function(a,b){return b[0]-a[0];}).slice(0,3);
   return c.map(function(a){var x=a[1];return{id:x.id,ru:x.ru,url:x.url,why:replWhy(x,goal,boss),where:whereTxt(x)};});}
-function replWhy(x,goal,boss){if(goal==='base'){return x.work.map(function(w){return w[0]+' '+w[1];}).join(', ');}if(goal==='explore')return(x.mount==='fly'?'летает':'ездовой')+(x.sprint?', рывок '+x.sprint:'');var t='атака '+x.atk+', защита '+x.def+', HP '+x.hp+', стихия '+x.el.join('+');if(boss&&x.el.some(function(e){return boss.weak.indexOf(e)>=0;}))t+=' — бьёт слабость босса ×'+DB.elmult.weak;return t;}
+function replWhy(x,goal,boss){if(goal==='base'){return x.work.map(function(w){return w[0]+' '+w[1];}).join(', ');}if(goal==='explore')return(x.mount==='fly'?'летает':'ездовой')+(x.sprint?', скорость бега '+x.sprint:'');var t='атака '+x.atk+', защита '+x.def+', HP '+x.hp+', стихия '+x.el.join('+');if(boss&&x.el.some(function(e){return boss.weak.indexOf(e)>=0;}))t+=' — бьёт слабость босса ×'+DB.elmult.weak;return t;}
 function whereTxt(x){var h=x.hab||{};var o=[];if(h.wild&&h.rg&&h.rg.length)o.push('дикий: '+h.rg.slice(0,2).join(', ')+(h.lv?' (ур. '+h.lv[0]+'–'+h.lv[1]+')':''));if(h.dg&&h.dg.length)o.push('подземелья: '+h.dg.slice(0,2).join(', '));if(h.egg)o.push('яйцо: '+h.egg);if(!o.length)o.push('только разведением');return o.join('; ');}
 /* ---- разбор одного пала ---- */
 function analyzePal(e,ctx){var p=IDX.byId[e.id];ctx=ctx||{};var goal=GOALS[ctx.goal]?ctx.goal:'boss',stage=STAGES[ctx.stage]?ctx.stage:'end';

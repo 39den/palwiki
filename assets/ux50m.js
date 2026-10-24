@@ -431,7 +431,7 @@
       }
       const draw = () => {
         const ps = ids.map((i) => D.pals.find((p) => p.id == i)).filter(Boolean);
-        const st = [["\u2764\uFE0F", "HP", "hp"], ["\u2694\uFE0F", "\u0410\u0442\u0430\u043A\u0430", "atk"], ["\u{1F6E1}", "\u0417\u0430\u0449\u0438\u0442\u0430", "def"], ["\u{1F40E}", "\u0420\u044B\u0432\u043E\u043A", "sprint"]];
+        const st = [["\u2764\uFE0F", "HP", "hp"], ["\u2694\uFE0F", "\u0410\u0442\u0430\u043A\u0430", "atk"], ["\u{1F6E1}", "\u0417\u0430\u0449\u0438\u0442\u0430", "def"], ["\u{1F40E}", "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0431\u0435\u0433\u0430", "sprint"]];
         const best = (k) => Math.max(...ps.map((p) => +p[k] || 0));
         const wbest = (w) => Math.max(...ps.map((p) => ((p.work || []).find((x) => x[0] == w) || [0, 0])[1]));
         const works = [...new Set(ps.flatMap((p) => (p.work || []).map((w) => w[0])))];

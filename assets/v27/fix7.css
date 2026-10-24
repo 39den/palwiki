@@ -1,0 +1,35 @@
+/* fix7: «Скорость бега» — заголовок переносится, кнопка-подсказка */
+.ptable thead th{white-space:normal;line-height:1.2;vertical-align:bottom}
+.f7q{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:4px;padding:0;border-radius:50%;border:1px solid currentColor;background:transparent;color:inherit;font:700 11px/1 Manrope,sans-serif;cursor:help;vertical-align:middle;opacity:.8}
+.f7pop{position:fixed;z-index:9999;padding:8px 10px;border-radius:10px;background:#13202a;color:#f3efe6;font:500 13px/1.35 Manrope,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.3)}
+[data-md-color-scheme=slate] .f7pop{background:#f3efe6;color:#13202a}
+/* узкий экран: таблица палов умещается в ширину (стихии — только значки, перенос заголовков и работы) */
+@media (max-width:600px){
+ #gtable .md-typeset__table{padding:0!important}
+ #gtable table.ptable{table-layout:auto;width:100%!important;font-size:12px}
+ #gtable table.ptable th,#gtable table.ptable td{padding:6px 3px!important;white-space:normal!important;overflow-wrap:anywhere;hyphens:auto}
+ #gtable table.ptable td img{width:28px!important;height:28px!important}
+ #gtable table.ptable .el{font-size:0!important;padding:3px!important;gap:0!important;min-width:0}
+ #gtable table.ptable .el img,#gtable table.ptable .el svg,#gtable table.ptable .el i{font-size:12px;margin:0!important}
+ #gtable table.ptable td a{display:inline}
+ .f7q{width:16px;height:16px;margin-left:2px}
+}
+@media (max-width:600px){
+ #gtable table.ptable{font-size:11.5px}
+ #gtable table.ptable th{font-size:10.5px}
+ #gtable table.ptable th,#gtable table.ptable td{padding:5px 2px!important}
+ #gtable table.ptable td *{white-space:normal!important}
+ #gtable table.ptable td:last-child{max-width:78px;word-break:break-word}
+ #gtable table.ptable td:nth-child(2){max-width:84px}
+ #gtable table.ptable td img{width:22px!important;height:22px!important}
+ #gtable table.ptable .el{transform:scale(.85);margin:-2px!important}
+ #gtable{margin-left:-8px;margin-right:-8px}
+}
+@media (max-width:390px){
+ #gtable table.ptable{font-size:11px}
+ #gtable table.ptable td:nth-child(2){max-width:66px}
+ #gtable table.ptable td:last-child{max-width:62px}
+ #gtable table.ptable th,#gtable table.ptable td{padding:5px 1px!important}
+ #gtable table.ptable th{font-size:10px}
+}
+@media (max-width:600px){#gtable table.ptable td{overflow-wrap:normal!important;word-break:normal!important;-webkit-hyphens:auto;hyphens:auto}}

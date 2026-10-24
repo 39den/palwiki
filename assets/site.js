@@ -236,7 +236,7 @@ window.PW_pop = function(o) {
   function gallery(D) {
     const f = document.getElementById("gal-filters"), g = document.getElementById("gallery");
     const sel = (id, label, opts) => `<select id="${id}" aria-label="${label}"><option value="">${label}</option>${opts.map((o) => `<option value="${esc(o[0])}">${esc(o[1])}</option>`).join("")}</select>`;
-    f.innerHTML = `<input id="gq" name="pp-q-gq" type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" placeholder="\u041D\u0430\u0439\u0442\u0438 \u043F\u0430\u043B\u0430\u2026">` + sel("ge", "\u0421\u0442\u0438\u0445\u0438\u044F", ELS.map((e) => [e, e])) + sel("gw", "\u0420\u0430\u0431\u043E\u0442\u0430", WORKS.map((e) => [e, e])) + sel("gl", "\u0423\u0440. \u0440\u0430\u0431\u043E\u0442\u044B \u2265", [1, 2, 3, 4, 5].map((e) => [e, "\u2265 " + e])) + sel("gm", "\u0415\u0437\u0434\u0430", [["ride", "\u{1F40E} \u0435\u0437\u0434\u043E\u0432\u043E\u0439"], ["fly", "\u{1F985} \u043B\u0435\u0442\u0430\u044E\u0449\u0438\u0439"]]) + sel("ga", "\u041F\u0430\u0440\u0442\u043D\u0451\u0440\u043A\u0430", Object.entries(ACT)) + sel("gs", "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430", [["no", "\u043F\u043E \u043D\u043E\u043C\u0435\u0440\u0443"], ["ru", "\u043F\u043E \u0438\u043C\u0435\u043D\u0438"], ["atk", "\u0430\u0442\u0430\u043A\u0430 \u2193"], ["hp", "HP \u2193"], ["work", "\u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0440\u0430\u0431\u043E\u0442\u044B \u2193"], ["sprint", "\u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u2193"]]) + `<span class="gal-count" id="gc"></span>`;
+    f.innerHTML = `<input id="gq" name="pp-q-gq" type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" placeholder="\u041D\u0430\u0439\u0442\u0438 \u043F\u0430\u043B\u0430\u2026">` + sel("ge", "\u0421\u0442\u0438\u0445\u0438\u044F", ELS.map((e) => [e, e])) + sel("gw", "\u0420\u0430\u0431\u043E\u0442\u0430", WORKS.map((e) => [e, e])) + sel("gl", "\u0423\u0440. \u0440\u0430\u0431\u043E\u0442\u044B \u2265", [1, 2, 3, 4, 5].map((e) => [e, "\u2265 " + e])) + sel("gm", "\u0415\u0437\u0434\u0430", [["ride", "\u{1F40E} \u0435\u0437\u0434\u043E\u0432\u043E\u0439"], ["fly", "\u{1F985} \u043B\u0435\u0442\u0430\u044E\u0449\u0438\u0439"]]) + sel("ga", "\u041F\u0430\u0440\u0442\u043D\u0451\u0440\u043A\u0430", Object.entries(ACT)) + sel("gs", "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430", [["no", "\u043F\u043E \u043D\u043E\u043C\u0435\u0440\u0443"], ["ru", "\u043F\u043E \u0438\u043C\u0435\u043D\u0438"], ["atk", "\u0430\u0442\u0430\u043A\u0430 \u2193"], ["hp", "HP \u2193"], ["work", "\u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0440\u0430\u0431\u043E\u0442\u044B \u2193"], ["sprint", "\u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0431\u0435\u0433\u0430 \u2193"]]) + `<span class="gal-count" id="gc"></span>`;
     const pals = D.pals.filter((p) => p.url);
     const $ = (id) => document.getElementById(id).value;
     const _qv = (v) => {
@@ -307,7 +307,7 @@ window.PW_pop = function(o) {
         document.getElementById("cmpo").innerHTML = h + '<p class="cx-hint">\u0412\u044B\u0431\u0435\u0440\u0438 \u0432\u0442\u043E\u0440\u043E\u0433\u043E \u043F\u0430\u043B\u0430, \u0447\u0442\u043E\u0431\u044B \u0441\u0440\u0430\u0432\u043D\u0438\u0442\u044C.</p>';
         return bind();
       }
-      const st = [["\u2764\uFE0F", "HP", "hp"], ["\u2694\uFE0F", "\u0410\u0442\u0430\u043A\u0430", "atk"], ["\u{1F6E1}", "\u0417\u0430\u0449\u0438\u0442\u0430", "def"], ["\u{1F40E}", "\u0420\u044B\u0432\u043E\u043A", "sprint"]];
+      const st = [["\u2764\uFE0F", "HP", "hp"], ["\u2694\uFE0F", "\u0410\u0442\u0430\u043A\u0430", "atk"], ["\u{1F6E1}", "\u0417\u0430\u0449\u0438\u0442\u0430", "def"], ["\u{1F40E}", "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0431\u0435\u0433\u0430", "sprint"]];
       const bars = st.map(([ic, l, k]) => {
         const x = +a[k] || 0, y = +b[k] || 0, m = Math.max(x, y) || 1, d = Math.abs(x - y);
         const wa = x > y ? " win" : "", wb = y > x ? " win" : "";
@@ -595,7 +595,7 @@ window.PW_pop = function(o) {
     sw.innerHTML = '<button class="on" data-v="grid">\u25A6 \u041F\u043B\u0438\u0442\u043A\u0438</button><button data-v="table">\u2630 \u0422\u0430\u0431\u043B\u0438\u0446\u0430</button>';
     f.prepend(sw);
     let view = "grid", key = "no", dir = 1;
-    const cols = [["no", "\u2116"], ["ru", "\u0418\u043C\u044F"], ["el", "\u0421\u0442\u0438\u0445\u0438\u044F"], ["hp", "HP"], ["atk", "\u0410\u0442\u0430\u043A\u0430"], ["def", "\u0417\u0430\u0449\u0438\u0442\u0430"], ["sprint", "\u0420\u044B\u0432\u043E\u043A"], ["work", "\u041B\u0443\u0447\u0448\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430"]];
+    const cols = [["no", "\u2116"], ["ru", "\u0418\u043C\u044F"], ["el", "\u0421\u0442\u0438\u0445\u0438\u044F"], ["hp", "HP"], ["atk", "\u0410\u0442\u0430\u043A\u0430"], ["def", "\u0417\u0430\u0449\u0438\u0442\u0430"], ["sprint", "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0431\u0435\u0433\u0430"], ["work", "\u041B\u0443\u0447\u0448\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430"]];
     const best = (p) => p.work.slice().sort((a, b) => b[1] - a[1])[0] || ["\u2014", 0];
     const draw = () => {
       if (view == "grid") return;

@@ -346,7 +346,7 @@
         h = `<div class="sa-k">\u041B\u0443\u0447\u0448\u0438\u0435 \u0432 \u0440\u0430\u0431\u043E\u0442\u0435</div><h3>${esc(a.work)}</h3><ol>${a.top.map(([p, l]) => `<li>${pl(p)} \u2014 \u0443\u0440. ${l} ${p.el.map(chip).join("")}</li>`).join("")}</ol>`;
         break;
       case "mount":
-        h = `<div class="sa-k">\u0421\u0430\u043C\u044B\u0435 \u0431\u044B\u0441\u0442\u0440\u044B\u0435 ${a.fly ? "\u043B\u0435\u0442\u0430\u044E\u0449\u0438\u0435" : "\u0435\u0437\u0434\u043E\u0432\u044B\u0435"}</div><ol>${a.top.map((p) => `<li>${pl(p)} \u2014 \u0440\u044B\u0432\u043E\u043A ${p.sprint}</li>`).join("")}</ol>`;
+        h = `<div class="sa-k">\u0421\u0430\u043C\u044B\u0435 \u0431\u044B\u0441\u0442\u0440\u044B\u0435 ${a.fly ? "\u043B\u0435\u0442\u0430\u044E\u0449\u0438\u0435" : "\u0435\u0437\u0434\u043E\u0432\u044B\u0435"}</div><ol>${a.top.map((p) => `<li>${pl(p)} \u2014 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0431\u0435\u0433\u0430 ${p.sprint}</li>`).join("")}</ol>`;
         break;
       case "passive":
         h = `<div class="sa-k">\u041F\u0430\u0441\u0441\u0438\u0432\u043A\u0430 \xB7 \u0440\u0430\u043D\u0433 ${esc(a.e.rank)}</div><h3>${lk(a.e.url, a.e.name)} <small>${esc(a.e.en)}</small></h3><div>${esc(a.e.desc)}</div>`;
