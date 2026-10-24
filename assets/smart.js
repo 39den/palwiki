@@ -69,6 +69,7 @@
     D.items.forEach((t, i) => {
       add(t.ru, "item", i);
       add(t.en, "item", i);
+      (t.al || []).forEach((a) => add(a, "item", i));
     });
     D.passives.forEach((t, i) => {
       add(t.name, "passive", i);

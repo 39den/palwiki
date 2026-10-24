@@ -178,6 +178,7 @@ function answer(q0){
  if(topic||fi2>=0){out.kind="faq";out.tag=topic?"topic:"+topic[0]:"faq";if(fi2>=0){out.text=sentences(D.F[fi2][1],3);out.fq=D.F[fi2][0];out.k2="faq:"+fi2;}else out.text=topic[3]+".";
   if(topic)out.cards.push({k:"topic:"+topic[0],t:"topic",n:topic[3],s:"открыть раздел",u:topic[2],btn:[]});
   if(fi2>=0)out.cards.push({k:"faq:"+fi2,t:"faq",n:D.F[fi2][0],s:"ответ из раздела вопросов",u:"9_faq/",btn:[]});return fin(out);}
+ var _fi=(function(){var z=String(q0).toLowerCase().replace(/ё/g,"е").trim();if(z.length<4||!D.I)return [];return D.I.filter(function(it){var r=(it.ru||"").toLowerCase().replace(/ё/g,"е");return r==z||r.split(/[ \-]/).some(function(w){return w==z||(z.length>=5&&w.indexOf(z)==0)})}).slice(0,4)})();if(_fi.length){out.kind="item";out.tag="item";out.text=(_fi.length==1?"Нашёл предмет: ":"Нашёл предметы: ")+_fi.map(function(it){return it.ru}).join(", ")+".";_fi.forEach(function(it){out.cards.push(itemCard(it))});return fin(out);}
  out.kind="none";out.text="Точного ответа нет. Попробуй написать имя пала, предмет или вопрос по-другому, например «где найти Анубиса» или «где добыть уголь».";
  out.cards.push({k:"topic:faq",t:"topic",n:"Частые вопросы",s:"все ответы",u:"9_faq/",btn:[]});return fin(out);
 }

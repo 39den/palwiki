@@ -90,3 +90,8 @@
 #cr-app details.cr-stm>summary::before,#cr-app details.cr-stm>summary::after{display:none!important;content:none!important}
 #cr-app .cr-ni{flex:none;display:inline-flex}#cr-app .cr-ni img{min-width:32px;min-height:32px;max-width:none}#cr-app .cr-it .cr-ni img{min-width:40px;min-height:40px}
 .cr-chip{border-radius:12px}
+
+.crp-dr{margin:.35em 0;font-size:.92em;line-height:1.35}.crp-dr a{text-decoration:underline}.crp-dr small{opacity:.7}
+.gc-dpl{font-size:.8em;opacity:.75}.gc-b.gc-dp{text-decoration:none;cursor:pointer}.gc-b.gc-dp:hover{text-decoration:underline}
+.crp{max-width:min(320px,calc(100vw - 16px))}
+.itb{flex-wrap:wrap;justify-content:center;row-gap:4px}

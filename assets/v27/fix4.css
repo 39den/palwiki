@@ -1,0 +1,41 @@
+/* fix4 24.10.2026: UI-дефекты живого прохода */
+/* 1. поиск героя на главной: тёмный текст на белом */
+.hero .smart-box input{color:#0f1720!important;-webkit-text-fill-color:#0f1720!important;caret-color:#0f1720}
+.hero .smart-box input::placeholder{color:#5b6670!important;-webkit-text-fill-color:#5b6670!important}
+.hero .smart-out{color:#0f1720}
+.hero .smart-out .an-h,.hero .smart-out .an-t,.hero .smart-out b,.hero .smart-out small,.hero .smart-out .an-n,.hero .smart-out p,.hero .smart-out li,.hero .smart-out span{color:#0f1720!important;-webkit-text-fill-color:#0f1720!important;opacity:1!important}
+.hero .smart-out .an-b,.hero .smart-out a.an-b{color:#075766!important;-webkit-text-fill-color:#075766!important;border-color:#075766!important}
+[data-md-color-scheme=slate] .hero .smart-box input{color:#e8eef5!important;-webkit-text-fill-color:#e8eef5!important;caret-color:#e8eef5}
+[data-md-color-scheme=slate] .hero .smart-out .an-h,[data-md-color-scheme=slate] .hero .smart-out .an-t,[data-md-color-scheme=slate] .hero .smart-out b,[data-md-color-scheme=slate] .hero .smart-out small,[data-md-color-scheme=slate] .hero .smart-out .an-n,[data-md-color-scheme=slate] .hero .smart-out p,[data-md-color-scheme=slate] .hero .smart-out li,[data-md-color-scheme=slate] .hero .smart-out span{color:#e8eef5!important;-webkit-text-fill-color:#e8eef5!important}
+[data-md-color-scheme=slate] .hero .smart-out .an-b{color:#7fd8e6!important;-webkit-text-fill-color:#7fd8e6!important;border-color:#7fd8e6!important}
+.hero .smart-out:empty{display:none!important}
+/* 2. карта: кнопка попапа, состояние чипов */
+.leaflet-popup-content .mpgo,.mpgo{color:#fff!important;-webkit-text-fill-color:#fff!important}
+html.v27 .ux-chip.sf-pp[aria-pressed=true],html.v27 .ux-chip.sf-pp.on,html .ux-chip.sf-pp.on{background:#0a7f8c!important;color:#fff!important;border-color:#0a7f8c!important;-webkit-text-fill-color:#fff!important}
+html.v27 .ux-chip.sf-pp[aria-pressed=false],html.v27 .ux-chip.sf-pp:not(.on){background:transparent!important;color:#6b7680!important;border-color:rgba(15,23,32,.22)!important;-webkit-text-fill-color:#6b7680!important}
+.ux-chip.sf-pp:not(.on) *{opacity:.7}
+html.v27 .ux-chip.sf-pp.on *{color:#fff!important;-webkit-text-fill-color:#fff!important}
+/* 3. «Куда дальше»: пустые иконки не занимают место */
+.ux-tile>span:empty{display:none!important}
+/* 5. длинные чипы переносятся */
+.md-content .ux-chip:not(.sf-pp){white-space:normal!important;height:auto!important;max-width:100%;overflow-wrap:anywhere;text-align:left;line-height:1.3}
+/* 6. пассивки: активные ссылки соседей, пустые чипы */
+html body a.edge.edge,html.v27 body a.edge.edge.edge{background:#fff!important;border:1.5px solid #075766!important;color:#075766!important;opacity:1!important}
+html body a.edge.edge small,html body a.edge.edge span{color:#075766!important;opacity:1!important;font-weight:700}
+html [data-md-color-scheme=slate] a.edge.edge.edge.edge{background:#121a24!important;border-color:#7fd8e6!important;color:#7fd8e6!important}
+html [data-md-color-scheme=slate] a.edge.edge.edge small{color:#7fd8e6!important}
+.efs .ef:empty,.hws .hw:empty{display:none!important}
+/* 7. босс: подсказки с <kbd> строкой, отряд без обрезки на узком */
+.tip{display:block!important}
+.tip>span:empty{display:none}
+.tip kbd{display:inline-block!important;vertical-align:baseline}
+@media (max-width:600px){
+ .ux-prep .ux-hscroll{grid-auto-flow:row!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-auto-columns:auto!important;overflow:visible!important}
+ .ux-prep .ux-hscroll>*{min-width:0!important;width:auto!important}
+ /* 4. поиск в шапке: при фокусе поле на всю ширину */
+ #hsx:focus-within{position:absolute!important;left:8px;right:8px;top:50%;transform:translateY(-50%);z-index:30;background:var(--md-default-bg-color,#fff);border-radius:99px}
+ #hsx:focus-within #hsq{min-width:0;width:100%}
+}
+/* 4. ответ в поиске без вложенной прокрутки */
+.sx-card.ai{max-height:none!important;overflow:visible!important}
+@media (max-width:600px){.sx.sx-inline,.sx-body{max-height:calc(100dvh - 150px)!important}}

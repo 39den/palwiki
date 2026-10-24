@@ -20,7 +20,7 @@
     }
     return `<i class="gmk-l" style="--c:${v(t)[1]}"><img src="${B()}assets/mapicons/${v(t)[0]}" alt=""></i>`;
   };
-  const POP = { maxWidth: 280, minWidth: 220, autoPan: true, autoPanPaddingTopLeft: [12, 72], autoPanPaddingBottomRight: [12, 24] };
+  const POP = { maxWidth: 280, minWidth: 220, autoPan: true, autoPanPaddingTopLeft: [12, 72], autoPanPaddingBottomRight: [12, (innerWidth < 760 ? 250 : 24)] };
   window.PW_maps = window.PW_maps || [];
   if (!window.PW_escG) {
     window.PW_escG = 1;

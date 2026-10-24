@@ -1,0 +1,22 @@
+#breed27{max-width:640px}
+#breed27 .b27tabs{display:flex;gap:8px;margin:0 0 12px}
+#breed27 .b27tabs button{flex:1;padding:10px;border:1px solid var(--md-default-fg-color--lighter);border-radius:8px;background:none;color:inherit;font:inherit;cursor:pointer}
+#breed27 .b27tabs button[aria-selected=true]{background:#1f6f5c;color:#fff;border-color:#1f6f5c}
+#breed27 label{display:block;margin:10px 0 4px;font-weight:600}
+#breed27 .b27f{position:relative;display:block;margin-bottom:6px}
+#breed27 input{box-sizing:border-box;width:100%;padding:10px;font-size:16px;border:1px solid var(--md-default-fg-color--lighter);border-radius:8px;background:var(--md-default-bg-color);color:inherit}
+#breed27 ul.b27l{list-style:none;margin:2px 0 0;padding:0;max-height:220px;overflow:auto;border:1px solid var(--md-default-fg-color--lighter);border-radius:8px;background:var(--md-default-bg-color)}
+#breed27 ul.b27l li{margin:0;padding:8px 10px;cursor:pointer}
+#breed27 ul.b27l li:hover,#breed27 ul.b27l li:focus{background:var(--md-default-fg-color--lightest)}
+#breed27 .b27r{margin-top:14px;padding:12px;border-radius:8px;background:var(--md-default-fg-color--lightest);word-break:break-word}
+#breed27 .b27r ol{margin:6px 0 0 1.2em;max-height:420px;overflow:auto}
+#breed27 small{opacity:.75}
+
+/* fix4: карточка детёныша, отступ под нижнюю панель */
+#breed27{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+#breed27 .b27c{display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit;margin:0 0 8px}
+#breed27 .b27c img{width:56px;height:56px;border-radius:12px;background:var(--md-default-bg-color);flex:none}
+#breed27 .b27c span{display:flex;flex-direction:column}
+#breed27 .b27c small{opacity:.7}
+#breed27 .b27c b{font-size:1.1em}
+#breed27 .b27c em{font-style:normal;font-weight:700;color:#0b6f86;font-size:.9em}

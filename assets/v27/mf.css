@@ -1,0 +1,17 @@
+/* MAPFIX: один поиск на карте, счётчик отдельной строкой, ничего не налезает */
+html.mf-map #hsx{display:none!important}
+html.mf-map .md-header .md-search,html.mf-map .md-header [data-md-component=search],html.mf-map .gc-mapq>input{display:none!important}
+html.mf-map .gc-mapq:not(:has(.gc-mapn)){display:none!important}
+html.mf-map .msq{flex-wrap:wrap;row-gap:.2rem}
+html.mf-map .msq .mcnt{position:static!important;right:auto!important;order:9;flex:1 0 100%;width:100%;padding:.1rem .2rem 0;border-radius:0;background:none!important;font-size:.72rem;line-height:1.2;text-align:left;white-space:normal}
+html.mf-map .mcnt a{color:inherit;text-decoration:underline}
+html.mf-map .gc-mapn{font-weight:700}
+html.mf-map .gc-mapn a{text-decoration:underline}
+@media (max-width:760px){
+ html.mf-map .v27panel:not(:has(.gc-mapn)){display:none!important}
+ html.mf-map .leaflet-control-zoom{display:none!important}
+ html.mf-map .leaflet-bottom.leaflet-right{top:0;bottom:auto}
+ html.mf-map .leaflet-bottom.leaflet-left{display:none}
+}
+/* FIX1024: лупа (фон слева 14px, 16px) не наезжает на подсказку */
+html.mf-map #mapq{padding-left:38px!important;background-position:12px 50%!important;text-overflow:ellipsis}
