@@ -1,0 +1,17 @@
+/* fix6 24.10.2026: таблицы в потоке, шапка липнет под меню сайта */
+/* причина: .md-typeset__table{max-height:75vh;overflow:auto}, а #gtable снимал overflow -> таблица 10000px вылезала из блока 600px поверх «Куда дальше» */
+#gtable table,#gtable .md-typeset__table table{overflow:visible!important}
+#gtable .md-typeset__table{max-height:none!important;height:auto!important;overflow:visible!important;display:block}
+.ptable thead th,#gtable table thead th{position:sticky!important;top:var(--pw-hh,56px)!important;z-index:3!important;background:var(--md-default-bg-color,#fffdf8)!important;background-clip:padding-box;box-shadow:0 1px 0 rgba(127,127,127,.25)}
+html [data-md-color-scheme=default] .ptable thead th{background:#fffdf8!important}
+html [data-md-color-scheme=slate] .ptable thead th{background:#0b1016!important}
+/* таблицы в собственной прокрутке (75vh): шапка у верха своего блока */
+.md-typeset__table:not(#gtable .md-typeset__table) thead th{top:0!important}
+.md-header{z-index:6!important}
+/* корень: html,body{overflow-x:hidden} делает body контейнером прокрутки, и position:sticky (шапка сайта, шапки таблиц) не работает.
+   overflow-x:clip режет так же, но контейнер прокрутки не создаёт. */
+html,body{overflow-x:clip!important}
+body{overflow-y:visible!important}
+/* закреплённое меню непрозрачное: строки таблиц не просвечивают */
+html [data-md-color-scheme=default] .md-header,html [data-md-color-scheme=default] .md-tabs,html[data-md-color-scheme=default] .md-header,html[data-md-color-scheme=default] .md-tabs{background-color:#f6f8fb!important}
+html [data-md-color-scheme=slate] .md-header,html [data-md-color-scheme=slate] .md-tabs,html[data-md-color-scheme=slate] .md-header,html[data-md-color-scheme=slate] .md-tabs{background-color:#0b1016!important}

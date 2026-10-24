@@ -1,0 +1,3 @@
+/* fix6: высота закреплённого меню -> --pw-hh для липкой шапки таблиц */
+(function(){var r=document.documentElement;function hh(){var b=0;document.querySelectorAll('header.md-header,.md-tabs,.v27-top,.pp-top').forEach(function(e){var q=e.getBoundingClientRect();if(!q.height||q.top>b+1||q.bottom<=b)return;var x=e,st=false;while(x&&x!==document.body){var p=getComputedStyle(x).position;if(p=='sticky'||p=='fixed'){st=true;break}x=x.parentElement}if(st)b=q.bottom});r.style.setProperty('--pw-hh',Math.round(b)+'px')}
+hh();addEventListener('scroll',hh,{passive:true});addEventListener('resize',hh);setTimeout(hh,500)})();
