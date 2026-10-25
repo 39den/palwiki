@@ -38,7 +38,7 @@ function go(){run();top();map();setTimeout(()=>idle(()=>{run();top();if(d.getEle
 addEventListener('resize',top,{passive:true});
 if(d.readyState=='loading')d.addEventListener('DOMContentLoaded',go);else go();
 })();
-;(function(){const d=document;if(!d.documentElement.classList.contains('v27'))return;const hq=d.getElementById('home-q');if(!hq)return;
+;(function(){const d=document;if(!d.documentElement.classList.contains('v27'))return;const hq=null;/*fix8: без переброса фокуса в шапку*/if(!hq)return;
 const open=v=>{hq.blur();(window.PW_search?window.PW_search(v||null):(window.UX&&UX.openSearch?UX.openSearch(v):0))};
 hq.addEventListener('focus',e=>e.stopImmediatePropagation(),true);
 hq.addEventListener('mousedown',e=>{e.preventDefault();open(hq.value)});

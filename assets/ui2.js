@@ -159,15 +159,16 @@
   }
   function openSearch(pre) {
     const hi = hsInput();
-    if (hi && pre == null) hi.focus({ preventScroll: true });
+    if (hi && pre == null) (window.F8tgt || hi).focus({ preventScroll: true });
     (window.PW_load || window.PW_data)().then((D) => {
+      if (window.F8tgt) pre = window.F8tgt.value; /* F8pre: значение на момент загрузки, а не на момент клика */
       if (SX) {
         if (pre != null) {
           hi.value = pre;
         }
         SXo();
         if (pre != null) hi.dispatchEvent(new Event("input"));
-        hi.focus({ preventScroll: true });
+        (window.F8tgt || hi).focus({ preventScroll: true });
         return;
       }
       const s = document.getElementById("__search");
@@ -186,23 +187,21 @@
       };
       const pop = (D.popular || []).map(([i]) => D.pals.find((p) => p.id == i)).filter((p) => p && p.url).slice(0, 8);
       const tiles = [["\u{1F43E}", "\u041F\u0430\u043B\u044B", "gallery/"], ["\u{1F451}", "\u0411\u043E\u0441\u0441\u044B", "boss/"], ["\u2728", "\u041F\u0430\u0441\u0441\u0438\u0432\u043A\u0438", "passivki/"], ["\u{1F4E6}", "\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B", "4_spravochniki/predmety/"], ["\u{1F5FA}\uFE0F", "\u041A\u0430\u0440\u0442\u0430", "map/"], ["\u{1F9EC}", "\u0420\u0430\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u0435", "breed/"], ["\u{1F6E0}", "\u0421\u0431\u043E\u0440\u043A\u0430", "my/"], ["\u2696\uFE0F", "\u0421\u0440\u0430\u0432\u043D\u0438\u0442\u044C", "compare/"]];
-      const ex = ["\u043A\u0442\u043E \u043B\u0443\u0447\u0448\u0435 \u043A\u043E\u043F\u0430\u0435\u0442", "\u0447\u0435\u043C \u0431\u0438\u0442\u044C \u0437\u043E\u0438", "\u0433\u0434\u0435 \u0432\u0437\u044F\u0442\u044C \u0441\u0435\u0440\u0443", "\u043F\u0430\u0441\u0441\u0438\u0432\u043A\u0438 \u0444\u0440\u043E\u0441\u0442\u0430\u043B\u0438\u043E\u043D \u0431\u043E\u0435\u0446", "\u043A\u0430\u043A \u0432\u044B\u0432\u0435\u0441\u0442\u0438 \u0430\u043D\u0443\u0431\u0438\u0441\u0430", "\u0441\u0440\u0430\u0432\u043D\u0438\u0442\u044C \u0430\u043D\u0443\u0431\u0438\u0441 \u0438 \u0434\u0436\u0435\u0442\u0440\u0430\u0433\u043E\u043D"];
-      const empty = () => `${recQ().length ? `<div class="sx-h">\u041D\u0435\u0434\u0430\u0432\u043D\u0438\u0435</div><div class="sx-chips">${recQ().map((q) => `<span class="sx-c"><button type="button" data-q="${esc(q)}">\u{1F558} ${esc(q)}</button><button type="button" class="sx-del" data-del="${esc(q)}" aria-label="\u0423\u0434\u0430\u043B\u0438\u0442\u044C">\xD7</button></span>`).join("")}</div>` : ""}
-  ${pop.length ? `<div class="sx-h">\u041F\u043E\u043F\u0443\u043B\u044F\u0440\u043D\u043E\u0435</div><div class="sx-chips">${pop.map((p) => `<a class="sx-c sx-p" href="${B + p.url}"><img src="${B + p.thumb}" width="22" height="22" alt="">${esc(p.ru)}</a>`).join("")}</div>` : ""}
-  ${document.getElementById("pwmap") ? "" : `<div class="sx-h">\u0420\u0430\u0437\u0434\u0435\u043B\u044B</div><div class="sx-tiles">${tiles.map(([i, l, u]) => `<a href="${B + u}"><span>${i}</span>${l}</a>`).join("")}</div>`}
-  <div class="sx-h">\u041C\u043E\u0436\u043D\u043E \u0441\u043F\u0440\u043E\u0441\u0438\u0442\u044C</div><div class="sx-chips">${ex.map((q) => `<button type="button" class="sx-c" data-q="${esc(q)}">${esc(q)}</button>`).join("")}</div>`;
+      const ex = ["\u0433\u0434\u0435 \u043D\u0430\u0439\u0442\u0438 \u043A\u043E\u043D\u044F", "\u043A\u0430\u043A \u043B\u0435\u0442\u0430\u0442\u044C \u043D\u0430 \u043A\u0440\u044B\u043B\u044C\u044F\u0445", "\u043A\u0442\u043E \u043B\u0443\u0447\u0448\u0435 \u043A\u043E\u043F\u0430\u0435\u0442", "\u0433\u0434\u0435 \u0432\u0437\u044F\u0442\u044C \u0441\u0435\u0440\u0443", "\u0447\u0435\u043C \u0431\u0438\u0442\u044C \u0437\u043E\u0438", "\u043A\u0430\u043A \u0432\u044B\u0432\u0435\u0441\u0442\u0438 \u0430\u043D\u0443\u0431\u0438\u0441\u0430"];
+      const empty = () => `${recQ().length ? `<div class="sx-h">\u041D\u0435\u0434\u0430\u0432\u043D\u0438\u0435</div><div class="sx-chips sx-rec">${recQ().slice(0, 5).map((q) => `<span class="sx-c"><button type="button" data-q="${esc(q)}">${esc(q)}</button><button type="button" class="sx-del" data-del="${esc(q)}" aria-label="\u0423\u0434\u0430\u043B\u0438\u0442\u044C">\xD7</button></span>`).join("")}</div>` : ""}<div class="sx-h">\u041F\u043E\u043F\u0443\u043B\u044F\u0440\u043D\u044B\u0435 \u0432\u043E\u043F\u0440\u043E\u0441\u044B</div><div class="sx-chips sx-popq">${ex.filter((q) => !recQ().slice(0, 5).includes(q)).slice(0, 6).map((q) => `<button type="button" class="sx-c" data-q="${esc(q)}">${esc(q)}</button>`).join("")}</div>`;
       SX.innerHTML = `<button type="button" class="sx-x" aria-label="\u0417\u0430\u043A\u0440\u044B\u0442\u044C">\xD7</button><div class="sx-body">${empty()}</div>`;
       document.body.appendChild(SX);
       const inp = hi, body = SX.querySelector(".sx-body"), clr = inp.parentNode.querySelector(".sx-clr");
       const place = () => {
-        const r = inp.parentNode.getBoundingClientRect(), mob = innerWidth < 700;
+        const r = (window.F8anchor || inp.parentNode).getBoundingClientRect(), mob = !window.F8anchor && innerWidth < 700;
+        if (window.F8mh) SX.style.setProperty("max-height", window.F8mh(r) + "px", "important");
         SX.style.top = r.bottom + 6 + "px";
         if (mob) {
           SX.style.left = "8px";
           SX.style.right = "8px";
           SX.style.width = "";
         } else {
-          const w = Math.max(r.width, 520);
+          const w = window.F8anchor ? r.width : Math.max(r.width, 520);
           SX.style.left = Math.min(r.left, innerWidth - w - 12) + "px";
           SX.style.width = w + "px";
           SX.style.right = "";
@@ -234,7 +233,7 @@
       }, { passive: true });
       document.addEventListener("pointerdown", (e) => {
         if (SX.hidden) return;
-        if (SX.contains(e.target) || inp.parentNode.contains(e.target)) return;
+        if (SX.contains(e.target) || inp.parentNode.contains(e.target) || (window.F8anchor && window.F8anchor.contains(e.target))) return;
         close();
       }, true);
       inp.addEventListener("focus", () => {
@@ -302,7 +301,7 @@
         }
         inp.value = "";
         draw();
-        inp.focus({ preventScroll: true });
+        (window.F8tgt || inp).focus({ preventScroll: true });
         SXo();
       };
       inp.addEventListener("input", () => {
@@ -320,7 +319,7 @@
           e.preventDefault();
           inp.value = q.dataset.q;
           draw();
-          inp.focus({ preventScroll: true });
+          (window.F8tgt || inp).focus({ preventScroll: true });
           return;
         }
         const a = (e.target.closest?e.target:document.body).closest("a");
@@ -356,13 +355,13 @@
       SX.addEventListener("keydown", (e) => {
         if (e.key == "Escape") {
           close();
-          inp.focus({ preventScroll: true });
+          (window.F8tgt || inp).focus({ preventScroll: true });
         }
       });
       if (pre != null) inp.value = pre;
       draw();
       SXo();
-      inp.focus({ preventScroll: true });
+      (window.F8tgt || inp).focus({ preventScroll: true });
     });
   }
   window.PW_search = openSearch;
@@ -401,7 +400,7 @@
       }
     });
     window.PW_data();
-    const hq = document.getElementById("home-q");
+    const hq = null; /* fix8: hero-поиск больше не перебрасывает фокус в шапку */
     if (hq) {
       hq.addEventListener("focus", (e) => {
         hq.blur();

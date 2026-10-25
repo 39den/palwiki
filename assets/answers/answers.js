@@ -110,8 +110,23 @@ function faqStrong(q){var ws=q.split(" ").filter(function(w){return !STOPS[w]&&w
  IX.fq.forEach(function(f,i){var m=0,fl=0;ws.forEach(function(w){if(f[w])m++;});for(var k in f)fl++;var r=m/ws.length,c=fl?m/fl:0;var sc=r+c*0.5;if(r>=0.8&&c>=0.5&&sc>best){best=sc;bi=i;}});return bi;}
 function sentences(t,n){var m=t.match(/[^.!?]+[.!?]+/g)||[t];return m.slice(0,n).join(" ").trim();}
 function byWork(w){return D.P.map(function(p){var l=0;p.wk.forEach(function(x){if(x[0]==w)l=x[1];});return [l,p];}).filter(function(x){return x[0]>0;}).sort(function(a,b){return b[0]-a[0]||(a[1].r-b[1].r);});}
+/* F8pre (fix8, 25.10.2026): кони/лошади → палы-лошади по synonyms; крылья/глайдеры → глайдеры, а не ездовые */
+var F8HORSE=/(^| )(кон[ьяюе]?|кони|коней|коням|коняк\S*|коняшк\S*|конек|коник|лошад\S*|лошак\S*|скакун\S*|жереб\S*)( |$)/;
+var F8WING=/(крыль|глайдер|парашют|планир|ранец|wing)/;
+function F8pre(q0){if(!D)return null;var q=norm(q0);
+ if(F8WING.test(q)&&D.I){var G=D.I.filter(function(it){return it.ty=="Глайдеры"||/^Крыловая энергоячейка$/.test(it.ru);});
+  var ord=["Стандартный парашют","Мегаглайдер","Гигаглайдер","Тераглайдер","Крылатый ранец","Крыловая энергоячейка"];G.sort(function(a,b){return ord.indexOf(a.ru)-ord.indexOf(b.ru);});
+  if(G.length){var o={q:q0,kind:"item",tag:"item",conf:false,cards:G.map(itemCard),text:"Летать на крыльях: глайдер или парашют крафтится по технологиям — Стандартный парашют (с 5 ур.), Мегаглайдер (18 ур.), Гигаглайдер (40 ур.), дальше Тераглайдер. Для настоящего полёта без пала — Крылатый ранец (80 ур., Древний верстак), топливо к нему — Крыловая энергоячейка. Летающие палы тоже работают как глайдер."};return o;}}
+ if(F8HORSE.test(q)&&!/(крылат|летающ|морск)\S* кон/.test(q)&&D.syn){var ids=[];["конь","морской конь"].forEach(function(k){(D.syn[k]||[]).forEach(function(id){if(IX.id[id]!=null&&ids.indexOf(id)<0)ids.push(id);});});
+  if(ids.length){var ps=ids.map(pal).filter(Boolean);ps.sort(function(a,b){return (b.rg&&b.rg.length?1:0)-(a.rg&&a.rg.length?1:0);});
+   var nm=ps.map(function(p){return p.ru+(p.rg&&p.rg[0]?" ("+p.rg[0]+")":"");});
+   return {q:q0,kind:"pal",tag:"pal",conf:false,cards:ps.slice(0,8).map(function(p){return palCard(p,(p.en?p.en+" · ":"")+p.el.join(", ")+(p.rg&&p.rg[0]?" · водится: "+p.rg[0]:" · дикими не встречаются"));}),
+    text:"Кони и лошади в Palworld — "+ps.length+" "+plural(ps.length)+": "+nm.slice(0,6).join(", ")+(ps.length>6?" и ещё "+(ps.length-6):"")+". «На карте» покажет, где они водятся."};}}
+ return null;}
+
 function answer(q0){
  if(!D)return null;var q=norm(q0);if(!q)return null;
+ var _f8=F8pre(q0);if(_f8){FM=-1;FMO=null;return fin(_f8);}
  var I=detect(q.split(" "));FINDI=I.find!=null;GETI=I.get!=null||I.craft!=null;
  var E=entities(q);
  if(!E.groups.length&&!E.items.length&&!Object.keys(I).length&&!/[а-я]/.test(String(q0).toLowerCase())){var q2=norm(fixLayout(String(q0).toLowerCase()));if(q2!=q){var I2=detect(q2.split(" "));FINDI=I2.find!=null;GETI=I2.get!=null||I2.craft!=null;var E2=entities(q2);if(E2.groups.length||E2.items.length||Object.keys(I2).length){q=q2;E=E2;I=I2;}}
@@ -187,7 +202,7 @@ var FM=-1,FMO=null;
 function fin(o){if(FM>=0){var fo=FMO,fm=FM;FM=-1;FMO=null;if(o.kind=="none"||o.kind=="faq"){o=fo;}else{var fc={k:"faq:"+fm,t:"faq",n:D.F[fm][0],s:"ответ из раздела вопросов",u:"9_faq/",btn:[]};o.text=fo.text;o.fq=fo.fq;o.k2=fo.k2;o.cards.splice(Math.min(2,o.cards.length),0,fc);}}o.keys=o.cards.map(function(c){return c.k;});if(o.cards.length!=1||o.cards[0].t!="pal"&&o.cards[0].t!="item")o.conf=o.conf&&o.cards.length>=1&&(o.kind=="breed"||o.kind=="boss"||o.kind=="item"||o.kind=="craft"||o.kind=="pal");if(o.kind=="pal"&&o.cards.length>1)o.conf=false;o.href=o.conf&&o.cards[0]?o.cards[0].u:null;return o;}
 var esc=function(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});};
 function render(a){if(!a)return "";var h='<div class="an-box" data-an-kind="'+esc(a.kind)+'" data-an-keys="'+esc(a.keys.join("|"))+'" data-an-conf="'+(a.conf?1:0)+'"'+(a.href?' data-an-href="'+esc(lk(a.href))+'"':"")+'><div class="an-h">Быстрый ответ</div><p class="an-t">'+esc(a.text)+'</p><div class="an-cs">';
- a.cards.slice(0,8).forEach(function(c){h+='<div class="an-c"><a class="an-m" href="'+esc(lk(c.u))+'">'+(c.img?'<img src="'+esc(lk(c.img))+'" width="44" height="44" alt="" loading="lazy">':'<span class="an-i" aria-hidden="true"></span>')+'<span class="an-n"><b>'+esc(c.n)+'</b><small>'+esc(c.s)+'</small></span></a>'+(c.btn&&c.btn.length?'<span class="an-bs">'+c.btn.map(function(b){return '<a class="an-b" href="'+esc(lk(b[1]))+'">'+esc(b[0])+'</a>';}).join("")+'</span>':"")+'</div>';});
+ a.cards.slice(0,8).forEach(function(c){h+='<div class="an-c"><a class="an-m" href="'+esc(lk(c.u))+'">'+(c.img?'<img src="'+esc(lk(c.img))+'" width="44" height="44" alt="" loading="lazy">':'<span class="an-i an-i-'+esc(c.t)+'" aria-hidden="true"></span>')+'<span class="an-n"><b>'+esc(c.n)+'</b><small>'+esc(c.s)+'</small></span></a>'+(c.btn&&c.btn.length?'<span class="an-bs">'+c.btn.map(function(b){return '<a class="an-b" href="'+esc(lk(b[1]))+'">'+esc(b[0])+'</a>';}).join("")+'</span>':"")+'</div>';});
  return h+"</div></div>";}
 var API={init:init,answer:answer,render:render,norm:norm,setBase:function(b){B=b||"";},ready:function(){return !!D;}};
 if(typeof module!="undefined"&&module.exports)module.exports=API;
@@ -199,10 +214,10 @@ function load(){if(loading)return loading;loading=Promise.all([fetch(B+"assets/a
 function inp(){return document.getElementById("hsq");}
 function paint(body,v){if(!body)return;var old=body.querySelector(".an-box");v=(v||"").trim();
  if(v.length<2||!D){if(old)old.remove();return;}
- if(old&&old.getAttribute("data-q")==v&&body.firstElementChild==old)return;
+ if(old&&old.getAttribute("data-an-q")==v&&body.firstElementChild==old)return;
  if(root.PW_sfFaq&&root.PW_sfFaq(v)){if(old)old.remove();return;}
  var a;try{a=answer(v);}catch(e){a=null;}if(!a){if(old)old.remove();return;}
- var w=document.createElement("div");w.innerHTML=render(a);var box=w.firstChild;box.setAttribute("data-q",v);
+ var w=document.createElement("div");w.innerHTML=render(a);var box=w.firstChild;box.setAttribute("data-an-q",v);
  if(old)old.remove();if(body.id=="home-answer"){[].slice.call(body.children).forEach(function(e){e.remove();});}else body.querySelectorAll(".sx-card.ai,.sx-ans:not(.sx-cmp),.sf-ans,.dym").forEach(function(e){e.remove();});
  var none=body.querySelector(".sx-none");if(none)none.remove();
  body.prepend(box);}

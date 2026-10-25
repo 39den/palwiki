@@ -1,0 +1,12 @@
+/* fix8: выпадашка поиска — по ширине своего поля, не выше половины экрана (высоту ставит place() через F8mh), без дублей */
+.sx.sx-inline{overflow:auto!important;overscroll-behavior:contain}
+.sx.sx-inline .sx-body{max-height:none!important;overflow:visible!important}
+#sxp .ux-qchips,#sxp .sx-tiles{display:none!important}
+html.sx-open #home-answer{display:none!important}
+.smart-box #home-q:focus{outline:2px solid var(--md-accent-fg-color,#2bb3a3);outline-offset:1px}
+html.f8-alt.sx-open #hsx,html.f8-alt.sx-open #hsx #hsq,html.f8-alt.sx-open .md-header .md-search{visibility:hidden!important;pointer-events:none!important}
+/* fix8b: значок у карточек без картинки (вместо пустого серого квадрата) */
+.an-box .an-i{display:inline-grid!important;place-items:center;background:color-mix(in srgb,var(--md-accent-fg-color,#2bb3a3) 14%,transparent)!important;border-radius:10px;color:var(--md-accent-fg-color,#2bb3a3);font-weight:700;font-size:20px}
+.an-box .an-i::before{content:"?"}
+.an-box .an-i-topic::before{content:"\2261"}
+#sxp .an-box{cursor:pointer}
