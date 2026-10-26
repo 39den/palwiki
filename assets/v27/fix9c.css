@@ -1,0 +1,36 @@
+/* fix9c */
+/* 1: «Недавние» — не рвать слова; длинное слово ужимает шрифт (fix9c.js) */
+html body #recent .mc span,html body #favs .mc span,html body #pop .mc span{overflow-wrap:normal!important;word-break:keep-all!important;hyphens:manual!important}
+/* 2: быстрый ответ на главной — никогда в потоке баннера */
+#home-answer{display:none!important}
+/* 3: пассивки — панель поиска/фильтров не липкая; заголовок карточки ужимается */
+.md-typeset .gcf.fx-root,.md-typeset .gal-filters.fx-root{position:static!important;top:auto!important}
+.md-typeset .pcard .pch{min-width:0}
+.md-typeset .pcard .pch b{min-width:0;flex:1 1 auto;overflow-wrap:normal!important;word-break:keep-all!important}
+/* 4: пустая боковая колонка (раздел из одной страницы) */
+html.f9c-noside .md-sidebar--primary{display:none!important}
+/* 5: пал без стихии */
+.md-typeset a.pc>span:last-of-type:empty::before{content:"Без стихии";display:inline-block;font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(127,127,127,.35);color:var(--muted,#9aa)}
+/* 6: нижнее меню телефона — один отступ (body), без двойного у контейнера */
+@media (max-width:76.234em){body:has(.ux-tabbar) .md-container{padding-bottom:0!important}}
+/* 6: выдвижное меню не расширяет страницу */
+.md-sidebar--primary{overflow-x:clip}
+img.palanim-hid{visibility:hidden!important;pointer-events:none!important}
+#sxp{z-index:60}
+.md-typeset .gc-psv b,.md-typeset .gc-psv>*{min-width:0;overflow-wrap:normal!important;word-break:keep-all!important}
+html body.pp-home .md-content__inner>:has(#sxp),html body.pp-home .md-content__inner>:has(#home-q){position:relative;z-index:30!important}
+html body.pp-home .md-content__inner>.bug-link{position:relative;z-index:0}
+/* fix9d: полоса над нижним меню — у футера свой padding-bottom 104px поверх отступа body */
+@media (max-width:76.234em){body:has(.ux-tabbar) .md-footer{padding-bottom:12px!important}}
+/* fix9d: горизонтальный скролл на телефоне — страница не шире экрана; ленты чипов без полосы прокрутки */
+html,body{overflow-x:hidden}
+@supports (overflow:clip){html,body{overflow-x:clip}}
+.md-typeset .gc-more,.md-typeset .gc-chips,.sx-chips{scrollbar-width:none}
+.md-typeset .gc-more::-webkit-scrollbar,.md-typeset .gc-chips::-webkit-scrollbar,.sx-chips::-webkit-scrollbar{display:none}
+/* fix9d: заголовок карточки пассивки — слово целиком (ужимается шрифт в fix9c.js), без разрыва */
+.md-typeset .gc-psv b,.md-typeset .pcard .pch b{hyphens:manual!important;white-space:normal}
+html body .md-typeset .gc-psv .gc-t b,html body .md-typeset .gc-psv b,html body .md-typeset .pcard .pch b{overflow-wrap:normal!important;word-break:keep-all!important;hyphens:manual!important;min-width:0}
+/* fix9e: карточки выдачи — текст не выходит за карточку; край прокрутки выдачи с плавным затуханием */
+#sxp .an-c,#sxp .an-m,#sxp .an-n{min-width:0;overflow:hidden}
+#sxp .an-c{contain:paint}
+#sxp .sx-inline,#sxp .sx{contain:paint}

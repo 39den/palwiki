@@ -1,0 +1,6 @@
+/* fix9: «Недавние»/«Избранное» — карточки одной ширины, имя внутри до 2 строк с многоточием */
+#recent.mini-row,#favs.mini-row,#pop.mini-row{display:flex;flex-wrap:nowrap;gap:8px}
+#recent .mc,#favs .mc,#pop .mc{flex:0 0 104px;width:104px;min-width:0;max-width:104px;overflow:hidden;box-sizing:border-box;padding-left:4px!important;padding-right:4px!important}
+#recent .mc span,#favs .mc span,#pop .mc span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;overflow-wrap:break-word!important;word-break:normal!important;hyphens:manual!important;max-width:100%;text-align:center;line-height:1.2!important;font-size:.72rem!important;white-space:normal}
+/* fix9: герой на ПК — высота по содержимому (раньше фикс. 142–200px обрезал заголовок и поле поиска под вкладками) */
+@media (min-width:1024px){html.v27 body.pp-home .md-content__inner>.hero{height:auto!important;min-height:150px!important}}

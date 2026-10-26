@@ -194,6 +194,7 @@ function answer(q0){
   if(topic)out.cards.push({k:"topic:"+topic[0],t:"topic",n:topic[3],s:"открыть раздел",u:topic[2],btn:[]});
   if(fi2>=0)out.cards.push({k:"faq:"+fi2,t:"faq",n:D.F[fi2][0],s:"ответ из раздела вопросов",u:"9_faq/",btn:[]});return fin(out);}
  var _fi=(function(){var z=String(q0).toLowerCase().replace(/ё/g,"е").trim();if(z.length<4||!D.I)return [];return D.I.filter(function(it){var r=(it.ru||"").toLowerCase().replace(/ё/g,"е");return r==z||r.split(/[ \-]/).some(function(w){return w==z||(z.length>=5&&w.indexOf(z)==0)})}).slice(0,4)})();if(_fi.length){out.kind="item";out.tag="item";out.text=(_fi.length==1?"Нашёл предмет: ":"Нашёл предметы: ")+_fi.map(function(it){return it.ru}).join(", ")+".";_fi.forEach(function(it){out.cards.push(itemCard(it))});return fin(out);}
+ /*F9PFX*/var _z=String(q0).toLowerCase().replace(/ё/g,"е").trim();if(_z.length>=4&&D.P){var _pm=D.P.filter(function(p){return (p.ru||"").toLowerCase().replace(/ё/g,"е").split(/[ \-]/).some(function(w){return w.indexOf(_z)==0;});});if(_pm.length==1&&String(q0).trim().toLowerCase()!=_pm[0].ru.toLowerCase()){var _a=answer(_pm[0].ru);if(_a)return _a;}if(_pm.length>=1&&_pm.length<=8){out.kind="pal";out.tag="pfx";out.text="По «"+String(q0).trim()+"» нашлось палов: "+_pm.length+" — "+_pm.map(function(p){return p.ru;}).join(", ")+".";_pm.forEach(function(p){out.cards.push(palCard(p));});return fin(out);}}
  out.kind="none";out.text="Точного ответа нет. Попробуй написать имя пала, предмет или вопрос по-другому, например «где найти Анубиса» или «где добыть уголь».";
  out.cards.push({k:"topic:faq",t:"topic",n:"Частые вопросы",s:"все ответы",u:"9_faq/",btn:[]});return fin(out);
 }
@@ -216,7 +217,7 @@ function paint(body,v){if(!body)return;var old=body.querySelector(".an-box");v=(
  if(v.length<2||!D){if(old)old.remove();return;}
  if(old&&old.getAttribute("data-an-q")==v&&body.firstElementChild==old)return;
  if(root.PW_sfFaq&&root.PW_sfFaq(v)){if(old)old.remove();return;}
- var a;try{a=answer(v);}catch(e){a=null;}if(!a){if(old)old.remove();return;}
+ var a;try{a=answer(v);}catch(e){a=null;}if(!a){if(old)old.remove();return;}if(a.kind=="none"&&body.id!="home-answer"){if(old)old.remove();return;}
  var w=document.createElement("div");w.innerHTML=render(a);var box=w.firstChild;box.setAttribute("data-an-q",v);
  if(old)old.remove();if(body.id=="home-answer"){[].slice.call(body.children).forEach(function(e){e.remove();});}else body.querySelectorAll(".sx-card.ai,.sx-ans:not(.sx-cmp),.sf-ans,.dym").forEach(function(e){e.remove();});
  var none=body.querySelector(".sx-none");if(none)none.remove();
